@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			<div id="back-top">
-				<a rel="nofollow" href="#top" title="<?php _e('Back to top', 'dgc'); ?>">&uarr;</a>
+				<a rel="nofollow" href="#top" title="<?php _e('Back to top', 'dgc-wordpress-theme'); ?>">&uarr;</a>
 			</div>
 		</footer><!-- #colophon .site-footer -->
 	<!--WordPress Development by dgc Code-->

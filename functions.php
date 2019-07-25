@@ -107,13 +107,13 @@ if ( ! function_exists( 'dgc_fonts_url' ) ) {
 	 * supported by Source Sans Pro, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$source_sans_pro = _x( 'on', 'Source Sans Pro font: on or off', 'dgc' );
+	$source_sans_pro = _x( 'on', 'Source Sans Pro font: on or off', 'dgc-wordpress-theme' );
 
 	/* Translators: If there are characters in your language that are not
 	 * supported by Bitter, translate this to 'off'. Do not translate into your
 	 * own language.
 	 */
-	$bitter = _x( 'on', 'Bitter font: on or off', 'dgc' );
+	$bitter = _x( 'on', 'Bitter font: on or off', 'dgc-wordpress-theme' );
 
 	if ( 'off' !== $source_sans_pro || 'off' !== $bitter ) {
 		$font_families = array();
@@ -140,9 +140,9 @@ function dgc_setup() {
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
 	 * If you're building a theme based on dgc-network theme, use a find and replace
-	 * to change 'dgc' to the name of your theme in all the template files
+	 * to change 'dgc-wordpress-theme' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'dgc', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'dgc-wordpress-theme', get_template_directory() . '/languages' );
 	/**
 	 * Add default posts and comments RSS feed links to head
 	 */
@@ -161,7 +161,7 @@ function dgc_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'dgc' ),
+		'primary' => __( 'Primary Menu', 'dgc-wordpress-theme' ),
 	) );
 
 	
@@ -199,7 +199,7 @@ function dgc_wp_title( $title, $sep ) {
 	if ( $site_description && ( is_home() || is_front_page() ) )
  		 $title = "$title $sep $site_description";
 	if ( $paged >= 2 || $page >= 2 )
-		$title = "$title $sep " . sprintf( __( 'Page %s', 'dgc' ), max( $paged, $page ) );
+		$title = "$title $sep " . sprintf( __( 'Page %s', 'dgc-wordpress-theme' ), max( $paged, $page ) );
 	return $title;
 }
 	add_filter( 'wp_title', 'dgc_wp_title', 10, 2 );
@@ -231,7 +231,7 @@ function dgc_widgets_init() {
 	register_widget( 'dgc_Widget_News_Archive' );
 	
 	register_sidebar( array(
-		'name' => __( 'Main Sidebar', 'dgc' ),
+		'name' => __( 'Main Sidebar', 'dgc-wordpress-theme' ),
 		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
@@ -240,7 +240,7 @@ function dgc_widgets_init() {
 	) );
 	
 	register_sidebar( array(
-		'name' => __( 'Blog Sidebar', 'dgc' ),
+		'name' => __( 'Blog Sidebar', 'dgc-wordpress-theme' ),
 		'id' => 'sidebar-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
@@ -249,7 +249,7 @@ function dgc_widgets_init() {
 	) );
 	
 	register_sidebar( array(
-		'name' => __( 'Single Post Sidebar', 'dgc' ),
+		'name' => __( 'Single Post Sidebar', 'dgc-wordpress-theme' ),
 		'id' => 'sidebar-3',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
@@ -258,7 +258,7 @@ function dgc_widgets_init() {
 	) );
 	
 	register_sidebar( array(
-		'name' => __( 'Homepage Sidebar', 'dgc' ),
+		'name' => __( 'Homepage Sidebar', 'dgc-wordpress-theme' ),
 		'id' => 'sidebar-4',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
@@ -268,7 +268,7 @@ function dgc_widgets_init() {
 	
 	if (class_exists('woocommerce')){
 		register_sidebar( array(
-			'name' => __( 'Shop Page Sidebar', 'dgc' ),
+			'name' => __( 'Shop Page Sidebar', 'dgc-wordpress-theme' ),
 			'id' => 'sidebar-5',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
@@ -277,7 +277,7 @@ function dgc_widgets_init() {
 		) );
 		
 		register_sidebar( array(
-			'name' => __( 'Product Page Sidebar', 'dgc' ),
+			'name' => __( 'Product Page Sidebar', 'dgc-wordpress-theme' ),
 			'id' => 'sidebar-6',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
@@ -353,7 +353,7 @@ function dgc_scripts() {
 	
 	wp_localize_script( 'init', 'ThGlobal', 	array( 'ajaxurl' 				  => admin_url( 'admin-ajax.php' ), 
 													   'is_fixed_header' 		  => $is_fixed_header,
-													   'mobile_menu_default_text' => __('Navigate to...', 'dgc'),
+													   'mobile_menu_default_text' => __('Navigate to...', 'dgc-wordpress-theme'),
 													 ) 
 					  );  
 	
@@ -639,12 +639,12 @@ if (!function_exists('dgc_get_slider')) {
 				}	
 			} else {
 				$slider_ = '<div class="main-slider-container">';
-					$slider_ .= '<section class="slider"><h3 class="no-slider-text">'. __('Please add images for slider in theme options!', 'dgc') .'</h3></section>';
+					$slider_ .= '<section class="slider"><h3 class="no-slider-text">'. __('Please add images for slider in theme options!', 'dgc-wordpress-theme') .'</h3></section>';
 				$slider_ .= '</div>';
 			}
 		} else {
 			$slider_ = '<div class="main-slider-container">';
-				$slider_ .= '<section class="slider"><h3 class="no-slider-text">'. __('Please add images for slider in theme options!', 'dgc') .'</h3></section>';
+				$slider_ .= '<section class="slider"><h3 class="no-slider-text">'. __('Please add images for slider in theme options!', 'dgc-wordpress-theme') .'</h3></section>';
 			$slider_ .= '</div>';
 		}
 		
@@ -1433,7 +1433,7 @@ if (class_exists('Woocommerce')) {
 			$woocommerce_loop['columns'] 	= apply_filters( 'woocommerce_cross_sells_columns', 4 );
 			if ( $products->have_posts() ) : ?>
 				<div class="cross-sells">
-					<h2><?php _e( 'You may be interested in&hellip;', 'dgc' ) ?></h2>
+					<h2><?php _e( 'You may be interested in&hellip;', 'dgc-wordpress-theme' ) ?></h2>
 					<?php woocommerce_product_loop_start(); ?>
 						<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 							<?php wc_get_template_part( 'content', 'product' ); ?>
@@ -1481,7 +1481,7 @@ if (class_exists('Woocommerce')) {
 			$out  = '<a href= "'.get_permalink( wc_get_page_id( 'cart' ) ).'" class="cart-contents">';
 			$out .= '<div class="cart_image"></div>';
 			$out .= '<span class="num_of_product_cart">';
-			$out .= sprintf(_n('%d ', '%d ', $woocommerce->cart->cart_contents_count, 'dgc'), $woocommerce->cart->cart_contents_count) .'</span></a>';
+			$out .= sprintf(_n('%d ', '%d ', $woocommerce->cart->cart_contents_count, 'dgc-wordpress-theme'), $woocommerce->cart->cart_contents_count) .'</span></a>';
 			$fragments['a.cart-contents'] = $out;
 			return $fragments;
 		}
@@ -1492,9 +1492,9 @@ if (class_exists('Woocommerce')) {
 	function woo_custom_product_searchform( $form ) {
 
 		$form = '<form role="search" method="get" class="woocommerce-product-search" action="' . esc_url( home_url( '/' ) ) . '">
-            <label class="screen-reader-text" for="woocommerce-product-search-field-' . (isset( $index ) ? absint( $index ) : 0) . '">' . _e( '', 'dgc' ) . '</label>
-            <input type="search" id="woocommerce-product-search-field-' . (isset( $index ) ? absint( $index ) : 0) . '" class="search-field" placeholder="' . esc_attr__( 'Search products&hellip;', 'dgc' ) . '" value="' . get_search_query() . '" name="s" />
-            <input type="submit" value="' . esc_attr_x( 'Search', 'submit button', 'dgc' ) . '" />
+            <label class="screen-reader-text" for="woocommerce-product-search-field-' . (isset( $index ) ? absint( $index ) : 0) . '">' . _e( '', 'dgc-wordpress-theme' ) . '</label>
+            <input type="search" id="woocommerce-product-search-field-' . (isset( $index ) ? absint( $index ) : 0) . '" class="search-field" placeholder="' . esc_attr__( 'Search products&hellip;', 'dgc-wordpress-theme' ) . '" value="' . get_search_query() . '" name="s" />
+            <input type="submit" value="' . esc_attr_x( 'Search', 'submit button', 'dgc-wordpress-theme' ) . '" />
             <input type="hidden" name="post_type" value="product" />
         </form>';
 		return $form;
@@ -1520,20 +1520,20 @@ function dgc_entry_meta() {
 	<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 	<?php
 		/* translators: used between list items, there is a space after the comma */
-		 $categories_list = get_the_category_list( __( ', ', 'dgc' ) );
+		 $categories_list = get_the_category_list( __( ', ', 'dgc-wordpress-theme' ) );
 	if ( $categories_list && dgc_categorized_blog() ) : ?>
 		<span class="cat-links">
-			<?php printf( __( 'Posted in %1$s', 'dgc' ), $categories_list ); ?>
+			<?php printf( __( 'Posted in %1$s', 'dgc-wordpress-theme' ), $categories_list ); ?>
 		</span>
 	<?php endif; // End if categories ?>
 
 	<?php
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'dgc' ) );
+		$tags_list = get_the_tag_list( '', __( ', ', 'dgc-wordpress-theme' ) );
 		if ( $tags_list ) :
 	?>
 		<span class="tag-links">
-			<?php // printf( __( 'Tagged %1$s', 'dgc' ), $tags_list ); ?>
+			<?php // printf( __( 'Tagged %1$s', 'dgc-wordpress-theme' ), $tags_list ); ?>
 			<?php echo $tags_list; ?>
 		</span> 
 		<?php endif; // End if $tags_list ?>
@@ -1545,13 +1545,13 @@ function dgc_entry_meta() {
 if ( ! function_exists( 'dgc_entry_date' ) ) {
 function dgc_entry_date( $echo = true ) {
 	if ( has_post_format( array( 'chat', 'status' ) ) )
-		$format_prefix = _x( '%1$s on %2$s', '1: post format name. 2: date', 'dgc' );
+		$format_prefix = _x( '%1$s on %2$s', '1: post format name. 2: date', 'dgc-wordpress-theme' );
 	else
 		$format_prefix = '%2$s';
 
 	$date = sprintf( '<span class="date"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a></span>',
 		esc_url( get_permalink() ),
-		esc_attr( sprintf( __( 'Permalink to %s', 'dgc' ), the_title_attribute( 'echo=0' ) ) ),
+		esc_attr( sprintf( __( 'Permalink to %s', 'dgc-wordpress-theme' ), the_title_attribute( 'echo=0' ) ) ),
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( sprintf( $format_prefix, get_post_format_string( get_post_format() ), get_the_date() ) )
 	);
@@ -1666,11 +1666,11 @@ if ( ! function_exists( 'dgc_wp_corenavi' ) ) {
 				$wp_rewrite;  
 		$next_label = $prev_label = '';
 		if (wp_is_mobile()) {
-			$next_label = __(' &laquo; ','dgc'); 
-			$prev_label = __(' &raquo; ','dgc');
+			$next_label = __(' &laquo; ','dgc-wordpress-theme'); 
+			$prev_label = __(' &raquo; ','dgc-wordpress-theme');
 		} else {
-			$next_label = __('&laquo; Previous Page','dgc');
-			$prev_label = __('Next Page &raquo;','dgc'); 
+			$next_label = __('&laquo; Previous Page','dgc-wordpress-theme');
+			$prev_label = __('Next Page &raquo;','dgc-wordpress-theme'); 
 		}
 		
 		$pages = '';  
@@ -1712,8 +1712,8 @@ if ( ! function_exists( 'dgc_get_product_search_form' ) ) {
 		?>
 		<form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
 			<div>
-				<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php _e( 'Search for products', 'dgc' ); ?>" />
-				<input type="submit" id="searchsubmit" value="<?php echo esc_attr__( 'Search', 'dgc' ); ?>" />
+				<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php _e( 'Search for products', 'dgc-wordpress-theme' ); ?>" />
+				<input type="submit" id="searchsubmit" value="<?php echo esc_attr__( 'Search', 'dgc-wordpress-theme' ); ?>" />
 				<input type="hidden" name="post_type" value="product" />
 			</div>
 		</form>
@@ -1766,7 +1766,7 @@ if ( ! function_exists( 'dgc_get_content_with_custom_sidebar' ) ) {
 				
 				
 				if (is_page() && !empty($page_on_front) &&  !empty($page_for_posts) && ($page_on_front == $page_for_posts)) {
-					echo '<div class="alert alert-danger"><strong>'.__("Front page displays Error.", 'dgc').'</strong> '.__('Select different pages!', 'dgc').'</div>';
+					echo '<div class="alert alert-danger"><strong>'.__("Front page displays Error.", 'dgc-wordpress-theme').'</strong> '.__('Select different pages!', 'dgc-wordpress-theme').'</div>';
 					
 				} else {
 					if (!is_archive() && !is_search() && !is_404()) {
@@ -1817,30 +1817,30 @@ if ( ! function_exists( 'dgc_get_content_with_custom_sidebar' ) ) {
 													
 													if ( is_archive()) {
 														if ( is_category() ) {
-															printf( __( 'Category Archives: %s', 'dgc' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+															printf( __( 'Category Archives: %s', 'dgc-wordpress-theme' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 														} elseif ( is_tag() ) {
-															printf( __( 'Tag Archives: %s', 'dgc' ), '<span>' . single_tag_title( '', false ) . '</span>' );
+															printf( __( 'Tag Archives: %s', 'dgc-wordpress-theme' ), '<span>' . single_tag_title( '', false ) . '</span>' );
 														} elseif ( is_author() ) {
 															the_post();
-															printf( __( 'Author Archives: %s', 'dgc' ), '<span class="vcard"><a class="url fn n" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' );
+															printf( __( 'Author Archives: %s', 'dgc-wordpress-theme' ), '<span class="vcard"><a class="url fn n" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' );
 															rewind_posts();
 
 														} elseif ( is_day() ) {
-															printf( __( 'Daily Archives: %s', 'dgc' ), '<span>' . get_the_date() . '</span>' );
+															printf( __( 'Daily Archives: %s', 'dgc-wordpress-theme' ), '<span>' . get_the_date() . '</span>' );
 	
 														} elseif ( is_month() ) {
-															printf( __( 'Monthly Archives: %s', 'dgc' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
+															printf( __( 'Monthly Archives: %s', 'dgc-wordpress-theme' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
 
 														} elseif ( is_year() ) {
-															printf( __( 'Yearly Archives: %s', 'dgc' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
+															printf( __( 'Yearly Archives: %s', 'dgc-wordpress-theme' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
 
 														} else {
-															_e( 'Archives', 'dgc' );
+															_e( 'Archives', 'dgc-wordpress-theme' );
 														}
 													}
 													
 													if (is_search())
-														printf( __( 'Search Results for: %s', 'dgc' ), '<span>' . get_search_query() . '</span>' ); 
+														printf( __( 'Search Results for: %s', 'dgc-wordpress-theme' ), '<span>' . get_search_query() . '</span>' ); 
 												?>
 											</h1>
 											<?php

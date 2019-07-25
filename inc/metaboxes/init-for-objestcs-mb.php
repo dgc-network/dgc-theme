@@ -31,7 +31,7 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 	
 	$meta_boxes['dgc_slider_settings'] = array(
 		'id'         => 'dgc_slider_settings',
-		'title'      => __( 'Slider settings', 'dgc' ),
+		'title'      => __( 'Slider settings', 'dgc-wordpress-theme' ),
 		'context'    => 'normal',
 		'priority'   => 'low',
 		'show_names' => true, 
@@ -39,14 +39,14 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 		//'show_on'	 =>	array( 'key'=>'front-page', 'value' => '' ),
 		'fields'     => array(
 				array(
-					'name' 		=> __('Slider display', 'dgc'),
+					'name' 		=> __('Slider display', 'dgc-wordpress-theme'),
 					'id' 		=> $prefix . 'slider_layout',
-					'subname'   => __('Select the option to display the corresponding slider', 'dgc'),
+					'subname'   => __('Select the option to display the corresponding slider', 'dgc-wordpress-theme'),
 					'std' 		=> '0',
 					'options' 	=> array(
-										'0' => __('Disable slider', 'dgc'),
-										'1' => __('Full width slider', 'dgc'),
-										'2' => __('Boxed slider', 'dgc'),
+										'0' => __('Disable slider', 'dgc-wordpress-theme'),
+										'1' => __('Full width slider', 'dgc-wordpress-theme'),
+										'2' => __('Boxed slider', 'dgc-wordpress-theme'),
 										),
 					'type' => 'select'
 				),
@@ -56,15 +56,15 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 	// Only with sidebar enabled
 	$meta_boxes['dgc_page_general_settings'] = array(
 		'id'         => 'dgc_page_general_settings',
-		'title'      => __( 'Page settings', 'dgc' ),
+		'title'      => __( 'Page settings', 'dgc-wordpress-theme' ),
 		'pages'      => array( 'page'), 
 		'context'    => 'normal',
 		'priority'   => 'low',
 		'show_names' => true, 
 		'fields'     => array(
 			array(
-				'name' 		=> __( 'Layout', 'dgc' ),
-				'subname' 	=> __( 'Select a specific layout for this page.', 'dgc' ),
+				'name' 		=> __( 'Layout', 'dgc-wordpress-theme' ),
+				'subname' 	=> __( 'Select a specific layout for this page.', 'dgc-wordpress-theme' ),
 				'id'      	=> $prefix . 'page_layout',
 				'type' 	  	=> 'custom_layout_sidebars',
 				'default' 	=> '0'
@@ -75,15 +75,15 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 	
 	$meta_boxes['dgc_post_general_settings'] = array(
 		'id'         => 'dgc_post_general_settings',
-		'title'      => __( 'Post settings', 'dgc' ),
+		'title'      => __( 'Post settings', 'dgc-wordpress-theme' ),
 		'pages'      => array( 'post'), 
 		'context'    => 'normal',
 		'priority'   => 'low',
 		'show_names' => true, 
 		'fields'     => array(
 			array(
-				'name' 		=> __( 'Layout', 'dgc' ),
-				'subname' 	=> __( 'Select a specific layout for this post.', 'dgc' ),
+				'name' 		=> __( 'Layout', 'dgc-wordpress-theme' ),
+				'subname' 	=> __( 'Select a specific layout for this post.', 'dgc-wordpress-theme' ),
 				'id' 		=> $prefix . 'page_layout',
 				'type' 		=> 'custom_layout_sidebars',
 				'default' 	=> '0'

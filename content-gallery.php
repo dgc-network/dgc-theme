@@ -29,8 +29,8 @@
 
 		<div class="entry-content">
 			<?php if ( is_single() || ! get_post_gallery() ) : ?>
-				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'dgc' ) ); ?>
-				<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'dgc' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'dgc-wordpress-theme' ) ); ?>
+				<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'dgc-wordpress-theme' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 			<?php else : ?>
 				<?php echo get_post_gallery(); ?>
 			<?php endif; // is_single() ?>
@@ -40,13 +40,13 @@
 			<?php dgc_entry_meta(); ?>
 
 			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { ?>
-				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'dgc' ), __( '1 Comment', 'dgc' ), __( '% Comments', 'dgc' ) ); ?></span>
+				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'dgc-wordpress-theme' ), __( '1 Comment', 'dgc-wordpress-theme' ), __( '% Comments', 'dgc-wordpress-theme' ) ); ?></span>
 			<?php } ?>
 
 			<?php if ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
 				<?php get_template_part( 'author-bio' ); ?>
 			<?php endif; ?>
-			<?php edit_post_link( __( 'Edit', 'dgc' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php edit_post_link( __( 'Edit', 'dgc-wordpress-theme' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- .entry-meta -->
 	</div>	
 </article><!-- #post -->
