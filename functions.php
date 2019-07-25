@@ -17,9 +17,9 @@ if ( ! isset( $content_width ) )
 /*woocommerce theme support*/
 add_theme_support( 'woocommerce' );
 
-add_action( 'after_setup_theme', 'dgctheme_setup' );
+add_action( 'after_setup_theme', 'dgc_theme_setup' );
 
-function dgctheme_setup() {
+function dgc_theme_setup() {
     add_theme_support( 'wc-product-gallery-zoom' );
     add_theme_support( 'wc-product-gallery-lightbox' );
     add_theme_support( 'wc-product-gallery-slider' );
