@@ -4,7 +4,7 @@ require_once dirname( __FILE__ ) . '/plugin-activation.php';
 
 add_action( 'tgmpa_register', 'dgc_register_required_plugins' );
 /**
- * Register the required plugins for dgc-network theme.
+ * Register the required plugins for dgc-wordpress-theme.
  */
 function dgc_register_required_plugins() {
 
@@ -52,13 +52,13 @@ function dgc_register_required_plugins() {
 			'installing'                            => __( 'Installing Plugin: %s', 'dgc-wordpress-theme' ), // %1$s = plugin name
 			'oops'                                  => __( 'Something went wrong with the plugin API.', 'dgc-wordpress-theme' ),
 			'notice_can_install_required'     => _n_noop(
-				'dgc-network theme requires the following plugin: %1$s.',
-				'dgc-network theme requires the following plugins: %1$s.',
+				'dgc-wordpress-theme requires the following plugin: %1$s.',
+				'dgc-wordpress-theme requires the following plugins: %1$s.',
 				'dgc-wordpress-theme'
 			), // %1$s = plugin name(s).
 			'notice_can_install_recommended'  => _n_noop(
-				'dgc-network theme recommends the following plugin: %1$s.',
-				'dgc-network theme recommends the following plugins: %1$s.',
+				'dgc-wordpress-theme recommends the following plugin: %1$s.',
+				'dgc-wordpress-theme recommends the following plugins: %1$s.',
 				'dgc-wordpress-theme'
 			), // %1$s = plugin name(s).
 			'notice_ask_to_update'            => _n_noop(

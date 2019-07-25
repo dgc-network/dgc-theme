@@ -39,7 +39,7 @@ class dgc_theme_options_customizer {
 			'priority'          => 10,
 			'capability'        => 'edit_theme_options',
 			'theme_supports'    => '',
-			'title'             => __('dgc-network theme Options', 'dgc-wordpress-theme'),
+			'title'             => __('dgc-wordpress-theme Options', 'dgc-wordpress-theme'),
 			'description'       => '',
 		));
 		$type = 'option'; 

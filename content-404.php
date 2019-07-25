@@ -3,8 +3,8 @@
  * The template for displaying 404 single pages (Not Found).
  *
  * @package WordPress
- * @subpackage dgc-network theme
- * @since dgc-network theme 1.0
+ * @subpackage dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 ?>
 

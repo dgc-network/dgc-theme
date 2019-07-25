@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: dgc-network theme\n"
+"Project-Id-Version: dgc-wordpress-theme\n"
 "POT-Creation-Date: 2016-03-25 15:30+0200\n"
 "PO-Revision-Date: 2016-03-25 15:30+0200\n"
 "Last-Translator: dgc-network\n"
@@ -229,7 +229,7 @@ msgstr "نتیجه جستجو برای :  %s"
 
 #: functions.php:1925
 msgid ""
-"Attention! dgc-network theme version 2.0 got major updates. You may have a "
+"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
@@ -1816,7 +1816,7 @@ msgstr "بحش کپی رایت"
 
 #: inc/theme-options/theme-options.php:1210
 msgid ""
-"dgc-network theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
+"dgc-wordpress-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
 "a> Powered by: <a href=\"http://wordpress.org\">WordPress</a>"
 msgstr ""
 
@@ -2157,7 +2157,7 @@ msgstr ""
 #~ msgid "Replace default theme copyright information and links."
 #~ msgstr "تنطیمت کپی رایت و لینکهای آن"
 
-#~ msgid "dgc-network theme Options"
+#~ msgid "dgc-wordpress-theme Options"
 #~ msgstr "تنظیمات پوسته فرویت فول"
 
 #~ msgid "Enable default css"

@@ -1,9 +1,9 @@
 <?php
 /**
- * dgc-network theme Theme Options
+ * dgc-wordpress-theme Theme Options
  *
- * @package dgc-network theme
- * @since dgc-network theme 1.0
+ * @package dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 
 /**
@@ -15,7 +15,7 @@
  * which is used when the option is saved, to ensure that our option values are properly
  * formatted, and safe.
  *
- * @since dgc-network theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
 class dgc_theme_options {
 	public $args = array();
@@ -1191,7 +1191,7 @@ class dgc_theme_options {
 					'info'      => __( 'Replace default theme copyright information and links', 'dgc-wordpress-theme' ),
 					'box-title' => __( 'Copyright section', 'dgc-wordpress-theme' ),
 					'type'      => 'textarea',
-					'default'   => __( 'dgc-network theme by <a href="https://github.com/dgc-network/">dgc-network</a> Powered by: <a href="http://wordpress.org">WordPress</a>',
+					'default'   => __( 'dgc-wordpress-theme by <a href="https://github.com/dgc-network/">dgc-network</a> Powered by: <a href="http://wordpress.org">WordPress</a>',
 						'dgc-wordpress-theme' ),
 				)
 			)
@@ -1304,7 +1304,7 @@ class dgc_theme_options {
 		/*
 		* Add our theme options page to the admin menu.
 		* This function is attached to the admin_menu action hook.
-		* @since dgc-network theme 1.0
+		* @since dgc-wordpress-theme 1.0
 		*/
 		$admin_page = add_theme_page(
 			__( 'Theme Options', 'dgc-wordpress-theme' ),                             // Name of page
@@ -1477,7 +1477,7 @@ class dgc_theme_options {
 	/**
 	 * Renders the Theme Options administration screen.
 	 *
-	 * @since dgc-network theme 1.0
+	 * @since dgc-wordpress-theme 1.0
 	 */
 	public function dgc_theme_options_render_page() {
 		?>

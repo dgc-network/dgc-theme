@@ -250,7 +250,7 @@ msgstr "Suchergebnisse für: %s"
 
 #: functions.php:1925
 msgid ""
-"Attention! dgc-network theme version 2.0 got major updates. You may have a "
+"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
@@ -1917,7 +1917,7 @@ msgstr "Copyright-Abschnitt"
 
 #: inc/theme-options/theme-options.php:1210
 msgid ""
-"dgc-network theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
+"dgc-wordpress-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
 "a> Powered by: <a href=\"http://wordpress.org\">WordPress</a>"
 msgstr ""
 
@@ -2278,18 +2278,18 @@ msgstr "Platzhalter"
 #~ msgid "&larr;"
 #~ msgstr "&larr;"
 
-#~ msgid "dgc-network theme requires the following plugin: %1$s."
-#~ msgstr "dgc-network theme benötigt folgendes Plugin: %1$s."
+#~ msgid "dgc-wordpress-theme requires the following plugin: %1$s."
+#~ msgstr "dgc-wordpress-theme benötigt folgendes Plugin: %1$s."
 
-#~ msgid "dgc-network theme recommends the following plugin: %1$s."
-#~ msgstr "dgc-network theme empfiehlt folgendes Plugin: %1$s."
+#~ msgid "dgc-wordpress-theme recommends the following plugin: %1$s."
+#~ msgstr "dgc-wordpress-theme empfiehlt folgendes Plugin: %1$s."
 
 #~ msgid ""
 #~ "The following plugin needs to be updated to its latest version to ensure "
-#~ "maximum compatibility with dgc-network theme: %1$s."
+#~ "maximum compatibility with dgc-wordpress-theme: %1$s."
 #~ msgstr ""
 #~ "Das folgende Plugin muss auf die neueste Version aktualisiert werden, um "
-#~ "eine maximale Kompatibilität mit dem dgc-network theme zu gewährleisten: "
+#~ "eine maximale Kompatibilität mit dem dgc-wordpress-theme zu gewährleisten: "
 #~ "%1$s."
 
 #~ msgid "Activate installed plugin"
@@ -2442,7 +2442,7 @@ msgstr "Platzhalter"
 #~ msgid "Something went wrong."
 #~ msgstr "Irgendwas ist schiefgegangen."
 
-#~ msgid "dgc-network theme by"
+#~ msgid "dgc-wordpress-theme by"
 #~ msgstr "Theme dgc von"
 
 #~ msgid "dgc-network"
@@ -2457,8 +2457,8 @@ msgstr "Platzhalter"
 #~ msgid "WordPress"
 #~ msgstr "WordPress"
 
-#~ msgid "dgc-network theme Options"
-#~ msgstr "dgc-network theme-Optionen"
+#~ msgid "dgc-wordpress-theme Options"
+#~ msgstr "dgc-wordpress-theme-Optionen"
 
 #~ msgid "Advanced theme settings"
 #~ msgstr "Erweiterte Theme-Einstellungen"

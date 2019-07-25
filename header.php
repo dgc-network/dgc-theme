@@ -3,8 +3,8 @@
 * The Header for our theme. 
 * Displays all of the <head> section and everything up till <div id="main"> 
 * @package WordPress 
-* @subpackage dgc-network theme 
-* @since dgc-network theme 1.0 
+* @subpackage dgc-wordpress-theme 
+* @since dgc-wordpress-theme 1.0 
 **/
 ?><!DOCTYPE html>
 <!--[if IE 7]><html class="ie ie7" <?php language_attributes(); ?>><![endif]-->

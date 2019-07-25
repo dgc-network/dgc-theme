@@ -5,15 +5,15 @@
  * Eventually, some of the functionality here could be replaced by core features
  *
  * @package WordPress
- * @subpackage dgc-network theme
- * @since dgc-network theme 1.0
+ * @subpackage dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 
 if ( ! function_exists( 'dgc_content_nav' ) ):
 /**
  * Display navigation to next/previous pages when applicable
  *
- * @since dgc-network theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
 function dgc_content_nav( $nav_id ) {
 	global $wp_query;
@@ -54,7 +54,7 @@ if ( ! function_exists( 'dgc_comment' ) ) :
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
  *
- * @since dgc-network theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
 function dgc_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
@@ -115,7 +115,7 @@ if ( ! function_exists( 'dgc_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  *
- * @since dgc-network theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
 function dgc_posted_on() {
 	printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'dgc-wordpress-theme' ),
@@ -133,7 +133,7 @@ endif;
 /**
  * Returns true if a blog has more than 1 category
  *
- * @since dgc-network theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
 function dgc_categorized_blog() {
 	if ( false === ( $all_the_cool_cats = get_transient( 'all_the_cool_cats' ) ) ) {
@@ -160,7 +160,7 @@ function dgc_categorized_blog() {
 /**
  * Flush out the transients used in dgc_categorized_blog
  *
- * @since dgc-network theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
 function dgc_category_transient_flusher() {
 	delete_transient( 'all_the_cool_cats' );

@@ -8,8 +8,8 @@
  * located in the functions.php file.
  *
  * @package WordPress
- * @subpackage dgc-network theme
- * @since dgc-network theme 1.0
+ * @subpackage dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 ?>
 

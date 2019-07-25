@@ -13,8 +13,8 @@
 	<?php } // if ( ! empty( $header_image ) ) ?>
 
  *
- * @package dgc-network theme
- * @since dgc-network theme 1.0
+ * @package dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 
 /**
@@ -31,7 +31,7 @@
  * @uses dgc_admin_header_style()
  * @uses dgc_admin_header_image()
  *
- * @package dgc-network theme
+ * @package dgc-wordpress-theme
  */
 function dgc_custom_header_setup() {
 	$args = array(
@@ -68,8 +68,8 @@ add_action( 'after_setup_theme', 'dgc_custom_header_setup' );
  * @todo Remove this function when WordPress 3.6 is released.
  * @return stdClass All properties represent attributes of the curent header image.
  *
- * @package dgc-network theme
- * @since dgc-network theme 1.1
+ * @package dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.1
  */
 
 if ( ! function_exists( 'get_custom_header' ) ) {
@@ -90,7 +90,7 @@ if ( ! function_exists( 'dgc_header_style' ) ) :
  *
  * @see dgc_custom_header_setup().
  *
- * @since dgc-network theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
 function dgc_header_style() {
 
@@ -130,7 +130,7 @@ if ( ! function_exists( 'dgc_admin_header_style' ) ) :
  *
  * @see dgc_custom_header_setup().
  *
- * @since dgc-network theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
 function dgc_admin_header_style() {
 ?>
@@ -160,7 +160,7 @@ if ( ! function_exists( 'dgc_admin_header_image' ) ) :
  *
  * @see dgc_custom_header_setup().
  *
- * @since dgc-network theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
 function dgc_admin_header_image() { ?>
 	<div id="headimg">
