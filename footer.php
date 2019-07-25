@@ -16,19 +16,19 @@
 			<div class="container">
 				<div class="sixteen columns">
 					<div class="site-info">
-						<?php fruitful_get_footer_text(); ?>
+						<?php dgc_get_footer_text(); ?>
 					</div><!-- .site-info -->
-					<?php if (!fruitful_is_social_header()) { 	
-							   fruitful_get_socials_icon(); 
+					<?php if (!dgc_is_social_header()) { 	
+							   dgc_get_socials_icon(); 
 						  } 
 					?>
 				</div>
 			</div>
 			<div id="back-top">
-				<a rel="nofollow" href="#top" title="<?php _e('Back to top', 'fruitful'); ?>">&uarr;</a>
+				<a rel="nofollow" href="#top" title="<?php _e('Back to top', 'dgc'); ?>">&uarr;</a>
 			</div>
 		</footer><!-- #colophon .site-footer -->
-	<!--WordPress Development by Fruitful Code-->
+	<!--WordPress Development by dgc Code-->
 <?php wp_footer(); ?>
 </body>
 </html>

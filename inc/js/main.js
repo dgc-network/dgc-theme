@@ -46,8 +46,8 @@ jQuery(document).ready(function() {
 	/*Displayd current menu tab*/
 	var currMenuTab = jQuery.cookie("curr_menu_tab");
 	if (currMenuTab) {
-		var currTab = jQuery('.form-admin-fruitful .content .menu-options ul li').find('#' + currMenuTab);
-					  jQuery('.form-admin-fruitful .content .menu-options ul li').removeClass("current");
+		var currTab = jQuery('.form-admin-dgc .content .menu-options ul li').find('#' + currMenuTab);
+					  jQuery('.form-admin-dgc .content .menu-options ul li').removeClass("current");
 			currTab.parent().addClass("current");		
 			currTab.parent().css({'border-top':'1px solid #E5E5E5'});		
 			currTab.parent().css({'border-bottom':'1px solid #E5E5E5'});		
@@ -58,7 +58,7 @@ jQuery(document).ready(function() {
 			
 			jQuery('#settings-section-' + index_a).fadeIn("slow");  
 	} else {
-		var currTab = jQuery('.form-admin-fruitful .content .menu-options ul li').first();
+		var currTab = jQuery('.form-admin-dgc .content .menu-options ul li').first();
 			currTab.addClass("current");		
 			currTab.css({'border-top':'1px solid #E5E5E5'});		
 			currTab.css({'border-bottom':'1px solid #E5E5E5'});		
@@ -69,14 +69,14 @@ jQuery(document).ready(function() {
 	}
 	
 	
-	jQuery('.form-admin-fruitful .content .menu-options ul li').click(function() {  	
-		jQuery('.form-admin-fruitful .content .menu-options ul li').removeClass("current");		
+	jQuery('.form-admin-dgc .content .menu-options ul li').click(function() {  	
+		jQuery('.form-admin-dgc .content .menu-options ul li').removeClass("current");		
 		jQuery(this).addClass("current");		
 		jQuery(this).css({'border-top':'1px solid #E5E5E5'});		
 		jQuery(this).css({'border-bottom':'1px solid #E5E5E5'});		
 		jQuery(this).prev().css({'border-bottom':'0'});		
 		jQuery(this).next().css({'border-top':'0'});			
-		jQuery('.form-admin-fruitful .content .settings-section').hide();	
+		jQuery('.form-admin-dgc .content .settings-section').hide();	
 		var index_a = jQuery(this).find('a').attr("id");		
 			index_a = index_a.substr(index_a.indexOf('_') + 1);		
 			jQuery('#settings-section-' + index_a).fadeIn("slow");  
@@ -114,7 +114,7 @@ jQuery(document).ready(function() {
 	return false;	
 	});				
 	
-	jQuery('#form-admin-fruitful').submit(function() {
+	jQuery('#form-admin-dgc').submit(function() {
 
 		var data = jQuery(this).serialize();
 		jQuery.post(ajaxurl, data, function(response) {
@@ -156,7 +156,7 @@ jQuery(document).ready(function() {
 			submit: function(e,v,m,f){
 				if (v) {
 					var data = {										
-						action: 	'fruitful_reset_btn',										
+						action: 	'dgc_reset_btn',										
 						type:   	'reset',										
 						data: 		''									
 						};														
@@ -235,8 +235,8 @@ function show_message_import() {
 	
 jQuery.fn.center = function () {    
 		var heightRatio = (
-			jQuery('#form-admin-fruitful').height() != 0)  ? this.outerHeight() / jQuery('#form-admin-fruitful').height() : 1;    
-			var widthRatio 	= (jQuery('#form-admin-fruitful').width() != 0)   ? this.outerWidth() / jQuery('#form-admin-fruitful').width() : 1;    
+			jQuery('#form-admin-dgc').height() != 0)  ? this.outerHeight() / jQuery('#form-admin-dgc').height() : 1;    
+			var widthRatio 	= (jQuery('#form-admin-dgc').width() != 0)   ? this.outerWidth() / jQuery('#form-admin-dgc').width() : 1;    
 			this.css({
 				position: 'fixed',        
 				margin: 0,        
@@ -246,8 +246,8 @@ jQuery.fn.center = function () {
 	}
 jQuery.fn.center_rtl = function () {    
 		var heightRatio = (
-			jQuery('#form-admin-fruitful').height() != 0)  ? this.outerHeight() / jQuery('#form-admin-fruitful').height() : 1;    
-			var widthRatio 	= (jQuery('#form-admin-fruitful').width() != 0)   ? this.outerWidth() / jQuery('#form-admin-fruitful').width() : 1;    
+			jQuery('#form-admin-dgc').height() != 0)  ? this.outerHeight() / jQuery('#form-admin-dgc').height() : 1;    
+			var widthRatio 	= (jQuery('#form-admin-dgc').width() != 0)   ? this.outerWidth() / jQuery('#form-admin-dgc').width() : 1;    
 			this.css({
 				position: 'fixed',        
 				margin: 0,        

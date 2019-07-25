@@ -11,15 +11,15 @@
  * the readme will list any important changes.
  *
  * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @author 		WooThemes/Fruitfulcode
+ * @author 		WooThemes/dgc-network
  * @package 	WooCommerce/Templates
  * @version     3.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-$woo_sidebar = fruitful_get_woo_sidebar();
-$theme_options = fruitful_get_theme_options();
+$woo_sidebar = dgc_get_woo_sidebar();
+$theme_options = dgc_get_theme_options();
 
 $prod_num_row_class = '';
 if (is_shop() || is_product_category() || is_tax('product_tag')) {

@@ -1,10 +1,10 @@
 <?php 
 
 /*Adding cutom metabox filed*/
-/*Made by fruitful*/
+/*Made by dgc*/
 	
-add_action( 'cmb_render_custom_layout_sidebars', 'fruitful_custom_layout_sidebars', 10, 2 );
-function fruitful_custom_layout_sidebars( $field, $meta ) {
+add_action( 'cmb_render_custom_layout_sidebars', 'dgc_custom_layout_sidebars', 10, 2 );
+function dgc_custom_layout_sidebars( $field, $meta ) {
 	$layout = 0;
 	$layout = $meta ? $meta : $field['default'];
     ?>
@@ -31,8 +31,8 @@ function fruitful_custom_layout_sidebars( $field, $meta ) {
 }
 
 
-add_action( 'admin_enqueue_scripts', 'fruitful_custom_layout_sidebars_script' );
-function fruitful_custom_layout_sidebars_script($hook) {
+add_action( 'admin_enqueue_scripts', 'dgc_custom_layout_sidebars_script' );
+function dgc_custom_layout_sidebars_script($hook) {
 	wp_register_script( 'cmb-layouts', CMB_META_BOX_URL . 'js/layout/layout.js'  );
 	wp_register_style ( 'cmb-layouts', CMB_META_BOX_URL . 'js/layout/layout.css' );
 	

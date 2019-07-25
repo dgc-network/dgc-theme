@@ -8,9 +8,9 @@ We want to make our product even better and better and we need users support and
 
 Works perfect with WooCommerce till version 3.4
 
-Fruitful PRO – WordPress responsive theme contains all the options of FREE version plus more options like ability to change width for container grid and support latest WooCommerce version. 
+dgc PRO – WordPress responsive theme contains all the options of FREE version plus more options like ability to change width for container grid and support latest WooCommerce version. 
 
-Find all the details by link https://fruitfulcode.com/product/fruitful-pro
+Find all the details by link https://dgc-network.com/product/dgc-pro
 
 Thank you.
 
@@ -18,9 +18,9 @@ Thank you.
     Copyright
 -------------------------------------------------------
 
-Fruitful is a free WordPress responsive theme with theme options panel, designed and developed in Fruitful Code
+dgc is a free WordPress responsive theme with theme options panel, designed and developed in dgc Code
 Feel free to use and modify this theme as you like.
-Fruitful is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
+dgc is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 
 -------------------------------------------------------
     Demo
@@ -37,8 +37,8 @@ If you want to get demo content pages like on demo website
     Installation
 -------------------------------------------------------
 
-1. Upload the "Fruitful" folder to the "/wp-content/themes/" directory
-or find in Appearance > Themes > Install theme, type “Fruitful” in search field.
+1. Upload the "dgc" folder to the "/wp-content/themes/" directory
+or find in Appearance > Themes > Install theme, type “dgc” in search field.
 2. Activate the Theme through the 'Themes' menu in WordPress
 3. Go to "Appearance" > Theme options
 4. Config theme as you need.
@@ -49,7 +49,7 @@ or find in Appearance > Themes > Install theme, type “Fruitful” in search fi
 -------------------------------------------------------
 
 === Documentation ===
-https://github.com/Fruitfulcode/Fruitful/wiki
+https://github.com/dgc-network/dgc/wiki
 
 === WP Version ===
 As this theme uses the WordPress customizer feature for most options, it requires at least version 3.4 to work properly.
@@ -60,7 +60,7 @@ Theme supported 2 types of html layout. Default responsive setting which adapt f
 Uncheck arrow below if you need static website display.
 
 === Theme options ===
-Fruitful has custom theme options panel, for easy setup and config theme setting for your needs.
+dgc has custom theme options panel, for easy setup and config theme setting for your needs.
 
 === Upload logo, backgroud, favicon ===
 Go to the customizer screen in the logo and favicon section and upload your images.
@@ -314,7 +314,7 @@ Files: .pot, ru_Ru.po, ru_Ru.mo icluded. Default language is english.
 * Improvement: Custom menu widget, RTL support
 * Improvement: WooCommerce CSS
 * Improvement: WooCommerce 4 products per row, by default
-* Improvement: FontAwesome script activation with Fruitful shortcodes
+* Improvement: FontAwesome script activation with dgc shortcodes
 * Improvement: Ability to translate navigation labels
 * Improvement: Sticky header now with background image
 * Bug fix: WooCommerce Related products
@@ -369,7 +369,7 @@ Files: .pot, ru_Ru.po, ru_Ru.mo icluded. Default language is english.
 * Improvements: Sticky header effect
 * Improvements: WooCommerce additional CSS styles
 * Improvements: text domain updates
-* Updates: fruitful.pot
+* Updates: dgc.pot
 * Bug fix: Nivo slider skins
 * Bug fix: WooCommerce number of products in row single product
 
@@ -545,7 +545,7 @@ Files: .pot, ru_Ru.po, ru_Ru.mo icluded. Default language is english.
 * XSS vulnerabilities bug fix
 * Slider - added ability to add link to slider images
 * Shortcodes - source code optimization and new features
-* Shorcode [slider] changed to [fruitful_slider]
+* Shorcode [slider] changed to [dgc_slider]
 * Backlinks in footer added <nofollow> for all pages except home
 * Fancybox now working with class="fancybox"
 * Skype icon added call on cliks
@@ -561,7 +561,7 @@ Files: .pot, ru_Ru.po, ru_Ru.mo icluded. Default language is english.
 05.11.13
 
 * Comments on pages set by default in theme options
-* Optimization fruitful_get_responsive_style function
+* Optimization dgc_get_responsive_style function
 * Css changes
 * Update descriptions for theme options.
 * Fonts options changed from content to <body>

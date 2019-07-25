@@ -9,6 +9,6 @@
 
 get_header(); ?>
 
-	<?php fruitful_get_content_with_custom_sidebar('homepage'); ?>
+	<?php dgc_get_content_with_custom_sidebar('homepage'); ?>
 		
 <?php get_footer(); ?>

@@ -11,12 +11,12 @@
  * the readme will list any important changes.
  *
  * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @author 		WooThemes/Fruitfulcode
+ * @author 		WooThemes/dgc-network
  * @package 	WooCommerce/Templates
  * @version     3.3.0
  */
 
-$woo_sidebar = fruitful_get_woo_sidebar();
+$woo_sidebar = dgc_get_woo_sidebar();
 
 if ($woo_sidebar == 1 || $woo_sidebar == 4 || $woo_sidebar == 5) {
     echo '</div></div></div>';
