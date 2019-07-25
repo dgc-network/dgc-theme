@@ -1542,7 +1542,7 @@ class dgc_theme_options {
 						echo ' ';
 						_e( 'on our website', 'dgc-wordpress-theme' );
 						?></p>
-                </div>
+				</div>				
                 <div class="sidebar-promo-widget promo-about">
                     <h3><?php _e( 'dgc PRO', 'dgc-wordpress-theme' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
@@ -1561,7 +1561,7 @@ class dgc_theme_options {
 						echo '<li><span>Support</span> latest <a target="_blank" href="https://wordpress.org/plugins/woocommerce/">WooCommerce</a></li>';
 						echo '<li><span>1 hour for customization</span> of your theme by our specialists.</li>';
 						?></ul>
-                </div>
+				</div>				
             </div>
         </div>
 		<?php
