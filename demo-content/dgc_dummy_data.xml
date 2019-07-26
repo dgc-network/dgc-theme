@@ -35,7 +35,7 @@
 	<wp:base_site_url>http://dgc.network</wp:base_site_url>
 	<wp:base_blog_url>http://dgc.network</wp:base_blog_url>
 
-	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[mail@dgc-network.com]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[mail@dgc.network]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
 	<wp:category><wp:term_id>2</wp:term_id><wp:category_nicename><![CDATA[aciform]]></wp:category_nicename><wp:category_parent><![CDATA[]]></wp:category_parent><wp:cat_name><![CDATA[aciform]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>3</wp:term_id><wp:category_nicename><![CDATA[antiquarianism]]></wp:category_nicename><wp:category_parent><![CDATA[]]></wp:category_parent><wp:cat_name><![CDATA[antiquarianism]]></wp:cat_name></wp:category>
@@ -3933,7 +3933,7 @@ It should not be displayed by the theme.]]></content:encoded>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[http://support.dgc-network.com/hc/en-us/requests/new]]></wp:meta_value>
+			<wp:meta_value><![CDATA[http://support.dgc.network/hc/en-us/requests/new]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -3988,7 +3988,7 @@ It should not be displayed by the theme.]]></content:encoded>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[http://support.dgc-network.com/hc/en-us/categories/200203076-dgc-wordpress-theme]]></wp:meta_value>
+			<wp:meta_value><![CDATA[http://support.dgc.network/hc/en-us/categories/200203076-dgc-wordpress-theme]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -4894,7 +4894,7 @@ This is some text after the Tiled Gallery just to make sure that everything spac
 		<wp:comment>
 			<wp:comment_id>2</wp:comment_id>
 			<wp:comment_author><![CDATA[admin]]></wp:comment_author>
-			<wp:comment_author_email><![CDATA[dgc-network@dgc-network.com]]></wp:comment_author_email>
+			<wp:comment_author_email><![CDATA[dgc-network@dgc.network]]></wp:comment_author_email>
 			<wp:comment_author_url></wp:comment_author_url>
 			<wp:comment_author_IP><![CDATA[91.223.223.166]]></wp:comment_author_IP>
 			<wp:comment_date><![CDATA[2014-09-02 10:48:16]]></wp:comment_date>

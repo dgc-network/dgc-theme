@@ -1191,7 +1191,7 @@ class dgc_theme_options {
 					'info'      => __( 'Replace default theme copyright information and links', 'dgc' ),
 					'box-title' => __( 'Copyright section', 'dgc' ),
 					'type'      => 'textarea',
-					'default'   => __( 'dgc-wordpress-theme by <a href="https://github.com/dgc-network/">dgc-network</a> Powered by: <a href="http://wordpress.org">WordPress</a>',
+					'default'   => __( 'Powered by: dgc-wordpress-theme by <a href="https://github.com/dgc-network/">dgc-network</a>',
 						'dgc' ),
 				)
 			)
@@ -1324,7 +1324,7 @@ class dgc_theme_options {
 
 		/* Add the main siteadmin menu item */
 		$wp_admin_bar->add_menu( array(
-			'id'    => 'dgctheme_options',
+			'id'    => 'dgc_theme_options',
 			'title' => __( 'Theme Options', 'dgc' ),
 			'href'  => admin_url( 'admin.php?page=theme_options' )
 		) );
@@ -1498,7 +1498,7 @@ class dgc_theme_options {
 							$idx = 0;
 							$idm = 0;
 							foreach ( $this->sections as $section => $data ) {
-								echo '<li id="' . $section . '"><a  id="item_' . $idx ++ . '" href="javascript:void(0)"><span class="menu-img" id="menu_img_' . $idm ++ . '"></span><span class="menu-text">' . $data['title'] . '</a></li>';
+								echo '<li id="' . $section . '"><a id="item_' . $idx ++ . '" href="javascript:void(0)"><span class="menu-img" id="menu_img_' . $idm ++ . '"></span><span class="menu-text">' . $data['title'] . '</a></li>';
 							}
 							?>
 
@@ -1522,11 +1522,11 @@ class dgc_theme_options {
                     <h3><?php _e( 'Support', 'dgc' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
 						_e( 'If You faced with problems or find error or bug, please', 'dgc' );
-						echo ' <a target="_blank" href="http://dgc-network.zendesk.com/hc/en-us/requests/new">';
+						echo ' <a target="_blank" href="http://dgc.zendesk.com/hc/en-us/requests/new">';
 						_e( 'submit request.', 'dgc' );
 						echo '</a> ';
 						_e( 'On official ', 'dgc' );
-						echo ' <a target="_blank" href="http://wordpress.org/support/theme/dgc">';
+						echo ' <a target="_blank" href="http://wordpress.org/support/theme/dgc-wordpress-theme">';
 						_e( 'Support forum', 'dgc' );
 						echo '</a> ';
 						_e( 'You may find answers on Your questions.', 'dgc' );
@@ -1544,13 +1544,13 @@ class dgc_theme_options {
 						?></p>
                 </div>
                 <div class="sidebar-promo-widget promo-about">
-                    <h3><?php _e( 'dgc-wordpress-theme PRO', 'dgc' ); ?></h3>
+                    <h3><?php _e( 'dgc-wordpress-theme', 'dgc' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
-						echo ' <a target="_blank" href="https://dgc-network.com/product/dgc-pro">';
-						_e( 'dgc-wordpress-theme PRO - WordPress responsive theme', 'dgc' );
+						echo ' <a target="_blank" href="https://dgc.network/product/dgc-wordpress-theme">';
+						_e( 'dgc-wordpress-theme - WordPress responsive theme', 'dgc' );
 						echo '</a> ';
 						_e( ' that contains all the options of ', 'dgc' );
-						echo ' <a target="_blank" href="https://wordpress.org/themes/dgc/">';
+						echo ' <a target="_blank" href="https://wordpress.org/themes/dgc-wordpress-theme/">';
 						_e( 'FREE version', 'dgc' );
 						echo '</a> ';
 						_e( ' plus:', 'dgc' );
