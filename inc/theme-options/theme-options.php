@@ -7,17 +7,17 @@
  */
 
 /**
- * Register the form setting for our dgc_options array.
+ * Register the form setting for our fruitful_options array.
  *
  * This function is attached to the admin_init action hook.
  *
- * This call to register_setting() registers a validation callback, dgc_theme_options_validate(),
+ * This call to register_setting() registers a validation callback, fruitful_theme_options_validate(),
  * which is used when the option is saved, to ensure that our option values are properly
  * formatted, and safe.
  *
  * @since Fruitful theme 1.0
  */
-class dgc_theme_options {
+class fruitful_theme_options {
 	public $args = array();
 	public $sections = array();
 
@@ -25,7 +25,7 @@ class dgc_theme_options {
 		add_action( 'init', array( $this, 'init_settings' ), 11 );
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
 		add_action( 'admin_menu', array( $this, 'add_menu_item' ) );
-		add_action( 'admin_bar_menu', array( $this, 'dgc_add_custom_link_options' ), 1000 );
+		add_action( 'admin_bar_menu', array( $this, 'fruitful_add_custom_link_options' ), 1000 );
 	}
 
 	public function init_settings() {
@@ -658,7 +658,7 @@ class dgc_theme_options {
 					'label'   => __( 'Headers', 'fruitful' ),
 					'info'    => __( 'Choose font-family for all headlines.', 'fruitful' ),
 					'type'    => 'font',
-					'options' => dgc_fonts_list(),
+					'options' => fruitful_fonts_list(),
 					'default' => 'Open Sans, sans-serif',
 				),
 				array(
@@ -666,7 +666,7 @@ class dgc_theme_options {
 					'label'   => __( 'Menu', 'fruitful' ),
 					'info'    => __( 'Choose font-family for primary menu.', 'fruitful' ),
 					'type'    => 'font',
-					'options' => dgc_fonts_list(),
+					'options' => fruitful_fonts_list(),
 					'default' => 'Open Sans, sans-serif',
 				),
 				array(
@@ -674,7 +674,7 @@ class dgc_theme_options {
 					'label'   => __( 'Body', 'fruitful' ),
 					'info'    => __( 'Choose font-family for content.', 'fruitful' ),
 					'type'    => 'font',
-					'options' => dgc_fonts_list(),
+					'options' => fruitful_fonts_list(),
 					'default' => 'Open Sans, sans-serif',
 				),
 				array(
@@ -1024,7 +1024,7 @@ class dgc_theme_options {
 					'id'    => 'slides',
 					'type'  => 'slides',
 					'label' => __( 'Slides', 'fruitful' ),
-					'info'  => __( 'Add images to slider (Supported files .png, .jpg, .gif). If you want to change order, just drag and drop it. Image size for slides is original from media gallery, please upload images in same size, to get best display on page. To display slider in needed place use shortcode [dgc_slider]. Current theme version support only one slider per website.',
+					'info'  => __( 'Add images to slider (Supported files .png, .jpg, .gif). If you want to change order, just drag and drop it. Image size for slides is original from media gallery, please upload images in same size, to get best display on page. To display slider in needed place use shortcode [fruitful_slider]. Current theme version support only one slider per website.',
 						'fruitful' ),
 				)
 			)
@@ -1294,8 +1294,8 @@ class dgc_theme_options {
 
 	public function setArguments() {
 		$this->args = array(
-			'opt_name'  => 'dgc_theme_options', // Database option
-			'opt_group' => 'dgc_options',         // Options group
+			'opt_name'  => 'fruitful_theme_options', // Database option
+			'opt_group' => 'fruitful_options',         // Options group
 			'opt_slug'  => 'theme_options',          // Menu slug
 		);
 	}
@@ -1311,12 +1311,12 @@ class dgc_theme_options {
 			__( 'Theme Options', 'fruitful' ),                             // Label in menu
 			'edit_theme_options',                                     // Capability required
 			$this->args['opt_slug'],                                 // Menu slug, used to uniquely identify the page
-			array( &$this, 'dgc_theme_options_render_page' )    // Function that renders the options page
+			array( &$this, 'fruitful_theme_options_render_page' )    // Function that renders the options page
 		);
 		add_action( 'admin_print_scripts-' . $admin_page, array( &$this, 'settings_assets' ) );
 	}
 
-	public function dgc_add_custom_link_options() {
+	public function fruitful_add_custom_link_options() {
 		global $wp_admin_bar, $wpdb;
 		if ( ! is_super_admin() || ! is_admin_bar_showing() ) {
 			return;
@@ -1332,8 +1332,8 @@ class dgc_theme_options {
 
 	public function settings_assets() {
 		wp_print_scripts( 'jquery-ui-tabs' );
-		dgc_add_jquery_script();
-		dgc_add_admin_style();
+		fruitful_add_jquery_script();
+		fruitful_add_admin_style();
 	}
 
 	public function display_field( $data = array(), $echo = true ) {
@@ -1344,7 +1344,7 @@ class dgc_theme_options {
 		$type = ( isset( $field['type'] ) ) ? $field['type'] : '';
 
 		$option_name = $id;
-		$option      = dgc_get_theme_options();
+		$option      = fruitful_get_theme_options();
 
 		if ( isset( $option ) ) {
 			$data = $option[ $option_name ];
@@ -1449,7 +1449,7 @@ class dgc_theme_options {
 				$html .= '</div>';
 				break;
 			case 'slides':
-				dgc_slider_images();
+				fruitful_slider_images();
 				break;
 		}
 		if ( ! $echo ) {
@@ -1479,7 +1479,7 @@ class dgc_theme_options {
 	 *
 	 * @since Fruitful theme 1.0
 	 */
-	public function dgc_theme_options_render_page() {
+	public function fruitful_theme_options_render_page() {
 		?>
         <div class="wrap">
             <h2></h2>
@@ -1506,15 +1506,15 @@ class dgc_theme_options {
                     </div>
 					<?php
 					settings_fields( $this->args['opt_group'] );
-					dgc_custom_do_settings_sections( $this->args['opt_slug'] );
+					fruitful_custom_do_settings_sections( $this->args['opt_slug'] );
 					?>
 
                 </div>
                 <div class="footer">
 					<?php submit_button( __( 'Save', 'fruitful' ) ); ?>
                 </div>
-                <input type="hidden" name="action" value="dgc_theme_options_action"/>
-                <input type="hidden" name="security" value="<?php echo wp_create_nonce( 'dgc_theme_data' ); ?>"/>
+                <input type="hidden" name="action" value="fruitful_theme_options_action"/>
+                <input type="hidden" name="security" value="<?php echo wp_create_nonce( 'fruitful_theme_data' ); ?>"/>
             </form>
 
             <div id="sidebar-promo" class="sidebar-promo">
@@ -1568,5 +1568,5 @@ class dgc_theme_options {
 	}
 }
 
-global $dgc_theme_options;
-$dgc_theme_options = new dgc_theme_options();
+global $fruitful_theme_options;
+$fruitful_theme_options = new fruitful_theme_options();

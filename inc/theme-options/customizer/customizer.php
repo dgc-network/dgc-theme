@@ -1,5 +1,5 @@
 <?php
-class dgc_theme_options_customizer {
+class fruitful_theme_options_customizer {
 	public $sections = array();
 	public $args     = array();
 
@@ -25,14 +25,14 @@ class dgc_theme_options_customizer {
 	}	
 
 	public function settings_fields () {
-		global $dgc__options;
-		$this->sections = $dgc__options->settings_fields();
+		global $fruitful_theme_options;
+		$this->sections = $fruitful_theme_options->settings_fields();
 	}
 
 	public function register_settings ($wp_customize) {
-		global $dgc__options;
-		$opt_name = $dgc__options->args['opt_name'];	
-		$theme_options  = dgc_heme_options();
+		global $fruitful_theme_options;
+		$opt_name = $fruitful_theme_options->args['opt_name'];	
+		$theme_options  = fruitful_get_theme_options();
 		$height = (isset($theme_options['header_height'])) ? $theme_options['header_height'] : 80;
 		
 		$wp_customize->add_panel($opt_name, array(
@@ -67,7 +67,7 @@ class dgc_theme_options_customizer {
 					$section 		= (isset($option['id'])) ? esc_attr($option['id']) : '';
 			
 					if ($f_type == 'checkbox') {
-						$sanitize =  'dgc__sanitize_checkbox';
+						$sanitize =  'fruitful_theme_sanitize_checkbox';
 					}	
 					else {
 						$sanitize = '';
@@ -84,7 +84,7 @@ class dgc_theme_options_customizer {
 							$g_id 			= (isset($group['id'])) ? esc_attr($group['id']) : '';	
 
 							if ($g_type == 'checkbox') {
-								$sanitize =  'dgc__sanitize_checkbox';
+								$sanitize =  'fruitful_theme_sanitize_checkbox';
 							}
 							else {
 								$sanitize = '';
@@ -273,6 +273,6 @@ class dgc_theme_options_customizer {
 		$wp_customize->remove_section('slider');	
 	}
 }	
-global $dgc__options_customizer;	
-$dgc__options_customizer = new dgc_tdgc_ons_customizer();
+global $fruitful_theme_options_customizer;	
+$fruitful_theme_options_customizer = new fruitful_theme_options_customizer();
 

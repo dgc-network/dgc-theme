@@ -11,7 +11,7 @@
 
 get_header(); ?>
 	
-	<?php dgc_get_content_with_custom_sidebar('blogright'); ?>
+	<?php fruitful_get_content_with_custom_sidebar('blogright'); ?>
 	
 <?php 
 	get_footer(); 

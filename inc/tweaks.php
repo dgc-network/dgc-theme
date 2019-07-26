@@ -14,18 +14,18 @@
  *
  * @since Fruitful theme 1.0
  */
-function dgc_page_menu_args( $args ) {
+function fruitful_page_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
-add_filter( 'wp_page_menu_args', 'dgc_page_menu_args' );
+add_filter( 'wp_page_menu_args', 'fruitful_page_menu_args' );
 
 /**
  * Adds custom classes to the array of body classes.
  *
  * @since Fruitful theme 1.0
  */
-function dgc_body_classes( $classes ) {
+function fruitful_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -35,7 +35,7 @@ function dgc_body_classes( $classes ) {
 		if (is_shop()) $classes[] = 'shop-page ';
 	} 
 	
-	$theme_options = dgc_get_theme_options();
+	$theme_options = fruitful_get_theme_options();
 	if (isset($theme_options['responsive']) && 
 			 ($theme_options['responsive'] == 'on')) {
 		$classes[] = 'responsive';
@@ -43,14 +43,14 @@ function dgc_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'dgc_body_classes' );
+add_filter( 'body_class', 'fruitful_body_classes' );
 
 /**
  * Filter in a link to a content ID attribute for the next/previous image links on image attachment pages
  *
  * @since Fruitful theme 1.0
  */
-function dgc_enhanced_image_navigation( $url, $id ) {
+function fruitful_enhanced_image_navigation( $url, $id ) {
 	if ( ! is_attachment() && ! wp_attachment_is_image( $id ) )
 		return $url;
 
@@ -60,4 +60,4 @@ function dgc_enhanced_image_navigation( $url, $id ) {
 
 	return $url;
 }
-add_filter( 'attachment_link', 'dgc_enhanced_image_navigation', 10, 2 );
+add_filter( 'attachment_link', 'fruitful_enhanced_image_navigation', 10, 2 );

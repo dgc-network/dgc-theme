@@ -545,7 +545,7 @@ Files: .pot, ru_Ru.po, ru_Ru.mo icluded. Default language is english.
 * XSS vulnerabilities bug fix
 * Slider - added ability to add link to slider images
 * Shortcodes - source code optimization and new features
-* Shorcode [slider] changed to [dgc_slider]
+* Shorcode [slider] changed to [fruitful_slider]
 * Backlinks in footer added <nofollow> for all pages except home
 * Fancybox now working with class="fancybox"
 * Skype icon added call on cliks
@@ -561,7 +561,7 @@ Files: .pot, ru_Ru.po, ru_Ru.mo icluded. Default language is english.
 05.11.13
 
 * Comments on pages set by default in theme options
-* Optimization dgc_get_responsive_style function
+* Optimization fruitful_get_responsive_style function
 * Css changes
 * Update descriptions for theme options.
 * Fonts options changed from content to <body>

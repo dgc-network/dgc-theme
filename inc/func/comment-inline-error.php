@@ -4,8 +4,8 @@
 	Author: "aviarts"
 */
 
-add_action('init', 'dgc_setCustomSession');
-function dgc_setCustomSession() {
+add_action('init', 'fruitful_setCustomSession');
+function fruitful_setCustomSession() {
 	if (session_id() == '') session_start();
 }	
 		
