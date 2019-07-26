@@ -2952,13 +2952,13 @@
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/?page_id=701</guid>
 		<description></description>
-		<content:encoded><![CDATA[[fruitful_dbox] <span style="color: #333333;">HELLO, WORLD! THIS IS </span><span class="text_orange" style="color: #ff5d2a;">FRUITFUL </span><span style="color: #333333;">FREE WORDPRESS RESPONSIVE THEME</span> [/fruitful_dbox]
+		<content:encoded><![CDATA[[dgc_dbox] <span style="color: #333333;">HELLO, WORLD! THIS IS </span><span class="text_orange" style="color: #ff5d2a;">FRUITFUL </span><span style="color: #333333;">FREE WORDPRESS RESPONSIVE THEME</span> [/dgc_dbox]
 
-[fruitful_ibox_row]
-[fruitful_ibox column="ffs-three-one" title="SIMPLE DESIGN" image="https://fruitful.fruitfulcode.com/wp-content/uploads/sites/23/2011/05/img_title_1.png"]We designed and developed simple wordpress theme with useful theme options panel. We leave light styles for more easy and comfortable customizations.[/fruitful_ibox]
-[fruitful_ibox column="ffs-three-one" title="THEME OPTIONS" image="https://fruitful.fruitfulcode.com/wp-content/uploads/sites/23/2011/05/img_title_2.png"]In theme options you can choose layout type, upload logo, background, favicon, choose fonts, change color for menu, upload images to slider and much more.[/fruitful_ibox]
-[fruitful_ibox column="ffs-three-one" title="2 TYPE OF LAYOUT" image="https://fruitful.fruitfulcode.com/wp-content/uploads/sites/23/2011/05/img_title_3.png" last="true" ]Theme supported 2 types of html layout. Default responsive setting which adapt for mobile devices and static page with fixed width.[/fruitful_ibox]
-[/fruitful_ibox_row]]]></content:encoded>
+[dgc_row]
+[dgc_column="ffs-three-one" title="SIMPLE DESIGN" image="https://fruitful.fruitfulcode.com/wp-content/uploads/sites/23/2011/05/img_title_1.png"]We designed and developed simple wordpress theme with useful theme options panel. We leave light styles for more easy and comfortable customizations.[/dgc_idgc_
+[dgc_column="ffs-three-one" title="THEME OPTIONS" image="https://fruitful.fruitfulcode.com/wp-content/uploads/sites/23/2011/05/img_title_2.png"]In theme options you can choose layout type, upload logo, background, favicon, choose fonts, change color for menu, upload images to slider and much more.[/dgc_idgc_
+[dgc_column="ffs-three-one" title="2 TYPE OF LAYOUT" image="https://fruitful.fruitfulcode.com/wp-content/uploads/sites/23/2011/05/img_title_3.png" last="true" ]Theme supported 2 types of html layout. Default responsive setting which adapt for mobile devices and static page with fixed width.[/dgc_idgc_
+[/dgc_row]]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>701</wp:post_id>
 		<wp:post_date><![CDATA[2011-05-20 18:49:43]]></wp:post_date>
@@ -3001,11 +3001,11 @@
 			<wp:meta_value><![CDATA[WordPress theme with powerful theme options panel and simple clean front end design. Ability to modify styles and options to your needs. Download is free]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_fruitful_page_layout]]></wp:meta_key>
+			<wp:meta_key><![CDATA[_dgc_layout]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_fruitful_slider_layout]]></wp:meta_key>
+			<wp:meta_key><![CDATA[_dgc_r_layout]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2]]></wp:meta_value>
 		</wp:postmeta>
 	</item>

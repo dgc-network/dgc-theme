@@ -18,19 +18,19 @@ function cmb_initialize_cmb_meta_boxes() {
 	
 }
 
-add_filter( 'cmb_meta_boxes', 'fruitful_all_metaboxes', 10, 2 );
+add_filter( 'cmb_meta_boxes', 'dgc_all_metaboxes', 10, 2 );
 /**
  * Define the metabox and field configurations.
  *
  * @param  array $meta_boxes
  * @return array
  */
-function fruitful_all_metaboxes( array $meta_boxes ) {
+function dgc_etaboxes( array $meta_boxes ) {
 	// Start with an underscore to hide fields from custom fields list
-	$prefix = '_fruitful_';
+	$prefix = '_dgc_
 	
-	$meta_boxes['fruitful_slider_settings'] = array(
-		'id'         => 'fruitful_slider_settings',
+	$meta_boxes['dgc_r_settings'] = array(
+		'id'         => 'dgc_r_settings',
 		'title'      => __( 'Slider settings', 'fruitful' ),
 		'context'    => 'normal',
 		'priority'   => 'low',
@@ -54,8 +54,8 @@ function fruitful_all_metaboxes( array $meta_boxes ) {
 	);
 	
 	// Only with sidebar enabled
-	$meta_boxes['fruitful_page_general_settings'] = array(
-		'id'         => 'fruitful_page_general_settings',
+	$meta_boxes['dgc_general_settings'] = array(
+		'id'         => 'dgc_general_settings',
 		'title'      => __( 'Page settings', 'fruitful' ),
 		'pages'      => array( 'page'), 
 		'context'    => 'normal',
@@ -73,8 +73,8 @@ function fruitful_all_metaboxes( array $meta_boxes ) {
 	);
 	
 	
-	$meta_boxes['fruitful_post_general_settings'] = array(
-		'id'         => 'fruitful_post_general_settings',
+	$meta_boxes['dgc_general_settings'] = array(
+		'id'         => 'dgc_general_settings',
 		'title'      => __( 'Post settings', 'fruitful' ),
 		'pages'      => array( 'post'), 
 		'context'    => 'normal',

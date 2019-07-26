@@ -15,6 +15,6 @@
 
 get_header(); ?>
 	
-	<?php fruitful_get_content_with_custom_sidebar('blogright'); ?>
+	<?php dgc_get_content_with_custom_sidebar('blogright'); ?>
 
 <?php get_footer(); ?>
