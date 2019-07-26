@@ -13,7 +13,7 @@ function dgc_add_admin_style() {
 	wp_enqueue_style( 'wp-color-picker' );
 }
 
-function dgc_query_script() {
+function dgc_add_jquery_script() {
 	wp_enqueue_script('wp-color-picker');
 	
 	if( function_exists( 'wp_enqueue_media' ) ){
@@ -32,7 +32,7 @@ function dgc_query_script() {
 	wp_enqueue_script('admin-jQuery-fruit',	get_template_directory_uri() . "/inc/js/main.js", array('jquery'));
 }
 
-function dgc__list() {
+function dgc_fonts_list() {
 	$font_family_options = array(
 			'Arial, Helvetica, sans-serif'  				    => __( 'Arial, Helvetica, sans-serif', 'fruitful' ),
 			'Arial Black, Gadget, sans-serif'				    => __( 'Arial Black, Gadget, sans-serif', 'fruitful' ),
@@ -64,13 +64,13 @@ function dgc__list() {
 			'Droid Sans, sans-serif' 							=> __( 'Droid Sans, sans-serif', 'fruitful' ),
 	);
 
-	return apply_filters( 'dgc__list', $font_family_options );
+	return apply_filters( 'dgc_fonts_list', $font_family_options );
 }
 
- function dgc_m_do_settings_sections($page) {
+ function dgc_custom_do_settings_sections($page) {
     global $wp_settings_sections, $wp_settings_fields;
 	$id_=0;
-	$optins = (array) get_option( 'dgc__options' );
+	$optins = (array) get_option( 'dgc_theme_options' );
     if ( !isset($wp_settings_sections) || !isset($wp_settings_sections[$page]) )
         return;
     foreach( (array) $wp_settings_sections[$page] as $section ) {
@@ -82,14 +82,14 @@ function dgc__list() {
         	 
 		$name_id = "settings-section-" . $id_;
 		print '<div id="'. $name_id .'" class="settings-section">';
-				dgc_m_do_settings_fields($page, $section['id']);
+				dgc_custom_do_settings_fields($page, $section['id']);
 		print '</div>';
 		$id_++;		 
     }
 }
 
 
-function dgc_m_do_settings_fields($page, $section) {
+function dgc_custom_do_settings_fields($page, $section) {
     global $wp_settings_fields;
 	$id_=0;
 
@@ -152,15 +152,15 @@ function dgc_m_do_settings_fields($page, $section) {
     }
 }
 
-add_action('wp_ajax_dgc_ew_slide_action', 'dgc_ndgc_);
-function dgc_lide() {
-	$slides = (array) get_option( 'dgc__slides_options' );
+add_action('wp_ajax_dgc_add_new_slide_action', 'dgc_new_slide');
+function dgc_new_slide() {
+	$slides = (array) get_option( 'dgc_theme_slides_options' );
 	$data 	 = $_POST['data'];
-	echo dgc_lide($data, -1, ''); 
+	echo dgc_get_slide($data, -1, ''); 
 	die();
 }
 
-function dgc_ox_upload_slide($attach_id, $link_url, $is_blank, $is_active, $ind, $btnclassup = 'upload_btn',  $btnclassr = 'reset_btn') {
+function dgc_get_box_upload_slide($attach_id, $link_url, $is_blank, $is_active, $ind, $btnclassup = 'upload_btn',  $btnclassr = 'reset_btn') {
 	$out  = ''; 
 	$out .= '<div class="box-image">';
 	if ($attach_id != -1) {
@@ -172,21 +172,21 @@ function dgc_ox_upload_slide($attach_id, $link_url, $is_blank, $is_active, $ind,
 	}
 		/*Link out for Slider*/
 		$out .= '<label for="slide-link-'.$ind.'">'. __('Link URL', 'fruitful') .'</label>';
-		$out .= '<input type="text" name="dgc__options[slides][slide-'.$ind.'][link]" id="slide-link-'.$ind.'" class="slide-link-'.$ind.' text-input" value="'.esc_url($link_url).'"/>';
+		$out .= '<input type="text" name="dgc_theme_options[slides][slide-'.$ind.'][link]" id="slide-link-'.$ind.'" class="slide-link-'.$ind.' text-input" value="'.esc_url($link_url).'"/>';
 		$out .= '<div class="clear"></div>';
 
 		$out .= '<label for="link-blank-'.$ind.'">';
-		$out .= '<input type="checkbox" name="dgc__options[slides][slide-'.$ind.'][is_blank]" id="link-blank-'.$ind.'" class="link-target-'.$ind.'" '. checked( 'on', $is_blank, false) .'/>';
+		$out .= '<input type="checkbox" name="dgc_theme_options[slides][slide-'.$ind.'][is_blank]" id="link-blank-'.$ind.'" class="link-target-'.$ind.'" '. checked( 'on', $is_blank, false) .'/>';
 		$out .= __('Target "_blank"', 'fruitful') .'</label>';
 	
 	        // ADD IS_ACTIVE OPTION by ERICH
 		$out .= '<div class="clear" style="margin-bottom: 10px;"></div>';
 		$out .= '<label for="link-active-' . $ind . '">';
-		$out .= '<input type="checkbox" name="dgc__options[slides][slide-' . $ind . '][is_active]" id="link-active-' . $ind . '" class="link-target-' . $ind . '" ' . checked( 'on', $is_active, false ) . '/>';
+		$out .= '<input type="checkbox" name="dgc_theme_options[slides][slide-' . $ind . '][is_active]" id="link-active-' . $ind . '" class="link-target-' . $ind . '" ' . checked( 'on', $is_active, false ) . '/>';
 		$out .= __( 'Active (show sliderimage)', 'fruitful' ) . '</label>';
   
 	
-		$out .= '<input class="of-input" name="dgc__options[slides][slide-'.$ind.'][attach_id]" id="attach-'.$ind.'" type="hidden" value="'. intval($attach_id) .'" />';
+		$out .= '<input class="of-input" name="dgc_theme_options[slides][slide-'.$ind.'][attach_id]" id="attach-'.$ind.'" type="hidden" value="'. intval($attach_id) .'" />';
 		$out .= '<div class="upload_button_div">';
 			$out .= '<span data-imagetype="slide" class="button '. $btnclassup .'" id="add-slide-btn-'. $ind .'">'.__('Upload Image', 'fruitful') .'</span>';
 			$out .= '<span class="button reset_btn">'.__('Remove', 'fruitful') .'</span>';
@@ -195,7 +195,7 @@ function dgc_ox_upload_slide($attach_id, $link_url, $is_blank, $is_active, $ind,
 	return $out;
 }
 
-function dgc_lide($ind, $id, $link_url = null, $is_blank = 'off', $is_active = 'on') {
+function dgc_get_slide($ind, $id, $link_url = null, $is_blank = 'off', $is_active = 'on') {
 	$out = '';
 	$out .= '<li class="slide" id="slide-image-' . $ind . '">';
 		$out .= '<h4 class="slide-header" id="slide-header-'. $ind .'">' . sprintf(__('Slide # %1$d', 'fruitful'),   $ind);
@@ -204,15 +204,15 @@ function dgc_lide($ind, $id, $link_url = null, $is_blank = 'off', $is_active = '
 		$out .= '</h4>';
 		
 		$out .= '<div class="slide-content" id="slide-content-'. $ind .'">';
-			$out .= dgc_ox_upload_slide($id, $link_url, $is_blank, $is_active, $ind);
+			$out .= dgc_get_box_upload_slide($id, $link_url, $is_blank, $is_active, $ind);
 		$out .= '</div>';
 	$out .= '</li>';
 	return $out;
 }	
 
-function dgc_r_images() {
-	global $dgc__options;
-	$slides = get_option($dgc__options->args['opt_name']);
+function dgc_slider_images() {
+	global $dgc_theme_options;
+	$slides = get_option($dgc_theme_options->args['opt_name']);
 	$vcount_slides = 0;
 	if(!empty($slides['slides'])) {
 		$vcount_slides  = count($slides['slides']); 
@@ -226,7 +226,7 @@ function dgc_r_images() {
 			<?php 
 					/*Init First Slide for noraml work script*/
 					if ($vcount_slides == 0) {
-						echo dgc_lide(1, -1); 
+						echo dgc_get_slide(1, -1); 
 					} else {
 						foreach ($slides['slides'] as $key=>$slide) {
 							$slide_inndex = -1;
@@ -238,7 +238,7 @@ function dgc_r_images() {
 							$slide_inndex = trim(substr($key, strrpos($key, '-')+1, 5));
 							if (isset($slide['link'])) { $link_url = $slide['link']; }
 							if (isset($slide['is_blank'])) { $is_blank = $slide['is_blank']; }
-							echo dgc_lide($slide_inndex, $attach_id, esc_url($link_url), $is_blank, $is_active); 
+							echo dgc_get_slide($slide_inndex, $attach_id, esc_url($link_url), $is_blank, $is_active); 
 						}
 					}
 			?>
@@ -247,19 +247,19 @@ function dgc_r_images() {
 <?php
 }
 
-add_action('wp_ajax_run_import_dummy_data', 'dgc_mport_dummy_data');
-function dgc_mport_dummy_data() {
+add_action('wp_ajax_run_import_dummy_data', 'dgc_run_import_dummy_data');
+function dgc_run_import_dummy_data() {
 	$vIsUpdate = false;
-	$vIsUpdate = dgc_e_home_page();
+	$vIsUpdate = dgc_create_home_page();
 	echo $vIsUpdate;
 	die();
 }
 
-add_action('wp_ajax_dgc__options_action', 'dgc_ddgc_);
-function dgc_save() {
-global $dgc__options;
-	$data = $_POST[$dgc__options->args['opt_name']];
-	foreach ( $dgc__options->sections as $section => $data_f ) {
+add_action('wp_ajax_dgc_theme_options_action', 'dgc_data_save');
+function dgc_data_save() {
+global $dgc_theme_options;
+	$data = $_POST[$dgc_theme_options->args['opt_name']];
+	foreach ( $dgc_theme_options->sections as $section => $data_f ) {
 		foreach ( $data_f['fields'] as $field ) {
 			$id = (isset($field['id' ])) ? $field['id'] : '';
 			$type = (isset($field['type'])) ? $field['type'] : '';
@@ -285,7 +285,7 @@ global $dgc__options;
 	}	
 	if (!isset($data['reset'])) {$data['reset']	= 'reset';}
 	if(!empty($data)) {
-		if(update_option('dgc__options', $data)) {
+		if(update_option('dgc_theme_options', $data)) {
 			die('1');
 		} else {
 			die('0');
@@ -296,10 +296,10 @@ global $dgc__options;
 
 }
 
-function dgc_efault_array() {
-global $dgc__options;
+function dgc_get_default_array() {
+global $dgc_theme_options;
 	$output = array();
-	foreach ( $dgc__options->sections as $section => $data_f ) {
+	foreach ( $dgc_theme_options->sections as $section => $data_f ) {
 		foreach ( $data_f['fields'] as $field ) {
 			$id = (isset($field['id' ])) ? $field['id'] : '';
 			$default =  (isset($field['default' ])) ? $field['default'] : '';
@@ -316,22 +316,22 @@ global $dgc__options;
 	return apply_filters( 'themeslug_option_defaults', $output );
 }
 
-function dgc_heme_options() {
-	global $dgc__options;
+function dgc_get_theme_options() {
+	global $dgc_theme_options;
     return wp_parse_args( 
-        get_option($dgc__options->args['opt_name'], array() ), 
-        dgc_efault_array() 
+        get_option($dgc_theme_options->args['opt_name'], array() ), 
+        dgc_get_default_array() 
     );
 }
 
-add_action('wp_ajax_dgc__btn', 'dgc_rdgc_on');
-function dgc__action() {
-global $dgc__options;
-	 delete_option($dgc__options->args['opt_name']);
+add_action('wp_ajax_dgc_reset_btn', 'dgc_reset_action');
+function dgc_reset_action() {
+global $dgc_theme_options;
+	 delete_option($dgc_theme_options->args['opt_name']);
 	 die();	
 }
 
-function dgc__sanitize_checkbox( $input ) {
+function dgc_theme_sanitize_checkbox( $input ) {
     if ( $input == 1 ) {return 'on';} else {return 'off';}
 }
 
