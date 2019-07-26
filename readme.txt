@@ -10,7 +10,7 @@ Works perfect with WooCommerce till version 3.4
 
 dgc-wordpress-theme PRO – WordPress responsive theme contains all the options of FREE version plus more options like ability to change width for container grid and support latest WooCommerce version. 
 
-Find all the details by link https://fruitfulcode.com/product/fruitful-pro
+Find all the details by link https://dgc-network.com/product/fruitful-pro
 
 Thank you.
 

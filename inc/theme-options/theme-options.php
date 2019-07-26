@@ -1191,7 +1191,7 @@ class dgc_theme_options {
 					'info'      => __( 'Replace default theme copyright information and links', 'fruitful' ),
 					'box-title' => __( 'Copyright section', 'fruitful' ),
 					'type'      => 'textarea',
-					'default'   => __( 'dgc-wordpress-theme by <a href="https://github.com/fruitfulcode/">fruitfulcode</a> Powered by: <a href="http://wordpress.org">WordPress</a>',
+					'default'   => __( 'dgc-wordpress-theme by <a href="https://github.com/dgc-network/">dgc-network</a> Powered by: <a href="http://wordpress.org">WordPress</a>',
 						'fruitful' ),
 				)
 			)
@@ -1522,7 +1522,7 @@ class dgc_theme_options {
                     <h3><?php _e( 'Support', 'fruitful' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
 						_e( 'If You faced with problems or find error or bug, please', 'fruitful' );
-						echo ' <a target="_blank" href="http://fruitfulcode.zendesk.com/hc/en-us/requests/new">';
+						echo ' <a target="_blank" href="http://dgc-network.zendesk.com/hc/en-us/requests/new">';
 						_e( 'submit request.', 'fruitful' );
 						echo '</a> ';
 						_e( 'On official ', 'fruitful' );
@@ -1546,7 +1546,7 @@ class dgc_theme_options {
                 <div class="sidebar-promo-widget promo-about">
                     <h3><?php _e( 'dgc-wordpress-theme PRO', 'fruitful' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
-						echo ' <a target="_blank" href="https://fruitfulcode.com/product/fruitful-pro">';
+						echo ' <a target="_blank" href="https://dgc-network.com/product/fruitful-pro">';
 						_e( 'dgc-wordpress-theme PRO - WordPress responsive theme', 'fruitful' );
 						echo '</a> ';
 						_e( ' that contains all the options of ', 'fruitful' );

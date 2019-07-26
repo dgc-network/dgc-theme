@@ -1804,7 +1804,7 @@ msgstr ""
 
 #: inc/theme-options/theme-options.php:1210
 msgid ""
-"dgc-wordpress-theme by <a href=\"https://github.com/fruitfulcode/\">fruitfulcode</a> "
+"dgc-wordpress-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</a> "
 "Powered by: <a href=\"http://wordpress.org\">WordPress</a>"
 msgstr ""
 
