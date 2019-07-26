@@ -3,11 +3,12 @@ Theme Name: dgc
 Theme URI: https://github.com/dgc-network/dgc-wordpress-theme
 Author: dgc-network
 Author URI: https://github.com/dgc-network/
-Description: dgc - Free WordPress responsive theme with powerful theme options panel and simple clean front end design. Ability to modify styles and options according to your needs. Two different layout types responsive and fixed. Easily upload logo, background, edit colors, header and menu positions, slider, fonts, social icons, footer, custom css and much more. Translated to Russian, German, Spanish, French, Vietnamese, RTL ready. Works perfect with BuddyPress, WPML, Contact form 7, WooCommerce till version 3.0.       dgc PRO – WordPress responsive theme contains all the options of FREE version plus more options like ability to change width for container grid and support latest WooCommerce version.
-Version: 3.8
+Description: dgc - Free WordPress responsive theme with powerful theme options panel and simple clean front end design. Ability to modify styles and options according to your needs. Two different layout types responsive and fixed. Easily upload logo, background, edit colors, header and menu positions, slider, fonts, social icons, footer, custom css and much more. Translated to Russian, German, Spanish, French, Vietnamese, RTL ready. Works perfect with BuddyPress, WPML, Contact form 7, WooCommerce till version 3.0.
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: theme-options, custom-header, custom-background, custom-menu, custom-colors, translation-ready, featured-images, full-width-template, one-column, right-sidebar, left-sidebar, editor-style
+Tags: theme-options, custom-header, custom-background, custom-menu, custom-colors, translation-ready, 
+featured-images, full-width-template, one-column, right-sidebar, left-sidebar, editor-style
 Text Domain: dgc
 
 This theme, like WordPress, is licensed under the GPL.
@@ -27,9 +28,9 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 }
 html {
     font-size:62.5%;
-    ms-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
     overflow:auto;
-    webkit-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
 }
 body {
 	min-width:300px;
