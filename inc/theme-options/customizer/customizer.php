@@ -107,7 +107,7 @@ class dgc_theme_options_customizer {
 
 							 switch ( $g_type ) {
 								case 'checkbox':
-									$wp_customize->add_control(new Fruitful_Customize_Checkbox_Control($wp_customize, esc_attr($id), array(
+									$wp_customize->add_control(new DGC_Customize_Checkbox_Control($wp_customize, esc_attr($id), array(
 										'type'              => 'checkbox',
 										'priority'          => $priority,
 										'section'           => $section,
@@ -120,7 +120,7 @@ class dgc_theme_options_customizer {
 									)));
 								break;
 								case 'text':
-									$wp_customize->add_control(new Fruitful_Customize_Text_Control($wp_customize, esc_attr($id), array(
+									$wp_customize->add_control(new DGC_Customize_Text_Control($wp_customize, esc_attr($id), array(
 										'type'              => 'text',
 										'priority'          => $priority,
 										'section'           => $section,
@@ -133,7 +133,7 @@ class dgc_theme_options_customizer {
 									)));
 								break;
 								case 'select':
-									$wp_customize->add_control(new Fruitful_Customize_Select_Control($wp_customize, esc_attr($id), array(
+									$wp_customize->add_control(new DGC_Customize_Select_Control($wp_customize, esc_attr($id), array(
 										'type'              => 'select',
 										'priority'          => $priority,
 										'section'           => $section,
@@ -178,7 +178,7 @@ class dgc_theme_options_customizer {
 									)));
 								break;
 								case 'textarea':
-									$wp_customize->add_control(new Fruitful_Customize_Textarea_Control($wp_customize, esc_attr($id), array(
+									$wp_customize->add_control(new DGC_Customize_Textarea_Control($wp_customize, esc_attr($id), array(
 										'priority'          => $priority,
 										'section'           => $section,
 										'label'             => $g_label,
@@ -200,7 +200,7 @@ class dgc_theme_options_customizer {
 			
 					switch ($f_type) {
 						case 'checkbox':
-							$wp_customize->add_control(new Fruitful_Customize_Checkbox_Control($wp_customize, esc_attr($id), array(
+							$wp_customize->add_control(new DGC_Customize_Checkbox_Control($wp_customize, esc_attr($id), array(
 								'type'              => 'checkbox',
 								'priority'          => $priority,
 								'section'           => $section,
@@ -210,7 +210,7 @@ class dgc_theme_options_customizer {
 							)));
 						break;
 						case 'text':
-							$wp_customize->add_control(new Fruitful_Customize_Text_Control($wp_customize, esc_attr($id), array(
+							$wp_customize->add_control(new DGC_Customize_Text_Control($wp_customize, esc_attr($id), array(
 								'type'              => 'text',
 								'priority'          => $priority,
 								'section'           => $section,
@@ -220,7 +220,7 @@ class dgc_theme_options_customizer {
 							)));
 						break;
 						case 'select':
-							$wp_customize->add_control(new Fruitful_Customize_Select_Control($wp_customize, esc_attr($id), array(
+							$wp_customize->add_control(new DGC_Customize_Select_Control($wp_customize, esc_attr($id), array(
 								'type'              => 'select',
 								'priority'          => $priority,
 								'section'           => $section,
@@ -231,7 +231,7 @@ class dgc_theme_options_customizer {
 							)));
 						break;
 						case 'font':
-							$wp_customize->add_control(new Fruitful_Customize_Font_Control($wp_customize, esc_attr($id), array(
+							$wp_customize->add_control(new DGC_Customize_Font_Control($wp_customize, esc_attr($id), array(
 								'type'              => 'select',
 								'priority'          => $priority,
 								'section'           => $section,
@@ -258,7 +258,7 @@ class dgc_theme_options_customizer {
 							)));
 						break;
 						case 'textarea':
-							$wp_customize->add_control(new Fruitful_Customize_Textarea_Control($wp_customize, esc_attr($id), array(
+							$wp_customize->add_control(new DGC_Customize_Textarea_Control($wp_customize, esc_attr($id), array(
 								'priority'          => $priority,
 								'section'           => $section,
 								'label'             => $f_label,

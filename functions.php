@@ -228,7 +228,7 @@ if ( ! function_exists( 'dgc_thumbnail_size' ) ) {
  */
  if ( ! function_exists( 'dgc_widgets_init' ) ) {
 function dgc_widgets_init() {
-	register_widget( 'Fruitful_Widget_News_Archive' );
+	register_widget( 'DGC_Widget_News_Archive' );
 	
 	register_sidebar( array(
 		'name' => __( 'Main Sidebar', 'fruitful' ),

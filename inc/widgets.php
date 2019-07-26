@@ -6,7 +6,7 @@
  * @subpackage Fruitful
  * @since Fruitful
  */
-class Fruitful_Widget_News_Archive extends WP_Widget {
+class DGC_Widget_News_Archive extends WP_Widget {
 	/**
 	 * Constructor
 	 *
