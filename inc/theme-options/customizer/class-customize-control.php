@@ -3,7 +3,7 @@
 if( ! class_exists( 'WP_Customize_Control' ) )
 	 return;
 
-class Fruitful_Customize_Text_Control extends WP_Customize_Control {
+class dgc_Customize_Text_Control extends WP_Customize_Control {
 	  public $type 			= 'text';	
 	  public $info			= ''; 
 	  public $top_label	= ''; 
@@ -25,7 +25,7 @@ class Fruitful_Customize_Text_Control extends WP_Customize_Control {
        }
 }	 
 	 
-class Fruitful_Customize_Textarea_Control extends WP_Customize_Control {
+class dgc_mize_Textarea_Control extends WP_Customize_Control {
 	public $type = 'textarea';
 	public $info = '';
 	public $top_label	= ''; 
@@ -48,7 +48,7 @@ class Fruitful_Customize_Textarea_Control extends WP_Customize_Control {
 
 }
 
-class Fruitful_Customize_Checkbox_Control extends WP_Customize_Control {
+class dgc_mize_Checkbox_Control extends WP_Customize_Control {
     public $type 	= 'checkbox';
 	public $class	= ''; 
 	public $info	= ''; 
@@ -68,7 +68,7 @@ class Fruitful_Customize_Checkbox_Control extends WP_Customize_Control {
     }
 }
 
-class Fruitful_Customize_Select_Control extends WP_Customize_Control {
+class dgc_mize_Select_Control extends WP_Customize_Control {
 	public $type 			= 'select';
 	public $info			= ''; 
 	public $top_label		= ''; 
@@ -94,7 +94,7 @@ class Fruitful_Customize_Select_Control extends WP_Customize_Control {
 	} 
 } 
 
-class Fruitful_Customize_Font_Control extends WP_Customize_Control {
+class dgc_mize_Font_Control extends WP_Customize_Control {
 	public $type 		= 'font';
 	public $info		= ''; 
 	public $top_label	= ''; 

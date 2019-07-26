@@ -16,10 +16,10 @@
 			<div class="container">
 				<div class="sixteen columns">
 					<div class="site-info">
-						<?php fruitful_get_footer_text(); ?>
+						<?php dgc_get_footer_text(); ?>
 					</div><!-- .site-info -->
-					<?php if (!fruitful_is_social_header()) { 	
-							   fruitful_get_socials_icon(); 
+					<?php if (!dgc_is_social_header()) { 	
+							   dgc_get_socials_icon(); 
 						  } 
 					?>
 				</div>

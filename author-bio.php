@@ -10,7 +10,7 @@
 
 <div class="author-info">
 	<div class="author-avatar">
-		<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'fruitful_author_bio_avatar_size', 74 ) ); ?>
+		<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'dgc_author_bio_avatar_size', 74 ) ); ?>
 	</div><!-- .author-avatar -->
 	<div class="author-description">
 		<h2 class="author-title"><?php printf( __( 'About %s', 'fruitful' ), get_the_author() ); ?></h2>
