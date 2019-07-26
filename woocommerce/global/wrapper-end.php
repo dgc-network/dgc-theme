@@ -16,7 +16,7 @@
  * @version     3.3.0
  */
 
-$woo_sidebar = fruitful_get_woo_sidebar();
+$woo_sidebar = dgc_get_woo_sidebar();
 
 if ($woo_sidebar == 1 || $woo_sidebar == 4 || $woo_sidebar == 5) {
     echo '</div></div></div>';

@@ -2,11 +2,11 @@
 
 require_once dirname( __FILE__ ) . '/plugin-activation.php';
 
-add_action( 'tgmpa_register', 'fruitful_register_required_plugins' );
+add_action( 'tgmpa_register', 'dgc_register_required_plugins' );
 /**
  * Register the required plugins for Fruitful theme.
  */
-function fruitful_register_required_plugins() {
+function dgc_register_required_plugins() {
 
 	$plugins = array(
 		array(
