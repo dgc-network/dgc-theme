@@ -39,7 +39,7 @@ class dgc_theme_options_customizer {
 			'priority'          => 10,
 			'capability'        => 'edit_theme_options',
 			'theme_supports'    => '',
-			'title'             => __('dgc-wordpress-theme Options', 'fruitful'),
+			'title'             => __('dgc-wordpress-theme Options', 'dgc'),
 			'description'       => '',
 		));
 		$type = 'option'; 

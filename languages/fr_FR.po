@@ -314,131 +314,131 @@ msgstr ""
 msgid "Both comments and trackbacks are currently closed."
 msgstr "Les commentaires et les trackbacks sont fermés."
 
-#: inc/func/fruitful-function.php:38
+#: inc/func/dgc-function.php:38
 msgid "Arial, Helvetica, sans-serif"
 msgstr "Arial, Helvetica, sans-serif"
 
-#: inc/func/fruitful-function.php:39
+#: inc/func/dgc-function.php:39
 msgid "Arial Black, Gadget, sans-serif"
 msgstr "Arial Black, Gadget, sans-serif"
 
-#: inc/func/fruitful-function.php:40
+#: inc/func/dgc-function.php:40
 msgid "Comic Sans MS, Textile, cursive"
 msgstr "Comic Sans MS, Textile, cursive"
 
-#: inc/func/fruitful-function.php:41
+#: inc/func/dgc-function.php:41
 msgid "Courier New, Courier, monospace"
 msgstr "Courier New, Courier, monospace"
 
-#: inc/func/fruitful-function.php:42
+#: inc/func/dgc-function.php:42
 msgid "Georgia, Times New Roman, Times, serif"
 msgstr "Georgia, Times New Roman, Times, serif"
 
-#: inc/func/fruitful-function.php:43
+#: inc/func/dgc-function.php:43
 msgid "Impact, Charcoal, sans-serif"
 msgstr "Impact, Charcoal, sans-serif"
 
-#: inc/func/fruitful-function.php:44
+#: inc/func/dgc-function.php:44
 msgid "Lucida Console, Monaco, monospace"
 msgstr "Lucida Console, Monaco, monospace"
 
-#: inc/func/fruitful-function.php:45
+#: inc/func/dgc-function.php:45
 msgid "Lucida Sans Unicode, Lucida Grande, sans-serif"
 msgstr "Lucida Sans Unicode, Lucida Grande, sans-serif"
 
-#: inc/func/fruitful-function.php:46
+#: inc/func/dgc-function.php:46
 msgid "Palatino Linotype, Book Antiqua, Palatino, serif"
 msgstr "Palatino Linotype, Book Antiqua, Palatino, serif"
 
-#: inc/func/fruitful-function.php:47
+#: inc/func/dgc-function.php:47
 msgid "Tahoma, Geneva, sans-serif"
 msgstr "Tahoma, Geneva, sans-serif"
 
-#: inc/func/fruitful-function.php:48
+#: inc/func/dgc-function.php:48
 msgid "Times New Roman, Times, serif"
 msgstr "Times New Roman, Times, serif"
 
-#: inc/func/fruitful-function.php:49
+#: inc/func/dgc-function.php:49
 msgid "Trebuchet MS, Helvetica, sans-serif"
 msgstr "Trebuchet MS, Helvetica, sans-serif"
 
-#: inc/func/fruitful-function.php:50
+#: inc/func/dgc-function.php:50
 msgid "Verdana, Geneva, sans-serif"
 msgstr "Verdana, Geneva, sans-serif"
 
-#: inc/func/fruitful-function.php:51
+#: inc/func/dgc-function.php:51
 msgid "MS Sans Serif, Geneva, sans-serif"
 msgstr "MS Sans Serif, Geneva, sans-serif"
 
-#: inc/func/fruitful-function.php:52
+#: inc/func/dgc-function.php:52
 msgid "MS Serif, New York, serif"
 msgstr "MS Serif, New York, serif"
 
-#: inc/func/fruitful-function.php:55
+#: inc/func/dgc-function.php:55
 msgid "Open Sans, sans-serif"
 msgstr "Open Sans, sans-serif"
 
-#: inc/func/fruitful-function.php:56
+#: inc/func/dgc-function.php:56
 msgid "Lobster, cursive"
 msgstr "Lobster, cursive"
 
-#: inc/func/fruitful-function.php:57
+#: inc/func/dgc-function.php:57
 msgid "Josefin Slab, serif"
 msgstr "Josefin Slab, serif"
 
-#: inc/func/fruitful-function.php:58
+#: inc/func/dgc-function.php:58
 msgid "Arvo, serif"
 msgstr "Arvo, serif"
 
-#: inc/func/fruitful-function.php:59
+#: inc/func/dgc-function.php:59
 msgid "Lato, sans-serif"
 msgstr "Lato, sans-serif"
 
-#: inc/func/fruitful-function.php:60
+#: inc/func/dgc-function.php:60
 msgid "Vollkorn, serif"
 msgstr "Vollkorn, serif"
 
-#: inc/func/fruitful-function.php:61
+#: inc/func/dgc-function.php:61
 msgid "Abril Fatface, cursive"
 msgstr "Abril Fatface, cursive"
 
-#: inc/func/fruitful-function.php:62
+#: inc/func/dgc-function.php:62
 msgid "Ubuntu, sans-serif"
 msgstr "Ubuntu, sans-serif"
 
-#: inc/func/fruitful-function.php:63
+#: inc/func/dgc-function.php:63
 msgid "PT Sans, sans-serif"
 msgstr "PT Sans, sans-serif"
 
-#: inc/func/fruitful-function.php:64
+#: inc/func/dgc-function.php:64
 msgid "Old Standard TT, serif"
 msgstr "Old Standard TT, serif"
 
-#: inc/func/fruitful-function.php:65
+#: inc/func/dgc-function.php:65
 msgid "Droid Sans, sans-serif"
 msgstr "Droid Sans, sans-serif"
 
-#: inc/func/fruitful-function.php:119
+#: inc/func/dgc-function.php:119
 msgid "View Options"
 msgstr "Options d'affichage"
 
-#: inc/func/fruitful-function.php:123
+#: inc/func/dgc-function.php:123
 msgid "No Slider Select!"
 msgstr "Pas de curseur Sélectionnez!"
 
-#: inc/func/fruitful-function.php:175
+#: inc/func/dgc-function.php:175
 msgid "Link URL"
 msgstr "Lien URL"
 
-#: inc/func/fruitful-function.php:181
+#: inc/func/dgc-function.php:181
 msgid "Target \"_blank\""
 msgstr "Target \"_blank\""
 
-#: inc/func/fruitful-function.php:185 inc/theme-options/theme-options.php:1375
+#: inc/func/dgc-function.php:185 inc/theme-options/theme-options.php:1375
 msgid "Upload Image"
 msgstr "Envoyer une image"
 
-#: inc/func/fruitful-function.php:186
+#: inc/func/dgc-function.php:186
 #: inc/metaboxes/helpers/cmb_Meta_Box_types.php:309
 #: inc/metaboxes/helpers/cmb_Meta_Box_types.php:724
 #: inc/metaboxes/helpers/cmb_Meta_Box_types.php:786
@@ -446,20 +446,20 @@ msgstr "Envoyer une image"
 msgid "Remove"
 msgstr "Supprimer"
 
-#: inc/func/fruitful-function.php:195
+#: inc/func/dgc-function.php:195
 #, php-format
 msgid "Slide # %1$d"
 msgstr "Diapositive # %1$d"
 
-#: inc/func/fruitful-function.php:216
+#: inc/func/dgc-function.php:216
 msgid "Collapse all"
 msgstr "Réduire tout"
 
-#: inc/func/fruitful-function.php:217
+#: inc/func/dgc-function.php:217
 msgid "Expand all"
 msgstr "Agrandir tout"
 
-#: inc/func/fruitful-function.php:239
+#: inc/func/dgc-function.php:239
 msgid "Add New Slide"
 msgstr "Ajouter une nouvelle diapositive"
 

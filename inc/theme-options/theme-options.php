@@ -41,33 +41,33 @@ class dgc_theme_options {
 		/*General*/
 
 		$this->sections['general'] = array(
-			'title'  => __( 'General', 'fruitful' ),
+			'title'  => __( 'General', 'dgc' ),
 			'id'     => 'general',
 			'fields' => array(
 				array(
 					'id'          => 'responsive',
-					'label'       => __( 'Layout', 'fruitful' ),
+					'label'       => __( 'Layout', 'dgc' ),
 					'info'        => __( 'Theme supported 2 types of html layout. Default responsive setting which adapt for mobile devices and static page with fixed width. Uncheck arrow below if you need static website display',
-						'fruitful' ),
-					'description' => __( 'Responsive', 'fruitful' ),
+						'dgc' ),
+					'description' => __( 'Responsive', 'dgc' ),
 					'type'        => 'checkbox',
 					'default'     => 'on',
 				),
 				array(
 					'id'     => 'pagecomment_ch',
-					'label'  => __( 'Comments', 'fruitful' ),
+					'label'  => __( 'Comments', 'dgc' ),
 					'info'   => __( 'If you want to display comments on your post page or page, select options below.',
-						'fruitful' ),
+						'dgc' ),
 					'fields' => array(
 						array(
 							'id'          => 'postcomment',
-							'description' => __( 'Display comment on posts page', 'fruitful' ),
+							'description' => __( 'Display comment on posts page', 'dgc' ),
 							'type'        => 'checkbox',
 							'default'     => 'on',
 						),
 						array(
 							'id'          => 'pagecomment',
-							'description' => __( 'Display comment on page', 'fruitful' ),
+							'description' => __( 'Display comment on page', 'dgc' ),
 							'type'        => 'checkbox',
 							'default'     => 'on',
 						),
@@ -75,113 +75,113 @@ class dgc_theme_options {
 				),
 				// array(
 				// 'id' 			=> 'styletheme',
-				// 'label'			=> __( 'Default theme styles' , 'fruitful' ),
-				// 'info'          => __( 'Default CSS. Theme option for styling is not working, if this option enable.', 'fruitful' ),
-				// 'description'	=> __( 'Enable', 'fruitful' ),
+				// 'label'			=> __( 'Default theme styles' , 'dgc' ),
+				// 'info'          => __( 'Default CSS. Theme option for styling is not working, if this option enable.', 'dgc' ),
+				// 'description'	=> __( 'Enable', 'dgc' ),
 				// 'type'			=> 'checkbox',
 				// 'default'		=> 'off',
 				// ),
 				array(
 					'id'      => 'latest_posts_templ',
-					'label'   => __( 'Front page template with latest posts', 'fruitful' ),
-					'info'    => __( 'Settings > Reading > Front page displays > Your latest posts', 'fruitful' ),
+					'label'   => __( 'Front page template with latest posts', 'dgc' ),
+					'info'    => __( 'Settings > Reading > Front page displays > Your latest posts', 'dgc' ),
 					'type'    => 'select',
 					'options' => array(
-						'0' => __( 'Full width', 'fruitful' ),
-						'1' => __( 'Right sidebar', 'fruitful' ),
-						'2' => __( 'Left sidebar', 'fruitful' )
+						'0' => __( 'Full width', 'dgc' ),
+						'1' => __( 'Right sidebar', 'dgc' ),
+						'2' => __( 'Left sidebar', 'dgc' )
 					),
 					'default' => '0'
 				),
 				array(
-					'label'  => __( 'Page templates by default', 'fruitful' ),
-					'info'   => __( 'Choose default display for templates.', 'fruitful' ),
+					'label'  => __( 'Page templates by default', 'dgc' ),
+					'info'   => __( 'Choose default display for templates.', 'dgc' ),
 					'fields' => array(
 						array(
 							'id'        => 'layout_page_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Page:', 'fruitful' ),
+							'box-title' => __( 'Page:', 'dgc' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'fruitful' ),
-								'0' => __( 'Full width', 'fruitful' ),
-								'2' => __( 'Left sidebar', 'fruitful' )
+								'1' => __( 'Right sidebar', 'dgc' ),
+								'0' => __( 'Full width', 'dgc' ),
+								'2' => __( 'Left sidebar', 'dgc' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_single_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Single Post:', 'fruitful' ),
+							'box-title' => __( 'Single Post:', 'dgc' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'fruitful' ),
-								'0' => __( 'Full width', 'fruitful' ),
-								'2' => __( 'Left sidebar', 'fruitful' )
+								'1' => __( 'Right sidebar', 'dgc' ),
+								'0' => __( 'Full width', 'dgc' ),
+								'2' => __( 'Left sidebar', 'dgc' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_archive_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Archive:', 'fruitful' ),
+							'box-title' => __( 'Archive:', 'dgc' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'fruitful' ),
-								'0' => __( 'Full width', 'fruitful' ),
-								'2' => __( 'Left sidebar', 'fruitful' )
+								'1' => __( 'Right sidebar', 'dgc' ),
+								'0' => __( 'Full width', 'dgc' ),
+								'2' => __( 'Left sidebar', 'dgc' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_author_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Author:', 'fruitful' ),
+							'box-title' => __( 'Author:', 'dgc' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'fruitful' ),
-								'0' => __( 'Full width', 'fruitful' ),
-								'2' => __( 'Left sidebar', 'fruitful' )
+								'1' => __( 'Right sidebar', 'dgc' ),
+								'0' => __( 'Full width', 'dgc' ),
+								'2' => __( 'Left sidebar', 'dgc' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_cat_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Category:', 'fruitful' ),
+							'box-title' => __( 'Category:', 'dgc' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'fruitful' ),
-								'0' => __( 'Full width', 'fruitful' ),
-								'2' => __( 'Left sidebar', 'fruitful' )
+								'1' => __( 'Right sidebar', 'dgc' ),
+								'0' => __( 'Full width', 'dgc' ),
+								'2' => __( 'Left sidebar', 'dgc' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_tag_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Tags:', 'fruitful' ),
+							'box-title' => __( 'Tags:', 'dgc' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'fruitful' ),
-								'0' => __( 'Full width', 'fruitful' ),
-								'2' => __( 'Left sidebar', 'fruitful' )
+								'1' => __( 'Right sidebar', 'dgc' ),
+								'0' => __( 'Full width', 'dgc' ),
+								'2' => __( 'Left sidebar', 'dgc' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_404_templ',
 							'type'      => 'select',
-							'box-title' => __( '404:', 'fruitful' ),
+							'box-title' => __( '404:', 'dgc' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'fruitful' ),
-								'0' => __( 'Full width', 'fruitful' ),
-								'2' => __( 'Left sidebar', 'fruitful' )
+								'1' => __( 'Right sidebar', 'dgc' ),
+								'0' => __( 'Full width', 'dgc' ),
+								'2' => __( 'Left sidebar', 'dgc' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_search_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Search:', 'fruitful' ),
+							'box-title' => __( 'Search:', 'dgc' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'fruitful' ),
-								'0' => __( 'Full width', 'fruitful' ),
-								'2' => __( 'Left sidebar', 'fruitful' )
+								'1' => __( 'Right sidebar', 'dgc' ),
+								'0' => __( 'Full width', 'dgc' ),
+								'2' => __( 'Left sidebar', 'dgc' )
 							),
 							'default'   => '1'
 						),
@@ -189,10 +189,10 @@ class dgc_theme_options {
 				),
 				array(
 					'id'          => 'show_featured_single',
-					'label'       => __( 'Show Featured image on single post', 'fruitful' ),
+					'label'       => __( 'Show Featured image on single post', 'dgc' ),
 					'info'        => __( 'Select option below for show featured image on single post page.',
-						'fruitful' ),
-					'description' => __( 'Show featured image', 'fruitful' ),
+						'dgc' ),
+					'description' => __( 'Show featured image', 'dgc' ),
 					'type'        => 'checkbox',
 					'default'     => 'on',
 				),
@@ -201,27 +201,27 @@ class dgc_theme_options {
 					array(
 						'id'          => 'is_wpml_ready',
 						'type'        => 'checkbox',
-						'label'       => __( 'Multilingual Switch in Header (WPML)', 'fruitful' ),
+						'label'       => __( 'Multilingual Switch in Header (WPML)', 'dgc' ),
 						'info'        => __( 'If you wish to show Language Switch in header, select option below.',
-							'fruitful' ),
-						'description' => __( 'Enable', 'fruitful' ),
+							'dgc' ),
+						'description' => __( 'Enable', 'dgc' ),
 						'default'     => 'off'
 					) :
 					array(
 						'id'      => 'reset',
-						'label'   => __( 'Reset options', 'fruitful' ),
-						'info'    => __( 'All theme options will be reset to default.', 'fruitful' ),
+						'label'   => __( 'Reset options', 'dgc' ),
+						'info'    => __( 'All theme options will be reset to default.', 'dgc' ),
 						'type'    => 'button',
-						'default' => __( 'Reset Defaults', 'fruitful' ),
+						'default' => __( 'Reset Defaults', 'dgc' ),
 						'class'   => 'button-primary reset-btn',
 					)
 				),
 				array(
 					'id'      => 'reset',
-					'label'   => __( 'Reset options', 'fruitful' ),
-					'info'    => __( 'All theme options will be reset to default.', 'fruitful' ),
+					'label'   => __( 'Reset options', 'dgc' ),
+					'info'    => __( 'All theme options will be reset to default.', 'dgc' ),
 					'type'    => 'button',
-					'default' => __( 'Reset Defaults', 'fruitful' ),
+					'default' => __( 'Reset Defaults', 'dgc' ),
 					'class'   => 'button-primary reset-btn',
 				),
 			)
@@ -231,51 +231,51 @@ class dgc_theme_options {
 		/*Header*/
 
 		$this->sections['header'] = array(
-			'title'  => __( 'Header', 'fruitful' ),
+			'title'  => __( 'Header', 'dgc' ),
 			'id'     => 'header',
 			'fields' => array(
 				array(
 					'id'          => 'is_fixed_header',
-					'label'       => __( 'Sticky  header', 'fruitful' ),
-					'info'        => __( 'Options relating to the website header', 'fruitful' ),
-					'description' => __( 'Enabled', 'fruitful' ),
+					'label'       => __( 'Sticky  header', 'dgc' ),
+					'info'        => __( 'Options relating to the website header', 'dgc' ),
+					'description' => __( 'Enabled', 'dgc' ),
 					'type'        => 'checkbox',
 					'default'     => 'on',
 				),
 				array(
 					'id'      => 'menu_position',
-					'label'   => __( 'Menu Position', 'fruitful' ),
-					'info'    => __( 'Set menu position.', 'fruitful' ),
+					'label'   => __( 'Menu Position', 'dgc' ),
+					'info'    => __( 'Set menu position.', 'dgc' ),
 					'type'    => 'select',
 					'options' => array(
-						'2' => __( 'Right', 'fruitful' ),
-						'0' => __( 'Left', 'fruitful' ),
-						'1' => __( 'Center', 'fruitful' )
+						'2' => __( 'Right', 'dgc' ),
+						'0' => __( 'Left', 'dgc' ),
+						'1' => __( 'Center', 'dgc' )
 					),
 					'default' => '2'
 				),
 				array(
 					'id'      => 'menu_type_responsive',
-					'label'   => __( 'Type of Responsive menu', 'fruitful' ),
-					'info'    => __( 'Set type of responsive menu.', 'fruitful' ),
+					'label'   => __( 'Type of Responsive menu', 'dgc' ),
+					'info'    => __( 'Set type of responsive menu.', 'dgc' ),
 					'type'    => 'select',
 					'options' => array(
-						'inside_content' => __( 'Select menu', 'fruitful' ),
-						'full_width'     => __( 'Button menu', 'fruitful' )
+						'inside_content' => __( 'Select menu', 'dgc' ),
+						'full_width'     => __( 'Button menu', 'dgc' )
 					),
 					'default' => 'inside_content'
 				),
 				array(
 					'id'      => 'menu_icon_color',
-					'label'   => __( 'Menu icon color', 'fruitful' ),
-					'info'    => __( 'Chose color for collapsing menu icon', 'fruitful' ),
+					'label'   => __( 'Menu icon color', 'dgc' ),
+					'info'    => __( 'Chose color for collapsing menu icon', 'dgc' ),
 					'type'    => 'color',
 					'default' => '#333333',
 				),
 				array(
-					'label'  => __( 'Background for header', 'fruitful' ),
+					'label'  => __( 'Background for header', 'dgc' ),
 					'info'   => __( 'Upload image with full width for background in header area. (Supported files .png, .jpg, .gif)',
-						'fruitful' ),
+						'dgc' ),
 					'fields' => array(
 						array(
 							'id'        => 'header_img',
@@ -286,26 +286,26 @@ class dgc_theme_options {
 							'id'        => 'header_bg_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Header background-color', 'fruitful' )
+							'box-title' => __( 'Header background-color', 'dgc' )
 						)
 					)
 				),
 				array(
 					'id'      => 'header_img_size',
-					'label'   => __( 'Background image size', 'fruitful' ),
+					'label'   => __( 'Background image size', 'dgc' ),
 					'info'    => __( 'Choose size for background image - full width or only for content area.',
-						'fruitful' ),
+						'dgc' ),
 					'type'    => 'select',
 					'options' => array(
-						'full'     => __( 'Full width position', 'fruitful' ),
-						'centered' => __( 'Centered position', 'fruitful' )
+						'full'     => __( 'Full width position', 'dgc' ),
+						'centered' => __( 'Centered position', 'dgc' )
 					),
 					'default' => 'full'
 				),
 				array(
 					'id'      => 'header_height',
-					'label'   => __( 'Height for header area', 'fruitful' ),
-					'info'    => __( 'Minimum height in pixels', 'fruitful' ),
+					'label'   => __( 'Height for header area', 'dgc' ),
+					'info'    => __( 'Minimum height in pixels', 'dgc' ),
 					'type'    => 'text',
 					'default' => '80',
 				),
@@ -315,13 +315,13 @@ class dgc_theme_options {
 		/*Background*/
 
 		$this->sections['background'] = array(
-			'title'  => __( 'Background', 'fruitful' ),
+			'title'  => __( 'Background', 'dgc' ),
 			'id'     => 'background',
 			'fields' => array(
 				array(
-					'label'  => __( 'Background Image', 'fruitful' ),
+					'label'  => __( 'Background Image', 'dgc' ),
 					'info'   => __( 'Upload your background image for site background. (Supported files .png, .jpg, .gif)',
-						'fruitful' ),
+						'dgc' ),
 					'fields' => array(
 						array(
 							'id'        => 'backgroung_img',
@@ -330,7 +330,7 @@ class dgc_theme_options {
 						),
 						array(
 							'id'          => 'bg_repeating',
-							'description' => __( 'Background repeat', 'fruitful' ),
+							'description' => __( 'Background repeat', 'dgc' ),
 							'type'        => 'checkbox',
 							'default'     => 'off',
 						),
@@ -338,15 +338,15 @@ class dgc_theme_options {
 				),
 				array(
 					'id'      => 'background_color',
-					'label'   => __( 'Background Color', 'fruitful' ),
-					'info'    => __( 'Choose color for body background', 'fruitful' ),
+					'label'   => __( 'Background Color', 'dgc' ),
+					'info'    => __( 'Choose color for body background', 'dgc' ),
 					'type'    => 'color',
 					'default' => '#ffffff'
 				),
 				array(
 					'id'      => 'container_bg_color',
-					'label'   => __( 'Background color for content', 'fruitful' ),
-					'info'    => __( 'Choose color for main content area', 'fruitful' ),
+					'label'   => __( 'Background color for content', 'dgc' ),
+					'info'    => __( 'Choose color for main content area', 'dgc' ),
 					'type'    => 'color',
 					'default' => '#ffffff'
 				),
@@ -355,88 +355,88 @@ class dgc_theme_options {
 
 		/*Logo*/
 		$this->sections['logo'] = array(
-			'title'  => __( 'Logo', 'fruitful' ),
+			'title'  => __( 'Logo', 'dgc' ),
 			'id'     => 'logo',
 			'fields' => array(
 				array(
 					'id'      => 'logo_position',
-					'label'   => __( 'Logo Position', 'fruitful' ),
-					'info'    => __( 'Set Logo Position', 'fruitful' ),
+					'label'   => __( 'Logo Position', 'dgc' ),
+					'info'    => __( 'Set Logo Position', 'dgc' ),
 					'type'    => 'select',
 					'options' => array(
-						'0' => __( 'Left', 'fruitful' ),
-						'1' => __( 'Center', 'fruitful' ),
-						'2' => __( 'Right', 'fruitful' )
+						'0' => __( 'Left', 'dgc' ),
+						'1' => __( 'Center', 'dgc' ),
+						'2' => __( 'Right', 'dgc' )
 					),
 					'default' => '0'
 				),
 				array(
-					'label'  => __( 'Logo size', 'fruitful' ),
-					'info'   => __( 'Specify resolution for your logo image', 'fruitful' ),
+					'label'  => __( 'Logo size', 'dgc' ),
+					'info'   => __( 'Specify resolution for your logo image', 'dgc' ),
 					'fields' => array(
 						array(
 							'id'        => 'logo_w',
 							'type'      => 'text',
 							'default'   => '0',
-							'box-title' => __( 'Width', 'fruitful' )
+							'box-title' => __( 'Width', 'dgc' )
 						),
 						array(
 							'id'        => 'logo_h',
 							'type'      => 'text',
 							'default'   => '0',
-							'box-title' => __( 'Height', 'fruitful' )
+							'box-title' => __( 'Height', 'dgc' )
 						),
 					)
 				),
 				array(
 					'id'        => 'logo_img',
-					'label'     => __( 'Logo image', 'fruitful' ),
+					'label'     => __( 'Logo image', 'dgc' ),
 					'info'      => __( 'Upload logo image for your website. Size is original (Supported files .png, .jpg, .gif)',
-						'fruitful' ),
+						'dgc' ),
 					'type'      => 'image',
 					'imagetype' => 'logo',
 				),
 				array(
 					'id'        => 'logo_img_retina',
-					'label'     => __( 'Logo image retina', 'fruitful' ),
+					'label'     => __( 'Logo image retina', 'dgc' ),
 					'info'      => __( 'Upload logo in double size (If your logo is 100 x 20px, it should be 200 x 40px)',
-						'fruitful' ),
+						'dgc' ),
 					'type'      => 'image',
 					'imagetype' => 'logo_retina',
 				),
 				array(
 					'id'        => 'fav_icon',
-					'label'     => __( 'Favicon', 'fruitful' ),
+					'label'     => __( 'Favicon', 'dgc' ),
 					'info'      => __( 'A favicon is a 16x16 pixel icon that represents your site; upload your custom Favicon here.',
-						'fruitful' ),
+						'dgc' ),
 					'type'      => 'image',
 					'imagetype' => 'favicon',
 				),
 				array(
 					'id'        => 'fav_icon_iphone',
-					'label'     => __( 'Favicon iPhone', 'fruitful' ),
-					'info'      => __( 'Upload a custom favicon for iPhone (57x57 pixel png).', 'fruitful' ),
+					'label'     => __( 'Favicon iPhone', 'dgc' ),
+					'info'      => __( 'Upload a custom favicon for iPhone (57x57 pixel png).', 'dgc' ),
 					'type'      => 'image',
 					'imagetype' => 'favicon_iphone',
 				),
 				array(
 					'id'        => 'fav_icon_iphone_retina',
-					'label'     => __( 'Favicon iPhone Retina', 'fruitful' ),
-					'info'      => __( 'Upload a custom favicon for iPhone retina (114x114 pixel png).', 'fruitful' ),
+					'label'     => __( 'Favicon iPhone Retina', 'dgc' ),
+					'info'      => __( 'Upload a custom favicon for iPhone retina (114x114 pixel png).', 'dgc' ),
 					'type'      => 'image',
 					'imagetype' => 'favicon_iphone_retina',
 				),
 				array(
 					'id'        => 'fav_icon_ipad',
-					'label'     => __( 'Favicon iPad', 'fruitful' ),
-					'info'      => __( 'Upload a custom favicon for iPad (72x72 pixel png).', 'fruitful' ),
+					'label'     => __( 'Favicon iPad', 'dgc' ),
+					'info'      => __( 'Upload a custom favicon for iPad (72x72 pixel png).', 'dgc' ),
 					'type'      => 'image',
 					'imagetype' => 'favicon_ipad',
 				),
 				array(
 					'id'        => 'fav_icon_ipad_retina',
-					'label'     => __( 'Favicon iPad Retina', 'fruitful' ),
-					'info'      => __( 'Upload a custom favicon for iPhone retina (144x144 pixel png).', 'fruitful' ),
+					'label'     => __( 'Favicon iPad Retina', 'dgc' ),
+					'info'      => __( 'Upload a custom favicon for iPhone retina (144x144 pixel png).', 'dgc' ),
 					'type'      => 'image',
 					'imagetype' => 'favicon_ipad_retina',
 				),
@@ -446,198 +446,198 @@ class dgc_theme_options {
 
 		/*Colors*/
 		$this->sections['colors'] = array(
-			'title'  => __( 'Colors', 'fruitful' ),
+			'title'  => __( 'Colors', 'dgc' ),
 			'id'     => 'main-colors',
 			'fields' => array(
 				array(
 					'id'     => 'menu-color',
-					'label'  => __( 'Main menu color', 'fruitful' ),
-					'info'   => __( 'Choose your colors for main menu in header', 'fruitful' ),
+					'label'  => __( 'Main menu color', 'dgc' ),
+					'info'   => __( 'Choose your colors for main menu in header', 'dgc' ),
 					'newrow' => true,
 					'fields' => array(
 						array(
 							'id'        => 'menu_bg_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Background color', 'fruitful' )
+							'box-title' => __( 'Background color', 'dgc' )
 						),
 						array(
 							'id'        => 'menu_btn_color',
 							'type'      => 'color',
 							'default'   => '#F15A23',
-							'box-title' => __( 'Menu button color', 'fruitful' )
+							'box-title' => __( 'Menu button color', 'dgc' )
 						),
 						array(
 							'id'        => 'menu_font_color',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Font color', 'fruitful' )
+							'box-title' => __( 'Font color', 'dgc' )
 						),
 						array(
 							'id'        => 'menu_hover_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Font color (active and hover)', 'fruitful' )
+							'box-title' => __( 'Font color (active and hover)', 'dgc' )
 						),
 					)
 				),
 				array(
 					'id'     => 'dd-menu-color',
-					'label'  => __( 'Dropdown menu color', 'fruitful' ),
-					'info'   => __( 'Choose your colors for dropdown menu in header', 'fruitful' ),
+					'label'  => __( 'Dropdown menu color', 'dgc' ),
+					'info'   => __( 'Choose your colors for dropdown menu in header', 'dgc' ),
 					'fields' => array(
 						array(
 							'id'        => 'dd_menu_bg_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Background color', 'fruitful' )
+							'box-title' => __( 'Background color', 'dgc' )
 						),
 						array(
 							'id'        => 'dd_menu_btn_color',
 							'type'      => 'color',
 							'default'   => '#F15A23',
-							'box-title' => __( 'Menu button color', 'fruitful' )
+							'box-title' => __( 'Menu button color', 'dgc' )
 						),
 						array(
 							'id'        => 'dd_menu_font_color',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Font color', 'fruitful' )
+							'box-title' => __( 'Font color', 'dgc' )
 						),
 						array(
 							'id'        => 'dd_menu_hover_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Font color (active and hover)', 'fruitful' )
+							'box-title' => __( 'Font color (active and hover)', 'dgc' )
 						),
 					)
 				),
 				array(
 					'id'     => 'g-menu-color',
-					'label'  => __( 'General font color', 'fruitful' ),
-					'info'   => __( 'Choose your colors for text and links', 'fruitful' ),
+					'label'  => __( 'General font color', 'dgc' ),
+					'info'   => __( 'Choose your colors for text and links', 'dgc' ),
 					'newrow' => true,
 					'fields' => array(
 						array(
 							'id'        => 'p_font_color',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Font color', 'fruitful' )
+							'box-title' => __( 'Font color', 'dgc' )
 						),
 						array(
 							'id'        => 'a_font_color',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Link color', 'fruitful' )
+							'box-title' => __( 'Link color', 'dgc' )
 						),
 						array(
 							'id'        => 'a_hover_font_color',
 							'type'      => 'color',
 							'default'   => '#FF5D2A',
-							'box-title' => __( 'Link color (hover)', 'fruitful' )
+							'box-title' => __( 'Link color (hover)', 'dgc' )
 						),
 						array(
 							'id'        => 'a_focus_font_color',
 							'type'      => 'color',
 							'default'   => '#FF5D2A',
-							'box-title' => __( 'Link color (focus)', 'fruitful' )
+							'box-title' => __( 'Link color (focus)', 'dgc' )
 						),
 						array(
 							'id'        => 'a_active_font_color',
 							'type'      => 'color',
 							'default'   => '#FF5D2A',
-							'box-title' => __( 'Link color (active)', 'fruitful' )
+							'box-title' => __( 'Link color (active)', 'dgc' )
 						),
 					)
 				),
 				array(
 					'id'     => 'lines-color',
-					'label'  => __( 'Color for lines', 'fruitful' ),
-					'info'   => __( 'Choose your colors for lines and separators', 'fruitful' ),
+					'label'  => __( 'Color for lines', 'dgc' ),
+					'info'   => __( 'Choose your colors for lines and separators', 'dgc' ),
 					'fields' => array(
 						array(
 							'id'        => 'widgets_sep_color',
 							'type'      => 'color',
 							'default'   => '#F15A23',
-							'box-title' => __( 'Widget separator color', 'fruitful' )
+							'box-title' => __( 'Widget separator color', 'dgc' )
 						),
 						array(
 							'id'        => 'date_of_post_b_color',
 							'type'      => 'color',
 							'default'   => '#F15A23',
-							'box-title' => __( 'Blog post date color', 'fruitful' )
+							'box-title' => __( 'Blog post date color', 'dgc' )
 						),
 						array(
 							'id'        => 'date_of_post_f_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Date font color', 'fruitful' )
+							'box-title' => __( 'Date font color', 'dgc' )
 						),
 					)
 				),
 				array(
 					'id'     => 'buttons-color',
-					'label'  => __( 'Color for buttons', 'fruitful' ),
-					'info'   => __( 'Choose your colors for buttons', 'fruitful' ),
+					'label'  => __( 'Color for buttons', 'dgc' ),
+					'info'   => __( 'Choose your colors for buttons', 'dgc' ),
 					'newrow' => true,
 					'fields' => array(
 						array(
 							'id'        => 'btn_color',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Button background color', 'fruitful' )
+							'box-title' => __( 'Button background color', 'dgc' )
 						),
 						array(
 							'id'        => 'btn_active_color',
 							'type'      => 'color',
 							'default'   => '#F15A23',
 							'box-title' => __( 'Button background color (hover, active, focus, current page - pagenavi)',
-								'fruitful' )
+								'dgc' )
 						),
 					)
 				),
 				array(
 					'id'     => 'social-color',
-					'label'  => __( 'Color for social icons', 'fruitful' ),
-					'info'   => __( 'Choose your colors for social icons', 'fruitful' ),
+					'label'  => __( 'Color for social icons', 'dgc' ),
+					'info'   => __( 'Choose your colors for social icons', 'dgc' ),
 					'fields' => array(
 						array(
 							'id'        => 'soc_icon_bg_color',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Social icons background color', 'fruitful' )
+							'box-title' => __( 'Social icons background color', 'dgc' )
 						),
 						array(
 							'id'        => 'soc_icon_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
 							'box-title' => __( 'Button background color (hover, active, focus, current page - pagenavi)',
-								'fruitful' )
+								'dgc' )
 						),
 					)
 				),
 				array(
 					'id'     => 'woocommerce-color',
-					'label'  => __( 'WooCommerce colors', 'fruitful' ),
-					'info'   => __( 'Choose your colors for WooCommerce', 'fruitful' ),
+					'label'  => __( 'WooCommerce colors', 'dgc' ),
+					'info'   => __( 'Choose your colors for WooCommerce', 'dgc' ),
 					'fields' => array(
 						array(
 							'id'        => 'woo_sale_price_color',
 							'type'      => 'color',
 							'default'   => '#919191',
-							'box-title' => __( 'Sale price color', 'fruitful' )
+							'box-title' => __( 'Sale price color', 'dgc' )
 						),
 						array(
 							'id'        => 'woo_rating_color_regular',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Rating color (regular)', 'fruitful' )
+							'box-title' => __( 'Rating color (regular)', 'dgc' )
 						),
 						array(
 							'id'        => 'woo_rating_color_active',
 							'type'      => 'color',
 							'default'   => '#FF5D2A',
-							'box-title' => __( 'Rating color (hover, active)', 'fruitful' )
+							'box-title' => __( 'Rating color (hover, active)', 'dgc' )
 						),
 					)
 				),
@@ -646,90 +646,90 @@ class dgc_theme_options {
 
 		/*Fonts*/
 		$this->sections['fonts'] = array(
-			'title'  => __( 'Fonts', 'fruitful' ),
+			'title'  => __( 'Fonts', 'dgc' ),
 			'id'     => 'fonts',
 			'fields' => array(
 				// array(
-				// 'label'			=> __( 'Fonts' , 'fruitful' ),
-				// 'info'			=> __( 'Popular web safe font collection, select and use for your needs.', 'fruitful' ),
+				// 'label'			=> __( 'Fonts' , 'dgc' ),
+				// 'info'			=> __( 'Popular web safe font collection, select and use for your needs.', 'dgc' ),
 				// ),
 				array(
 					'id'      => 'h_font_family',
-					'label'   => __( 'Headers', 'fruitful' ),
-					'info'    => __( 'Choose font-family for all headlines.', 'fruitful' ),
+					'label'   => __( 'Headers', 'dgc' ),
+					'info'    => __( 'Choose font-family for all headlines.', 'dgc' ),
 					'type'    => 'font',
 					'options' => dgc_fonts_list(),
 					'default' => 'Open Sans, sans-serif',
 				),
 				array(
 					'id'      => 'm_font_family',
-					'label'   => __( 'Menu', 'fruitful' ),
-					'info'    => __( 'Choose font-family for primary menu.', 'fruitful' ),
+					'label'   => __( 'Menu', 'dgc' ),
+					'info'    => __( 'Choose font-family for primary menu.', 'dgc' ),
 					'type'    => 'font',
 					'options' => dgc_fonts_list(),
 					'default' => 'Open Sans, sans-serif',
 				),
 				array(
 					'id'      => 'p_font_family',
-					'label'   => __( 'Body', 'fruitful' ),
-					'info'    => __( 'Choose font-family for content.', 'fruitful' ),
+					'label'   => __( 'Body', 'dgc' ),
+					'info'    => __( 'Choose font-family for content.', 'dgc' ),
 					'type'    => 'font',
 					'options' => dgc_fonts_list(),
 					'default' => 'Open Sans, sans-serif',
 				),
 				array(
 					'id'     => 'font-size',
-					'label'  => __( 'Font size', 'fruitful' ),
+					'label'  => __( 'Font size', 'dgc' ),
 					'info'   => __( 'Choose font size for specific html elements. Set size as number, without px..',
-						'fruitful' ),
+						'dgc' ),
 					'fields' => array(
 						array(
 							'id'        => 'h1_size',
 							'type'      => 'text',
 							'default'   => '27',
-							'box-title' => __( 'H1', 'fruitful' ),
+							'box-title' => __( 'H1', 'dgc' ),
 						),
 						array(
 							'id'        => 'h2_size',
 							'type'      => 'text',
 							'default'   => '34',
-							'box-title' => __( 'H2', 'fruitful' ),
+							'box-title' => __( 'H2', 'dgc' ),
 						),
 						array(
 							'id'        => 'h3_size',
 							'type'      => 'text',
 							'default'   => '18',
-							'box-title' => __( 'H3', 'fruitful' ),
+							'box-title' => __( 'H3', 'dgc' ),
 						),
 						array(
 							'id'        => 'h4_size',
 							'type'      => 'text',
 							'default'   => '17',
-							'box-title' => __( 'H4', 'fruitful' ),
+							'box-title' => __( 'H4', 'dgc' ),
 						),
 						array(
 							'id'        => 'h5_size',
 							'type'      => 'text',
 							'default'   => '14',
-							'box-title' => __( 'H5', 'fruitful' ),
+							'box-title' => __( 'H5', 'dgc' ),
 						),
 						array(
 							'id'        => 'h6_size',
 							'type'      => 'text',
 							'default'   => '12',
-							'box-title' => __( 'H6', 'fruitful' ),
+							'box-title' => __( 'H6', 'dgc' ),
 						),
 						array(
 							'id'        => 'm_size',
 							'type'      => 'text',
 							'default'   => '14',
-							'box-title' => __( 'Menu', 'fruitful' ),
+							'box-title' => __( 'Menu', 'dgc' ),
 						),
 						array(
 							'id'        => 'p_size',
 							'type'      => 'text',
 							'default'   => '14',
-							'box-title' => __( 'P', 'fruitful' ),
+							'box-title' => __( 'P', 'dgc' ),
 						),
 					)
 				)
@@ -739,36 +739,36 @@ class dgc_theme_options {
 
 		/*Slider*/
 		$this->sections['slider'] = array(
-			'title'  => __( 'Slider', 'fruitful' ),
+			'title'  => __( 'Slider', 'dgc' ),
 			'id'     => 'slider',
 			'fields' => array(
 				array(
 					'id'      => 'select_slider',
 					'class'   => 'select-slider',
-					'label'   => __( 'Slider', 'fruitful' ),
-					'info'    => __( 'Select a slider type that will be used by default.', 'fruitful' ),
+					'label'   => __( 'Slider', 'dgc' ),
+					'info'    => __( 'Select a slider type that will be used by default.', 'dgc' ),
 					'type'    => 'select',
 					'options' => array(
-						'1' => __( 'FlexSlider', 'fruitful' ),
-						'2' => __( 'Nivo Slider', 'fruitful' )
+						'1' => __( 'FlexSlider', 'dgc' ),
+						'2' => __( 'Nivo Slider', 'dgc' )
 					),
 					'default' => '1'
 				),
 				array(
 					'id'     => 'slider-options',
-					'label'  => __( 'Slider Options', 'fruitful' ),
+					'label'  => __( 'Slider Options', 'dgc' ),
 					'info'   => __( 'Choose needed options for slider: animation type, sliding direction, speed of animations, etc',
-						'fruitful' ),
+						'dgc' ),
 					'type'   => 'slider-options',
 					'fields' => array(
 						array(
 							'id'           => 's_animation',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Animation type', 'fruitful' ),
+							'box-title'    => __( 'Animation type', 'dgc' ),
 							'options'      => array(
-								'fade'  => __( 'fade', 'fruitful' ),
-								'slide' => __( 'slide', 'fruitful' )
+								'fade'  => __( 'fade', 'dgc' ),
+								'slide' => __( 'slide', 'dgc' )
 							),
 							'default'      => 'fade'
 						),
@@ -776,10 +776,10 @@ class dgc_theme_options {
 							'id'           => 's_direction',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Sliding direction, "horizontal" or "vertical"', 'fruitful' ),
+							'box-title'    => __( 'Sliding direction, "horizontal" or "vertical"', 'dgc' ),
 							'options'      => array(
-								'horizontal' => __( 'horizontal', 'fruitful' ),
-								'vertical'   => __( 'vertical', 'fruitful' )
+								'horizontal' => __( 'horizontal', 'dgc' ),
+								'vertical'   => __( 'vertical', 'dgc' )
 							),
 							'default'      => 'horizontal'
 						),
@@ -787,10 +787,10 @@ class dgc_theme_options {
 							'id'           => 's_reverse',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Reverse the animation direction', 'fruitful' ),
+							'box-title'    => __( 'Reverse the animation direction', 'dgc' ),
 							'options'      => array(
-								'false' => __( 'false', 'fruitful' ),
-								'true'  => __( 'true', 'fruitful' )
+								'false' => __( 'false', 'dgc' ),
+								'true'  => __( 'true', 'dgc' )
 							),
 							'default'      => 'false'
 						),
@@ -798,10 +798,10 @@ class dgc_theme_options {
 							'id'           => 's_slideshow',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Animate slider automatically', 'fruitful' ),
+							'box-title'    => __( 'Animate slider automatically', 'dgc' ),
 							'options'      => array(
-								'true'  => __( 'true', 'fruitful' ),
-								'false' => __( 'false', 'fruitful' )
+								'true'  => __( 'true', 'dgc' ),
+								'false' => __( 'false', 'dgc' )
 							),
 							'default'      => 'true'
 						),
@@ -810,31 +810,31 @@ class dgc_theme_options {
 							'type'         => 'text',
 							'option-block' => 'flex-slider',
 							'box-title'    => __( 'Set the speed of the slideshow cycling, in milliseconds',
-								'fruitful' ),
+								'dgc' ),
 							'default'      => '7000'
 						),
 						array(
 							'id'           => 's_animationSpeed',
 							'type'         => 'text',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Set the speed of animations, in milliseconds', 'fruitful' ),
+							'box-title'    => __( 'Set the speed of animations, in milliseconds', 'dgc' ),
 							'default'      => '600'
 						),
 						array(
 							'id'           => 's_initDelay',
 							'type'         => 'text',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Set an initialization delay, in milliseconds', 'fruitful' ),
+							'box-title'    => __( 'Set an initialization delay, in milliseconds', 'dgc' ),
 							'default'      => '0'
 						),
 						array(
 							'id'           => 's_randomize',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Randomize slide order', 'fruitful' ),
+							'box-title'    => __( 'Randomize slide order', 'dgc' ),
 							'options'      => array(
-								'false' => __( 'false', 'fruitful' ),
-								'true'  => __( 'true', 'fruitful' )
+								'false' => __( 'false', 'dgc' ),
+								'true'  => __( 'true', 'dgc' )
 							),
 							'default'      => 'false'
 						),
@@ -842,10 +842,10 @@ class dgc_theme_options {
 							'id'           => 's_controlnav',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Manual control usage', 'fruitful' ),
+							'box-title'    => __( 'Manual control usage', 'dgc' ),
 							'options'      => array(
-								'true'  => __( 'true', 'fruitful' ),
-								'false' => __( 'false', 'fruitful' )
+								'true'  => __( 'true', 'dgc' ),
+								'false' => __( 'false', 'dgc' )
 							),
 							'default'      => 'true'
 						),
@@ -853,10 +853,10 @@ class dgc_theme_options {
 							'id'           => 's_touch',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Touch swipe', 'fruitful' ),
+							'box-title'    => __( 'Touch swipe', 'dgc' ),
 							'options'      => array(
-								'true'  => __( 'true', 'fruitful' ),
-								'false' => __( 'false', 'fruitful' )
+								'true'  => __( 'true', 'dgc' ),
+								'false' => __( 'false', 'dgc' )
 							),
 							'default'      => 'true'
 						),
@@ -864,12 +864,12 @@ class dgc_theme_options {
 							'id'           => 'nv_skins',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Slider Skins', 'fruitful' ),
+							'box-title'    => __( 'Slider Skins', 'dgc' ),
 							'options'      => array(
-								'theme-bar'     => __( 'bar', 'fruitful' ),
-								'theme-default' => __( 'default', 'fruitful' ),
-								'theme-dark'    => __( 'dark', 'fruitful' ),
-								'theme-light'   => __( 'light', 'fruitful' )
+								'theme-bar'     => __( 'bar', 'dgc' ),
+								'theme-default' => __( 'default', 'dgc' ),
+								'theme-dark'    => __( 'dark', 'dgc' ),
+								'theme-light'   => __( 'light', 'dgc' )
 							),
 							'default'      => 'theme-bar'
 						),
@@ -877,21 +877,21 @@ class dgc_theme_options {
 							'id'           => 'nv_animation',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Effect', 'fruitful' ),
+							'box-title'    => __( 'Effect', 'dgc' ),
 							'options'      => array(
-								'random'                 => __( 'random', 'fruitful' ),
-								'sliceDownRight'         => __( 'sliceDownRight', 'fruitful' ),
-								'sliceDownLeft'          => __( 'sliceDownLeft', 'fruitful' ),
-								'sliceUpRight'           => __( 'sliceUpRight', 'fruitful' ),
-								'sliceUpDown'            => __( 'sliceUpDown', 'fruitful' ),
-								'sliceUpDownLeft'        => __( 'sliceUpDownLeft', 'fruitful' ),
-								'fold'                   => __( 'fold', 'fruitful' ),
-								'fade'                   => __( 'fade', 'fruitful' ),
-								'boxRandom'              => __( 'boxRandom', 'fruitful' ),
-								'boxRain'                => __( 'boxRain', 'fruitful' ),
-								'boxRainReverse'         => __( 'boxRainReverse', 'fruitful' ),
-								'boxRainGrow'            => __( 'boxRainGrow', 'fruitful' ),
-								'boxRainGrowReverse	' => __( 'boxRainGrowReverse', 'fruitful' )
+								'random'                 => __( 'random', 'dgc' ),
+								'sliceDownRight'         => __( 'sliceDownRight', 'dgc' ),
+								'sliceDownLeft'          => __( 'sliceDownLeft', 'dgc' ),
+								'sliceUpRight'           => __( 'sliceUpRight', 'dgc' ),
+								'sliceUpDown'            => __( 'sliceUpDown', 'dgc' ),
+								'sliceUpDownLeft'        => __( 'sliceUpDownLeft', 'dgc' ),
+								'fold'                   => __( 'fold', 'dgc' ),
+								'fade'                   => __( 'fade', 'dgc' ),
+								'boxRandom'              => __( 'boxRandom', 'dgc' ),
+								'boxRain'                => __( 'boxRain', 'dgc' ),
+								'boxRainReverse'         => __( 'boxRainReverse', 'dgc' ),
+								'boxRainGrow'            => __( 'boxRainGrow', 'dgc' ),
+								'boxRainGrowReverse	' => __( 'boxRainGrowReverse', 'dgc' )
 							),
 							'default'      => 'random'
 						),
@@ -899,52 +899,52 @@ class dgc_theme_options {
 							'id'           => 'nv_slice',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'For slice animations', 'fruitful' ),
+							'box-title'    => __( 'For slice animations', 'dgc' ),
 							'default'      => '15'
 						),
 						array(
 							'id'           => 'nv_boxCols',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'For box animations (Cols)', 'fruitful' ),
+							'box-title'    => __( 'For box animations (Cols)', 'dgc' ),
 							'default'      => '8'
 						),
 						array(
 							'id'           => 'nv_boxRows',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'For box animations (Rows)', 'fruitful' ),
+							'box-title'    => __( 'For box animations (Rows)', 'dgc' ),
 							'default'      => '4'
 						),
 						array(
 							'id'           => 'nv_animSpeed',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Slide transition speed', 'fruitful' ),
+							'box-title'    => __( 'Slide transition speed', 'dgc' ),
 							'default'      => '500'
 						),
 						array(
 							'id'           => 'nv_pauseTime',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'How long each slide will show', 'fruitful' ),
+							'box-title'    => __( 'How long each slide will show', 'dgc' ),
 							'default'      => '3000'
 						),
 						array(
 							'id'           => 'nv_startSlide',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Set starting Slide (0 index)', 'fruitful' ),
+							'box-title'    => __( 'Set starting Slide (0 index)', 'dgc' ),
 							'default'      => '0'
 						),
 						array(
 							'id'           => 'nv_directionNav',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Next & Prev navigation', 'fruitful' ),
+							'box-title'    => __( 'Next & Prev navigation', 'dgc' ),
 							'options'      => array(
-								'true'  => __( 'true', 'fruitful' ),
-								'false' => __( 'false', 'fruitful' ),
+								'true'  => __( 'true', 'dgc' ),
+								'false' => __( 'false', 'dgc' ),
 							),
 							'default'      => 'true'
 						),
@@ -952,10 +952,10 @@ class dgc_theme_options {
 							'id'           => 'nv_controlNav',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( '1,2,3... navigation', 'fruitful' ),
+							'box-title'    => __( '1,2,3... navigation', 'dgc' ),
 							'options'      => array(
-								'true'  => __( 'true', 'fruitful' ),
-								'false' => __( 'false', 'fruitful' ),
+								'true'  => __( 'true', 'dgc' ),
+								'false' => __( 'false', 'dgc' ),
 							),
 							'default'      => 'true'
 						),
@@ -963,10 +963,10 @@ class dgc_theme_options {
 							'id'           => 'nv_controlNavThumbs',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Use thumbnails for Control Nav', 'fruitful' ),
+							'box-title'    => __( 'Use thumbnails for Control Nav', 'dgc' ),
 							'options'      => array(
-								'true'  => __( 'true', 'fruitful' ),
-								'false' => __( 'false', 'fruitful' ),
+								'true'  => __( 'true', 'dgc' ),
+								'false' => __( 'false', 'dgc' ),
 							),
 							'default'      => 'false'
 						),
@@ -974,10 +974,10 @@ class dgc_theme_options {
 							'id'           => 'nv_pauseOnHover',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Stop animation while hovering', 'fruitful' ),
+							'box-title'    => __( 'Stop animation while hovering', 'dgc' ),
 							'options'      => array(
-								'true'  => __( 'true', 'fruitful' ),
-								'false' => __( 'false', 'fruitful' ),
+								'true'  => __( 'true', 'dgc' ),
+								'false' => __( 'false', 'dgc' ),
 							),
 							'default'      => 'true'
 						),
@@ -985,10 +985,10 @@ class dgc_theme_options {
 							'id'           => 'nv_manualAdvance',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Force manual transitions', 'fruitful' ),
+							'box-title'    => __( 'Force manual transitions', 'dgc' ),
 							'options'      => array(
-								'true'  => __( 'true', 'fruitful' ),
-								'false' => __( 'false', 'fruitful' ),
+								'true'  => __( 'true', 'dgc' ),
+								'false' => __( 'false', 'dgc' ),
 							),
 							'default'      => 'false'
 						),
@@ -996,24 +996,24 @@ class dgc_theme_options {
 							'id'           => 'nv_prevText',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Prev directionNav text', 'fruitful' ),
-							'default'      => __( 'Prev', 'fruitful' )
+							'box-title'    => __( 'Prev directionNav text', 'dgc' ),
+							'default'      => __( 'Prev', 'dgc' )
 						),
 						array(
 							'id'           => 'nv_nextText',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Next directionNav text', 'fruitful' ),
-							'default'      => __( 'Next', 'fruitful' )
+							'box-title'    => __( 'Next directionNav text', 'dgc' ),
+							'default'      => __( 'Next', 'dgc' )
 						),
 						array(
 							'id'           => 'nv_randomStart',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Start on a random slide', 'fruitful' ),
+							'box-title'    => __( 'Start on a random slide', 'dgc' ),
 							'options'      => array(
-								'true'  => __( 'true', 'fruitful' ),
-								'false' => __( 'false', 'fruitful' ),
+								'true'  => __( 'true', 'dgc' ),
+								'false' => __( 'false', 'dgc' ),
 							),
 							'default'      => 'false'
 						),
@@ -1023,157 +1023,157 @@ class dgc_theme_options {
 				array(
 					'id'    => 'slides',
 					'type'  => 'slides',
-					'label' => __( 'Slides', 'fruitful' ),
+					'label' => __( 'Slides', 'dgc' ),
 					'info'  => __( 'Add images to slider (Supported files .png, .jpg, .gif). If you want to change order, just drag and drop it. Image size for slides is original from media gallery, please upload images in same size, to get best display on page. To display slider in needed place use shortcode [dgc_slider]. Current theme version support only one slider per website.',
-						'fruitful' ),
+						'dgc' ),
 				)
 			)
 		);
 
 		/*Social Links*/
 		$this->sections['social-links'] = array(
-			'title'  => __( 'Social Links', 'fruitful' ),
+			'title'  => __( 'Social Links', 'dgc' ),
 			'id'     => 'social-links',
 			'fields' => array(
 				array(
 					'id'      => 'sl_position',
-					'label'   => __( 'Socials Links Position', 'fruitful' ),
-					'info'    => __( 'Choose place where social links will be displayed.', 'fruitful' ),
+					'label'   => __( 'Socials Links Position', 'dgc' ),
+					'info'    => __( 'Choose place where social links will be displayed.', 'dgc' ),
 					'type'    => 'select',
-					'options' => array( '0' => __( 'Footer', 'fruitful' ), '1' => __( 'Header', 'fruitful' ) ),
+					'options' => array( '0' => __( 'Footer', 'dgc' ), '1' => __( 'Header', 'dgc' ) ),
 					'default' => '0'
 				),
 				array(
 					'id'     => 'social-links',
-					'label'  => __( 'Socials Links', 'fruitful' ),
+					'label'  => __( 'Socials Links', 'dgc' ),
 					'info'   => __( 'Add link to your social media profiles. Icons with link will be display in header or footer.',
-						'fruitful' ),
+						'dgc' ),
 					'fields' => array(
 						array(
 							'id'        => 'facebook_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Facebook', 'fruitful' )
+							'box-title' => __( 'Facebook', 'dgc' )
 						),
 						array(
 							'id'        => 'twitter_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Twitter', 'fruitful' )
+							'box-title' => __( 'Twitter', 'dgc' )
 						),
 						array(
 							'id'        => 'linkedin_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'LinkedIn', 'fruitful' )
+							'box-title' => __( 'LinkedIn', 'dgc' )
 						),
 						array(
 							'id'        => 'myspace_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'MySpace', 'fruitful' )
+							'box-title' => __( 'MySpace', 'dgc' )
 						),
 						array(
 							'id'        => 'googleplus_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Google Plus+', 'fruitful' )
+							'box-title' => __( 'Google Plus+', 'dgc' )
 						),
 						array(
 							'id'        => 'dribbble_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Dribbble', 'fruitful' )
+							'box-title' => __( 'Dribbble', 'dgc' )
 						),
 						array(
 							'id'        => 'skype_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Skype', 'fruitful' )
+							'box-title' => __( 'Skype', 'dgc' )
 						),
 						array(
 							'id'        => 'flickr_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Flickr', 'fruitful' )
+							'box-title' => __( 'Flickr', 'dgc' )
 						),
 						array(
 							'id'        => 'youtube_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'You Tube', 'fruitful' )
+							'box-title' => __( 'You Tube', 'dgc' )
 						),
 						array(
 							'id'        => 'vimeo_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Vimeo', 'fruitful' )
+							'box-title' => __( 'Vimeo', 'dgc' )
 						),
 						array(
 							'id'        => 'rss_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'RSS', 'fruitful' )
+							'box-title' => __( 'RSS', 'dgc' )
 						),
 						array(
 							'id'        => 'vk_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Vk.com', 'fruitful' )
+							'box-title' => __( 'Vk.com', 'dgc' )
 						),
 						array(
 							'id'        => 'instagram_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Instagram', 'fruitful' )
+							'box-title' => __( 'Instagram', 'dgc' )
 						),
 						array(
 							'id'        => 'pinterest_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Pinterest', 'fruitful' )
+							'box-title' => __( 'Pinterest', 'dgc' )
 						),
 						array(
 							'id'        => 'yelp_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Yelp', 'fruitful' )
+							'box-title' => __( 'Yelp', 'dgc' )
 						),
 						array(
 							'id'        => 'email_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'E-mail', 'fruitful' )
+							'box-title' => __( 'E-mail', 'dgc' )
 						),
 						array(
 							'id'        => 'github_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Github', 'fruitful' )
+							'box-title' => __( 'Github', 'dgc' )
 						),
 						array(
 							'id'        => 'tumblr_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Tumblr', 'fruitful' )
+							'box-title' => __( 'Tumblr', 'dgc' )
 						),
 						array(
 							'id'        => 'soundcloud_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Soundcloud', 'fruitful' )
+							'box-title' => __( 'Soundcloud', 'dgc' )
 						),
 						array(
 							'id'        => 'tripadvisor_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Tripadvisor', 'fruitful' )
+							'box-title' => __( 'Tripadvisor', 'dgc' )
 						),
 						array(
 							'id'        => 'ello_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Ello.co', 'fruitful' )
+							'box-title' => __( 'Ello.co', 'dgc' )
 						),
 					)
 				),
@@ -1182,32 +1182,32 @@ class dgc_theme_options {
 
 		/*Footer*/
 		$this->sections['footer'] = array(
-			'title'  => __( 'Footer', 'fruitful' ),
+			'title'  => __( 'Footer', 'dgc' ),
 			'id'     => 'footer',
 			'fields' => array(
 				array(
 					'id'        => 'footer_text',
-					'label'     => __( 'Footer options', 'fruitful' ),
-					'info'      => __( 'Replace default theme copyright information and links', 'fruitful' ),
-					'box-title' => __( 'Copyright section', 'fruitful' ),
+					'label'     => __( 'Footer options', 'dgc' ),
+					'info'      => __( 'Replace default theme copyright information and links', 'dgc' ),
+					'box-title' => __( 'Copyright section', 'dgc' ),
 					'type'      => 'textarea',
 					'default'   => __( 'dgc-wordpress-theme by <a href="https://github.com/dgc-network/">dgc-network</a> Powered by: <a href="http://wordpress.org">WordPress</a>',
-						'fruitful' ),
+						'dgc' ),
 				)
 			)
 		);
 
 		/*Custom CSS*/
 		$this->sections['custom-css'] = array(
-			'title'  => __( 'Custom CSS', 'fruitful' ),
+			'title'  => __( 'Custom CSS', 'dgc' ),
 			'id'     => 'custom-css',
 			'fields' => array(
 				array(
 					'id'        => 'custom_css',
-					'label'     => __( 'Custom CSS', 'fruitful' ),
+					'label'     => __( 'Custom CSS', 'dgc' ),
 					'info'      => __( 'Theme has two css files style.css and fixed-style.css which use default styles for front-end responsive and static layout. Do not edit theme default css files, use textarea editor below for overwriting all css styles.',
-						'fruitful' ),
-					'box-title' => __( 'Styles editor', 'fruitful' ),
+						'dgc' ),
+					'box-title' => __( 'Styles editor', 'dgc' ),
 					'type'      => 'textarea',
 					'default'   => '',
 				)
@@ -1217,69 +1217,69 @@ class dgc_theme_options {
 		/*Woocommerce*/
 		if ( class_exists( 'Woocommerce' ) ) {
 			$this->sections['woo'] = array(
-				'title'  => __( 'Woocommerce', 'fruitful' ),
+				'title'  => __( 'Woocommerce', 'dgc' ),
 				'id'     => 'woo',
 				'fields' => array(
 					array(
 						'id'          => 'showcart',
-						'label'       => __( 'Show cart in header', 'fruitful' ),
+						'label'       => __( 'Show cart in header', 'dgc' ),
 						'info'        => __( 'If you want to display cart link in header select options below.',
-							'fruitful' ),
+							'dgc' ),
 						'type'        => 'checkbox',
-						'description' => __( 'Enable', 'fruitful' ),
+						'description' => __( 'Enable', 'dgc' ),
 						'default'     => 'on',
 					),
 					array(
-						'label'   => __( 'Cart color', 'fruitful' ),
-						'info'    => __( 'Choose color for cart icon', 'fruitful' ),
+						'label'   => __( 'Cart color', 'dgc' ),
+						'info'    => __( 'Choose color for cart icon', 'dgc' ),
 						'id'      => 'cart_color',
 						'type'    => 'color',
 						'default' => '#020202',
 					),
 					array(
 						'id'      => 'woo_shop_sidebar',
-						'label'   => __( 'Woocommerce Shop Sidebar', 'fruitful' ),
-						'info'    => __( 'Show or hide sidebar', 'fruitful' ),
+						'label'   => __( 'Woocommerce Shop Sidebar', 'dgc' ),
+						'info'    => __( 'Show or hide sidebar', 'dgc' ),
 						'type'    => 'select',
 						'options' => array(
-							'2' => __( 'Left sidebar', 'fruitful' ),
-							'1' => __( 'Full width', 'fruitful' ),
-							'3' => __( 'Right sidebar', 'fruitful' )
+							'2' => __( 'Left sidebar', 'dgc' ),
+							'1' => __( 'Full width', 'dgc' ),
+							'3' => __( 'Right sidebar', 'dgc' )
 						),
 						'default' => '2',
 					),
 					array(
 						'id'      => 'woo_product_sidebar',
-						'label'   => __( 'Woocommerce Product Sidebar', 'fruitful' ),
-						'info'    => __( 'Show or hide sidebar', 'fruitful' ),
+						'label'   => __( 'Woocommerce Product Sidebar', 'dgc' ),
+						'info'    => __( 'Show or hide sidebar', 'dgc' ),
 						'type'    => 'select',
 						'options' => array(
-							'1' => __( 'Full width with tabs on right side', 'fruitful' ),
-							'2' => __( 'Left sidebar', 'fruitful' ),
-							'3' => __( 'Right sidebar', 'fruitful' ),
-							'4' => __( 'Full width with tabs on left side', 'fruitful' ),
-							'5' => __( 'Full width with tabs in center', 'fruitful' )
+							'1' => __( 'Full width with tabs on right side', 'dgc' ),
+							'2' => __( 'Left sidebar', 'dgc' ),
+							'3' => __( 'Right sidebar', 'dgc' ),
+							'4' => __( 'Full width with tabs on left side', 'dgc' ),
+							'5' => __( 'Full width with tabs in center', 'dgc' )
 						),
 						'default' => '1',
 					),
 					array(
 						'id'      => 'shop_num_row',
-						'label'   => __( 'Woocommerce pages products per row', 'fruitful' ),
-						'info'    => __( 'Choose number of products', 'fruitful' ),
+						'label'   => __( 'Woocommerce pages products per row', 'dgc' ),
+						'info'    => __( 'Choose number of products', 'dgc' ),
 						'type'    => 'select',
 						'options' => array(
-							'2' => __( '2 products', 'fruitful' ),
-							'3' => __( '3 products', 'fruitful' ),
-							'4' => __( '4 products', 'fruitful' ),
-							'5' => __( '5 products', 'fruitful' )
+							'2' => __( '2 products', 'dgc' ),
+							'3' => __( '3 products', 'dgc' ),
+							'4' => __( '4 products', 'dgc' ),
+							'5' => __( '5 products', 'dgc' )
 						),
 						'default' => '4',
 					),
 					array(
 						'id'      => 'woo_shop_num_prod',
-						'label'   => __( 'Number of products on Shop pages', 'fruitful' ),
+						'label'   => __( 'Number of products on Shop pages', 'dgc' ),
 						'info'    => __( 'Choose number of products. Write -1 for show all products on one page',
-							'fruitful' ),
+							'dgc' ),
 						'type'    => 'text',
 						'default' => '10',
 					),
@@ -1307,8 +1307,8 @@ class dgc_theme_options {
 		* @since dgc-wordpress-theme 1.0
 		*/
 		$admin_page = add_theme_page(
-			__( 'Theme Options', 'fruitful' ),                             // Name of page
-			__( 'Theme Options', 'fruitful' ),                             // Label in menu
+			__( 'Theme Options', 'dgc' ),                             // Name of page
+			__( 'Theme Options', 'dgc' ),                             // Label in menu
 			'edit_theme_options',                                     // Capability required
 			$this->args['opt_slug'],                                 // Menu slug, used to uniquely identify the page
 			array( &$this, 'dgc_theme_options_render_page' )    // Function that renders the options page
@@ -1324,8 +1324,8 @@ class dgc_theme_options {
 
 		/* Add the main siteadmin menu item */
 		$wp_admin_bar->add_menu( array(
-			'id'    => 'fruitfultheme_options',
-			'title' => __( 'Theme Options', 'fruitful' ),
+			'id'    => 'dgctheme_options',
+			'title' => __( 'Theme Options', 'dgc' ),
 			'href'  => admin_url( 'admin.php?page=theme_options' )
 		) );
 	}
@@ -1416,14 +1416,14 @@ class dgc_theme_options {
 				$html       .= '<div class="upload_button_div">';
 				$image_type = ( isset( $field['imagetype'] ) ) ? 'data-imagetype="' . $field['imagetype'] . '"' : '';
 				$html       .= '<span ' . $image_type . ' class="button upload_btn" id="' . esc_attr( $field['id'] ) . '">' . __( 'Upload Image',
-						'fruitful' ) . '</span>';
+						'dgc' ) . '</span>';
 				if ( ! empty( $data ) ) {
 					$none = '';
 				} else {
 					$none = 'none';
 				}
 				$html .= '<span class="button reset_btn ' . $none . '" id="reset_' . esc_attr( $field['id'] ) . '" title="' . esc_attr( $field['id'] ) . '">' . __( 'Remove',
-						'fruitful' ) . '</span>';
+						'dgc' ) . '</span>';
 				$html .= '</div>';
 				$html .= '</div>';
 				break;
@@ -1435,7 +1435,7 @@ class dgc_theme_options {
 				break;
 			case 'font':
 				$html .= '<div class="text_fonts">';
-				$html .= '<div id="menu_sample_font" class="sample_text">' . __( 'Sample Font', 'fruitful' ) . '</div>';
+				$html .= '<div id="menu_sample_font" class="sample_text">' . __( 'Sample Font', 'dgc' ) . '</div>';
 				$html .= '<select class="select-fonts" name="' . $this->args['opt_name'] . '[' . esc_attr( $field['id'] ) . ']" id="options-' . esc_attr( $field['id'] ) . '">';
 				foreach ( $field['options'] as $k => $v ) {
 					$selected = false;
@@ -1483,12 +1483,12 @@ class dgc_theme_options {
 		?>
         <div class="wrap">
             <h2></h2>
-            <form method="post" action="/" enctype="multipart/form-data" class="form-admin-fruitful"
-                  id="form-admin-fruitful">
+            <form method="post" action="/" enctype="multipart/form-data" class="form-admin-dgc"
+                  id="form-admin-dgc">
                 <div id="save_options" class="save-options"></div>
                 <div class="header">
-                    <h2 class="title_theme"><?php _e( 'Theme Options', 'fruitful' ); ?></h2>
-					<?php submit_button( __( 'Save', 'fruitful' ) ); ?>
+                    <h2 class="title_theme"><?php _e( 'Theme Options', 'dgc' ); ?></h2>
+					<?php submit_button( __( 'Save', 'dgc' ) ); ?>
 					<?php settings_errors(); ?>
                 </div>
                 <div class="content">
@@ -1511,7 +1511,7 @@ class dgc_theme_options {
 
                 </div>
                 <div class="footer">
-					<?php submit_button( __( 'Save', 'fruitful' ) ); ?>
+					<?php submit_button( __( 'Save', 'dgc' ) ); ?>
                 </div>
                 <input type="hidden" name="action" value="dgc_theme_options_action"/>
                 <input type="hidden" name="security" value="<?php echo wp_create_nonce( 'dgc_theme_data' ); ?>"/>
@@ -1519,41 +1519,41 @@ class dgc_theme_options {
 
             <div id="sidebar-promo" class="sidebar-promo">
                 <div class="sidebar-promo-widget promo-support">
-                    <h3><?php _e( 'Support', 'fruitful' ); ?></h3>
+                    <h3><?php _e( 'Support', 'dgc' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
-						_e( 'If You faced with problems or find error or bug, please', 'fruitful' );
+						_e( 'If You faced with problems or find error or bug, please', 'dgc' );
 						echo ' <a target="_blank" href="http://dgc-network.zendesk.com/hc/en-us/requests/new">';
-						_e( 'submit request.', 'fruitful' );
+						_e( 'submit request.', 'dgc' );
 						echo '</a> ';
-						_e( 'On official ', 'fruitful' );
-						echo ' <a target="_blank" href="http://wordpress.org/support/theme/fruitful">';
-						_e( 'Support forum', 'fruitful' );
+						_e( 'On official ', 'dgc' );
+						echo ' <a target="_blank" href="http://wordpress.org/support/theme/dgc">';
+						_e( 'Support forum', 'dgc' );
 						echo '</a> ';
-						_e( 'You may find answers on Your questions.', 'fruitful' );
+						_e( 'You may find answers on Your questions.', 'dgc' );
 						?></p>
                 </div>
                 <div class="sidebar-promo-widget promo-customization">
-                    <h3><?php _e( 'Additional customization', 'fruitful' ); ?></h3>
+                    <h3><?php _e( 'Additional customization', 'dgc' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
-						_e( 'Our team is available for any type of WordPress development. ', 'fruitful' );
-						_e( 'If You want customize theme or add new features, You can', 'fruitful' );
+						_e( 'Our team is available for any type of WordPress development. ', 'dgc' );
+						_e( 'If You want customize theme or add new features, You can', 'dgc' );
 						echo ' ';
-						_e( 'submit order', 'fruitful' );
+						_e( 'submit order', 'dgc' );
 						echo ' ';
-						_e( 'on our website', 'fruitful' );
+						_e( 'on our website', 'dgc' );
 						?></p>
                 </div>
                 <div class="sidebar-promo-widget promo-about">
-                    <h3><?php _e( 'dgc-wordpress-theme PRO', 'fruitful' ); ?></h3>
+                    <h3><?php _e( 'dgc-wordpress-theme PRO', 'dgc' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
-						echo ' <a target="_blank" href="https://dgc-network.com/product/fruitful-pro">';
-						_e( 'dgc-wordpress-theme PRO - WordPress responsive theme', 'fruitful' );
+						echo ' <a target="_blank" href="https://dgc-network.com/product/dgc-pro">';
+						_e( 'dgc-wordpress-theme PRO - WordPress responsive theme', 'dgc' );
 						echo '</a> ';
-						_e( ' that contains all the options of ', 'fruitful' );
-						echo ' <a target="_blank" href="https://wordpress.org/themes/fruitful/">';
-						_e( 'FREE version', 'fruitful' );
+						_e( ' that contains all the options of ', 'dgc' );
+						echo ' <a target="_blank" href="https://wordpress.org/themes/dgc/">';
+						_e( 'FREE version', 'dgc' );
 						echo '</a> ';
-						_e( ' plus:', 'fruitful' );
+						_e( ' plus:', 'dgc' );
 						?></p>
                     <ul class="sidebar-promo-list"><?php
 						echo '<li><span>More options</span> like ability to change width for container grid.</li>';

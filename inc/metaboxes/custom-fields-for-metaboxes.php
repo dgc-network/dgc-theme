@@ -1,7 +1,7 @@
 <?php 
 
 /*Adding cutom metabox filed*/
-/*Made by fruitful*/
+/*Made by dgc*/
 	
 add_action( 'cmb_render_custom_layout_sidebars', 'dgc_custom_layout_sidebars', 10, 2 );
 function dgc_custom_layout_sidebars( $field, $meta ) {

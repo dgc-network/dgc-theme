@@ -31,7 +31,7 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 	
 	$meta_boxes['dgc_slider_settings'] = array(
 		'id'         => 'dgc_slider_settings',
-		'title'      => __( 'Slider settings', 'fruitful' ),
+		'title'      => __( 'Slider settings', 'dgc' ),
 		'context'    => 'normal',
 		'priority'   => 'low',
 		'show_names' => true, 
@@ -39,14 +39,14 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 		//'show_on'	 =>	array( 'key'=>'front-page', 'value' => '' ),
 		'fields'     => array(
 				array(
-					'name' 		=> __('Slider display', 'fruitful'),
+					'name' 		=> __('Slider display', 'dgc'),
 					'id' 		=> $prefix . 'slider_layout',
-					'subname'   => __('Select the option to display the corresponding slider', 'fruitful'),
+					'subname'   => __('Select the option to display the corresponding slider', 'dgc'),
 					'std' 		=> '0',
 					'options' 	=> array(
-										'0' => __('Disable slider', 'fruitful'),
-										'1' => __('Full width slider', 'fruitful'),
-										'2' => __('Boxed slider', 'fruitful'),
+										'0' => __('Disable slider', 'dgc'),
+										'1' => __('Full width slider', 'dgc'),
+										'2' => __('Boxed slider', 'dgc'),
 										),
 					'type' => 'select'
 				),
@@ -56,15 +56,15 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 	// Only with sidebar enabled
 	$meta_boxes['dgc_page_general_settings'] = array(
 		'id'         => 'dgc_page_general_settings',
-		'title'      => __( 'Page settings', 'fruitful' ),
+		'title'      => __( 'Page settings', 'dgc' ),
 		'pages'      => array( 'page'), 
 		'context'    => 'normal',
 		'priority'   => 'low',
 		'show_names' => true, 
 		'fields'     => array(
 			array(
-				'name' 		=> __( 'Layout', 'fruitful' ),
-				'subname' 	=> __( 'Select a specific layout for this page.', 'fruitful' ),
+				'name' 		=> __( 'Layout', 'dgc' ),
+				'subname' 	=> __( 'Select a specific layout for this page.', 'dgc' ),
 				'id'      	=> $prefix . 'page_layout',
 				'type' 	  	=> 'custom_layout_sidebars',
 				'default' 	=> '0'
@@ -75,15 +75,15 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 	
 	$meta_boxes['dgc_post_general_settings'] = array(
 		'id'         => 'dgc_post_general_settings',
-		'title'      => __( 'Post settings', 'fruitful' ),
+		'title'      => __( 'Post settings', 'dgc' ),
 		'pages'      => array( 'post'), 
 		'context'    => 'normal',
 		'priority'   => 'low',
 		'show_names' => true, 
 		'fields'     => array(
 			array(
-				'name' 		=> __( 'Layout', 'fruitful' ),
-				'subname' 	=> __( 'Select a specific layout for this post.', 'fruitful' ),
+				'name' 		=> __( 'Layout', 'dgc' ),
+				'subname' 	=> __( 'Select a specific layout for this post.', 'dgc' ),
 				'id' 		=> $prefix . 'page_layout',
 				'type' 		=> 'custom_layout_sidebars',
 				'default' 	=> '0'

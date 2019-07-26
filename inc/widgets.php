@@ -14,11 +14,11 @@ class DGC_Widget_News_Archive extends WP_Widget {
 	 **/
 	 public function __construct() {
 		$theme_name  = wp_get_theme();
-		$widget_name = $theme_name.' '.__( 'News Archive', 'fruitful' );
+		$widget_name = $theme_name.' '.__( 'News Archive', 'dgc' );
 		
 		parent::__construct( 'widget_news_archive', $widget_name, array(
 			'classname'   => 'widget_news_archive',
-			'description' => __( 'Use this widget to list your Link posts.', 'fruitful' ),
+			'description' => __( 'Use this widget to list your Link posts.', 'dgc' ),
 		) );
 	}
 	/**
@@ -38,7 +38,7 @@ class DGC_Widget_News_Archive extends WP_Widget {
 			return;
 		}
 
-		$title 			= apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'News-Archive', 'fruitful' ) : $instance['title'], $instance, $this->id_base);
+		$title 			= apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'News-Archive', 'dgc' ) : $instance['title'], $instance, $this->id_base);
 		$number 		= empty( $instance['number'] ) ? 10 : absint( $instance['number'] );
 		$custom_content = empty ($instance['textarea_newsarchiv']) ? null : stripslashes($instance['textarea_newsarchiv']);
 		
@@ -119,14 +119,14 @@ class DGC_Widget_News_Archive extends WP_Widget {
 		$number = isset( $instance['number'] ) ? absint( $instance['number'] ) : 10;
 		$textarea_newsarchive = isset( $instance['textarea_newsarchiv'] ) ? stripslashes( $instance['textarea_newsarchiv'] ) : '';
 ?>
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', 'fruitful' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', 'dgc' ); ?></label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" /></p>
 
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php _e( 'Number of posts to show:', 'fruitful' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php _e( 'Number of posts to show:', 'dgc' ); ?></label>
 			<input id="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'number' ) ); ?>" type="text" value="<?php echo esc_attr( $number ); ?>" size="3" /></p>
 			
 			
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'textarea_newsarchiv' ) ); ?>"><?php _e( 'Text Message:', 'fruitful' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'textarea_newsarchiv' ) ); ?>"><?php _e( 'Text Message:', 'dgc' ); ?></label>
 			<textarea id="<?php 	echo esc_attr( $this->get_field_id( 'textarea_newsarchiv' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'textarea_newsarchiv' ) ); ?>" class="widefat" cols="16" rows="5"><?php echo stripslashes( $textarea_newsarchive ); ?></textarea></p>
 		<?php
 	}
