@@ -8,8 +8,8 @@
  * different template.
  *
  * @package WordPress
- * @subpackage Fruitful theme
- * @since Fruitful theme 1.0
+ * @subpackage dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 
 get_header(); ?>

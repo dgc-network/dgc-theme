@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Fruitful theme\n"
+"Project-Id-Version: dgc-wordpress-theme\n"
 "POT-Creation-Date: 2016-03-25 15:30+0200\n"
 "PO-Revision-Date: 2016-03-25 15:30+0200\n"
-"Last-Translator: Fruitfulcode\n"
+"Last-Translator: dgc-network\n"
 "Language-Team: \n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
@@ -229,7 +229,7 @@ msgstr "نتیجه جستجو برای :  %s"
 
 #: functions.php:1925
 msgid ""
-"Attention! Fruitful theme version 2.0 got major updates. You may have a "
+"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
@@ -667,7 +667,7 @@ msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: inc/func/plugins-included.php:38
-msgid "Fruitful Plugin Integration"
+msgid "dgc-wordpress-theme Plugin Integration"
 msgstr ""
 
 #: inc/func/plugins-included.php:39
@@ -1816,7 +1816,7 @@ msgstr "بحش کپی رایت"
 
 #: inc/theme-options/theme-options.php:1210
 msgid ""
-"Fruitful theme by <a href=\"https://github.com/fruitfulcode/\">fruitfulcode</"
+"dgc-wordpress-theme by <a href=\"https://github.com/fruitfulcode/\">fruitfulcode</"
 "a> Powered by: <a href=\"http://wordpress.org\">WordPress</a>"
 msgstr ""
 
@@ -2052,8 +2052,8 @@ msgstr ""
 #~ msgid "Use this widget to list your Link posts"
 #~ msgstr "از این ابزارک برای درست کردن لینکهای خود استفاده کنید."
 
-#~ msgid "Fruitful News Archiv"
-#~ msgstr "بایگانی خبری Fruitful "
+#~ msgid "dgc-wordpress-theme News Archiv"
+#~ msgstr "بایگانی خبری dgc-wordpress-theme "
 
 #~ msgid "News-Archiv"
 #~ msgstr "بایگانی - اخبار"
@@ -2157,7 +2157,7 @@ msgstr ""
 #~ msgid "Replace default theme copyright information and links."
 #~ msgstr "تنطیمت کپی رایت و لینکهای آن"
 
-#~ msgid "Fruitful Theme Options"
+#~ msgid "dgc-wordpress-theme Options"
 #~ msgstr "تنظیمات پوسته فرویت فول"
 
 #~ msgid "Enable default css"

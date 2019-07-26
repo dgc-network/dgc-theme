@@ -1,15 +1,15 @@
 <?php
 /**
- * Fruitful theme functions and definitions
+ * dgc-wordpress-theme functions and definitions
  *
- * @package Fruitful theme
- * @since Fruitful theme 1.0
+ * @package dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 
  /**
  * Set the content width based on the theme's design and stylesheet.
  *
- * @since Fruitful theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
 if ( ! isset( $content_width ) )
 	   $content_width = 960; /* pixels */
@@ -43,7 +43,7 @@ if ( ! function_exists( 'dgc_setup' ) ):
  * before the init hook. The init hook is too late for some features, such as indicating
  * support post thumbnails.
  *
- * @since Fruitful theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
 
 /* 
@@ -80,7 +80,7 @@ require get_template_directory() . '/inc/widgets.php';
 
 
  /**
- * Adding recommended plugins for Fruitful Theme.
+ * Adding recommended plugins for dgc-wordpress-theme.
  */
 require_once('inc/func/plugins-included.php');
 
@@ -139,7 +139,7 @@ function dgc_setup() {
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
-	 * If you're building a theme based on Fruitful theme, use a find and replace
+	 * If you're building a theme based on dgc-wordpress-theme, use a find and replace
 	 * to change 'fruitful' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'fruitful', get_template_directory() . '/languages' );
@@ -224,7 +224,7 @@ if ( ! function_exists( 'dgc_thumbnail_size' ) ) {
 /**
  * Register widgetized area and update sidebar with default widgets
  *
- * @since Fruitful theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
  if ( ! function_exists( 'dgc_widgets_init' ) ) {
 function dgc_widgets_init() {

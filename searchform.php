@@ -1,10 +1,10 @@
 <?php
 /**
- * The template for displaying search forms in Fruitful theme
+ * The template for displaying search forms in dgc-wordpress-theme
  *
  * @package WordPress
- * @subpackage Fruitful theme
- * @since Fruitful theme 1.0
+ * @subpackage dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 ?>
 	<form method="get" id="searchform" action="<?php echo esc_url( home_url() ); ?>" role="search">

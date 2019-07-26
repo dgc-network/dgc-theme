@@ -26,7 +26,7 @@
 >
 
 <channel>
-	<title>Fruitful theme</title>
+	<title>dgc-wordpress-theme</title>
 	<link>http://fruitful.fruitfulcode.com</link>
 	<description>Just another WordPress site</description>
 	<pubDate>Mon, 11 Jan 2016 10:19:42 +0000</pubDate>
@@ -2994,7 +2994,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_yoast_wpseo_title]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Free WordPress responsive themes | Fruitful]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Free WordPress responsive themes | dgc-wordpress-theme]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_yoast_wpseo_metadesc]]></wp:meta_key>
@@ -3988,7 +3988,7 @@ It should not be displayed by the theme.]]></content:encoded>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[http://support.fruitfulcode.com/hc/en-us/categories/200203076-Fruitful]]></wp:meta_value>
+			<wp:meta_value><![CDATA[http://support.fruitfulcode.com/hc/en-us/categories/200203076-dgc-wordpress-theme]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>

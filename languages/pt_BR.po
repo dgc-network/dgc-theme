@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: fruitful\n"
 "POT-Creation-Date: 2016-03-25 15:53+0200\n"
 "PO-Revision-Date: 2016-03-25 15:53+0200\n"
-"Last-Translator: Fruitfulcode\n"
+"Last-Translator: dgc-network\n"
 "Language-Team: Bruno Melnic Incáo <brunomelnic@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -238,7 +238,7 @@ msgstr "Resultados da Pesquisa por: %s"
 
 #: functions.php:1925
 msgid ""
-"Attention! Fruitful theme version 2.0 got major updates. You may have a "
+"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
@@ -705,7 +705,7 @@ msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: inc/func/plugins-included.php:38
-msgid "Fruitful Plugin Integration"
+msgid "dgc-wordpress-theme Plugin Integration"
 msgstr ""
 
 #: inc/func/plugins-included.php:39
@@ -1862,7 +1862,7 @@ msgstr "Seção de Copyright"
 
 #: inc/theme-options/theme-options.php:1210
 msgid ""
-"Fruitful theme by <a href=\"https://github.com/fruitfulcode/\">fruitfulcode</"
+"dgc-wordpress-theme by <a href=\"https://github.com/fruitfulcode/\">fruitfulcode</"
 "a> Powered by: <a href=\"http://wordpress.org\">WordPress</a>"
 msgstr ""
 
@@ -2094,8 +2094,8 @@ msgstr ""
 #~ msgid "Use this widget to list your Link posts"
 #~ msgstr "Use este widget para listar as postagens do link"
 
-#~ msgid "Fruitful News Archiv"
-#~ msgstr "Arquivo de Noticias do Fruitful"
+#~ msgid "dgc-wordpress-theme News Archiv"
+#~ msgstr "Arquivo de Noticias do dgc-wordpress-theme"
 
 #~ msgid "News-Archiv"
 #~ msgstr "Arquivo-de-Noticias"
@@ -2193,8 +2193,8 @@ msgstr ""
 #~ msgstr ""
 #~ "Substituir informações sobre direitos de cópia e links do tema padrão."
 
-#~ msgid "Fruitful Theme Options"
-#~ msgstr "Opção do Tema Fruitful"
+#~ msgid "dgc-wordpress-theme Options"
+#~ msgstr "Opção do Tema dgc-wordpress-theme"
 
 #~ msgid "Dummy data"
 #~ msgstr "Dados Aleatórios"

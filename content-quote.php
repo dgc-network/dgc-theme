@@ -3,8 +3,8 @@
  * The template for displaying posts in the Quote post format.
  *
  * @package WordPress
- * @subpackage Fruitful theme
- * @since Fruitful theme 1.0
+ * @subpackage dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 ?>
 

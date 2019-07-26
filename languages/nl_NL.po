@@ -1,11 +1,11 @@
-# Translation of Fruitful in Dutch
-# This file is distributed under the same license as the Fruitful package.
+# Translation of dgc-wordpress-theme in Dutch
+# This file is distributed under the same license as the dgc-wordpress-theme package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Fruitful\n"
+"Project-Id-Version: dgc-wordpress-theme\n"
 "POT-Creation-Date: 2016-03-25 15:29+0200\n"
 "PO-Revision-Date: 2016-03-25 15:29+0200\n"
-"Last-Translator: Fruitfulcode\n"
+"Last-Translator: dgc-network\n"
 "Language-Team: \n"
 "Language: nl_NL\n"
 "MIME-Version: 1.0\n"
@@ -250,7 +250,7 @@ msgstr "Zoekresultaten voor: %s"
 
 #: functions.php:1925
 msgid ""
-"Attention! Fruitful theme version 2.0 got major updates. You may have a "
+"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
@@ -739,7 +739,7 @@ msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Plugin  %1$s (%2$d/%3$d) wordt geïnstalleerd"
 
 #: inc/func/plugins-included.php:38
-msgid "Fruitful Plugin Integration"
+msgid "dgc-wordpress-theme Plugin Integration"
 msgstr ""
 
 #: inc/func/plugins-included.php:39
@@ -1891,7 +1891,7 @@ msgstr ""
 
 #: inc/theme-options/theme-options.php:1210
 msgid ""
-"Fruitful theme by <a href=\"https://github.com/fruitfulcode/\">fruitfulcode</"
+"dgc-wordpress-theme by <a href=\"https://github.com/fruitfulcode/\">fruitfulcode</"
 "a> Powered by: <a href=\"http://wordpress.org\">WordPress</a>"
 msgstr ""
 

@@ -1,9 +1,9 @@
 <?php
 /**
- * Fruitful theme Theme Options
+ * dgc-wordpress-theme Theme Options
  *
- * @package Fruitful theme
- * @since Fruitful theme 1.0
+ * @package dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 
 /**
@@ -15,7 +15,7 @@
  * which is used when the option is saved, to ensure that our option values are properly
  * formatted, and safe.
  *
- * @since Fruitful theme 1.0
+ * @since dgc-wordpress-theme 1.0
  */
 class dgc_theme_options {
 	public $args = array();
@@ -1191,7 +1191,7 @@ class dgc_theme_options {
 					'info'      => __( 'Replace default theme copyright information and links', 'fruitful' ),
 					'box-title' => __( 'Copyright section', 'fruitful' ),
 					'type'      => 'textarea',
-					'default'   => __( 'Fruitful theme by <a href="https://github.com/fruitfulcode/">fruitfulcode</a> Powered by: <a href="http://wordpress.org">WordPress</a>',
+					'default'   => __( 'dgc-wordpress-theme by <a href="https://github.com/fruitfulcode/">fruitfulcode</a> Powered by: <a href="http://wordpress.org">WordPress</a>',
 						'fruitful' ),
 				)
 			)
@@ -1304,7 +1304,7 @@ class dgc_theme_options {
 		/*
 		* Add our theme options page to the admin menu.
 		* This function is attached to the admin_menu action hook.
-		* @since Fruitful theme 1.0
+		* @since dgc-wordpress-theme 1.0
 		*/
 		$admin_page = add_theme_page(
 			__( 'Theme Options', 'fruitful' ),                             // Name of page
@@ -1477,7 +1477,7 @@ class dgc_theme_options {
 	/**
 	 * Renders the Theme Options administration screen.
 	 *
-	 * @since Fruitful theme 1.0
+	 * @since dgc-wordpress-theme 1.0
 	 */
 	public function dgc_theme_options_render_page() {
 		?>
@@ -1544,10 +1544,10 @@ class dgc_theme_options {
 						?></p>
                 </div>
                 <div class="sidebar-promo-widget promo-about">
-                    <h3><?php _e( 'Fruitful PRO', 'fruitful' ); ?></h3>
+                    <h3><?php _e( 'dgc-wordpress-theme PRO', 'fruitful' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
 						echo ' <a target="_blank" href="https://fruitfulcode.com/product/fruitful-pro">';
-						_e( 'Fruitful PRO - WordPress responsive theme', 'fruitful' );
+						_e( 'dgc-wordpress-theme PRO - WordPress responsive theme', 'fruitful' );
 						echo '</a> ';
 						_e( ' that contains all the options of ', 'fruitful' );
 						echo ' <a target="_blank" href="https://wordpress.org/themes/fruitful/">';

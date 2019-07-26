@@ -3,8 +3,8 @@
  * The Single Post Page Sidebar widget areas.
  *
  * @package WordPress
- * @subpackage Fruitful theme
- * @since Fruitful theme 1.2
+ * @subpackage dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.2
  */
 ?>
 	<div id="secondary" class="widget-area" role="complementary">

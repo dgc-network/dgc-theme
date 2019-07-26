@@ -1,5 +1,5 @@
 -------------------------------------------------------
-    Thank you for downloading Fruitful theme!
+    Thank you for downloading dgc-wordpress-theme!
 -------------------------------------------------------
 
 We have created a theme based on our necessities and experience, we will be glad if you like our work.
@@ -8,7 +8,7 @@ We want to make our product even better and better and we need users support and
 
 Works perfect with WooCommerce till version 3.4
 
-Fruitful PRO – WordPress responsive theme contains all the options of FREE version plus more options like ability to change width for container grid and support latest WooCommerce version. 
+dgc-wordpress-theme PRO – WordPress responsive theme contains all the options of FREE version plus more options like ability to change width for container grid and support latest WooCommerce version. 
 
 Find all the details by link https://fruitfulcode.com/product/fruitful-pro
 
@@ -18,9 +18,9 @@ Thank you.
     Copyright
 -------------------------------------------------------
 
-Fruitful is a free WordPress responsive theme with theme options panel, designed and developed in Fruitful Code
+dgc-wordpress-theme is a free WordPress responsive theme with theme options panel, designed and developed in dgc-network
 Feel free to use and modify this theme as you like.
-Fruitful is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
+dgc-wordpress-theme is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 
 -------------------------------------------------------
     Demo
@@ -37,8 +37,8 @@ If you want to get demo content pages like on demo website
     Installation
 -------------------------------------------------------
 
-1. Upload the "Fruitful" folder to the "/wp-content/themes/" directory
-or find in Appearance > Themes > Install theme, type “Fruitful” in search field.
+1. Upload the "dgc-wordpress-theme" folder to the "/wp-content/themes/" directory
+or find in Appearance > Themes > Install theme, type “dgc-wordpress-theme” in search field.
 2. Activate the Theme through the 'Themes' menu in WordPress
 3. Go to "Appearance" > Theme options
 4. Config theme as you need.
@@ -49,7 +49,7 @@ or find in Appearance > Themes > Install theme, type “Fruitful” in search fi
 -------------------------------------------------------
 
 === Documentation ===
-https://github.com/Fruitfulcode/Fruitful/wiki
+https://github.com/dgc-network/dgc-wordpress-theme/wiki
 
 === WP Version ===
 As this theme uses the WordPress customizer feature for most options, it requires at least version 3.4 to work properly.
@@ -60,7 +60,7 @@ Theme supported 2 types of html layout. Default responsive setting which adapt f
 Uncheck arrow below if you need static website display.
 
 === Theme options ===
-Fruitful has custom theme options panel, for easy setup and config theme setting for your needs.
+dgc-wordpress-theme has custom theme options panel, for easy setup and config theme setting for your needs.
 
 === Upload logo, backgroud, favicon ===
 Go to the customizer screen in the logo and favicon section and upload your images.
@@ -314,7 +314,7 @@ Files: .pot, ru_Ru.po, ru_Ru.mo icluded. Default language is english.
 * Improvement: Custom menu widget, RTL support
 * Improvement: WooCommerce CSS
 * Improvement: WooCommerce 4 products per row, by default
-* Improvement: FontAwesome script activation with Fruitful shortcodes
+* Improvement: FontAwesome script activation with dgc-wordpress-theme shortcodes
 * Improvement: Ability to translate navigation labels
 * Improvement: Sticky header now with background image
 * Bug fix: WooCommerce Related products

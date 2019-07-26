@@ -4,7 +4,7 @@ require_once dirname( __FILE__ ) . '/plugin-activation.php';
 
 add_action( 'tgmpa_register', 'dgc_register_required_plugins' );
 /**
- * Register the required plugins for Fruitful theme.
+ * Register the required plugins for dgc-wordpress-theme.
  */
 function dgc_register_required_plugins() {
 
@@ -16,7 +16,7 @@ function dgc_register_required_plugins() {
 		),
 
 		array(
-			'name'    => 'Fruitful Shortcodes',
+			'name'    => 'dgc-wordpress-theme Shortcodes',
 			'slug'    => 'fruitful-shortcodes',
 			'required'  => true,
 		),
@@ -47,18 +47,18 @@ function dgc_register_required_plugins() {
 		'is_automatic' => false,                  	 // Automatically activate plugins after installation or not.
 		'message'       => '<span class="fruitful-msg"><br />1. Select all plugins checkbox to the left of "Plugin" <br />2. Click "Bulk Actions" and then Install <br />3. Click "Apply" button</span>',              
 		'strings'      => array(
-			'page_title'                            => __( 'Fruitful Plugin Integration', 'fruitful' ),
+			'page_title'                            => __( 'dgc-wordpress-theme Plugin Integration', 'fruitful' ),
 			'menu_title'                            => __( 'Plugin Integration', 'fruitful' ),
 			'installing'                            => __( 'Installing Plugin: %s', 'fruitful' ), // %1$s = plugin name
 			'oops'                                  => __( 'Something went wrong with the plugin API.', 'fruitful' ),
 			'notice_can_install_required'     => _n_noop(
-				'Fruitful theme requires the following plugin: %1$s.',
-				'Fruitful theme requires the following plugins: %1$s.',
+				'dgc-wordpress-theme requires the following plugin: %1$s.',
+				'dgc-wordpress-theme requires the following plugins: %1$s.',
 				'fruitful'
 			), // %1$s = plugin name(s).
 			'notice_can_install_recommended'  => _n_noop(
-				'Fruitful theme recommends the following plugin: %1$s.',
-				'Fruitful theme recommends the following plugins: %1$s.',
+				'dgc-wordpress-theme recommends the following plugin: %1$s.',
+				'dgc-wordpress-theme recommends the following plugins: %1$s.',
 				'fruitful'
 			), // %1$s = plugin name(s).
 			'notice_ask_to_update'            => _n_noop(

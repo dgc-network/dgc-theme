@@ -238,7 +238,7 @@ msgstr ""
 
 #: functions.php:1925
 msgid ""
-"Attention! Fruitful theme version 2.0 got major updates. You may have a "
+"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
@@ -693,7 +693,7 @@ msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: inc/func/plugins-included.php:38
-msgid "Fruitful Plugin Integration"
+msgid "dgc-wordpress-theme Plugin Integration"
 msgstr ""
 
 #: inc/func/plugins-included.php:39
@@ -1804,7 +1804,7 @@ msgstr ""
 
 #: inc/theme-options/theme-options.php:1210
 msgid ""
-"Fruitful theme by <a href=\"https://github.com/fruitfulcode/\">fruitfulcode</a> "
+"dgc-wordpress-theme by <a href=\"https://github.com/fruitfulcode/\">fruitfulcode</a> "
 "Powered by: <a href=\"http://wordpress.org\">WordPress</a>"
 msgstr ""
 

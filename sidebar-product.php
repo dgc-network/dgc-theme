@@ -3,8 +3,8 @@
  * The Shop Sidebar containing Widget areas for Shop Page.
  *
  * @package WordPress
- * @subpackage Fruitful theme
- * @since Fruitful theme 1.0
+ * @subpackage dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 ?>
 		<div id="secondary" class="widget-area" role="complementary">

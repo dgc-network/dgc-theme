@@ -5,8 +5,8 @@
  * Contains the closing of the id=main div and all content after
  *
  * @package WordPress
- * @subpackage Fruitful theme
- * @since Fruitful theme 1.0
+ * @subpackage dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 ?>
 				</div>
@@ -28,7 +28,7 @@
 				<a rel="nofollow" href="#top" title="<?php _e('Back to top', 'fruitful'); ?>">&uarr;</a>
 			</div>
 		</footer><!-- #colophon .site-footer -->
-	<!--WordPress Development by Fruitful Code-->
+	<!--WordPress Development by dgc-network-->
 <?php wp_footer(); ?>
 </body>
 </html>
