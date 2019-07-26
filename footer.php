@@ -5,8 +5,8 @@
  * Contains the closing of the id=main div and all content after
  *
  * @package WordPress
- * @subpackage dgc-network theme
- * @since dgc-network theme 1.0
+ * @subpackage dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 ?>
 				</div>
@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			<div id="back-top">
-				<a rel="nofollow" href="#top" title="<?php _e('Back to top', 'dgc'); ?>">&uarr;</a>
+				<a rel="nofollow" href="#top" title="<?php _e('Back to top', 'dgc-wordpress-theme'); ?>">&uarr;</a>
 			</div>
 		</footer><!-- #colophon .site-footer -->
 	<!--WordPress Development by dgc Code-->

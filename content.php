@@ -1,8 +1,8 @@
 <?php
 /**
  * @package WordPress
- * @subpackage dgc-network theme
- * @since dgc-network theme 1.0
+ * @subpackage dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 ?>
 <?php $options = dgc_get_theme_options(); ?>
@@ -30,7 +30,7 @@
 		<?php else : ?>
 			<?php if (get_the_title() != '') : ?>
 			<h2 class="post-title entry-title">
-				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'dgc' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
+				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'dgc-wordpress-theme' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h2>
 			<?php endif; ?>
 		<?php endif; // is_single() ?>		
@@ -60,8 +60,8 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php the_content( __( 'Read More <span class="meta-nav">&rarr;</span>', 'dgc' ) ); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'dgc' ), 'after' => '</div>' ) ); ?>
+		<?php the_content( __( 'Read More <span class="meta-nav">&rarr;</span>', 'dgc-wordpress-theme' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'dgc-wordpress-theme' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
@@ -69,10 +69,10 @@
 		<?php dgc_entry_meta(); ?>
 		
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { ?>
-			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'dgc' ), __( '1 Comment', 'dgc' ), __( '% Comments', 'dgc' ) ); ?></span>
+			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'dgc-wordpress-theme' ), __( '1 Comment', 'dgc-wordpress-theme' ), __( '% Comments', 'dgc-wordpress-theme' ) ); ?></span>
 		<?php } ?>
 		
-		<?php edit_post_link( __( 'Edit', 'dgc' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'dgc-wordpress-theme' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

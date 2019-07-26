@@ -1,5 +1,5 @@
 -------------------------------------------------------
-    Thank you for downloading dgc-network theme!
+    Thank you for downloading dgc-wordpress-theme!
 -------------------------------------------------------
 
 We have created a theme based on our necessities and experience, we will be glad if you like our work.

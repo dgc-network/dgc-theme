@@ -9,13 +9,13 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage dgc-network theme
- * @since dgc-network theme 1.0
+ * @subpackage dgc-wordpress-theme
+ * @since dgc-wordpress-theme 1.0
  */
 
 get_header(); ?>
 	<header class="archive-header">
-		<h1 class="archive-title"><?php printf( __( '%s Archives', 'dgc' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' ); ?></h1>
+		<h1 class="archive-title"><?php printf( __( '%s Archives', 'dgc-wordpress-theme' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' ); ?></h1>
 	</header><!-- .archive-header -->
 	<div class="eleven columns alpha">		
 		<div id="primary" class="content-area">

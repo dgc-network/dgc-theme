@@ -34,34 +34,34 @@ function dgc_add_jquery_script() {
 
 function dgc_fonts_list() {
 	$font_family_options = array(
-			'Arial, Helvetica, sans-serif'  				    => __( 'Arial, Helvetica, sans-serif', 'dgc' ),
-			'Arial Black, Gadget, sans-serif'				    => __( 'Arial Black, Gadget, sans-serif', 'dgc' ),
-			'Comic Sans MS, Textile, cursive' 				    => __( 	'Comic Sans MS, Textile, cursive', 'dgc' ),
-			'Courier New, Courier, monospace'			 	    => __( 'Courier New, Courier, monospace', 'dgc' ),
-			'Georgia, Times New Roman, Times, serif'	 	    => __( 'Georgia, Times New Roman, Times, serif', 'dgc' ),
-			'Impact, Charcoal, sans-serif' 				 	    => __( 'Impact, Charcoal, sans-serif', 'dgc' ),
-			'Lucida Console, Monaco, monospace' 			    => __( 'Lucida Console, Monaco, monospace', 'dgc' ),
-			'Lucida Sans Unicode, Lucida Grande, sans-serif'	=> __( 'Lucida Sans Unicode, Lucida Grande, sans-serif', 'dgc' ),
-			'Palatino Linotype, Book Antiqua, Palatino, serif' 	=> __( 'Palatino Linotype, Book Antiqua, Palatino, serif', 'dgc' ),
-			'Tahoma, Geneva, sans-serif' 						=> __( 'Tahoma, Geneva, sans-serif', 'dgc' ),
-			'Times New Roman, Times, serif'						=> __( 'Times New Roman, Times, serif', 'dgc' ),
-			'Trebuchet MS, Helvetica, sans-serif' 				=> __( 'Trebuchet MS, Helvetica, sans-serif', 'dgc' ),
-			'Verdana, Geneva, sans-serif'						=> __( 'Verdana, Geneva, sans-serif', 'dgc' ),
-			'MS Sans Serif, Geneva, sans-serif' 				=> __( 'MS Sans Serif, Geneva, sans-serif', 'dgc' ),
-			'MS Serif, New York, serif' 						=> __( 'MS Serif, New York, serif', 'dgc' ),
+			'Arial, Helvetica, sans-serif'  				    => __( 'Arial, Helvetica, sans-serif', 'dgc-wordpress-theme' ),
+			'Arial Black, Gadget, sans-serif'				    => __( 'Arial Black, Gadget, sans-serif', 'dgc-wordpress-theme' ),
+			'Comic Sans MS, Textile, cursive' 				    => __( 	'Comic Sans MS, Textile, cursive', 'dgc-wordpress-theme' ),
+			'Courier New, Courier, monospace'			 	    => __( 'Courier New, Courier, monospace', 'dgc-wordpress-theme' ),
+			'Georgia, Times New Roman, Times, serif'	 	    => __( 'Georgia, Times New Roman, Times, serif', 'dgc-wordpress-theme' ),
+			'Impact, Charcoal, sans-serif' 				 	    => __( 'Impact, Charcoal, sans-serif', 'dgc-wordpress-theme' ),
+			'Lucida Console, Monaco, monospace' 			    => __( 'Lucida Console, Monaco, monospace', 'dgc-wordpress-theme' ),
+			'Lucida Sans Unicode, Lucida Grande, sans-serif'	=> __( 'Lucida Sans Unicode, Lucida Grande, sans-serif', 'dgc-wordpress-theme' ),
+			'Palatino Linotype, Book Antiqua, Palatino, serif' 	=> __( 'Palatino Linotype, Book Antiqua, Palatino, serif', 'dgc-wordpress-theme' ),
+			'Tahoma, Geneva, sans-serif' 						=> __( 'Tahoma, Geneva, sans-serif', 'dgc-wordpress-theme' ),
+			'Times New Roman, Times, serif'						=> __( 'Times New Roman, Times, serif', 'dgc-wordpress-theme' ),
+			'Trebuchet MS, Helvetica, sans-serif' 				=> __( 'Trebuchet MS, Helvetica, sans-serif', 'dgc-wordpress-theme' ),
+			'Verdana, Geneva, sans-serif'						=> __( 'Verdana, Geneva, sans-serif', 'dgc-wordpress-theme' ),
+			'MS Sans Serif, Geneva, sans-serif' 				=> __( 'MS Sans Serif, Geneva, sans-serif', 'dgc-wordpress-theme' ),
+			'MS Serif, New York, serif' 						=> __( 'MS Serif, New York, serif', 'dgc-wordpress-theme' ),
 			
 			/*Google fonts*/	
-			'Open Sans, sans-serif' 							=> __( 'Open Sans, sans-serif', 'dgc' ),
-			'Lobster, cursive' 									=> __( 'Lobster, cursive', 'dgc' ),
-			'Josefin Slab, serif' 								=> __( 'Josefin Slab, serif', 'dgc' ),
-			'Arvo, serif' 										=> __( 'Arvo, serif', 'dgc' ),
-			'Lato, sans-serif' 									=> __( 'Lato, sans-serif', 'dgc' ),
-			'Vollkorn, serif' 									=> __( 'Vollkorn, serif', 'dgc' ),
-			'Abril Fatface, cursive' 							=> __( 'Abril Fatface, cursive', 'dgc' ),
-			'Ubuntu, sans-serif'								=> __( 'Ubuntu, sans-serif', 'dgc' ),
-			'PT Sans, sans-serif'								=> __( 'PT Sans, sans-serif', 'dgc' ),
-			'Old Standard TT, serif' 							=> __( 'Old Standard TT, serif', 'dgc' ),
-			'Droid Sans, sans-serif' 							=> __( 'Droid Sans, sans-serif', 'dgc' ),
+			'Open Sans, sans-serif' 							=> __( 'Open Sans, sans-serif', 'dgc-wordpress-theme' ),
+			'Lobster, cursive' 									=> __( 'Lobster, cursive', 'dgc-wordpress-theme' ),
+			'Josefin Slab, serif' 								=> __( 'Josefin Slab, serif', 'dgc-wordpress-theme' ),
+			'Arvo, serif' 										=> __( 'Arvo, serif', 'dgc-wordpress-theme' ),
+			'Lato, sans-serif' 									=> __( 'Lato, sans-serif', 'dgc-wordpress-theme' ),
+			'Vollkorn, serif' 									=> __( 'Vollkorn, serif', 'dgc-wordpress-theme' ),
+			'Abril Fatface, cursive' 							=> __( 'Abril Fatface, cursive', 'dgc-wordpress-theme' ),
+			'Ubuntu, sans-serif'								=> __( 'Ubuntu, sans-serif', 'dgc-wordpress-theme' ),
+			'PT Sans, sans-serif'								=> __( 'PT Sans, sans-serif', 'dgc-wordpress-theme' ),
+			'Old Standard TT, serif' 							=> __( 'Old Standard TT, serif', 'dgc-wordpress-theme' ),
+			'Droid Sans, sans-serif' 							=> __( 'Droid Sans, sans-serif', 'dgc-wordpress-theme' ),
 	);
 
 	return apply_filters( 'dgc_fonts_list', $font_family_options );
@@ -115,11 +115,11 @@ function dgc_custom_do_settings_fields($page, $section) {
 					$id = (isset($field['args']['id'])) ? $field['args']['id'] : '';
 					if($id == 'slider-options' ) {
 						print '<div class="box-options">';
-							print '<input type="button" id="view_all_options" class="button-secondary" value="'.__( 'View Options','dgc').'" />'; 
+							print '<input type="button" id="view_all_options" class="button-secondary" value="'.__( 'View Options','dgc-wordpress-theme').'" />'; 
 							print '<div id="slider_main_options" class="slider-main-options">';
 								print '	<div class="no-slider-select">';
 									print '	<div class="option_block">';
-										print '<h4>'.__('No Slider Select!', 'dgc' ).'</h4>';
+										print '<h4>'.__('No Slider Select!', 'dgc-wordpress-theme' ).'</h4>';
 									print '</div>';
 								print '</div>';
 								foreach($field['args']['fields'] as $row => $value){
@@ -171,25 +171,25 @@ function dgc_get_box_upload_slide($attach_id, $link_url, $is_blank, $is_active, 
 				
 	}
 		/*Link out for Slider*/
-		$out .= '<label for="slide-link-'.$ind.'">'. __('Link URL', 'dgc') .'</label>';
+		$out .= '<label for="slide-link-'.$ind.'">'. __('Link URL', 'dgc-wordpress-theme') .'</label>';
 		$out .= '<input type="text" name="dgc_theme_options[slides][slide-'.$ind.'][link]" id="slide-link-'.$ind.'" class="slide-link-'.$ind.' text-input" value="'.esc_url($link_url).'"/>';
 		$out .= '<div class="clear"></div>';
 
 		$out .= '<label for="link-blank-'.$ind.'">';
 		$out .= '<input type="checkbox" name="dgc_theme_options[slides][slide-'.$ind.'][is_blank]" id="link-blank-'.$ind.'" class="link-target-'.$ind.'" '. checked( 'on', $is_blank, false) .'/>';
-		$out .= __('Target "_blank"', 'dgc') .'</label>';
+		$out .= __('Target "_blank"', 'dgc-wordpress-theme') .'</label>';
 	
 	        // ADD IS_ACTIVE OPTION by ERICH
 		$out .= '<div class="clear" style="margin-bottom: 10px;"></div>';
 		$out .= '<label for="link-active-' . $ind . '">';
 		$out .= '<input type="checkbox" name="dgc_theme_options[slides][slide-' . $ind . '][is_active]" id="link-active-' . $ind . '" class="link-target-' . $ind . '" ' . checked( 'on', $is_active, false ) . '/>';
-		$out .= __( 'Active (show sliderimage)', 'dgc' ) . '</label>';
+		$out .= __( 'Active (show sliderimage)', 'dgc-wordpress-theme' ) . '</label>';
   
 	
 		$out .= '<input class="of-input" name="dgc_theme_options[slides][slide-'.$ind.'][attach_id]" id="attach-'.$ind.'" type="hidden" value="'. intval($attach_id) .'" />';
 		$out .= '<div class="upload_button_div">';
-			$out .= '<span data-imagetype="slide" class="button '. $btnclassup .'" id="add-slide-btn-'. $ind .'">'.__('Upload Image', 'dgc') .'</span>';
-			$out .= '<span class="button reset_btn">'.__('Remove', 'dgc') .'</span>';
+			$out .= '<span data-imagetype="slide" class="button '. $btnclassup .'" id="add-slide-btn-'. $ind .'">'.__('Upload Image', 'dgc-wordpress-theme') .'</span>';
+			$out .= '<span class="button reset_btn">'.__('Remove', 'dgc-wordpress-theme') .'</span>';
 		$out .= '</div>';
 	$out .= '</div>';
 	return $out;
@@ -198,7 +198,7 @@ function dgc_get_box_upload_slide($attach_id, $link_url, $is_blank, $is_active, 
 function dgc_get_slide($ind, $id, $link_url = null, $is_blank = 'off', $is_active = 'on') {
 	$out = '';
 	$out .= '<li class="slide" id="slide-image-' . $ind . '">';
-		$out .= '<h4 class="slide-header" id="slide-header-'. $ind .'">' . sprintf(__('Slide # %1$d', 'dgc'),   $ind);
+		$out .= '<h4 class="slide-header" id="slide-header-'. $ind .'">' . sprintf(__('Slide # %1$d', 'dgc-wordpress-theme'),   $ind);
 			$out .= '<span class="content-close-slide" id="content-slide-close_' . $ind . '"></span>';
 				$out .= '<span class="remove-slide" id="remove-slide-'.$ind.'"></span>';
 		$out .= '</h4>';
@@ -219,8 +219,8 @@ function dgc_slider_images() {
 	}
 	?>
 		<div class="slides-btn">
-			<span class="collapse_all"><?php _e('Collapse all', 'dgc'); ?></span>
-			<span class="expand_all"><?php _e('Expand all', 'dgc'); ?></span>
+			<span class="collapse_all"><?php _e('Collapse all', 'dgc-wordpress-theme'); ?></span>
+			<span class="expand_all"><?php _e('Expand all', 'dgc-wordpress-theme'); ?></span>
 		</div>
 		<ul class="slides">
 			<?php 
@@ -243,7 +243,7 @@ function dgc_slider_images() {
 					}
 			?>
 		</ul>
-		<input type="button" class="button-primary add_new_btn" value="<?php _e('Add New Slide', 'dgc'); ?>" />
+		<input type="button" class="button-primary add_new_btn" value="<?php _e('Add New Slide', 'dgc-wordpress-theme'); ?>" />
 <?php
 }
 

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: dgc-network theme\n"
+"Project-Id-Version: dgc-wordpress-theme\n"
 "POT-Creation-Date: 2016-03-25 15:56+0200\n"
 "PO-Revision-Date: 2016-03-25 15:56+0200\n"
 "Last-Translator: dgc-network\n"
@@ -247,7 +247,7 @@ msgstr ""
 
 #: functions.php:1925
 msgid ""
-"Attention! dgc-network theme version 2.0 got major updates. You may have a "
+"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
@@ -1865,7 +1865,7 @@ msgstr ""
 
 #: inc/theme-options/theme-options.php:1210
 msgid ""
-"dgc-network theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
+"dgc-wordpress-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
 "a> Powered by: <a href=\"http://wordpress.org\">WordPress</a>"
 msgstr ""
 
