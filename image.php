@@ -71,7 +71,7 @@ get_header();
 								?>
 
 								<a href="<?php echo $next_attachment_url; ?>" title="<?php echo esc_attr( get_the_title() ); ?>" rel="attachment"><?php
-									$attachment_size = apply_filters( 'fruitful_attachment_size', array( 1200, 1200 ) ); // Filterable image size.
+									$attachment_size = apply_filters( 'dgc_attachment_size', array( 1200, 1200 ) ); // Filterable image size.
 									echo wp_get_attachment_image( $post->ID, $attachment_size );
 								?></a>
 							</div><!-- .attachment -->
@@ -102,7 +102,7 @@ get_header();
 					</footer><!-- .entry-meta -->
 				</article><!-- #post-<?php the_ID(); ?> -->
 
-				<?php 	if (fruitful_state_page_comment()) {  comments_template( '', true );  } ?>
+				<?php 	if (dgc_state_page_comment()) {  comments_template( '', true );  } ?>
 			<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content .site-content -->
