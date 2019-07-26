@@ -14,12 +14,38 @@
 if ( ! isset( $content_width ) )
 	   $content_width = 960; /* pixels */
 
+// 確保複製過去時帶入預設標題
+function mxp_editor_title( $title ) {
+    // Polylang 會帶入 'from_post' 這組 GET 參數
+    if ( isset( $_GET['from_post'] ) ) {
+        $my_post = get_post( $_GET['from_post'] );
+        if ( $my_post )
+            return $my_post->post_title;
+    }
+
+    return $title;
+}
+add_filter( 'default_title', 'mxp_editor_title' );
+
+// 確保複製過去帶入預設內容
+function mxp_editor_content( $content ) {
+    // Polylang 會帶入 'from_post' 這組 GET 參數
+    if ( isset( $_GET['from_post'] ) ) {
+        $my_post = get_post( $_GET['from_post'] );
+        if ( $my_post )
+            return $my_post->post_content;
+    }
+
+    return $content;
+}
+add_filter( 'default_content', 'mxp_editor_content' );
+
 /*woocommerce theme support*/
 add_theme_support( 'woocommerce' );
 
-add_action( 'after_setup_theme', 'dgctheme_setup' );
+add_action( 'after_setup_theme', 'dgc_theme_setup' );
 
-function dgctheme_setup() {
+function dgc_theme_setup() {
     add_theme_support( 'wc-product-gallery-zoom' );
     add_theme_support( 'wc-product-gallery-lightbox' );
     add_theme_support( 'wc-product-gallery-slider' );

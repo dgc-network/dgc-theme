@@ -9,8 +9,8 @@ function dgc_setCustomSession() {
 	if (session_id() == '') session_start();
 }	
 		
-if (!class_exists('dgccFormInlineErrors')){
-    class dgccFormInlineErrors {
+if (!class_exists('dgcFormInlineErrors')){
+    class dgcFormInlineErrors {
         public function __construct() { 
 			add_action('init', array($this, 'init')); 
 		}
@@ -87,4 +87,4 @@ if (!class_exists('dgccFormInlineErrors')){
 
 }
 
-new dgccFormInlineErrors();
+new dgcFormInlineErrors();

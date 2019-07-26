@@ -110,13 +110,13 @@ function dgc_custom_do_settings_fields($page, $section) {
         else
             print '<h3 class="main-header-options">' . esc_attr($field['title']);
 			print '</h3>';
-				print '<span class="add_element_info">'. $field['args']['info'] .'</span>';
-				if (!empty($field['args']['fields'])) {
-					$id = (isset($field['args']['id'])) ? $field['args']['id'] : '';
-					if($id == 'slider-options' ) {
-						print '<div class="box-options">';
-							print '<input type="button" id="view_all_options" class="button-secondary" value="'.__( 'View Options','dgc').'" />'; 
-							print '<div id="slider_main_options" class="slider-main-options">';
+			print '<span class="add_element_info">'. $field['args']['info'] .'</span>';
+			if (!empty($field['args']['fields'])) {
+				$id = (isset($field['args']['id'])) ? $field['args']['id'] : '';
+				if($id == 'slider-options' ) {
+					print '<div class="box-options">';
+					print '<input type="button" id="view_all_options" class="button-secondary" value="'.__( 'View Options','dgc').'" />'; 
+					print '<div id="slider_main_options" class="slider-main-options">';
 								print '	<div class="no-slider-select">';
 									print '	<div class="option_block">';
 										print '<h4>'.__('No Slider Select!', 'dgc' ).'</h4>';
