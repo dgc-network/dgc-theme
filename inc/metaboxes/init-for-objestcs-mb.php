@@ -2,7 +2,7 @@
 /**
  * Include and setup custom metaboxes and fields.
  *
- * @category dgc
+ * @category Fruitful
  * @package  Metaboxes
  * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
  * @link     https://github.com/webdevstudios/Custom-Metaboxes-and-Fields-for-WordPress
@@ -18,20 +18,20 @@ function cmb_initialize_cmb_meta_boxes() {
 	
 }
 
-add_filter( 'cmb_meta_boxes', 'dgc_all_metaboxes', 10, 2 );
+add_filter( 'cmb_meta_boxes', 'fruitful_all_metaboxes', 10, 2 );
 /**
  * Define the metabox and field configurations.
  *
  * @param  array $meta_boxes
  * @return array
  */
-function dgc_all_metaboxes( array $meta_boxes ) {
+function fruitful_all_metaboxes( array $meta_boxes ) {
 	// Start with an underscore to hide fields from custom fields list
-	$prefix = '_dgc_';
+	$prefix = '_fruitful_';
 	
-	$meta_boxes['dgc_slider_settings'] = array(
-		'id'         => 'dgc_slider_settings',
-		'title'      => __( 'Slider settings', 'dgc-wordpress-theme' ),
+	$meta_boxes['fruitful_slider_settings'] = array(
+		'id'         => 'fruitful_slider_settings',
+		'title'      => __( 'Slider settings', 'fruitful' ),
 		'context'    => 'normal',
 		'priority'   => 'low',
 		'show_names' => true, 
@@ -39,14 +39,14 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 		//'show_on'	 =>	array( 'key'=>'front-page', 'value' => '' ),
 		'fields'     => array(
 				array(
-					'name' 		=> __('Slider display', 'dgc-wordpress-theme'),
+					'name' 		=> __('Slider display', 'fruitful'),
 					'id' 		=> $prefix . 'slider_layout',
-					'subname'   => __('Select the option to display the corresponding slider', 'dgc-wordpress-theme'),
+					'subname'   => __('Select the option to display the corresponding slider', 'fruitful'),
 					'std' 		=> '0',
 					'options' 	=> array(
-										'0' => __('Disable slider', 'dgc-wordpress-theme'),
-										'1' => __('Full width slider', 'dgc-wordpress-theme'),
-										'2' => __('Boxed slider', 'dgc-wordpress-theme'),
+										'0' => __('Disable slider', 'fruitful'),
+										'1' => __('Full width slider', 'fruitful'),
+										'2' => __('Boxed slider', 'fruitful'),
 										),
 					'type' => 'select'
 				),
@@ -54,17 +54,17 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 	);
 	
 	// Only with sidebar enabled
-	$meta_boxes['dgc_page_general_settings'] = array(
-		'id'         => 'dgc_page_general_settings',
-		'title'      => __( 'Page settings', 'dgc-wordpress-theme' ),
+	$meta_boxes['fruitful_page_general_settings'] = array(
+		'id'         => 'fruitful_page_general_settings',
+		'title'      => __( 'Page settings', 'fruitful' ),
 		'pages'      => array( 'page'), 
 		'context'    => 'normal',
 		'priority'   => 'low',
 		'show_names' => true, 
 		'fields'     => array(
 			array(
-				'name' 		=> __( 'Layout', 'dgc-wordpress-theme' ),
-				'subname' 	=> __( 'Select a specific layout for this page.', 'dgc-wordpress-theme' ),
+				'name' 		=> __( 'Layout', 'fruitful' ),
+				'subname' 	=> __( 'Select a specific layout for this page.', 'fruitful' ),
 				'id'      	=> $prefix . 'page_layout',
 				'type' 	  	=> 'custom_layout_sidebars',
 				'default' 	=> '0'
@@ -73,17 +73,17 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 	);
 	
 	
-	$meta_boxes['dgc_post_general_settings'] = array(
-		'id'         => 'dgc_post_general_settings',
-		'title'      => __( 'Post settings', 'dgc-wordpress-theme' ),
+	$meta_boxes['fruitful_post_general_settings'] = array(
+		'id'         => 'fruitful_post_general_settings',
+		'title'      => __( 'Post settings', 'fruitful' ),
 		'pages'      => array( 'post'), 
 		'context'    => 'normal',
 		'priority'   => 'low',
 		'show_names' => true, 
 		'fields'     => array(
 			array(
-				'name' 		=> __( 'Layout', 'dgc-wordpress-theme' ),
-				'subname' 	=> __( 'Select a specific layout for this post.', 'dgc-wordpress-theme' ),
+				'name' 		=> __( 'Layout', 'fruitful' ),
+				'subname' 	=> __( 'Select a specific layout for this post.', 'fruitful' ),
 				'id' 		=> $prefix . 'page_layout',
 				'type' 		=> 'custom_layout_sidebars',
 				'default' 	=> '0'

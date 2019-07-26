@@ -3,8 +3,8 @@
  * The template for displaying image attachments.
  *
  * @package WordPress
- * @subpackage dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @subpackage Fruitful theme
+ * @since Fruitful theme 1.0
  */
 
 get_header();
@@ -22,7 +22,7 @@ get_header();
 						<div class="entry-meta">
 							<?php
 								$metadata = wp_get_attachment_metadata();
-								printf( __( 'Published <span class="entry-date"><time class="entry-date" datetime="%1$s" pubdate>%2$s</time></span> at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> in <a href="%6$s" title="Return to %7$s" rel="gallery">%7$s</a>', 'dgc-wordpress-theme' ),
+								printf( __( 'Published <span class="entry-date"><time class="entry-date" datetime="%1$s" pubdate>%2$s</time></span> at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> in <a href="%6$s" title="Return to %7$s" rel="gallery">%7$s</a>', 'fruitful' ),
 									esc_attr( get_the_date( 'c' ) ),
 									esc_html( get_the_date() ),
 									wp_get_attachment_url(),
@@ -32,12 +32,12 @@ get_header();
 									get_the_title( $post->post_parent )
 								);
 							?>
-							<?php edit_post_link( __( 'Edit', 'dgc-wordpress-theme' ), '<span class="sep"> | </span> <span class="edit-link">', '</span>' ); ?>
+							<?php edit_post_link( __( 'Edit', 'fruitful' ), '<span class="sep"> | </span> <span class="edit-link">', '</span>' ); ?>
 						</div><!-- .entry-meta -->
 
 						<nav id="image-navigation">
-							<span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous', 'dgc-wordpress-theme' ) ); ?></span>
-							<span class="next-image"><?php next_image_link( false, __( 'Next &rarr;', 'dgc-wordpress-theme' ) ); ?></span>
+							<span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous', 'fruitful' ) ); ?></span>
+							<span class="next-image"><?php next_image_link( false, __( 'Next &rarr;', 'fruitful' ) ); ?></span>
 						</nav><!-- #image-navigation -->
 					</header><!-- .entry-header -->
 
@@ -71,7 +71,7 @@ get_header();
 								?>
 
 								<a href="<?php echo $next_attachment_url; ?>" title="<?php echo esc_attr( get_the_title() ); ?>" rel="attachment"><?php
-									$attachment_size = apply_filters( 'dgc_attachment_size', array( 1200, 1200 ) ); // Filterable image size.
+									$attachment_size = apply_filters( 'fruitful_attachment_size', array( 1200, 1200 ) ); // Filterable image size.
 									echo wp_get_attachment_image( $post->ID, $attachment_size );
 								?></a>
 							</div><!-- .attachment -->
@@ -84,25 +84,25 @@ get_header();
 						</div><!-- .entry-attachment -->
 
 						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'dgc-wordpress-theme' ), 'after' => '</div>' ) ); ?>
+						<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'fruitful' ), 'after' => '</div>' ) ); ?>
 
 					</div><!-- .entry-content -->
 
 					<footer class="entry-meta">
 						<?php if ( comments_open() && pings_open() ) : // Comments and trackbacks open ?>
-							<?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'dgc-wordpress-theme' ), get_trackback_url() ); ?>
+							<?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'fruitful' ), get_trackback_url() ); ?>
 						<?php elseif ( ! comments_open() && pings_open() ) : // Only trackbacks open ?>
-							<?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'dgc-wordpress-theme' ), get_trackback_url() ); ?>
+							<?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'fruitful' ), get_trackback_url() ); ?>
 						<?php elseif ( comments_open() && ! pings_open() ) : // Only comments open ?>
-							<?php _e( 'Trackbacks are closed, but you can <a class="comment-link" href="#respond" title="Post a comment">post a comment</a>.', 'dgc-wordpress-theme' ); ?>
+							<?php _e( 'Trackbacks are closed, but you can <a class="comment-link" href="#respond" title="Post a comment">post a comment</a>.', 'fruitful' ); ?>
 						<?php elseif ( ! comments_open() && ! pings_open() ) : // Comments and trackbacks closed ?>
-							<?php _e( 'Both comments and trackbacks are currently closed.', 'dgc-wordpress-theme' ); ?>
+							<?php _e( 'Both comments and trackbacks are currently closed.', 'fruitful' ); ?>
 						<?php endif; ?>
-						<?php edit_post_link( __( 'Edit', 'dgc-wordpress-theme' ), ' <span class="edit-link">', '</span>' ); ?>
+						<?php edit_post_link( __( 'Edit', 'fruitful' ), ' <span class="edit-link">', '</span>' ); ?>
 					</footer><!-- .entry-meta -->
 				</article><!-- #post-<?php the_ID(); ?> -->
 
-				<?php 	if (dgc_state_page_comment()) {  comments_template( '', true );  } ?>
+				<?php 	if (fruitful_state_page_comment()) {  comments_template( '', true );  } ?>
 			<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content .site-content -->

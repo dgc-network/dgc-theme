@@ -11,7 +11,7 @@
  * the readme will list any important changes.
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
- * @author  Woothemes/dgc-network
+ * @author  Woothemes/Fruitfulcode
  * @package WooCommerce/Templates
  * @version 3.5.1
  */
@@ -51,7 +51,7 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
             $html .= '</a></div>';
         } else {
             $html  = '<div class="woocommerce-product-gallery__image--placeholder">';
-            $html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'dgc-wordpress-theme' ) );
+            $html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'fruitful' ) );
             $html .= '</div>';
         }
 

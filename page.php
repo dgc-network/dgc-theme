@@ -8,12 +8,12 @@
  * different template.
  *
  * @package WordPress
- * @subpackage dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @subpackage Fruitful theme
+ * @since Fruitful theme 1.0
  */
 
 get_header(); ?>
 	
-	<?php dgc_get_content_with_custom_sidebar('page'); ?>
+	<?php fruitful_get_content_with_custom_sidebar('page'); ?>
 	
 <?php get_footer(); ?>

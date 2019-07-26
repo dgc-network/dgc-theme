@@ -1,11 +1,11 @@
 <?php
 /**
  * @package WordPress
- * @subpackage dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @subpackage Fruitful theme
+ * @since Fruitful theme 1.0
  */
 ?>
-<?php $options = dgc_get_theme_options(); ?>
+<?php $options = fruitful_get_theme_options(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('blog_post'); ?>>
 	<?php $day 		 = get_the_date('d'); 
@@ -30,7 +30,7 @@
 		<?php else : ?>
 			<?php if (get_the_title() != '') : ?>
 			<h2 class="post-title entry-title">
-				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'dgc-wordpress-theme' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
+				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'fruitful' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h2>
 			<?php endif; ?>
 		<?php endif; // is_single() ?>		
@@ -60,19 +60,19 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php the_content( __( 'Read More <span class="meta-nav">&rarr;</span>', 'dgc-wordpress-theme' ) ); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'dgc-wordpress-theme' ), 'after' => '</div>' ) ); ?>
+		<?php the_content( __( 'Read More <span class="meta-nav">&rarr;</span>', 'fruitful' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'fruitful' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
 	<footer class="entry-meta">
-		<?php dgc_entry_meta(); ?>
+		<?php fruitful_entry_meta(); ?>
 		
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { ?>
-			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'dgc-wordpress-theme' ), __( '1 Comment', 'dgc-wordpress-theme' ), __( '% Comments', 'dgc-wordpress-theme' ) ); ?></span>
+			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'fruitful' ), __( '1 Comment', 'fruitful' ), __( '% Comments', 'fruitful' ) ); ?></span>
 		<?php } ?>
 		
-		<?php edit_post_link( __( 'Edit', 'dgc-wordpress-theme' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'fruitful' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

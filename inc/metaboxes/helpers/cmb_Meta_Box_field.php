@@ -457,8 +457,8 @@ class cmb_Meta_Box_field {
 		$args['options']    = isset( $args['options'] ) && is_array( $args['options'] ) ? $args['options'] : array();
 
 		$args['options']    = 'group' == $args['type'] ? wp_parse_args( $args['options'], array(
-			'add_button'    => __( 'Add Group', 'dgc-wordpress-theme' ),
-			'remove_button' => __( 'Remove Group', 'dgc-wordpress-theme' ),
+			'add_button'    => __( 'Add Group', 'fruitful' ),
+			'remove_button' => __( 'Remove Group', 'fruitful' ),
 		) ) : $args['options'];
 
 		$args['_id']        = $args['id'];

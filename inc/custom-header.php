@@ -13,8 +13,8 @@
 	<?php } // if ( ! empty( $header_image ) ) ?>
 
  *
- * @package dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @package Fruitful theme
+ * @since Fruitful theme 1.0
  */
 
 /**
@@ -27,13 +27,13 @@
  *
  * @todo Rework this function to remove WordPress 3.4 support when WordPress 3.6 is released.
  *
- * @uses dgc_header_style()
- * @uses dgc_admin_header_style()
- * @uses dgc_admin_header_image()
+ * @uses fruitful_header_style()
+ * @uses fruitful_admin_header_style()
+ * @uses fruitful_admin_header_image()
  *
- * @package dgc-wordpress-theme
+ * @package Fruitful theme
  */
-function dgc_custom_header_setup() {
+function fruitful_custom_header_setup() {
 	$args = array(
 		'default-image'          => '',
 		'flex-height' 			 => false,
@@ -44,18 +44,18 @@ function dgc_custom_header_setup() {
 		'random-default'         => false,
 		'header-text' 			 => false,
 		'uplodas'				 => true,
-		'wp-head-callback'       => 'dgc_header_style',
-		'admin-head-callback'    => 'dgc_admin_header_style',
-		'admin-preview-callback' => 'dgc_admin_header_image',
+		'wp-head-callback'       => 'fruitful_header_style',
+		'admin-head-callback'    => 'fruitful_admin_header_style',
+		'admin-preview-callback' => 'fruitful_admin_header_image',
 	);
 
-	$args = apply_filters( 'dgc_custom_header_args', $args );
+	$args = apply_filters( 'fruitful_custom_header_args', $args );
 
 	if ( function_exists( 'wp_get_theme' ) ) {
 		 add_theme_support( 'custom-header', $args );
 	} 
 }
-add_action( 'after_setup_theme', 'dgc_custom_header_setup' );
+add_action( 'after_setup_theme', 'fruitful_custom_header_setup' );
 
 /**
  * Shiv for get_custom_header().
@@ -68,8 +68,8 @@ add_action( 'after_setup_theme', 'dgc_custom_header_setup' );
  * @todo Remove this function when WordPress 3.6 is released.
  * @return stdClass All properties represent attributes of the curent header image.
  *
- * @package dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.1
+ * @package Fruitful theme
+ * @since Fruitful theme 1.1
  */
 
 if ( ! function_exists( 'get_custom_header' ) ) {
@@ -84,15 +84,15 @@ if ( ! function_exists( 'get_custom_header' ) ) {
 }
 
 
-if ( ! function_exists( 'dgc_header_style' ) ) :
+if ( ! function_exists( 'fruitful_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see dgc_custom_header_setup().
+ * @see fruitful_custom_header_setup().
  *
- * @since dgc-wordpress-theme 1.0
+ * @since Fruitful theme 1.0
  */
-function dgc_header_style() {
+function fruitful_header_style() {
 
 	// If no custom options for text are set, let's bail
 	if ( get_header_textcolor() == '333' )
@@ -122,17 +122,17 @@ function dgc_header_style() {
 	</style>
 	<?php
 }
-endif; // dgc_header_style
+endif; // fruitful_header_style
 
-if ( ! function_exists( 'dgc_admin_header_style' ) ) :
+if ( ! function_exists( 'fruitful_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see dgc_custom_header_setup().
+ * @see fruitful_custom_header_setup().
  *
- * @since dgc-wordpress-theme 1.0
+ * @since Fruitful theme 1.0
  */
-function dgc_admin_header_style() {
+function fruitful_admin_header_style() {
 ?>
 	<style type="text/css">
 	.appearance_page_custom-header #headimg {
@@ -152,17 +152,17 @@ function dgc_admin_header_style() {
 	</style>
 <?php
 }
-endif; // dgc_admin_header_style
+endif; // fruitful_admin_header_style
 
-if ( ! function_exists( 'dgc_admin_header_image' ) ) :
+if ( ! function_exists( 'fruitful_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see dgc_custom_header_setup().
+ * @see fruitful_custom_header_setup().
  *
- * @since dgc-wordpress-theme 1.0
+ * @since Fruitful theme 1.0
  */
-function dgc_admin_header_image() { ?>
+function fruitful_admin_header_image() { ?>
 	<div id="headimg">
 		<?php
 		if ( 'blank' == get_header_textcolor() || '' == get_header_textcolor() )
@@ -178,4 +178,4 @@ function dgc_admin_header_image() { ?>
 		<?php endif; ?>
 	</div>
 <?php }
-endif; // dgc_admin_header_image
+endif; // fruitful_admin_header_image

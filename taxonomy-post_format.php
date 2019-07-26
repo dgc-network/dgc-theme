@@ -9,26 +9,26 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @subpackage Fruitful theme
+ * @since Fruitful theme 1.0
  */
 
 get_header(); ?>
 	<header class="archive-header">
-		<h1 class="archive-title"><?php printf( __( '%s Archives', 'dgc-wordpress-theme' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' ); ?></h1>
+		<h1 class="archive-title"><?php printf( __( '%s Archives', 'fruitful' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' ); ?></h1>
 	</header><!-- .archive-header -->
 	<div class="eleven columns alpha">		
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content" role="main">
 
 			<?php if ( have_posts() ) : ?>
-				<?php //dgc_content_nav( 'nav-above' ); ?>
+				<?php //fruitful_content_nav( 'nav-above' ); ?>
 				<?php /* The loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'content', get_post_format() ); ?>
 				<?php endwhile; ?>
 
-				<?php dgc_content_nav( 'nav-below' ); ?>
+				<?php fruitful_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 				<?php get_template_part( 'content', 'none' ); ?>

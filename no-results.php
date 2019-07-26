@@ -5,28 +5,28 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @subpackage Fruitful theme
+ * @since Fruitful theme 1.0
  */
 ?>
 
 <article id="post-0" class="post no-results not-found">
 	<header class="post-header">
-		<h2 class="post-title entry-title"><?php _e( 'Nothing Found', 'dgc-wordpress-theme' ); ?></h2>
+		<h2 class="post-title entry-title"><?php _e( 'Nothing Found', 'fruitful' ); ?></h2>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php if ( is_home() ) : ?>
-			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'dgc-wordpress-theme' ), admin_url( 'post-new.php' ) ); ?></p>
+			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'fruitful' ), admin_url( 'post-new.php' ) ); ?></p>
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'dgc-wordpress-theme' ); ?></p>
+			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'fruitful' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php else : ?>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'dgc-wordpress-theme' ); ?></p>
+			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'fruitful' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
