@@ -8,10 +8,6 @@ We want to make our product even better and better and we need users support and
 
 Works perfect with WooCommerce till version 3.4
 
-dgc-wordpress-theme PRO – WordPress responsive theme contains all the options of FREE version plus more options like ability to change width for container grid and support latest WooCommerce version. 
-
-Find all the details by link https://dgc-network.com/product/dgc-pro
-
 Thank you.
 
 -------------------------------------------------------
@@ -83,9 +79,9 @@ Easy add your links to your social profiles, which will be display in footer or 
     Translation
 -------------------------------------------------------
 
-The themes is ready for translation and already translated in Russian.
+The themes is ready for translation and already translated in Tranditional Chinese.
 We are open for users translations, translation can be included in new theme versions.
-Files: .pot, ru_Ru.po, ru_Ru.mo icluded. Default language is english.
+Files: .pot, zh_TW.po, zh_TW.mo icluded. Default language is english.
 
 -------------------------------------------------------
     Credits
