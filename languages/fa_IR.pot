@@ -1679,7 +1679,7 @@ msgid ""
 "Add images to slider (Supported files .png, .jpg, .gif). If you want to change "
 "order, just drag and drop it. Image size for slides is original from media "
 "gallery, please upload images in same size, to get best display on page. To "
-"display slider in needed place use shortcode [fruitful_slider]. Current theme "
+"display slider in needed place use shortcode [dgc_slider]. Current theme "
 "version support only one slider per website."
 msgstr ""
 
