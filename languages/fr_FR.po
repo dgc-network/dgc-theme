@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: dgc-wordpress-theme\n"
+"Project-Id-Version: Fruitful theme\n"
 "POT-Creation-Date: 2016-03-25 15:29+0200\n"
 "PO-Revision-Date: 2016-03-25 15:29+0200\n"
-"Last-Translator: dgc-network\n"
-"Language-Team: dgc Team\n"
+"Last-Translator: Fruitfulcode\n"
+"Language-Team: Fruitful Team\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -249,7 +249,7 @@ msgstr "Résultats de la recherche pour: %s"
 
 #: functions.php:1925
 msgid ""
-"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
+"Attention! Fruitful theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
@@ -314,131 +314,131 @@ msgstr ""
 msgid "Both comments and trackbacks are currently closed."
 msgstr "Les commentaires et les trackbacks sont fermés."
 
-#: inc/func/dgc-function.php:38
+#: inc/func/fruitful-function.php:38
 msgid "Arial, Helvetica, sans-serif"
 msgstr "Arial, Helvetica, sans-serif"
 
-#: inc/func/dgc-function.php:39
+#: inc/func/fruitful-function.php:39
 msgid "Arial Black, Gadget, sans-serif"
 msgstr "Arial Black, Gadget, sans-serif"
 
-#: inc/func/dgc-function.php:40
+#: inc/func/fruitful-function.php:40
 msgid "Comic Sans MS, Textile, cursive"
 msgstr "Comic Sans MS, Textile, cursive"
 
-#: inc/func/dgc-function.php:41
+#: inc/func/fruitful-function.php:41
 msgid "Courier New, Courier, monospace"
 msgstr "Courier New, Courier, monospace"
 
-#: inc/func/dgc-function.php:42
+#: inc/func/fruitful-function.php:42
 msgid "Georgia, Times New Roman, Times, serif"
 msgstr "Georgia, Times New Roman, Times, serif"
 
-#: inc/func/dgc-function.php:43
+#: inc/func/fruitful-function.php:43
 msgid "Impact, Charcoal, sans-serif"
 msgstr "Impact, Charcoal, sans-serif"
 
-#: inc/func/dgc-function.php:44
+#: inc/func/fruitful-function.php:44
 msgid "Lucida Console, Monaco, monospace"
 msgstr "Lucida Console, Monaco, monospace"
 
-#: inc/func/dgc-function.php:45
+#: inc/func/fruitful-function.php:45
 msgid "Lucida Sans Unicode, Lucida Grande, sans-serif"
 msgstr "Lucida Sans Unicode, Lucida Grande, sans-serif"
 
-#: inc/func/dgc-function.php:46
+#: inc/func/fruitful-function.php:46
 msgid "Palatino Linotype, Book Antiqua, Palatino, serif"
 msgstr "Palatino Linotype, Book Antiqua, Palatino, serif"
 
-#: inc/func/dgc-function.php:47
+#: inc/func/fruitful-function.php:47
 msgid "Tahoma, Geneva, sans-serif"
 msgstr "Tahoma, Geneva, sans-serif"
 
-#: inc/func/dgc-function.php:48
+#: inc/func/fruitful-function.php:48
 msgid "Times New Roman, Times, serif"
 msgstr "Times New Roman, Times, serif"
 
-#: inc/func/dgc-function.php:49
+#: inc/func/fruitful-function.php:49
 msgid "Trebuchet MS, Helvetica, sans-serif"
 msgstr "Trebuchet MS, Helvetica, sans-serif"
 
-#: inc/func/dgc-function.php:50
+#: inc/func/fruitful-function.php:50
 msgid "Verdana, Geneva, sans-serif"
 msgstr "Verdana, Geneva, sans-serif"
 
-#: inc/func/dgc-function.php:51
+#: inc/func/fruitful-function.php:51
 msgid "MS Sans Serif, Geneva, sans-serif"
 msgstr "MS Sans Serif, Geneva, sans-serif"
 
-#: inc/func/dgc-function.php:52
+#: inc/func/fruitful-function.php:52
 msgid "MS Serif, New York, serif"
 msgstr "MS Serif, New York, serif"
 
-#: inc/func/dgc-function.php:55
+#: inc/func/fruitful-function.php:55
 msgid "Open Sans, sans-serif"
 msgstr "Open Sans, sans-serif"
 
-#: inc/func/dgc-function.php:56
+#: inc/func/fruitful-function.php:56
 msgid "Lobster, cursive"
 msgstr "Lobster, cursive"
 
-#: inc/func/dgc-function.php:57
+#: inc/func/fruitful-function.php:57
 msgid "Josefin Slab, serif"
 msgstr "Josefin Slab, serif"
 
-#: inc/func/dgc-function.php:58
+#: inc/func/fruitful-function.php:58
 msgid "Arvo, serif"
 msgstr "Arvo, serif"
 
-#: inc/func/dgc-function.php:59
+#: inc/func/fruitful-function.php:59
 msgid "Lato, sans-serif"
 msgstr "Lato, sans-serif"
 
-#: inc/func/dgc-function.php:60
+#: inc/func/fruitful-function.php:60
 msgid "Vollkorn, serif"
 msgstr "Vollkorn, serif"
 
-#: inc/func/dgc-function.php:61
+#: inc/func/fruitful-function.php:61
 msgid "Abril Fatface, cursive"
 msgstr "Abril Fatface, cursive"
 
-#: inc/func/dgc-function.php:62
+#: inc/func/fruitful-function.php:62
 msgid "Ubuntu, sans-serif"
 msgstr "Ubuntu, sans-serif"
 
-#: inc/func/dgc-function.php:63
+#: inc/func/fruitful-function.php:63
 msgid "PT Sans, sans-serif"
 msgstr "PT Sans, sans-serif"
 
-#: inc/func/dgc-function.php:64
+#: inc/func/fruitful-function.php:64
 msgid "Old Standard TT, serif"
 msgstr "Old Standard TT, serif"
 
-#: inc/func/dgc-function.php:65
+#: inc/func/fruitful-function.php:65
 msgid "Droid Sans, sans-serif"
 msgstr "Droid Sans, sans-serif"
 
-#: inc/func/dgc-function.php:119
+#: inc/func/fruitful-function.php:119
 msgid "View Options"
 msgstr "Options d'affichage"
 
-#: inc/func/dgc-function.php:123
+#: inc/func/fruitful-function.php:123
 msgid "No Slider Select!"
 msgstr "Pas de curseur Sélectionnez!"
 
-#: inc/func/dgc-function.php:175
+#: inc/func/fruitful-function.php:175
 msgid "Link URL"
 msgstr "Lien URL"
 
-#: inc/func/dgc-function.php:181
+#: inc/func/fruitful-function.php:181
 msgid "Target \"_blank\""
 msgstr "Target \"_blank\""
 
-#: inc/func/dgc-function.php:185 inc/theme-options/theme-options.php:1375
+#: inc/func/fruitful-function.php:185 inc/theme-options/theme-options.php:1375
 msgid "Upload Image"
 msgstr "Envoyer une image"
 
-#: inc/func/dgc-function.php:186
+#: inc/func/fruitful-function.php:186
 #: inc/metaboxes/helpers/cmb_Meta_Box_types.php:309
 #: inc/metaboxes/helpers/cmb_Meta_Box_types.php:724
 #: inc/metaboxes/helpers/cmb_Meta_Box_types.php:786
@@ -446,20 +446,20 @@ msgstr "Envoyer une image"
 msgid "Remove"
 msgstr "Supprimer"
 
-#: inc/func/dgc-function.php:195
+#: inc/func/fruitful-function.php:195
 #, php-format
 msgid "Slide # %1$d"
 msgstr "Diapositive # %1$d"
 
-#: inc/func/dgc-function.php:216
+#: inc/func/fruitful-function.php:216
 msgid "Collapse all"
 msgstr "Réduire tout"
 
-#: inc/func/dgc-function.php:217
+#: inc/func/fruitful-function.php:217
 msgid "Expand all"
 msgstr "Agrandir tout"
 
-#: inc/func/dgc-function.php:239
+#: inc/func/fruitful-function.php:239
 msgid "Add New Slide"
 msgstr "Ajouter une nouvelle diapositive"
 
@@ -739,8 +739,8 @@ msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Installation Plugin %1$s (%2$d/%3$d)"
 
 #: inc/func/plugins-included.php:38
-msgid "dgc Plugin Integration"
-msgstr "dgc intégration plugin"
+msgid "Fruitful Plugin Integration"
+msgstr "Fruitful intégration plugin"
 
 #: inc/func/plugins-included.php:39
 msgid "Plugin Integration"
@@ -1903,7 +1903,7 @@ msgstr "Section du droit d'auteur"
 
 #: inc/theme-options/theme-options.php:1210
 msgid ""
-"dgc-wordpress-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
+"Fruitful theme by <a href=\"https://github.com/fruitfulcode/\">fruitfulcode</"
 "a> Powered by: <a href=\"http://wordpress.org\">WordPress</a>"
 msgstr ""
 
@@ -2133,8 +2133,8 @@ msgstr ""
 #~ msgid "Blog Right Sidebar"
 #~ msgstr "Blog barre de droite"
 
-#~ msgid "dgc-wordpress-theme Options"
-#~ msgstr "Options du thème dgc"
+#~ msgid "Fruitful theme Options"
+#~ msgstr "Options du thème Fruitful"
 
 #~ msgid "Page Attributes"
 #~ msgstr "Attributs de page"
@@ -2163,11 +2163,11 @@ msgstr ""
 #~ msgid "Something went wrong."
 #~ msgstr "Quelque chose s'est mal passé."
 
-#~ msgid "dgc-wordpress-theme requires the following plugin: %1$s."
-#~ msgstr "dgc thème nécessite le plugin suivant: %1$s."
+#~ msgid "Fruitful theme requires the following plugin: %1$s."
+#~ msgstr "Fruitful thème nécessite le plugin suivant: %1$s."
 
-#~ msgid "dgc-wordpress-theme recommends the following plugin: %1$s."
-#~ msgstr "dgc thème recommande le plugin suivant: %1$s."
+#~ msgid "Fruitful theme recommends the following plugin: %1$s."
+#~ msgstr "Fruitful thème recommande le plugin suivant: %1$s."
 
 #~ msgid ""
 #~ "Sorry, but you do not have the correct permissions to install the %s "
@@ -2195,10 +2195,10 @@ msgstr ""
 
 #~ msgid ""
 #~ "The following plugin needs to be updated to its latest version to ensure "
-#~ "maximum compatibility with dgc-wordpress-theme: %1$s."
+#~ "maximum compatibility with Fruitful theme: %1$s."
 #~ msgstr ""
 #~ "Le plugin suivante doit être mis à jour dans sa dernière version pour "
-#~ "assurer une compatibilité maximale avec le dgc thème: %1$s."
+#~ "assurer une compatibilité maximale avec le Fruitful thème: %1$s."
 
 #~ msgid ""
 #~ "Sorry, but you do not have the correct permissions to update the %s "
@@ -2339,7 +2339,7 @@ msgstr ""
 #~ "change order, just drag and drop it. Image size for slides is original "
 #~ "from media gallery, please upload images in same size, to get best "
 #~ "display on page. To display slider in needed place use shortcode "
-#~ "[dgc_urrent theme version support only one slider per "
+#~ "[dgc_slider]. Current theme version support only one slider per "
 #~ "website. "
 #~ msgstr ""
 #~ "Ajouter des images au slider (fichiers pris en charge .png, .jpg, .gif) "
@@ -2347,7 +2347,7 @@ msgstr ""
 #~ "taille de l'image pour les diapositives est la meme que dans la galerie "
 #~ "de médias, uploadez des images de même taille, pour obtenir le meilleur "
 #~ "affichage sur la page. Pour afficher le slider a l'endroit voulu, "
-#~ "utilisez le code [dgc_e thème actuel ne supportte qu'un "
+#~ "utilisez le code [dgc_slider]. Le thème actuel ne supportte qu'un "
 #~ "seul slider par site."
 
 #~ msgid "Dummy data"

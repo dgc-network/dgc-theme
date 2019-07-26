@@ -82,7 +82,7 @@ jQuery(document).ready(function() {
 			});
 			
 			var data = {
-						action:  'dgc_add_new_slide_action',
+						action:  'fruitful_add_new_slide_action',
 						type:    'add_new_slide',
 						data:     vMaxIndex + 1
 					};	

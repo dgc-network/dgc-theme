@@ -15,7 +15,7 @@ if ( ! function_exists( 'dgc_content_nav' ) ):
  *
  * @since Fruitful theme 1.0
  */
-function dgc_nt_nav( $nav_id ) {
+function dgc_content_nav( $nav_id ) {
 	global $wp_query;
 
 	$nav_class = 'site-navigation paging-navigation';
@@ -46,9 +46,9 @@ function dgc_nt_nav( $nav_id ) {
 	</nav><!-- #<?php echo $nav_id; ?> -->
 	<?php
 }
-endif; // dgc_nt_nav
+endif; // dgc_content_nav
 
-if ( ! function_exists( 'dgc_nt' ) ) :
+if ( ! function_exists( 'dgc_comment' ) ) :
 /**
  * Template for comments and pingbacks.
  *
@@ -56,7 +56,7 @@ if ( ! function_exists( 'dgc_nt' ) ) :
  *
  * @since Fruitful theme 1.0
  */
-function dgc_nt( $comment, $args, $depth ) {
+function dgc_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
 		case 'pingback' :
@@ -109,15 +109,15 @@ function dgc_nt( $comment, $args, $depth ) {
 			break;
 	endswitch;
 }
-endif; // ends check for dgc_nt()
+endif; // ends check for dgc_comment()
 
-if ( ! function_exists( 'dgc_d_on' ) ) :
+if ( ! function_exists( 'dgc_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  *
  * @since Fruitful theme 1.0
  */
-function dgc_d_on() {
+function dgc_posted_on() {
 	printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'fruitful' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
@@ -135,7 +135,7 @@ endif;
  *
  * @since Fruitful theme 1.0
  */
-function dgc_orized_blog() {
+function dgc_categorized_blog() {
 	if ( false === ( $all_the_cool_cats = get_transient( 'all_the_cool_cats' ) ) ) {
 		// Create an array of all the categories that are attached to posts
 		$all_the_cool_cats = get_categories( array(
@@ -149,21 +149,21 @@ function dgc_orized_blog() {
 	}
 
 	if ( '1' != $all_the_cool_cats ) {
-		// This blog has more than 1 category so dgc_orized_blog should return true
+		// This blog has more than 1 category so dgc_categorized_blog should return true
 		return true;
 	} else {
-		// This blog has only 1 category so dgc_orized_blog should return false
+		// This blog has only 1 category so dgc_categorized_blog should return false
 		return false;
 	}
 }
 
 /**
- * Flush out the transients used in dgc_orized_blog
+ * Flush out the transients used in dgc_categorized_blog
  *
  * @since Fruitful theme 1.0
  */
-function dgc_ory_transient_flusher() {
+function dgc_category_transient_flusher() {
 	delete_transient( 'all_the_cool_cats' );
 }
-add_action( 'edit_category', 'dgc_ory_transient_flusher' );
-add_action( 'save_post', 	 'dgc_ory_transient_flusher' );
+add_action( 'edit_category', 'dgc_category_transient_flusher' );
+add_action( 'save_post', 	 'dgc_category_transient_flusher' );

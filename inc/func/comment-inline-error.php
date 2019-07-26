@@ -5,7 +5,7 @@
 */
 
 add_action('init', 'dgc_setCustomSession');
-function dgc_stomSession() {
+function dgc_setCustomSession() {
 	if (session_id() == '') session_start();
 }	
 		

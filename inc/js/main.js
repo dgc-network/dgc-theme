@@ -156,7 +156,7 @@ jQuery(document).ready(function() {
 			submit: function(e,v,m,f){
 				if (v) {
 					var data = {										
-						action: 	'dgc_reset_btn',										
+						action: 	'fruitful_reset_btn',										
 						type:   	'reset',										
 						data: 		''									
 						};														

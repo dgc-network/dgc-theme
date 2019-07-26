@@ -28,12 +28,12 @@
  * @todo Rework this function to remove WordPress 3.4 support when WordPress 3.6 is released.
  *
  * @uses dgc_header_style()
- * @uses dgc__header_style()
- * @uses dgc__header_image()
+ * @uses dgc_admin_header_style()
+ * @uses dgc_admin_header_image()
  *
  * @package Fruitful theme
  */
-function dgc_m_header_setup() {
+function dgc_custom_header_setup() {
 	$args = array(
 		'default-image'          => '',
 		'flex-height' 			 => false,
@@ -44,18 +44,18 @@ function dgc_m_header_setup() {
 		'random-default'         => false,
 		'header-text' 			 => false,
 		'uplodas'				 => true,
-		'wp-head-callback'       => 'dgc_r_style',
-		'admin-head-callback'    => 'dgc__header_style',
-		'admin-preview-callback' => 'dgc__header_image',
+		'wp-head-callback'       => 'dgc_header_style',
+		'admin-head-callback'    => 'dgc_admin_header_style',
+		'admin-preview-callback' => 'dgc_admin_header_image',
 	);
 
-	$args = apply_filters( 'dgc_m_header_args', $args );
+	$args = apply_filters( 'dgc_custom_header_args', $args );
 
 	if ( function_exists( 'wp_get_theme' ) ) {
 		 add_theme_support( 'custom-header', $args );
 	} 
 }
-add_action( 'after_setup_theme', 'dgc_m_header_setup' );
+add_action( 'after_setup_theme', 'dgc_custom_header_setup' );
 
 /**
  * Shiv for get_custom_header().
@@ -84,15 +84,15 @@ if ( ! function_exists( 'get_custom_header' ) ) {
 }
 
 
-if ( ! function_exists( 'dgc_r_style' ) ) :
+if ( ! function_exists( 'dgc_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see dgc_m_header_setup().
+ * @see dgc_custom_header_setup().
  *
  * @since Fruitful theme 1.0
  */
-function dgc_r_style() {
+function dgc_header_style() {
 
 	// If no custom options for text are set, let's bail
 	if ( get_header_textcolor() == '333' )
@@ -122,17 +122,17 @@ function dgc_r_style() {
 	</style>
 	<?php
 }
-endif; // dgc_r_style
+endif; // dgc_header_style
 
-if ( ! function_exists( 'dgc__header_style' ) ) :
+if ( ! function_exists( 'dgc_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see dgc_m_header_setup().
+ * @see dgc_custom_header_setup().
  *
  * @since Fruitful theme 1.0
  */
-function dgc__header_style() {
+function dgc_admin_header_style() {
 ?>
 	<style type="text/css">
 	.appearance_page_custom-header #headimg {
@@ -152,17 +152,17 @@ function dgc__header_style() {
 	</style>
 <?php
 }
-endif; // dgc__header_style
+endif; // dgc_admin_header_style
 
-if ( ! function_exists( 'dgc__header_image' ) ) :
+if ( ! function_exists( 'dgc_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see dgc_m_header_setup().
+ * @see dgc_custom_header_setup().
  *
  * @since Fruitful theme 1.0
  */
-function dgc__header_image() { ?>
+function dgc_admin_header_image() { ?>
 	<div id="headimg">
 		<?php
 		if ( 'blank' == get_header_textcolor() || '' == get_header_textcolor() )
@@ -178,4 +178,4 @@ function dgc__header_image() { ?>
 		<?php endif; ?>
 	</div>
 <?php }
-endif; // dgc__header_image
+endif; // dgc_admin_header_image
