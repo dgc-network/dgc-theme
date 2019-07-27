@@ -45,6 +45,15 @@ class dgc_theme_options {
 			'id'     => 'general',
 			'fields' => array(
 				array(
+					'id'          => 'showuser',
+					'label'       => __( 'Show user in header', 'dgc' ),
+					'info'        => __( 'If you want to display my-account link in header select options below.',
+						'dgc' ),
+					'type'        => 'checkbox',
+					'description' => __( 'Enable', 'dgc' ),
+					'default'     => 'on',
+				),
+			array(
 					'id'          => 'responsive',
 					'label'       => __( 'Layout', 'dgc' ),
 					'info'        => __( 'Theme supported 2 types of html layout. Default responsive setting which adapt for mobile devices and static page with fixed width. Uncheck arrow below if you need static website display',
