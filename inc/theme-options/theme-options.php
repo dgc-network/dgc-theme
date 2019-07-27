@@ -46,7 +46,7 @@ class dgc_theme_options {
 			'fields' => array(
 				array(
 					'id'          => 'showuser',
-					'label'       => __( 'Show user in header', 'dgc' ),
+					'label'       => __( 'Show user button in header', 'dgc' ),
 					'info'        => __( 'If you want to display my-account link in header select options below.',
 						'dgc' ),
 					'type'        => 'checkbox',
