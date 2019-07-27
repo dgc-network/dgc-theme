@@ -425,6 +425,27 @@ if ( ! function_exists( 'dgc_get_cart_button_html' ) ) {
 	}
 }	
 
+/*get login button html*/
+if ( ! function_exists( 'dgc_get_user_button_html' ) ) {
+	function dgc_get_user_button_html() {
+		$btn_user = '';
+		$theme_options = dgc_get_theme_options();
+		
+		if (class_exists('Woocommerce')) { 
+			global $woocommerce;
+			if (!empty($theme_options['showuser']) && (esc_attr($theme_options['showuser']) == 'on')) {
+					$btn_user = '<div class="user-button">
+						<a href="'.get_permalink( wc_get_page_id( 'login' ) ).'" class="user-contents">
+							<div class="user_image"></div> 
+						</a>
+					</div>';
+			}
+		} 
+		echo $btn_user;
+	}
+}	
+
+/*check googleapis custom fonts*/
 if ( ! function_exists( 'dgc_check_gg_custom_fonts' ) ) {
 	function dgc_check_gg_custom_fonts($inFont = null) {
 		$font_name = null;
@@ -1688,8 +1709,7 @@ if ( ! function_exists( 'dgc_get_languages_list' ) ) {
 
 if ( ! function_exists( 'dgc_wp_corenavi' ) ) {
 	function dgc_wp_corenavi() {  
-		global $wp_query, 
-				$wp_rewrite;  
+		global $wp_query, $wp_rewrite;  
 		$next_label = $prev_label = '';
 		if (wp_is_mobile()) {
 			$next_label = __(' &laquo; ','dgc'); 

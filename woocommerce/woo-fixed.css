@@ -43,6 +43,9 @@ Fixed Styles for Woocommerce.
 }
 
 /*header*/
+.user-button{display:block;float: right;padding:0;position:relative;margin:14px 10px 10px;clear:left}
+.user-button a,
+.user-button a .user_image{display:block;float: left;margin: 0;padding:0;width:24px; height:21px;border:0;text-decoration:none;background:url(images/user.png) no-repeat transparent;}
 .cart-button{display:block;float: right;padding:0;position:relative;margin:14px 10px 10px;clear:left}
 .cart-button a,
 .cart-button a .cart_image{display:block;float: left;margin: 0;padding:0;width:24px; height:21px;border:0;text-decoration:none;background:url(images/cart_image.png) no-repeat transparent;}
@@ -372,7 +375,7 @@ body.woocommerce-page ul.products li.product .price{float:left;margin: 5px 0 10p
 	font-size:14px;
 	margin:0;
 	position: relative;
-	float: left;
+	/* float: left; */
 	top: 5px;
 	left: 30px;
 }
