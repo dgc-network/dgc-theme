@@ -435,7 +435,7 @@ if ( ! function_exists( 'dgc_get_user_button_html' ) ) {
 			global $woocommerce;
 			if (!empty($theme_options['showuser']) && (esc_attr($theme_options['showuser']) == 'on')) {
 					$btn_user = '<div class="user-button">
-						<a href="'.get_permalink( wc_get_page_id( 'My account' ) ).'" class="user-contents">
+						<a href="'.get_permalink( wc_get_page_id( 'My Account' ) ).'" class="user-contents">
 							<div class="user_image"></div> 
 						</a>
 					</div>';
