@@ -44,15 +44,6 @@ class dgc_theme_options {
 			'title'  => __( 'General', 'dgc' ),
 			'id'     => 'general',
 			'fields' => array(
-				array(
-					'id'          => 'showuser',
-					'label'       => __( 'Show user button in header', 'dgc' ),
-					'info'        => __( 'If you want to display my-account link in header select options below.',
-						'dgc' ),
-					'type'        => 'checkbox',
-					'description' => __( 'Enable', 'dgc' ),
-					'default'     => 'on',
-				),
 			array(
 					'id'          => 'responsive',
 					'label'       => __( 'Layout', 'dgc' ),
@@ -1230,6 +1221,15 @@ class dgc_theme_options {
 				'id'     => 'woo',
 				'fields' => array(
 					array(
+						'id'          => 'showuser',
+						'label'       => __( 'Show user button in header', 'dgc' ),
+						'info'        => __( 'If you want to display my-account link in header select options below.',
+							'dgc' ),
+						'type'        => 'checkbox',
+						'description' => __( 'Enable', 'dgc' ),
+						'default'     => 'on',
+					),
+						array(
 						'id'          => 'showcart',
 						'label'       => __( 'Show cart in header', 'dgc' ),
 						'info'        => __( 'If you want to display cart link in header select options below.',
