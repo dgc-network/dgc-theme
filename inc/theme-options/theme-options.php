@@ -1229,7 +1229,14 @@ class dgc_theme_options {
 						'description' => __( 'Enable', 'dgc' ),
 						'default'     => 'on',
 					),
-						array(
+					array(
+						'label'   => __( 'User color', 'dgc' ),
+						'info'    => __( 'Choose color for user icon', 'dgc' ),
+						'id'      => 'user_color',
+						'type'    => 'color',
+						'default' => '#020202',
+					),
+					array(
 						'id'          => 'showcart',
 						'label'       => __( 'Show cart in header', 'dgc' ),
 						'info'        => __( 'If you want to display cart link in header select options below.',

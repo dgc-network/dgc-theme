@@ -1180,6 +1180,10 @@ if ( ! function_exists( 'dgc_get_responsive_style' ) ) {
 				}
 				
 				//$woo_style_ .= '.num_of_product_cart {border-color: '. esc_attr($theme_options['menu_btn_color']) . '; }  ' . "\n"; 
+				if (!empty($theme_options['user_color'])) {
+					$woo_style_ .= '.user_image {color: '. esc_attr($theme_options['user_color']) . '; }  ' . "\n"; 
+				}
+				
 				if (!empty($theme_options['cart_color'])) {
 					$woo_style_ .= '.cart_image {color: '. esc_attr($theme_options['cart_color']) . '; }  ' . "\n"; 
 					$woo_style_ .= '.num_of_product_cart {border-color: '. esc_attr($theme_options['cart_color']) . '; }  ' . "\n"; 
