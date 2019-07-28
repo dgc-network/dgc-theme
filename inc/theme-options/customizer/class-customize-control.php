@@ -45,7 +45,6 @@ class DGC_Customize_Textarea_Control extends WP_Customize_Control {
 		</label>
 		<?php
 	}
-
 }
 
 class DGC_Customize_Checkbox_Control extends WP_Customize_Control {
