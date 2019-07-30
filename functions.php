@@ -1565,22 +1565,22 @@ if ( ! function_exists( 'dgc_entry_meta' ) ) {
 		<?php
 			/* translators: used between list items, there is a space after the comma */
 		 	$categories_list = get_the_category_list( __( ', ', 'dgc' ) );
-		if ( $categories_list && dgc_categorized_blog() ) : ?>
-		<span class="cat-links">
-			<?php printf( __( 'Posted in %1$s', 'dgc' ), $categories_list ); ?>
-		</span>
-	<?php endif; // End if categories ?>
+			if ( $categories_list && dgc_categorized_blog() ) : ?>
+			<span class="cat-links">
+				<?php printf( __( 'Posted in %1$s', 'dgc' ), $categories_list ); ?>
+			</span>
+		<?php endif; // End if categories ?>
 
-	<?php
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'dgc' ) );
-		if ( $tags_list ) :
-	?>
-		<span class="tag-links">
-			<?php // printf( __( 'Tagged %1$s', 'dgc' ), $tags_list ); ?>
-			<?php echo $tags_list; ?>
-		</span> 
+		<?php
+			/* translators: used between list items, there is a space after the comma */
+			$tags_list = get_the_tag_list( '', __( ', ', 'dgc' ) );
+			if ( $tags_list ) : ?>
+			<span class="tag-links">
+				<?php // printf( __( 'Tagged %1$s', 'dgc' ), $tags_list ); ?>
+				<?php echo $tags_list; ?>
+			</span> 
 		<?php endif; // End if $tags_list ?>
+		
 	<?php endif; // End if 'post' == get_post_type() ?>
 	<?php 
 	}
@@ -1617,7 +1617,7 @@ if ( ! function_exists( 'dgc_product_code' ) ) {
 				<input type="hidden" name="post_type" value="product" />
 			</div>
 			<div>
-				<h2>Publisher</h2>
+				<h4>Publisher</h4>
 				<input type="checkbox" name="vehicle1" value="Bike"> AGA<br>
 				<input type="checkbox" name="vehicle2" value="Car"> AGI<br>
 				<input type="checkbox" name="vehicle3" value="Boat"> ASCE<br>
@@ -1626,8 +1626,19 @@ if ( ! function_exists( 'dgc_product_code' ) ) {
 				<input type="checkbox" name="vehicle3" value="Boat"> ASTM<br>
 				<input type="checkbox" name="vehicle3" value="Boat"> BSI<br>
 			</div>
+
+			<?php
+			/* translators: used between list items, there is a space after the comma */
+			$tags_list = get_the_tag_list( '', __( ', ', 'dgc' ) );
+			if ( $tags_list ) : ?>
+			<span class="tag-links">
+				<?php // printf( __( 'Tagged %1$s', 'dgc' ), $tags_list ); ?>
+				<?php echo $tags_list; ?>
+			</span> 
+			<?php endif; // End if $tags_list ?>
+		
 			<div>
-				<h2>Tags</h2>
+				<h4>Tags</h4>
 				<input type="checkbox" name="vehicle1" value="Bike"> Home<br>
 				<input type="checkbox" name="vehicle2" value="Car"> Natual Waters<br>
 				<input type="checkbox" name="vehicle3" value="Boat"> Organic Carbon<br>
@@ -1637,9 +1648,9 @@ if ( ! function_exists( 'dgc_product_code' ) ) {
 				<input type="checkbox" name="vehicle3" value="Boat"> Testing Machines<br>
 			</div>
 			<div>
-				<h2>Published Date</h2>
-				<input type="text" name="vehicle1" value="Bike"> - 
-				<input type="text" name="vehicle2" value="Car"> Natual Waters<br>
+				<h4>Published Date</h4>
+				<input type="text" name="vehicle1" width="10" value="2019"> - 
+				<input type="text" name="vehicle2" width="10" value="2019"><br>
 			</div>
 		</form>
 		<?php
