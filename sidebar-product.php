@@ -5,8 +5,8 @@
  * @package WordPress
  * @subpackage dgc-wordpress-theme
  * @since dgc-wordpress-theme 1.0
- */
-?>
+ */?>
+ 
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php do_action( 'before_sidebar' ); ?>
 			<?php if ( ! dynamic_sidebar( 'sidebar-6' ) ) : ?>

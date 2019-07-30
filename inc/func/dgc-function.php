@@ -34,36 +34,35 @@ function dgc_add_jquery_script() {
 
 function dgc_fonts_list() {
 	$font_family_options = array(
-			'Arial, Helvetica, sans-serif'  				    => __( 'Arial, Helvetica, sans-serif', 'dgc' ),
-			'Arial Black, Gadget, sans-serif'				    => __( 'Arial Black, Gadget, sans-serif', 'dgc' ),
-			'Comic Sans MS, Textile, cursive' 				    => __( 	'Comic Sans MS, Textile, cursive', 'dgc' ),
-			'Courier New, Courier, monospace'			 	    => __( 'Courier New, Courier, monospace', 'dgc' ),
-			'Georgia, Times New Roman, Times, serif'	 	    => __( 'Georgia, Times New Roman, Times, serif', 'dgc' ),
-			'Impact, Charcoal, sans-serif' 				 	    => __( 'Impact, Charcoal, sans-serif', 'dgc' ),
-			'Lucida Console, Monaco, monospace' 			    => __( 'Lucida Console, Monaco, monospace', 'dgc' ),
-			'Lucida Sans Unicode, Lucida Grande, sans-serif'	=> __( 'Lucida Sans Unicode, Lucida Grande, sans-serif', 'dgc' ),
-			'Palatino Linotype, Book Antiqua, Palatino, serif' 	=> __( 'Palatino Linotype, Book Antiqua, Palatino, serif', 'dgc' ),
-			'Tahoma, Geneva, sans-serif' 						=> __( 'Tahoma, Geneva, sans-serif', 'dgc' ),
-			'Times New Roman, Times, serif'						=> __( 'Times New Roman, Times, serif', 'dgc' ),
-			'Trebuchet MS, Helvetica, sans-serif' 				=> __( 'Trebuchet MS, Helvetica, sans-serif', 'dgc' ),
-			'Verdana, Geneva, sans-serif'						=> __( 'Verdana, Geneva, sans-serif', 'dgc' ),
-			'MS Sans Serif, Geneva, sans-serif' 				=> __( 'MS Sans Serif, Geneva, sans-serif', 'dgc' ),
-			'MS Serif, New York, serif' 						=> __( 'MS Serif, New York, serif', 'dgc' ),
+		'Arial, Helvetica, sans-serif'  				    => __( 'Arial, Helvetica, sans-serif', 'dgc' ),
+		'Arial Black, Gadget, sans-serif'				    => __( 'Arial Black, Gadget, sans-serif', 'dgc' ),
+		'Comic Sans MS, Textile, cursive' 				    => __( 	'Comic Sans MS, Textile, cursive', 'dgc' ),
+		'Courier New, Courier, monospace'			 	    => __( 'Courier New, Courier, monospace', 'dgc' ),
+		'Georgia, Times New Roman, Times, serif'	 	    => __( 'Georgia, Times New Roman, Times, serif', 'dgc' ),
+		'Impact, Charcoal, sans-serif' 				 	    => __( 'Impact, Charcoal, sans-serif', 'dgc' ),
+		'Lucida Console, Monaco, monospace' 			    => __( 'Lucida Console, Monaco, monospace', 'dgc' ),
+		'Lucida Sans Unicode, Lucida Grande, sans-serif'	=> __( 'Lucida Sans Unicode, Lucida Grande, sans-serif', 'dgc' ),
+		'Palatino Linotype, Book Antiqua, Palatino, serif' 	=> __( 'Palatino Linotype, Book Antiqua, Palatino, serif', 'dgc' ),
+		'Tahoma, Geneva, sans-serif' 						=> __( 'Tahoma, Geneva, sans-serif', 'dgc' ),
+		'Times New Roman, Times, serif'						=> __( 'Times New Roman, Times, serif', 'dgc' ),
+		'Trebuchet MS, Helvetica, sans-serif' 				=> __( 'Trebuchet MS, Helvetica, sans-serif', 'dgc' ),
+		'Verdana, Geneva, sans-serif'						=> __( 'Verdana, Geneva, sans-serif', 'dgc' ),
+		'MS Sans Serif, Geneva, sans-serif' 				=> __( 'MS Sans Serif, Geneva, sans-serif', 'dgc' ),
+		'MS Serif, New York, serif' 						=> __( 'MS Serif, New York, serif', 'dgc' ),
 			
-			/*Google fonts*/	
-			'Open Sans, sans-serif' 							=> __( 'Open Sans, sans-serif', 'dgc' ),
-			'Lobster, cursive' 									=> __( 'Lobster, cursive', 'dgc' ),
-			'Josefin Slab, serif' 								=> __( 'Josefin Slab, serif', 'dgc' ),
-			'Arvo, serif' 										=> __( 'Arvo, serif', 'dgc' ),
-			'Lato, sans-serif' 									=> __( 'Lato, sans-serif', 'dgc' ),
-			'Vollkorn, serif' 									=> __( 'Vollkorn, serif', 'dgc' ),
-			'Abril Fatface, cursive' 							=> __( 'Abril Fatface, cursive', 'dgc' ),
-			'Ubuntu, sans-serif'								=> __( 'Ubuntu, sans-serif', 'dgc' ),
-			'PT Sans, sans-serif'								=> __( 'PT Sans, sans-serif', 'dgc' ),
-			'Old Standard TT, serif' 							=> __( 'Old Standard TT, serif', 'dgc' ),
-			'Droid Sans, sans-serif' 							=> __( 'Droid Sans, sans-serif', 'dgc' ),
+		/*Google fonts*/	
+		'Open Sans, sans-serif' 							=> __( 'Open Sans, sans-serif', 'dgc' ),
+		'Lobster, cursive' 									=> __( 'Lobster, cursive', 'dgc' ),
+		'Josefin Slab, serif' 								=> __( 'Josefin Slab, serif', 'dgc' ),
+		'Arvo, serif' 										=> __( 'Arvo, serif', 'dgc' ),
+		'Lato, sans-serif' 									=> __( 'Lato, sans-serif', 'dgc' ),
+		'Vollkorn, serif' 									=> __( 'Vollkorn, serif', 'dgc' ),
+		'Abril Fatface, cursive' 							=> __( 'Abril Fatface, cursive', 'dgc' ),
+		'Ubuntu, sans-serif'								=> __( 'Ubuntu, sans-serif', 'dgc' ),
+		'PT Sans, sans-serif'								=> __( 'PT Sans, sans-serif', 'dgc' ),
+		'Old Standard TT, serif' 							=> __( 'Old Standard TT, serif', 'dgc' ),
+		'Droid Sans, sans-serif' 							=> __( 'Droid Sans, sans-serif', 'dgc' ),
 	);
-
 	return apply_filters( 'dgc_fonts_list', $font_family_options );
 }
 
@@ -82,7 +81,7 @@ function dgc_fonts_list() {
         	 
 		$name_id = "settings-section-" . $id_;
 		print '<div id="'. $name_id .'" class="settings-section">';
-				dgc_custom_do_settings_fields($page, $section['id']);
+			dgc_custom_do_settings_fields($page, $section['id']);
 		print '</div>';
 		$id_++;		 
     }
@@ -115,39 +114,38 @@ function dgc_custom_do_settings_fields($page, $section) {
 				$id = (isset($field['args']['id'])) ? $field['args']['id'] : '';
 				if($id == 'slider-options' ) {
 					print '<div class="box-options">';
-					print '<input type="button" id="view_all_options" class="button-secondary" value="'.__( 'View Options','dgc').'" />'; 
-					print '<div id="slider_main_options" class="slider-main-options">';
-								print '	<div class="no-slider-select">';
-									print '	<div class="option_block">';
-										print '<h4>'.__('No Slider Select!', 'dgc' ).'</h4>';
-									print '</div>';
+						print '<input type="button" id="view_all_options" class="button-secondary" value="'.__( 'View Options','dgc').'" />'; 
+						print '<div id="slider_main_options" class="slider-main-options">';
+							print '	<div class="no-slider-select">';
+								print '	<div class="option_block">';
+									print '<h4>'.__('No Slider Select!', 'dgc' ).'</h4>';
 								print '</div>';
-								foreach($field['args']['fields'] as $row => $value){
-									print '<div class="option_block '.$value['option-block'].'">';
-										call_user_func($field['callback'], $field['args']['fields'][$row]); 
-									print '</div>';	
-								}	
 							print '</div>';
+							foreach($field['args']['fields'] as $row => $value){
+								print '<div class="option_block '.$value['option-block'].'">';
+									call_user_func($field['callback'], $field['args']['fields'][$row]); 
+								print '</div>';	
+							}	
 						print '</div>';
-					}
-					else {
-						print '<div class="box-options">';
-						foreach($field['args']['fields'] as $row => $value){
-							print '<div class="box-option">';
-								call_user_func($field['callback'], $field['args']['fields'][$row]); 
-							print '</div>';	
-						}	
+					print '</div>';
+
+				} else {
+					print '<div class="box-options">';
+					foreach($field['args']['fields'] as $row => $value){
+						print '<div class="box-option">';
+							call_user_func($field['callback'], $field['args']['fields'][$row]); 
 						print '</div>';	
 					}	
+					print '</div>';	
+				}	
 
-				}
-				else {
-					print '<div class="box-options">';
-						print '<div class="box-option">';
-						call_user_func($field['callback'], $field['args']);
-					print '</div></div>';				
-				}
-				print '</div>';	
+			} else {
+				print '<div class="box-options">';
+					print '<div class="box-option">';
+					call_user_func($field['callback'], $field['args']);
+				print '</div></div>';				
+			}
+			print '</div>';	
 			$id_++;		 
     }
 }
@@ -168,7 +166,6 @@ function dgc_get_box_upload_slide($attach_id, $link_url, $is_blank, $is_active, 
 			$image_attributes = wp_get_attachment_image_src($attach_id, 'full');
 			$out .= '<img src="'.esc_url_raw($image_attributes[0]).'" alt="" />';
 		$out .= '</div>	';
-				
 	}
 		/*Link out for Slider*/
 		$out .= '<label for="slide-link-'.$ind.'">'. __('Link URL', 'dgc') .'</label>';
@@ -247,17 +244,16 @@ function dgc_slider_images() {
 <?php
 }
 
-add_action('wp_ajax_run_import_dummy_data', 'dgc_run_import_dummy_data');
 function dgc_run_import_dummy_data() {
 	$vIsUpdate = false;
 	$vIsUpdate = dgc_create_home_page();
 	echo $vIsUpdate;
 	die();
 }
+add_action('wp_ajax_run_import_dummy_data', 'dgc_run_import_dummy_data');
 
-add_action('wp_ajax_dgc_theme_options_action', 'dgc_data_save');
 function dgc_data_save() {
-global $dgc_theme_options;
+	global $dgc_theme_options;
 	$data = $_POST[$dgc_theme_options->args['opt_name']];
 	foreach ( $dgc_theme_options->sections as $section => $data_f ) {
 		foreach ( $data_f['fields'] as $field ) {
@@ -295,9 +291,10 @@ global $dgc_theme_options;
 	}
 
 }
+add_action('wp_ajax_dgc_theme_options_action', 'dgc_data_save');
 
 function dgc_get_default_array() {
-global $dgc_theme_options;
+	global $dgc_theme_options;
 	$output = array();
 	foreach ( $dgc_theme_options->sections as $section => $data_f ) {
 		foreach ( $data_f['fields'] as $field ) {
@@ -324,12 +321,12 @@ function dgc_get_theme_options() {
     );
 }
 
-add_action('wp_ajax_dgc_reset_btn', 'dgc_reset_action');
 function dgc_reset_action() {
-global $dgc_theme_options;
+	global $dgc_theme_options;
 	 delete_option($dgc_theme_options->args['opt_name']);
 	 die();	
 }
+add_action('wp_ajax_dgc_reset_btn', 'dgc_reset_action');
 
 function dgc_theme_sanitize_checkbox( $input ) {
     if ( $input == 1 ) {return 'on';} else {return 'off';}

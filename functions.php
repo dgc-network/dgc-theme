@@ -226,8 +226,8 @@ if ( ! function_exists( 'dgc_wp_title' ) ) {
 			$title = "$title $sep " . sprintf( __( 'Page %s', 'dgc' ), max( $paged, $page ) );
 		return $title;
 	}
-	add_filter( 'wp_title', 'dgc_wp_title', 10, 2 );
 }
+add_filter( 'wp_title', 'dgc_wp_title', 10, 2 );
 
 //Change thumbnail size by parameter sidebar
 if ( ! function_exists( 'dgc_thumbnail_size' ) ) {
@@ -243,8 +243,8 @@ if ( ! function_exists( 'dgc_thumbnail_size' ) ) {
 		}
 		return $html;
 	}
-	add_filter( 'post_thumbnail_html', 'dgc_thumbnail_size', 0, 5 );
 }
+add_filter( 'post_thumbnail_html', 'dgc_thumbnail_size', 0, 5 );
 
 /**
  * Register widgetized area and update sidebar with default widgets
