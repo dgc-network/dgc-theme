@@ -253,7 +253,7 @@ add_filter( 'post_thumbnail_html', 'dgc_thumbnail_size', 0, 5 );
  */
 if ( ! function_exists( 'dgc_widgets_init' ) ) {
 	function dgc_widgets_init() {
-		register_widget( 'DGC_Widget_News_Archive' );
+		//register_widget( 'DGC_Widget_News_Archive' );
 	
 		register_sidebar( array(
 			'name' => __( 'Main Sidebar', 'dgc' ),
@@ -1605,65 +1605,6 @@ if ( ! function_exists( 'dgc_entry_date' ) ) {
 	}
 }
 
-if ( ! function_exists( 'dgc_filter_refine' ) ) {
-	function dgc_filter_refine( $echo = true ) {
-		?>
-			<div>
-				<input type="checkbox" name="vehicle1" value="Bike"> Product Code<br>
-				<input type="checkbox" name="vehicle2" value="Car"> Product Title<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Keyword<br><br>
-			</div>
-			<div>
-				<h4>Publisher</h4>
-				<input type="checkbox" name="vehicle1" value="Bike"> AGA<br>
-				<input type="checkbox" name="vehicle2" value="Car"> AGI<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> ASCE<br>
-				<input type="checkbox" name="vehicle1" value="Bike"> ASHRAE<br>
-				<input type="checkbox" name="vehicle2" value="Car"> ASME<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> ASTM<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> BSI<br><br>
-			</div>
-
-			<div>
-				<h4>Tags</h4>
-				<input type="checkbox" name="vehicle1" value="Bike"> Home<br>
-				<input type="checkbox" name="vehicle2" value="Car"> Natual Waters<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Organic Carbon<br>
-				<input type="checkbox" name="vehicle1" value="Bike"> Organic Coatings<br>
-				<input type="checkbox" name="vehicle2" value="Car"> Plain Steel<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Surfaces<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Testing Machines<br><br>
-			</div>
-			<div>
-				<h4>Published Date</h4>
-				<input type="text" name="vehicle1" width="30%" value="2018"> - 
-				<input type="text" name="vehicle2" width="30%" value="2019">
-			</div>
-
-			<?php
-			/* translators: used between list items, there is a space after the comma */
-		 	$categories_list = get_the_category_list( __( ', ', 'dgc' ) );
-			if ( $categories_list && dgc_categorized_blog() ) : ?>
-			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'dgc' ), $categories_list ); ?>
-			</span>
-			<?php endif; // End if categories ?>
-
-			<?php
-			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', __( ', ', 'dgc' ) );
-			if ( $tags_list ) : ?>
-			<span class="tag-links">
-				<?php // printf( __( 'Tagged %1$s', 'dgc' ), $tags_list ); ?>
-				<?php echo $tags_list; ?>
-			</span> 
-			<?php endif; // End if $tags_list ?>
-		
-		<?php
-	}
-}
-
-
 if ( ! function_exists( 'dgc_theme_options_validate' ) ) {
 	function dgc_theme_options_validate($value) {
 		return $value;
@@ -1864,8 +1805,7 @@ if ( ! function_exists( 'dgc_get_content_with_custom_sidebar' ) ) {
 				/* Start the Loop */
 				$page_on_front  = get_option('page_on_front');
 				$page_for_posts = get_option('page_for_posts');
-				
-				
+								
 				if (is_page() && !empty($page_on_front) &&  !empty($page_for_posts) && ($page_on_front == $page_for_posts)) {
 					echo '<div class="alert alert-danger"><strong>'.__("Front page displays Error.", 'dgc').'</strong> '.__('Select different pages!', 'dgc').'</div>';
 					
@@ -1883,8 +1823,8 @@ if ( ! function_exists( 'dgc_get_content_with_custom_sidebar' ) ) {
 							else :
 								get_template_part( 'no-results', 'index' ); 
 							endif;
-						} else {
-							
+
+						} else {							
 							if ( have_posts() ) {
 								while ( have_posts() ) : the_post();
 									if (is_page() && !is_front_page() && !is_home()) {
@@ -1893,6 +1833,7 @@ if ( ! function_exists( 'dgc_get_content_with_custom_sidebar' ) ) {
 										if (dgc_state_page_comment()) { 
 											comments_template( '', true );  
 										}
+
 									} else if (is_single()) {
 										get_template_part( 'content', get_post_format() );
 										dgc_content_nav( 'nav-below' );
@@ -1900,12 +1841,14 @@ if ( ! function_exists( 'dgc_get_content_with_custom_sidebar' ) ) {
 										if (dgc_state_post_comment()) { 
 											if ( comments_open() || '0' != get_comments_number() ) comments_template();  
 										}
+
 									} else if (is_front_page())	{
 										get_template_part( 'content', 'page' );
 									}
-							   endwhile;
+							   	endwhile;
 							}
-						} 
+						}
+
 					} else {
 						?>
 							<section id="primary" class="content-area">
@@ -1919,8 +1862,10 @@ if ( ! function_exists( 'dgc_get_content_with_custom_sidebar' ) ) {
 													if ( is_archive()) {
 														if ( is_category() ) {
 															printf( __( 'Category Archives: %s', 'dgc' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+
 														} elseif ( is_tag() ) {
 															printf( __( 'Tag Archives: %s', 'dgc' ), '<span>' . single_tag_title( '', false ) . '</span>' );
+
 														} elseif ( is_author() ) {
 															the_post();
 															printf( __( 'Author Archives: %s', 'dgc' ), '<span class="vcard"><a class="url fn n" href="' . get_author_posts_url( get_the_author_meta( "ID" ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' );
@@ -1991,29 +1936,27 @@ if ( ! function_exists( 'dgc_get_content_with_custom_sidebar' ) ) {
 			$is_sidebar = true;
 			$is_sidebar = dgc_is_woo_sidebar();
 				
-			if ($content_type == 0) { ?>
-				<?php get_content_part(); ?>	
-		<?php } else if ($content_type == 1) { ?>
-				
+			if ($content_type == 0) {
+				get_content_part();
+			
+			} else if ($content_type == 1) { ?>				
 				<div class="eleven columns <?php echo $content_class;?>"><?php get_content_part(); ?> </div>	
 				
 				<?php if ($is_sidebar && is_page()) { ?>
 					<div class="five columns <?php echo $sidebar_class;?>"> <?php get_sidebar($curr_sidebar); ?> </div>
 				<?php } else { ?>	
 					<div class="five columns <?php echo $sidebar_class;?>"> <?php get_sidebar($curr_sidebar); ?> </div>
-				<?php } ?>	
-				
-		<?php } else if ($content_type == 2) { ?>
-				
+				<?php }
+			
+			} else if ($content_type == 2) { ?>				
 				<div class="eleven columns <?php echo $content_class;?>"> <?php get_content_part(); ?> </div>	
 				
 				<?php if ($is_sidebar && is_page()) { ?>
 					<div class="five columns <?php echo $sidebar_class;?>"> <?php get_sidebar($curr_sidebar); ?> </div>
 				<?php } else { ?>	
 					<div class="five columns <?php echo $sidebar_class;?>"> <?php get_sidebar($curr_sidebar); ?> </div>
-				<?php } ?>	
-				
-		<?php } 
+				<?php }
+			} 
 		}
 		
 		$curr_template = '';
@@ -2023,32 +1966,39 @@ if ( ! function_exists( 'dgc_get_content_with_custom_sidebar' ) ) {
 			if (!empty($options['latest_posts_templ'])){
 				$curr_template = esc_attr($options['latest_posts_templ']);
 			}
+
 		} elseif (is_archive()) {
 			if (is_tag()) {
 				if (!empty($options['layout_tag_templ'])){
 					$curr_template = esc_attr($options['layout_tag_templ']);	
 				}
+
 			} elseif (is_category()) {
 				if (!empty($options['layout_cat_templ'])){
 					$curr_template = esc_attr($options['layout_cat_templ']);
 				}
+
 			} elseif (is_author()) {
 				if (!empty($options['layout_author_templ'])){
 					$curr_template = esc_attr($options['layout_author_templ']);
 				}
+
 			} else {
 				if (!empty($options['layout_archive_templ'])){
 					$curr_template = esc_attr($options['layout_archive_templ']); 
 				}
-			}	
+			}
+
 		} elseif (is_404()) {
 			if (!empty($options['layout_404_templ'])){
 				$curr_template = esc_attr($options['layout_404_templ']);
 			}
+
 		} elseif (is_search()) {
 			if (!empty($options['layout_search_templ'])){
 				$curr_template = esc_attr($options['layout_search_templ']);
 			}
+
 		} else {
 			$default_blog_template = (get_post_meta( get_option('page_for_posts', true), '_dgc_page_layout', true ))?(get_post_meta( get_option('page_for_posts', true), '_dgc_page_layout', true )-1) : 1;
 			
@@ -2057,8 +2007,8 @@ if ( ! function_exists( 'dgc_get_content_with_custom_sidebar' ) ) {
 			if (!dgc_is_blog()) {
 				if (is_archive()) {
 					$curr_template = $default_blog_template;
-				} else {
-						
+
+				} else {						
 					if (class_exists('BuddyPress')){
 						$bp_pages = get_option('bp-pages');			//possible pages - activity, members, register, activate
 						foreach ($bp_pages as $bp_page_slug => $bp_page_id){
@@ -2068,11 +2018,12 @@ if ( ! function_exists( 'dgc_get_content_with_custom_sidebar' ) ) {
 								$curr_template = $default_page_template;
 							}
 						}
+
 					} else {
 						$curr_template = $default_page_template;
-					}
-					
+					}					
 				}
+
 			} else {
 				if (is_single()) {
 					$curr_template = $default_post_template;
@@ -2084,10 +2035,13 @@ if ( ! function_exists( 'dgc_get_content_with_custom_sidebar' ) ) {
 		
 		if ($curr_template == 0) { 
 			get_html_custom_post_template('alpha', 'omega', $curr_sidebar, $curr_template);
+
 		} else if ($curr_template == 1) { 
 			get_html_custom_post_template('alpha', 'omega', $curr_sidebar, $curr_template);
+
 		} else if ($curr_template == 2) {
 			get_html_custom_post_template('omega', 'alpha', $curr_sidebar, $curr_template);
+			
 		} else {
 			if (is_home()) {
 				$curr_template = 1;
@@ -2111,16 +2065,11 @@ if (class_exists('Woocommerce')) {
 			add_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 10);
 			add_action( 'woocommerce_before_single_product_summary', 'woocommerce_template_single_rating', 20);		
 			add_action( 'woocommerce_before_single_product_summary', 'woocommerce_template_single_price', 20); 
-			add_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
-			
-		}
-		
+			add_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);			
+		}		
 		$woo_tabs_pos = dgc_get_woo_sidebar();
-		if ($woo_tabs_pos == 4)
-			go_hooks();
-			
+		if ($woo_tabs_pos == 4) go_hooks();			
 	}
-
 	add_action( 'wp', 'dgc_init_woo_actions' , 10);
 }
 
@@ -2185,3 +2134,62 @@ function dgc_frontend_scripts_include_lightbox() {
     }
 }
 add_action('wp_enqueue_scripts', 'dgc_frontend_scripts_include_lightbox');
+
+if ( ! function_exists( 'dgc_filter_refine' ) ) {
+	function dgc_filter_refine( $echo = true ) {
+		?>
+			<div>
+				<input type="checkbox" name="vehicle1" value="Bike"> Product Code<br>
+				<input type="checkbox" name="vehicle2" value="Car"> Product Title<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Keyword<br><br>
+			</div>
+			<div>
+				<h4>Publisher</h4>
+				<input type="checkbox" name="vehicle1" value="Bike"> AGA<br>
+				<input type="checkbox" name="vehicle2" value="Car"> AGI<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> ASCE<br>
+				<input type="checkbox" name="vehicle1" value="Bike"> ASHRAE<br>
+				<input type="checkbox" name="vehicle2" value="Car"> ASME<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> ASTM<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> BSI<br><br>
+			</div>
+
+			<div>
+				<h4>Tags</h4>
+				<input type="checkbox" name="vehicle1" value="Bike"> Home<br>
+				<input type="checkbox" name="vehicle2" value="Car"> Natual Waters<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Organic Carbon<br>
+				<input type="checkbox" name="vehicle1" value="Bike"> Organic Coatings<br>
+				<input type="checkbox" name="vehicle2" value="Car"> Plain Steel<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Surfaces<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Testing Machines<br><br>
+			</div>
+			<div>
+				<h4>Published Date</h4>
+				<input type="text" name="vehicle1" width="30%" value="2018"> - 
+				<input type="text" name="vehicle2" width="30%" value="2019">
+			</div>
+
+			<?php
+			/* translators: used between list items, there is a space after the comma */
+		 	$categories_list = get_the_category_list( __( ', ', 'dgc' ) );
+			if ( $categories_list && dgc_categorized_blog() ) : ?>
+			<span class="cat-links">
+				<?php printf( __( 'Posted in %1$s', 'dgc' ), $categories_list ); ?>
+			</span>
+			<?php endif; // End if categories ?>
+
+			<?php
+			/* translators: used between list items, there is a space after the comma */
+			$tags_list = get_the_tag_list( '', __( ', ', 'dgc' ) );
+			if ( $tags_list ) : ?>
+			<span class="tag-links">
+				<?php // printf( __( 'Tagged %1$s', 'dgc' ), $tags_list ); ?>
+				<?php echo $tags_list; ?>
+			</span> 
+			<?php endif; // End if $tags_list ?>
+		
+		<?php
+	}
+}
+
