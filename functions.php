@@ -1612,9 +1612,34 @@ if ( ! function_exists( 'dgc_product_code' ) ) {
 			<div>
 				<input type="checkbox" name="vehicle1" value="Bike"> Product Code<br>
 				<input type="checkbox" name="vehicle2" value="Car"> Product Title<br>
-				<input type="checkbox" name="vehicle3" value="Boat" checked> Keyword<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Keyword<br>
 				<input type="submit" id="searchsubmit" value="<?php echo esc_attr__( 'Search', 'dgc' ); ?>" />
 				<input type="hidden" name="post_type" value="product" />
+			</div>
+			<div>
+				<h2>Publisher</h2>
+				<input type="checkbox" name="vehicle1" value="Bike"> AGA<br>
+				<input type="checkbox" name="vehicle2" value="Car"> AGI<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> ASCE<br>
+				<input type="checkbox" name="vehicle1" value="Bike"> ASHRAE<br>
+				<input type="checkbox" name="vehicle2" value="Car"> ASME<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> ASTM<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> BSI<br>
+			</div>
+			<div>
+				<h2>Tags</h2>
+				<input type="checkbox" name="vehicle1" value="Bike"> Home<br>
+				<input type="checkbox" name="vehicle2" value="Car"> Natual Waters<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Organic Carbon<br>
+				<input type="checkbox" name="vehicle1" value="Bike"> Organic Coatings<br>
+				<input type="checkbox" name="vehicle2" value="Car"> Plain Steel<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Surfaces<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Testing Machines<br>
+			</div>
+			<div>
+				<h2>Published Date</h2>
+				<input type="text" name="vehicle1" value="Bike"> - 
+				<input type="text" name="vehicle2" value="Car"> Natual Waters<br>
 			</div>
 		</form>
 		<?php
