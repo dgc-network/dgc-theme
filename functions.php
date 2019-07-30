@@ -1605,8 +1605,8 @@ if ( ! function_exists( 'dgc_entry_date' ) ) {
 	}
 }
 
-if ( ! function_exists( 'dgc_product_code' ) ) {
-	function dgc_product_code( $echo = true ) {
+if ( ! function_exists( 'dgc_filter_refine' ) ) {
+	function dgc_filter_refine( $echo = true ) {
 		?>
 		<form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
 			<div>
@@ -1625,7 +1625,23 @@ if ( ! function_exists( 'dgc_product_code' ) ) {
 				<input type="checkbox" name="vehicle3" value="Boat"> BSI<br><br>
 			</div>
 
-			<?php
+			<div>
+				<h4>Tags</h4>
+				<input type="checkbox" name="vehicle1" value="Bike"> Home<br>
+				<input type="checkbox" name="vehicle2" value="Car"> Natual Waters<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Organic Carbon<br>
+				<input type="checkbox" name="vehicle1" value="Bike"> Organic Coatings<br>
+				<input type="checkbox" name="vehicle2" value="Car"> Plain Steel<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Surfaces<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Testing Machines<br><br>
+			</div>
+			<div>
+				<h4>Published Date</h4>
+				<input type="text" name="vehicle1" width="30%" value="2018"> - 
+				<input type="text" name="vehicle2" width="30%" value="2019">
+			</div>
+		</form>
+		<?php
 			/* translators: used between list items, there is a space after the comma */
 		 	$categories_list = get_the_category_list( __( ', ', 'dgc' ) );
 			if ( $categories_list && dgc_categorized_blog() ) : ?>
@@ -1644,22 +1660,6 @@ if ( ! function_exists( 'dgc_product_code' ) ) {
 			</span> 
 			<?php endif; // End if $tags_list ?>
 		
-			<div>
-				<h4>Tags</h4>
-				<input type="checkbox" name="vehicle1" value="Bike"> Home<br>
-				<input type="checkbox" name="vehicle2" value="Car"> Natual Waters<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Organic Carbon<br>
-				<input type="checkbox" name="vehicle1" value="Bike"> Organic Coatings<br>
-				<input type="checkbox" name="vehicle2" value="Car"> Plain Steel<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Surfaces<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Testing Machines<br><br>
-			</div>
-			<div>
-				<h4>Published Date</h4>
-				<input type="text" name="vehicle1" width="30%" value="2018"> - 
-				<input type="text" name="vehicle2" width="30%" value="2019">
-			</div>
-		</form>
 		<?php
 /*		if ( has_post_format( array( 'chat', 'status' ) ) )
 			$format_prefix = _x( '%1$s on %2$s', '1: post format name. 2: date', 'dgc' );
