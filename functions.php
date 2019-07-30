@@ -1608,7 +1608,6 @@ if ( ! function_exists( 'dgc_entry_date' ) ) {
 if ( ! function_exists( 'dgc_filter_refine' ) ) {
 	function dgc_filter_refine( $echo = true ) {
 		?>
-		<form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
 			<div>
 				<input type="checkbox" name="vehicle1" value="Bike"> Product Code<br>
 				<input type="checkbox" name="vehicle2" value="Car"> Product Title<br>
@@ -1640,8 +1639,8 @@ if ( ! function_exists( 'dgc_filter_refine' ) ) {
 				<input type="text" name="vehicle1" width="30%" value="2018"> - 
 				<input type="text" name="vehicle2" width="30%" value="2019">
 			</div>
-		</form>
-		<?php
+
+			<?php
 			/* translators: used between list items, there is a space after the comma */
 		 	$categories_list = get_the_category_list( __( ', ', 'dgc' ) );
 			if ( $categories_list && dgc_categorized_blog() ) : ?>
