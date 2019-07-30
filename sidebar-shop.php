@@ -18,7 +18,7 @@
 		<aside id="woocommerce_product_categories-4" class="widget woocommerce widget_product_categories">
 			<h3 class="widget-title"><?php _e('Filter & Refine', 'dgc'); ?></h3>
 			<?php 
-dgc_entry_date();
+dgc_product_code();
 //				$args = array('hierarchical' => true);
 //				the_widget('WC_Widget_Product_Categories', $args); 
 			?>

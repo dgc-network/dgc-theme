@@ -1605,6 +1605,36 @@ if ( ! function_exists( 'dgc_entry_date' ) ) {
 	}
 }
 
+if ( ! function_exists( 'dgc_product_code' ) ) {
+	function dgc_product_code( $echo = true ) {
+		?>
+		<form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
+			<div>
+				<input type="checkbox" name="vehicle1" value="Bike"> Product Code<br>
+				<input type="checkbox" name="vehicle2" value="Car"> Product Title<br>
+				<input type="checkbox" name="vehicle3" value="Boat" checked> Keyword<br>
+				<input type="submit" id="searchsubmit" value="<?php echo esc_attr__( 'Search', 'dgc' ); ?>" />
+				<input type="hidden" name="post_type" value="product" />
+			</div>
+		</form>
+		<?php
+/*		if ( has_post_format( array( 'chat', 'status' ) ) )
+			$format_prefix = _x( '%1$s on %2$s', '1: post format name. 2: date', 'dgc' );
+		else
+			$format_prefix = '%2$s';
+
+		$date = sprintf( '<span class="date"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a></span>',
+		esc_url( get_permalink() ),
+		esc_attr( sprintf( __( 'Permalink to %s', 'dgc' ), the_title_attribute( 'echo=0' ) ) ),
+		esc_attr( get_the_date( 'c' ) ),
+		esc_html( sprintf( $format_prefix, get_post_format_string( get_post_format() ), get_the_date() ) )
+		);
+
+		if ($echo ) echo $date;
+		return $date;*/
+	}
+}
+
 
 if ( ! function_exists( 'dgc_theme_options_validate' ) ) {
 	function dgc_theme_options_validate($value) {
