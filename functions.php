@@ -1612,9 +1612,7 @@ if ( ! function_exists( 'dgc_product_code' ) ) {
 			<div>
 				<input type="checkbox" name="vehicle1" value="Bike"> Product Code<br>
 				<input type="checkbox" name="vehicle2" value="Car"> Product Title<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Keyword<br>
-				<input type="submit" id="searchsubmit" value="<?php echo esc_attr__( 'Search', 'dgc' ); ?>" />
-				<input type="hidden" name="post_type" value="product" />
+				<input type="checkbox" name="vehicle3" value="Boat"> Keyword<br><br>
 			</div>
 			<div>
 				<h4>Publisher</h4>
@@ -1624,8 +1622,17 @@ if ( ! function_exists( 'dgc_product_code' ) ) {
 				<input type="checkbox" name="vehicle1" value="Bike"> ASHRAE<br>
 				<input type="checkbox" name="vehicle2" value="Car"> ASME<br>
 				<input type="checkbox" name="vehicle3" value="Boat"> ASTM<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> BSI<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> BSI<br><br>
 			</div>
+
+			<?php
+			/* translators: used between list items, there is a space after the comma */
+		 	$categories_list = get_the_category_list( __( ', ', 'dgc' ) );
+			if ( $categories_list && dgc_categorized_blog() ) : ?>
+			<span class="cat-links">
+				<?php printf( __( 'Posted in %1$s', 'dgc' ), $categories_list ); ?>
+			</span>
+			<?php endif; // End if categories ?>
 
 			<?php
 			/* translators: used between list items, there is a space after the comma */
@@ -1645,12 +1652,12 @@ if ( ! function_exists( 'dgc_product_code' ) ) {
 				<input type="checkbox" name="vehicle1" value="Bike"> Organic Coatings<br>
 				<input type="checkbox" name="vehicle2" value="Car"> Plain Steel<br>
 				<input type="checkbox" name="vehicle3" value="Boat"> Surfaces<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Testing Machines<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Testing Machines<br><br>
 			</div>
 			<div>
 				<h4>Published Date</h4>
-				<input type="text" name="vehicle1" width="10" value="2019"> - 
-				<input type="text" name="vehicle2" width="10" value="2019"><br>
+				<input type="text" name="vehicle1" width="30%" value="2018"> - 
+				<input type="text" name="vehicle2" width="30%" value="2019">
 			</div>
 		</form>
 		<?php
