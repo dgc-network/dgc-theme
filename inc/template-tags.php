@@ -72,12 +72,8 @@ function dgc_comment( $comment, $args, $depth ) {
 		<article id="comment-<?php comment_ID(); ?>" class="comment-body">
 			<footer>
 				<div class="comment-author vcard">
-					<?php echo get_avatar( $comment, 60 ); ?>
-					
-				</div><!-- .comment-author .vcard -->
-				
-
-				
+					<?php echo get_avatar( $comment, 60 ); ?>					
+				</div><!-- .comment-author .vcard -->				
 			</footer>
 
 			<div class="comment-content">
