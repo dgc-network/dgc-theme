@@ -80,7 +80,17 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 		$number 		= empty( $instance['number'] ) ? 10 : absint( $instance['number'] );
 		$custom_content = empty( $instance['textarea_filter_refine']) ? null : stripslashes($instance['textarea_filter_refine']);
 		
-		$r = new WP_Query( 
+		$products = new WP_Query(
+			apply_filters(  'widget_posts_args', 
+				array(  'posts_per_page' => -1, 
+						'no_found_rows'  => true, 
+						'post_type'    => 'product', 
+						'ignore_sticky_posts' => true 
+					) 
+				) 
+			);
+
+			$r = new WP_Query(
 			apply_filters(  'widget_posts_args', 
 						array(  'posts_per_page' => -1, 
 								'no_found_rows'  => true, 
@@ -90,6 +100,7 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 						) 
 			);
 	?>
+		<?php if ( $title ) echo $args['before_title'] . $title . $args['after_title']; ?>
 			<?php if ( $custom_content != '') { ?>
 				<div class="filter_refine_message"><p><?php echo $custom_content; ?></p></div>	
 			<?php } ?>
@@ -112,6 +123,14 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 
 			<div>
 				<h4>Tags</h4>
+				<?php
+				$post_tags = get_the_tags();
+ 
+if ( $post_tags ) {
+	 foreach( $post_tags as $tag ) {
+	 echo $tag->name . ', '; 
+	 }
+}?>
 				<input type="checkbox" name="vehicle1" value="Bike"> Home<br>
 				<input type="checkbox" name="vehicle2" value="Car"> Natual Waters<br>
 				<input type="checkbox" name="vehicle3" value="Boat"> Organic Carbon<br>
