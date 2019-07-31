@@ -89,10 +89,61 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 							) 
 						) 
 			);
-			
-		if ($r->have_posts()) :
 	?>
-		<?php echo $args['before_widget'];  ?>
+			<div>
+				<input type="checkbox" name="vehicle1" value="Bike"> Product Code<br>
+				<input type="checkbox" name="vehicle2" value="Car"> Product Title<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Keyword<br><br>
+			</div>
+			<div>
+				<h4>Publisher</h4>
+				<input type="checkbox" name="vehicle1" value="Bike"> AGA<br>
+				<input type="checkbox" name="vehicle2" value="Car"> AGI<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> ASCE<br>
+				<input type="checkbox" name="vehicle1" value="Bike"> ASHRAE<br>
+				<input type="checkbox" name="vehicle2" value="Car"> ASME<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> ASTM<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> BSI<br><br>
+			</div>
+
+			<div>
+				<h4>Tags</h4>
+				<input type="checkbox" name="vehicle1" value="Bike"> Home<br>
+				<input type="checkbox" name="vehicle2" value="Car"> Natual Waters<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Organic Carbon<br>
+				<input type="checkbox" name="vehicle1" value="Bike"> Organic Coatings<br>
+				<input type="checkbox" name="vehicle2" value="Car"> Plain Steel<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Surfaces<br>
+				<input type="checkbox" name="vehicle3" value="Boat"> Testing Machines<br><br>
+			</div>
+			<div>
+				<h4>Published Date</h4>
+				<input type="text" name="vehicle1" width="30%" value="2018"> - 
+				<input type="text" name="vehicle2" width="30%" value="2019">
+			</div>
+
+			<?php
+			/* translators: used between list items, there is a space after the comma */
+		 	$categories_list = get_the_category_list( __( ', ', 'taxonomy' ) );
+			if ( $categories_list && dgc_categorized_blog() ) : ?>
+			<span class="cat-links">
+				<?php printf( __( 'Posted in %1$s', 'taxonomy' ), $categories_list ); ?>
+			</span>
+			<?php endif; // End if categories ?>
+
+			<?php
+			/* translators: used between list items, there is a space after the comma */
+			$tags_list = get_the_tag_list( '', __( ', ', 'taxonomy' ) );
+			if ( $tags_list ) : ?>
+			<span class="tag-links">
+				<?php // printf( __( 'Tagged %1$s', 'taxonomy' ), $tags_list ); ?>
+				<?php echo $tags_list; ?>
+			</span> 
+			<?php endif; // End if $tags_list ?>
+		
+			
+	<?php if ($r->have_posts()) :
+			echo $args['before_widget'];  ?>
 		<?php if ( $title ) echo $args['before_title'] . $title . $args['after_title']; ?>
 		
 		<div class="filter_refine_wrapper">
@@ -102,7 +153,8 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 			<ul class="filter_refine_list">
 				<?php  while ($r->have_posts()) : $r->the_post(); ?>
 					<li id="arch_item_<?php echo $id_item; ?>" class="filter_refine_item">
-						<a href="<?php the_permalink() ?>" title="<?php echo esc_attr(get_the_title() ? get_the_title() : get_the_ID()); ?>"><?php echo esc_attr( get_the_date( 'd.m.Y' ) ); ?></br>
+						<a href="<?php the_permalink() ?>" title="<?php echo esc_attr(get_the_title() ? get_the_title() : get_the_ID()); ?>">
+						<?php echo esc_attr( get_the_date( 'd.m.Y' ) ); ?></br>
 						<?php if ( get_the_title() ) the_title(); else the_ID(); ?></a>
 					</li>
 			<?php endwhile; ?>
