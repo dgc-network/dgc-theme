@@ -41,9 +41,7 @@
 		if (isset($theme_options['menu_icon_color'])) 
 			$menu_icon_color = $theme_options['menu_icon_color'];
 
-
-			if ( !$is_responsive || ( $is_responsive && ( $responsive_menu_type == 'inside_content' ) ) ) { ?>
-			
+			if ( !$is_responsive || ( $is_responsive && ( $responsive_menu_type == 'inside_content' ) ) ) { ?>			
 					<div class="head-container">
 						<div class="container">
 							<div class="sixteen columns">

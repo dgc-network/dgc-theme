@@ -257,6 +257,42 @@ if ( ! function_exists( 'dgc_widgets_init' ) ) {
 		register_widget( 'DGC_Widget_Filter_Refine' );
 	
 		register_sidebar( array(
+			'name' => __( 'Footer1', 'textdomain' ),
+			'id' => 'footer-1',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		) );
+	
+		register_sidebar( array(
+			'name' => __( 'Footer2', 'textdomain' ),
+			'id' => 'footer-2',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		) );
+	
+		register_sidebar( array(
+			'name' => __( 'Footer3', 'textdomain' ),
+			'id' => 'footer-3',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		) );
+	
+		register_sidebar( array(
+			'name' => __( 'Footer4', 'textdomain' ),
+			'id' => 'footer-4',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		) );
+	
+		register_sidebar( array(
 			'name' => __( 'Main Sidebar', 'textdomain' ),
 			'id' => 'sidebar-1',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -433,7 +469,7 @@ if ( ! function_exists( 'dgc_get_user_button_html' ) ) {
 			global $woocommerce;
 			if (!empty($theme_options['showuser']) && (esc_attr($theme_options['showuser']) == 'on')) {
 					$btn_user = '<div class="user-button">
-						<a href="'.get_permalink( wc_get_page_id( 'my-account' ) ).'>
+						<a href="'.get_permalink( wc_get_page_id( 'My Account' ) ).'>
 							<div class="user_image"></div> 
 						</a>
 					</div>';
@@ -554,8 +590,7 @@ if (!function_exists('dgc_get_slider_layout_nivo')) {
 		$theme_options  = dgc_get_theme_options();
 		$front_page_id  = get_option('page_on_front');
 		$blog_page_id   = get_option('page_for_posts ');
-	
-	
+		
 		if (is_page() && !is_front_page() && !is_home()) {
 			$slider_layout  = get_post_meta( $post->ID, $prefix . 'slider_layout', true);
 		} elseif(!is_front_page() && is_home() && ($blog_page_id != 0)) {
@@ -833,7 +868,7 @@ if (!function_exists('dgc_get_footer_text')) {
 					$out_footer_text .= $footer_text;
 				$out_footer_text .= '</nofollow>';				
 			}		
-		echo $out_footer_text;
+			echo $out_footer_text;
 		}	
 	}
 }

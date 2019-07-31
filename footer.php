@@ -15,6 +15,12 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="container">
 				<div class="sixteen columns">
+
+					<?php get_sidebar( 'footer1' ); ?>
+					<?php get_sidebar( 'footer2' ); ?>
+					<?php get_sidebar( 'footer3' ); ?>
+					<?php get_sidebar( 'footer4' ); ?>
+
 					<div class="site-info">
 						<?php dgc_get_footer_text(); ?>
 					</div><!-- .site-info -->
