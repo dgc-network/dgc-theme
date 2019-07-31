@@ -19,13 +19,6 @@
 			<h3 class="widget-title"><?php _e('Filter & Refine', 'textdomain'); ?></h3>
 			<?php dgc_filter_refine(); ?>
 		</aside>
-		<aside id="woocommerce_product_categories-4" class="widget woocommerce widget_product_categories">
-			<h3 class="widget-title"><?php _e('Product Categories', 'textdomain'); ?></h3>
-			<?php 
-				$args = array('hierarchical' => true);
-				the_widget('WC_Widget_Product_Categories', $args); 
-			?>
-		</aside>
 					
 	<?php endif; // end sidebar widget area ?>
 </div><!-- #secondary .widget-area -->
