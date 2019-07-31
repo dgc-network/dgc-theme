@@ -123,14 +123,14 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 
 			<div>
 				<h4>Tags</h4>
-				<?php
-				$post_tags = get_the_tags();
- 
-if ( $post_tags ) {
-	 foreach( $post_tags as $tag ) {
-	 echo $tag->name . ', '; 
-	 }
-}?>
+<?php
+$terms = get_terms( 'product_tag' );
+if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+    foreach ( $terms as $term ) {
+		echo $term->name . ', '; 
+    }
+}				
+?>
 				<input type="checkbox" name="vehicle1" value="Bike"> Home<br>
 				<input type="checkbox" name="vehicle2" value="Car"> Natual Waters<br>
 				<input type="checkbox" name="vehicle3" value="Boat"> Organic Carbon<br>
