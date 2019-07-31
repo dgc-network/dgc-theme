@@ -16,10 +16,10 @@
 			<div class="container">
 				<div class="sixteen columns">
 
-					<?php get_sidebar( 'footer1' ); ?>
-					<?php get_sidebar( 'footer2' ); ?>
-					<?php get_sidebar( 'footer3' ); ?>
-					<?php get_sidebar( 'footer4' ); ?>
+					<?php get_sidebar( 'footer-1' ); ?>
+					<?php get_sidebar( 'footer-2' ); ?>
+					<?php get_sidebar( 'footer-3' ); ?>
+					<?php get_sidebar( 'footer-4' ); ?>
 
 					<div class="site-info">
 						<?php dgc_get_footer_text(); ?>
