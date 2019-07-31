@@ -255,10 +255,10 @@ class cmb_Meta_Box {
 				wp_register_script( 'iris', admin_url( 'js/iris.min.js' ), array( 'jquery-ui-draggable', 'jquery-ui-slider', 'jquery-touch-punch' ), self::CMB_VERSION );
 				wp_register_script( 'wp-color-picker', admin_url( 'js/color-picker.min.js' ), array( 'iris' ), self::CMB_VERSION );
 				wp_localize_script( 'wp-color-picker', 'wpColorPickerL10n', array(
-					'clear'         => __( 'Clear', 'taxonomy'),
-					'defaultString' => __( 'Default', 'taxonomy'),
-					'pick'          => __( 'Select Color', 'taxonomy'),
-					'current'       => __( 'Current Color', 'taxonomy'),
+					'clear'         => __( 'Clear', 'textdomain'),
+					'defaultString' => __( 'Default', 'textdomain'),
+					'pick'          => __( 'Select Color', 'textdomain'),
+					'current'       => __( 'Current Color', 'textdomain'),
 				) );
 			}
 		} else {
@@ -282,15 +282,15 @@ class cmb_Meta_Box {
 			'script_debug'    => defined('SCRIPT_DEBUG') && SCRIPT_DEBUG,
 			'new_admin_style' => version_compare( $wp_version, '3.8', '>' ),
 			'object_type'     => self::get_object_type(),
-			'upload_file'     => __('Use this file', 'taxonomy'),
-			'remove_image'    => __('Remove Image', 'taxonomy'),
-			'remove_file'     => __('Remove', 'taxonomy'),
-			'file'            => __('File:', 'taxonomy'),
-			'download'        => __('Download', 'taxonomy'),
+			'upload_file'     => __('Use this file', 'textdomain'),
+			'remove_image'    => __('Remove Image', 'textdomain'),
+			'remove_file'     => __('Remove', 'textdomain'),
+			'file'            => __('File:', 'textdomain'),
+			'download'        => __('Download', 'textdomain'),
 			'ajaxurl'         => admin_url( '/admin-ajax.php' ),
 			'up_arrow'        => '<span class="order-up"></span>',
 			'down_arrow'      => '<span class="order-down"></span>',
-			'check_toggle'    => __( 'Select / Deselect All', 'taxonomy' ),
+			'check_toggle'    => __( 'Select / Deselect All', 'textdomain' ),
 		) ) );
 
 		wp_register_style( 'cmb-check',  CMB_META_BOX_URL 	. 'js/check/skins/minimal/_all.css');
@@ -1184,7 +1184,7 @@ function cmb_metabox_form( $meta_box, $object_id, $echo = true ) {
 
 	$form_format = apply_filters( 'cmb_frontend_form_format', '<form class="cmb-form" method="post" id="%s" enctype="multipart/form-data" encoding="multipart/form-data"><input type="hidden" name="object_id" value="%s">%s<input type="submit" name="submit-cmb" value="%s" class="button-primary"></form>', $object_id, $meta_box, $form );
 
-	$form = sprintf( $form_format, $meta_box['id'], $object_id, $form, __( 'Save', 'taxonomy') );
+	$form = sprintf( $form_format, $meta_box['id'], $object_id, $form, __( 'Save', 'textdomain') );
 
 	if ( $echo )
 		echo $form;

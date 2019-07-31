@@ -41,33 +41,33 @@ class dgc_theme_options {
 		/*General*/
 
 		$this->sections['general'] = array(
-			'title'  => __( 'General', 'taxonomy' ),
+			'title'  => __( 'General', 'textdomain' ),
 			'id'     => 'general',
 			'fields' => array(
 			array(
 					'id'          => 'responsive',
-					'label'       => __( 'Layout', 'taxonomy' ),
+					'label'       => __( 'Layout', 'textdomain' ),
 					'info'        => __( 'Theme supported 2 types of html layout. Default responsive setting which adapt for mobile devices and static page with fixed width. Uncheck arrow below if you need static website display',
-						'taxonomy' ),
-					'description' => __( 'Responsive', 'taxonomy' ),
+						'textdomain' ),
+					'description' => __( 'Responsive', 'textdomain' ),
 					'type'        => 'checkbox',
 					'default'     => 'on',
 				),
 				array(
 					'id'     => 'pagecomment_ch',
-					'label'  => __( 'Comments', 'taxonomy' ),
+					'label'  => __( 'Comments', 'textdomain' ),
 					'info'   => __( 'If you want to display comments on your post page or page, select options below.',
-						'taxonomy' ),
+						'textdomain' ),
 					'fields' => array(
 						array(
 							'id'          => 'postcomment',
-							'description' => __( 'Display comment on posts page', 'taxonomy' ),
+							'description' => __( 'Display comment on posts page', 'textdomain' ),
 							'type'        => 'checkbox',
 							'default'     => 'on',
 						),
 						array(
 							'id'          => 'pagecomment',
-							'description' => __( 'Display comment on page', 'taxonomy' ),
+							'description' => __( 'Display comment on page', 'textdomain' ),
 							'type'        => 'checkbox',
 							'default'     => 'on',
 						),
@@ -75,113 +75,113 @@ class dgc_theme_options {
 				),
 				// array(
 				// 'id' 			=> 'styletheme',
-				// 'label'			=> __( 'Default theme styles' , 'taxonomy' ),
-				// 'info'          => __( 'Default CSS. Theme option for styling is not working, if this option enable.', 'taxonomy' ),
-				// 'description'	=> __( 'Enable', 'taxonomy' ),
+				// 'label'			=> __( 'Default theme styles' , 'textdomain' ),
+				// 'info'          => __( 'Default CSS. Theme option for styling is not working, if this option enable.', 'textdomain' ),
+				// 'description'	=> __( 'Enable', 'textdomain' ),
 				// 'type'			=> 'checkbox',
 				// 'default'		=> 'off',
 				// ),
 				array(
 					'id'      => 'latest_posts_templ',
-					'label'   => __( 'Front page template with latest posts', 'taxonomy' ),
-					'info'    => __( 'Settings > Reading > Front page displays > Your latest posts', 'taxonomy' ),
+					'label'   => __( 'Front page template with latest posts', 'textdomain' ),
+					'info'    => __( 'Settings > Reading > Front page displays > Your latest posts', 'textdomain' ),
 					'type'    => 'select',
 					'options' => array(
-						'0' => __( 'Full width', 'taxonomy' ),
-						'1' => __( 'Right sidebar', 'taxonomy' ),
-						'2' => __( 'Left sidebar', 'taxonomy' )
+						'0' => __( 'Full width', 'textdomain' ),
+						'1' => __( 'Right sidebar', 'textdomain' ),
+						'2' => __( 'Left sidebar', 'textdomain' )
 					),
 					'default' => '0'
 				),
 				array(
-					'label'  => __( 'Page templates by default', 'taxonomy' ),
-					'info'   => __( 'Choose default display for templates.', 'taxonomy' ),
+					'label'  => __( 'Page templates by default', 'textdomain' ),
+					'info'   => __( 'Choose default display for templates.', 'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'layout_page_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Page:', 'taxonomy' ),
+							'box-title' => __( 'Page:', 'textdomain' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'taxonomy' ),
-								'0' => __( 'Full width', 'taxonomy' ),
-								'2' => __( 'Left sidebar', 'taxonomy' )
+								'1' => __( 'Right sidebar', 'textdomain' ),
+								'0' => __( 'Full width', 'textdomain' ),
+								'2' => __( 'Left sidebar', 'textdomain' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_single_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Single Post:', 'taxonomy' ),
+							'box-title' => __( 'Single Post:', 'textdomain' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'taxonomy' ),
-								'0' => __( 'Full width', 'taxonomy' ),
-								'2' => __( 'Left sidebar', 'taxonomy' )
+								'1' => __( 'Right sidebar', 'textdomain' ),
+								'0' => __( 'Full width', 'textdomain' ),
+								'2' => __( 'Left sidebar', 'textdomain' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_archive_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Archive:', 'taxonomy' ),
+							'box-title' => __( 'Archive:', 'textdomain' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'taxonomy' ),
-								'0' => __( 'Full width', 'taxonomy' ),
-								'2' => __( 'Left sidebar', 'taxonomy' )
+								'1' => __( 'Right sidebar', 'textdomain' ),
+								'0' => __( 'Full width', 'textdomain' ),
+								'2' => __( 'Left sidebar', 'textdomain' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_author_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Author:', 'taxonomy' ),
+							'box-title' => __( 'Author:', 'textdomain' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'taxonomy' ),
-								'0' => __( 'Full width', 'taxonomy' ),
-								'2' => __( 'Left sidebar', 'taxonomy' )
+								'1' => __( 'Right sidebar', 'textdomain' ),
+								'0' => __( 'Full width', 'textdomain' ),
+								'2' => __( 'Left sidebar', 'textdomain' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_cat_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Category:', 'taxonomy' ),
+							'box-title' => __( 'Category:', 'textdomain' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'taxonomy' ),
-								'0' => __( 'Full width', 'taxonomy' ),
-								'2' => __( 'Left sidebar', 'taxonomy' )
+								'1' => __( 'Right sidebar', 'textdomain' ),
+								'0' => __( 'Full width', 'textdomain' ),
+								'2' => __( 'Left sidebar', 'textdomain' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_tag_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Tags:', 'taxonomy' ),
+							'box-title' => __( 'Tags:', 'textdomain' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'taxonomy' ),
-								'0' => __( 'Full width', 'taxonomy' ),
-								'2' => __( 'Left sidebar', 'taxonomy' )
+								'1' => __( 'Right sidebar', 'textdomain' ),
+								'0' => __( 'Full width', 'textdomain' ),
+								'2' => __( 'Left sidebar', 'textdomain' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_404_templ',
 							'type'      => 'select',
-							'box-title' => __( '404:', 'taxonomy' ),
+							'box-title' => __( '404:', 'textdomain' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'taxonomy' ),
-								'0' => __( 'Full width', 'taxonomy' ),
-								'2' => __( 'Left sidebar', 'taxonomy' )
+								'1' => __( 'Right sidebar', 'textdomain' ),
+								'0' => __( 'Full width', 'textdomain' ),
+								'2' => __( 'Left sidebar', 'textdomain' )
 							),
 							'default'   => '1'
 						),
 						array(
 							'id'        => 'layout_search_templ',
 							'type'      => 'select',
-							'box-title' => __( 'Search:', 'taxonomy' ),
+							'box-title' => __( 'Search:', 'textdomain' ),
 							'options'   => array(
-								'1' => __( 'Right sidebar', 'taxonomy' ),
-								'0' => __( 'Full width', 'taxonomy' ),
-								'2' => __( 'Left sidebar', 'taxonomy' )
+								'1' => __( 'Right sidebar', 'textdomain' ),
+								'0' => __( 'Full width', 'textdomain' ),
+								'2' => __( 'Left sidebar', 'textdomain' )
 							),
 							'default'   => '1'
 						),
@@ -189,10 +189,10 @@ class dgc_theme_options {
 				),
 				array(
 					'id'          => 'show_featured_single',
-					'label'       => __( 'Show Featured image on single post', 'taxonomy' ),
+					'label'       => __( 'Show Featured image on single post', 'textdomain' ),
 					'info'        => __( 'Select option below for show featured image on single post page.',
-						'taxonomy' ),
-					'description' => __( 'Show featured image', 'taxonomy' ),
+						'textdomain' ),
+					'description' => __( 'Show featured image', 'textdomain' ),
 					'type'        => 'checkbox',
 					'default'     => 'on',
 				),
@@ -201,27 +201,27 @@ class dgc_theme_options {
 					array(
 						'id'          => 'is_wpml_ready',
 						'type'        => 'checkbox',
-						'label'       => __( 'Multilingual Switch in Header (WPML)', 'taxonomy' ),
+						'label'       => __( 'Multilingual Switch in Header (WPML)', 'textdomain' ),
 						'info'        => __( 'If you wish to show Language Switch in header, select option below.',
-							'taxonomy' ),
-						'description' => __( 'Enable', 'taxonomy' ),
+							'textdomain' ),
+						'description' => __( 'Enable', 'textdomain' ),
 						'default'     => 'off'
 					) :
 					array(
 						'id'      => 'reset',
-						'label'   => __( 'Reset options', 'taxonomy' ),
-						'info'    => __( 'All theme options will be reset to default.', 'taxonomy' ),
+						'label'   => __( 'Reset options', 'textdomain' ),
+						'info'    => __( 'All theme options will be reset to default.', 'textdomain' ),
 						'type'    => 'button',
-						'default' => __( 'Reset Defaults', 'taxonomy' ),
+						'default' => __( 'Reset Defaults', 'textdomain' ),
 						'class'   => 'button-primary reset-btn',
 					)
 				),
 				array(
 					'id'      => 'reset',
-					'label'   => __( 'Reset options', 'taxonomy' ),
-					'info'    => __( 'All theme options will be reset to default.', 'taxonomy' ),
+					'label'   => __( 'Reset options', 'textdomain' ),
+					'info'    => __( 'All theme options will be reset to default.', 'textdomain' ),
 					'type'    => 'button',
-					'default' => __( 'Reset Defaults', 'taxonomy' ),
+					'default' => __( 'Reset Defaults', 'textdomain' ),
 					'class'   => 'button-primary reset-btn',
 				),
 			)
@@ -231,51 +231,51 @@ class dgc_theme_options {
 		/*Header*/
 
 		$this->sections['header'] = array(
-			'title'  => __( 'Header', 'taxonomy' ),
+			'title'  => __( 'Header', 'textdomain' ),
 			'id'     => 'header',
 			'fields' => array(
 				array(
 					'id'          => 'is_fixed_header',
-					'label'       => __( 'Sticky  header', 'taxonomy' ),
-					'info'        => __( 'Options relating to the website header', 'taxonomy' ),
-					'description' => __( 'Enabled', 'taxonomy' ),
+					'label'       => __( 'Sticky  header', 'textdomain' ),
+					'info'        => __( 'Options relating to the website header', 'textdomain' ),
+					'description' => __( 'Enabled', 'textdomain' ),
 					'type'        => 'checkbox',
 					'default'     => 'on',
 				),
 				array(
 					'id'      => 'menu_position',
-					'label'   => __( 'Menu Position', 'taxonomy' ),
-					'info'    => __( 'Set menu position.', 'taxonomy' ),
+					'label'   => __( 'Menu Position', 'textdomain' ),
+					'info'    => __( 'Set menu position.', 'textdomain' ),
 					'type'    => 'select',
 					'options' => array(
-						'2' => __( 'Right', 'taxonomy' ),
-						'0' => __( 'Left', 'taxonomy' ),
-						'1' => __( 'Center', 'taxonomy' )
+						'2' => __( 'Right', 'textdomain' ),
+						'0' => __( 'Left', 'textdomain' ),
+						'1' => __( 'Center', 'textdomain' )
 					),
 					'default' => '2'
 				),
 				array(
 					'id'      => 'menu_type_responsive',
-					'label'   => __( 'Type of Responsive menu', 'taxonomy' ),
-					'info'    => __( 'Set type of responsive menu.', 'taxonomy' ),
+					'label'   => __( 'Type of Responsive menu', 'textdomain' ),
+					'info'    => __( 'Set type of responsive menu.', 'textdomain' ),
 					'type'    => 'select',
 					'options' => array(
-						'inside_content' => __( 'Select menu', 'taxonomy' ),
-						'full_width'     => __( 'Button menu', 'taxonomy' )
+						'inside_content' => __( 'Select menu', 'textdomain' ),
+						'full_width'     => __( 'Button menu', 'textdomain' )
 					),
 					'default' => 'inside_content'
 				),
 				array(
 					'id'      => 'menu_icon_color',
-					'label'   => __( 'Menu icon color', 'taxonomy' ),
-					'info'    => __( 'Chose color for collapsing menu icon', 'taxonomy' ),
+					'label'   => __( 'Menu icon color', 'textdomain' ),
+					'info'    => __( 'Chose color for collapsing menu icon', 'textdomain' ),
 					'type'    => 'color',
 					'default' => '#333333',
 				),
 				array(
-					'label'  => __( 'Background for header', 'taxonomy' ),
+					'label'  => __( 'Background for header', 'textdomain' ),
 					'info'   => __( 'Upload image with full width for background in header area. (Supported files .png, .jpg, .gif)',
-						'taxonomy' ),
+						'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'header_img',
@@ -286,26 +286,26 @@ class dgc_theme_options {
 							'id'        => 'header_bg_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Header background-color', 'taxonomy' )
+							'box-title' => __( 'Header background-color', 'textdomain' )
 						)
 					)
 				),
 				array(
 					'id'      => 'header_img_size',
-					'label'   => __( 'Background image size', 'taxonomy' ),
+					'label'   => __( 'Background image size', 'textdomain' ),
 					'info'    => __( 'Choose size for background image - full width or only for content area.',
-						'taxonomy' ),
+						'textdomain' ),
 					'type'    => 'select',
 					'options' => array(
-						'full'     => __( 'Full width position', 'taxonomy' ),
-						'centered' => __( 'Centered position', 'taxonomy' )
+						'full'     => __( 'Full width position', 'textdomain' ),
+						'centered' => __( 'Centered position', 'textdomain' )
 					),
 					'default' => 'full'
 				),
 				array(
 					'id'      => 'header_height',
-					'label'   => __( 'Height for header area', 'taxonomy' ),
-					'info'    => __( 'Minimum height in pixels', 'taxonomy' ),
+					'label'   => __( 'Height for header area', 'textdomain' ),
+					'info'    => __( 'Minimum height in pixels', 'textdomain' ),
 					'type'    => 'text',
 					'default' => '80',
 				),
@@ -315,13 +315,13 @@ class dgc_theme_options {
 		/*Background*/
 
 		$this->sections['background'] = array(
-			'title'  => __( 'Background', 'taxonomy' ),
+			'title'  => __( 'Background', 'textdomain' ),
 			'id'     => 'background',
 			'fields' => array(
 				array(
-					'label'  => __( 'Background Image', 'taxonomy' ),
+					'label'  => __( 'Background Image', 'textdomain' ),
 					'info'   => __( 'Upload your background image for site background. (Supported files .png, .jpg, .gif)',
-						'taxonomy' ),
+						'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'backgroung_img',
@@ -330,7 +330,7 @@ class dgc_theme_options {
 						),
 						array(
 							'id'          => 'bg_repeating',
-							'description' => __( 'Background repeat', 'taxonomy' ),
+							'description' => __( 'Background repeat', 'textdomain' ),
 							'type'        => 'checkbox',
 							'default'     => 'off',
 						),
@@ -338,15 +338,15 @@ class dgc_theme_options {
 				),
 				array(
 					'id'      => 'background_color',
-					'label'   => __( 'Background Color', 'taxonomy' ),
-					'info'    => __( 'Choose color for body background', 'taxonomy' ),
+					'label'   => __( 'Background Color', 'textdomain' ),
+					'info'    => __( 'Choose color for body background', 'textdomain' ),
 					'type'    => 'color',
 					'default' => '#ffffff'
 				),
 				array(
 					'id'      => 'container_bg_color',
-					'label'   => __( 'Background color for content', 'taxonomy' ),
-					'info'    => __( 'Choose color for main content area', 'taxonomy' ),
+					'label'   => __( 'Background color for content', 'textdomain' ),
+					'info'    => __( 'Choose color for main content area', 'textdomain' ),
 					'type'    => 'color',
 					'default' => '#ffffff'
 				),
@@ -355,88 +355,88 @@ class dgc_theme_options {
 
 		/*Logo*/
 		$this->sections['logo'] = array(
-			'title'  => __( 'Logo', 'taxonomy' ),
+			'title'  => __( 'Logo', 'textdomain' ),
 			'id'     => 'logo',
 			'fields' => array(
 				array(
 					'id'      => 'logo_position',
-					'label'   => __( 'Logo Position', 'taxonomy' ),
-					'info'    => __( 'Set Logo Position', 'taxonomy' ),
+					'label'   => __( 'Logo Position', 'textdomain' ),
+					'info'    => __( 'Set Logo Position', 'textdomain' ),
 					'type'    => 'select',
 					'options' => array(
-						'0' => __( 'Left', 'taxonomy' ),
-						'1' => __( 'Center', 'taxonomy' ),
-						'2' => __( 'Right', 'taxonomy' )
+						'0' => __( 'Left', 'textdomain' ),
+						'1' => __( 'Center', 'textdomain' ),
+						'2' => __( 'Right', 'textdomain' )
 					),
 					'default' => '0'
 				),
 				array(
-					'label'  => __( 'Logo size', 'taxonomy' ),
-					'info'   => __( 'Specify resolution for your logo image', 'taxonomy' ),
+					'label'  => __( 'Logo size', 'textdomain' ),
+					'info'   => __( 'Specify resolution for your logo image', 'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'logo_w',
 							'type'      => 'text',
 							'default'   => '0',
-							'box-title' => __( 'Width', 'taxonomy' )
+							'box-title' => __( 'Width', 'textdomain' )
 						),
 						array(
 							'id'        => 'logo_h',
 							'type'      => 'text',
 							'default'   => '0',
-							'box-title' => __( 'Height', 'taxonomy' )
+							'box-title' => __( 'Height', 'textdomain' )
 						),
 					)
 				),
 				array(
 					'id'        => 'logo_img',
-					'label'     => __( 'Logo image', 'taxonomy' ),
+					'label'     => __( 'Logo image', 'textdomain' ),
 					'info'      => __( 'Upload logo image for your website. Size is original (Supported files .png, .jpg, .gif)',
-						'taxonomy' ),
+						'textdomain' ),
 					'type'      => 'image',
 					'imagetype' => 'logo',
 				),
 				array(
 					'id'        => 'logo_img_retina',
-					'label'     => __( 'Logo image retina', 'taxonomy' ),
+					'label'     => __( 'Logo image retina', 'textdomain' ),
 					'info'      => __( 'Upload logo in double size (If your logo is 100 x 20px, it should be 200 x 40px)',
-						'taxonomy' ),
+						'textdomain' ),
 					'type'      => 'image',
 					'imagetype' => 'logo_retina',
 				),
 				array(
 					'id'        => 'fav_icon',
-					'label'     => __( 'Favicon', 'taxonomy' ),
+					'label'     => __( 'Favicon', 'textdomain' ),
 					'info'      => __( 'A favicon is a 16x16 pixel icon that represents your site; upload your custom Favicon here.',
-						'taxonomy' ),
+						'textdomain' ),
 					'type'      => 'image',
 					'imagetype' => 'favicon',
 				),
 				array(
 					'id'        => 'fav_icon_iphone',
-					'label'     => __( 'Favicon iPhone', 'taxonomy' ),
-					'info'      => __( 'Upload a custom favicon for iPhone (57x57 pixel png).', 'taxonomy' ),
+					'label'     => __( 'Favicon iPhone', 'textdomain' ),
+					'info'      => __( 'Upload a custom favicon for iPhone (57x57 pixel png).', 'textdomain' ),
 					'type'      => 'image',
 					'imagetype' => 'favicon_iphone',
 				),
 				array(
 					'id'        => 'fav_icon_iphone_retina',
-					'label'     => __( 'Favicon iPhone Retina', 'taxonomy' ),
-					'info'      => __( 'Upload a custom favicon for iPhone retina (114x114 pixel png).', 'taxonomy' ),
+					'label'     => __( 'Favicon iPhone Retina', 'textdomain' ),
+					'info'      => __( 'Upload a custom favicon for iPhone retina (114x114 pixel png).', 'textdomain' ),
 					'type'      => 'image',
 					'imagetype' => 'favicon_iphone_retina',
 				),
 				array(
 					'id'        => 'fav_icon_ipad',
-					'label'     => __( 'Favicon iPad', 'taxonomy' ),
-					'info'      => __( 'Upload a custom favicon for iPad (72x72 pixel png).', 'taxonomy' ),
+					'label'     => __( 'Favicon iPad', 'textdomain' ),
+					'info'      => __( 'Upload a custom favicon for iPad (72x72 pixel png).', 'textdomain' ),
 					'type'      => 'image',
 					'imagetype' => 'favicon_ipad',
 				),
 				array(
 					'id'        => 'fav_icon_ipad_retina',
-					'label'     => __( 'Favicon iPad Retina', 'taxonomy' ),
-					'info'      => __( 'Upload a custom favicon for iPhone retina (144x144 pixel png).', 'taxonomy' ),
+					'label'     => __( 'Favicon iPad Retina', 'textdomain' ),
+					'info'      => __( 'Upload a custom favicon for iPhone retina (144x144 pixel png).', 'textdomain' ),
 					'type'      => 'image',
 					'imagetype' => 'favicon_ipad_retina',
 				),
@@ -446,198 +446,198 @@ class dgc_theme_options {
 
 		/*Colors*/
 		$this->sections['colors'] = array(
-			'title'  => __( 'Colors', 'taxonomy' ),
+			'title'  => __( 'Colors', 'textdomain' ),
 			'id'     => 'main-colors',
 			'fields' => array(
 				array(
 					'id'     => 'menu-color',
-					'label'  => __( 'Main menu color', 'taxonomy' ),
-					'info'   => __( 'Choose your colors for main menu in header', 'taxonomy' ),
+					'label'  => __( 'Main menu color', 'textdomain' ),
+					'info'   => __( 'Choose your colors for main menu in header', 'textdomain' ),
 					'newrow' => true,
 					'fields' => array(
 						array(
 							'id'        => 'menu_bg_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Background color', 'taxonomy' )
+							'box-title' => __( 'Background color', 'textdomain' )
 						),
 						array(
 							'id'        => 'menu_btn_color',
 							'type'      => 'color',
 							'default'   => '#F15A23',
-							'box-title' => __( 'Menu button color', 'taxonomy' )
+							'box-title' => __( 'Menu button color', 'textdomain' )
 						),
 						array(
 							'id'        => 'menu_font_color',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Font color', 'taxonomy' )
+							'box-title' => __( 'Font color', 'textdomain' )
 						),
 						array(
 							'id'        => 'menu_hover_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Font color (active and hover)', 'taxonomy' )
+							'box-title' => __( 'Font color (active and hover)', 'textdomain' )
 						),
 					)
 				),
 				array(
 					'id'     => 'dd-menu-color',
-					'label'  => __( 'Dropdown menu color', 'taxonomy' ),
-					'info'   => __( 'Choose your colors for dropdown menu in header', 'taxonomy' ),
+					'label'  => __( 'Dropdown menu color', 'textdomain' ),
+					'info'   => __( 'Choose your colors for dropdown menu in header', 'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'dd_menu_bg_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Background color', 'taxonomy' )
+							'box-title' => __( 'Background color', 'textdomain' )
 						),
 						array(
 							'id'        => 'dd_menu_btn_color',
 							'type'      => 'color',
 							'default'   => '#F15A23',
-							'box-title' => __( 'Menu button color', 'taxonomy' )
+							'box-title' => __( 'Menu button color', 'textdomain' )
 						),
 						array(
 							'id'        => 'dd_menu_font_color',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Font color', 'taxonomy' )
+							'box-title' => __( 'Font color', 'textdomain' )
 						),
 						array(
 							'id'        => 'dd_menu_hover_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Font color (active and hover)', 'taxonomy' )
+							'box-title' => __( 'Font color (active and hover)', 'textdomain' )
 						),
 					)
 				),
 				array(
 					'id'     => 'g-menu-color',
-					'label'  => __( 'General font color', 'taxonomy' ),
-					'info'   => __( 'Choose your colors for text and links', 'taxonomy' ),
+					'label'  => __( 'General font color', 'textdomain' ),
+					'info'   => __( 'Choose your colors for text and links', 'textdomain' ),
 					'newrow' => true,
 					'fields' => array(
 						array(
 							'id'        => 'p_font_color',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Font color', 'taxonomy' )
+							'box-title' => __( 'Font color', 'textdomain' )
 						),
 						array(
 							'id'        => 'a_font_color',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Link color', 'taxonomy' )
+							'box-title' => __( 'Link color', 'textdomain' )
 						),
 						array(
 							'id'        => 'a_hover_font_color',
 							'type'      => 'color',
 							'default'   => '#FF5D2A',
-							'box-title' => __( 'Link color (hover)', 'taxonomy' )
+							'box-title' => __( 'Link color (hover)', 'textdomain' )
 						),
 						array(
 							'id'        => 'a_focus_font_color',
 							'type'      => 'color',
 							'default'   => '#FF5D2A',
-							'box-title' => __( 'Link color (focus)', 'taxonomy' )
+							'box-title' => __( 'Link color (focus)', 'textdomain' )
 						),
 						array(
 							'id'        => 'a_active_font_color',
 							'type'      => 'color',
 							'default'   => '#FF5D2A',
-							'box-title' => __( 'Link color (active)', 'taxonomy' )
+							'box-title' => __( 'Link color (active)', 'textdomain' )
 						),
 					)
 				),
 				array(
 					'id'     => 'lines-color',
-					'label'  => __( 'Color for lines', 'taxonomy' ),
-					'info'   => __( 'Choose your colors for lines and separators', 'taxonomy' ),
+					'label'  => __( 'Color for lines', 'textdomain' ),
+					'info'   => __( 'Choose your colors for lines and separators', 'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'widgets_sep_color',
 							'type'      => 'color',
 							'default'   => '#F15A23',
-							'box-title' => __( 'Widget separator color', 'taxonomy' )
+							'box-title' => __( 'Widget separator color', 'textdomain' )
 						),
 						array(
 							'id'        => 'date_of_post_b_color',
 							'type'      => 'color',
 							'default'   => '#F15A23',
-							'box-title' => __( 'Blog post date color', 'taxonomy' )
+							'box-title' => __( 'Blog post date color', 'textdomain' )
 						),
 						array(
 							'id'        => 'date_of_post_f_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Date font color', 'taxonomy' )
+							'box-title' => __( 'Date font color', 'textdomain' )
 						),
 					)
 				),
 				array(
 					'id'     => 'buttons-color',
-					'label'  => __( 'Color for buttons', 'taxonomy' ),
-					'info'   => __( 'Choose your colors for buttons', 'taxonomy' ),
+					'label'  => __( 'Color for buttons', 'textdomain' ),
+					'info'   => __( 'Choose your colors for buttons', 'textdomain' ),
 					'newrow' => true,
 					'fields' => array(
 						array(
 							'id'        => 'btn_color',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Button background color', 'taxonomy' )
+							'box-title' => __( 'Button background color', 'textdomain' )
 						),
 						array(
 							'id'        => 'btn_active_color',
 							'type'      => 'color',
 							'default'   => '#F15A23',
 							'box-title' => __( 'Button background color (hover, active, focus, current page - pagenavi)',
-								'taxonomy' )
+								'textdomain' )
 						),
 					)
 				),
 				array(
 					'id'     => 'social-color',
-					'label'  => __( 'Color for social icons', 'taxonomy' ),
-					'info'   => __( 'Choose your colors for social icons', 'taxonomy' ),
+					'label'  => __( 'Color for social icons', 'textdomain' ),
+					'info'   => __( 'Choose your colors for social icons', 'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'soc_icon_bg_color',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Social icons background color', 'taxonomy' )
+							'box-title' => __( 'Social icons background color', 'textdomain' )
 						),
 						array(
 							'id'        => 'soc_icon_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
 							'box-title' => __( 'Button background color (hover, active, focus, current page - pagenavi)',
-								'taxonomy' )
+								'textdomain' )
 						),
 					)
 				),
 				array(
 					'id'     => 'woocommerce-color',
-					'label'  => __( 'WooCommerce colors', 'taxonomy' ),
-					'info'   => __( 'Choose your colors for WooCommerce', 'taxonomy' ),
+					'label'  => __( 'WooCommerce colors', 'textdomain' ),
+					'info'   => __( 'Choose your colors for WooCommerce', 'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'woo_sale_price_color',
 							'type'      => 'color',
 							'default'   => '#919191',
-							'box-title' => __( 'Sale price color', 'taxonomy' )
+							'box-title' => __( 'Sale price color', 'textdomain' )
 						),
 						array(
 							'id'        => 'woo_rating_color_regular',
 							'type'      => 'color',
 							'default'   => '#333333',
-							'box-title' => __( 'Rating color (regular)', 'taxonomy' )
+							'box-title' => __( 'Rating color (regular)', 'textdomain' )
 						),
 						array(
 							'id'        => 'woo_rating_color_active',
 							'type'      => 'color',
 							'default'   => '#FF5D2A',
-							'box-title' => __( 'Rating color (hover, active)', 'taxonomy' )
+							'box-title' => __( 'Rating color (hover, active)', 'textdomain' )
 						),
 					)
 				),
@@ -646,90 +646,90 @@ class dgc_theme_options {
 
 		/*Fonts*/
 		$this->sections['fonts'] = array(
-			'title'  => __( 'Fonts', 'taxonomy' ),
+			'title'  => __( 'Fonts', 'textdomain' ),
 			'id'     => 'fonts',
 			'fields' => array(
 				// array(
-				// 'label'			=> __( 'Fonts' , 'taxonomy' ),
-				// 'info'			=> __( 'Popular web safe font collection, select and use for your needs.', 'taxonomy' ),
+				// 'label'			=> __( 'Fonts' , 'textdomain' ),
+				// 'info'			=> __( 'Popular web safe font collection, select and use for your needs.', 'textdomain' ),
 				// ),
 				array(
 					'id'      => 'h_font_family',
-					'label'   => __( 'Headers', 'taxonomy' ),
-					'info'    => __( 'Choose font-family for all headlines.', 'taxonomy' ),
+					'label'   => __( 'Headers', 'textdomain' ),
+					'info'    => __( 'Choose font-family for all headlines.', 'textdomain' ),
 					'type'    => 'font',
 					'options' => dgc_fonts_list(),
 					'default' => 'Open Sans, sans-serif',
 				),
 				array(
 					'id'      => 'm_font_family',
-					'label'   => __( 'Menu', 'taxonomy' ),
-					'info'    => __( 'Choose font-family for primary menu.', 'taxonomy' ),
+					'label'   => __( 'Menu', 'textdomain' ),
+					'info'    => __( 'Choose font-family for primary menu.', 'textdomain' ),
 					'type'    => 'font',
 					'options' => dgc_fonts_list(),
 					'default' => 'Open Sans, sans-serif',
 				),
 				array(
 					'id'      => 'p_font_family',
-					'label'   => __( 'Body', 'taxonomy' ),
-					'info'    => __( 'Choose font-family for content.', 'taxonomy' ),
+					'label'   => __( 'Body', 'textdomain' ),
+					'info'    => __( 'Choose font-family for content.', 'textdomain' ),
 					'type'    => 'font',
 					'options' => dgc_fonts_list(),
 					'default' => 'Open Sans, sans-serif',
 				),
 				array(
 					'id'     => 'font-size',
-					'label'  => __( 'Font size', 'taxonomy' ),
+					'label'  => __( 'Font size', 'textdomain' ),
 					'info'   => __( 'Choose font size for specific html elements. Set size as number, without px..',
-						'taxonomy' ),
+						'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'h1_size',
 							'type'      => 'text',
 							'default'   => '27',
-							'box-title' => __( 'H1', 'taxonomy' ),
+							'box-title' => __( 'H1', 'textdomain' ),
 						),
 						array(
 							'id'        => 'h2_size',
 							'type'      => 'text',
 							'default'   => '34',
-							'box-title' => __( 'H2', 'taxonomy' ),
+							'box-title' => __( 'H2', 'textdomain' ),
 						),
 						array(
 							'id'        => 'h3_size',
 							'type'      => 'text',
 							'default'   => '18',
-							'box-title' => __( 'H3', 'taxonomy' ),
+							'box-title' => __( 'H3', 'textdomain' ),
 						),
 						array(
 							'id'        => 'h4_size',
 							'type'      => 'text',
 							'default'   => '17',
-							'box-title' => __( 'H4', 'taxonomy' ),
+							'box-title' => __( 'H4', 'textdomain' ),
 						),
 						array(
 							'id'        => 'h5_size',
 							'type'      => 'text',
 							'default'   => '14',
-							'box-title' => __( 'H5', 'taxonomy' ),
+							'box-title' => __( 'H5', 'textdomain' ),
 						),
 						array(
 							'id'        => 'h6_size',
 							'type'      => 'text',
 							'default'   => '12',
-							'box-title' => __( 'H6', 'taxonomy' ),
+							'box-title' => __( 'H6', 'textdomain' ),
 						),
 						array(
 							'id'        => 'm_size',
 							'type'      => 'text',
 							'default'   => '14',
-							'box-title' => __( 'Menu', 'taxonomy' ),
+							'box-title' => __( 'Menu', 'textdomain' ),
 						),
 						array(
 							'id'        => 'p_size',
 							'type'      => 'text',
 							'default'   => '14',
-							'box-title' => __( 'P', 'taxonomy' ),
+							'box-title' => __( 'P', 'textdomain' ),
 						),
 					)
 				)
@@ -739,36 +739,36 @@ class dgc_theme_options {
 
 		/*Slider*/
 		$this->sections['slider'] = array(
-			'title'  => __( 'Slider', 'taxonomy' ),
+			'title'  => __( 'Slider', 'textdomain' ),
 			'id'     => 'slider',
 			'fields' => array(
 				array(
 					'id'      => 'select_slider',
 					'class'   => 'select-slider',
-					'label'   => __( 'Slider', 'taxonomy' ),
-					'info'    => __( 'Select a slider type that will be used by default.', 'taxonomy' ),
+					'label'   => __( 'Slider', 'textdomain' ),
+					'info'    => __( 'Select a slider type that will be used by default.', 'textdomain' ),
 					'type'    => 'select',
 					'options' => array(
-						'1' => __( 'FlexSlider', 'taxonomy' ),
-						'2' => __( 'Nivo Slider', 'taxonomy' )
+						'1' => __( 'FlexSlider', 'textdomain' ),
+						'2' => __( 'Nivo Slider', 'textdomain' )
 					),
 					'default' => '1'
 				),
 				array(
 					'id'     => 'slider-options',
-					'label'  => __( 'Slider Options', 'taxonomy' ),
+					'label'  => __( 'Slider Options', 'textdomain' ),
 					'info'   => __( 'Choose needed options for slider: animation type, sliding direction, speed of animations, etc',
-						'taxonomy' ),
+						'textdomain' ),
 					'type'   => 'slider-options',
 					'fields' => array(
 						array(
 							'id'           => 's_animation',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Animation type', 'taxonomy' ),
+							'box-title'    => __( 'Animation type', 'textdomain' ),
 							'options'      => array(
-								'fade'  => __( 'fade', 'taxonomy' ),
-								'slide' => __( 'slide', 'taxonomy' )
+								'fade'  => __( 'fade', 'textdomain' ),
+								'slide' => __( 'slide', 'textdomain' )
 							),
 							'default'      => 'fade'
 						),
@@ -776,10 +776,10 @@ class dgc_theme_options {
 							'id'           => 's_direction',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Sliding direction, "horizontal" or "vertical"', 'taxonomy' ),
+							'box-title'    => __( 'Sliding direction, "horizontal" or "vertical"', 'textdomain' ),
 							'options'      => array(
-								'horizontal' => __( 'horizontal', 'taxonomy' ),
-								'vertical'   => __( 'vertical', 'taxonomy' )
+								'horizontal' => __( 'horizontal', 'textdomain' ),
+								'vertical'   => __( 'vertical', 'textdomain' )
 							),
 							'default'      => 'horizontal'
 						),
@@ -787,10 +787,10 @@ class dgc_theme_options {
 							'id'           => 's_reverse',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Reverse the animation direction', 'taxonomy' ),
+							'box-title'    => __( 'Reverse the animation direction', 'textdomain' ),
 							'options'      => array(
-								'false' => __( 'false', 'taxonomy' ),
-								'true'  => __( 'true', 'taxonomy' )
+								'false' => __( 'false', 'textdomain' ),
+								'true'  => __( 'true', 'textdomain' )
 							),
 							'default'      => 'false'
 						),
@@ -798,10 +798,10 @@ class dgc_theme_options {
 							'id'           => 's_slideshow',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Animate slider automatically', 'taxonomy' ),
+							'box-title'    => __( 'Animate slider automatically', 'textdomain' ),
 							'options'      => array(
-								'true'  => __( 'true', 'taxonomy' ),
-								'false' => __( 'false', 'taxonomy' )
+								'true'  => __( 'true', 'textdomain' ),
+								'false' => __( 'false', 'textdomain' )
 							),
 							'default'      => 'true'
 						),
@@ -810,31 +810,31 @@ class dgc_theme_options {
 							'type'         => 'text',
 							'option-block' => 'flex-slider',
 							'box-title'    => __( 'Set the speed of the slideshow cycling, in milliseconds',
-								'taxonomy' ),
+								'textdomain' ),
 							'default'      => '7000'
 						),
 						array(
 							'id'           => 's_animationSpeed',
 							'type'         => 'text',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Set the speed of animations, in milliseconds', 'taxonomy' ),
+							'box-title'    => __( 'Set the speed of animations, in milliseconds', 'textdomain' ),
 							'default'      => '600'
 						),
 						array(
 							'id'           => 's_initDelay',
 							'type'         => 'text',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Set an initialization delay, in milliseconds', 'taxonomy' ),
+							'box-title'    => __( 'Set an initialization delay, in milliseconds', 'textdomain' ),
 							'default'      => '0'
 						),
 						array(
 							'id'           => 's_randomize',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Randomize slide order', 'taxonomy' ),
+							'box-title'    => __( 'Randomize slide order', 'textdomain' ),
 							'options'      => array(
-								'false' => __( 'false', 'taxonomy' ),
-								'true'  => __( 'true', 'taxonomy' )
+								'false' => __( 'false', 'textdomain' ),
+								'true'  => __( 'true', 'textdomain' )
 							),
 							'default'      => 'false'
 						),
@@ -842,10 +842,10 @@ class dgc_theme_options {
 							'id'           => 's_controlnav',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Manual control usage', 'taxonomy' ),
+							'box-title'    => __( 'Manual control usage', 'textdomain' ),
 							'options'      => array(
-								'true'  => __( 'true', 'taxonomy' ),
-								'false' => __( 'false', 'taxonomy' )
+								'true'  => __( 'true', 'textdomain' ),
+								'false' => __( 'false', 'textdomain' )
 							),
 							'default'      => 'true'
 						),
@@ -853,10 +853,10 @@ class dgc_theme_options {
 							'id'           => 's_touch',
 							'type'         => 'select',
 							'option-block' => 'flex-slider',
-							'box-title'    => __( 'Touch swipe', 'taxonomy' ),
+							'box-title'    => __( 'Touch swipe', 'textdomain' ),
 							'options'      => array(
-								'true'  => __( 'true', 'taxonomy' ),
-								'false' => __( 'false', 'taxonomy' )
+								'true'  => __( 'true', 'textdomain' ),
+								'false' => __( 'false', 'textdomain' )
 							),
 							'default'      => 'true'
 						),
@@ -864,12 +864,12 @@ class dgc_theme_options {
 							'id'           => 'nv_skins',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Slider Skins', 'taxonomy' ),
+							'box-title'    => __( 'Slider Skins', 'textdomain' ),
 							'options'      => array(
-								'theme-bar'     => __( 'bar', 'taxonomy' ),
-								'theme-default' => __( 'default', 'taxonomy' ),
-								'theme-dark'    => __( 'dark', 'taxonomy' ),
-								'theme-light'   => __( 'light', 'taxonomy' )
+								'theme-bar'     => __( 'bar', 'textdomain' ),
+								'theme-default' => __( 'default', 'textdomain' ),
+								'theme-dark'    => __( 'dark', 'textdomain' ),
+								'theme-light'   => __( 'light', 'textdomain' )
 							),
 							'default'      => 'theme-bar'
 						),
@@ -877,21 +877,21 @@ class dgc_theme_options {
 							'id'           => 'nv_animation',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Effect', 'taxonomy' ),
+							'box-title'    => __( 'Effect', 'textdomain' ),
 							'options'      => array(
-								'random'                 => __( 'random', 'taxonomy' ),
-								'sliceDownRight'         => __( 'sliceDownRight', 'taxonomy' ),
-								'sliceDownLeft'          => __( 'sliceDownLeft', 'taxonomy' ),
-								'sliceUpRight'           => __( 'sliceUpRight', 'taxonomy' ),
-								'sliceUpDown'            => __( 'sliceUpDown', 'taxonomy' ),
-								'sliceUpDownLeft'        => __( 'sliceUpDownLeft', 'taxonomy' ),
-								'fold'                   => __( 'fold', 'taxonomy' ),
-								'fade'                   => __( 'fade', 'taxonomy' ),
-								'boxRandom'              => __( 'boxRandom', 'taxonomy' ),
-								'boxRain'                => __( 'boxRain', 'taxonomy' ),
-								'boxRainReverse'         => __( 'boxRainReverse', 'taxonomy' ),
-								'boxRainGrow'            => __( 'boxRainGrow', 'taxonomy' ),
-								'boxRainGrowReverse	' => __( 'boxRainGrowReverse', 'taxonomy' )
+								'random'                 => __( 'random', 'textdomain' ),
+								'sliceDownRight'         => __( 'sliceDownRight', 'textdomain' ),
+								'sliceDownLeft'          => __( 'sliceDownLeft', 'textdomain' ),
+								'sliceUpRight'           => __( 'sliceUpRight', 'textdomain' ),
+								'sliceUpDown'            => __( 'sliceUpDown', 'textdomain' ),
+								'sliceUpDownLeft'        => __( 'sliceUpDownLeft', 'textdomain' ),
+								'fold'                   => __( 'fold', 'textdomain' ),
+								'fade'                   => __( 'fade', 'textdomain' ),
+								'boxRandom'              => __( 'boxRandom', 'textdomain' ),
+								'boxRain'                => __( 'boxRain', 'textdomain' ),
+								'boxRainReverse'         => __( 'boxRainReverse', 'textdomain' ),
+								'boxRainGrow'            => __( 'boxRainGrow', 'textdomain' ),
+								'boxRainGrowReverse	' => __( 'boxRainGrowReverse', 'textdomain' )
 							),
 							'default'      => 'random'
 						),
@@ -899,52 +899,52 @@ class dgc_theme_options {
 							'id'           => 'nv_slice',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'For slice animations', 'taxonomy' ),
+							'box-title'    => __( 'For slice animations', 'textdomain' ),
 							'default'      => '15'
 						),
 						array(
 							'id'           => 'nv_boxCols',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'For box animations (Cols)', 'taxonomy' ),
+							'box-title'    => __( 'For box animations (Cols)', 'textdomain' ),
 							'default'      => '8'
 						),
 						array(
 							'id'           => 'nv_boxRows',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'For box animations (Rows)', 'taxonomy' ),
+							'box-title'    => __( 'For box animations (Rows)', 'textdomain' ),
 							'default'      => '4'
 						),
 						array(
 							'id'           => 'nv_animSpeed',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Slide transition speed', 'taxonomy' ),
+							'box-title'    => __( 'Slide transition speed', 'textdomain' ),
 							'default'      => '500'
 						),
 						array(
 							'id'           => 'nv_pauseTime',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'How long each slide will show', 'taxonomy' ),
+							'box-title'    => __( 'How long each slide will show', 'textdomain' ),
 							'default'      => '3000'
 						),
 						array(
 							'id'           => 'nv_startSlide',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Set starting Slide (0 index)', 'taxonomy' ),
+							'box-title'    => __( 'Set starting Slide (0 index)', 'textdomain' ),
 							'default'      => '0'
 						),
 						array(
 							'id'           => 'nv_directionNav',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Next & Prev navigation', 'taxonomy' ),
+							'box-title'    => __( 'Next & Prev navigation', 'textdomain' ),
 							'options'      => array(
-								'true'  => __( 'true', 'taxonomy' ),
-								'false' => __( 'false', 'taxonomy' ),
+								'true'  => __( 'true', 'textdomain' ),
+								'false' => __( 'false', 'textdomain' ),
 							),
 							'default'      => 'true'
 						),
@@ -952,10 +952,10 @@ class dgc_theme_options {
 							'id'           => 'nv_controlNav',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( '1,2,3... navigation', 'taxonomy' ),
+							'box-title'    => __( '1,2,3... navigation', 'textdomain' ),
 							'options'      => array(
-								'true'  => __( 'true', 'taxonomy' ),
-								'false' => __( 'false', 'taxonomy' ),
+								'true'  => __( 'true', 'textdomain' ),
+								'false' => __( 'false', 'textdomain' ),
 							),
 							'default'      => 'true'
 						),
@@ -963,10 +963,10 @@ class dgc_theme_options {
 							'id'           => 'nv_controlNavThumbs',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Use thumbnails for Control Nav', 'taxonomy' ),
+							'box-title'    => __( 'Use thumbnails for Control Nav', 'textdomain' ),
 							'options'      => array(
-								'true'  => __( 'true', 'taxonomy' ),
-								'false' => __( 'false', 'taxonomy' ),
+								'true'  => __( 'true', 'textdomain' ),
+								'false' => __( 'false', 'textdomain' ),
 							),
 							'default'      => 'false'
 						),
@@ -974,10 +974,10 @@ class dgc_theme_options {
 							'id'           => 'nv_pauseOnHover',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Stop animation while hovering', 'taxonomy' ),
+							'box-title'    => __( 'Stop animation while hovering', 'textdomain' ),
 							'options'      => array(
-								'true'  => __( 'true', 'taxonomy' ),
-								'false' => __( 'false', 'taxonomy' ),
+								'true'  => __( 'true', 'textdomain' ),
+								'false' => __( 'false', 'textdomain' ),
 							),
 							'default'      => 'true'
 						),
@@ -985,10 +985,10 @@ class dgc_theme_options {
 							'id'           => 'nv_manualAdvance',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Force manual transitions', 'taxonomy' ),
+							'box-title'    => __( 'Force manual transitions', 'textdomain' ),
 							'options'      => array(
-								'true'  => __( 'true', 'taxonomy' ),
-								'false' => __( 'false', 'taxonomy' ),
+								'true'  => __( 'true', 'textdomain' ),
+								'false' => __( 'false', 'textdomain' ),
 							),
 							'default'      => 'false'
 						),
@@ -996,24 +996,24 @@ class dgc_theme_options {
 							'id'           => 'nv_prevText',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Prev directionNav text', 'taxonomy' ),
-							'default'      => __( 'Prev', 'taxonomy' )
+							'box-title'    => __( 'Prev directionNav text', 'textdomain' ),
+							'default'      => __( 'Prev', 'textdomain' )
 						),
 						array(
 							'id'           => 'nv_nextText',
 							'type'         => 'text',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Next directionNav text', 'taxonomy' ),
-							'default'      => __( 'Next', 'taxonomy' )
+							'box-title'    => __( 'Next directionNav text', 'textdomain' ),
+							'default'      => __( 'Next', 'textdomain' )
 						),
 						array(
 							'id'           => 'nv_randomStart',
 							'type'         => 'select',
 							'option-block' => 'nivo-slider',
-							'box-title'    => __( 'Start on a random slide', 'taxonomy' ),
+							'box-title'    => __( 'Start on a random slide', 'textdomain' ),
 							'options'      => array(
-								'true'  => __( 'true', 'taxonomy' ),
-								'false' => __( 'false', 'taxonomy' ),
+								'true'  => __( 'true', 'textdomain' ),
+								'false' => __( 'false', 'textdomain' ),
 							),
 							'default'      => 'false'
 						),
@@ -1023,157 +1023,157 @@ class dgc_theme_options {
 				array(
 					'id'    => 'slides',
 					'type'  => 'slides',
-					'label' => __( 'Slides', 'taxonomy' ),
+					'label' => __( 'Slides', 'textdomain' ),
 					'info'  => __( 'Add images to slider (Supported files .png, .jpg, .gif). If you want to change order, just drag and drop it. Image size for slides is original from media gallery, please upload images in same size, to get best display on page. To display slider in needed place use shortcode [dgc_slider]. Current theme version support only one slider per website.',
-						'taxonomy' ),
+						'textdomain' ),
 				)
 			)
 		);
 
 		/*Social Links*/
 		$this->sections['social-links'] = array(
-			'title'  => __( 'Social Links', 'taxonomy' ),
+			'title'  => __( 'Social Links', 'textdomain' ),
 			'id'     => 'social-links',
 			'fields' => array(
 				array(
 					'id'      => 'sl_position',
-					'label'   => __( 'Socials Links Position', 'taxonomy' ),
-					'info'    => __( 'Choose place where social links will be displayed.', 'taxonomy' ),
+					'label'   => __( 'Socials Links Position', 'textdomain' ),
+					'info'    => __( 'Choose place where social links will be displayed.', 'textdomain' ),
 					'type'    => 'select',
-					'options' => array( '0' => __( 'Footer', 'taxonomy' ), '1' => __( 'Header', 'taxonomy' ) ),
+					'options' => array( '0' => __( 'Footer', 'textdomain' ), '1' => __( 'Header', 'textdomain' ) ),
 					'default' => '0'
 				),
 				array(
 					'id'     => 'social-links',
-					'label'  => __( 'Socials Links', 'taxonomy' ),
+					'label'  => __( 'Socials Links', 'textdomain' ),
 					'info'   => __( 'Add link to your social media profiles. Icons with link will be display in header or footer.',
-						'taxonomy' ),
+						'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'facebook_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Facebook', 'taxonomy' )
+							'box-title' => __( 'Facebook', 'textdomain' )
 						),
 						array(
 							'id'        => 'twitter_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Twitter', 'taxonomy' )
+							'box-title' => __( 'Twitter', 'textdomain' )
 						),
 						array(
 							'id'        => 'linkedin_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'LinkedIn', 'taxonomy' )
+							'box-title' => __( 'LinkedIn', 'textdomain' )
 						),
 						array(
 							'id'        => 'myspace_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'MySpace', 'taxonomy' )
+							'box-title' => __( 'MySpace', 'textdomain' )
 						),
 						array(
 							'id'        => 'googleplus_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Google Plus+', 'taxonomy' )
+							'box-title' => __( 'Google Plus+', 'textdomain' )
 						),
 						array(
 							'id'        => 'dribbble_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Dribbble', 'taxonomy' )
+							'box-title' => __( 'Dribbble', 'textdomain' )
 						),
 						array(
 							'id'        => 'skype_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Skype', 'taxonomy' )
+							'box-title' => __( 'Skype', 'textdomain' )
 						),
 						array(
 							'id'        => 'flickr_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Flickr', 'taxonomy' )
+							'box-title' => __( 'Flickr', 'textdomain' )
 						),
 						array(
 							'id'        => 'youtube_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'You Tube', 'taxonomy' )
+							'box-title' => __( 'You Tube', 'textdomain' )
 						),
 						array(
 							'id'        => 'vimeo_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Vimeo', 'taxonomy' )
+							'box-title' => __( 'Vimeo', 'textdomain' )
 						),
 						array(
 							'id'        => 'rss_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'RSS', 'taxonomy' )
+							'box-title' => __( 'RSS', 'textdomain' )
 						),
 						array(
 							'id'        => 'vk_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Vk.com', 'taxonomy' )
+							'box-title' => __( 'Vk.com', 'textdomain' )
 						),
 						array(
 							'id'        => 'instagram_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Instagram', 'taxonomy' )
+							'box-title' => __( 'Instagram', 'textdomain' )
 						),
 						array(
 							'id'        => 'pinterest_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Pinterest', 'taxonomy' )
+							'box-title' => __( 'Pinterest', 'textdomain' )
 						),
 						array(
 							'id'        => 'yelp_url',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Yelp', 'taxonomy' )
+							'box-title' => __( 'Yelp', 'textdomain' )
 						),
 						array(
 							'id'        => 'email_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'E-mail', 'taxonomy' )
+							'box-title' => __( 'E-mail', 'textdomain' )
 						),
 						array(
 							'id'        => 'github_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Github', 'taxonomy' )
+							'box-title' => __( 'Github', 'textdomain' )
 						),
 						array(
 							'id'        => 'tumblr_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Tumblr', 'taxonomy' )
+							'box-title' => __( 'Tumblr', 'textdomain' )
 						),
 						array(
 							'id'        => 'soundcloud_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Soundcloud', 'taxonomy' )
+							'box-title' => __( 'Soundcloud', 'textdomain' )
 						),
 						array(
 							'id'        => 'tripadvisor_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Tripadvisor', 'taxonomy' )
+							'box-title' => __( 'Tripadvisor', 'textdomain' )
 						),
 						array(
 							'id'        => 'ello_link',
 							'type'      => 'text',
 							'default'   => '',
-							'box-title' => __( 'Ello.co', 'taxonomy' )
+							'box-title' => __( 'Ello.co', 'textdomain' )
 						),
 					)
 				),
@@ -1182,32 +1182,32 @@ class dgc_theme_options {
 
 		/*Footer*/
 		$this->sections['footer'] = array(
-			'title'  => __( 'Footer', 'taxonomy' ),
+			'title'  => __( 'Footer', 'textdomain' ),
 			'id'     => 'footer',
 			'fields' => array(
 				array(
 					'id'        => 'footer_text',
-					'label'     => __( 'Footer options', 'taxonomy' ),
-					'info'      => __( 'Replace default theme copyright information and links', 'taxonomy' ),
-					'box-title' => __( 'Copyright section', 'taxonomy' ),
+					'label'     => __( 'Footer options', 'textdomain' ),
+					'info'      => __( 'Replace default theme copyright information and links', 'textdomain' ),
+					'box-title' => __( 'Copyright section', 'textdomain' ),
 					'type'      => 'textarea',
 					'default'   => __( 'Powered by: dgc-wordpress-theme by <a href="https://github.com/dgc-network/">dgc-network</a>',
-						'taxonomy' ),
+						'textdomain' ),
 				)
 			)
 		);
 
 		/*Custom CSS*/
 		$this->sections['custom-css'] = array(
-			'title'  => __( 'Custom CSS', 'taxonomy' ),
+			'title'  => __( 'Custom CSS', 'textdomain' ),
 			'id'     => 'custom-css',
 			'fields' => array(
 				array(
 					'id'        => 'custom_css',
-					'label'     => __( 'Custom CSS', 'taxonomy' ),
+					'label'     => __( 'Custom CSS', 'textdomain' ),
 					'info'      => __( 'Theme has two css files style.css and fixed-style.css which use default styles for front-end responsive and static layout. Do not edit theme default css files, use textarea editor below for overwriting all css styles.',
-						'taxonomy' ),
-					'box-title' => __( 'Styles editor', 'taxonomy' ),
+						'textdomain' ),
+					'box-title' => __( 'Styles editor', 'textdomain' ),
 					'type'      => 'textarea',
 					'default'   => '',
 				)
@@ -1217,85 +1217,85 @@ class dgc_theme_options {
 		/*Woocommerce*/
 		if ( class_exists( 'Woocommerce' ) ) {
 			$this->sections['woo'] = array(
-				'title'  => __( 'Woocommerce', 'taxonomy' ),
+				'title'  => __( 'Woocommerce', 'textdomain' ),
 				'id'     => 'woo',
 				'fields' => array(
 					array(
 						'id'          => 'showuser',
-						'label'       => __( 'Show user button in header', 'taxonomy' ),
+						'label'       => __( 'Show user button in header', 'textdomain' ),
 						'info'        => __( 'If you want to display my-account link in header select options below.',
-							'taxonomy' ),
+							'textdomain' ),
 						'type'        => 'checkbox',
-						'description' => __( 'Enable', 'taxonomy' ),
+						'description' => __( 'Enable', 'textdomain' ),
 						'default'     => 'on',
 					),
 					array(
-						'label'   => __( 'User color', 'taxonomy' ),
-						'info'    => __( 'Choose color for user icon', 'taxonomy' ),
+						'label'   => __( 'User color', 'textdomain' ),
+						'info'    => __( 'Choose color for user icon', 'textdomain' ),
 						'id'      => 'user_color',
 						'type'    => 'color',
 						'default' => '#020202',
 					),
 					array(
 						'id'          => 'showcart',
-						'label'       => __( 'Show cart in header', 'taxonomy' ),
+						'label'       => __( 'Show cart in header', 'textdomain' ),
 						'info'        => __( 'If you want to display cart link in header select options below.',
-							'taxonomy' ),
+							'textdomain' ),
 						'type'        => 'checkbox',
-						'description' => __( 'Enable', 'taxonomy' ),
+						'description' => __( 'Enable', 'textdomain' ),
 						'default'     => 'on',
 					),
 					array(
-						'label'   => __( 'Cart color', 'taxonomy' ),
-						'info'    => __( 'Choose color for cart icon', 'taxonomy' ),
+						'label'   => __( 'Cart color', 'textdomain' ),
+						'info'    => __( 'Choose color for cart icon', 'textdomain' ),
 						'id'      => 'cart_color',
 						'type'    => 'color',
 						'default' => '#020202',
 					),
 					array(
 						'id'      => 'woo_shop_sidebar',
-						'label'   => __( 'Woocommerce Shop Sidebar', 'taxonomy' ),
-						'info'    => __( 'Show or hide sidebar', 'taxonomy' ),
+						'label'   => __( 'Woocommerce Shop Sidebar', 'textdomain' ),
+						'info'    => __( 'Show or hide sidebar', 'textdomain' ),
 						'type'    => 'select',
 						'options' => array(
-							'2' => __( 'Left sidebar', 'taxonomy' ),
-							'1' => __( 'Full width', 'taxonomy' ),
-							'3' => __( 'Right sidebar', 'taxonomy' )
+							'2' => __( 'Left sidebar', 'textdomain' ),
+							'1' => __( 'Full width', 'textdomain' ),
+							'3' => __( 'Right sidebar', 'textdomain' )
 						),
 						'default' => '2',
 					),
 					array(
 						'id'      => 'woo_product_sidebar',
-						'label'   => __( 'Woocommerce Product Sidebar', 'taxonomy' ),
-						'info'    => __( 'Show or hide sidebar', 'taxonomy' ),
+						'label'   => __( 'Woocommerce Product Sidebar', 'textdomain' ),
+						'info'    => __( 'Show or hide sidebar', 'textdomain' ),
 						'type'    => 'select',
 						'options' => array(
-							'1' => __( 'Full width with tabs on right side', 'taxonomy' ),
-							'2' => __( 'Left sidebar', 'taxonomy' ),
-							'3' => __( 'Right sidebar', 'taxonomy' ),
-							'4' => __( 'Full width with tabs on left side', 'taxonomy' ),
-							'5' => __( 'Full width with tabs in center', 'taxonomy' )
+							'1' => __( 'Full width with tabs on right side', 'textdomain' ),
+							'2' => __( 'Left sidebar', 'textdomain' ),
+							'3' => __( 'Right sidebar', 'textdomain' ),
+							'4' => __( 'Full width with tabs on left side', 'textdomain' ),
+							'5' => __( 'Full width with tabs in center', 'textdomain' )
 						),
 						'default' => '1',
 					),
 					array(
 						'id'      => 'shop_num_row',
-						'label'   => __( 'Woocommerce pages products per row', 'taxonomy' ),
-						'info'    => __( 'Choose number of products', 'taxonomy' ),
+						'label'   => __( 'Woocommerce pages products per row', 'textdomain' ),
+						'info'    => __( 'Choose number of products', 'textdomain' ),
 						'type'    => 'select',
 						'options' => array(
-							'2' => __( '2 products', 'taxonomy' ),
-							'3' => __( '3 products', 'taxonomy' ),
-							'4' => __( '4 products', 'taxonomy' ),
-							'5' => __( '5 products', 'taxonomy' )
+							'2' => __( '2 products', 'textdomain' ),
+							'3' => __( '3 products', 'textdomain' ),
+							'4' => __( '4 products', 'textdomain' ),
+							'5' => __( '5 products', 'textdomain' )
 						),
 						'default' => '4',
 					),
 					array(
 						'id'      => 'woo_shop_num_prod',
-						'label'   => __( 'Number of products on Shop pages', 'taxonomy' ),
+						'label'   => __( 'Number of products on Shop pages', 'textdomain' ),
 						'info'    => __( 'Choose number of products. Write -1 for show all products on one page',
-							'taxonomy' ),
+							'textdomain' ),
 						'type'    => 'text',
 						'default' => '10',
 					),
@@ -1323,8 +1323,8 @@ class dgc_theme_options {
 		* @since dgc-wordpress-theme 1.0
 		*/
 		$admin_page = add_theme_page(
-			__( 'Theme Options', 'taxonomy' ),                             // Name of page
-			__( 'Theme Options', 'taxonomy' ),                             // Label in menu
+			__( 'Theme Options', 'textdomain' ),                             // Name of page
+			__( 'Theme Options', 'textdomain' ),                             // Label in menu
 			'edit_theme_options',                                     // Capability required
 			$this->args['opt_slug'],                                 // Menu slug, used to uniquely identify the page
 			array( &$this, 'dgc_theme_options_render_page' )    // Function that renders the options page
@@ -1341,7 +1341,7 @@ class dgc_theme_options {
 		/* Add the main siteadmin menu item */
 		$wp_admin_bar->add_menu( array(
 			'id'    => 'dgc_theme_options',
-			'title' => __( 'Theme Options', 'taxonomy' ),
+			'title' => __( 'Theme Options', 'textdomain' ),
 			'href'  => admin_url( 'admin.php?page=theme_options' )
 		) );
 	}
@@ -1432,14 +1432,14 @@ class dgc_theme_options {
 				$html       .= '<div class="upload_button_div">';
 				$image_type = ( isset( $field['imagetype'] ) ) ? 'data-imagetype="' . $field['imagetype'] . '"' : '';
 				$html       .= '<span ' . $image_type . ' class="button upload_btn" id="' . esc_attr( $field['id'] ) . '">' . __( 'Upload Image',
-						'taxonomy' ) . '</span>';
+						'textdomain' ) . '</span>';
 				if ( ! empty( $data ) ) {
 					$none = '';
 				} else {
 					$none = 'none';
 				}
 				$html .= '<span class="button reset_btn ' . $none . '" id="reset_' . esc_attr( $field['id'] ) . '" title="' . esc_attr( $field['id'] ) . '">' . __( 'Remove',
-						'taxonomy' ) . '</span>';
+						'textdomain' ) . '</span>';
 				$html .= '</div>';
 				$html .= '</div>';
 				break;
@@ -1451,7 +1451,7 @@ class dgc_theme_options {
 				break;
 			case 'font':
 				$html .= '<div class="text_fonts">';
-				$html .= '<div id="menu_sample_font" class="sample_text">' . __( 'Sample Font', 'taxonomy' ) . '</div>';
+				$html .= '<div id="menu_sample_font" class="sample_text">' . __( 'Sample Font', 'textdomain' ) . '</div>';
 				$html .= '<select class="select-fonts" name="' . $this->args['opt_name'] . '[' . esc_attr( $field['id'] ) . ']" id="options-' . esc_attr( $field['id'] ) . '">';
 				foreach ( $field['options'] as $k => $v ) {
 					$selected = false;
@@ -1503,8 +1503,8 @@ class dgc_theme_options {
                   id="form-admin-dgc">
                 <div id="save_options" class="save-options"></div>
                 <div class="header">
-                    <h2 class="title_theme"><?php _e( 'Theme Options', 'taxonomy' ); ?></h2>
-					<?php submit_button( __( 'Save', 'taxonomy' ) ); ?>
+                    <h2 class="title_theme"><?php _e( 'Theme Options', 'textdomain' ); ?></h2>
+					<?php submit_button( __( 'Save', 'textdomain' ) ); ?>
 					<?php settings_errors(); ?>
                 </div>
                 <div class="content">
@@ -1527,7 +1527,7 @@ class dgc_theme_options {
 
                 </div>
                 <div class="footer">
-					<?php submit_button( __( 'Save', 'taxonomy' ) ); ?>
+					<?php submit_button( __( 'Save', 'textdomain' ) ); ?>
                 </div>
                 <input type="hidden" name="action" value="dgc_theme_options_action"/>
                 <input type="hidden" name="security" value="<?php echo wp_create_nonce( 'dgc_theme_data' ); ?>"/>
@@ -1535,41 +1535,41 @@ class dgc_theme_options {
 
             <div id="sidebar-promo" class="sidebar-promo">
                 <div class="sidebar-promo-widget promo-support">
-                    <h3><?php _e( 'Support', 'taxonomy' ); ?></h3>
+                    <h3><?php _e( 'Support', 'textdomain' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
-						_e( 'If You faced with problems or find error or bug, please', 'taxonomy' );
+						_e( 'If You faced with problems or find error or bug, please', 'textdomain' );
 						echo ' <a target="_blank" href="http://dgc.zendesk.com/hc/en-us/requests/new">';
-						_e( 'submit request.', 'taxonomy' );
+						_e( 'submit request.', 'textdomain' );
 						echo '</a> ';
-						_e( 'On official ', 'taxonomy' );
+						_e( 'On official ', 'textdomain' );
 						echo ' <a target="_blank" href="http://wordpress.org/support/theme/dgc-wordpress-theme">';
-						_e( 'Support forum', 'taxonomy' );
+						_e( 'Support forum', 'textdomain' );
 						echo '</a> ';
-						_e( 'You may find answers on Your questions.', 'taxonomy' );
+						_e( 'You may find answers on Your questions.', 'textdomain' );
 						?></p>
                 </div>
                 <div class="sidebar-promo-widget promo-customization">
-                    <h3><?php _e( 'Additional customization', 'taxonomy' ); ?></h3>
+                    <h3><?php _e( 'Additional customization', 'textdomain' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
-						_e( 'Our team is available for any type of WordPress development. ', 'taxonomy' );
-						_e( 'If You want customize theme or add new features, You can', 'taxonomy' );
+						_e( 'Our team is available for any type of WordPress development. ', 'textdomain' );
+						_e( 'If You want customize theme or add new features, You can', 'textdomain' );
 						echo ' ';
-						_e( 'submit order', 'taxonomy' );
+						_e( 'submit order', 'textdomain' );
 						echo ' ';
-						_e( 'on our website', 'taxonomy' );
+						_e( 'on our website', 'textdomain' );
 						?></p>
                 </div>
                 <div class="sidebar-promo-widget promo-about">
-                    <h3><?php _e( 'dgc-wordpress-theme', 'taxonomy' ); ?></h3>
+                    <h3><?php _e( 'dgc-wordpress-theme', 'textdomain' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
 						echo ' <a target="_blank" href="https://dgc.network/product/dgc-wordpress-theme">';
-						_e( 'dgc-wordpress-theme - WordPress responsive theme', 'taxonomy' );
+						_e( 'dgc-wordpress-theme - WordPress responsive theme', 'textdomain' );
 						echo '</a> ';
-						_e( ' that contains all the options of ', 'taxonomy' );
+						_e( ' that contains all the options of ', 'textdomain' );
 						echo ' <a target="_blank" href="https://wordpress.org/themes/dgc-wordpress-theme/">';
-						_e( 'FREE version', 'taxonomy' );
+						_e( 'FREE version', 'textdomain' );
 						echo '</a> ';
-						_e( ' plus:', 'taxonomy' );
+						_e( ' plus:', 'textdomain' );
 						?></p>
                     <ul class="sidebar-promo-list"><?php
 						echo '<li><span>More options</span> like ability to change width for container grid.</li>';

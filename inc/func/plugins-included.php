@@ -36,7 +36,7 @@ function dgc_register_required_plugins() {
 	);
 
 	$config = array(
-		'id'           => 'taxonomy',                  // Unique ID for hashing notices for multiple instances of TGMPA.
+		'id'           => 'textdomain',                  // Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',                          // Default absolute path to bundled plugins.
 		'menu'         => 'tgmpa-install-plugins',  // Menu slug.
 		'parent_slug'  => 'themes.php',           	   // Parent menu slug.
@@ -47,24 +47,24 @@ function dgc_register_required_plugins() {
 		'is_automatic' => false,                  	 // Automatically activate plugins after installation or not.
 		'message'       => '<span class="dgc-msg"><br />1. Select all plugins checkbox to the left of "Plugin" <br />2. Click "Bulk Actions" and then Install <br />3. Click "Apply" button</span>',              
 		'strings'      => array(
-			'page_title'                            => __( 'dgc-wordpress-theme Plugin Integration', 'taxonomy' ),
-			'menu_title'                            => __( 'Plugin Integration', 'taxonomy' ),
-			'installing'                            => __( 'Installing Plugin: %s', 'taxonomy' ), // %1$s = plugin name
-			'oops'                                  => __( 'Something went wrong with the plugin API.', 'taxonomy' ),
+			'page_title'                            => __( 'dgc-wordpress-theme Plugin Integration', 'textdomain' ),
+			'menu_title'                            => __( 'Plugin Integration', 'textdomain' ),
+			'installing'                            => __( 'Installing Plugin: %s', 'textdomain' ), // %1$s = plugin name
+			'oops'                                  => __( 'Something went wrong with the plugin API.', 'textdomain' ),
 			'notice_can_install_required'     => _n_noop(
 				'dgc-wordpress-theme requires the following plugin: %1$s.',
 				'dgc-wordpress-theme requires the following plugins: %1$s.',
-				'taxonomy'
+				'textdomain'
 			), // %1$s = plugin name(s).
 			'notice_can_install_recommended'  => _n_noop(
 				'dgc-wordpress-theme recommends the following plugin: %1$s.',
 				'dgc-wordpress-theme recommends the following plugins: %1$s.',
-				'taxonomy'
+				'textdomain'
 			), // %1$s = plugin name(s).
 			'notice_ask_to_update'            => _n_noop(
 				'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.',
 				'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.',
-				'taxonomy'
+				'textdomain'
 			), // %1$s = plugin name(s).
 			// 'notice_ask_to_update_maybe'      => _n_noop(
 				// 'There is an update available for: %1$s.',
@@ -74,17 +74,17 @@ function dgc_register_required_plugins() {
 			'notice_can_activate_required'    => _n_noop(
 				'The following required plugin is currently inactive: %1$s.',
 				'The following required plugins are currently inactive: %1$s.',
-				'taxonomy'
+				'textdomain'
 			), // %1$s = plugin name(s).
 			'notice_can_activate_recommended' => _n_noop(
 				'The following recommended plugin is currently inactive: %1$s.',
 				'The following recommended plugins are currently inactive: %1$s.',
-				'taxonomy'
+				'textdomain'
 			), // %1$s = plugin name(s).
 			'install_link'                    => _n_noop(
 				'Begin installing plugin',
 				'Begin installing plugins',
-				'taxonomy'
+				'textdomain'
 			),
 			// 'update_link' 					  => _n_noop(
 				// 'Begin updating plugin',
@@ -94,16 +94,16 @@ function dgc_register_required_plugins() {
 			'activate_link'                   => _n_noop(
 				'Activate installed plugin',
 				'Activate installed plugins',
-				'taxonomy'
+				'textdomain'
 			),
-			'return'                         	=> __( 'Return to Required Plugins Installer', 'taxonomy' ),
-			'plugin_activated'                  => __( 'Plugin activated successfully.', 'taxonomy' ),
-			//'activated_successfully'          => __( 'The following plugin was activated successfully:', 'taxonomy' ),
-			//'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'taxonomy' ),  // %1$s = plugin name(s).
-			//'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'taxonomy' ),  // %1$s = plugin name(s).
-			'complete'                          => __( 'All plugins installed and activated successfully. %1$s', 'taxonomy' ), // %s = dashboard link.
-			//'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'taxonomy' ),
-			//'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'taxonomy' ),
+			'return'                         	=> __( 'Return to Required Plugins Installer', 'textdomain' ),
+			'plugin_activated'                  => __( 'Plugin activated successfully.', 'textdomain' ),
+			//'activated_successfully'          => __( 'The following plugin was activated successfully:', 'textdomain' ),
+			//'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'textdomain' ),  // %1$s = plugin name(s).
+			//'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'textdomain' ),  // %1$s = plugin name(s).
+			'complete'                          => __( 'All plugins installed and activated successfully. %1$s', 'textdomain' ), // %s = dashboard link.
+			//'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'textdomain' ),
+			//'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'textdomain' ),
 			'nag_type'                          => 'updated', // Determines admin notice type - can only be one of the typical WP notice classes, such as 'updated', 'update-nag', 'notice-warning', 'notice-info' or 'error'. Some of which may not work as expected in older WP versions.
 		),
 	); 

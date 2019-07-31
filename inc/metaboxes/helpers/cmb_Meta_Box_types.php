@@ -67,7 +67,7 @@ class cmb_Meta_Box_types {
 	 */
 	public function get_object_terms() {
 		$object_id = $this->field->object_id;
-		$taxonomy = $this->field->args( 'taxonomy' );
+		$taxonomy = $this->field->args( 'textdomain' );
 
 		if ( ! $post = get_post( $object_id ) ) {
 
@@ -250,7 +250,7 @@ class cmb_Meta_Box_types {
 			</tbody>
 		</table>
 		<p class="add-row">
-			<a data-selector="<?php echo $table_id; ?>" class="add-row-button button" href="#"><?php _e( 'Add Row', 'taxonomy' ); ?></a>
+			<a data-selector="<?php echo $table_id; ?>" class="add-row-button button" href="#"><?php _e( 'Add Row', 'textdomain' ); ?></a>
 		</p>
 
 		<?php
@@ -306,7 +306,7 @@ class cmb_Meta_Box_types {
 				<?php $this->_render(); ?>
 			</td>
 			<td class="remove-row">
-				<a class="button remove-row-button" href="#"><?php _e( 'Remove', 'taxonomy' ); ?></a>
+				<a class="button remove-row-button" href="#"><?php _e( 'Remove', 'textdomain' ); ?></a>
 			</td>
 		</tr>
 
@@ -567,7 +567,7 @@ class cmb_Meta_Box_types {
 
 		$names      = $this->get_object_terms();
 		$saved_term = is_wp_error( $names ) || empty( $names ) ? $this->field->args( 'default' ) : $names[0]->slug;
-		$terms      = get_terms( $this->field->args( 'taxonomy' ), 'hide_empty=0' );
+		$terms      = get_terms( $this->field->args( 'textdomain' ), 'hide_empty=0' );
 		$options    = '';
 
 		foreach ( $terms as $term ) {
@@ -612,11 +612,11 @@ class cmb_Meta_Box_types {
 	public function taxonomy_radio() {
 		$names      = $this->get_object_terms();
 		$saved_term = is_wp_error( $names ) || empty( $names ) ? $this->field->args( 'default' ) : $names[0]->slug;
-		$terms      = get_terms( $this->field->args( 'taxonomy' ), 'hide_empty=0' );
+		$terms      = get_terms( $this->field->args( 'textdomain' ), 'hide_empty=0' );
 		$options    = ''; $i = 1;
 
 		if ( ! $terms ) {
-			$options .= '<li><label>'. __( 'No terms', 'taxonomy' ) .'</label></li>';
+			$options .= '<li><label>'. __( 'No terms', 'textdomain' ) .'</label></li>';
 		} else {
 			foreach ( $terms as $term ) {
 				$args = array(
@@ -645,12 +645,12 @@ class cmb_Meta_Box_types {
 		$saved_terms   = is_wp_error( $names ) || empty( $names )
 			? $this->field->args( 'default' )
 			: wp_list_pluck( $names, 'slug' );
-		$terms   = get_terms( $this->field->args( 'taxonomy' ), 'hide_empty=0' );
+		$terms   = get_terms( $this->field->args( 'textdomain' ), 'hide_empty=0' );
 		$name    = $this->_name() .'[]';
 		$options = ''; $i = 1;
 
 		if ( ! $terms ) {
-			$options .= '<li><label>'. __( 'No terms', 'taxonomy' ) .'</label></li>';
+			$options .= '<li><label>'. __( 'No terms', 'textdomain' ) .'</label></li>';
 		} else {
 
 			foreach ( $terms as $term ) {
@@ -689,7 +689,7 @@ class cmb_Meta_Box_types {
 		$this->input( array(
 			'type'  => 'button',
 			'class' => 'cmb_upload_button button cmb_upload_list',
-			'value'  => __( 'Add or Upload File', 'taxonomy' ),
+			'value'  => __( 'Add or Upload File', 'textdomain' ),
 			'name'  => '', 'id'  => '',
 		) );
 
@@ -710,7 +710,7 @@ class cmb_Meta_Box_types {
 					echo
 					'<li class="img_status">',
 						wp_get_attachment_image( $id, $this->field->args( 'preview_size' ) ),
-						'<p class="cmb_remove_wrapper"><a href="#" class="cmb_remove_file_button">'. __( 'Remove Image', 'taxonomy' ) .'</a></p>
+						'<p class="cmb_remove_wrapper"><a href="#" class="cmb_remove_file_button">'. __( 'Remove Image', 'textdomain' ) .'</a></p>
 						'. $id_input .'
 					</li>';
 
@@ -721,7 +721,7 @@ class cmb_Meta_Box_types {
 					}
 					echo
 					'<li>',
-						__( 'File:', 'taxonomy' ), ' <strong>', $title, '</strong>&nbsp;&nbsp;&nbsp; (<a href="', $fullurl, '" target="_blank" rel="external">'. __( 'Download', 'taxonomy' ) .'</a> / <a href="#" class="cmb_remove_file_button">'. __( 'Remove', 'taxonomy' ) .'</a>)
+						__( 'File:', 'textdomain' ), ' <strong>', $title, '</strong>&nbsp;&nbsp;&nbsp; (<a href="', $fullurl, '" target="_blank" rel="external">'. __( 'Download', 'textdomain' ) .'</a> / <a href="#" class="cmb_remove_file_button">'. __( 'Remove', 'textdomain' ) .'</a>)
 						'. $id_input .'
 					</li>';
 				}
@@ -743,7 +743,7 @@ class cmb_Meta_Box_types {
 			'size'  => 45,
 			'desc'  => '',
 		) ),
-		'<input class="cmb_upload_button button" type="button" value="'. __( 'Add or Upload File', 'taxonomy' ) .'" />',
+		'<input class="cmb_upload_button button" type="button" value="'. __( 'Add or Upload File', 'textdomain' ) .'" />',
 		$this->_desc( true );
 
 		$cached_id = $this->_id();
@@ -775,7 +775,7 @@ class cmb_Meta_Box_types {
 				if ( $this->is_valid_img_ext( $meta_value ) ) {
 					echo '<div class="img_status">';
 					echo '<img style="max-width: 350px; width: 100%; height: auto;" src="', $meta_value, '" alt="" />';
-					echo '<p class="cmb_remove_wrapper"><a href="#" class="cmb_remove_file_button" rel="', $cached_id, '">'. __( 'Remove Image', 'taxonomy' ) .'</a></p>';
+					echo '<p class="cmb_remove_wrapper"><a href="#" class="cmb_remove_file_button" rel="', $cached_id, '">'. __( 'Remove Image', 'textdomain' ) .'</a></p>';
 					echo '</div>';
 				} else {
 					// $file_ext = $this->get_file_ext( $meta_value );
@@ -783,7 +783,7 @@ class cmb_Meta_Box_types {
 					for ( $i = 0; $i < count( $parts ); ++$i ) {
 						$title = $parts[$i];
 					}
-					echo __( 'File:', 'taxonomy' ), ' <strong>', $title, '</strong>&nbsp;&nbsp;&nbsp; (<a href="', $meta_value, '" target="_blank" rel="external">'. __( 'Download', 'taxonomy' ) .'</a> / <a href="#" class="cmb_remove_file_button" rel="', $cached_id, '">'. __( 'Remove', 'taxonomy' ) .'</a>)';
+					echo __( 'File:', 'textdomain' ), ' <strong>', $title, '</strong>&nbsp;&nbsp;&nbsp; (<a href="', $meta_value, '" target="_blank" rel="external">'. __( 'Download', 'textdomain' ) .'</a> / <a href="#" class="cmb_remove_file_button" rel="', $cached_id, '">'. __( 'Remove', 'textdomain' ) .'</a>)';
 				}
 			}
 		echo '</div>';

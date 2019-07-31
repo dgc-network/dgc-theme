@@ -14,11 +14,11 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 	 **/
 	public function __construct() {
 		$theme_name  = wp_get_theme();
-		$widget_name = $theme_name.' '.__( 'Filter & Refine', 'taxonomy' );
+		$widget_name = $theme_name.' '.__( 'Filter & Refine', 'textdomain' );
 		
 		parent::__construct( 'widget_filter_refine', $widget_name, array(
 			'classname'   => 'widget_filter_refine',
-			'description' => __( 'Use this widget to filter and refine the products.', 'taxonomy' ),
+			'description' => __( 'Use this widget to filter and refine the products.', 'textdomain' ),
 		) );
 	}
 
@@ -47,14 +47,14 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 		$number = isset( $instance['number'] ) ? absint( $instance['number'] ) : 10;
 		$textarea_filter_refine = isset( $instance['textarea_filter_refine'] ) ? stripslashes( $instance['textarea_filter_refine'] ) : '';
 ?>
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', 'taxonomy' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', 'textdomain' ); ?></label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" /></p>
 
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php _e( 'Number of posts to show:', 'taxonomy' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php _e( 'Number of posts to show:', 'textdomain' ); ?></label>
 			<input id="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'number' ) ); ?>" type="text" value="<?php echo esc_attr( $number ); ?>" size="3" /></p>
 			
 			
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'textarea_filter_refine' ) ); ?>"><?php _e( 'Text Message:', 'taxonomy' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'textarea_filter_refine' ) ); ?>"><?php _e( 'Text Message:', 'textdomain' ); ?></label>
 			<textarea id="<?php echo esc_attr( $this->get_field_id( 'textarea_filter_refine' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'textarea_filter_refine' ) ); ?>" class="widefat" cols="16" rows="5"><?php echo stripslashes( $textarea_filter_refine ); ?></textarea></p>
 		<?php
 	}
@@ -76,7 +76,7 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 			return;
 		}
 
-		$title 			= apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Filter & Refine', 'taxonomy' ) : $instance['title'], $instance, $this->id_base);
+		$title 			= apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Filter & Refine', 'textdomain' ) : $instance['title'], $instance, $this->id_base);
 		$number 		= empty( $instance['number'] ) ? 10 : absint( $instance['number'] );
 		$custom_content = empty( $instance['textarea_filter_refine']) ? null : stripslashes($instance['textarea_filter_refine']);
 		
@@ -128,7 +128,7 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 				<h4>Tags</h4>
 <?php
 $get_terms_default_attributes = array (
-	'taxonomy' => 'category', //empty string(''), false, 0 don't work, and return empty array
+	'textdomain' => 'category', //empty string(''), false, 0 don't work, and return empty array
 	'orderby' => 'name',
 	'order' => 'ASC',
 	'hide_empty' => true, //can be 1, '1' too
@@ -155,7 +155,7 @@ $get_terms_default_attributes = array (
 	'meta_value'=> '',
 );
 $get_terms_default_attributes = array (
-	'taxonomy' => 'product_tag',
+	'textdomain' => 'product_tag',
 	'orderby' => 'name',
 );
 
@@ -168,7 +168,7 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 }
 
 $get_terms_default_attributes = array (
-	'taxonomy' => 'product_tag', //empty string(''), false, 0 don't work, and return empty array
+	'textdomain' => 'product_tag', //empty string(''), false, 0 don't work, and return empty array
 	'orderby' => 'name',
 	'order' => 'ASC',
 	'hide_empty' => true, //can be 1, '1' too
@@ -198,7 +198,7 @@ $get_terms_default_attributes = array (
 $terms = get_terms( $get_terms_default_attributes );
 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
     foreach ( $terms as $term ) { ?>
-		<input type="checkbox" name="vehicle1" value="Bike"> <?php __( $term->name, 'taxonomy') ?><br>
+		<input type="checkbox" name="vehicle1" value="Bike"> <?php __( $term->name, 'textdomain') ?><br>
     <?php }
 }				
 ?>
@@ -218,19 +218,19 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 
 			<?php
 			/* translators: used between list items, there is a space after the comma */
-		 	$categories_list = get_the_category_list( __( ', ', 'taxonomy' ) );
+		 	$categories_list = get_the_category_list( __( ', ', 'textdomain' ) );
 			if ( $categories_list && dgc_categorized_blog() ) : ?>
 			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'taxonomy' ), $categories_list ); ?>
+				<?php printf( __( 'Posted in %1$s', 'textdomain' ), $categories_list ); ?>
 			</span>
 			<?php endif; // End if categories ?>
 
 			<?php
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', __( ', ', 'taxonomy' ) );
+			$tags_list = get_the_tag_list( '', __( ', ', 'textdomain' ) );
 			if ( $tags_list ) : ?>
 			<span class="tag-links">
-				<?php // printf( __( 'Tagged %1$s', 'taxonomy' ), $tags_list ); ?>
+				<?php // printf( __( 'Tagged %1$s', 'textdomain' ), $tags_list ); ?>
 				<?php echo $tags_list; ?>
 			</span> 
 			<?php endif; // End if $tags_list ?>
@@ -290,11 +290,11 @@ class DGC_Widget_News_Archive extends WP_Widget {
 	 **/
 	 public function __construct() {
 		$theme_name  = wp_get_theme();
-		$widget_name = $theme_name.' '.__( 'News Archive', 'taxonomy' );
+		$widget_name = $theme_name.' '.__( 'News Archive', 'textdomain' );
 		
 		parent::__construct( 'widget_news_archive', $widget_name, array(
 			'classname'   => 'widget_news_archive',
-			'description' => __( 'Use this widget to list your Link posts.', 'taxonomy' ),
+			'description' => __( 'Use this widget to list your Link posts.', 'textdomain' ),
 		) );
 	}
 	/**
@@ -314,7 +314,7 @@ class DGC_Widget_News_Archive extends WP_Widget {
 			return;
 		}
 
-		$title 			= apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'News-Archive', 'taxonomy' ) : $instance['title'], $instance, $this->id_base);
+		$title 			= apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'News-Archive', 'textdomain' ) : $instance['title'], $instance, $this->id_base);
 		$number 		= empty( $instance['number'] ) ? 10 : absint( $instance['number'] );
 		$custom_content = empty ($instance['textarea_newsarchiv']) ? null : stripslashes($instance['textarea_newsarchiv']);
 		
@@ -395,14 +395,14 @@ class DGC_Widget_News_Archive extends WP_Widget {
 		$number = isset( $instance['number'] ) ? absint( $instance['number'] ) : 10;
 		$textarea_newsarchive = isset( $instance['textarea_newsarchiv'] ) ? stripslashes( $instance['textarea_newsarchiv'] ) : '';
 ?>
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', 'taxonomy' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', 'textdomain' ); ?></label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" /></p>
 
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php _e( 'Number of posts to show:', 'taxonomy' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php _e( 'Number of posts to show:', 'textdomain' ); ?></label>
 			<input id="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'number' ) ); ?>" type="text" value="<?php echo esc_attr( $number ); ?>" size="3" /></p>
 			
 			
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'textarea_newsarchiv' ) ); ?>"><?php _e( 'Text Message:', 'taxonomy' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'textarea_newsarchiv' ) ); ?>"><?php _e( 'Text Message:', 'textdomain' ); ?></label>
 			<textarea id="<?php 	echo esc_attr( $this->get_field_id( 'textarea_newsarchiv' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'textarea_newsarchiv' ) ); ?>" class="widefat" cols="16" rows="5"><?php echo stripslashes( $textarea_newsarchive ); ?></textarea></p>
 		<?php
 	}

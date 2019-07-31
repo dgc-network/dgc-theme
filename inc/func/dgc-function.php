@@ -34,34 +34,34 @@ function dgc_add_jquery_script() {
 
 function dgc_fonts_list() {
 	$font_family_options = array(
-		'Arial, Helvetica, sans-serif'  				    => __( 'Arial, Helvetica, sans-serif', 'taxonomy' ),
-		'Arial Black, Gadget, sans-serif'				    => __( 'Arial Black, Gadget, sans-serif', 'taxonomy' ),
-		'Comic Sans MS, Textile, cursive' 				    => __( 	'Comic Sans MS, Textile, cursive', 'taxonomy' ),
-		'Courier New, Courier, monospace'			 	    => __( 'Courier New, Courier, monospace', 'taxonomy' ),
-		'Georgia, Times New Roman, Times, serif'	 	    => __( 'Georgia, Times New Roman, Times, serif', 'taxonomy' ),
-		'Impact, Charcoal, sans-serif' 				 	    => __( 'Impact, Charcoal, sans-serif', 'taxonomy' ),
-		'Lucida Console, Monaco, monospace' 			    => __( 'Lucida Console, Monaco, monospace', 'taxonomy' ),
-		'Lucida Sans Unicode, Lucida Grande, sans-serif'	=> __( 'Lucida Sans Unicode, Lucida Grande, sans-serif', 'taxonomy' ),
-		'Palatino Linotype, Book Antiqua, Palatino, serif' 	=> __( 'Palatino Linotype, Book Antiqua, Palatino, serif', 'taxonomy' ),
-		'Tahoma, Geneva, sans-serif' 						=> __( 'Tahoma, Geneva, sans-serif', 'taxonomy' ),
-		'Times New Roman, Times, serif'						=> __( 'Times New Roman, Times, serif', 'taxonomy' ),
-		'Trebuchet MS, Helvetica, sans-serif' 				=> __( 'Trebuchet MS, Helvetica, sans-serif', 'taxonomy' ),
-		'Verdana, Geneva, sans-serif'						=> __( 'Verdana, Geneva, sans-serif', 'taxonomy' ),
-		'MS Sans Serif, Geneva, sans-serif' 				=> __( 'MS Sans Serif, Geneva, sans-serif', 'taxonomy' ),
-		'MS Serif, New York, serif' 						=> __( 'MS Serif, New York, serif', 'taxonomy' ),
+		'Arial, Helvetica, sans-serif'  				    => __( 'Arial, Helvetica, sans-serif', 'textdomain' ),
+		'Arial Black, Gadget, sans-serif'				    => __( 'Arial Black, Gadget, sans-serif', 'textdomain' ),
+		'Comic Sans MS, Textile, cursive' 				    => __( 	'Comic Sans MS, Textile, cursive', 'textdomain' ),
+		'Courier New, Courier, monospace'			 	    => __( 'Courier New, Courier, monospace', 'textdomain' ),
+		'Georgia, Times New Roman, Times, serif'	 	    => __( 'Georgia, Times New Roman, Times, serif', 'textdomain' ),
+		'Impact, Charcoal, sans-serif' 				 	    => __( 'Impact, Charcoal, sans-serif', 'textdomain' ),
+		'Lucida Console, Monaco, monospace' 			    => __( 'Lucida Console, Monaco, monospace', 'textdomain' ),
+		'Lucida Sans Unicode, Lucida Grande, sans-serif'	=> __( 'Lucida Sans Unicode, Lucida Grande, sans-serif', 'textdomain' ),
+		'Palatino Linotype, Book Antiqua, Palatino, serif' 	=> __( 'Palatino Linotype, Book Antiqua, Palatino, serif', 'textdomain' ),
+		'Tahoma, Geneva, sans-serif' 						=> __( 'Tahoma, Geneva, sans-serif', 'textdomain' ),
+		'Times New Roman, Times, serif'						=> __( 'Times New Roman, Times, serif', 'textdomain' ),
+		'Trebuchet MS, Helvetica, sans-serif' 				=> __( 'Trebuchet MS, Helvetica, sans-serif', 'textdomain' ),
+		'Verdana, Geneva, sans-serif'						=> __( 'Verdana, Geneva, sans-serif', 'textdomain' ),
+		'MS Sans Serif, Geneva, sans-serif' 				=> __( 'MS Sans Serif, Geneva, sans-serif', 'textdomain' ),
+		'MS Serif, New York, serif' 						=> __( 'MS Serif, New York, serif', 'textdomain' ),
 			
 		/*Google fonts*/	
-		'Open Sans, sans-serif' 							=> __( 'Open Sans, sans-serif', 'taxonomy' ),
-		'Lobster, cursive' 									=> __( 'Lobster, cursive', 'taxonomy' ),
-		'Josefin Slab, serif' 								=> __( 'Josefin Slab, serif', 'taxonomy' ),
-		'Arvo, serif' 										=> __( 'Arvo, serif', 'taxonomy' ),
-		'Lato, sans-serif' 									=> __( 'Lato, sans-serif', 'taxonomy' ),
-		'Vollkorn, serif' 									=> __( 'Vollkorn, serif', 'taxonomy' ),
-		'Abril Fatface, cursive' 							=> __( 'Abril Fatface, cursive', 'taxonomy' ),
-		'Ubuntu, sans-serif'								=> __( 'Ubuntu, sans-serif', 'taxonomy' ),
-		'PT Sans, sans-serif'								=> __( 'PT Sans, sans-serif', 'taxonomy' ),
-		'Old Standard TT, serif' 							=> __( 'Old Standard TT, serif', 'taxonomy' ),
-		'Droid Sans, sans-serif' 							=> __( 'Droid Sans, sans-serif', 'taxonomy' ),
+		'Open Sans, sans-serif' 							=> __( 'Open Sans, sans-serif', 'textdomain' ),
+		'Lobster, cursive' 									=> __( 'Lobster, cursive', 'textdomain' ),
+		'Josefin Slab, serif' 								=> __( 'Josefin Slab, serif', 'textdomain' ),
+		'Arvo, serif' 										=> __( 'Arvo, serif', 'textdomain' ),
+		'Lato, sans-serif' 									=> __( 'Lato, sans-serif', 'textdomain' ),
+		'Vollkorn, serif' 									=> __( 'Vollkorn, serif', 'textdomain' ),
+		'Abril Fatface, cursive' 							=> __( 'Abril Fatface, cursive', 'textdomain' ),
+		'Ubuntu, sans-serif'								=> __( 'Ubuntu, sans-serif', 'textdomain' ),
+		'PT Sans, sans-serif'								=> __( 'PT Sans, sans-serif', 'textdomain' ),
+		'Old Standard TT, serif' 							=> __( 'Old Standard TT, serif', 'textdomain' ),
+		'Droid Sans, sans-serif' 							=> __( 'Droid Sans, sans-serif', 'textdomain' ),
 	);
 	return apply_filters( 'dgc_fonts_list', $font_family_options );
 }
@@ -114,11 +114,11 @@ function dgc_custom_do_settings_fields($page, $section) {
 				$id = (isset($field['args']['id'])) ? $field['args']['id'] : '';
 				if($id == 'slider-options' ) {
 					print '<div class="box-options">';
-						print '<input type="button" id="view_all_options" class="button-secondary" value="'.__( 'View Options','taxonomy').'" />'; 
+						print '<input type="button" id="view_all_options" class="button-secondary" value="'.__( 'View Options','textdomain').'" />'; 
 						print '<div id="slider_main_options" class="slider-main-options">';
 							print '	<div class="no-slider-select">';
 								print '	<div class="option_block">';
-									print '<h4>'.__('No Slider Select!', 'taxonomy' ).'</h4>';
+									print '<h4>'.__('No Slider Select!', 'textdomain' ).'</h4>';
 								print '</div>';
 							print '</div>';
 							foreach($field['args']['fields'] as $row => $value){
@@ -168,25 +168,25 @@ function dgc_get_box_upload_slide($attach_id, $link_url, $is_blank, $is_active, 
 		$out .= '</div>	';
 	}
 		/*Link out for Slider*/
-		$out .= '<label for="slide-link-'.$ind.'">'. __('Link URL', 'taxonomy') .'</label>';
+		$out .= '<label for="slide-link-'.$ind.'">'. __('Link URL', 'textdomain') .'</label>';
 		$out .= '<input type="text" name="dgc_theme_options[slides][slide-'.$ind.'][link]" id="slide-link-'.$ind.'" class="slide-link-'.$ind.' text-input" value="'.esc_url($link_url).'"/>';
 		$out .= '<div class="clear"></div>';
 
 		$out .= '<label for="link-blank-'.$ind.'">';
 		$out .= '<input type="checkbox" name="dgc_theme_options[slides][slide-'.$ind.'][is_blank]" id="link-blank-'.$ind.'" class="link-target-'.$ind.'" '. checked( 'on', $is_blank, false) .'/>';
-		$out .= __('Target "_blank"', 'taxonomy') .'</label>';
+		$out .= __('Target "_blank"', 'textdomain') .'</label>';
 	
 	        // ADD IS_ACTIVE OPTION by ERICH
 		$out .= '<div class="clear" style="margin-bottom: 10px;"></div>';
 		$out .= '<label for="link-active-' . $ind . '">';
 		$out .= '<input type="checkbox" name="dgc_theme_options[slides][slide-' . $ind . '][is_active]" id="link-active-' . $ind . '" class="link-target-' . $ind . '" ' . checked( 'on', $is_active, false ) . '/>';
-		$out .= __( 'Active (show sliderimage)', 'taxonomy' ) . '</label>';
+		$out .= __( 'Active (show sliderimage)', 'textdomain' ) . '</label>';
   
 	
 		$out .= '<input class="of-input" name="dgc_theme_options[slides][slide-'.$ind.'][attach_id]" id="attach-'.$ind.'" type="hidden" value="'. intval($attach_id) .'" />';
 		$out .= '<div class="upload_button_div">';
-			$out .= '<span data-imagetype="slide" class="button '. $btnclassup .'" id="add-slide-btn-'. $ind .'">'.__('Upload Image', 'taxonomy') .'</span>';
-			$out .= '<span class="button reset_btn">'.__('Remove', 'taxonomy') .'</span>';
+			$out .= '<span data-imagetype="slide" class="button '. $btnclassup .'" id="add-slide-btn-'. $ind .'">'.__('Upload Image', 'textdomain') .'</span>';
+			$out .= '<span class="button reset_btn">'.__('Remove', 'textdomain') .'</span>';
 		$out .= '</div>';
 	$out .= '</div>';
 	return $out;
@@ -195,7 +195,7 @@ function dgc_get_box_upload_slide($attach_id, $link_url, $is_blank, $is_active, 
 function dgc_get_slide($ind, $id, $link_url = null, $is_blank = 'off', $is_active = 'on') {
 	$out = '';
 	$out .= '<li class="slide" id="slide-image-' . $ind . '">';
-		$out .= '<h4 class="slide-header" id="slide-header-'. $ind .'">' . sprintf(__('Slide # %1$d', 'taxonomy'),   $ind);
+		$out .= '<h4 class="slide-header" id="slide-header-'. $ind .'">' . sprintf(__('Slide # %1$d', 'textdomain'),   $ind);
 			$out .= '<span class="content-close-slide" id="content-slide-close_' . $ind . '"></span>';
 				$out .= '<span class="remove-slide" id="remove-slide-'.$ind.'"></span>';
 		$out .= '</h4>';
@@ -216,8 +216,8 @@ function dgc_slider_images() {
 	}
 	?>
 		<div class="slides-btn">
-			<span class="collapse_all"><?php _e('Collapse all', 'taxonomy'); ?></span>
-			<span class="expand_all"><?php _e('Expand all', 'taxonomy'); ?></span>
+			<span class="collapse_all"><?php _e('Collapse all', 'textdomain'); ?></span>
+			<span class="expand_all"><?php _e('Expand all', 'textdomain'); ?></span>
 		</div>
 		<ul class="slides">
 			<?php 
@@ -240,7 +240,7 @@ function dgc_slider_images() {
 					}
 			?>
 		</ul>
-		<input type="button" class="button-primary add_new_btn" value="<?php _e('Add New Slide', 'taxonomy'); ?>" />
+		<input type="button" class="button-primary add_new_btn" value="<?php _e('Add New Slide', 'textdomain'); ?>" />
 <?php
 }
 

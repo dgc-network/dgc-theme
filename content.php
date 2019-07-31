@@ -30,7 +30,7 @@
 		<?php else : ?>
 			<?php if (get_the_title() != '') : ?>
 			<h2 class="post-title entry-title">
-				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'taxonomy' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
+				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'textdomain' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h2>
 			<?php endif; ?>
 		<?php endif; // is_single() ?>		
@@ -60,8 +60,8 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php the_content( __( 'Read More <span class="meta-nav">&rarr;</span>', 'taxonomy' ) ); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'taxonomy' ), 'after' => '</div>' ) ); ?>
+		<?php the_content( __( 'Read More <span class="meta-nav">&rarr;</span>', 'textdomain' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'textdomain' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
@@ -69,10 +69,10 @@
 		<?php dgc_entry_meta(); ?>
 		
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { ?>
-			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'taxonomy' ), __( '1 Comment', 'taxonomy' ), __( '% Comments', 'taxonomy' ) ); ?></span>
+			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'textdomain' ), __( '1 Comment', 'textdomain' ), __( '% Comments', 'textdomain' ) ); ?></span>
 		<?php } ?>
 		
-		<?php edit_post_link( __( 'Edit', 'taxonomy' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'textdomain' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

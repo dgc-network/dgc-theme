@@ -64,8 +64,8 @@ class cmb_Meta_Box_Sanitize {
 			case 'taxonomy_select':
 			case 'taxonomy_radio':
 			case 'taxonomy_multicheck':
-				if ( $this->field->args( 'taxonomy' ) ) {
-					return wp_set_object_terms( $this->object_id, $value, $this->field->args( 'taxonomy' ) );
+				if ( $this->field->args( 'textdomain' ) ) {
+					return wp_set_object_terms( $this->object_id, $value, $this->field->args( 'textdomain' ) );
 				}
 			case 'multicheck':
 			case 'file_list':

@@ -15,7 +15,7 @@
 
 get_header(); ?>
 	<header class="archive-header">
-		<h1 class="archive-title"><?php printf( __( '%s Archives', 'taxonomy' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' ); ?></h1>
+		<h1 class="archive-title"><?php printf( __( '%s Archives', 'textdomain' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' ); ?></h1>
 	</header><!-- .archive-header -->
 	<div class="eleven columns alpha">		
 		<div id="primary" class="content-area">

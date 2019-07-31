@@ -31,7 +31,7 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 	
 	$meta_boxes['dgc_slider_settings'] = array(
 		'id'         => 'dgc_slider_settings',
-		'title'      => __( 'Slider settings', 'taxonomy' ),
+		'title'      => __( 'Slider settings', 'textdomain' ),
 		'context'    => 'normal',
 		'priority'   => 'low',
 		'show_names' => true, 
@@ -39,14 +39,14 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 		//'show_on'	 =>	array( 'key'=>'front-page', 'value' => '' ),
 		'fields'     => array(
 				array(
-					'name' 		=> __('Slider display', 'taxonomy'),
+					'name' 		=> __('Slider display', 'textdomain'),
 					'id' 		=> $prefix . 'slider_layout',
-					'subname'   => __('Select the option to display the corresponding slider', 'taxonomy'),
+					'subname'   => __('Select the option to display the corresponding slider', 'textdomain'),
 					'std' 		=> '0',
 					'options' 	=> array(
-										'0' => __('Disable slider', 'taxonomy'),
-										'1' => __('Full width slider', 'taxonomy'),
-										'2' => __('Boxed slider', 'taxonomy'),
+										'0' => __('Disable slider', 'textdomain'),
+										'1' => __('Full width slider', 'textdomain'),
+										'2' => __('Boxed slider', 'textdomain'),
 										),
 					'type' => 'select'
 				),
@@ -56,15 +56,15 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 	// Only with sidebar enabled
 	$meta_boxes['dgc_page_general_settings'] = array(
 		'id'         => 'dgc_page_general_settings',
-		'title'      => __( 'Page settings', 'taxonomy' ),
+		'title'      => __( 'Page settings', 'textdomain' ),
 		'pages'      => array( 'page'), 
 		'context'    => 'normal',
 		'priority'   => 'low',
 		'show_names' => true, 
 		'fields'     => array(
 			array(
-				'name' 		=> __( 'Layout', 'taxonomy' ),
-				'subname' 	=> __( 'Select a specific layout for this page.', 'taxonomy' ),
+				'name' 		=> __( 'Layout', 'textdomain' ),
+				'subname' 	=> __( 'Select a specific layout for this page.', 'textdomain' ),
 				'id'      	=> $prefix . 'page_layout',
 				'type' 	  	=> 'custom_layout_sidebars',
 				'default' 	=> '0'
@@ -75,15 +75,15 @@ function dgc_all_metaboxes( array $meta_boxes ) {
 	
 	$meta_boxes['dgc_post_general_settings'] = array(
 		'id'         => 'dgc_post_general_settings',
-		'title'      => __( 'Post settings', 'taxonomy' ),
+		'title'      => __( 'Post settings', 'textdomain' ),
 		'pages'      => array( 'post'), 
 		'context'    => 'normal',
 		'priority'   => 'low',
 		'show_names' => true, 
 		'fields'     => array(
 			array(
-				'name' 		=> __( 'Layout', 'taxonomy' ),
-				'subname' 	=> __( 'Select a specific layout for this post.', 'taxonomy' ),
+				'name' 		=> __( 'Layout', 'textdomain' ),
+				'subname' 	=> __( 'Select a specific layout for this post.', 'textdomain' ),
 				'id' 		=> $prefix . 'page_layout',
 				'type' 		=> 'custom_layout_sidebars',
 				'default' 	=> '0'

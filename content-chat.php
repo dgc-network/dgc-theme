@@ -19,7 +19,7 @@
 	
 	<div class="post-content">	
 		<header class="post-header">
-			<h2 class="post-title entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'taxonomy' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+			<h2 class="post-title entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'textdomain' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 				<div class="entry-thumbnail">
 					<?php the_post_thumbnail(); ?>
@@ -30,12 +30,12 @@
 
 		<div class="entry-content">
 			<?php the_content(); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'taxonomy' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+			<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'textdomain' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 		</div><!-- .entry-content -->
 
 		<footer class="entry-meta">
 			<?php dgc_entry_meta(); ?>
-			<?php edit_post_link( __( 'Edit', 'taxonomy' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php edit_post_link( __( 'Edit', 'textdomain' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- .entry-meta -->
 	</div>
 </article><!-- #post -->

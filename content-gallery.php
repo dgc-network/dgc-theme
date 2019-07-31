@@ -29,8 +29,8 @@
 
 		<div class="entry-content">
 			<?php if ( is_single() || ! get_post_gallery() ) : ?>
-				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'taxonomy' ) ); ?>
-				<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'taxonomy' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'textdomain' ) ); ?>
+				<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'textdomain' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 			<?php else : ?>
 				<?php echo get_post_gallery(); ?>
 			<?php endif; // is_single() ?>
@@ -40,13 +40,13 @@
 			<?php dgc_entry_meta(); ?>
 
 			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { ?>
-				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'taxonomy' ), __( '1 Comment', 'taxonomy' ), __( '% Comments', 'taxonomy' ) ); ?></span>
+				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'textdomain' ), __( '1 Comment', 'textdomain' ), __( '% Comments', 'textdomain' ) ); ?></span>
 			<?php } ?>
 
 			<?php if ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
 				<?php get_template_part( 'author-bio' ); ?>
 			<?php endif; ?>
-			<?php edit_post_link( __( 'Edit', 'taxonomy' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php edit_post_link( __( 'Edit', 'textdomain' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- .entry-meta -->
 	</div>	
 </article><!-- #post -->
