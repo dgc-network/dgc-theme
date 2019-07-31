@@ -6,17 +6,17 @@
  * @subpackage dgc-wordpress-theme
  * @since dgc-wordpress-theme 1.0
  */?>
- 
+
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php do_action( 'before_sidebar' ); ?>
 			<?php if ( ! dynamic_sidebar( 'sidebar-6' ) ) : ?>
 				
 					<aside id="woocommerce_product_search-2" class="widget woocommerce widget_product_search">
-						<h3 class="widget-title"><?php _e('Search Products', 'dgc'); ?></h3>
+						<h3 class="widget-title"><?php _e('Search Products', 'taxonomy'); ?></h3>
 						<?php get_product_search_form(); ?>
 					</aside>
 					<aside id="woocommerce_product_categories-4" class="widget woocommerce widget_product_categories">
-						<h3 class="widget-title"><?php _e('Product Categories', 'dgc'); ?></h3>
+						<h3 class="widget-title"><?php _e('Product Categories', 'taxonomy'); ?></h3>
 						<?php 
 							$args = array('hierarchical' => true);
 							the_widget('WC_Widget_Product_Categories', $args); 

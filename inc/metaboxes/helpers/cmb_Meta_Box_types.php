@@ -250,7 +250,7 @@ class cmb_Meta_Box_types {
 			</tbody>
 		</table>
 		<p class="add-row">
-			<a data-selector="<?php echo $table_id; ?>" class="add-row-button button" href="#"><?php _e( 'Add Row', 'dgc' ); ?></a>
+			<a data-selector="<?php echo $table_id; ?>" class="add-row-button button" href="#"><?php _e( 'Add Row', 'taxonomy' ); ?></a>
 		</p>
 
 		<?php
@@ -306,7 +306,7 @@ class cmb_Meta_Box_types {
 				<?php $this->_render(); ?>
 			</td>
 			<td class="remove-row">
-				<a class="button remove-row-button" href="#"><?php _e( 'Remove', 'dgc' ); ?></a>
+				<a class="button remove-row-button" href="#"><?php _e( 'Remove', 'taxonomy' ); ?></a>
 			</td>
 		</tr>
 
@@ -616,7 +616,7 @@ class cmb_Meta_Box_types {
 		$options    = ''; $i = 1;
 
 		if ( ! $terms ) {
-			$options .= '<li><label>'. __( 'No terms', 'dgc' ) .'</label></li>';
+			$options .= '<li><label>'. __( 'No terms', 'taxonomy' ) .'</label></li>';
 		} else {
 			foreach ( $terms as $term ) {
 				$args = array(
@@ -650,7 +650,7 @@ class cmb_Meta_Box_types {
 		$options = ''; $i = 1;
 
 		if ( ! $terms ) {
-			$options .= '<li><label>'. __( 'No terms', 'dgc' ) .'</label></li>';
+			$options .= '<li><label>'. __( 'No terms', 'taxonomy' ) .'</label></li>';
 		} else {
 
 			foreach ( $terms as $term ) {
@@ -689,7 +689,7 @@ class cmb_Meta_Box_types {
 		$this->input( array(
 			'type'  => 'button',
 			'class' => 'cmb_upload_button button cmb_upload_list',
-			'value'  => __( 'Add or Upload File', 'dgc' ),
+			'value'  => __( 'Add or Upload File', 'taxonomy' ),
 			'name'  => '', 'id'  => '',
 		) );
 
@@ -710,7 +710,7 @@ class cmb_Meta_Box_types {
 					echo
 					'<li class="img_status">',
 						wp_get_attachment_image( $id, $this->field->args( 'preview_size' ) ),
-						'<p class="cmb_remove_wrapper"><a href="#" class="cmb_remove_file_button">'. __( 'Remove Image', 'dgc' ) .'</a></p>
+						'<p class="cmb_remove_wrapper"><a href="#" class="cmb_remove_file_button">'. __( 'Remove Image', 'taxonomy' ) .'</a></p>
 						'. $id_input .'
 					</li>';
 
@@ -721,7 +721,7 @@ class cmb_Meta_Box_types {
 					}
 					echo
 					'<li>',
-						__( 'File:', 'dgc' ), ' <strong>', $title, '</strong>&nbsp;&nbsp;&nbsp; (<a href="', $fullurl, '" target="_blank" rel="external">'. __( 'Download', 'dgc' ) .'</a> / <a href="#" class="cmb_remove_file_button">'. __( 'Remove', 'dgc' ) .'</a>)
+						__( 'File:', 'taxonomy' ), ' <strong>', $title, '</strong>&nbsp;&nbsp;&nbsp; (<a href="', $fullurl, '" target="_blank" rel="external">'. __( 'Download', 'taxonomy' ) .'</a> / <a href="#" class="cmb_remove_file_button">'. __( 'Remove', 'taxonomy' ) .'</a>)
 						'. $id_input .'
 					</li>';
 				}
@@ -743,7 +743,7 @@ class cmb_Meta_Box_types {
 			'size'  => 45,
 			'desc'  => '',
 		) ),
-		'<input class="cmb_upload_button button" type="button" value="'. __( 'Add or Upload File', 'dgc' ) .'" />',
+		'<input class="cmb_upload_button button" type="button" value="'. __( 'Add or Upload File', 'taxonomy' ) .'" />',
 		$this->_desc( true );
 
 		$cached_id = $this->_id();
@@ -775,7 +775,7 @@ class cmb_Meta_Box_types {
 				if ( $this->is_valid_img_ext( $meta_value ) ) {
 					echo '<div class="img_status">';
 					echo '<img style="max-width: 350px; width: 100%; height: auto;" src="', $meta_value, '" alt="" />';
-					echo '<p class="cmb_remove_wrapper"><a href="#" class="cmb_remove_file_button" rel="', $cached_id, '">'. __( 'Remove Image', 'dgc' ) .'</a></p>';
+					echo '<p class="cmb_remove_wrapper"><a href="#" class="cmb_remove_file_button" rel="', $cached_id, '">'. __( 'Remove Image', 'taxonomy' ) .'</a></p>';
 					echo '</div>';
 				} else {
 					// $file_ext = $this->get_file_ext( $meta_value );
@@ -783,7 +783,7 @@ class cmb_Meta_Box_types {
 					for ( $i = 0; $i < count( $parts ); ++$i ) {
 						$title = $parts[$i];
 					}
-					echo __( 'File:', 'dgc' ), ' <strong>', $title, '</strong>&nbsp;&nbsp;&nbsp; (<a href="', $meta_value, '" target="_blank" rel="external">'. __( 'Download', 'dgc' ) .'</a> / <a href="#" class="cmb_remove_file_button" rel="', $cached_id, '">'. __( 'Remove', 'dgc' ) .'</a>)';
+					echo __( 'File:', 'taxonomy' ), ' <strong>', $title, '</strong>&nbsp;&nbsp;&nbsp; (<a href="', $meta_value, '" target="_blank" rel="external">'. __( 'Download', 'taxonomy' ) .'</a> / <a href="#" class="cmb_remove_file_button" rel="', $cached_id, '">'. __( 'Remove', 'taxonomy' ) .'</a>)';
 				}
 			}
 		echo '</div>';

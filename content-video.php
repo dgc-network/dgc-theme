@@ -29,8 +29,8 @@
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'dgc' ) ); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'dgc' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'taxonomy' ) ); ?>
+			<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'taxonomy' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 		</div><!-- .entry-content -->
 
 		<footer class="entry-meta">
@@ -38,14 +38,14 @@
 
 			<?php if ( comments_open() && ! is_single() ) : ?>
 			<span class="comments-link">
-				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'dgc' ) . '</span>', __( 'One comment so far', 'dgc' ), __( 'View all % comments', 'dgc' ) ); ?>
+				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'taxonomy' ) . '</span>', __( 'One comment so far', 'taxonomy' ), __( 'View all % comments', 'taxonomy' ) ); ?>
 			</span><!-- .comments-link -->
 			<?php endif; // comments_open() ?>
 
 			<?php if ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
 				<?php get_template_part( 'author-bio' ); ?>
 			<?php endif; ?>
-			<?php edit_post_link( __( 'Edit', 'dgc' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php edit_post_link( __( 'Edit', 'taxonomy' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- .entry-meta -->
 	</div>
 </article><!-- #post -->

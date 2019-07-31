@@ -19,7 +19,7 @@
 	<?php } ?>
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'dgc' ), 'after' => '</div>' ) ); ?>
-		<?php edit_post_link( __( 'Edit', 'dgc' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'taxonomy' ), 'after' => '</div>' ) ); ?>
+		<?php edit_post_link( __( 'Edit', 'taxonomy' ), '<span class="edit-link">', '</span>' ); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -32,7 +32,7 @@ function dgc_body_classes( $classes ) {
 	}
 	
 	if (class_exists('Woocommerce')) {
-		if (is_shop()) $classes[] = 'shop-page ';
+		if (is_shop()) $classes[] = 'shop-page';
 	} 
 	
 	$theme_options = dgc_get_theme_options();

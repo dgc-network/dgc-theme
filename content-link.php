@@ -29,8 +29,8 @@
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'dgc' ) ); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'dgc' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'taxonomy' ) ); ?>
+			<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'taxonomy' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 		</div><!-- .entry-content -->
 
 		<?php if ( is_single() ) : ?>
@@ -38,7 +38,7 @@
 			<?php dgc_entry_meta(); ?>
 			<?php if ( get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
 				<?php get_template_part( 'author-bio' ); ?>
-				<?php edit_post_link( __( 'Edit', 'dgc' ), '<span class="edit-link">', '</span>' ); ?>
+				<?php edit_post_link( __( 'Edit', 'taxonomy' ), '<span class="edit-link">', '</span>' ); ?>
 			<?php endif; ?>
 		</footer><!-- .entry-meta -->
 		<?php endif; // is_single() ?>
