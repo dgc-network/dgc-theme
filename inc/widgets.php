@@ -43,7 +43,7 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 	 * Displays the form for this widget on the Widgets page of the WP Admin area.
 	 **/
 	function form( $instance ) {
-		$title = isset( $instance['title']) ? esc_attr( $instance['title'] ) : '';
+		$title = isset( $instance['title']) ? esc_attr( $instance['title'] ) : 'Filter & Refine';
 		$number = isset( $instance['number'] ) ? absint( $instance['number'] ) : 10;
 		$textarea_filter_refine = isset( $instance['textarea_filter_refine'] ) ? stripslashes( $instance['textarea_filter_refine'] ) : '';
 ?>
@@ -100,6 +100,8 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 						) 
 			);
 	?>
+	
+		<?php echo $args['before_widget'];  ?>
 		<?php if ( $title ) echo $args['before_title'] . $title . $args['after_title']; ?>
 		<div class="filter_refine_wrapper">
 			<?php if ( $custom_content != '') { ?>
@@ -152,11 +154,15 @@ $get_terms_default_attributes = array (
 	'meta_key' => array(),
 	'meta_value'=> '',
 );
+$get_terms_default_attributes = array (
+	'taxonomy' => 'product_tag',
+	'orderby' => 'name',
+);
 $terms = get_terms( $get_terms_default_attributes );
 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
-    foreach ( $terms as $term ) {
-		echo $term->name . ', '; 
-    }
+    foreach ( $terms as $term ) { ?>
+		<input type="checkbox" name="vehicle1" value="Bike"> <?php $term->name ?><br>
+    <?php }
 }				
 ?>
 				<input type="checkbox" name="vehicle1" value="Bike"> Home<br>
@@ -192,6 +198,7 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 			</span> 
 			<?php endif; // End if $tags_list ?>
 		</div>
+		<?php echo $args['after_widget']; ?>
 		
 			
 	<?php if ($r->have_posts()) :
