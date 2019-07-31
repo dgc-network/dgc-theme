@@ -100,7 +100,7 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 						) 
 			);
 	?>
-	
+
 		<?php echo $args['before_widget'];  ?>
 		<?php if ( $title ) echo $args['before_title'] . $title . $args['after_title']; ?>
 		<div class="filter_refine_wrapper">
@@ -158,10 +158,47 @@ $get_terms_default_attributes = array (
 	'taxonomy' => 'product_tag',
 	'orderby' => 'name',
 );
+
+$terms = get_terms( 'product_tag' );
+$term_array = array();
+if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+    foreach ( $terms as $term ) {
+        $term_array[] = $term->name;
+    }
+}
+
+$get_terms_default_attributes = array (
+	'taxonomy' => 'product_tag', //empty string(''), false, 0 don't work, and return empty array
+	'orderby' => 'name',
+	'order' => 'ASC',
+	'hide_empty' => true, //can be 1, '1' too
+	'include' => 'all', //empty string(''), false, 0 don't work, and return empty array
+	'exclude' => 'all', //empty string(''), false, 0 don't work, and return empty array
+	'exclude_tree' => 'all', //empty string(''), false, 0 don't work, and return empty array
+	'number' => false, //can be 0, '0', '' too
+	'offset' => '',
+	'fields' => 'all',
+	'name' => '',
+	'slug' => '',
+	'hierarchical' => true, //can be 1, '1' too
+	'search' => '',
+	'name__like' => '',
+	'description__like' => '',
+	'pad_counts' => false, //can be 0, '0', '' too
+	'get' => '',
+	'child_of' => false, //can be 0, '0', '' too
+	'childless' => false,
+	'cache_domain' => 'core',
+	'update_term_meta_cache' => true, //can be 1, '1' too
+	'meta_query' => '',
+	'meta_key' => array(),
+	'meta_value'=> '',
+);
+
 $terms = get_terms( $get_terms_default_attributes );
 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
     foreach ( $terms as $term ) { ?>
-		<input type="checkbox" name="vehicle1" value="Bike"> <?php $term->name ?><br>
+		<input type="checkbox" name="vehicle1" value="Bike"> <?php __( $term->name, 'taxonomy') ?><br>
     <?php }
 }				
 ?>
