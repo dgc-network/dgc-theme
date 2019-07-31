@@ -101,6 +101,7 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 			);
 	?>
 		<?php if ( $title ) echo $args['before_title'] . $title . $args['after_title']; ?>
+		<div class="filter_refine_wrapper">
 			<?php if ( $custom_content != '') { ?>
 				<div class="filter_refine_message"><p><?php echo $custom_content; ?></p></div>	
 			<?php } ?>
@@ -163,6 +164,7 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 				<?php echo $tags_list; ?>
 			</span> 
 			<?php endif; // End if $tags_list ?>
+		</div>
 		
 			
 	<?php if ($r->have_posts()) :
