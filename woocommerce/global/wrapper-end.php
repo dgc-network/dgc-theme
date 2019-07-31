@@ -20,6 +20,7 @@ $woo_sidebar = dgc_get_woo_sidebar();
 
 if ($woo_sidebar == 1 || $woo_sidebar == 4 || $woo_sidebar == 5) {
     echo '</div></div></div>';
+
 } elseif($woo_sidebar == 2) {
     echo '</div></div></div>';
     echo '<div class="five columns alpha woo-loop-sidebar">';
@@ -29,6 +30,7 @@ if ($woo_sidebar == 1 || $woo_sidebar == 4 || $woo_sidebar == 5) {
             get_sidebar( 'product' );
         }
     echo '</div>';
+    
 } else {
     echo '</div></div></div>';
     echo '<div class="five columns omega woo-loop-sidebar">';
