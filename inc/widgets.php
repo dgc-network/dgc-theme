@@ -84,7 +84,7 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 			apply_filters(  'widget_posts_args', 
 						array(  'posts_per_page' => -1, 
 								'no_found_rows'  => true, 
-								'post_status'    => 'publish', 
+								'post_type'    => 'product', 
 								'ignore_sticky_posts' => true 
 							) 
 						) 
