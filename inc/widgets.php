@@ -55,7 +55,7 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 			
 			
 			<p><label for="<?php echo esc_attr( $this->get_field_id( 'textarea_filter_refine' ) ); ?>"><?php _e( 'Text Message:', 'taxonomy' ); ?></label>
-			<textarea id="<?php 	echo esc_attr( $this->get_field_id( 'textarea_filter_refine' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'textarea_newsarchiv' ) ); ?>" class="widefat" cols="16" rows="5"><?php echo stripslashes( $textarea_filter_refine ); ?></textarea></p>
+			<textarea id="<?php echo esc_attr( $this->get_field_id( 'textarea_filter_refine' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'textarea_filter_refine' ) ); ?>" class="widefat" cols="16" rows="5"><?php echo stripslashes( $textarea_filter_refine ); ?></textarea></p>
 		<?php
 	}
 
@@ -78,7 +78,7 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 
 		$title 			= apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Filter & Refine', 'taxonomy' ) : $instance['title'], $instance, $this->id_base);
 		$number 		= empty( $instance['number'] ) ? 10 : absint( $instance['number'] );
-		$custom_content = empty ($instance['textarea_filter_refine']) ? null : stripslashes($instance['textarea_filter_refine']);
+		$custom_content = empty( $instance['textarea_filter_refine']) ? null : stripslashes($instance['textarea_filter_refine']);
 		
 		$r = new WP_Query( 
 			apply_filters(  'widget_posts_args', 
@@ -90,6 +90,10 @@ class DGC_Widget_Filter_Refine extends WP_Widget {
 						) 
 			);
 	?>
+			<?php if ( $custom_content != '') { ?>
+				<div class="filter_refine_message"><p><?php echo $custom_content; ?></p></div>	
+			<?php } ?>
+
 			<div>
 				<input type="checkbox" name="vehicle1" value="Bike"> Product Code<br>
 				<input type="checkbox" name="vehicle2" value="Car"> Product Title<br>
