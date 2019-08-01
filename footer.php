@@ -16,10 +16,36 @@
 			<div class="container">
 				<div class="sixteen columns">
 
-					<?php get_sidebar( 'footer1' ); ?>
-					<?php get_sidebar( 'footer2' ); ?>
-					<?php get_sidebar( 'footer3' ); ?>
-					<?php get_sidebar( 'footer4' ); ?>
+				<?php
+				if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) ||
+					is_active_sidebar( 'footer-3' ) || is_active_sidebar( 'footer-4' ) ) :
+				?>
+
+					<aside class="widget-area" role="complementary">
+						<?php
+						if ( is_active_sidebar( 'footer-1' ) ) { ?>
+							<div class="widget-column footer-widget-1">
+								<?php dynamic_sidebar( 'footer-1' ); ?>
+							</div>
+						<?php }
+						if ( is_active_sidebar( 'footer-2' ) ) { ?>
+							<div class="widget-column footer-widget-2">
+								<?php dynamic_sidebar( 'footer-2' ); ?>
+							</div>
+						<?php }
+						if ( is_active_sidebar( 'footer-3' ) ) { ?>
+							<div class="widget-column footer-widget-3">
+								<?php dynamic_sidebar( 'footer-3' ); ?>
+							</div>
+						<?php }
+						if ( is_active_sidebar( 'footer-4' ) ) { ?>
+							<div class="widget-column footer-widget-4">
+								<?php dynamic_sidebar( 'footer-4' ); ?>
+							</div>
+						<?php } ?>
+					</aside><!-- .widget-area -->
+
+				<?php endif; ?>
 
 					<div class="site-info">
 						<?php dgc_get_footer_text(); ?>
