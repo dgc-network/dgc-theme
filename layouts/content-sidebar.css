@@ -21,7 +21,7 @@ Layout: Content-Sidebar
 }
 .site-footer {
 	clear: both;
-	width: 100%;
+	/* width: 100%; */
 }
 .site-footer .widget-column.footer-widget-1 {
 	float: left;
