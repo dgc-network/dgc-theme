@@ -101,7 +101,9 @@ add_filter( 'wpforms_shareasale_id', 'dgc_wpforms_shareasale_id' );
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
-require get_template_directory() . '/inc/widgets.php';
+//require get_template_directory() . '/inc/widgets.php';
+require get_template_directory() . '/widgets/widget-news-archive.php';
+require get_template_directory() . '/widgets/widget-filter-refine.php';
 
 
 /**
@@ -253,8 +255,8 @@ add_filter( 'post_thumbnail_html', 'dgc_thumbnail_size', 0, 5 );
  */
 if ( ! function_exists( 'dgc_widgets_init' ) ) {
 	function dgc_widgets_init() {
-		register_widget( 'DGC_Widget_News_Archive' );
-		register_widget( 'DGC_Widget_Filter_Refine' );
+		//register_widget( 'DGC_News_Archive_Widget' );
+		//register_widget( 'DGC_Filter_Refine_Widget' );
 	
 		register_sidebar( array(
 			'name' => __( 'Footer1', 'textdomain' ),

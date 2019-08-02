@@ -1117,7 +1117,7 @@ body .woocommerce ul#shipping_method li, body.woocommerce-page ul#shipping_metho
 
 
 /*---ACCOUNT PAGE---*/
-.woocommerce-account input:-webkit-autofill {	-webkit-box-shadow: 0 0 0px 1000px white inset !important;}
+/* .woocommerce-account input:-webkit-autofill {	-webkit-box-shadow: 0 0 0px 1000px white inset !important;} */
 .woocommerce-account #page .container .entry-header {border: 0;}
 .woocommerce-account  .woocommerce .col2-set .col-1,
 .woocommerce-account .woocommerce-page .col2-set .col-1{width:272px;padding:0; margin:0 80px 0 0}
