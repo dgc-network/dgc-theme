@@ -17,41 +17,40 @@
 <style type="text/css">
 * {margin: 0; padding: 0;}
 #container {height: 100%; width:100%; font-size: 0;}
-#left, #middle, #right {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
-#left {width: 25%; background: blue;}
-#middle {width: 50%; background: green;}
-#right {width: 25%; background: yellow;}
+#footer1, #footer2, #footer3, #footer4 {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
+#footer1 {width: 25%; background: gray;}
+#footer2 {width: 25%; background: gray;}
+#footer3 {width: 25%; background: gray;}
+#footer4 {width: 25%; background: gray;}
 </style>
 
 <div id="container">
-    <div id="left">Left Side Menu</div>
-    <div id="middle">Random Content</div>
-    <div id="right">Right Side Menu</div>
+    <div id="footer1">
+		<h3>About</h3>
+		<p>
+			Engineering Library is a Hong Kong
+			based of information
+			service company, which
+			provides content and
+			tools to help customers
+			drive innovation, protect
+			their intellectual assets
+			and maximize the value
+			of their intellectual
+			property.
+		</p>
+	</div>
+    <div id="footer2">
+		<h3>Contact Us</h3>
+	</div>
+    <div id="footer3">
+		<h3>Publisher</h3><br>
+		<h3>Product</h3><br>
+		<h3>FAQ</h3><br>
+		<h3>Copyright & Permissions</h3><br>
+	</div>
+    <div id="footer4">Ali</div>
 </div>
-
-			<div id="chunkyfooter">
-				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer') ) ?>
-			</div>
-
-			<div id='footer-widgets' width=100%>
-						<div id="footer-widget1" width=20%>
-							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-1') ) : ?>
-							<?php endif; ?>
-						</div>
-						<div id="footer-widget2" width=20%>
-							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-2') ) : ?>
-							<?php endif; ?>
-						</div>
-						<div id="footer-widget3" width=20%>
-							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-3') ) : ?>
-							<?php endif; ?>
-						</div>
-						<div id="footer-widget4" width=20%>
-							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-4') ) : ?>
-							<?php endif; ?>
-						</div>
-			</div>
-			<div style="clear-both"></div>
 
 			<div class="container">
 				<div class="sixteen columns">
