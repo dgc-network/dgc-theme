@@ -13,16 +13,8 @@
 			</div>
 		</div><!-- .page-container-->
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="container">
-				<div class="sixteen columns">
 
-				<?php
-				if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) ||
-					is_active_sidebar( 'footer-3' ) || is_active_sidebar( 'footer-4' ) ) :
-				?>
-
-					<!-- <aside class="widget-area" role="complementary"> -->
-					<div id='footer-widgets' width=100%>
+			<div id='footer-widgets' width=100%>
 						<div id="footer-widget1" width=20%>
 							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-1') ) : ?>
 							<h2>Hello</h2>
@@ -43,9 +35,18 @@
 							<h2>Hello</h2>
 							<?php endif; ?>
 						</div>
-					</div>
-					<div style="clear-both"></div>
+			</div>
+			<div style="clear-both"></div>
 
+			<div class="container">
+				<div class="sixteen columns">
+
+				<?php
+				if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) ||
+					is_active_sidebar( 'footer-3' ) || is_active_sidebar( 'footer-4' ) ) :
+				?>
+
+					<!-- <aside class="widget-area" role="complementary"> -->
 						<?php
 						//if ( is_active_sidebar( 'footer-1' ) ) { ?>
 							<div class="widget-column footer-widget-1" width=20%>
