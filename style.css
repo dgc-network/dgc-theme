@@ -2721,3 +2721,27 @@ div#fbSEOComments{
 	padding: 10px;
 	background-color: #ffffff;
 	}
+
+/* Chunky Footer */
+
+#chunkyfooter {
+	clear: both;
+	margin: 0 10px;
+	background: #eee;
+	overflow: hidden;
+	padding-top: 10px;
+	}
+	
+	#chunkyfooter div {
+	width: 180px;
+	float: left;
+	padding: 0 10px;
+	}
+	
+	#chunkyfooter h2 {
+	margin-top: 0;
+	}
+	
+	#chunkyfooter ul {
+	padding-left: 14px;
+	}

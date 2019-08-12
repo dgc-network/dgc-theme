@@ -14,6 +14,10 @@
 		</div><!-- .page-container-->
 		<footer id="colophon" class="site-footer" role="contentinfo">
 
+			<div id="chunkyfooter">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer') ) ?>
+			</div>
+
 			<div id='footer-widgets' width=100%>
 						<div id="footer-widget1" width=20%>
 							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-1') ) : ?>
