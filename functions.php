@@ -109,7 +109,7 @@ require get_template_directory() . '/widgets/widget-filter-refine.php';
 /**
  * Adding recommended plugins for dgc-wordpress-theme.
  */
-require_once('inc/func/plugins-included.php');
+require_once('includes/func/plugins-included.php');
 
 
 /**

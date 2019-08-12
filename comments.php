@@ -49,7 +49,7 @@
 				 * to use dgc_comment() to format the comments.
 				 * If you want to overload this in a child theme then you can
 				 * define dgc_comment() and that will be used instead.
-				 * See dgc_comment() in inc/template-tags.php for more.
+				 * See dgc_comment() in includes/template-tags.php for more.
 				 */
 				wp_list_comments( array( 'callback' => 'dgc_comment' ) );
 			?>
