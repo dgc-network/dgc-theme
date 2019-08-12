@@ -102,8 +102,8 @@ add_filter( 'wpforms_shareasale_id', 'dgc_wpforms_shareasale_id' );
  */
 require get_template_directory() . '/includes/template-tags.php';
 //require get_template_directory() . '/includes/widgets.php';
-require get_template_directory() . '/widgets/widget-news-archive.php';
-require get_template_directory() . '/widgets/widget-filter-refine.php';
+//require get_template_directory() . '/widgets/widget-news-archive.php';
+//require get_template_directory() . '/widgets/widget-filter-refine.php';
 
 
 /**
