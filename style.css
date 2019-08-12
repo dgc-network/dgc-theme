@@ -2678,3 +2678,43 @@ div#fbSEOComments{
 	#page-header .container header .header-hgroup a.link-logo-retina  {display:block; width:100%; margin:0 auto}
 	#page-header .container header .center-pos a.link-logo-retina {width:50%}
 }
+
+#footer-widgets {
+	display: block;
+	/* width:950px; */
+	width:100%;
+	margin-right:0;
+	background: #ffffff;
+	}
+#footer-widget1 {
+	/* width: 260px; */
+	width:20%;
+	float: left;
+	margin: 15px 10px 10px 30px;
+	padding: 10px;
+	background-color: #ffffff;
+	}
+#footer-widget2 {
+	/* width: 260px; */
+	width:20%;
+	float: left;
+	margin: 15px 10px 10px 15px;
+	padding: 10px;
+	background-color: #ffffff;
+	}
+#footer-widget3 {
+	/* width: 260px; */
+	width:20%;
+	float: left;
+	margin: 15px 10px 10px 15px;
+	padding: 10px;
+	background-color: #ffffff;
+	}
+#footer-widget4 {
+	/* width: 260px; */
+	width:20%;
+	float: left;
+	margin: 15px 10px 10px 15px;
+	padding: 10px;
+	background-color: #ffffff;
+	}

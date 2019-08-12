@@ -259,37 +259,45 @@ if ( ! function_exists( 'dgc_widgets_init' ) ) {
 		//register_widget( 'DGC_Filter_Refine_Widget' );
 	
 		register_sidebar( array(
-			'name' => __( 'Footer1', 'textdomain' ),
+			'name' => __( 'Footer Widget 1', 'textdomain' ),
 			'id' => 'footer-1',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
+			//'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			//'after_widget' => '</aside>',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
 		) );
 	
 		register_sidebar( array(
-			'name' => __( 'Footer2', 'textdomain' ),
+			'name' => __( 'Footer Widget 2', 'textdomain' ),
 			'id' => 'footer-2',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
+			//'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			//'after_widget' => '</aside>',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
 		) );
 	
 		register_sidebar( array(
-			'name' => __( 'Footer3', 'textdomain' ),
+			'name' => __( 'Footer Widget 3', 'textdomain' ),
 			'id' => 'footer-3',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
+			//'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			//'after_widget' => '</aside>',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
 		) );
 	
 		register_sidebar( array(
-			'name' => __( 'Footer4', 'textdomain' ),
+			'name' => __( 'Footer Widget 4', 'textdomain' ),
 			'id' => 'footer-4',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
+			//'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			//'after_widget' => '</aside>',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
 		) );

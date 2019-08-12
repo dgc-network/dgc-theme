@@ -22,25 +22,45 @@
 				?>
 
 					<!-- <aside class="widget-area" role="complementary"> -->
+					<div id='footer-widgets'>
+						<div id="footer-widget1">
+							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-1') ) : ?>
+							<?php endif; ?>
+						</div>
+						<div id="footer-widget2">
+							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-2') ) : ?>
+							<?php endif; ?>
+						</div>
+						<div id="footer-widget3">
+							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-3') ) : ?>
+							<?php endif; ?>
+						</div>
+						<div id="footer-widget4">
+							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-4') ) : ?>
+							<?php endif; ?>
+						</div>
+					</div>
+					<div style="clear-both"></div>
+
 						<?php
 						if ( is_active_sidebar( 'footer-1' ) ) { ?>
 							<div class="widget-column footer-widget-1" width=20%>
-								<?php dynamic_sidebar( 'footer-1' ); ?>
+								<?php //dynamic_sidebar( 'footer-1' ); ?>
 							</div>
 						<?php }
 						if ( is_active_sidebar( 'footer-2' ) ) { ?>
 							<div class="widget-column footer-widget-2" width=20%>
-								<?php dynamic_sidebar( 'footer-2' ); ?>
+								<?php //dynamic_sidebar( 'footer-2' ); ?>
 							</div>
 						<?php }
 						if ( is_active_sidebar( 'footer-3' ) ) { ?>
 							<div class="widget-column footer-widget-3" width=20%>
-								<?php dynamic_sidebar( 'footer-3' ); ?>
+								<?php //dynamic_sidebar( 'footer-3' ); ?>
 							</div>
 						<?php }
 						if ( is_active_sidebar( 'footer-4' ) ) { ?>
 							<div class="widget-column footer-widget-4" width=20%>
-								<?php dynamic_sidebar( 'footer-4' ); ?>
+								<?php //dynamic_sidebar( 'footer-4' ); ?>
 							</div>
 						<?php } ?>
 					<!-- </aside> --><!-- .widget-area -->
