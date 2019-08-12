@@ -14,12 +14,20 @@
 		</div><!-- .page-container-->
 		<footer id="colophon" class="site-footer" role="contentinfo">
 
-			<div style="width:100%">
-				<div style="width:20%">Hello</div>
-				<div style="width:20%">Hello</div>
-				<div style="width:20%">Hello</div>
-				<div style="width:20%">Hello</div>
-			</div>	
+<style type="text/css">
+* {margin: 0; padding: 0;}
+#container {height: 100%; width:100%; font-size: 0;}
+#left, #middle, #right {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
+#left {width: 25%; background: blue;}
+#middle {width: 50%; background: green;}
+#right {width: 25%; background: yellow;}
+</style>
+
+<div id="container">
+    <div id="left">Left Side Menu</div>
+    <div id="middle">Random Content</div>
+    <div id="right">Right Side Menu</div>
+</div>
 
 			<div id="chunkyfooter">
 				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer') ) ?>
