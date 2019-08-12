@@ -21,7 +21,7 @@
 					is_active_sidebar( 'footer-3' ) || is_active_sidebar( 'footer-4' ) ) :
 				?>
 
-					<aside class="widget-area" role="complementary">
+					<!-- <aside class="widget-area" role="complementary"> -->
 						<?php
 						if ( is_active_sidebar( 'footer-1' ) ) { ?>
 							<div class="widget-column footer-widget-1" width=20%>
@@ -43,7 +43,7 @@
 								<?php dynamic_sidebar( 'footer-4' ); ?>
 							</div>
 						<?php } ?>
-					</aside><!-- .widget-area -->
+					<!-- </aside> --><!-- .widget-area -->
 
 				<?php endif; ?>
 
