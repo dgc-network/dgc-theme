@@ -23,21 +23,5 @@ Layout: Content-Sidebar-Sidebar
 }
 .site-footer {
 	clear: both;
-	/* width: 100%; */
-}
-.site-footer .widget-column.footer-widget-1 {
-	float: left;
-	width: 30%;
-}
-.site-footer .widget-column.footer-widget-2 {
-	float: right;
-	width: 30%;
-}
-.site-footer .widget-column.footer-widget-3 {
-	float: left;
-	width: 30%;
-}
-.site-footer .widget-column.footer-widget-4 {
-	float: right;
-	width: 10%;
+	width: 100%;
 }

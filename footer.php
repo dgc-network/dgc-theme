@@ -25,18 +25,22 @@
 					<div id='footer-widgets'>
 						<div id="footer-widget1">
 							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-1') ) : ?>
+							<h2>Hello</h2>
 							<?php endif; ?>
 						</div>
 						<div id="footer-widget2">
 							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-2') ) : ?>
+							<h2>Hello</h2>
 							<?php endif; ?>
 						</div>
 						<div id="footer-widget3">
 							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-3') ) : ?>
+							<h2>Hello</h2>
 							<?php endif; ?>
 						</div>
 						<div id="footer-widget4">
 							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-4') ) : ?>
+							<h2>Hello</h2>
 							<?php endif; ?>
 						</div>
 					</div>
