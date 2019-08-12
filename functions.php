@@ -11,9 +11,9 @@
  *
  * @since dgc-wordpress-theme 1.0
  */
-if ( ! isset( $content_width ) )
-	   $content_width = 960; /* pixels */
+if ( ! isset( $content_width ) ) $content_width = 960; /* pixels */
 
+/* Polylang */
 // 確保複製過去時帶入預設標題
 function mxp_editor_title( $title ) {
     // Polylang 會帶入 'from_post' 這組 GET 參數
