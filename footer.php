@@ -22,23 +22,23 @@
 				?>
 
 					<!-- <aside class="widget-area" role="complementary"> -->
-					<div id='footer-widgets'>
-						<div id="footer-widget1">
+					<div id='footer-widgets' width=100%>
+						<div id="footer-widget1" width=20%>
 							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-1') ) : ?>
 							<h2>Hello</h2>
 							<?php endif; ?>
 						</div>
-						<div id="footer-widget2">
+						<div id="footer-widget2" width=20%>
 							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-2') ) : ?>
 							<h2>Hello</h2>
 							<?php endif; ?>
 						</div>
-						<div id="footer-widget3">
+						<div id="footer-widget3" width=20%>
 							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-3') ) : ?>
 							<h2>Hello</h2>
 							<?php endif; ?>
 						</div>
-						<div id="footer-widget4">
+						<div id="footer-widget4" width=20%>
 							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-4') ) : ?>
 							<h2>Hello</h2>
 							<?php endif; ?>
