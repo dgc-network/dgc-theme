@@ -14,11 +14,11 @@
 		</div><!-- .page-container-->
 		<footer id="colophon" class="site-footer" role="contentinfo">
 
-			<div width=100%>
-				<div width=20%>Hello</div>
-				<div width=20%>Hello</div>
-				<div width=20%>Hello</div>
-				<div width=20%>Hello</div>
+			<div width="100%">
+				<div width="20%">Hello</div>
+				<div width="20%">Hello</div>
+				<div width="20%">Hello</div>
+				<div width="20%">Hello</div>
 			</div>	
 
 			<div id="chunkyfooter">
