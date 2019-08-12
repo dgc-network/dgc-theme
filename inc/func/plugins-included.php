@@ -14,13 +14,13 @@ function dgc_register_required_plugins() {
 			'slug'    => 'maintenance',
 			'required'  => false,
 		),
-
+/*
 		array(
 			'name'    => 'dgc-wordpress-theme Shortcodes',
 			'slug'    => 'dgc-shortcodes',
 			'required'  => true,
 		),
-		
+*/		
 		array(
 			'name'     				=> 'Elementor', 
 			'slug'     				=> 'elementor ',
@@ -36,15 +36,15 @@ function dgc_register_required_plugins() {
 	);
 
 	$config = array(
-		'id'           => 'textdomain',                  // Unique ID for hashing notices for multiple instances of TGMPA.
-		'default_path' => '',                          // Default absolute path to bundled plugins.
-		'menu'         => 'tgmpa-install-plugins',  // Menu slug.
-		'parent_slug'  => 'themes.php',           	   // Parent menu slug.
-		'capability'   => 'edit_theme_options',   	 // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
-		'has_notices'  => true,                    	// Show admin notices or not.
-		'dismissable'  => true,                   	 // If false, a user cannot dismiss the nag message.
-		'dismiss_msg'  => '',                     	 // If 'dismissable' is false, this message will be output at top of nag.
-		'is_automatic' => false,                  	 // Automatically activate plugins after installation or not.
+		'id'           => 'textdomain',				// Unique ID for hashing notices for multiple instances of TGMPA.
+		'default_path' => '',						// Default absolute path to bundled plugins.
+		'menu'         => 'tgmpa-install-plugins',	// Menu slug.
+		'parent_slug'  => 'themes.php',				// Parent menu slug.
+		'capability'   => 'edit_theme_options',		// Capability needed to view plugin install page, should be a capability associated with the parent menu used.
+		'has_notices'  => true,						// Show admin notices or not.
+		'dismissable'  => true,						// If false, a user cannot dismiss the nag message.
+		'dismiss_msg'  => '',						// If 'dismissable' is false, this message will be output at top of nag.
+		'is_automatic' => false,					// Automatically activate plugins after installation or not.
 		'message'       => '<span class="dgc-msg"><br />1. Select all plugins checkbox to the left of "Plugin" <br />2. Click "Bulk Actions" and then Install <br />3. Click "Apply" button</span>',              
 		'strings'      => array(
 			'page_title'                            => __( 'dgc-wordpress-theme Plugin Integration', 'textdomain' ),
@@ -108,7 +108,6 @@ function dgc_register_required_plugins() {
 		),
 	); 
 	
-
   tgmpa( $plugins, $config );
 }
 
