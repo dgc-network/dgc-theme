@@ -2,14 +2,14 @@
 
 function dgc_add_admin_style() {
 	if(is_rtl()){
-		wp_enqueue_style('admin-style', 	get_template_directory_uri() . '/inc/css/admin-rtl.css');
+		wp_enqueue_style('admin-style', 	get_template_directory_uri() . '/includes/css/admin-rtl.css');
 	} else {
-		wp_enqueue_style('admin-style',		get_template_directory_uri() . '/inc/css/admin.css');
+		wp_enqueue_style('admin-style',		get_template_directory_uri() . '/includes/css/admin.css');
 	}
-	wp_enqueue_style('fonts-style', 		get_template_directory_uri() . '/inc/css/fonts-style.css');
-	wp_enqueue_style('ch-style',			get_template_directory_uri() . '/inc/js/ch/ch.css');
-	wp_enqueue_style('sl-style',			get_template_directory_uri() . '/inc/js/sl/jquery.formstyler.css');
-	wp_enqueue_style('dialog', 				get_template_directory_uri() . '/inc/js/dialogBox/jquery-impromptu.css');
+	wp_enqueue_style('fonts-style', 		get_template_directory_uri() . '/includes/css/fonts-style.css');
+	wp_enqueue_style('ch-style',			get_template_directory_uri() . '/includes/js/ch/ch.css');
+	wp_enqueue_style('sl-style',			get_template_directory_uri() . '/includes/js/sl/jquery.formstyler.css');
+	wp_enqueue_style('dialog', 				get_template_directory_uri() . '/includes/js/dialogBox/jquery-impromptu.css');
 	wp_enqueue_style( 'wp-color-picker' );
 }
 
@@ -24,12 +24,12 @@ function dgc_add_jquery_script() {
 		wp_enqueue_script('thickbox');
 	}
 	
-	wp_enqueue_script('chJq',				get_template_directory_uri() . "/inc/js/ch/ch.js", array('jquery'));
-	wp_enqueue_script('slJq',				get_template_directory_uri() . "/inc/js/sl/jquery.formstyler.min.js", array('jquery'));
-	wp_enqueue_script('dialog', 			get_template_directory_uri() . "/inc/js/dialogBox/jquery-impromptu.min.js",  array('jquery'));
-	wp_enqueue_script('uploads_',			get_template_directory_uri() . "/inc/js/uploads_.js", array('jquery'));
-	wp_enqueue_script('cookie_',			get_template_directory_uri() . "/inc/js/cookie_.js", array('jquery'));
-	wp_enqueue_script('admin-jQuery-fruit',	get_template_directory_uri() . "/inc/js/main.js", array('jquery'));
+	wp_enqueue_script('chJq',				get_template_directory_uri() . "/includes/js/ch/ch.js", array('jquery'));
+	wp_enqueue_script('slJq',				get_template_directory_uri() . "/includes/js/sl/jquery.formstyler.min.js", array('jquery'));
+	wp_enqueue_script('dialog', 			get_template_directory_uri() . "/includes/js/dialogBox/jquery-impromptu.min.js",  array('jquery'));
+	wp_enqueue_script('uploads_',			get_template_directory_uri() . "/includes/js/uploads_.js", array('jquery'));
+	wp_enqueue_script('cookie_',			get_template_directory_uri() . "/includes/js/cookie_.js", array('jquery'));
+	wp_enqueue_script('admin-jQuery-fruit',	get_template_directory_uri() . "/includes/js/main.js", array('jquery'));
 }
 
 function dgc_fonts_list() {

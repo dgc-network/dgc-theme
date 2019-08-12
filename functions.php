@@ -95,13 +95,13 @@ add_filter( 'wpforms_shareasale_id', 'dgc_wpforms_shareasale_id' );
  * Implement the Custom Header feature
  */
  
- /*require get_template_directory() . '/inc/custom-header.php';*/
+ /*require get_template_directory() . '/includes/custom-header.php';*/
 
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
-//require get_template_directory() . '/inc/widgets.php';
+require get_template_directory() . '/includes/template-tags.php';
+//require get_template_directory() . '/includes/widgets.php';
 require get_template_directory() . '/widgets/widget-news-archive.php';
 require get_template_directory() . '/widgets/widget-filter-refine.php';
 
@@ -115,16 +115,16 @@ require_once('inc/func/plugins-included.php');
 /**
  * Custom functions that act independently of the theme templates
  */
-require get_template_directory() . '/inc/tweaks.php';
-require get_template_directory() . '/inc/func/dgc-function.php';
-require get_template_directory() . '/inc/func/comment-inline-error.php';
-require get_template_directory() . '/inc/metaboxes/init-for-objestcs-mb.php';
+require get_template_directory() . '/includes/tweaks.php';
+require get_template_directory() . '/includes/func/dgc-function.php';
+require get_template_directory() . '/includes/func/comment-inline-error.php';
+require get_template_directory() . '/includes/metaboxes/init-for-objestcs-mb.php';
 	
 /**
  * Custom Theme Options
  */
-require get_template_directory() . '/inc/theme-options/theme-options.php';
-require get_template_directory() . '/inc/theme-options/customizer/customizer.php';
+require get_template_directory() . '/includes/theme-options/theme-options.php';
+require get_template_directory() . '/includes/theme-options/customizer/customizer.php';
 
 if ( ! function_exists( 'dgc_fonts_url' ) ) {
     function dgc_fonts_url() {

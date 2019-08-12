@@ -260,8 +260,8 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 		<?php echo $args['after_widget']; ?>
 		
 		<?php
-			wp_enqueue_script('wdgt_news_arch', 	get_template_directory_uri() . '/inc/js/jxBox/jquery.bxSlider.js', array( 'jquery' ), '20120206', false );
-			wp_enqueue_style( 'wdgt_news_style', 	get_template_directory_uri() . '/inc/js/jxBox/bx.css');
+			wp_enqueue_script('wdgt_news_arch', 	get_template_directory_uri() . '/includes/js/jxBox/jquery.bxSlider.js', array( 'jquery' ), '20120206', false );
+			wp_enqueue_style( 'wdgt_news_style', 	get_template_directory_uri() . '/includes/js/jxBox/bx.css');
 		?>			
 	
 		<script type="text/javascript">
