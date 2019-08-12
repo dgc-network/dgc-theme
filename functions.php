@@ -258,23 +258,6 @@ if ( ! function_exists( 'dgc_widgets_init' ) ) {
 		//register_widget( 'DGC_News_Archive_Widget' );
 		//register_widget( 'DGC_Filter_Refine_Widget' );
 	
-		if ( function_exists('register_sidebar') ) {
-			register_sidebar(array(
-			'before_widget' => '<li id="%1$s" class="widget %2$s">',
-			'after_widget' => '</li>',
-			'before_title' => '<h2 class="widgettitle">',
-			'after_title' => '</h2>',
-			));
-			
-			register_sidebar(array(
-			'name' => 'Footer',
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div>',
-			'before_title' => '<h2>',
-			'after_title' => '</h2>',
-			));			
-		}
-
 		register_sidebar( array(
 			'name' => __( 'Footer Widget 1', 'textdomain' ),
 			'id' => 'footer-1',

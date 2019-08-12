@@ -16,12 +16,12 @@
 
 <style type="text/css">
 * {margin: 0; padding: 0;}
-#container {height: 100%; width:100%; font-size: 0;}
+#container {height: 100%; width:100%; font-size: 0; background: gray;}
 #footer1, #footer2, #footer3, #footer4 {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
-#footer1 {width: 25%; background: gray;}
-#footer2 {width: 25%; background: gray;}
-#footer3 {width: 25%; background: gray;}
-#footer4 {width: 25%; background: gray;}
+#footer1 {width: 30%;}
+#footer2 {width: 30%;}
+#footer3 {width: 30%;}
+#footer4 {width: 10%;}
 </style>
 
 <div id="container">
