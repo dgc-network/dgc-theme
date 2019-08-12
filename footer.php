@@ -16,16 +16,16 @@
 
 <style type="text/css">
 * {margin: 0; padding: 0;}
-#container {height: 100%; width:100%; font-size: 0; background: gray;}
-#footer1, #footer2, #footer3, #footer4 {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
-#footer1 {width: 30%;}
-#footer2 {width: 30%;}
-#footer3 {width: 30%;}
-#footer4 {width: 10%;}
+#footer-widgets {height: 100%; width:100%; font-size: 0; background: gray;}
+#footer-widget-1, #footer-widget-2, #footer-widget-3, #footer-widget-4 {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
+#footer-widget-1 {width: 30%;}
+#footer-widget-2 {width: 30%;}
+#footer-widget-3 {width: 30%;}
+#footer-widget-4 {width: 10%;}
 </style>
-
-<div id="container">
-    <div id="footer1">
+<!--
+<div id="footer-widgets">
+    <div id="footer-widget-1">
 		<h3>About</h3>
 		<p>
 			Engineering Library is a Hong Kong
@@ -40,18 +40,18 @@
 			property.
 		</p>
 	</div>
-    <div id="footer2">
+    <div id="footer-widget-2">
 		<h3>Contact Us</h3>
 	</div>
-    <div id="footer3">
+    <div id="footer-widget-3">
 		<h3>Publisher</h3><br>
 		<h3>Product</h3><br>
 		<h3>FAQ</h3><br>
 		<h3>Copyright & Permissions</h3><br>
 	</div>
-    <div id="footer4">Ali</div>
+    <div id="footer-widget-4">Ali</div>
 </div>
-
+-->
 			<div class="container">
 				<div class="sixteen columns">
 
@@ -61,28 +61,30 @@
 				?>
 
 					<!-- <aside class="widget-area" role="complementary"> -->
+					<div id="footer-widgets">
 						<?php
-						//if ( is_active_sidebar( 'footer-1' ) ) { ?>
-							<div class="widget-column footer-widget-1" width=20%>
-								<?php //dynamic_sidebar( 'footer-1' ); ?>
+						if ( is_active_sidebar( 'footer-1' ) ) { ?>
+							<div id="footer-widget-1">
+								<?php dynamic_sidebar( 'footer-1' ); ?>
 							</div>
-						<?php //}
-						//if ( is_active_sidebar( 'footer-2' ) ) { ?>
-							<div class="widget-column footer-widget-2" width=20%>
-								<?php //dynamic_sidebar( 'footer-2' ); ?>
+						<?php }
+						if ( is_active_sidebar( 'footer-2' ) ) { ?>
+							<div id="footer-widget-2">
+								<?php dynamic_sidebar( 'footer-2' ); ?>
 							</div>
-						<?php //}
-						//if ( is_active_sidebar( 'footer-3' ) ) { ?>
-							<div class="widget-column footer-widget-3" width=20%>
-								<?php //dynamic_sidebar( 'footer-3' ); ?>
+						<?php }
+						if ( is_active_sidebar( 'footer-3' ) ) { ?>
+							<div id="footer-widget-3">
+								<?php dynamic_sidebar( 'footer-3' ); ?>
 							</div>
-						<?php //}
-						//if ( is_active_sidebar( 'footer-4' ) ) { ?>
-							<div class="widget-column footer-widget-4" width=20%>
-								<?php //dynamic_sidebar( 'footer-4' ); ?>
+						<?php }
+						if ( is_active_sidebar( 'footer-4' ) ) { ?>
+							<div id="footer-widget-4">
+								<?php dynamic_sidebar( 'footer-4' ); ?>
 							</div>
-						<?php //} ?>
-					<!-- </aside> --><!-- .widget-area -->
+						<?php } ?>
+					</div>
+					<!-- .widget-area -->
 
 				<?php endif; ?>
 
