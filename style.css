@@ -2681,14 +2681,14 @@ div#fbSEOComments{
 
 #footer-widgets {
 	display: block;
-	/* width:950px; */
-	width:100%;
+	width:950px;
+	/* width:100%; */
 	margin-right:0;
 	background: #ffffff;
 	}
 #footer-widget1 {
-	/* width: 260px; */
-	width:20%;
+	width: 200px;
+	/* width:20%; */
 	float: left;
 	margin: 15px 10px 10px 30px;
 	padding: 10px;
@@ -2696,7 +2696,8 @@ div#fbSEOComments{
 	}
 #footer-widget2 {
 	/* width: 260px; */
-	width:20%;
+	width: 200px;
+	/* width:20%; */
 	float: left;
 	margin: 15px 10px 10px 15px;
 	padding: 10px;
@@ -2704,7 +2705,8 @@ div#fbSEOComments{
 	}
 #footer-widget3 {
 	/* width: 260px; */
-	width:20%;
+	width: 200px;
+	/* width:20%; */
 	float: left;
 	margin: 15px 10px 10px 15px;
 	padding: 10px;
@@ -2712,7 +2714,8 @@ div#fbSEOComments{
 	}
 #footer-widget4 {
 	/* width: 260px; */
-	width:20%;
+	width: 200px;
+	/* width:20%; */
 	float: left;
 	margin: 15px 10px 10px 15px;
 	padding: 10px;
