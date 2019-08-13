@@ -56,8 +56,8 @@
 				<div class="sixteen columns">
 
 				<?php
-				if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) ||
-					is_active_sidebar( 'footer-3' ) || is_active_sidebar( 'footer-4' ) ) :
+				//if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) ||
+				//	is_active_sidebar( 'footer-3' ) || is_active_sidebar( 'footer-4' ) ) :
 				?>
 
 					<!-- <aside class="widget-area" role="complementary"> -->
@@ -96,7 +96,7 @@
 					</div>
 					<!-- .widget-area -->
 
-				<?php endif; ?>
+				<?php //endif; ?>
 
 					<div class="site-info">
 						<?php dgc_get_footer_text(); ?>
