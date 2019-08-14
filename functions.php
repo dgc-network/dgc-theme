@@ -2241,42 +2241,104 @@ if ( ! function_exists( 'dgc_filter_refine' ) ) {
 /**
 * Displays the custom text field input field in the WooCommerce product data meta box
 */
-function dgc_create_custom_field() {
+function dgc_create_custom_field_product_doi() {
 	$args = array(
-		'id' => 'custom_text_field_title',
-		'label' => __( 'Publisher', 'textdomain' ),
+		'id' => 'custom_field_product_doi',
+		'label' => __( 'DOI', 'textdomain' ),
 		'class' => 'dgc-custom-field',
 		'desc_tip' => true,
-		'description' => __( 'Enter the title of your custom text field.', 'textdomain' ),
+		'description' => __( 'Enter the title of your custom field.', 'textdomain' ),
 	);
 	woocommerce_wp_text_input( $args );
 }
-add_action( 'woocommerce_product_options_general_product_data', 'dgc_create_custom_field' );
-	
+add_action( 'woocommerce_product_options_general_product_data', 'dgc_create_custom_field_product_doi' );
+
+function dgc_create_custom_field_product_revision() {
+	$args = array(
+		'id' => 'custom_field_product_revision',
+		'label' => __( 'Revision', 'textdomain' ),
+		'class' => 'dgc-custom-field',
+		'desc_tip' => true,
+		'description' => __( 'Enter the title of your custom field.', 'textdomain' ),
+	);
+	woocommerce_wp_text_input( $args );
+}
+add_action( 'woocommerce_product_options_general_product_data', 'dgc_create_custom_field_product_revision' );
+
+function dgc_create_custom_field_product_pages() {
+	$args = array(
+		'id' => 'custom_field_product_pages',
+		'label' => __( 'Pages', 'textdomain' ),
+		'class' => 'dgc-custom-field',
+		'desc_tip' => true,
+		'description' => __( 'Enter the title of your custom field.', 'textdomain' ),
+	);
+	woocommerce_wp_text_input( $args );
+}
+add_action( 'woocommerce_product_options_general_product_data', 'dgc_create_custom_field_product_pages' );
+
 /**
 * Saves the custom field data to product meta data
 */
-function dgc_save_custom_field( $post_id ) {
+function dgc_save_custom_field_product_doi( $post_id ) {
 	$product = wc_get_product( $post_id );
-	$title = isset( $_POST['custom_text_field_title'] ) ? $_POST['custom_text_field_title'] : '';
-	$product->update_meta_data( 'custom_text_field_title', sanitize_text_field( $title ) );
+	$title = isset( $_POST['custom_field_product_doi'] ) ? $_POST['custom_field_product_doi'] : '';
+	$product->update_meta_data( 'custom_field_product_doi', sanitize_text_field( $title ) );
 	$product->save();
 }
-add_action( 'woocommerce_process_product_meta', 'dgc_save_custom_field' );
-	
+add_action( 'woocommerce_process_product_meta', 'dgc_save_custom_field_product_doi' );
+
+function dgc_save_custom_field_product_revision( $post_id ) {
+	$product = wc_get_product( $post_id );
+	$title = isset( $_POST['custom_field_product_revision'] ) ? $_POST['custom_field_product_revision'] : '';
+	$product->update_meta_data( 'custom_field_product_revision', sanitize_text_field( $title ) );
+	$product->save();
+}
+add_action( 'woocommerce_process_product_meta', 'dgc_save_custom_field_product_revision' );
+
+function dgc_save_custom_field_product_pages( $post_id ) {
+	$product = wc_get_product( $post_id );
+	$title = isset( $_POST['custom_field_product_pages'] ) ? $_POST['custom_field_product_pages'] : '';
+	$product->update_meta_data( 'custom_field_product_pages', sanitize_text_field( $title ) );
+	$product->save();
+}
+add_action( 'woocommerce_process_product_meta', 'dgc_save_custom_field_product_pages' );
+
 /**
 * Displays custom field data after the add to cart button
 */
-function dgc_display_custom_field() {
+function dgc_display_custom_field_product_doi() {
 	global $post;
 	// Check for the custom field value
 	$product = wc_get_product( $post->ID );
-	$title = $product->get_meta( 'custom_text_field_title' );
+	$title = $product->get_meta( 'custom_field_product_doi' );
 	if( $title ) {
-		echo get_post_meta($post->ID, 'custom_text_field_title', true);
+		echo get_post_meta($post->ID, 'custom_field_product_doi', true);
 	}
 }
-add_action( 'woocommerce_after_add_to_cart_button', 'dgc_display_custom_field' );
+add_action( 'woocommerce_after_add_to_cart_button', 'dgc_display_custom_field_product_doi' );
+
+function dgc_display_custom_field_product_revision() {
+	global $post;
+	// Check for the custom field value
+	$product = wc_get_product( $post->ID );
+	$title = $product->get_meta( 'custom_field_product_revision' );
+	if( $title ) {
+		echo get_post_meta($post->ID, 'custom_field_product_revision', true);
+	}
+}
+add_action( 'woocommerce_after_add_to_cart_button', 'dgc_display_custom_field_product_revision' );
+
+function dgc_display_custom_field_product_pages() {
+	global $post;
+	// Check for the custom field value
+	$product = wc_get_product( $post->ID );
+	$title = $product->get_meta( 'custom_field_product_pages' );
+	if( $title ) {
+		echo get_post_meta($post->ID, 'custom_field_product_pages', true);
+	}
+}
+add_action( 'woocommerce_after_add_to_cart_button', 'dgc_display_custom_field_product_pages' );
 
 /**
  * Add product custom taxonomies
@@ -2284,23 +2346,22 @@ add_action( 'woocommerce_after_add_to_cart_button', 'dgc_display_custom_field' )
  * Additional custom taxonomies can be defined here
  * http://codex.wordpress.org/Function_Reference/register_taxonomy_for_object_type
  */
-add_action( 'init', 'custom_taxonomy_Item' );
-function custom_taxonomy_Item()  {
+function dgc_custom_taxonomy_product_status()  {
 	$labels = array(
-    	'name'                       => 'Items',
-    	'singular_name'              => 'Item',
-    	'menu_name'                  => 'Item',
-    	'all_items'                  => 'All Items',
-    	'parent_item'                => 'Parent Item',
-    	'parent_item_colon'          => 'Parent Item:',
-    	'new_item_name'              => 'New Item Name',
-    	'add_new_item'               => 'Add New Item',
-    	'edit_item'                  => 'Edit Item',
-    	'update_item'                => 'Update Item',
-    	'separate_items_with_commas' => 'Separate Item with commas',
-    	'search_items'               => 'Search Items',
-    	'add_or_remove_items'        => 'Add or remove Items',
-    	'choose_from_most_used'      => 'Choose from the most used Items',
+    	'name'                       => 'Statuses',
+    	'singular_name'              => 'Status',
+    	'menu_name'                  => 'Status',
+    	'all_items'                  => 'All Statuses',
+    	'parent_item'                => 'Parent Status',
+    	'parent_item_colon'          => 'Parent Status:',
+    	'new_item_name'              => 'New Status Name',
+    	'add_new_item'               => 'Add New Status',
+    	'edit_item'                  => 'Edit Status',
+    	'update_item'                => 'Update Status',
+    	'separate_items_with_commas' => 'Separate Status with commas',
+    	'search_items'               => 'Search Statuses',
+    	'add_or_remove_items'        => 'Add or remove Statuses',
+    	'choose_from_most_used'      => 'Choose from the most used Statuses',
 	);
 	$args = array(
     	'labels'                     => $labels,
@@ -2311,29 +2372,28 @@ function custom_taxonomy_Item()  {
     	'show_in_nav_menus'          => true,
     	'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'item', 'product', $args );
-	register_taxonomy_for_object_type( 'item', 'product' );
+	register_taxonomy( 'status', 'product', $args );
+	register_taxonomy_for_object_type( 'status', 'product' );
 }
+add_action( 'init', 'dgc_custom_taxonomy_product_status' );
 
-function dgc_custom_taxonomy_Item()  {
-
+function dgc_custom_taxonomy_product_publisher()  {
 	$labels = array(
-    	'name'                       => 'Items',
-    	'singular_name'              => 'Item',
-    	'menu_name'                  => 'Item',
-    	'all_items'                  => 'All Items',
-    	'parent_item'                => 'Parent Item',
-    	'parent_item_colon'          => 'Parent Item:',
-    	'new_item_name'              => 'New Item Name',
-    	'add_new_item'               => 'Add New Item',
-    	'edit_item'                  => 'Edit Item',
-    	'update_item'                => 'Update Item',
-    	'separate_items_with_commas' => 'Separate Item with commas',
-    	'search_items'               => 'Search Items',
-    	'add_or_remove_items'        => 'Add or remove Items',
-    	'choose_from_most_used'      => 'Choose from the most used Items',
+    	'name'                       => 'Publishers',
+    	'singular_name'              => 'Publisher',
+    	'menu_name'                  => 'Publisher',
+    	'all_items'                  => 'All Publishers',
+    	'parent_item'                => 'Parent Publisher',
+    	'parent_item_colon'          => 'Parent Publisher:',
+    	'new_item_name'              => 'New Publisher Name',
+    	'add_new_item'               => 'Add New Publisher',
+    	'edit_item'                  => 'Edit Publisher',
+    	'update_item'                => 'Update Publisher',
+    	'separate_items_with_commas' => 'Separate Publisher with commas',
+    	'search_items'               => 'Search Publishers',
+    	'add_or_remove_items'        => 'Add or remove Publishers',
+    	'choose_from_most_used'      => 'Choose from the most used Publishers',
 	);
-	
 	$args = array(
     	'labels'                     => $labels,
     	'hierarchical'               => true,
@@ -2343,11 +2403,41 @@ function dgc_custom_taxonomy_Item()  {
     	'show_in_nav_menus'          => true,
     	'show_tagcloud'              => true,
 	);
-	
-	register_taxonomy_for_object_type( 'item', 'product', $args );
+	register_taxonomy( 'publisher', 'product', $args );
+	register_taxonomy_for_object_type( 'publisher', 'product' );
 }
-add_action( 'init', 'dgc_custom_taxonomy_Item' );
+add_action( 'init', 'dgc_custom_taxonomy_product_publisher' );
 
+function dgc_custom_taxonomy_product_type()  {
+	$labels = array(
+    	'name'                       => 'Types',
+    	'singular_name'              => 'Type',
+    	'menu_name'                  => 'Type',
+    	'all_items'                  => 'All Types',
+    	'parent_item'                => 'Parent Type',
+    	'parent_item_colon'          => 'Parent Type:',
+    	'new_item_name'              => 'New Type Name',
+    	'add_new_item'               => 'Add New Type',
+    	'edit_item'                  => 'Edit Type',
+    	'update_item'                => 'Update Type',
+    	'separate_items_with_commas' => 'Separate Type with commas',
+    	'search_items'               => 'Search Types',
+    	'add_or_remove_items'        => 'Add or remove Types',
+    	'choose_from_most_used'      => 'Choose from the most used Types',
+	);
+	$args = array(
+    	'labels'                     => $labels,
+    	'hierarchical'               => true,
+    	'public'                     => true,
+    	'show_ui'                    => true,
+    	'show_admin_column'          => true,
+    	'show_in_nav_menus'          => true,
+    	'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'type', 'product', $args );
+	register_taxonomy_for_object_type( 'type', 'product' );
+}
+add_action( 'init', 'dgc_custom_taxonomy_product_type' );
 
 /**
  * Add custom taxonomies
