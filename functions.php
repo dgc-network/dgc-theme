@@ -2244,7 +2244,7 @@ if ( ! function_exists( 'dgc_filter_refine' ) ) {
 function dgc_create_custom_field() {
 	$args = array(
 		'id' => 'custom_text_field_title',
-		'label' => __( 'Custom Text Field Title', 'textdomain' ),
+		'label' => __( 'Publisher', 'textdomain' ),
 		'class' => 'dgc-custom-field',
 		'desc_tip' => true,
 		'description' => __( 'Enter the title of your custom text field.', 'textdomain' ),
