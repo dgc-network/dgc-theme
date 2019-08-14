@@ -45,6 +45,6 @@
 				<?php dgc_entry_date(); ?>
 				<?php edit_post_link( __( 'Edit', 'textdomain' ), '<span class="edit-link">', '</span>' ); ?>
 			<?php endif; // is_single() ?>
+		</footer><!-- .entry-meta -->
 	</div>	
-	</footer><!-- .entry-meta -->
 </article><!-- #post -->
