@@ -2279,6 +2279,46 @@ function dgc_display_custom_field() {
 add_action( 'woocommerce_after_add_to_cart_button', 'dgc_display_custom_field' );
 
 /**
+ * Add product custom taxonomies
+ *
+ * Additional custom taxonomies can be defined here
+ * http://codex.wordpress.org/Function_Reference/register_taxonomy_for_object_type
+ */
+function dgc_custom_taxonomy_Item()  {
+
+	$labels = array(
+    	'name'                       => 'Items',
+    	'singular_name'              => 'Item',
+    	'menu_name'                  => 'Item',
+    	'all_items'                  => 'All Items',
+    	'parent_item'                => 'Parent Item',
+    	'parent_item_colon'          => 'Parent Item:',
+    	'new_item_name'              => 'New Item Name',
+    	'add_new_item'               => 'Add New Item',
+    	'edit_item'                  => 'Edit Item',
+    	'update_item'                => 'Update Item',
+    	'separate_items_with_commas' => 'Separate Item with commas',
+    	'search_items'               => 'Search Items',
+    	'add_or_remove_items'        => 'Add or remove Items',
+    	'choose_from_most_used'      => 'Choose from the most used Items',
+	);
+	
+	$args = array(
+    	'labels'                     => $labels,
+    	'hierarchical'               => true,
+    	'public'                     => true,
+    	'show_ui'                    => true,
+    	'show_admin_column'          => true,
+    	'show_in_nav_menus'          => true,
+    	'show_tagcloud'              => true,
+	);
+	
+	register_taxonomy_for_object_type( 'item', 'product', $args );
+}
+add_action( 'init', 'dgc_custom_taxonomy_Item' );
+
+
+/**
  * Add custom taxonomies
  *
  * Additional custom taxonomies can be defined here
