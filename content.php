@@ -14,11 +14,12 @@
 	<?php if (get_the_title() == '') : ?>
 		<a href="<?php the_permalink(); ?>" rel="bookmark">
 	<?php endif; ?>	
-	
+<!--	
 	<div class="date_of_post updated">
-		<span class="day_post"><?php print $day; ?></span>
-		<span class="month_post"><?php print $month_abr; ?></span>
+		<span class="day_post"><?php //print $day; ?></span>
+		<span class="month_post"><?php //print $month_abr; ?></span>
 	</div>
+-->	
 	<?php if (get_the_title() == '') : ?>
 		</a>
 	<?php endif; ?>
