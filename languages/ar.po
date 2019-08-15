@@ -1894,7 +1894,7 @@ msgstr "قسم حقوق النشر والتأليف"
 #: includes/theme-options/theme-options.php:1210
 msgid ""
 "dgc-wordpress-theme by <a href=\"https://github.com/fruitfulcode/\">fruitfulcode</"
-"a> Powered by: <a href="https://github.com/dgc-network/">dgc-network</a>"
+"a> Powered by: <a href=\"https://github.com/dgc-network/\">dgc-network</a>"
 msgstr ""
 
 #: includes/theme-options/theme-options.php:1217
