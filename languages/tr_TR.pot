@@ -1867,7 +1867,7 @@ msgstr ""
 #: includes/theme-options/theme-options.php:1210
 msgid ""
 "dgc-wordpress-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
-"a> Powered by: <a href=\"http://wordpress.org\">WordPress</a>"
+"a> Powered by: <a href="https://github.com/dgc-network/">dgc-network</a>"
 msgstr ""
 
 #: includes/theme-options/theme-options.php:1217

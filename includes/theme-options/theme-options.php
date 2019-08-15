@@ -1191,7 +1191,7 @@ class dgc_theme_options {
 					'info'      => __( 'Replace default theme copyright information and links', 'textdomain' ),
 					'box-title' => __( 'Copyright section', 'textdomain' ),
 					'type'      => 'textarea',
-					'default'   => __( 'Powered by: dgc-wordpress-theme by <a href="https://github.com/dgc-network/">dgc-network</a>',
+					'default'   => __( 'Powered by: <a href="https://github.com/dgc-network/">dgc-network</a>',
 						'textdomain' ),
 				)
 			)
