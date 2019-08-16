@@ -1721,11 +1721,13 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 		
 					if ($result) {
 						global $qtranslate_slug;
-						echo '<a href="' . $qtranslate_slug->get_current_url($lang_code) . '">' . $lang_name . '</a>';
+						//echo '<a href="' . $qtranslate_slug->get_current_url($lang_code) . '">' . $lang_name . '</a>';
+						echo '<a href="' . qtrans_convertURL(get_permalink(), $lang_code) . '">' . $lang_name .   '</a>';
 					}
 				}
 			}
-		}	}
+		}
+	}
 }
 
 if ( ! function_exists( 'dgc_get_languages_list' ) ) {
