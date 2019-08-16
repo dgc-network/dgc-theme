@@ -1710,6 +1710,43 @@ if ( ! function_exists( 'dgc_kses_data' ) ) {
 
 if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 	function dgc_get_qtranslate_languages_list(){
+		$theme_options = dgc_get_theme_options();
+		if( function_exists('qtranxf_getLanguage') ){ 
+			$languages = qtranxf_getLanguage();
+			
+			if(!empty($languages)){
+			
+				echo '<div id="header_language_select"><ul id="lang-select-block">';
+				foreach($languages as $l){
+					if($l['active']) {
+						echo '<li class="current">';
+							echo '<a class="'.$l['language_code'].'" href="'.$l['url'].'" onclick="return false">';
+								echo $l['language_code'];
+							echo '</a>';
+						echo '<ul id="lang-select-popup">';					
+						
+							echo '<li class="active">';
+								echo '<a class="'.$l['language_code'].'" href="'.$l['url'].'" onclick="return false">';
+									echo $l['native_name'];
+								echo '</a>';
+							echo '</li>';
+					} 
+						
+				}
+				foreach($languages as $l){
+					if(!($l['active'])) {
+							echo '<li class="unactive">';
+							echo '<a class="'.$l['language_code'].'" href="'.$l['url'].'">';
+								echo $l['native_name'];
+							echo '</a></li>';
+					}
+				}
+						echo '</ul>';
+					echo '</li>';					
+				echo '</ul></div>';
+			}
+		}
+/*
 		$enabled_languages = get_option('qtranslate_enabled_languages');
 		$language_names    = get_option('qtranslate_language_names');
 		
@@ -1727,6 +1764,7 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 				}
 			}
 		}
+*/
 	}
 }
 
