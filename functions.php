@@ -1708,6 +1708,26 @@ if ( ! function_exists( 'dgc_kses_data' ) ) {
 	}
 }
 
+if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
+	function dgc_get_qtranslate_languages_list(){
+		$enabled_languages = get_option('qtranslate_enabled_languages');
+		$language_names    = get_option('qtranslate_language_names');
+		
+		foreach ($enabled_languages as $enable_language) {
+			foreach ($language_names as $lang_code => $lang_name) {
+				if ($enable_language == $lang_code && $enable_language != qtrans_getLanguage()) {
+					$query  = "SELECT id FROM $wpdb->posts WHERE ID = $post->ID AND $wpdb->posts.post_content LIKE '%<!--:" . $lang_code . "-->%'";
+					$result = $wpdb->get_results($query);
+		
+					if ($result) {
+						global $qtranslate_slug;
+						echo '<a href="' . $qtranslate_slug->get_current_url($lang_code) . '">' . $lang_name . '</a>';
+					}
+				}
+			}
+		}	}
+}
+
 if ( ! function_exists( 'dgc_get_languages_list' ) ) {
 	function dgc_get_languages_list(){
 		$theme_options = dgc_get_theme_options();
@@ -2239,7 +2259,7 @@ if ( ! function_exists( 'dgc_filter_refine' ) ) {
 }
 
 /**
-* Displays the custom text field input field in the WooCommerce product data meta box
+* Creates the custom fieldin the WooCommerce product data meta box
 */
 function dgc_create_custom_field_product_doi() {
 	$args = array(
@@ -2346,37 +2366,6 @@ add_action( 'woocommerce_after_add_to_cart_button', 'dgc_display_custom_field_pr
  * Additional custom taxonomies can be defined here
  * http://codex.wordpress.org/Function_Reference/register_taxonomy_for_object_type
  */
-function dgc_custom_taxonomy_product_status()  {
-	$labels = array(
-    	'name'                       => __( 'Statuses', 'textdomain' ),
-    	'singular_name'              => __( 'Status', 'textdomain' ),
-    	'menu_name'                  => __( 'Status', 'textdomain' ),
-    	'all_items'                  => __( 'All Statuses', 'textdomain' ),
-    	'parent_item'                => __( 'Parent Status', 'textdomain' ),
-    	'parent_item_colon'          => __( 'Parent Status:', 'textdomain' ),
-    	'new_item_name'              => __( 'New Status Name', 'textdomain' ),
-    	'add_new_item'               => __( 'Add New Status', 'textdomain' ),
-    	'edit_item'                  => __( 'Edit Status', 'textdomain' ),
-    	'update_item'                => __( 'Update Status', 'textdomain' ),
-    	'separate_items_with_commas' => __( 'Separate Status with commas', 'textdomain' ),
-    	'search_items'               => __( 'Search Statuses', 'textdomain' ),
-    	'add_or_remove_items'        => __( 'Add or remove Statuses', 'textdomain' ),
-    	'choose_from_most_used'      => __( 'Choose from the most used Statuses', 'textdomain' ),
-	);
-	$args = array(
-    	'labels'                     => $labels,
-    	'hierarchical'               => false,
-    	'public'                     => true,
-    	'show_ui'                    => true,
-    	'show_admin_column'          => true,
-    	'show_in_nav_menus'          => true,
-    	'show_tagcloud'              => true,
-	);
-	register_taxonomy( 'status', 'product', $args );
-	register_taxonomy_for_object_type( 'status', 'product' );
-}
-add_action( 'init', 'dgc_custom_taxonomy_product_status' );
-
 function dgc_custom_taxonomy_product_publisher()  {
 	$labels = array(
     	'name'                       => __( 'Publishers', 'textdomain' ),
@@ -2396,7 +2385,7 @@ function dgc_custom_taxonomy_product_publisher()  {
 	);
 	$args = array(
     	'labels'                     => $labels,
-    	'hierarchical'               => false,
+    	'hierarchical'               => true,
     	'public'                     => true,
     	'show_ui'                    => true,
     	'show_admin_column'          => true,
@@ -2407,6 +2396,37 @@ function dgc_custom_taxonomy_product_publisher()  {
 	register_taxonomy_for_object_type( 'publisher', 'product' );
 }
 add_action( 'init', 'dgc_custom_taxonomy_product_publisher' );
+
+function dgc_custom_taxonomy_product_status()  {
+	$labels = array(
+    	'name'                       => __( 'Statuses', 'textdomain' ),
+    	'singular_name'              => __( 'Status', 'textdomain' ),
+    	'menu_name'                  => __( 'Status', 'textdomain' ),
+    	'all_items'                  => __( 'All Statuses', 'textdomain' ),
+    	'parent_item'                => __( 'Parent Status', 'textdomain' ),
+    	'parent_item_colon'          => __( 'Parent Status:', 'textdomain' ),
+    	'new_item_name'              => __( 'New Status Name', 'textdomain' ),
+    	'add_new_item'               => __( 'Add New Status', 'textdomain' ),
+    	'edit_item'                  => __( 'Edit Status', 'textdomain' ),
+    	'update_item'                => __( 'Update Status', 'textdomain' ),
+    	'separate_items_with_commas' => __( 'Separate Status with commas', 'textdomain' ),
+    	'search_items'               => __( 'Search Statuses', 'textdomain' ),
+    	'add_or_remove_items'        => __( 'Add or remove Statuses', 'textdomain' ),
+    	'choose_from_most_used'      => __( 'Choose from the most used Statuses', 'textdomain' ),
+	);
+	$args = array(
+    	'labels'                     => $labels,
+    	'hierarchical'               => true,
+    	'public'                     => true,
+    	'show_ui'                    => true,
+    	'show_admin_column'          => true,
+    	'show_in_nav_menus'          => true,
+    	'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'status', 'product', $args );
+	register_taxonomy_for_object_type( 'status', 'product' );
+}
+add_action( 'init', 'dgc_custom_taxonomy_product_status' );
 
 function dgc_custom_taxonomy_product_type()  {
 	$labels = array(
@@ -2427,7 +2447,7 @@ function dgc_custom_taxonomy_product_type()  {
 	);
 	$args = array(
     	'labels'                     => $labels,
-    	'hierarchical'               => false,
+    	'hierarchical'               => true,
     	'public'                     => true,
     	'show_ui'                    => true,
     	'show_admin_column'          => true,
