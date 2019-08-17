@@ -1725,6 +1725,7 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 					// set hreflang
 					echo ' hreflang="'.$language.'"';
 					echo ' title="'.$alt.'"';
+					echo '>';
 /*
 					if($type=='image')
 						echo ' class="qtranxs_image qtranxs_image_'.$language.'"';
@@ -1734,11 +1735,12 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 					elseif($type=='css_only')// to be removed
 						echo ' class="qtranxs_css qtranxs_css_'.$language.'"';
 					echo '>';
+*/					
 					if($type=='image') echo '<img src="'.$flag_location.$q_config['flag'][$language].'" alt="'.$alt.'" />';
 					echo '<span';
 					if($type=='image' || $type=='css_only') echo ' style="display:none"';
 					echo '>'.$q_config['language_name'][$language].'</span>';
-*/					
+					
 					echo '</a></li>'.PHP_EOL;
 				}
 				//echo '</ul><div class="qtranxs_widget_end"></div>'.PHP_EOL;
