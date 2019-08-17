@@ -1723,7 +1723,9 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 				echo '<div id="header_language_select"><ul id="lang-select-block">';
 				echo json_encode($languages);
 				foreach($languages as $l){
+					echo $l;
 
+/*
 					//if($l['active']) {
 						echo '<li class="current">';
 							//echo '<a class="'.$l['language_code'].'" href="'.$l['url'].'" onclick="return false">';
@@ -1741,7 +1743,7 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 							echo '</a>';
 						echo '</li>';
 					//} 
-						
+*/						
 				}
 /*				
 				foreach($languages as $l){
