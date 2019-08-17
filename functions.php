@@ -1689,7 +1689,8 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 			if(!empty($languages)){
 				echo '<div id="header_language_select"><ul id="lang-select-block">';
 				//echo json_encode($languages);
-				echo '<img src="images/global.png" width="48px" height="42px">';
+				//echo '<img src="images/global.png">';
+				echo __('Language','textdomain');
 
 				foreach($languages as $language) {
 					$alt = $q_config['language_name'][$language].' ('.$language.')';
