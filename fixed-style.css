@@ -1016,19 +1016,22 @@ embed,iframe,object {
 
 
 #page-header .container header .menu-wrapper.left-pos {
-	float:left;
-	/* display:inline-block; */
+	/* float:left; */
+	display:inline-block;
+	text-align:left;
 }
 
 #page-header .container header .menu-wrapper.center-pos {
 	float:none;
-	display:block;
 	margin:0 auto;
+	display:inline-block;
+	text-align:center;
 }
 
 #page-header .container header .menu-wrapper.right-pos {
-	float:right;
-	/* display:inline-block; */
+	/* float:right; */
+	display:inline-block;
+	text-align:right;
 }
 
 .page-header {
