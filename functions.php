@@ -1688,7 +1688,8 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 			$languages = qtranxf_getSortedLanguages();			
 			if(!empty($languages)){
 				echo '<div id="header_language_select"><ul id="lang-select-block">';
-				echo json_encode($languages);
+				//echo json_encode($languages);
+				echo '<img src="https://images.app.goo.gl/9oDu6LDzPguzxvJh8" width="24px" height="21px">';
 
 				foreach($languages as $language) {
 					$alt = $q_config['language_name'][$language].' ('.$language.')';
@@ -1709,31 +1710,32 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 						echo ' class="qtranxs_css qtranxs_css_'.$language.'"';
 					echo '>';
 */					
-					if($type=='image') echo '<img src="'.$flag_location.$q_config['flag'][$language].'" alt="'.$alt.'" />';
+					//if($type=='image') echo '<img src="'.$flag_location.$q_config['flag'][$language].'" alt="'.$alt.'" />';
 					echo '<span';
-					if($type=='image' || $type=='css_only') echo ' style="display:none"';
+					//if($type=='image' || $type=='css_only') echo ' style="display:none"';
 					echo '>'.$q_config['language_name'][$language].'</span>';
 					
 					echo '</a></li>'.PHP_EOL;
 				}
 				//echo '</ul><div class="qtranxs_widget_end"></div>'.PHP_EOL;
-/*				
-				if($type=='dropdown') {
+				
+				//if($type=='dropdown') {
 					echo '<script type="text/javascript">'.PHP_EOL.'// <![CDATA['.PHP_EOL;
 					echo "var lc = document.getElementById('".$id."');".PHP_EOL;
 					echo "var s = document.createElement('select');".PHP_EOL;
 					echo "s.id = 'qtranxs_select_".$id."';".PHP_EOL;
 					echo "lc.parentNode.insertBefore(s,lc);".PHP_EOL;
 					// create dropdown fields for each language
-					foreach(qtranxf_getSortedLanguages() as $language) {
+					//foreach(qtranxf_getSortedLanguages() as $language) {
+					foreach($languages as $language) {
 						echo qtranxf_insertDropDownElement($language, qtranxf_convertURL($url, $language, false, true), $id);
 					}
 					// hide html language chooser text
 					echo "s.onchange = function() { document.location.href = this.value;}".PHP_EOL;
 					echo "lc.style.display='none';".PHP_EOL;
 					echo '// ]]>'.PHP_EOL.'</script>'.PHP_EOL;
-				}
-*/
+				//}
+
 				foreach($languages as $l){
 					//echo qtranxf_getLanguageNative($l);
 
