@@ -43,7 +43,7 @@ Fixed Styles for Woocommerce.
 }
 
 /*header*/
-.user-profile{
+.menu-item{
 	display:inline-block;
 	/* display:block;
 	float:right; */
@@ -52,8 +52,8 @@ Fixed Styles for Woocommerce.
 	margin:14px 10px 10px;
 	/* clear:left */
 }
-.user-profile a,
-.user-profile a .user_profile_image{
+.menu-item a,
+.menu-item a .user_profile_image{
 	display:block;
 	float:left;
 	margin:0;
@@ -63,6 +63,17 @@ Fixed Styles for Woocommerce.
 	border:0;
 	text-decoration:none;
 	background:url(images/user_profile_image.png) no-repeat transparent;
+}
+.menu-item a .cart_image{
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	width:24px;
+	height:21px;
+	border:0;
+	text-decoration:none;
+	background:url(images/cart_image.png) no-repeat transparent;
 }
 .cart-button{
 	display:inline-block;
