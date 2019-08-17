@@ -741,7 +741,8 @@ a:hover,a:focus,a:active {
     position:absolute !important;
 }
 #header_language_select{
-	float:right;
+	/* float:right; */
+	display:inline-block;
 	height:100%;
 	margin: 10px 0 0;
 	padding:0;
