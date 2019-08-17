@@ -112,7 +112,7 @@
 								</button>
 							</div>
 							<div class="cart_wrapper"><?php if (is_user_logged_in()) dgc_get_cart_button_html(); ?></div>
-							<div class="user_wrapper"><?php dgc_get_user_profile_html(); ?></div>
+							<div class="user_profile_wrapper"><?php dgc_get_user_profile_html(); ?></div>
 							<div class="language_switcher"><?php dgc_get_qtranslate_languages_list(); ?></div>
 							<div class="language_switcher"><?php dgc_get_wpml_languages_list(); ?></div>
 							<div class="menu_wrapper collapse"><?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?></div>

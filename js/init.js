@@ -130,7 +130,7 @@ jQuery(window).bind('resize', function() {
     vmWrapperClass = jQuery('.responsive #page-header .container header .menu-wrapper').data('originalstyle');
 
     if (jQuery(window).width() <= 767)	 {
-        if (jQuery('.responsive .cart-button').length > 0) {
+        if ((jQuery('.responsive .cart-button').length > 0) || (jQuery('.responsive .user-profile').length > 0)) {
             jQuery('.responsive .select-menu').css({'max-width':'80%', 'margin' : '6px 0 25px 0'});
         }
         jQuery('.responsive #page-header .container header .header-hgroup').removeClass(vhGroupClass).addClass('center-pos');
@@ -164,20 +164,26 @@ function autoWidthMenu () {
         var vElemsWidth = 0;
         var vElemsPadding = 0;
         var cartButtonWidth = 0;
+        var userprofileButtonWidth = 0;
+        var qtranslateButtonWidth = 0;
         var wpmlButtonWidth = 0;
         var sum = 0;
         if (jQuery('.menu-wrapper').hasClass('center-pos')) {
             if (jQuery('.cart-button').length > 0){
                 cartButtonWidth = jQuery('.cart-button').outerWidth(true) + 2;
             }
+            if (jQuery('.user-profile').length > 0){
+                userprofileButtonWidth = jQuery('.user-profile').outerWidth(true) + 2;
+            }
             if (jQuery('#header_language_select').length > 0){
+                qtranslateButtonWidth = jQuery('#header_language_select').outerWidth(true);
                 wpmlButtonWidth = jQuery('#header_language_select').outerWidth(true);
             }
             jQuery('.site-navigation ul.menu,.site-navigation .menu > ul').children('li').each( function(){
                 sum += jQuery(this)[0].getBoundingClientRect().width;
                 vElemsPadding += parseInt(jQuery(this).css('margin-left'));
             });
-            sum += vElemsPadding + cartButtonWidth + wpmlButtonWidth;
+            sum += vElemsPadding + cartButtonWidth + userprofileButtonWidth + qtranslateButtonWidth + wpmlButtonWidth;
             jQuery('.menu-wrapper').css({'max-width': sum + 'px'});
         } else {
             jQuery('.menu-wrapper').css({'max-width': 'none'})

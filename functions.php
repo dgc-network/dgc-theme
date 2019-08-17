@@ -445,7 +445,7 @@ if ( ! function_exists( 'dgc_get_cart_button_html' ) ) {
 /*get user profile button html*/
 if ( ! function_exists( 'dgc_get_user_profile_html' ) ) {
 	function dgc_get_user_profile_html() {
-		$btn_user_profile = '';
+		$btn_user_profile = 'WHY';
 		$theme_options = dgc_get_theme_options();
 		
 		if (class_exists('Woocommerce')) { 

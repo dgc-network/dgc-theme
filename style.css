@@ -1281,21 +1281,21 @@ section {
 }
 
 #page-header .container header .header-hgroup.center-pos {
- /* float: right; */
- margin:0;
- width:100%;
- display:inline-block;
- text-align:center;
+	/* float: right; */
+	margin:0;
+	width:100%;
+	display:inline-block;
+	text-align:center;
 }
 
 #page-header .container header .header-hgroup.center-pos a {
- text-align:center;
- float:none;
+	text-align:center;
+	float:none;
 }
 
 #page-header .container header .header-hgroup.right-pos  {
-    float:right;
-    margin: 0 0 0 15px;
+	float:right;
+	margin: 0 0 0 15px;
 }
 
 #page-header .container header .menu-wrapper.left-pos {
@@ -1322,7 +1322,7 @@ section {
 }
 
 #page-header .container header .menu-wrapper.right-pos {
-	/* float:right; */
+	/*float:right;*/
 	display:inline-block;
 }
 
@@ -2466,7 +2466,9 @@ aside #lang_sel {
 	.resp_full_width_menu .site-header{ width:100%; float:left; }
     .resp_full_width_menu:not(.fixed) .site-header {position: relative;}
 	.resp_full_width_menu .site-header .logo_wrapper{ display:block; float:left; width:48%; margin:10px 0 0 2%; }
-    .resp_full_width_menu .site-header .cart_wrapper, .resp_full_width_menu .site-header .menu_button{ display:block; float:right; margin-left:12px; margin-right:12px; }
+	.resp_full_width_menu .site-header .user_profile_wrapper, 
+	.resp_full_width_menu .site-header .cart_wrapper, 
+	.resp_full_width_menu .site-header .menu_button{ display:block; float:right; margin-left:12px; margin-right:12px; }
     .resp_full_width_menu .site-header .language_switcher{ display:block; float:right;}
     .resp_full_width_menu .site-header .select-menu{ display:none; }
     .resp_full_width_menu .site-header .menu_button button{ background:none !important; float:left; margin: 15px 10px 9px; padding: 0; z-index: 9; background: none; border: 0; height: 30px; width: 35px; outline:none; }
@@ -2505,7 +2507,9 @@ aside #lang_sel {
 	.responsive .select-menu{margin: 16px 0 25px 0 !important}
 
 	/*styles for responsive full header*/
-	.resp_full_width_menu .site-header .cart_wrapper, .resp_full_width_menu .site-header .menu_button{ margin-left:2px; margin-right:2px; }
+	.resp_full_width_menu .site-header .user_profile_wrapper, 
+	.resp_full_width_menu .site-header .cart_wrapper, 
+	.resp_full_width_menu .site-header .menu_button{ margin-left:2px; margin-right:2px; }
 }
 
 @media only screen and (max-device-width:1024px) and (orientation:portrait)  {}
