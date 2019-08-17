@@ -1713,6 +1713,7 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 		$theme_options = dgc_get_theme_options();
 		if( function_exists('qtranxf_getLanguage') ){ 
 			$languages = qtranxf_getLanguage();
+			$languages = qtranxf_getSortedLanguages();
 			echo $languages;
 
 			global $q_config, $qtranslate_options;
