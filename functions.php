@@ -1724,29 +1724,19 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 				echo json_encode($languages);
 				foreach($languages as $l){
 
-					//echo $l['qtranslate_language_names'];
-					/*
-					qtranslate_language_names
-					qtranslate_locales
-					qtranslate_locales_html
-					qtranslate_na_messages
-					qtranslate_date_formats
-					qtranslate
-					*/
-					
 					//if($l['active']) {
 						echo '<li class="current">';
 							//echo '<a class="'.$l['language_code'].'" href="'.$l['url'].'" onclick="return false">';
 								//echo $l['language_code'];
-							echo '<a class="'.qtranxf_getLanguage($l).'" href="'.qtranxf_get_url_for_language($l).'" onclick="return false">';
-								echo qtranxf_getLanguage($l);
+							echo '<a class="'.qtranxf_getLanguageNative($l).'" href="'.qtranxf_get_url_for_language($l).'" onclick="return false">';
+								echo qtranxf_getLanguageNative($l);
 							echo '</a>';
 						echo '<ul id="lang-select-popup">';					
 						
 							echo '<li class="active">';
 							//echo '<a class="'.$l['language_code'].'" href="'.$l['url'].'" onclick="return false">';
 								//echo $l['native_name'];
-							echo '<a class="'.qtranxf_getLanguage($l).'" href="'.qtranxf_get_url_for_language($l).'" onclick="return false">';
+							echo '<a class="'.qtranxf_getLanguageNative($l).'" href="'.qtranxf_get_url_for_language($l).'" onclick="return false">';
 								echo qtranxf_getLanguageName($l);
 							echo '</a>';
 						echo '</li>';
