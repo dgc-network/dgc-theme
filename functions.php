@@ -451,9 +451,9 @@ if ( ! function_exists( 'dgc_get_user_profile_html' ) ) {
 		if (class_exists('Woocommerce')) { 
 			global $woocommerce;
 			if (!empty($theme_options['showuser']) && (esc_attr($theme_options['showuser']) == 'on')) {
-					$btn_user = '<div class="user-button">
+					$btn_user = '<div class="user-profile">
 						<a href="'.get_permalink( wc_get_page_id( 'My Account' ) ).'>
-							<div class="user_image"></div> 
+							<div class="user_profile_image"></div> 
 						</a>
 					</div>';
 			}
@@ -1200,7 +1200,7 @@ if ( ! function_exists( 'dgc_get_responsive_style' ) ) {
 				
 				//$woo_style_ .= '.num_of_product_cart {border-color: '. esc_attr($theme_options['menu_btn_color']) . '; }  ' . "\n"; 
 				if (!empty($theme_options['user_color'])) {
-					$woo_style_ .= '.user_image {color: '. esc_attr($theme_options['user_color']) . '; }  ' . "\n"; 
+					$woo_style_ .= '.user_profile_image {color: '. esc_attr($theme_options['user_color']) . '; }  ' . "\n"; 
 				}
 				
 				if (!empty($theme_options['cart_color'])) {
