@@ -1714,7 +1714,7 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 		if( function_exists('qtranxf_getLanguage') ){ 
 			$languages = qtranxf_getLanguage();
 			$languages = qtranxf_getSortedLanguages();
-			echo $languages;
+			echo json_encode($languages);
 
 			global $q_config, $qtranslate_options;
 			$languages = $qtranslate_options['languages'];
