@@ -1710,20 +1710,57 @@ if ( ! function_exists( 'dgc_kses_data' ) ) {
 
 if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 	function dgc_get_qtranslate_languages_list(){
-		//$theme_options = dgc_get_theme_options();
-		//if( function_exists('qtranxf_getLanguage') ){ 
-		if( defined( 'QTRANSLATE_FILE' ) ){ 
-			//$languages = qtranxf_getLanguage();
-			$languages = qtranxf_getSortedLanguages();
-
-			//global $q_config, $qtranslate_options;
-			//$languages = $qtranslate_options['languages'];
-			
+		if( defined( 'QTRANSLATE_FILE' ) ){
+			global $q_config;
+			$languages = qtranxf_getSortedLanguages();			
 			if(!empty($languages)){
 				echo '<div id="header_language_select"><ul id="lang-select-block">';
 				echo json_encode($languages);
+
+				foreach($languages as $language) {
+					$alt = $q_config['language_name'][$language].' ('.$language.')';
+					$classes = array('lang-'.$language);
+					if($language == $q_config['language']) $classes[] = 'active';
+					echo '<li class="'. implode(' ', $classes) .'"><a href="'.qtranxf_convertURL($url, $language, false, true).'"';
+					// set hreflang
+					echo ' hreflang="'.$language.'"';
+					echo ' title="'.$alt.'"';
+/*
+					if($type=='image')
+						echo ' class="qtranxs_image qtranxs_image_'.$language.'"';
+					//	echo ' class="qtranxs_flag qtranxs_flag_'.$language.'"';
+					elseif($type=='text')
+						echo ' class="qtranxs_text qtranxs_text_'.$language.'"';
+					elseif($type=='css_only')// to be removed
+						echo ' class="qtranxs_css qtranxs_css_'.$language.'"';
+					echo '>';
+					if($type=='image') echo '<img src="'.$flag_location.$q_config['flag'][$language].'" alt="'.$alt.'" />';
+					echo '<span';
+					if($type=='image' || $type=='css_only') echo ' style="display:none"';
+					echo '>'.$q_config['language_name'][$language].'</span>';
+*/					
+					echo '</a></li>'.PHP_EOL;
+				}
+				//echo '</ul><div class="qtranxs_widget_end"></div>'.PHP_EOL;
+/*				
+				if($type=='dropdown') {
+					echo '<script type="text/javascript">'.PHP_EOL.'// <![CDATA['.PHP_EOL;
+					echo "var lc = document.getElementById('".$id."');".PHP_EOL;
+					echo "var s = document.createElement('select');".PHP_EOL;
+					echo "s.id = 'qtranxs_select_".$id."';".PHP_EOL;
+					echo "lc.parentNode.insertBefore(s,lc);".PHP_EOL;
+					// create dropdown fields for each language
+					foreach(qtranxf_getSortedLanguages() as $language) {
+						echo qtranxf_insertDropDownElement($language, qtranxf_convertURL($url, $language, false, true), $id);
+					}
+					// hide html language chooser text
+					echo "s.onchange = function() { document.location.href = this.value;}".PHP_EOL;
+					echo "lc.style.display='none';".PHP_EOL;
+					echo '// ]]>'.PHP_EOL.'</script>'.PHP_EOL;
+				}
+*/
 				foreach($languages as $l){
-					echo qtranxf_getLanguageNative($l);
+					//echo qtranxf_getLanguageNative($l);
 
 /*
 					//if($l['active']) {
