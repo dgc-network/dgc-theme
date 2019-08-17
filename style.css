@@ -1299,9 +1299,9 @@ section {
 }
 
 #page-header .container header .menu-wrapper.left-pos {
-	/* float:left; */
-	display:inline-block;
-	text-align:left;
+	float:left;
+	/* display:inline-block;
+	text-align:left; */
 }
 
 #page-header .container header .menu-wrapper.center-pos {
@@ -1323,9 +1323,9 @@ section {
 }
 
 #page-header .container header .menu-wrapper.right-pos {
-	/*float:right;*/
-	display:inline-block;
-	text-align:right;
+	float:right;
+	/* display:inline-block;
+	text-align:right; */
 }
 
 .page-header {

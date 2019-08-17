@@ -43,7 +43,15 @@ Fixed Styles for Woocommerce.
 }
 
 /*header*/
-.user-profile{display:block;float:right;padding:0;position:relative;margin:14px 10px 10px;clear:left}
+.user-profile{
+	display:inline-block;
+	/* display:block;
+	float:right; */
+	padding:0;
+	position:relative;
+	margin:14px 10px 10px;
+	/* clear:left */
+}
 .user-profile a,
 .user-profile a .user_profile_image{
 	display:block;
@@ -56,7 +64,15 @@ Fixed Styles for Woocommerce.
 	text-decoration:none;
 	background:url(images/user_profile_image.png) no-repeat transparent;
 }
-.cart-button{display:block;float:right;padding:0;position:relative;margin:14px 10px 10px;clear:left}
+.cart-button{
+	display:inline-block;
+	/* display:block;
+	float:right; */
+	padding:0;
+	position:relative;
+	margin:14px 10px 10px;
+	/* clear:left */
+}
 .cart-button a,
 .cart-button a .cart_image{
 	display:block;
