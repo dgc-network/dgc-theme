@@ -2559,11 +2559,11 @@ function add_custom_taxonomies() {
 	));
 }
 add_action( 'init', 'add_custom_taxonomies', 0 );
-
+/*
 function is_login() { 
 	return in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php')); 
 }
-
+*/
 /* Polylang */
 // 確保複製過去時帶入預設標題
 function mxp_editor_title( $title ) {
