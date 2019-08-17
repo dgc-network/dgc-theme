@@ -1,9 +1,9 @@
 /*
-Theme Name: dgc-wordpress-theme
-Theme URI: https://github.com/dgc-network/dgc-wordpress-theme
+Theme Name: dgc-theme
+Theme URI: https://github.com/dgc-network/dgc-theme
 Author: dgc-network
 Author URI: https://github.com/dgc-network/
-Description: dgc-wordpress-theme - Free WordPress responsive theme with powerful theme options panel and simple clean front end design. Ability to modify styles and options according to your needs. Two different layout types responsive and fixed. Easily upload logo, background, edit colors, header and menu positions, slider, fonts, social icons, footer, custom css and much more. Translated to Russian, German, Spanish, French, Vietnamese, RTL ready. Works perfect with WooCommerce, BuddyPress, WPML, Contact form 7.
+Description: dgc-theme - Free WordPress responsive theme with powerful theme options panel and simple clean front end design. Ability to modify styles and options according to your needs. Two different layout types responsive and fixed. Easily upload logo, background, edit colors, header and menu positions, slider, fonts, social icons, footer, custom css and much more. Translated to Russian, German, Spanish, French, Vietnamese, RTL ready. Works perfect with WooCommerce, BuddyPress, WPML, Contact form 7.
 Version: 0.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -2173,7 +2173,7 @@ html[dir="rtl"] body.page .entry-thumbnail {float:right}
 
 /*STYLES FOR SOME PLUGINS*/
 
-/* Styles for plugin "dgc-wordpress-theme Shortcodes" */
+/* Styles for plugin "dgc-theme Shortcodes" */
 /*buttons*/
 body .btn{padding:10px 18px;margin-bottom:0;font-size:14px;line-height:20px;text-shadow:none;background-image:none;filter:none;border-width:0;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;transition: all 0.3s ease-in-out;}.btn:hover,.btn:focus,.btn:active,.btn.active,.btn.disabled,.btn[disabled]{color:#333333;background-color:#e6e6e6;*background-color:#d9d9d9;}
 body .btn.btn-mini{padding:6px 12px}
@@ -2205,7 +2205,7 @@ body .ffs-tabbed-nav .resp-vtabs li.resp-tab-item{ position: relative; z-index: 
 body .ffs-tabbed-nav.resp-vtabs li.resp-tab-active,body .resp-vtabs li.resp-tab-item:hover{margin:0; background: none repeat scroll 0 0 #EEEEEE; border:0;border-right: 3px solid #333333; margin-right:-3px !important; }
 body .ffs-tabbed-nav.resp-vtabs ul.resp-tabs-list{margin:0;border:0;border-right: 1px solid rgba(0, 0, 0, 0.15);}
 body .resp-vtabs .resp-tabs-container{border:0}
-/* end of styles for plugin "dgc-wordpress-theme Shortcodes" */
+/* end of styles for plugin "dgc-theme Shortcodes" */
 
 
 /* Styles for plugin "BuddyPress" */

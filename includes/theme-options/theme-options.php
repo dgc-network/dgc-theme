@@ -1,9 +1,9 @@
 <?php
 /**
- * dgc-wordpress-theme Theme Options
+ * dgc-theme Theme Options
  *
- * @package dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @package dgc-theme
+ * @since dgc-theme 1.0
  */
 
 /**
@@ -15,7 +15,7 @@
  * which is used when the option is saved, to ensure that our option values are properly
  * formatted, and safe.
  *
- * @since dgc-wordpress-theme 1.0
+ * @since dgc-theme 1.0
  */
 class dgc_theme_options {
 	public $args = array();
@@ -1320,7 +1320,7 @@ class dgc_theme_options {
 		/*
 		* Add our theme options page to the admin menu.
 		* This function is attached to the admin_menu action hook.
-		* @since dgc-wordpress-theme 1.0
+		* @since dgc-theme 1.0
 		*/
 		$admin_page = add_theme_page(
 			__( 'Theme Options', 'textdomain' ),                             // Name of page
@@ -1493,7 +1493,7 @@ class dgc_theme_options {
 	/**
 	 * Renders the Theme Options administration screen.
 	 *
-	 * @since dgc-wordpress-theme 1.0
+	 * @since dgc-theme 1.0
 	 */
 	public function dgc_theme_options_render_page() {
 		?>
@@ -1542,7 +1542,7 @@ class dgc_theme_options {
 						_e( 'submit request.', 'textdomain' );
 						echo '</a> ';
 						_e( 'On official ', 'textdomain' );
-						echo ' <a target="_blank" href="http://wordpress.org/support/theme/dgc-wordpress-theme">';
+						echo ' <a target="_blank" href="http://wordpress.org/support/theme/dgc-theme">';
 						_e( 'Support forum', 'textdomain' );
 						echo '</a> ';
 						_e( 'You may find answers on Your questions.', 'textdomain' );
@@ -1560,13 +1560,13 @@ class dgc_theme_options {
 						?></p>
                 </div>
                 <div class="sidebar-promo-widget promo-about">
-                    <h3><?php _e( 'dgc-wordpress-theme', 'textdomain' ); ?></h3>
+                    <h3><?php _e( 'dgc-theme', 'textdomain' ); ?></h3>
                     <p class="sidebar-promo-content"><?php
-						echo ' <a target="_blank" href="https://dgc.network/product/dgc-wordpress-theme">';
-						_e( 'dgc-wordpress-theme - WordPress responsive theme', 'textdomain' );
+						echo ' <a target="_blank" href="https://dgc.network/product/dgc-theme">';
+						_e( 'dgc-theme - WordPress responsive theme', 'textdomain' );
 						echo '</a> ';
 						_e( ' that contains all the options of ', 'textdomain' );
-						echo ' <a target="_blank" href="https://wordpress.org/themes/dgc-wordpress-theme/">';
+						echo ' <a target="_blank" href="https://wordpress.org/themes/dgc-theme/">';
 						_e( 'FREE version', 'textdomain' );
 						echo '</a> ';
 						_e( ' plus:', 'textdomain' );

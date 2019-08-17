@@ -1,8 +1,8 @@
-# Translation of dgc-wordpress-theme in Ukrainian
-# This file is distributed under the same license as the dgc-wordpress-theme package.
+# Translation of dgc-theme in Ukrainian
+# This file is distributed under the same license as the dgc-theme package.
 msgid ""
 msgstr ""
-"Project-Id-Version: dgc-wordpress-theme\n"
+"Project-Id-Version: dgc-theme\n"
 "POT-Creation-Date: 2016-03-25 15:26+0200\n"
 "PO-Revision-Date: 2016-03-25 15:26+0200\n"
 "Last-Translator: dgc-network\n"
@@ -252,7 +252,7 @@ msgstr "Результати пошуку для фрази: %s"
 
 #: functions.php:1925
 msgid ""
-"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
+"Attention! dgc-theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
@@ -726,7 +726,7 @@ msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Встановлюємо плагін %1$s(%2$d/%3$d)"
 
 #: includes/func/plugins-included.php:38
-msgid "dgc-wordpress-theme Plugin Integration"
+msgid "dgc-theme Plugin Integration"
 msgstr ""
 
 #: includes/func/plugins-included.php:39
@@ -1874,7 +1874,7 @@ msgstr ""
 
 #: includes/theme-options/theme-options.php:1210
 msgid ""
-"dgc-wordpress-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
+"dgc-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
 "a> Powered by: <a href=\"https://github.com/dgc-network/\">dgc-network</a>"
 msgstr ""
 

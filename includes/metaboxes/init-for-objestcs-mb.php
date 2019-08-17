@@ -2,7 +2,7 @@
 /**
  * Include and setup custom metaboxes and fields.
  *
- * @category dgc-wordpress-theme
+ * @category dgc-theme
  * @package  Metaboxes
  * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
  * @link     https://github.com/webdevstudios/Custom-Metaboxes-and-Fields-for-WordPress

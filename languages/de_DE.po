@@ -1,8 +1,8 @@
-# Translation of dgc-wordpress-theme in German
-# This file is distributed under the same license as the dgc-wordpress-theme package.
+# Translation of dgc-theme in German
+# This file is distributed under the same license as the dgc-theme package.
 msgid ""
 msgstr ""
-"Project-Id-Version: dgc-wordpress-theme\n"
+"Project-Id-Version: dgc-theme\n"
 "POT-Creation-Date: 2016-03-25 15:31+0200\n"
 "PO-Revision-Date: 2016-03-25 15:31+0200\n"
 "Last-Translator: dgc-network\n"
@@ -250,11 +250,11 @@ msgstr "Suchergebnisse für: %s"
 
 #: functions.php:1925
 msgid ""
-"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
+"Attention! dgc-theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
-"Achtung! Version 2.0 des Theme dgc-wordpress-theme ist ein wesentliches Update. Du "
+"Achtung! Version 2.0 des Theme dgc-theme ist ein wesentliches Update. Du "
 "könntest bei der Anzeige von Inhalten in Shortcodes Probleme bekommen, weil "
 "wir diesen Teil als Plugin umgesetzt haben. Du benötigst "
 
@@ -743,8 +743,8 @@ msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Installiere Plugin %1$s (%2$d/%3$d)"
 
 #: includes/func/plugins-included.php:38
-msgid "dgc-wordpress-theme Plugin Integration"
-msgstr "dgc-wordpress-theme Plugin-Einbindung"
+msgid "dgc-theme Plugin Integration"
+msgstr "dgc-theme Plugin-Einbindung"
 
 #: includes/func/plugins-included.php:39
 msgid "Plugin Integration"
@@ -1917,7 +1917,7 @@ msgstr "Copyright-Abschnitt"
 
 #: includes/theme-options/theme-options.php:1210
 msgid ""
-"dgc-wordpress-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
+"dgc-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
 "a> Powered by: <a href=\"https://github.com/dgc-network/\">dgc-network</a>"
 msgstr ""
 
@@ -2147,11 +2147,11 @@ msgstr "%s Archive"
 msgid "Placeholder"
 msgstr "Platzhalter"
 
-#~ msgid "dgc-wordpress-theme"
-#~ msgstr "dgc-wordpress-theme"
+#~ msgid "dgc-theme"
+#~ msgstr "dgc-theme"
 
 #~ msgid ""
-#~ "dgc-wordpress-theme - Free WordPress responsive theme with powerful theme options "
+#~ "dgc-theme - Free WordPress responsive theme with powerful theme options "
 #~ "panel and simple clean front end design. Ability to modify styles and "
 #~ "options according to your needs. Two different layout types responsive "
 #~ "and fixed. Easily upload logo, background, edit colors, header and menu "
@@ -2159,7 +2159,7 @@ msgstr "Platzhalter"
 #~ "Translated to Russian, German, Spanish, French, Vietnamese, RTL ready. "
 #~ "Works perfect with WooCommerce, BuddyPress, WPML, Contact form 7."
 #~ msgstr ""
-#~ "dgc-wordpress-theme – ein frei erhältliches, responsives WordPress-Theme mit einem "
+#~ "dgc-theme – ein frei erhältliches, responsives WordPress-Theme mit einem "
 #~ "Menü für leistungsstarke Theme-Optionen und einem klaren und schlichten "
 #~ "Front End-Design. Mit der Möglichkeit, Stil und Einstellungen so "
 #~ "anzupassen, wie du es brauchst. Logo einfach hochladen, Hintergrund, "
@@ -2278,18 +2278,18 @@ msgstr "Platzhalter"
 #~ msgid "&larr;"
 #~ msgstr "&larr;"
 
-#~ msgid "dgc-wordpress-theme requires the following plugin: %1$s."
-#~ msgstr "dgc-wordpress-theme benötigt folgendes Plugin: %1$s."
+#~ msgid "dgc-theme requires the following plugin: %1$s."
+#~ msgstr "dgc-theme benötigt folgendes Plugin: %1$s."
 
-#~ msgid "dgc-wordpress-theme recommends the following plugin: %1$s."
-#~ msgstr "dgc-wordpress-theme empfiehlt folgendes Plugin: %1$s."
+#~ msgid "dgc-theme recommends the following plugin: %1$s."
+#~ msgstr "dgc-theme empfiehlt folgendes Plugin: %1$s."
 
 #~ msgid ""
 #~ "The following plugin needs to be updated to its latest version to ensure "
-#~ "maximum compatibility with dgc-wordpress-theme: %1$s."
+#~ "maximum compatibility with dgc-theme: %1$s."
 #~ msgstr ""
 #~ "Das folgende Plugin muss auf die neueste Version aktualisiert werden, um "
-#~ "eine maximale Kompatibilität mit dem dgc-wordpress-theme zu gewährleisten: "
+#~ "eine maximale Kompatibilität mit dem dgc-theme zu gewährleisten: "
 #~ "%1$s."
 
 #~ msgid "Activate installed plugin"
@@ -2442,8 +2442,8 @@ msgstr "Platzhalter"
 #~ msgid "Something went wrong."
 #~ msgstr "Irgendwas ist schiefgegangen."
 
-#~ msgid "dgc-wordpress-theme by"
-#~ msgstr "Theme dgc-wordpress-theme von"
+#~ msgid "dgc-theme by"
+#~ msgstr "Theme dgc-theme von"
 
 #~ msgid "dgc-network"
 #~ msgstr "dgc-network"
@@ -2457,8 +2457,8 @@ msgstr "Platzhalter"
 #~ msgid "WordPress"
 #~ msgstr "WordPress"
 
-#~ msgid "dgc-wordpress-theme Options"
-#~ msgstr "dgc-wordpress-theme-Optionen"
+#~ msgid "dgc-theme Options"
+#~ msgstr "dgc-theme-Optionen"
 
 #~ msgid "Advanced theme settings"
 #~ msgstr "Erweiterte Theme-Einstellungen"

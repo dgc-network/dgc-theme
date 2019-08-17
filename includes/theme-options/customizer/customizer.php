@@ -39,7 +39,7 @@ class dgc_theme_options_customizer {
 			'priority'          => 10,
 			'capability'        => 'edit_theme_options',
 			'theme_supports'    => '',
-			'title'             => __('dgc-wordpress-theme Options', 'textdomain'),
+			'title'             => __('dgc-theme Options', 'textdomain'),
 			'description'       => '',
 		));
 		$type = 'option'; 

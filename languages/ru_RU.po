@@ -1,8 +1,8 @@
-# Translation of dgc-wordpress-theme in Russian
-# This file is distributed under the same license as the dgc-wordpress-theme package.
+# Translation of dgc-theme in Russian
+# This file is distributed under the same license as the dgc-theme package.
 msgid ""
 msgstr ""
-"Project-Id-Version: dgc-wordpress-theme\n"
+"Project-Id-Version: dgc-theme\n"
 "POT-Creation-Date: 2016-03-25 15:24+0200\n"
 "PO-Revision-Date: 2016-03-25 15:24+0200\n"
 "Last-Translator: dgc-network\n"
@@ -251,11 +251,11 @@ msgstr "Результаты поиска: %s"
 
 #: functions.php:1925
 msgid ""
-"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
+"Attention! dgc-theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
-"Внимание! dgc-wordpress-theme тема версия 2.0 несет в себе серьезные объявления. Вы "
+"Внимание! dgc-theme тема версия 2.0 несет в себе серьезные объявления. Вы "
 "можете столкнуться с проблемами при выводе контента в шорткодах, поскольку "
 "мы перенесли этот функционал к плагинам. Вам необходимо установить плагин  "
 
@@ -739,8 +739,8 @@ msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Установка плагина %1$s (%2$d/%3$d)"
 
 #: includes/func/plugins-included.php:38
-msgid "dgc-wordpress-theme Plugin Integration"
-msgstr "dgc-wordpress-theme Интеграция Плагинов"
+msgid "dgc-theme Plugin Integration"
+msgstr "dgc-theme Интеграция Плагинов"
 
 #: includes/func/plugins-included.php:39
 msgid "Plugin Integration"
@@ -1905,7 +1905,7 @@ msgstr "Раздел копирайт"
 
 #: includes/theme-options/theme-options.php:1210
 msgid ""
-"dgc-wordpress-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
+"dgc-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
 "a> Powered by: <a href=\"https://github.com/dgc-network/\">dgc-network</a>"
 msgstr ""
 
@@ -2199,18 +2199,18 @@ msgstr ""
 #~ msgid "&larr;"
 #~ msgstr "&larr;"
 
-#~ msgid "dgc-wordpress-theme requires the following plugin: %1$s."
-#~ msgstr "dgc-wordpress-theme Тема требует установки следующих плагинов: %1$s."
+#~ msgid "dgc-theme requires the following plugin: %1$s."
+#~ msgstr "dgc-theme Тема требует установки следующих плагинов: %1$s."
 
-#~ msgid "dgc-wordpress-theme recommends the following plugin: %1$s."
-#~ msgstr "dgc-wordpress-theme Тема рекоммендует установить следующие плагины: %1$s."
+#~ msgid "dgc-theme recommends the following plugin: %1$s."
+#~ msgstr "dgc-theme Тема рекоммендует установить следующие плагины: %1$s."
 
 #~ msgid ""
 #~ "The following plugin needs to be updated to its latest version to ensure "
-#~ "maximum compatibility with dgc-wordpress-theme: %1$s."
+#~ "maximum compatibility with dgc-theme: %1$s."
 #~ msgstr ""
 #~ "Следующие плагины рекомендуется обновить до последней версии для "
-#~ "максимальной совместимости с dgc-wordpress-theme темой: %1$s."
+#~ "максимальной совместимости с dgc-theme темой: %1$s."
 
 #~ msgid "Activate installed plugin"
 #~ msgstr "Активировать установленные плагины"
@@ -2372,8 +2372,8 @@ msgstr ""
 #~ msgid "WordPress"
 #~ msgstr "WordPress"
 
-#~ msgid "dgc-wordpress-theme Options"
-#~ msgstr "dgc-wordpress-theme настройки темы"
+#~ msgid "dgc-theme Options"
+#~ msgstr "dgc-theme настройки темы"
 
 #~ msgctxt "1: post format name. 2: date"
 #~ msgid "%1$s on %2$s"

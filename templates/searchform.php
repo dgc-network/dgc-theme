@@ -1,10 +1,10 @@
 <?php
 /**
- * The template for displaying search forms in dgc-wordpress-theme
+ * The template for displaying search forms in dgc-theme
  *
  * @package WordPress
- * @subpackage dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @subpackage dgc-theme
+ * @since dgc-theme 1.0
  */?>
 	
 <form method="get" id="searchform" action="<?php echo esc_url( home_url() ); ?>" role="search">

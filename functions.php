@@ -1,15 +1,15 @@
 <?php
 /**
- * dgc-wordpress-theme functions and definitions
+ * dgc-theme functions and definitions
  *
- * @package dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @package dgc-theme
+ * @since dgc-theme 1.0
  */
 
  /**
  * Set the content width based on the theme's design and stylesheet.
  *
- * @since dgc-wordpress-theme 1.0
+ * @since dgc-theme 1.0
  */
 if ( ! isset( $content_width ) ) $content_width = 960; /* pixels */
 
@@ -68,7 +68,7 @@ if ( ! function_exists( 'dgc_setup' ) ):
  * before the init hook. The init hook is too late for some features, such as indicating
  * support post thumbnails.
  *
- * @since dgc-wordpress-theme 1.0
+ * @since dgc-theme 1.0
  */
 
 /* 
@@ -107,7 +107,7 @@ require get_template_directory() . '/includes/template-tags.php';
 
 
 /**
- * Adding recommended plugins for dgc-wordpress-theme.
+ * Adding recommended plugins for dgc-theme.
  */
 require_once('includes/func/plugins-included.php');
 
@@ -165,7 +165,7 @@ function dgc_setup() {
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
-	 * If you're building a theme based on dgc-wordpress-theme, use a find and replace
+	 * If you're building a theme based on dgc-theme, use a find and replace
 	 * to change 'textdomain' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'textdomain', get_template_directory() . '/languages' );
@@ -251,7 +251,7 @@ add_filter( 'post_thumbnail_html', 'dgc_thumbnail_size', 0, 5 );
 /**
  * Register widgetized area and update sidebar with default widgets
  *
- * @since dgc-wordpress-theme 1.0
+ * @since dgc-theme 1.0
  */
 if ( ! function_exists( 'dgc_widgets_init' ) ) {
 	function dgc_widgets_init() {
@@ -1710,17 +1710,18 @@ if ( ! function_exists( 'dgc_kses_data' ) ) {
 
 if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 	function dgc_get_qtranslate_languages_list(){
-		$theme_options = dgc_get_theme_options();
-		if( function_exists('qtranxf_getLanguage') ){ 
-			$languages = qtranxf_getLanguage();
+		//$theme_options = dgc_get_theme_options();
+		//if( function_exists('qtranxf_getLanguage') ){ 
+		if( defined( 'QTRANSLATE_FILE' ) ){ 
+			//$languages = qtranxf_getLanguage();
 			$languages = qtranxf_getSortedLanguages();
-			echo json_encode($languages);
 
-			global $q_config, $qtranslate_options;
-			$languages = $qtranslate_options['languages'];
+			//global $q_config, $qtranslate_options;
+			//$languages = $qtranslate_options['languages'];
 			
 			if(!empty($languages)){
 				echo '<div id="header_language_select"><ul id="lang-select-block">';
+				echo json_encode($languages);
 				foreach($languages as $l){
 
 					//echo $l['qtranslate_language_names'];
@@ -1732,21 +1733,25 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 					qtranslate_date_formats
 					qtranslate
 					*/
-/*					
-					if($l['active']) {
+					
+					//if($l['active']) {
 						echo '<li class="current">';
-							echo '<a class="'.$l['language_code'].'" href="'.$l['url'].'" onclick="return false">';
-								echo $l['language_code'];
+							//echo '<a class="'.$l['language_code'].'" href="'.$l['url'].'" onclick="return false">';
+								//echo $l['language_code'];
+							echo '<a class="'.qtranxf_getLanguage($l).'" href="'.qtranxf_get_url_for_language($l).'" onclick="return false">';
+								echo qtranxf_getLanguage($l);
 							echo '</a>';
 						echo '<ul id="lang-select-popup">';					
 						
 							echo '<li class="active">';
-								echo '<a class="'.$l['language_code'].'" href="'.$l['url'].'" onclick="return false">';
-									echo $l['native_name'];
-								echo '</a>';
-							echo '</li>';
-					} 
-*/						
+							//echo '<a class="'.$l['language_code'].'" href="'.$l['url'].'" onclick="return false">';
+								//echo $l['native_name'];
+							echo '<a class="'.qtranxf_getLanguage($l).'" href="'.qtranxf_get_url_for_language($l).'" onclick="return false">';
+								echo qtranxf_getLanguageName($l);
+							echo '</a>';
+						echo '</li>';
+					//} 
+						
 				}
 /*				
 				foreach($languages as $l){
@@ -1785,8 +1790,8 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 	}
 }
 
-if ( ! function_exists( 'dgc_get_languages_list' ) ) {
-	function dgc_get_languages_list(){
+if ( ! function_exists( 'dgc_get_wpml_languages_list' ) ) {
+	function dgc_get_wpml_languages_list(){
 		$theme_options = dgc_get_theme_options();
 		if( function_exists('icl_get_languages') && $theme_options['is_wpml_ready'] == 'on' ){ 
 			$languages = icl_get_languages('skip_missing=0');

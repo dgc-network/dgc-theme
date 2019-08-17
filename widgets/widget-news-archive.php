@@ -3,8 +3,8 @@
  * Makes a custom Widget for displaying Aside, Link, Status, and Quote Posts available
  *
  * @package WordPress
- * @subpackage dgc-wordpress-theme
- * @since dgc-wordpress-theme
+ * @subpackage dgc-theme
+ * @since dgc-theme
  */
 class DGC_News_Archive_Widget extends WP_Widget {
 	/**

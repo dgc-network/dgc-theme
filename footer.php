@@ -5,8 +5,8 @@
  * Contains the closing of the id=main div and all content after
  *
  * @package WordPress
- * @subpackage dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @subpackage dgc-theme
+ * @since dgc-theme 1.0
  */
 ?>
 				</div>

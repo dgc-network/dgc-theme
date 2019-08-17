@@ -3,8 +3,8 @@
  * The template for displaying posts in the Image post format.
  *
  * @package WordPress
- * @subpackage dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @subpackage dgc-theme
+ * @since dgc-theme 1.0
  */
 ?>
 

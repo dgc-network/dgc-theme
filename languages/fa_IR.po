@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: dgc-wordpress-theme\n"
+"Project-Id-Version: dgc-theme\n"
 "POT-Creation-Date: 2016-03-25 15:30+0200\n"
 "PO-Revision-Date: 2016-03-25 15:30+0200\n"
 "Last-Translator: dgc-network\n"
@@ -229,7 +229,7 @@ msgstr "نتیجه جستجو برای :  %s"
 
 #: functions.php:1925
 msgid ""
-"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
+"Attention! dgc-theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
@@ -667,7 +667,7 @@ msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: includes/func/plugins-included.php:38
-msgid "dgc-wordpress-theme Plugin Integration"
+msgid "dgc-theme Plugin Integration"
 msgstr ""
 
 #: includes/func/plugins-included.php:39
@@ -1816,7 +1816,7 @@ msgstr "بحش کپی رایت"
 
 #: includes/theme-options/theme-options.php:1210
 msgid ""
-"dgc-wordpress-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
+"dgc-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</"
 "a> Powered by: <a href=\"https://github.com/dgc-network/\">dgc-network</a>"
 msgstr ""
 
@@ -2052,8 +2052,8 @@ msgstr ""
 #~ msgid "Use this widget to list your Link posts"
 #~ msgstr "از این ابزارک برای درست کردن لینکهای خود استفاده کنید."
 
-#~ msgid "dgc-wordpress-theme News Archiv"
-#~ msgstr "بایگانی خبری dgc-wordpress-theme "
+#~ msgid "dgc-theme News Archiv"
+#~ msgstr "بایگانی خبری dgc-theme "
 
 #~ msgid "News-Archiv"
 #~ msgstr "بایگانی - اخبار"
@@ -2157,7 +2157,7 @@ msgstr ""
 #~ msgid "Replace default theme copyright information and links."
 #~ msgstr "تنطیمت کپی رایت و لینکهای آن"
 
-#~ msgid "dgc-wordpress-theme Options"
+#~ msgid "dgc-theme Options"
 #~ msgstr "تنظیمات پوسته فرویت فول"
 
 #~ msgid "Enable default css"

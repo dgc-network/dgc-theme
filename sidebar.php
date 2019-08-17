@@ -3,8 +3,8 @@
  * The Sidebar containing the main widget areas.
  *
  * @package WordPress
- * @subpackage dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @subpackage dgc-theme
+ * @since dgc-theme 1.0
  */
 ?>
 		<div id="secondary" class="widget-area" role="complementary">

@@ -3,8 +3,8 @@
  * The template for displaying 404 pages (Not Found).
  *
  * @package WordPress
- * @subpackage dgc-wordpress-theme
- * @since dgc-wordpress-theme 1.0
+ * @subpackage dgc-theme
+ * @since dgc-theme 1.0
  */
 
 	get_header(); 

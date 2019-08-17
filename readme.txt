@@ -1,5 +1,5 @@
 -------------------------------------------------------
-    Thank you for downloading dgc-wordpress-theme!
+    Thank you for downloading dgc-theme!
 -------------------------------------------------------
 
 We have created a theme based on our necessities and experience, we will be glad if you like our work.
@@ -14,9 +14,9 @@ Thank you.
     Copyright
 -------------------------------------------------------
 
-dgc-wordpress-theme is a free WordPress responsive theme with theme options panel, designed and developed in dgc-network
+dgc-theme is a free WordPress responsive theme with theme options panel, designed and developed in dgc-network
 Feel free to use and modify this theme as you like.
-dgc-wordpress-theme is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
+dgc-theme is distributed under the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
 
 -------------------------------------------------------
     Demo
@@ -33,8 +33,8 @@ If you want to get demo content pages like on demo website
     Installation
 -------------------------------------------------------
 
-1. Upload the "dgc-wordpress-theme" folder to the "/wp-content/themes/" directory
-or find in Appearance > Themes > Install theme, type “dgc-wordpress-theme” in search field.
+1. Upload the "dgc-theme" folder to the "/wp-content/themes/" directory
+or find in Appearance > Themes > Install theme, type “dgc-theme” in search field.
 2. Activate the Theme through the 'Themes' menu in WordPress
 3. Go to "Appearance" > Theme options
 4. Config theme as you need.
@@ -45,7 +45,7 @@ or find in Appearance > Themes > Install theme, type “dgc-wordpress-theme” i
 -------------------------------------------------------
 
 === Documentation ===
-https://github.com/dgc-network/dgc-wordpress-theme/wiki
+https://github.com/dgc-network/dgc-theme/wiki
 
 === WP Version ===
 As this theme uses the WordPress customizer feature for most options, it requires at least version 3.4 to work properly.
@@ -56,7 +56,7 @@ Theme supported 2 types of html layout. Default responsive setting which adapt f
 Uncheck arrow below if you need static website display.
 
 === Theme options ===
-dgc-wordpress-theme has custom theme options panel, for easy setup and config theme setting for your needs.
+dgc-theme has custom theme options panel, for easy setup and config theme setting for your needs.
 
 === Upload logo, backgroud, favicon ===
 Go to the customizer screen in the logo and favicon section and upload your images.

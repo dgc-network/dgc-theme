@@ -238,7 +238,7 @@ msgstr ""
 
 #: functions.php:1925
 msgid ""
-"Attention! dgc-wordpress-theme version 2.0 got major updates. You may have a "
+"Attention! dgc-theme version 2.0 got major updates. You may have a "
 "problems with display content in shortcodes, because we created this part as "
 "plugin. You need install "
 msgstr ""
@@ -693,7 +693,7 @@ msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: includes/func/plugins-included.php:38
-msgid "dgc-wordpress-theme Plugin Integration"
+msgid "dgc-theme Plugin Integration"
 msgstr ""
 
 #: includes/func/plugins-included.php:39
@@ -1804,7 +1804,7 @@ msgstr ""
 
 #: includes/theme-options/theme-options.php:1210
 msgid ""
-"dgc-wordpress-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</a> "
+"dgc-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</a> "
 "Powered by: <a href=\"https://github.com/dgc-network/\">dgc-network</a>"
 msgstr ""
 
