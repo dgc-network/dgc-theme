@@ -1717,10 +1717,11 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 			$languages = $qtranslate_options['languages'];
 			
 			if(!empty($languages)){
-				echo $languages;
-/*			
 				echo '<div id="header_language_select"><ul id="lang-select-block">';
 				foreach($languages as $l){
+
+					echo $l;
+/*					
 					if($l['active']) {
 						echo '<li class="current">';
 							echo '<a class="'.$l['language_code'].'" href="'.$l['url'].'" onclick="return false">';
@@ -1734,8 +1735,9 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 								echo '</a>';
 							echo '</li>';
 					} 
-						
+*/						
 				}
+/*				
 				foreach($languages as $l){
 					if(!($l['active'])) {
 							echo '<li class="unactive">';
@@ -1744,10 +1746,10 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 							echo '</a></li>';
 					}
 				}
+*/
 						echo '</ul>';
 					echo '</li>';					
 				echo '</ul></div>';
-*/				
 			}
 		}
 /*
