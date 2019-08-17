@@ -452,7 +452,7 @@ if ( ! function_exists( 'dgc_get_user_profile_html' ) ) {
 		if (class_exists('Woocommerce')) { 
 			global $woocommerce;
 			//if (!empty($theme_options['showuser']) && (esc_attr($theme_options['showuser']) == 'on')) {
-					$btn_user_profile = '<div class="menu-item">
+					$btn_user_profile = '<div class="cart-button">
 						<a href="'.get_permalink( wc_get_page_id( 'cart' ) ).'" class="cart-contents">
 							<div class="user_profile_image"></div> 
 						</a>
