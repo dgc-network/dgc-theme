@@ -1720,7 +1720,15 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 				echo '<div id="header_language_select"><ul id="lang-select-block">';
 				foreach($languages as $l){
 
-					echo $l;
+					echo $l['qtranslate_language_names'];
+					/*
+					qtranslate_language_names
+					qtranslate_locales
+					qtranslate_locales_html
+					qtranslate_na_messages
+					qtranslate_date_formats
+					qtranslate
+					*/
 /*					
 					if($l['active']) {
 						echo '<li class="current">';
