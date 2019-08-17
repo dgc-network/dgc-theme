@@ -1713,6 +1713,8 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 		$theme_options = dgc_get_theme_options();
 		if( function_exists('qtranxf_getLanguage') ){ 
 			$languages = qtranxf_getLanguage();
+			echo $languages;
+
 			global $q_config, $qtranslate_options;
 			$languages = $qtranslate_options['languages'];
 			
@@ -1720,7 +1722,7 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 				echo '<div id="header_language_select"><ul id="lang-select-block">';
 				foreach($languages as $l){
 
-					echo $l['qtranslate_language_names'];
+					//echo $l['qtranslate_language_names'];
 					/*
 					qtranslate_language_names
 					qtranslate_locales
