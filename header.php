@@ -56,10 +56,10 @@
 									</div>	
 										
 									<div data-originalstyle="<?php echo $menu_pos_class; ?>" class="menu-wrapper <?php echo $menu_pos_class; ?>">
-										<?php dgc_get_user_button_html(); ?>
-										<?php dgc_get_cart_button_html(); ?>
-										<?php dgc_get_wpml_languages_list(); ?>
+										<?php if (is_login()) dgc_get_cart_button_html(); ?>
+										<?php dgc_get_user_profile_html(); ?>
 										<?php dgc_get_qtranslate_languages_list(); ?>
+										<?php dgc_get_wpml_languages_list(); ?>
 											
 										<nav role="navigation" class="site-navigation main-navigation">
 											<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
@@ -85,10 +85,10 @@
 										<?php echo dgc_get_logo(); ?>
 									</div>	
 									<div data-originalstyle="<?php echo $menu_pos_class; ?>" class="menu-wrapper <?php echo $menu_pos_class; ?>">
-										<?php dgc_get_wpml_languages_list(); ?>
-										<?php dgc_get_user_button_html(); ?>
-										<?php dgc_get_cart_button_html(); ?>
+										<?php if (is_login()) dgc_get_cart_button_html(); ?>
+										<?php dgc_get_user_profile_html(); ?>
 										<?php dgc_get_qtranslate_languages_list(); ?>
+										<?php dgc_get_wpml_languages_list(); ?>
 											
 										<nav role="navigation" class="site-navigation main-navigation">
 											<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
@@ -111,8 +111,8 @@
 									<span class="icon-bar" style="background-color: <?php echo $menu_icon_color?>"></span>
 								</button>
 							</div>
-							<div class="cart_wrapper"><?php dgc_get_cart_button_html(); ?></div>
-							<div class="user_wrapper"><?php dgc_get_user_button_html(); ?></div>
+							<div class="cart_wrapper"><?php if (is_login()) dgc_get_cart_button_html(); ?></div>
+							<div class="user_wrapper"><?php dgc_get_user_profile_html(); ?></div>
 							<div class="language_switcher"><?php dgc_get_qtranslate_languages_list(); ?></div>
 							<div class="language_switcher"><?php dgc_get_wpml_languages_list(); ?></div>
 							<div class="menu_wrapper collapse"><?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?></div>

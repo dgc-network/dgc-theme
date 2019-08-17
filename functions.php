@@ -13,33 +13,6 @@
  */
 if ( ! isset( $content_width ) ) $content_width = 960; /* pixels */
 
-/* Polylang */
-// 確保複製過去時帶入預設標題
-function mxp_editor_title( $title ) {
-    // Polylang 會帶入 'from_post' 這組 GET 參數
-    if ( isset( $_GET['from_post'] ) ) {
-        $my_post = get_post( $_GET['from_post'] );
-        if ( $my_post )
-            return $my_post->post_title;
-    }
-
-    return $title;
-}
-add_filter( 'default_title', 'mxp_editor_title' );
-
-// 確保複製過去帶入預設內容
-function mxp_editor_content( $content ) {
-    // Polylang 會帶入 'from_post' 這組 GET 參數
-    if ( isset( $_GET['from_post'] ) ) {
-        $my_post = get_post( $_GET['from_post'] );
-        if ( $my_post )
-            return $my_post->post_content;
-    }
-
-    return $content;
-}
-add_filter( 'default_content', 'mxp_editor_content' );
-
 /*woocommerce theme support*/
 add_theme_support( 'woocommerce' );
 
@@ -470,8 +443,8 @@ if ( ! function_exists( 'dgc_get_cart_button_html' ) ) {
 }	
 
 /*get user button html*/
-if ( ! function_exists( 'dgc_get_user_button_html' ) ) {
-	function dgc_get_user_button_html() {
+if ( ! function_exists( 'dgc_get_user_profile_html' ) ) {
+	function dgc_get_user_profile_html() {
 		$btn_user = '';
 		$theme_options = dgc_get_theme_options();
 		
@@ -2584,5 +2557,37 @@ function add_custom_taxonomies() {
 			'hierarchical' => true // This will allow URL's like "/locations/boston/cambridge/"
 		),
 	));
-  }
-  add_action( 'init', 'add_custom_taxonomies', 0 );
+}
+add_action( 'init', 'add_custom_taxonomies', 0 );
+
+function is_login() { 
+	return in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php')); 
+}
+
+/* Polylang */
+// 確保複製過去時帶入預設標題
+function mxp_editor_title( $title ) {
+    // Polylang 會帶入 'from_post' 這組 GET 參數
+    if ( isset( $_GET['from_post'] ) ) {
+        $my_post = get_post( $_GET['from_post'] );
+        if ( $my_post )
+            return $my_post->post_title;
+    }
+
+    return $title;
+}
+add_filter( 'default_title', 'mxp_editor_title' );
+
+// 確保複製過去帶入預設內容
+function mxp_editor_content( $content ) {
+    // Polylang 會帶入 'from_post' 這組 GET 參數
+    if ( isset( $_GET['from_post'] ) ) {
+        $my_post = get_post( $_GET['from_post'] );
+        if ( $my_post )
+            return $my_post->post_content;
+    }
+
+    return $content;
+}
+add_filter( 'default_content', 'mxp_editor_content' );
+
