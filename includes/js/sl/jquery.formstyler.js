@@ -41,7 +41,6 @@
 						el.after(checkbox);
 						if (el.is(':checked')) checkbox.addClass('checked');
 						if (el.is(':disabled')) checkbox.addClass('disabled');
-						// клик на псевдочекбокс
 						checkbox.click(function() {
 							if (!checkbox.is('.disabled')) {
 								if (el.is(':checked')) {
@@ -57,17 +56,14 @@
 								return false;
 							}
 						});
-						// клик на label
 						el.parent('label').add('label[for="' + el.attr('id') + '"]').click(function(e) {
 							checkbox.click();
 							e.preventDefault();
 						});
-						// переключение по Space или Enter
 						el.change(function() {
 							if (el.is(':checked')) checkbox.addClass('checked');
 							else checkbox.removeClass('checked');
 						})
-						// чтобы переключался чекбокс, который находится в теге label
 						.keydown(function(e) {
 							if (el.parent('label').length && (e.which == 13 || e.which == 32)) checkbox.click();
 						})
@@ -77,7 +73,6 @@
 						.blur(function() {
 							checkbox.removeClass('focused');
 						});
-						// обновление при динамическом изменении
 						el.on('refresh', function() {
 							if (el.is(':checked')) checkbox.addClass('checked');
 								else checkbox.removeClass('checked');
@@ -95,7 +90,6 @@
 						el.after(radio);
 						if (el.is(':checked')) radio.addClass('checked');
 						if (el.is(':disabled')) radio.addClass('disabled');
-						// клик на псевдорадиокнопке
 						radio.click(function() {
 							if (!radio.is('.disabled')) {
 								$('input[name="' + el.attr('name') + '"]').prop('checked', false).next().removeClass('checked');
@@ -106,12 +100,10 @@
 								return false;
 							}
 						});
-						// клик на label
 						el.parent('label').add('label[for="' + el.attr('id') + '"]').click(function(e) {
 							radio.click();
 							e.preventDefault();
 						});
-						// переключение стрелками
 						el.change(function() {
 							$('input[name="' + el.attr('name') + '"]').next().removeClass('checked');
 							el.next().addClass('checked');
@@ -122,7 +114,6 @@
 						.blur(function() {
 							radio.removeClass('focused');
 						});
-						// обновление при динамическом изменении
 						el.on('refresh', function() {
 							if (el.is(':checked')) {
 								$('input[name="' + el.attr('name') + '"]').next().removeClass('checked');
@@ -158,7 +149,6 @@
 						.click(function() {
 							file.removeClass('focused');
 						})
-						// обновление при динамическом изменении
 						.on('refresh', function() {
 							if (el.is(':disabled')) file.addClass('disabled');
 								else file.removeClass('disabled');
@@ -172,8 +162,6 @@
 					if (el.next('span.jqselect').length < 1) {
 
 						function selectbox() {
-
-							// запрещаем прокрутку страницы при прокрутке селекта
 							function preventScrolling(selector) {
 								selector.unbind('mousewheel DOMMouseScroll').bind('mousewheel DOMMouseScroll', function(e) {
 									var scrollTo = null;
@@ -185,7 +173,7 @@
 
 							var option = $('option', el);
 							var list = '';
-							// формируем список селекта
+
 							function makeList() {
 								for (i = 0, len = option.length; i < len; i++) {
 									var li = '',
@@ -199,7 +187,7 @@
 									if (option.eq(i).is(':selected:disabled')) liClass = selDis;
 									if (option.eq(i).attr('class') !== undefined) optionClass = ' ' + option.eq(i).attr('class');
 									li = '<li class="' + liClass + optionClass + '">'+ option.eq(i).text() +'</li>';
-									// если есть optgroup
+
 									if (option.eq(i).parent().is('optgroup')) {
 										if (option.eq(i).parent().attr('class') !== undefined) optgroupClass = ' ' + option.eq(i).parent().attr('class');
 										li = '<li class="' + liClass + optionClass + ' option' + optgroupClass + '">'+ option.eq(i).text() +'</li>';
@@ -211,7 +199,6 @@
 								}
 							} // end makeList()
 
-							// одиночный селект
 							function doSelect() {
 								var selectbox =
 									$('<span' + id + ' class="jq-selectbox jqselect' + cl + '" style="display: inline-block; position: relative; z-index:' + opt.singleSelectzIndex + '">'+
@@ -224,18 +211,15 @@
 								var divText = $('div.jq-selectbox__text', selectbox);
 								var optionSelected = option.filter(':selected');
 
-								// берем опцию по умолчанию
 								if (optionSelected.length) {
 									divText.text(optionSelected.text());
 								} else {
 									divText.text(option.first().text());
 								}
 
-								// если селект неактивный
 								if (el.is(':disabled')) {
 									selectbox.addClass('disabled');
 
-								// если селект активный
 								} else {
 									makeList();
 									var dropdown =
@@ -252,11 +236,9 @@
 									var position = dropdown.css('top');
 									dropdown.hide();
 
-									// при клике на псевдоселекте
 									divSelect.click(function() {
 										el.focus();
 
-										// умное позиционирование
 										if (opt.selectSmartPositioning) {
 											var win = $(window);
 											var topOffset = selectbox.offset().top;
@@ -265,7 +247,7 @@
 											var	minHeight = liHeight * 6;
 											var	newHeight = liHeight * visible;
 											if (visible > 0 && visible < 6) minHeight =  newHeight;
-											// раскрытие вверх
+
 											if (bottomOffset < 0 || bottomOffset < minHeight)	{
 												dropdown.height('auto').css({top: 'auto', bottom: position});
 												if (dropdown.outerHeight() > topOffset - win.scrollTop() - 20 ) {
@@ -276,7 +258,7 @@
 														if (dropdown.height() > newHeight) dropdown.height(newHeight);
 													}
 												}
-											// раскрытие вниз
+
 											} else if (bottomOffset > minHeight) {
 												dropdown.height('auto').css({bottom: 'auto', top: position});
 												if (dropdown.outerHeight() > bottomOffset - 20 ) {
@@ -301,7 +283,6 @@
 											selectbox.removeClass('opened');
 										}
 
-										// прокручиваем до выбранного пункта при открытии списка
 										if (li.filter('.selected').length) {
 											dropdown.scrollTop(dropdown.scrollTop() + li.filter('.selected').position().top - dropdown.innerHeight()/2 + liHeight/2);
 										}
@@ -310,13 +291,11 @@
 										return false;
 									});
 
-									// при наведении курсора на пункт списка
 									li.hover(function() {
 										$(this).siblings().removeClass('selected');
 									});
 									var selectedText = li.filter('.selected').text();
 
-									// при клике на пункт списка
 									li.filter(':not(.disabled):not(.optgroup)').click(function() {
 										var t = $(this);
 										var liText = t.text();
@@ -335,7 +314,6 @@
 										$('li.sel', dropdown).addClass('selected');
 									});
 
-									// изменение селекта
 									el.change(function() {
 										divText.text(option.filter(':selected').text());
 										li.removeClass('selected sel').not('.optgroup').eq(el[0].selectedIndex).addClass('selected sel');
@@ -346,15 +324,15 @@
 									.blur(function() {
 										selectbox.removeClass('focused');
 									})
-									// прокрутки списка с клавиатуры
+
 									.bind('keydown keyup', function(e) {
 										divText.text(option.filter(':selected').text());
 										li.removeClass('selected sel').not('.optgroup').eq(el[0].selectedIndex).addClass('selected sel');
-										// вверх, влево, PageUp
+										// PageUp
 										if (e.which == 38 || e.which == 37 || e.which == 33) {
 											dropdown.scrollTop(dropdown.scrollTop() + li.filter('.selected').position().top);
 										}
-										// вниз, вправо, PageDown
+										// PageDown
 										if (e.which == 40 || e.which == 39 || e.which == 34) {
 											dropdown.scrollTop(dropdown.scrollTop() + li.filter('.selected').position().top - dropdown.innerHeight() + liHeight);
 										}
@@ -363,10 +341,8 @@
 										}
 									});
 
-									// прячем выпадающий список при клике за пределами селекта
 									$(document).on('click', function(e) {
-										// e.target.nodeName != 'OPTION' - добавлено для обхода бага в Опере
-										// (при изменении селекта с клавиатуры срабатывает событие onclick)
+										// e.target.nodeName != 'OPTION'
 										if (!$(e.target).parents().hasClass('selectbox') && e.target.nodeName != 'OPTION') {
 											dropdown.hide().find('li.sel').addClass('selected');
 											selectbox.removeClass('focused opened');
@@ -375,7 +351,6 @@
 								}
 							} // end doSelect()
 
-							// мультиселект
 							function doMultipleSelect() {
 								var selectbox = $('<span' + id + ' class="jq-select-multiple jqselect' + cl + '" style="display: inline-block"></span>');
 								el.after(selectbox).css({position: 'absolute', left: -9999});
@@ -394,7 +369,7 @@
 								if (ulHeight > selectbox.height()) {
 									ul.css('overflowY', 'scroll');
 									preventScrolling(ul);
-									// прокручиваем до выбранного пункта
+
 									if (li.filter('.selected').length) {
 										ul.scrollTop(ul.scrollTop() + li.filter('.selected').position().top);
 									}
@@ -406,7 +381,6 @@
 									});
 								} else {
 
-									// при клике на пункт списка
 									li.filter(':not(.disabled):not(.optgroup)').click(function(e) {
 										el.focus();
 										selectbox.removeClass('focused');
@@ -415,14 +389,14 @@
 										if(!e.shiftKey) clkd.addClass('first');
 										if(!e.ctrlKey && !e.shiftKey) clkd.siblings().removeClass('selected first');
 
-										// выделение пунктов при зажатом Ctrl
+										// Ctrl
 										if(e.ctrlKey) {
 											if (clkd.is('.selected')) clkd.removeClass('selected first');
 												else clkd.addClass('selected first');
 											clkd.siblings().removeClass('first');
 										}
 
-										// выделение пунктов при зажатом Shift
+										// Shift
 										if(e.shiftKey) {
 											var prev = false,
 													next = false;
@@ -448,7 +422,6 @@
 											if (li.filter('.selected').length == 1) clkd.addClass('first');
 										}
 
-										// отмечаем выбранные мышью
 										option.prop('selected', false);
 										li.filter('.selected').each(function() {
 											var t = $(this);
@@ -460,7 +433,6 @@
 
 									});
 
-									// отмечаем выбранные с клавиатуры
 									option.each(function(i) {
 										$(this).data('optionIndex', i);
 									});
@@ -481,14 +453,13 @@
 										selectbox.removeClass('focused');
 									});
 
-									// прокручиваем с клавиатуры
 									if (ulHeight > selectbox.height()) {
 										el.keydown(function(e) {
-											// вверх, влево, PageUp
+											// PageUp
 											if (e.which == 38 || e.which == 37 || e.which == 33) {
 												ul.scrollTop(ul.scrollTop() + li.filter('.selected').position().top - liHeight);
 											}
-											// вниз, вправо, PageDown
+											// PageDown
 											if (e.which == 40 || e.which == 39 || e.which == 34) {
 												ul.scrollTop(ul.scrollTop() + li.filter('.selected:last').position().top - ul.innerHeight() + liHeight*2);
 											}
@@ -502,7 +473,6 @@
 
 						selectbox();
 
-						// обновление при динамическом изменении
 						el.on('refresh', function() {
 							el.next().remove();
 							selectbox();

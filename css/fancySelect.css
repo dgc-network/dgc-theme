@@ -1,7 +1,7 @@
 div.fancy-select {
 	color: inherit;
-    display: inline-block;
-    /* float: left; */
+    /* display: inline-block; */
+    float: left;
     position: relative;
     width: 100%;
 }

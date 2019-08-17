@@ -219,7 +219,8 @@ table.cmb_metabox textarea:focus {
 	padding: 4px 0 0 0
 }
 
-.cmb-inline li {display: inline-block;
+.cmb-inline li {
+	display: inline-block;
 	padding-right: 18px
 }
 
@@ -255,7 +256,7 @@ table.cmb_metabox .cmb_media_status {
 
 table.cmb_metabox .cmb_media_status .img_status {
 	clear: none;
-	float: left;
+	/* float: left; */
 	display: inline-block;
 	margin-right: 10px;
 	width: auto;

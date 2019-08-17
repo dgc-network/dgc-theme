@@ -997,10 +997,10 @@ embed,iframe,object {
 }
 
 #page-header .container header .header-hgroup.center-pos {
-	/* float:right; */
+	float:right;
     margin: 0;
 	width:100%;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
 }
 
@@ -1016,8 +1016,8 @@ embed,iframe,object {
 
 
 #page-header .container header .menu-wrapper.left-pos {
-	/* float:left; */
-	display:inline-block;
+	float:left;
+	/* display:inline-block; */
 }
 
 #page-header .container header .menu-wrapper.center-pos {
@@ -1027,8 +1027,8 @@ embed,iframe,object {
 }
 
 #page-header .container header .menu-wrapper.right-pos {
-	/* float:right; */
-	display:inline-block;
+	float:right;
+	/* display:inline-block; */
 }
 
 .page-header {
