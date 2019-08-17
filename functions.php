@@ -1723,7 +1723,7 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 				echo '<div id="header_language_select"><ul id="lang-select-block">';
 				echo json_encode($languages);
 				foreach($languages as $l){
-					echo $l;
+					echo qtranxf_getLanguageNative($l);
 
 /*
 					//if($l['active']) {
