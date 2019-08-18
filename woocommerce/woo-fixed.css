@@ -63,7 +63,8 @@ Fixed Styles for Woocommerce.
 	height:21px;
 	border:0;
 	text-decoration:none;
-	background:url(images/user_profile_image.png) no-repeat transparent;
+	/* background:url(images/user_profile_image.png) no-repeat transparent; */
+	background:url(images/user_profile_image.png) no-repeat;
 }
 .menu-buttons a .cart_image{
 	display:block;
