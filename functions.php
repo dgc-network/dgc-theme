@@ -1660,7 +1660,7 @@ if ( ! function_exists( 'dgc_get_user_profile_html' ) ) {
 			//if (!empty($theme_options['showuser']) && (esc_attr($theme_options['showuser']) == 'on')) {
 					$btn_user_profile = '<div class="cart-button">
 						<a href="'.get_permalink( wc_get_page_id( 'cart' ) ).'">
-							<div class="user_profile_image">USER</div> 
+							<div class="user_profile_image">USER</div>
 						</a>
 					</div>';
 			//}
@@ -1676,18 +1676,14 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 			$languages = qtranxf_getSortedLanguages();			
 			if(!empty($languages)){
 				echo '<div id="header_language_select"><ul id="lang-select-block">';
-				//echo json_encode($languages);
-				//echo '<img src="images/global.png">';
-				//echo __('Language','textdomain');
-
 				foreach($languages as $language) {
-					if($language == $q_config['language']) $classes[] = 'active';
-					//if($l['active']) {
 					if ($language == $q_config['language']) {
 						echo '<li class="current">';
 							echo '<a class="'.$language.'" href="'.qtranxf_convertURL($url, $language, false, true).'" onclick="return false">';
-								echo '<img src="images/global.png">';
+								echo '<div class="user_profile_image"></div>';
+								//echo '<img src="images/global.png">';
 								//echo $language;
+								//echo __('Language','textdomain');
 							echo '</a>';
 						echo '<ul id="lang-select-popup">';					
 						
@@ -1699,7 +1695,6 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 					}
 				} 
 				foreach($languages as $language){
-					//if(!($l['active'])) {
 					if(!($language == $q_config['language'])) {
 							echo '<li class="unactive">';
 							echo '<a class="'.$language.'" href="'.qtranxf_convertURL($url, $language, false, true).'">';
