@@ -1680,7 +1680,7 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 					if ($language == $q_config['language']) {
 						echo '<li class="current">';
 							echo '<a class="'.$language.'" href="'.qtranxf_convertURL($url, $language, false, true).'" onclick="return false">';
-								echo '<div class="global_image"></div>';
+								echo '<div class="global_image">Language</div>';
 								//echo '<img src="images/global.png">';
 								//echo $language;
 								//echo __('Language','textdomain');
