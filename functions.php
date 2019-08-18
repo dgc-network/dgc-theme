@@ -1681,7 +1681,9 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 				//echo __('Language','textdomain');
 
 				foreach($languages as $language) {
+					if($language == $q_config['language']) $classes[] = 'active';
 					//if($l['active']) {
+					if ($language == $q_config['language']) {
 						echo '<li class="current">';
 							echo '<a class="'.$language.'" href="'.qtranxf_convertURL($url, $language, false, true).'" onclick="return false">';
 								echo $language;
@@ -1693,46 +1695,20 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 									echo $q_config['language_name'][$language];
 								echo '</a>';
 							echo '</li>';
-					//}
+					}
 				} 
 				foreach($languages as $language){
 					//if(!($l['active'])) {
+					if(!($language == $q_config['language'])) {
 							echo '<li class="unactive">';
 							echo '<a class="'.$language.'" href="'.qtranxf_convertURL($url, $language, false, true).'">';
 								echo $q_config['language_name'][$language];
 							echo '</a></li>';
-					//}
+					}
 				}
 						echo '</ul>';
 					echo '</li>';					
 				echo '</ul></div>';
-/*	
-					$alt = $q_config['language_name'][$language].' ('.$language.')';
-					$classes = array('lang-'.$language);
-					if($language == $q_config['language']) $classes[] = 'active';
-					echo '<li class="'. implode(' ', $classes) .'"><a href="'.qtranxf_convertURL($url, $language, false, true).'"';
-					// set hreflang
-					echo ' hreflang="'.$language.'"';
-					echo ' title="'.$alt.'"';
-					echo '>';
-
-					if($type=='image')
-						echo ' class="qtranxs_image qtranxs_image_'.$language.'"';
-					//	echo ' class="qtranxs_flag qtranxs_flag_'.$language.'"';
-					elseif($type=='text')
-						echo ' class="qtranxs_text qtranxs_text_'.$language.'"';
-					elseif($type=='css_only')// to be removed
-						echo ' class="qtranxs_css qtranxs_css_'.$language.'"';
-					echo '>';
-					
-					//if($type=='image') echo '<img src="'.$flag_location.$q_config['flag'][$language].'" alt="'.$alt.'" />';
-					echo '<span';
-					//if($type=='image' || $type=='css_only') echo ' style="display:none"';
-					echo '>'.$q_config['language_name'][$language].'</span>';
-					
-					echo '</a></li>'.PHP_EOL;
-				}
-*/				
 			}
 		}
 	}
