@@ -2499,6 +2499,7 @@ aside #lang_sel {
 	.resp_full_width_menu .menu ul ul ul{ display:none; }
 	.resp_full_width_menu .site-header .menu_wrapper .menu li a{ -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -khtml-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 	.resp_full_width_menu .cart-button{ clear:none; margin: 21px 10px 14px; }
+	.resp_full_width_menu .menu-buttons{ clear:none; margin: 21px 10px 14px; }
 }
 
 @media only screen and (min-width:480px) and (max-width:767px) {
