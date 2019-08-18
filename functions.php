@@ -1676,6 +1676,10 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 			$languages = qtranxf_getSortedLanguages();			
 			if(!empty($languages)){
 				echo '<div id="header_language_select"><ul id="lang-select-block">';
+				echo '<li class="current">';
+				echo '<div class="global_image">Language</div>';
+				echo '<ul id="lang-select-popup">';					
+/*
 				foreach($languages as $language) {
 					if ($language == $q_config['language']) {
 						echo '<li class="current">';
@@ -1694,13 +1698,14 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 							echo '</li>';
 					}
 				} 
+*/				
 				foreach($languages as $language){
-					if(!($language == $q_config['language'])) {
+					//if(!($language == $q_config['language'])) {
 							echo '<li class="unactive">';
 							echo '<a class="'.$language.'" href="'.qtranxf_convertURL($url, $language, false, true).'">';
 								echo $q_config['language_name'][$language];
 							echo '</a></li>';
-					}
+					//}
 				}
 						echo '</ul>';
 					echo '</li>';					
