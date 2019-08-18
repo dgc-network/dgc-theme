@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
     $('.menu').mobileMenuTop({
         defaultText: ThGlobal.mobile_menu_default_text,
-        className: 	 'select-menu',
+        className: 'select-menu',
         subMenuDash: '&nbsp;&nbsp;&ndash;'
     });
 
