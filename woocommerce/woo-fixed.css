@@ -61,9 +61,9 @@ Fixed Styles for Woocommerce.
 	width:24px;
 	height:21px;
 	border:0;
-	text-decoration:none;
+	/* text-decoration:none; */
 	/* background:url(images/user_profile_image.png) no-repeat transparent; */
-	background:url(images/global.png) no-repeat;
+	background:url("images/global.png");
 }
 .cart-button .user_profile_image,
 .cart-button a .user_profile_image{
