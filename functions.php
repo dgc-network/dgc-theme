@@ -1686,7 +1686,8 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 					if ($language == $q_config['language']) {
 						echo '<li class="current">';
 							echo '<a class="'.$language.'" href="'.qtranxf_convertURL($url, $language, false, true).'" onclick="return false">';
-								echo $language;
+								echo '<img src="images/global.png">';
+								//echo $language;
 							echo '</a>';
 						echo '<ul id="lang-select-popup">';					
 						
