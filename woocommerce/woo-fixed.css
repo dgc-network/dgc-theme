@@ -53,8 +53,8 @@ Fixed Styles for Woocommerce.
 	/* clear:left */
 }
 /* .menu-buttons a, */
-.menu-buttons .user_profile_image,
-.menu-buttons a .user_profile_image{
+.cart-button .user_profile_image,
+.cart-button a .user_profile_image{
 	display:block;
 	float:left;
 	margin:0;
