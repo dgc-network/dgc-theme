@@ -63,7 +63,7 @@ Fixed Styles for Woocommerce.
 	border:0;
 	text-decoration:none;
 	background:url(images/user_profile_image.png) no-repeat transparent; */
-	background:url("images/global.png");
+	background-image:url("images/global.png");
 }
 .cart-button .user_profile_image,
 .cart-button a .user_profile_image{
