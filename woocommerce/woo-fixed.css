@@ -54,15 +54,15 @@ Fixed Styles for Woocommerce.
 }
 /* .menu-buttons a, */
 .global_image{
-	display:block;
+	/* display:block;
 	float:left;
 	margin:0;
 	padding:0;
 	width:24px;
 	height:21px;
 	border:0;
-	/* text-decoration:none; */
-	/* background:url(images/user_profile_image.png) no-repeat transparent; */
+	text-decoration:none;
+	background:url(images/user_profile_image.png) no-repeat transparent; */
 	background:url("images/global.png");
 }
 .cart-button .user_profile_image,
