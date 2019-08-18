@@ -1731,8 +1731,8 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 					echo '>'.$q_config['language_name'][$language].'</span>';
 					
 					echo '</a></li>'.PHP_EOL;
-*/					
 				}
+*/				
 			}
 		}
 	}
