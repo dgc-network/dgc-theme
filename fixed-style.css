@@ -518,7 +518,7 @@ a:hover,a:focus,a:active {
 	margin: 10px 0 0;
 	padding:0;
 	z-index:8002;
-	clear:both;
+	/* clear:both; */
 	background: url(images/global.png)
 }
 #header_language_select ul{
