@@ -1655,17 +1655,27 @@ if ( ! function_exists( 'dgc_get_user_profile_html' ) ) {
 		$btn_user_profile = '';
 		//$theme_options = dgc_get_theme_options();
 		
-		if (class_exists('Woocommerce')) { 
-			global $woocommerce;
+		//if (class_exists('Woocommerce')) { 
+			//global $woocommerce;
 			//if (!empty($theme_options['showuser']) && (esc_attr($theme_options['showuser']) == 'on')) {
 					$btn_user_profile = '<div class="cart-button">
-						<a href="'.get_permalink( wc_get_page_id( 'cart' ) ).'">
+						<a href="'.get_permalink( wc_get_page_id( 'my-account' ) ).'">
 							<div class="user_profile_image">USER</div>
 						</a>
 					</div>';
 			//}
-		} 
+		//} 
 		echo $btn_user_profile;
+	}
+}	
+
+if ( ! function_exists( 'dgc_get_profile_html' ) ) {
+	function dgc_get_profile_html() {
+		if (is_user_logged_in()) {
+
+		} else {
+
+		}
 	}
 }	
 
@@ -1675,41 +1685,21 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 			global $q_config;
 			$languages = qtranxf_getSortedLanguages();			
 			if(!empty($languages)){
-				echo '<div id="header_language_select"><ul id="lang-select-block">';
-				echo '<li class="current">';
-				echo '<div class="global_image">Language</div>';
-				echo '<ul id="lang-select-popup">';					
-/*
-				foreach($languages as $language) {
-					if ($language == $q_config['language']) {
+				echo '<div id="header_language_select">';
+					echo '<ul id="lang-select-block">';
 						echo '<li class="current">';
-							echo '<a class="'.$language.'" href="'.qtranxf_convertURL($url, $language, false, true).'" onclick="return false">';
-								echo '<div class="global_image">Language</div>';
-								//echo '<img src="images/global.png">';
-								//echo $language;
-								//echo __('Language','textdomain');
-							echo '</a>';
-						echo '<ul id="lang-select-popup">';					
-						
-							echo '<li class="active">';
-								echo '<a class="'.$language.'" href="'.qtranxf_convertURL($url, $language, false, true).'" onclick="return false">';
+							echo '<div class="global_image">Language</div>';
+							echo '<ul id="lang-select-popup">';					
+							foreach($languages as $language){
+								echo '<li class="unactive">';
+								echo '<a class="'.$language.'" href="'.qtranxf_convertURL($url, $language, false, true).'">';
 									echo $q_config['language_name'][$language];
-								echo '</a>';
-							echo '</li>';
-					}
-				} 
-*/				
-				foreach($languages as $language){
-					//if(!($language == $q_config['language'])) {
-							echo '<li class="unactive">';
-							echo '<a class="'.$language.'" href="'.qtranxf_convertURL($url, $language, false, true).'">';
-								echo $q_config['language_name'][$language];
-							echo '</a></li>';
-					//}
-				}
-						echo '</ul>';
-					echo '</li>';					
-				echo '</ul></div>';
+								echo '</a></li>';
+							}
+							echo '</ul>';
+						echo '</li>';					
+					echo '</ul>';
+				echo '</div>';
 			}
 		}
 	}
