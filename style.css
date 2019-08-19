@@ -741,14 +741,14 @@ a:hover,a:focus,a:active {
     position:absolute !important;
 }
 #header_language_select{
-	/* float:right; */
-	display:inline-block;
+	float:right;
+	/* display:inline-block; */
 	height:100%;
 	margin: 10px 0 0;
 	padding:0;
 	z-index:8002;
 	clear:both;
-	background: url(images/action.png)
+	background: url(images/global.png)
 }
 #header_language_select ul{
 	margin:0;
