@@ -511,6 +511,17 @@ a:hover,a:focus,a:active {
     clip:rect(1px, 1px, 1px, 1px);
     position:absolute !important;
 }
+
+.cart_button ul{
+	margin:0;
+	list-style:none;
+}
+.cart_button ul li.current{
+	position: relative;
+}
+.cart_button ul li.current .global_image{
+	background: url("images/global.png?v=1234");
+}
 #header_language_select{
 	float:right;
 	/* display:inline-block; */
