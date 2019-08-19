@@ -2478,7 +2478,7 @@ aside #lang_sel {
 	.resp_full_width_menu .site-header{ width:100%; float:left; }
     .resp_full_width_menu:not(.fixed) .site-header {position: relative;}
 	.resp_full_width_menu .site-header .logo_wrapper{ display:block; float:left; width:48%; margin:10px 0 0 2%; }
-	.resp_full_width_menu .site-header .user_profile_wrapper, 
+	.resp_full_width_menu .site-header .my_account_wrapper, 
 	.resp_full_width_menu .site-header .cart_wrapper, 
 	.resp_full_width_menu .site-header .menu_button{ display:block; float:right; margin-left:12px; margin-right:12px; }
     .resp_full_width_menu .site-header .language_switcher{ display:block; float:right;}
@@ -2520,7 +2520,7 @@ aside #lang_sel {
 	.responsive .select-menu{margin: 16px 0 25px 0 !important}
 
 	/*styles for responsive full header*/
-	.resp_full_width_menu .site-header .user_profile_wrapper, 
+	.resp_full_width_menu .site-header .my_account_wrapper, 
 	.resp_full_width_menu .site-header .cart_wrapper, 
 	.resp_full_width_menu .site-header .menu_button{ margin-left:2px; margin-right:2px; }
 }

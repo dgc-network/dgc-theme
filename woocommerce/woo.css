@@ -85,9 +85,9 @@ body #content a.woocommerce-product-gallery__image.flex-active-slide {
 .menu-item a .cart_image:before{
 	font-family:FontAwesome; content:"\f07a";font-size:26px; position:absolute;top:-5px;}
 
-.cart-button .user_profile_image{
+.cart-button .my_account_image{
 	display:block;float: left;margin: 0;padding:0;width:24px; height:21px;border:0;text-decoration:none;}
-.cart-button .user_profile_image:before{
+.cart-button .my_account_image:before{
 	font-family:FontAwesome; content:"\f007";font-size:26px; position:absolute;top:-5px;}
 	
 .cart-button{display:block;float: right;padding:0;position:relative;margin:14px 10px 10px;clear:left}

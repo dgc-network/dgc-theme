@@ -1649,27 +1649,18 @@ if ( ! function_exists( 'dgc_get_cart_button_html' ) ) {
 	}
 }	
 
-/*get user profile button html*/
-if ( ! function_exists( 'dgc_get_user_profile_html' ) ) {
-	function dgc_get_user_profile_html() {
-		$btn_user_profile = '<div class="cart-button">
+/*get my account button html*/
+if ( ! function_exists( 'dgc_get_my_account_html' ) ) {
+	function dgc_get_my_account_html() {
+		$btn_my_account = '<div class="cart-button">
 			<a href="'.get_permalink( wc_get_page_id( 'myaccount' ) ).'">
-				<div class="user_profile_image"></div>
+				<div class="my_account_image"></div>
 			</a></div>';
-		echo $btn_user_profile;
+		echo $btn_my_account;
 	}
 }	
 
-if ( ! function_exists( 'dgc_get_profile_html' ) ) {
-	function dgc_get_profile_html() {
-		if (is_user_logged_in()) {
-
-		} else {
-
-		}
-	}
-}	
-
+/*get qTranslate-x languages list*/
 if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 	function dgc_get_qtranslate_languages_list(){
 		if( defined( 'QTRANSLATE_FILE' ) ){
