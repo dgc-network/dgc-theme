@@ -1652,19 +1652,10 @@ if ( ! function_exists( 'dgc_get_cart_button_html' ) ) {
 /*get user profile button html*/
 if ( ! function_exists( 'dgc_get_user_profile_html' ) ) {
 	function dgc_get_user_profile_html() {
-		$btn_user_profile = '';
-		//$theme_options = dgc_get_theme_options();
-		
-		//if (class_exists('Woocommerce')) { 
-			//global $woocommerce;
-			//if (!empty($theme_options['showuser']) && (esc_attr($theme_options['showuser']) == 'on')) {
-					$btn_user_profile = '<div class="cart-button">
-						<a href="'.get_permalink( wc_get_page_id( 'myaccount' ) ).'">
-							<div class="user_profile_image">USER</div>
-						</a>
-					</div>';
-			//}
-		//} 
+		$btn_user_profile = '<div class="cart-button">
+			<a href="'.get_permalink( wc_get_page_id( 'myaccount' ) ).'">
+				<div class="user_profile_image"></div>
+			</a></div>';
 		echo $btn_user_profile;
 	}
 }	
