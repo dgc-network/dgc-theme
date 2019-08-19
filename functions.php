@@ -1654,7 +1654,7 @@ if ( ! function_exists( 'dgc_get_my_account_html' ) ) {
 	function dgc_get_my_account_html() {
 		$btn_my_account = '<div class="cart-button">
 			<a href="'.get_permalink( wc_get_page_id( 'myaccount' ) ).'">
-				<div class="my_account_image"></div>
+				<div class="my_account_image">USER</div>
 			</a></div>';
 		echo $btn_my_account;
 	}
