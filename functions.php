@@ -1637,7 +1637,7 @@ if ( ! function_exists( 'dgc_get_cart_button_html' ) ) {
 			global $woocommerce;
 			if (!empty($theme_options['showcart']) && (esc_attr($theme_options['showcart']) == 'on')) {
 					//$btn_cart = '<div class="cart-button">
-					$btn_cart = '<div class="cart-button">
+					$btn_cart = '<div id="header_language_select">
 						<a href="'.get_permalink( wc_get_page_id( 'cart' ) ).'" class="cart-contents">
 							<div class="cart_image"></div> 
 							<span class="num_of_product_cart">'.$woocommerce->cart->cart_contents_count.'</span>
@@ -1652,7 +1652,8 @@ if ( ! function_exists( 'dgc_get_cart_button_html' ) ) {
 /*get my account button html*/
 if ( ! function_exists( 'dgc_get_my_account_html' ) ) {
 	function dgc_get_my_account_html() {
-		$btn_my_account = '<div class="cart-button">
+		//$btn_my_account = '<div class="cart-button">
+		$btn_my_account = '<div id="header_language_select">
 			<a href="'.get_permalink( wc_get_page_id( 'myaccount' ) ).'">
 				<div class="my_account_image">USER</div>
 			</a></div>';

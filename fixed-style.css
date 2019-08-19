@@ -519,7 +519,6 @@ a:hover,a:focus,a:active {
 	padding:0;
 	z-index:8002;
 	/* clear:both; */
-	background: url("images/global.png?v=1234")
 }
 #header_language_select ul{
 	margin:0;
@@ -527,6 +526,9 @@ a:hover,a:focus,a:active {
 }
 #header_language_select ul li.current{
 	position: relative;
+}
+#header_language_select ul li.current .global_image{
+	background: url("images/global.png?v=1234");
 }
 #lang-select-block a{
     display:block;
