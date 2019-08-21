@@ -33,16 +33,6 @@
 							<div id="footer-widget-1">
 								<?php dynamic_sidebar( 'footer-1' ); ?>
 							</div>
-						<?php } else { ?>
-							<div id="footer-widget-1">
-								<h3>About</h3>
-								<p>
-								Engineering Library is a Hong Kong based of information
-								service company, which provides content and tools to help 
-								customers drive innovation, protect their intellectual assets
-								and maximize the value of their intellectual property.
-								</p>
-							</div>
 						<?php }
 						if ( is_active_sidebar( 'footer-2' ) ) { ?>
 							<div id="footer-widget-2">
