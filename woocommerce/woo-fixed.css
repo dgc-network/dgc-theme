@@ -53,7 +53,7 @@ Fixed Styles for Woocommerce.
 	border:0;
 	text-decoration:none;
 	/* background:url(images/user_profile_image.png) no-repeat transparent; */
-	background:url(images/my_account_image.png?v=1234) no-repeat;
+	background:url(images/my_account_image.png) no-repeat;
 }
 #header_language_select a .cart_image{
 	display:block;
@@ -77,7 +77,7 @@ Fixed Styles for Woocommerce.
 	border:0;
 	text-decoration:none;
 	/* background:url(images/user_profile_image.png) no-repeat transparent; */
-	background:url(images/my_account_image.png?v=1234) no-repeat;
+	background:url(images/my_account_image.png) no-repeat;
 }
 .cart-button{
 	/* display:inline-block; */
