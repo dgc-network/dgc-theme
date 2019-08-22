@@ -44,7 +44,7 @@ Fixed Styles for Woocommerce.
 
 /*header*/
 #my_account_image{
-	background:url(images/my_account.png) no-repeat;
+	background:url(/woocommerce/images/my_account.png) no-repeat;
 }
 #header_language_select a .my_account_image{
 	display:block;
