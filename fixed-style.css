@@ -538,8 +538,8 @@ a:hover,a:focus,a:active {
 #header_language_select ul li.current{
 	position: relative;
 }
-#header_language_select ul li.current .global_image{
-	background: url(images/global.png);
+#global_image{
+	background: url(images/global.png) no-repeat local 50% 50%;
 }
 #lang-select-block a{
     display:block;
