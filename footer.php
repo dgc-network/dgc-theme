@@ -27,7 +27,7 @@
 			<div class="container">
 				<div class="sixteen columns">
 					<!-- <aside class="widget-area" role="complementary"> -->
-					<div class="footer-widgets">
+					<div id="footer-widgets">
 						<?php
 						if ( is_active_sidebar( 'footer-1' ) ) { ?>
 							<div id="footer-widget-1">
