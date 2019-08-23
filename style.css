@@ -758,6 +758,9 @@ a:hover,a:focus,a:active {
 #header_language_select ul li.current{
 	position: relative;
 }
+#global_image{
+	background: url(images/global.png) no-repeat;
+}
 #lang-select-block a{
     display:block;
 	color:#333333;
@@ -1893,7 +1896,8 @@ table tfoot li a {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8C8C8C), color-stop(1, #7D7D7D) );
-	background:-moz-linear-gradient( center top, #8C8C8C 5%, #7D7D7D 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8C8C8C', endColorstr='#7D7D7D');
+	background:-moz-linear-gradient( center top, #8C8C8C 5%, #7D7D7D 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8C8C8C', endColorstr='#7D7D7D');
 	background-color:#8C8C8C;
 }
 table tfoot ul.active, table tfoot ul a:hover {
