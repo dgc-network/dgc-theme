@@ -759,7 +759,7 @@ a:hover,a:focus,a:active {
 	position: relative;
 }
 #global_image{
-	background: url(images/global.png) no-repeat;
+	background: url(/images/global.png) no-repeat;
 }
 #lang-select-block a{
     display:block;
