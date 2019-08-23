@@ -14,7 +14,10 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, font, ins, kbd, q, s, samp,small, 
+strike, strong, sub, sup, tt, var,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
     border:0;
     font-family:inherit;
     font-size:100%;
@@ -265,18 +268,10 @@ h4 {font-size: 17px;}
 h5 {font-size: 14px;}
 h6 {font-size: 12px;}
 
-.entry-content h1,
-.entry-content h2,
-.entry-content h3,
-.entry-content h4,
-.entry-content h5,
-.entry-content h6,
-.comment-content h1,
-.comment-content h2,
-.comment-content h3,
-.comment-content h4,
-.comment-content h5,
-.comment-content h6{
+.entry-content h1, .entry-content h2, .entry-content h3,
+.entry-content h4, .entry-content h5, .entry-content h6,
+.comment-content h1, .comment-content h2, .comment-content h3,
+.comment-content h4, .comment-content h5, .comment-content h6{
     margin:10px 0;
 	line-height:28px
 }
@@ -431,7 +426,8 @@ button,html input[type="button"],input[type="reset"],input[type="submit"] {
 button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover {
     background:#fe4502;
 }
-button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,button:active,html input[type="button"]:active,input[type="reset"]:active,input[type="submit"]:active {
+button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,
+button:active,html input[type="button"]:active,input[type="reset"]:active,input[type="submit"]:active {
 	background:#fe4502;
 }
 input[type="checkbox"],input[type="radio"] {
@@ -539,7 +535,7 @@ a:hover,a:focus,a:active {
 	position: relative;
 }
 #global_image{
-	background: url(images/global.png) no-repeat local 50% 50%;
+	background: url(/images/global.png) no-repeat;
 }
 #lang-select-block a{
     display:block;
