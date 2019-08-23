@@ -730,9 +730,9 @@ ul#lang-select-popup{
 #colophon .footer-widgets {height: 100%; width:100%; background: gray;}
 #footer-widget-1, #footer-widget-2, #footer-widget-3, #footer-widget-4 {
 	display: inline-block; *display: inline; zoom: 1; vertical-align: top;}
-#footer-widget-1 {width: 28%;}
-#footer-widget-2 {width: 28%;}
-#footer-widget-3 {width: 28%;}
+#footer-widget-1 {width: 25%;}
+#footer-widget-2 {width: 25%;}
+#footer-widget-3 {width: 25%;}
 #footer-widget-4 {width: 9%;}
 
 #colophon .site-info {
