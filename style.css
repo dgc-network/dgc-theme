@@ -3,8 +3,8 @@ Theme Name: dgc-theme
 Theme URI: https://github.com/dgc-network/dgc-theme
 Author: dgc-network
 Author URI: https://github.com/dgc-network/
-Description: dgc-theme - Free WordPress responsive theme with powerful theme options panel and simple clean front end design. Ability to modify styles and options according to your needs. Two different layout types responsive and fixed. Easily upload logo, background, edit colors, header and menu positions, slider, fonts, social icons, footer, custom css and much more. Translated to Russian, German, Spanish, French, Vietnamese, RTL ready. Works perfect with BuddyPress, WPML, Contact form 7, WooCommerce till version 3.0.       
-Version: 1.0.2
+Description: dgc-theme - WordPress responsive theme with powerful theme options panel and simple clean front end design. Ability to modify styles and options according to your needs. Two different layout types responsive and fixed. Easily upload logo, background, edit colors, header and menu positions, slider, fonts, social icons, footer, custom css and much more. Translated to Russian, German, Spanish, French, Vietnamese, RTL ready. Works perfect with BuddyPress, WPML, Contact form 7, WooCommerce till version 3.0.       
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: theme-options, custom-header, custom-background, custom-menu, custom-colors, translation-ready, featured-images, full-width-template, one-column, right-sidebar, left-sidebar, editor-style
@@ -955,6 +955,14 @@ ul#lang-select-popup{
     padding:20px 0;
 	position: relative;
 }
+#colophon .footer-widgets {height: 100%; width:100%; background: gray;}
+#footer-widget-1, #footer-widget-2, #footer-widget-3, #footer-widget-4 {
+	display: inline-block; *display: inline; zoom: 1; vertical-align: top;}
+#footer-widget-1 {width: 30%;}
+#footer-widget-2 {width: 30%;}
+#footer-widget-3 {width: 30%;}
+#footer-widget-4 {width: 10%;}
+
 #colophon .site-info {
     font-size:12px;
     float:left;
@@ -1465,10 +1473,16 @@ header.post-header, .blog_post {
 .blog_post .post-content footer.entry-meta .tag-links {
 	background:url(images/tag.png) no-repeat 0 3px transparent;
 }
-.blog_post .post-content footer.entry-meta .comments-link:hover,.blog_post .post-content footer.entry-meta .author-link:hover,.blog_post .post-content footer.entry-meta .cat-links:hover {
+.blog_post .post-content footer.entry-meta .comments-link:hover,
+.blog_post .post-content footer.entry-meta .author-link:hover,
+.blog_post .post-content footer.entry-meta .cat-links:hover {
 	opacity:0.9
 }
-.blog_post .post-content footer.entry-meta .comments-link a,.blog_post .post-content footer.entry-meta .tag-links a,.blog_post .post-content footer.entry-meta .author-link a,.blog_post .post-content footer.entry-meta .cat-links a,.blog_post .post-content footer.entry-meta .edit-link a {
+.blog_post .post-content footer.entry-meta .comments-link a,
+.blog_post .post-content footer.entry-meta .tag-links a,
+.blog_post .post-content footer.entry-meta .author-link a,
+.blog_post .post-content footer.entry-meta .cat-links a,
+.blog_post .post-content footer.entry-meta .edit-link a {
 	text-decoration:none;
 }
 .more-link {
@@ -2429,16 +2443,16 @@ aside #lang_sel {
 	.menu { display:none; }
 	#header_language_select{display:none;}
 	.widget_nav_menu .menu {display:block;}
-	.main-navigation { float:none !important; }
+	.main-navigation {float:none !important; }
 	#page-header .head-container .container header .header-hgroup { margin: 0 0 15px; }
-	.select-menu { display:block; }
-	#back-top { display: none; }
+	.select-menu {display:block; }
+	#back-top {display: none; }
 	.blog_post .post-content,
 	.eleven.columns .blog_post .post-content,
 	.search .blog_post .post-content {width: 338px;}
-	input#s { width:348px; }
+	input#s {width:348px; }
 	body.post-type-archive #searchform input#s{max-width:100%}
-	.comment-meta{	width:80%;}
+	.comment-meta{width:80%;}
 	#page .container #secondary .widget>ul>li.cat-item{overflow-x:hidden}
 	.flex-control-nav{display:none}
 	.page-header{width: 94%;padding: 10px 3%;margin:0}
@@ -2575,7 +2589,7 @@ html[dir="rtl"] .gallery-caption {left:initial;right:0; text-align: right;}
 html[dir="rtl"] .gallery-caption:before {left:initial;right:0;}
 html[dir="rtl"] .gallery .gallery-item .gallery-icon a {float:right}
 html[dir="rtl"] .gallery .gallery-item .gallery-icon a img.attachment-thumbnail {float:right}
-html[dir="rtl"] 	.entry-thumbnail {float:right}
+html[dir="rtl"] .entry-thumbnail {float:right}
 html[dir="rtl"] body.page .entry-thumbnail {float:right}
 
 @media only screen and (min-width:768px) {

@@ -15,19 +15,19 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 
 			<style type="text/css">
-			* {margin: 0; padding: 10;}
+/*			* {margin: 0; padding: 10;}
 			#footer-widgets {height: 100%; width:100%; font-size: 0; background: gray;}
 			#footer-widget-1, #footer-widget-2, #footer-widget-3, #footer-widget-4 {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
 			#footer-widget-1 {width: 30%;}
 			#footer-widget-2 {width: 30%;}
 			#footer-widget-3 {width: 30%;}
-			#footer-widget-4 {width: 3%;}
+			#footer-widget-4 {width: 3%;} */
 			</style>
 
 			<div class="container">
 				<div class="sixteen columns">
 					<!-- <aside class="widget-area" role="complementary"> -->
-					<div id="footer-widgets">
+					<div class="footer-widgets">
 						<?php
 						if ( is_active_sidebar( 'footer-1' ) ) { ?>
 							<div id="footer-widget-1">
