@@ -85,6 +85,7 @@ body #content a.woocommerce-product-gallery__image.flex-active-slide {
 .menu-item a .cart_image:before{
 	font-family:FontAwesome; content:"\f07a";font-size:26px; position:absolute;top:-5px;}
 
+#my_account_image{background:url(images/my_account.png) no-repeat;}
 .cart-button .my_account_image{
 	display:block;float: left;margin: 0;padding:0;width:24px; height:21px;border:0;text-decoration:none;}
 .cart-button .my_account_image:before{
