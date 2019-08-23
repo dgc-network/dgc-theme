@@ -1655,7 +1655,7 @@ if ( ! function_exists( 'dgc_get_my_account_html' ) ) {
 		//$btn_my_account = '<div id="header_language_select">
 		$btn_my_account = '<div class="cart-button">
 			<a href="'.get_permalink( wc_get_page_id( 'myaccount' ) ).'">
-				<div class="my_account_image">USER</div>
+				<div id="my_account_image">USER</div>
 			</a></div>';
 		echo $btn_my_account;
 	}
@@ -1672,7 +1672,7 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 				//echo '<div class="cart-button">';
 					echo '<ul id="lang-select-block">';
 						echo '<li class="current">';
-							echo '<div class="global_image">Language</div>';
+							echo '<div id="global_image">Language</div>';
 							echo '<ul id="lang-select-popup">';					
 							foreach($languages as $language){
 								echo '<li class="unactive">';
