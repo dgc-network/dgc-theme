@@ -969,7 +969,7 @@ ul#lang-select-popup{
     width:420px;
     padding:8px 0;
 }
-#page-header.site-header{
+#masthead.site-header{
     display: flex;
     justify-content: space-between;
 	margin-bottom: 10px;
