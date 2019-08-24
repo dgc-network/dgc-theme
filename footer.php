@@ -23,7 +23,7 @@
 			#footer-widget-1 {width: 25%;}
 			#footer-widget-2 {width: 25%;}
 			#footer-widget-3 {width: 25%;}
-			#footer-widget-4 {background: url(/images/payment_icons.png); align:right;}
+			#footer-widget-4 {width: 12%; background: url(/images/payment_icons.png); align:right;}
 			</style>
 
 			<div class="container">
