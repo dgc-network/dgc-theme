@@ -1048,8 +1048,8 @@ embed,iframe,object {
 }
 
 #page-header .container header .menu-wrapper.right-pos {
-	float:right;
-	/* display:inline-block; */
+	/*float:right;*/
+	display:inline-block;
 	text-align:right;
 }
 
