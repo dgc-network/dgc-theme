@@ -46,7 +46,17 @@ Fixed Styles for Woocommerce.
 #my_account_image{
 	background:url(images/my_account.png) no-repeat;
 }
-#header_language_select a .my_account_image{
+.my-account{
+	/* display:inline-block; */
+	display:block;
+	float:right;
+	margin:14px 10px 10px;
+	padding:0;
+	position:relative;
+	clear:left;
+}
+.my-account a,
+.my-account a #my_account_image{
 	display:block;
 	float:left;
 	margin:0;
@@ -57,31 +67,8 @@ Fixed Styles for Woocommerce.
 	text-decoration:none;
 	/* background:url(images/user_profile_image.png) no-repeat transparent; */
 	background:url(images/my_account.png) no-repeat;
-}
-#header_language_select a .cart_image{
-	display:block;
-	float:left;
-	margin:0;
-	padding:0;
-	width:24px;
-	height:21px;
-	border:0;
-	text-decoration:none;
-	background:url(images/cart_image.png) no-repeat transparent;
 }
 
-.cart-button a .my_account_image{
-	display:block;
-	float:left;
-	margin:0;
-	padding:0;
-	width:24px;
-	height:21px;
-	border:0;
-	text-decoration:none;
-	/* background:url(images/user_profile_image.png) no-repeat transparent; */
-	background:url(images/my_account.png) no-repeat;
-}
 .cart-button{
 	/* display:inline-block; */
 	display:block;

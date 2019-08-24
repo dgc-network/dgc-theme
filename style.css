@@ -961,7 +961,7 @@ ul#lang-select-popup{
 #footer-widget-1 {width: 25%;}
 #footer-widget-2 {width: 25%;}
 #footer-widget-3 {width: 25%;}
-#footer-widget-4 {width: 9%;}
+#footer-widget-4 {width: 9%; background: url(/images/payment_icons.png);}
 
 #colophon .site-info {
     font-size:12px;
@@ -1314,8 +1314,8 @@ section {
 
 #page-header .container header .menu-wrapper.left-pos {
 	float:left;
-	/* display:inline-block;
-	text-align:left; */
+	/* display:inline-block; */
+	text-align:left;
 }
 
 #page-header .container header .menu-wrapper.center-pos {
@@ -1338,8 +1338,8 @@ section {
 
 #page-header .container header .menu-wrapper.right-pos {
 	float:right;
-	/* display:inline-block;
-	text-align:right; */
+	/* display:inline-block; */
+	text-align:right;
 }
 
 .page-header {

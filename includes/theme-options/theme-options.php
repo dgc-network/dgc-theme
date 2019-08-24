@@ -47,8 +47,7 @@ class dgc_theme_options {
 			array(
 					'id'          => 'responsive',
 					'label'       => __( 'Layout', 'textdomain' ),
-					'info'        => __( 'Theme supported 2 types of html layout. Default responsive setting which adapt for mobile devices and static page with fixed width. Uncheck arrow below if you need static website display',
-						'textdomain' ),
+					'info'        => __( 'Theme supported 2 types of html layout. Default responsive setting which adapt for mobile devices and static page with fixed width. Uncheck arrow below if you need static website display', 'textdomain' ),
 					'description' => __( 'Responsive', 'textdomain' ),
 					'type'        => 'checkbox',
 					'default'     => 'on',
@@ -56,8 +55,7 @@ class dgc_theme_options {
 				array(
 					'id'     => 'pagecomment_ch',
 					'label'  => __( 'Comments', 'textdomain' ),
-					'info'   => __( 'If you want to display comments on your post page or page, select options below.',
-						'textdomain' ),
+					'info'   => __( 'If you want to display comments on your post page or page, select options below.', 'textdomain' ),
 					'fields' => array(
 						array(
 							'id'          => 'postcomment',
@@ -190,8 +188,7 @@ class dgc_theme_options {
 				array(
 					'id'          => 'show_featured_single',
 					'label'       => __( 'Show Featured image on single post', 'textdomain' ),
-					'info'        => __( 'Select option below for show featured image on single post page.',
-						'textdomain' ),
+					'info'        => __( 'Select option below for show featured image on single post page.', 'textdomain' ),
 					'description' => __( 'Show featured image', 'textdomain' ),
 					'type'        => 'checkbox',
 					'default'     => 'on',
@@ -202,8 +199,7 @@ class dgc_theme_options {
 						'id'          => 'is_wpml_ready',
 						'type'        => 'checkbox',
 						'label'       => __( 'Multilingual Switch in Header (WPML)', 'textdomain' ),
-						'info'        => __( 'If you wish to show Language Switch in header, select option below.',
-							'textdomain' ),
+						'info'        => __( 'If you wish to show Language Switch in header, select option below.', 'textdomain' ),
 						'description' => __( 'Enable', 'textdomain' ),
 						'default'     => 'off'
 					) :
@@ -274,8 +270,7 @@ class dgc_theme_options {
 				),
 				array(
 					'label'  => __( 'Background for header', 'textdomain' ),
-					'info'   => __( 'Upload image with full width for background in header area. (Supported files .png, .jpg, .gif)',
-						'textdomain' ),
+					'info'   => __( 'Upload image with full width for background in header area. (Supported files .png, .jpg, .gif)', 'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'header_img',
@@ -293,8 +288,7 @@ class dgc_theme_options {
 				array(
 					'id'      => 'header_img_size',
 					'label'   => __( 'Background image size', 'textdomain' ),
-					'info'    => __( 'Choose size for background image - full width or only for content area.',
-						'textdomain' ),
+					'info'    => __( 'Choose size for background image - full width or only for content area.', 'textdomain' ),
 					'type'    => 'select',
 					'options' => array(
 						'full'     => __( 'Full width position', 'textdomain' ),
@@ -320,8 +314,7 @@ class dgc_theme_options {
 			'fields' => array(
 				array(
 					'label'  => __( 'Background Image', 'textdomain' ),
-					'info'   => __( 'Upload your background image for site background. (Supported files .png, .jpg, .gif)',
-						'textdomain' ),
+					'info'   => __( 'Upload your background image for site background. (Supported files .png, .jpg, .gif)', 'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'backgroung_img',
@@ -391,24 +384,21 @@ class dgc_theme_options {
 				array(
 					'id'        => 'logo_img',
 					'label'     => __( 'Logo image', 'textdomain' ),
-					'info'      => __( 'Upload logo image for your website. Size is original (Supported files .png, .jpg, .gif)',
-						'textdomain' ),
+					'info'      => __( 'Upload logo image for your website. Size is original (Supported files .png, .jpg, .gif)', 'textdomain' ),
 					'type'      => 'image',
 					'imagetype' => 'logo',
 				),
 				array(
 					'id'        => 'logo_img_retina',
 					'label'     => __( 'Logo image retina', 'textdomain' ),
-					'info'      => __( 'Upload logo in double size (If your logo is 100 x 20px, it should be 200 x 40px)',
-						'textdomain' ),
+					'info'      => __( 'Upload logo in double size (If your logo is 100 x 20px, it should be 200 x 40px)', 'textdomain' ),
 					'type'      => 'image',
 					'imagetype' => 'logo_retina',
 				),
 				array(
 					'id'        => 'fav_icon',
 					'label'     => __( 'Favicon', 'textdomain' ),
-					'info'      => __( 'A favicon is a 16x16 pixel icon that represents your site; upload your custom Favicon here.',
-						'textdomain' ),
+					'info'      => __( 'A favicon is a 16x16 pixel icon that represents your site; upload your custom Favicon here.', 'textdomain' ),
 					'type'      => 'image',
 					'imagetype' => 'favicon',
 				),
@@ -591,8 +581,7 @@ class dgc_theme_options {
 							'id'        => 'btn_active_color',
 							'type'      => 'color',
 							'default'   => '#F15A23',
-							'box-title' => __( 'Button background color (hover, active, focus, current page - pagenavi)',
-								'textdomain' )
+							'box-title' => __( 'Button background color (hover, active, focus, current page - pagenavi)', 'textdomain' )
 						),
 					)
 				),
@@ -611,8 +600,7 @@ class dgc_theme_options {
 							'id'        => 'soc_icon_color',
 							'type'      => 'color',
 							'default'   => '#ffffff',
-							'box-title' => __( 'Button background color (hover, active, focus, current page - pagenavi)',
-								'textdomain' )
+							'box-title' => __( 'Button background color (hover, active, focus, current page - pagenavi)', 'textdomain' )
 						),
 					)
 				),
@@ -680,8 +668,7 @@ class dgc_theme_options {
 				array(
 					'id'     => 'font-size',
 					'label'  => __( 'Font size', 'textdomain' ),
-					'info'   => __( 'Choose font size for specific html elements. Set size as number, without px..',
-						'textdomain' ),
+					'info'   => __( 'Choose font size for specific html elements. Set size as number, without px..', 'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'h1_size',
@@ -757,8 +744,7 @@ class dgc_theme_options {
 				array(
 					'id'     => 'slider-options',
 					'label'  => __( 'Slider Options', 'textdomain' ),
-					'info'   => __( 'Choose needed options for slider: animation type, sliding direction, speed of animations, etc',
-						'textdomain' ),
+					'info'   => __( 'Choose needed options for slider: animation type, sliding direction, speed of animations, etc', 'textdomain' ),
 					'type'   => 'slider-options',
 					'fields' => array(
 						array(
@@ -1024,8 +1010,7 @@ class dgc_theme_options {
 					'id'    => 'slides',
 					'type'  => 'slides',
 					'label' => __( 'Slides', 'textdomain' ),
-					'info'  => __( 'Add images to slider (Supported files .png, .jpg, .gif). If you want to change order, just drag and drop it. Image size for slides is original from media gallery, please upload images in same size, to get best display on page. To display slider in needed place use shortcode [dgc_slider]. Current theme version support only one slider per website.',
-						'textdomain' ),
+					'info'  => __( 'Add images to slider (Supported files .png, .jpg, .gif). If you want to change order, just drag and drop it. Image size for slides is original from media gallery, please upload images in same size, to get best display on page. To display slider in needed place use shortcode [dgc_slider]. Current theme version support only one slider per website.', 'textdomain' ),
 				)
 			)
 		);
@@ -1046,8 +1031,7 @@ class dgc_theme_options {
 				array(
 					'id'     => 'social-links',
 					'label'  => __( 'Socials Links', 'textdomain' ),
-					'info'   => __( 'Add link to your social media profiles. Icons with link will be display in header or footer.',
-						'textdomain' ),
+					'info'   => __( 'Add link to your social media profiles. Icons with link will be display in header or footer.', 'textdomain' ),
 					'fields' => array(
 						array(
 							'id'        => 'facebook_url',
@@ -1191,8 +1175,7 @@ class dgc_theme_options {
 					'info'      => __( 'Replace default theme copyright information and links', 'textdomain' ),
 					'box-title' => __( 'Copyright section', 'textdomain' ),
 					'type'      => 'textarea',
-					'default'   => __( 'Powered by: <a href="https://github.com/dgc-network/">dgc-network</a>',
-						'textdomain' ),
+					'default'   => __( 'Powered by: <a href="https://github.com/dgc-network/">dgc-network</a>', 'textdomain' ),
 				)
 			)
 		);
@@ -1205,8 +1188,7 @@ class dgc_theme_options {
 				array(
 					'id'        => 'custom_css',
 					'label'     => __( 'Custom CSS', 'textdomain' ),
-					'info'      => __( 'Theme has two css files style.css and fixed-style.css which use default styles for front-end responsive and static layout. Do not edit theme default css files, use textarea editor below for overwriting all css styles.',
-						'textdomain' ),
+					'info'      => __( 'Theme has two css files style.css and fixed-style.css which use default styles for front-end responsive and static layout. Do not edit theme default css files, use textarea editor below for overwriting all css styles.', 'textdomain' ),
 					'box-title' => __( 'Styles editor', 'textdomain' ),
 					'type'      => 'textarea',
 					'default'   => '',
@@ -1223,8 +1205,7 @@ class dgc_theme_options {
 					array(
 						'id'          => 'showuser',
 						'label'       => __( 'Show user button in header', 'textdomain' ),
-						'info'        => __( 'If you want to display my-account link in header select options below.',
-							'textdomain' ),
+						'info'        => __( 'If you want to display my-account link in header select options below.', 'textdomain' ),
 						'type'        => 'checkbox',
 						'description' => __( 'Enable', 'textdomain' ),
 						'default'     => 'on',
@@ -1239,8 +1220,7 @@ class dgc_theme_options {
 					array(
 						'id'          => 'showcart',
 						'label'       => __( 'Show cart in header', 'textdomain' ),
-						'info'        => __( 'If you want to display cart link in header select options below.',
-							'textdomain' ),
+						'info'        => __( 'If you want to display cart link in header select options below.', 'textdomain' ),
 						'type'        => 'checkbox',
 						'description' => __( 'Enable', 'textdomain' ),
 						'default'     => 'on',
@@ -1294,8 +1274,7 @@ class dgc_theme_options {
 					array(
 						'id'      => 'woo_shop_num_prod',
 						'label'   => __( 'Number of products on Shop pages', 'textdomain' ),
-						'info'    => __( 'Choose number of products. Write -1 for show all products on one page',
-							'textdomain' ),
+						'info'    => __( 'Choose number of products. Write -1 for show all products on one page', 'textdomain' ),
 						'type'    => 'text',
 						'default' => '10',
 					),
