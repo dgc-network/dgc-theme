@@ -905,14 +905,14 @@ if ( ! function_exists( 'dgc_get_responsive_style' ) ) {
 		$style_ = $back_style = $woo_style_ = '';
 		$theme_options  = dgc_get_theme_options(); 
 		dgc_add_custom_fonts();
+		$rand = rand(1, 999999999999);
 		if (isset($theme_options['responsive']) && ($theme_options['responsive'] == 'on')) {
 			if (class_exists('woocommerce')){
-				wp_enqueue_style( 'woo-style', get_template_directory_uri() . '/woocommerce/woo.css');
+				wp_enqueue_style( 'woo-style', get_template_directory_uri() . '/woocommerce/woo.css?v='. $rand);
 			}
 			if (!class_exists('ffs')){
 				wp_enqueue_style('fontawesome-style',  get_template_directory_uri() . '/css/font-awesome.min.css');
 			}
-			$rand = rand(1, 999999999999);
 			wp_enqueue_style('main-style',  get_stylesheet_uri(), '', $rand);
 		} else {
 			if (class_exists('woocommerce')){
