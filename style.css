@@ -962,7 +962,7 @@ ul#lang-select-popup{
 #footer-widget-1 {width: 25%;}
 #footer-widget-2 {width: 25%;}
 #footer-widget-3 {width: 25%;}
-#footer-widget-4 {width: 12%; background: url(images/payment_icons.png?v=123);}
+#footer-widget-4 {width: 12%; background: url(/images/payment_icons.png);}
 /*
 * {margin: 0; padding: 0;}
 #footer-widgets {height: 100%; width:100%; font-size: 0; background: gray;}

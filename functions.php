@@ -916,12 +916,12 @@ if ( ! function_exists( 'dgc_get_responsive_style' ) ) {
 			wp_enqueue_style('main-style',  get_stylesheet_uri(), '', $rand);
 		} else {
 			if (class_exists('woocommerce')){
-				wp_enqueue_style( 'woo-style', get_template_directory_uri() . '/woocommerce/woo-fixed.css');
+				wp_enqueue_style( 'woo-style', get_template_directory_uri() . '/woocommerce/woo-fixed.css?v='. $rand);
 			}
 			if (!class_exists('ffs')){
 				wp_enqueue_style('fontawesome-style',  get_stylesheet_directory_uri() . '/css/font-awesome.min.css');
 			}
-			wp_enqueue_style('main-style',  get_stylesheet_directory_uri()  .'/fixed-style.css');
+			wp_enqueue_style('main-style',  get_stylesheet_directory_uri()  .'/fixed-style.css?v='. $rand);
 		}
 	 
 		//if (!empty($theme_options['styletheme'])) {
