@@ -1337,8 +1337,9 @@ section {
 }
 
 #page-header .container header .menu-wrapper.right-pos {
-	/* float:right; */
-	display:inline-block;
+	float:right;
+	width:100%;
+	/* display:inline-block; */
 	text-align:right;
 }
 
