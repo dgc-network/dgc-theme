@@ -775,7 +775,7 @@ a:hover,a:focus,a:active {
 .qtranslate-select ul li.current{
 	position: relative;
 }
-.qtranslate-select ul, .qtranslate-select ul li:hover > ul {
+.qtranslate-select:hover ul li ul, .qtranslate-select ul li:hover > ul {
     margin: 0;
     opacity: 1;
     visibility: visible;
@@ -993,7 +993,7 @@ ul#lang-select-popup{
 }
 #footer-widgets {display: inline-block; vertical-align: top; height: 100%; width:100%; font-size: 0; background: gray;}
 /* #sub-footer-widgets, .footer-payment-icons{display: inline-block; vertical-align: top; font-size: 12px;} */
-#sub-footer-widgets {display:block; float:left; width:85%;}
+#sub-footer-widgets {display:block; float:left; width:80%;}
 #footer-widget-1, #footer-widget-2, #footer-widget-3{display: inline-block; vertical-align: top; font-size: 12px;}
 #footer-widget-1 {width: 25%;}
 #footer-widget-2 {width: 25%;}
@@ -1003,9 +1003,9 @@ ul#lang-select-popup{
 .footer-payment-icons{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left; width:5%}
 /*.footer-payment-icons .alipay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
 .footer-payment-icons .alipay-image:before{font-family:FontAwesome; content:"\f642"; font-size:26px;}*/
-.footer-payment-icons .alipay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
+.footer-payment-icons .alipay-image{display:block; float:left; margin:0; padding:0; width:24px; border:0; text-decoration:none;}
 .footer-payment-icons .alipay-image:before{font-family:FontAwesome; content:"\f179"; font-size:26px;}
-.footer-payment-icons .wechatpay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
+.footer-payment-icons .wechatpay-image{display:block; float:left; margin:0; padding:0; width:24px; border:0; text-decoration:none;}
 .footer-payment-icons .wechatpay-image:before{font-family:FontAwesome; content:"\f1d7"; font-size:26px;}
 /*.footer-payment-icons .applepay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
 .footer-payment-icons .applepay-image:before{font-family:FontAwesome; content:"\f415"; font-size:26px; position:absolute; top:-5px;}*/
