@@ -35,7 +35,13 @@
 								</div>
 							<?php } ?>
 						</div>
-						<div id="footer-payment-icons">
+						<div class="footer-payment-icons">
+							<div class="alipay-image"></div>
+							<div class="wechatpay-image"></div>
+							<div class="applepay-image"></div>
+							<div class="master-image"></div>
+							<div class="visa-image"></div>
+							<div class="amex-image"></div>
 						</div>
 					</div>
 					<!-- .widget-area -->
