@@ -746,10 +746,10 @@ a:hover,a:focus,a:active {
 	float:right;
 	/* display:inline-block; */
 	height:100%;
-	margin: 10px 0 0;
+	/*margin: 10px 0 0;
 	padding:0;
 	z-index:8002;
-	clear:both;
+	clear:both;*/
 }
 #header_language_select ul{
 	margin:0;
@@ -763,8 +763,8 @@ a:hover,a:focus,a:active {
 	float:left;
 	margin:0;
 	padding:0;
-	width:24px;
-	height:21px;
+	/*width:24px;
+	height:21px;*/
 	border:0;
 	text-decoration:none;
 	background: url(images/global.png?v=323) no-repeat;

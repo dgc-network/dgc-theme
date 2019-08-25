@@ -1671,10 +1671,9 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 			if(!empty($languages)){
 				echo '<div id="header_language_select">';
 				//echo '<div id="global_image">Language</div>';
-				//echo '<div class="cart-button">';
 					echo '<ul id="lang-select-block">';
 						echo '<li class="current">';
-							echo '<div id="global-image">Language</div>';
+							echo '<div id="global-image"></div>';
 							echo '<ul id="lang-select-popup">';					
 							foreach($languages as $language){
 								echo '<li class="unactive">';
