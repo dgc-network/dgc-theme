@@ -508,7 +508,7 @@ a:hover,a:focus,a:active {
     position:absolute !important;
 }
 
-#header_language_select{
+#header-language-select{
 	float:right;
 	/* display:inline-block; */
 	height:100%;
@@ -517,11 +517,11 @@ a:hover,a:focus,a:active {
 	z-index:8002;
 	clear:both;
 }
-#header_language_select ul{
+#header-language-select ul{
 	margin:0;
 	list-style:none;
 }
-#header_language_select ul li.current{
+#header-language-select ul li.current{
 	position: relative;
 }
 #global-image{
@@ -577,7 +577,7 @@ ul#lang-select-popup{
 	visibility:hidden;
 	z-index:8001;
 }
-#header_language_select ul li:hover > ul {
+#header-language-select ul li:hover > ul {
     margin: 0;
     opacity: 1;
     visibility: visible;

@@ -53,7 +53,7 @@ Fixed Styles for Woocommerce.
 	/* clear:left; */
 }
 .my-account a,
-.my-account a .my_account_image{
+.my-account a .my-account-image{
 	display:block;
 	float:left;
 	margin:0;
@@ -62,7 +62,6 @@ Fixed Styles for Woocommerce.
 	height:21px;
 	border:0;
 	text-decoration:none;
-	/* background:url(images/user_profile_image.png) no-repeat transparent; */
 	background:url(images/my_account.png?v=323) no-repeat;
 }
 

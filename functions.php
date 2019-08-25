@@ -942,7 +942,7 @@ if ( ! function_exists( 'dgc_get_responsive_style' ) ) {
 					$style_ .= '.main-navigation {background-color : ' .esc_attr($theme_options['menu_bg_color']) . '; }' . "\n";  
 				}
 	   
-				$style_ .= '#header_language_select a {font-family : '.  esc_attr($theme_options['m_font_family']) .';} ' . "\n";
+				$style_ .= '#header-language-select a {font-family : '.  esc_attr($theme_options['m_font_family']) .';} ' . "\n";
 				$style_ .= 'body {font-size : '. esc_attr($theme_options['p_size']) .'px; font-family : ' . esc_attr($theme_options['p_font_family']) . '; }' . "\n";
 	 	  
 				if(!empty($theme_options['background_color'])) { 
@@ -1088,10 +1088,10 @@ if ( ! function_exists( 'dgc_get_responsive_style' ) ) {
 				}
 				/*end of styles for responsive full width menu*/
 	  
-				$style_ .= '#header_language_select ul li.current > a { color : '.esc_attr($theme_options['menu_font_color']). '; } ' . "\n";
-				if (!empty($theme_options['menu_bg_color'])) { $style_ .= '#header_language_select { background-color : '.esc_attr($theme_options['menu_bg_color']) . '; } ' . "\n";  }
+				$style_ .= '#header-language-select ul li.current > a { color : '.esc_attr($theme_options['menu_font_color']). '; } ' . "\n";
+				if (!empty($theme_options['menu_bg_color'])) { $style_ .= '#header-language-select { background-color : '.esc_attr($theme_options['menu_bg_color']) . '; } ' . "\n";  }
 	  
-				$style_ .= '#header_language_select ul li.current:hover > a { ' . "\n";
+				$style_ .= '#header-language-select ul li.current:hover > a { ' . "\n";
 					if (!empty($theme_options['menu_btn_color'])) { $style_ .= 'background-color : '. esc_attr($theme_options['menu_btn_color']) . ';' . "\n"; }
 					if (!empty($theme_options['menu_hover_color'])) { $style_ .= 'color : '.esc_attr($theme_options['menu_hover_color']) . ';' . "\n"; }
 				$style_ .= '} ' . "\n";
@@ -1148,8 +1148,8 @@ if ( ! function_exists( 'dgc_get_responsive_style' ) ) {
 				}
 				
 				//$woo_style_ .= '.num_of_product_cart {border-color: '. esc_attr($theme_options['menu_btn_color']) . '; }  ' . "\n"; 
-				if (!empty($theme_options['user_profile_color'])) {
-					$woo_style_ .= '.user_profile_image {color: '. esc_attr($theme_options['user_profile_color']) . '; }  ' . "\n"; 
+				if (!empty($theme_options['my_account_button_color'])) {
+					$woo_style_ .= '.my-account-image {color: '. esc_attr($theme_options['my_account_button_color']) . '; }  ' . "\n"; 
 				}
 				
 				if (!empty($theme_options['cart_color'])) {
@@ -1637,7 +1637,6 @@ if ( ! function_exists( 'dgc_get_cart_button_html' ) ) {
 		if (class_exists('Woocommerce')) { 
 			global $woocommerce;
 			if (!empty($theme_options['showcart']) && (esc_attr($theme_options['showcart']) == 'on')) {
-					//$btn_cart = '<div id="header_language_select">
 					$btn_cart = '<div class="cart-button">
 						<a href="'.get_permalink( wc_get_page_id( 'cart' ) ).'" class="cart-contents">
 							<div class="cart_image"></div> 
@@ -1653,10 +1652,9 @@ if ( ! function_exists( 'dgc_get_cart_button_html' ) ) {
 /*get my account button html*/
 if ( ! function_exists( 'dgc_get_my_account_html' ) ) {
 	function dgc_get_my_account_html() {
-		//$btn_my_account = '<div id="header_language_select">
 		$btn_my_account = '<div class="my-account">
 			<a href="'.get_permalink( wc_get_page_id( 'myaccount' ) ).'">
-				<div id="my_account_image">USER</div>
+				<div class="my-account-image">USER</div>
 			</a></div>';
 		echo $btn_my_account;
 	}
@@ -1697,7 +1695,7 @@ if ( ! function_exists( 'dgc_get_wpml_languages_list' ) ) {
 			
 			if(!empty($languages)){
 			
-				echo '<div id="header_language_select"><ul id="lang-select-block">';
+				echo '<div id="header-language-select"><ul id="lang-select-block">';
 				foreach($languages as $l){
 					if($l['active']) {
 						echo '<li class="current">';

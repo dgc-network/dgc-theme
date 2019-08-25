@@ -1211,9 +1211,9 @@ class dgc_theme_options {
 						'default'     => 'on',
 					),
 					array(
-						'label'   => __( 'User profile color', 'textdomain' ),
-						'info'    => __( 'Choose color for user profile icon', 'textdomain' ),
-						'id'      => 'user_profile_color',
+						'label'   => __( 'My Account button color', 'textdomain' ),
+						'info'    => __( 'Choose color for my account icon', 'textdomain' ),
+						'id'      => 'my_account_button_color',
 						'type'    => 'color',
 						'default' => '#020202',
 					),

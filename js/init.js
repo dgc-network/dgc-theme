@@ -164,7 +164,7 @@ function autoWidthMenu () {
         var vElemsWidth = 0;
         var vElemsPadding = 0;
         var cartButtonWidth = 0;
-        var userprofileButtonWidth = 0;
+        var myaccountButtonWidth = 0;
         var qtranslateButtonWidth = 0;
         var wpmlButtonWidth = 0;
         var sum = 0;
@@ -172,18 +172,20 @@ function autoWidthMenu () {
             if (jQuery('.cart-button').length > 0){
                 cartButtonWidth = jQuery('.cart-button').outerWidth(true) + 2;
             }
-            if (jQuery('.user-profile').length > 0){
-                userprofileButtonWidth = jQuery('.user-profile').outerWidth(true) + 2;
+            if (jQuery('.my-account').length > 0){
+                myaccountButtonWidth = jQuery('.my-account').outerWidth(true) + 2;
             }
-            if (jQuery('#header_language_select').length > 0){
-                qtranslateButtonWidth = jQuery('#header_language_select').outerWidth(true);
-                wpmlButtonWidth = jQuery('#header_language_select').outerWidth(true);
+            if (jQuery('#qtranslate-select').length > 0){
+                qtranslateButtonWidth = jQuery('#qtranslate-select').outerWidth(true);
+            }
+            if (jQuery('#header-language-select').length > 0){
+                wpmlButtonWidth = jQuery('#header-language-select').outerWidth(true);
             }
             jQuery('.site-navigation ul.menu,.site-navigation .menu > ul').children('li').each( function(){
                 sum += jQuery(this)[0].getBoundingClientRect().width;
                 vElemsPadding += parseInt(jQuery(this).css('margin-left'));
             });
-            sum += vElemsPadding + cartButtonWidth + userprofileButtonWidth + qtranslateButtonWidth + wpmlButtonWidth;
+            sum += vElemsPadding + cartButtonWidth + myaccountButtonWidth + qtranslateButtonWidth + wpmlButtonWidth;
             jQuery('.menu-wrapper').css({'max-width': sum + 'px'});
         } else {
             jQuery('.menu-wrapper').css({'max-width': 'none'})
