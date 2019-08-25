@@ -759,15 +759,15 @@ a:hover,a:focus,a:active {
 /*.qtranslate-select .global-image:before{
 	background: url(images/global.png) no-repeat; font-size:26px; position:absolute; top:-5px;}*/
 		
-.qtranslate-select{
+/*.qtranslate-select{
 	float:right;
-	/* display:inline-block; */
+	display:inline-block;
 	height:100%;
 	margin: 10px 0 0;
 	padding:0;
 	z-index:8002;
 	clear:both;
-}
+} */
 .qtranslate-select ul{
 	margin:0;
 	list-style:none;
@@ -775,7 +775,7 @@ a:hover,a:focus,a:active {
 .qtranslate-select ul li.current{
 	position: relative;
 }
-.qtranslate-select, .qtranslate-select ul li:hover > ul {
+.qtranslate-select ul, .qtranslate-select ul li:hover > ul {
     margin: 0;
     opacity: 1;
     visibility: visible;
@@ -991,8 +991,8 @@ ul#lang-select-popup{
     padding:20px 0;
 	position: relative;
 }
-#footer-widgets {height: 100%; width:100%; font-size: 0; background: gray;}
-#sub-footer-widgets, .footer-payment-icons{display: inline-block; vertical-align: top; font-size: 12px;}
+#footer-widgets {display: inline-block; vertical-align: top; height: 100%; width:100%; font-size: 0; background: gray;}
+/* #sub-footer-widgets, .footer-payment-icons{display: inline-block; vertical-align: top; font-size: 12px;} */
 #sub-footer-widgets {display:block; float:left; width:85%;}
 #footer-widget-1, #footer-widget-2, #footer-widget-3{display: inline-block; vertical-align: top; font-size: 12px;}
 #footer-widget-1 {width: 25%;}
