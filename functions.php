@@ -1670,7 +1670,7 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 				echo '<div class="qtranslate-select">';
 					echo '<ul id="lang-select-block">';
 						echo '<li class="current">';
-							echo '<div class="global-image"></div>';
+							echo '<div class="global-image">Language</div>';
 							echo '<ul id="lang-select-popup">';					
 							foreach($languages as $language){
 								echo '<li class="unactive">';
