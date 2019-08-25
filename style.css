@@ -742,6 +742,45 @@ a:hover,a:focus,a:active {
     clip:rect(1px, 1px, 1px, 1px);
     position:absolute !important;
 }
+
+/*header*/
+.my-account{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left}
+.my-account a,
+.my-account a .my-account-image{
+	display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
+.my-account a .my-account-image:before{
+	font-family:FontAwesome; content:"\f007"; font-size:26px; position:absolute; top:-5px;}
+	
+.qtranslate-select{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left}
+.qtranslate-select a,
+.qtranslate-select a .global-image{
+	display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
+.qtranslate-select a .global-image:before{
+	font-family:FontAwesome; content:"\f1ab"; font-size:26px; position:absolute; top:-5px;}
+		
+.qtranslate-select{
+	float:right;
+	/* display:inline-block; */
+	height:100%;
+	margin: 10px 0 0;
+	padding:0;
+	z-index:8002;
+	clear:both;
+}
+.qtranslate-select ul{
+	margin:0;
+	list-style:none;
+}
+.qtranslate-select ul li.current{
+	position: relative;
+}
+.qtranslate-select ul li:hover > ul {
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
+}
+		
+
 #qtranslate-select{
 	float:right;
 	vertical-align: center;
@@ -770,6 +809,7 @@ a:hover,a:focus,a:active {
 	text-decoration:none;
 	background: url(images/global.png?v=325) no-repeat;
 }
+
 #header-language-select{
 	float:right;
 	/* display:inline-block; */

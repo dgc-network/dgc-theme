@@ -74,16 +74,15 @@ body #content a.woocommerce-product-gallery__image.flex-active-slide {
 }
 
 /*header*/
+/*
 .my-account{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left}
-/*.my-account{display:block; float:right; padding:0; position:relative; margin-top:14px; margin-bottom:10px; clear:left}*/
 .my-account a,
 .my-account a .my-account-image{
 	display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
 .my-account a .my-account-image:before{
 	font-family:FontAwesome; content:"\f007"; font-size:26px; position:absolute; top:-5px;}
-	
+*/	
 .cart-button{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left}
-/* .cart-button{display:block; float:right; padding:0; position:relative; margin-top:14px; margin-bottom:10px; clear:left} */
 .cart-button a,
 .cart-button a .cart_image{
 	display:block; float:left; margin: 0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
