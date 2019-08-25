@@ -508,16 +508,6 @@ a:hover,a:focus,a:active {
     position:absolute !important;
 }
 
-.cart_button ul{
-	margin:0;
-	list-style:none;
-}
-.cart_button ul li.current{
-	position: relative;
-}
-.cart_button ul li.current .global_image{
-	background: url(images/global.png?v=323);
-}
 #header_language_select{
 	float:right;
 	/* display:inline-block; */
@@ -534,7 +524,15 @@ a:hover,a:focus,a:active {
 #header_language_select ul li.current{
 	position: relative;
 }
-#global_image{
+#global-image{
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	width:24px;
+	height:21px;
+	border:0;
+	text-decoration:none;
 	background: url(images/global.png?v=323) no-repeat;
 }
 #lang-select-block a{

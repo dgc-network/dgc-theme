@@ -758,7 +758,15 @@ a:hover,a:focus,a:active {
 #header_language_select ul li.current{
 	position: relative;
 }
-#global_image{
+#global-image{
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	width:24px;
+	height:21px;
+	border:0;
+	text-decoration:none;
 	background: url(images/global.png?v=323) no-repeat;
 }
 #lang-select-block a{
@@ -956,13 +964,13 @@ ul#lang-select-popup{
 	position: relative;
 }
 #footer-widgets {height: 100%; width:100%; font-size: 0; background: gray;}
-#sub-footer-widgets, #footer-widget-4{display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
-#sub-footer-widgets {height: 100%; width:80%; font-size: 0; background: gray;}
-#footer-widget-1, #footer-widget-2, #footer-widget-3{display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
+#sub-footer-widgets, #footer-payment-icons{display: inline-block; vertical-align: top; font-size: 12px;}
+#sub-footer-widgets {display:block; float:left; width:80%;}
+#footer-widget-1, #footer-widget-2, #footer-widget-3{display: inline-block; vertical-align: top; font-size: 12px;}
 #footer-widget-1 {width: 25%;}
 #footer-widget-2 {width: 25%;}
 #footer-widget-3 {width: 25%;}
-#footer-widget-4 {width: 12%; background: url(images/payment_icons.png?v=323);}
+#footer-payment-icons {float:right; background: url(images/payment_icons.png?v=323) no-repeat;}
 /*
 * {margin: 0; padding: 0;}
 #footer-widgets {height: 100%; width:100%; font-size: 0; background: gray;}
