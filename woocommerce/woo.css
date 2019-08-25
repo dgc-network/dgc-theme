@@ -74,7 +74,7 @@ body #content a.woocommerce-product-gallery__image.flex-active-slide {
 }
 
 /*header*/
-.my-account-image{background:url(images/my_account.png?v=324567) no-repeat;}
+.my-account-image{background:url(images/my_account.png?v=325) no-repeat;}
 .my-account{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left}
 .my-account a,
 /* .my-account a .my-account-image{
