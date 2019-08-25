@@ -50,7 +50,7 @@ Fixed Styles for Woocommerce.
 	margin:14px 10px 10px;
 	padding:0;
 	position:relative;
-	/* clear:left; */
+	clear:left;
 }
 .my-account a,
 .my-account a .my-account-image{
