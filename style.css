@@ -775,7 +775,7 @@ a:hover,a:focus,a:active {
 .qtranslate-select ul li.current{
 	position: relative;
 }
-.qtranslate-select ul li:hover > ul {
+.qtranslate-select, .qtranslate-select ul li:hover > ul {
     margin: 0;
     opacity: 1;
     visibility: visible;
@@ -992,15 +992,15 @@ ul#lang-select-popup{
 	position: relative;
 }
 #footer-widgets {height: 100%; width:100%; font-size: 0; background: gray;}
-#sub-footer-widgets, #footer-payment-icons{display: inline-block; vertical-align: top; font-size: 12px;}
-#sub-footer-widgets {display:block; float:left; width:80%;}
+#sub-footer-widgets, .footer-payment-icons{display: inline-block; vertical-align: top; font-size: 12px;}
+#sub-footer-widgets {display:block; float:left; width:85%;}
 #footer-widget-1, #footer-widget-2, #footer-widget-3{display: inline-block; vertical-align: top; font-size: 12px;}
 #footer-widget-1 {width: 25%;}
 #footer-widget-2 {width: 25%;}
 #footer-widget-3 {width: 25%;}
 #footer-payment-icons {float:right; background: url(images/payment_icons.png?v=323) no-repeat;}
 
-.footer-payment-icons{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left; width:10%}
+.footer-payment-icons{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left; width:5%}
 /*.footer-payment-icons .alipay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
 .footer-payment-icons .alipay-image:before{font-family:FontAwesome; content:"\f642"; font-size:26px;}*/
 .footer-payment-icons .alipay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
