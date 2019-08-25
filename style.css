@@ -1000,19 +1000,23 @@ ul#lang-select-popup{
 #footer-widget-3 {width: 25%;}
 #footer-payment-icons {float:right; background: url(images/payment_icons.png?v=323) no-repeat;}
 
-.footer-payment-icons{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left}
+.footer-payment-icons{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left; width:10%}
+/*.footer-payment-icons .alipay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
+.footer-payment-icons .alipay-image:before{font-family:FontAwesome; content:"\f642"; font-size:26px;}*/
 .footer-payment-icons .alipay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
-.footer-payment-icons .alipay-image:before{font-family:FontAwesome; content:"\f642"; font-size:26px; position:absolute; top:-5px;}
+.footer-payment-icons .alipay-image:before{font-family:FontAwesome; content:"\f179"; font-size:26px;}
 .footer-payment-icons .wechatpay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
-.footer-payment-icons .wechatpay-image:before{font-family:FontAwesome; content:"\f1d7"; font-size:26px; position:absolute; top:-5px;}
+.footer-payment-icons .wechatpay-image:before{font-family:FontAwesome; content:"\f1d7"; font-size:26px;}
+/*.footer-payment-icons .applepay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
+.footer-payment-icons .applepay-image:before{font-family:FontAwesome; content:"\f415"; font-size:26px; position:absolute; top:-5px;}*/
 .footer-payment-icons .applepay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
-.footer-payment-icons .applepay-image:before{font-family:FontAwesome; content:"\f415"; font-size:26px; position:absolute; top:-5px;}
+.footer-payment-icons .applepay-image:before{font-family:FontAwesome; content:"\f179"; font-size:26px;}
 .footer-payment-icons .master-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
-.footer-payment-icons .master-image:before{font-family:FontAwesome; content:"\f1f1"; font-size:26px; position:absolute; top:-5px;}
+.footer-payment-icons .master-image:before{font-family:FontAwesome; content:"\f1f1"; font-size:26px;}
 .footer-payment-icons .visa-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
-.footer-payment-icons .visa-image:before{font-family:FontAwesome; content:"\f1f0"; font-size:26px; position:absolute; top:-5px;}
+.footer-payment-icons .visa-image:before{font-family:FontAwesome; content:"\f1f0"; font-size:26px;}
 .footer-payment-icons .amex-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
-.footer-payment-icons .amex-image:before{font-family:FontAwesome; content:"\f1f3"; font-size:26px; position:absolute; top:-5px;}
+.footer-payment-icons .amex-image:before{font-family:FontAwesome; content:"\f1f3"; font-size:26px;}
 	
 #colophon .site-info {
     font-size:12px;
