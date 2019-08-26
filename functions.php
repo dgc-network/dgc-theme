@@ -1668,9 +1668,9 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 			$languages = qtranxf_getSortedLanguages();			
 			if(!empty($languages)){
 				echo '<div class="qtranslate-select">';
-					echo '<div class="global-image"></div>';
+					//echo '<div class="global-image"></div>';
 					echo '<ul id="lang-select-block">';
-						echo '<li class="current">';
+						echo '<li class="current">Language';
 							//echo '<div class="global-image"></div>';
 							echo '<ul id="lang-select-popup">';					
 							foreach($languages as $language){
