@@ -15,10 +15,6 @@
 			<h3 class="widget-title"><?php _e('Search Products', 'textdomain'); ?></h3>
 			<?php get_product_search_form(); ?>
 		</aside>
-		<aside id="woocommerce_product_categories-4" class="widget woocommerce widget_product_categories">
-			<h3 class="widget-title"><?php _e('Filter & Refine', 'textdomain'); ?></h3>
-			<?php dgc_filter_refine(); ?>
-		</aside>
 					
 	<?php endif; // end sidebar widget area ?>
 </div><!-- #secondary .widget-area -->

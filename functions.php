@@ -1509,7 +1509,16 @@ if (class_exists('Woocommerce')) {
 
 	}
 	add_filter( 'get_product_search_form' , 'woo_custom_product_searchform' );
-	add_shortcode('dgc_product_search','woo_custom_product_searchform');
+
+	/*custom search page*/
+	function dgc_product_search_page() {
+		get_header();
+		echo '<div class=dgc-search-form>';
+			get_product_search_form();
+		echo '</div>';
+		get_footer(); 
+	}
+	add_shortcode('dgc_product_search','dgc_product_search_page');
 }
 
 if ( ! function_exists( 'dgc_custom_css_and_slider_scripts' ) ) {
@@ -2158,64 +2167,6 @@ function dgc_frontend_scripts_include_lightbox() {
     }
 }
 add_action('wp_enqueue_scripts', 'dgc_frontend_scripts_include_lightbox');
-
-if ( ! function_exists( 'dgc_filter_refine' ) ) {
-	function dgc_filter_refine( $echo = true ) {
-		?>
-			<div>
-				<input type="checkbox" name="vehicle1" value="Bike"> Product Code<br>
-				<input type="checkbox" name="vehicle2" value="Car"> Product Title<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Keyword<br><br>
-			</div>
-			<div>
-				<h4>Publisher</h4>
-				<input type="checkbox" name="vehicle1" value="Bike"> AGA<br>
-				<input type="checkbox" name="vehicle2" value="Car"> AGI<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> ASCE<br>
-				<input type="checkbox" name="vehicle1" value="Bike"> ASHRAE<br>
-				<input type="checkbox" name="vehicle2" value="Car"> ASME<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> ASTM<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> BSI<br><br>
-			</div>
-
-			<div>
-				<h4>Tags</h4>
-				<input type="checkbox" name="vehicle1" value="Bike"> Home<br>
-				<input type="checkbox" name="vehicle2" value="Car"> Natual Waters<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Organic Carbon<br>
-				<input type="checkbox" name="vehicle1" value="Bike"> Organic Coatings<br>
-				<input type="checkbox" name="vehicle2" value="Car"> Plain Steel<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Surfaces<br>
-				<input type="checkbox" name="vehicle3" value="Boat"> Testing Machines<br><br>
-			</div>
-			<div>
-				<h4>Published Date</h4>
-				<input type="text" name="vehicle1" width="30%" value="2018"> - 
-				<input type="text" name="vehicle2" width="30%" value="2019">
-			</div>
-
-			<?php
-			/* translators: used between list items, there is a space after the comma */
-		 	$categories_list = get_the_category_list( __( ', ', 'textdomain' ) );
-			if ( $categories_list && dgc_categorized_blog() ) : ?>
-			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'textdomain' ), $categories_list ); ?>
-			</span>
-			<?php endif; // End if categories ?>
-
-			<?php
-			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', __( ', ', 'textdomain' ) );
-			if ( $tags_list ) : ?>
-			<span class="tag-links">
-				<?php // printf( __( 'Tagged %1$s', 'textdomain' ), $tags_list ); ?>
-				<?php echo $tags_list; ?>
-			</span> 
-			<?php endif; // End if $tags_list ?>
-		
-		<?php
-	}
-}
 
 /**
 * Creates the custom fieldin the WooCommerce product data meta box
