@@ -1786,7 +1786,8 @@ if ( ! function_exists( 'dgc_get_product_search_form' ) ) {
 		</form>
 		<?php
 	}
-}	
+	add_shortcode('dgc_product_search','dgc_get_product_search_form');
+}
 
 if ( ! function_exists( 'dgc_is_woo_sidebar' ) ) {
 	function dgc_is_woo_sidebar() {
