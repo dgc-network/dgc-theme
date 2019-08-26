@@ -752,10 +752,9 @@ a:hover,a:focus,a:active {
 	font-family:FontAwesome; content:"\f007"; font-size:26px; position:absolute; top:-5px;}
 	
 #qtranslate-select{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px;}
-#qtranslate-select .global-image{
-	display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
-#qtranslate-select .global-image:before{
-	font-family:FontAwesome; content:"\f1ab"; font-size:26px; position:absolute; top:-5px;}
+#qtranslate-select .global-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
+/*#qtranslate-select .global-image:before{font-family:FontAwesome; content:"\f1ab"; font-size:26px; position:absolute; top:-5px;}*/
+#qtranslate-select .global-image:before{font-family:FontAwesome; content:"\f0ac"; font-size:26px; position:absolute; top:-5px;}
 #qtranslate-select ul{
 	margin:0;
 	list-style:none;
