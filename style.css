@@ -744,14 +744,14 @@ a:hover,a:focus,a:active {
 }
 
 /*header*/
-.my-account{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left}
+.my-account{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:both}
 .my-account a,
 .my-account a .my-account-image{
 	display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
 .my-account a .my-account-image:before{
 	font-family:FontAwesome; content:"\f007"; font-size:26px; position:absolute; top:-5px;}
 	
-.qtranslate-select{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left}
+.qtranslate-select{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:both}
 .qtranslate-select .global-image{
 	display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
 .qtranslate-select .global-image:before{
@@ -768,8 +768,8 @@ a:hover,a:focus,a:active {
 	z-index:8002;
 	clear:both;
 } */
-.qtranslate-select:hover {
-	color:red;
+.qtranslate-select:hover ul li > ul {
+		color:red;
 }
 .qtranslate-select ul{
 	margin:0;
@@ -1008,20 +1008,20 @@ ul#lang-select-popup{
 .footer-payment-icons{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px; clear:left; width:10%}
 /*.footer-payment-icons .alipay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
 .footer-payment-icons .alipay-image:before{font-family:FontAwesome; content:"\f642"; font-size:26px;}*/
-.footer-payment-icons .alipay-image{display:block; align-content:center; margin:0; padding:0; width:28px; border:0;}
-.footer-payment-icons .alipay-image:before{font-family:FontAwesome; content:"\f642"; font-size:30px;}
-.footer-payment-icons .wechatpay-image{display:block; align-content:center; margin:0; padding:0; width:28px; border:0;}
-.footer-payment-icons .wechatpay-image:before{font-family:FontAwesome; content:"\f1d7"; font-size:30px;}
+.footer-payment-icons .alipay-image{display:block; float:center; margin:0; padding:0; width:28px; border:0;}
+.footer-payment-icons .alipay-image:before{font-family:FontAwesome; content:"\f642"; font-size:30px; color: white}
+.footer-payment-icons .wechatpay-image{display:block; float:center; margin:0; padding:0; width:28px; border:0;}
+.footer-payment-icons .wechatpay-image:before{font-family:FontAwesome; content:"\f1d7"; font-size:30px; color: white}
 /*.footer-payment-icons .applepay-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
 .footer-payment-icons .applepay-image:before{font-family:FontAwesome; content:"\f415"; font-size:26px; position:absolute; top:-5px;}*/
 .footer-payment-icons .applepay-image{display:block; float:center; margin:0; padding:0; width:28px; border:0;}
-.footer-payment-icons .applepay-image:before{font-family:FontAwesome; content:"\f179"; font-size:30px;}
+.footer-payment-icons .applepay-image:before{font-family:FontAwesome; content:"\f179"; font-size:30px; color: white}
 .footer-payment-icons .master-image{display:block; float:center; margin:0; padding:0; width:28px; border:0;}
-.footer-payment-icons .master-image:before{font-family:FontAwesome; content:"\f1f1"; font-size:30px;}
+.footer-payment-icons .master-image:before{font-family:FontAwesome; content:"\f1f1"; font-size:30px; color: white}
 .footer-payment-icons .visa-image{display:block; float:center; margin:0; padding:0; width:28px; border:0;}
-.footer-payment-icons .visa-image:before{font-family:FontAwesome; content:"\f1f0"; font-size:30px;}
+.footer-payment-icons .visa-image:before{font-family:FontAwesome; content:"\f1f0"; font-size:30px; color: white}
 .footer-payment-icons .amex-image{display:block; float:center; margin:0; padding:0; width:28px; border:0;}
-.footer-payment-icons .amex-image:before{font-family:FontAwesome; content:"\f1f3"; font-size:30px;}
+.footer-payment-icons .amex-image:before{font-family:FontAwesome; content:"\f1f3"; font-size:30px; color: white}
 	
 #colophon .site-info {
     font-size:12px;
