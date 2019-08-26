@@ -747,13 +747,11 @@ a:hover,a:focus,a:active {
 .my-account{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px;}
 .my-account a,
 .my-account a .my-account-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
-/*.my-account a .my-account-image:before{font-family:FontAwesome; content:"\f007"; font-size:26px; position:absolute; top:-5px;}*/
-.my-account a .my-account-image:before{font-family:FontAwesome; content:"\f007"; font-size:26px; margin-bottom:5px;}
+.my-account a .my-account-image:before{font-family:FontAwesome; content:"\f007"; font-size:26px;}
 	
 #qtranslate-select{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px;}
 #qtranslate-select .global-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
-/*#qtranslate-select .global-image:before{font-family:FontAwesome; content:"\f1ab"; font-size:26px; position:absolute; top:-5px;}*/
-#qtranslate-select .global-image:before{font-family:FontAwesome; content:"\f0ac"; font-size:26px; margin-bottom:5px;}
+#qtranslate-select .global-image:before{font-family:FontAwesome; content:"\f0ac"; font-size:26px;}
 #qtranslate-select ul{
 	margin:0;
 	list-style:none;
@@ -787,7 +785,6 @@ a:hover,a:focus,a:active {
     margin: 0;
     opacity: 1;
     visibility: visible;
-	color:#F15A23;
 }
 #lang-select-block a{
     display:block;
@@ -982,7 +979,7 @@ ul#lang-select-popup{
 #sub-footer-widgets {display: flex; justify-content: space-between; vertical-align: top;}
 #footer-widget-1, #footer-widget-2, #footer-widget-3{display: block; width: 30%;}
 
-.footer-payment-icons{display:block; float:center; width:10%; padding:0; position:relative; margin:10px 10px 10px;}
+.footer-payment-icons{display:block; width:10%; padding:0; position:relative; margin:10px 10px 10px;}
 .footer-payment-icons .alipay-image{display:block; margin-left:auto; margin-right:auto; margin:0; padding:0; width:28px; border:0;}
 .footer-payment-icons .alipay-image:before{font-family:FontAwesome; content:"\f642"; font-size:30px; color: white}
 .footer-payment-icons .wechatpay-image{display:block; margin-left:auto; margin-right:auto; margin:0; padding:0; width:28px; border:0;}
