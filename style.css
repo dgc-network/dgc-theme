@@ -768,7 +768,7 @@ a:hover,a:focus,a:active {
 	z-index:8002;
 	clear:both;
 } */
-.qtranslate-select:hover > ul {
+.qtranslate-select:hover > ul li ul{
 	color:red;
 	visibility: visible;
 }
@@ -779,7 +779,7 @@ a:hover,a:focus,a:active {
 .qtranslate-select ul li.current{
 	position: relative;
 }
-.qtranslate-select ul li:hover > ul {
+.qtranslate-select ul li:hover > ul{
     margin: 0;
     opacity: 1;
     visibility: visible;
@@ -996,7 +996,7 @@ ul#lang-select-popup{
 	position: relative;
 }
 #footer-widgets {display: flex; justify-content: space-between; vertical-align: top; 
-	height: 100%; width:100%; padding: 10; background: gray;}
+	height: 100%; width:100%; padding: 20; background: gray;}
 /* #sub-footer-widgets, .footer-payment-icons{display: inline-block; vertical-align: top; font-size: 12px;} */
 /* #sub-footer-widgets {display:block; float:left;} */
 #sub-footer-widgets {display: flex; justify-content: space-between; vertical-align: top; }
