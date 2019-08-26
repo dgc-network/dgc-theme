@@ -769,7 +769,8 @@ a:hover,a:focus,a:active {
 	clear:both;
 } */
 .qtranslate-select:hover > ul {
-		color:red;
+	color:red;
+	visibility: visible;
 }
 .qtranslate-select ul{
 	margin:0;
@@ -995,7 +996,7 @@ ul#lang-select-popup{
 	position: relative;
 }
 #footer-widgets {display: flex; justify-content: space-between; vertical-align: top; 
-	height: 100%; width:100%; font-size: 0; background: gray;}
+	height: 100%; width:100%; padding: 10; background: gray;}
 /* #sub-footer-widgets, .footer-payment-icons{display: inline-block; vertical-align: top; font-size: 12px;} */
 /* #sub-footer-widgets {display:block; float:left;} */
 #sub-footer-widgets {display: flex; justify-content: space-between; vertical-align: top; }
