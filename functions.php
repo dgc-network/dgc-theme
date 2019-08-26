@@ -1509,6 +1509,7 @@ if (class_exists('Woocommerce')) {
 
 	}
 	add_filter( 'get_product_search_form' , 'woo_custom_product_searchform' );
+	add_shortcode('dgc_product_search','woo_custom_product_searchform');
 }
 
 if ( ! function_exists( 'dgc_custom_css_and_slider_scripts' ) ) {
@@ -1786,7 +1787,6 @@ if ( ! function_exists( 'dgc_get_product_search_form' ) ) {
 		</form>
 		<?php
 	}
-	add_shortcode('dgc_product_search','dgc_get_product_search_form');
 }
 
 if ( ! function_exists( 'dgc_is_woo_sidebar' ) ) {
