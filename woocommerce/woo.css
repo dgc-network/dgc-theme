@@ -80,18 +80,12 @@ body #content a.woocommerce-product-gallery__image.flex-active-slide {
 .cart-button a .cart_image:before{font-family:FontAwesome; content:"\f07a"; font-size:26px;}
 
 .num_of_product_cart{
-	display:block;
-	float:left;
 	position:absolute;
-	top:-11px;
+	top:-6px;
 	right:-4px;
 	text-align:center;
-	padding:0;
-	margin:0;
 	width:20px;
 	height:20px;
-	text-decoration:none;
-	color:#333333;
 	font-size:10px;
 	font-weight:bold;
 	background: #FFF;
