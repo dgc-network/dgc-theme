@@ -1512,13 +1512,11 @@ if (class_exists('Woocommerce')) {
 
 	/*custom search page*/
 	function dgc_product_search_page() {
-		get_header();
 		echo '<div class=dgc-search-form>';
 			get_product_search_form();
 		echo '</div>';
-		get_footer(); 
 	}
-	add_shortcode('dgc_product_search','dgc_product_search_page');
+	add_shortcode('dgc-product-search','dgc_product_search_page');
 }
 
 if ( ! function_exists( 'dgc_custom_css_and_slider_scripts' ) ) {

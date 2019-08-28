@@ -28,8 +28,6 @@
 			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { ?>
 				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'textdomain' ), __( '1 Comment', 'textdomain' ), __( '% Comments', 'textdomain' ) ); ?></span>
 			<?php } ?>
-		
-			<?php edit_post_link( __( 'Edit', 'textdomain' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- .entry-meta -->
 	</div>
 </article><!-- #post-<?php the_ID(); ?> -->
