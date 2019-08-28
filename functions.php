@@ -1512,8 +1512,10 @@ if (class_exists('Woocommerce')) {
 
 	/*custom search page*/
 	function dgc_product_search_page() {
-		echo '<div class=dgc-search-form>';
-			get_product_search_form();
+		echo '<div class=dgc-search-page>';
+			echo '<div class=dgc-search-form>';
+				get_product_search_form();
+			echo '</div>';
 		echo '</div>';
 	}
 	add_shortcode('dgc-product-search','dgc_product_search_page');

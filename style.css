@@ -2757,3 +2757,12 @@ div#fbSEOComments{
 	#page-header .container header .center-pos a.link-logo-retina {width:50%}
 }
 
+.dgc-search-page {
+	height: 100%;
+}
+
+.dgc-search-form {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
