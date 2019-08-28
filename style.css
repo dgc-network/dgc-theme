@@ -744,13 +744,13 @@ a:hover,a:focus,a:active {
 }
 
 /*header*/
-.my-account{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px;}
+.my-account{float:right; padding:0; position:relative; margin:10px 10px 10px;}
 .my-account a,
-.my-account a .my-account-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
+.my-account a .my-account-image{float:left; margin:0; padding:0; width:24px; height:21px; border:0;}
 .my-account a .my-account-image:before{font-family:FontAwesome; content:"\f007"; font-size:26px;}
 	
-#qtranslate-select{display:block; float:right; padding:0; position:relative; margin:14px 10px 10px;}
-#qtranslate-select .global-image{display:block; float:left; margin:0; padding:0; width:24px; height:21px; border:0; text-decoration:none;}
+#qtranslate-select{float:right; padding:0; position:relative; margin:10px 10px 10px;}
+#qtranslate-select .global-image{float:left; margin:0; padding:0; width:24px; height:21px; border:0;}
 #qtranslate-select .global-image:before{font-family:FontAwesome; content:"\f0ac"; font-size:26px;}
 #qtranslate-select ul{
 	margin:0;
@@ -1463,8 +1463,8 @@ header.post-header, .blog_post {
 	line-height:24px;
 }
 .blog_post .post-content {
-    float:left;
-    width:884px;
+    /* float:left;
+    width:884px; */
 	padding:0 0 18px 0;
 	border:1px solid #d6d6d6
 }
@@ -2758,12 +2758,11 @@ div#fbSEOComments{
 }
 
 .dgc-search-page {
-	height: 100%;
-	background-image: url(images/cake.jpg)
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: flex;
 }
 
 .dgc-search-form {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
