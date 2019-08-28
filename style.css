@@ -975,7 +975,7 @@ ul#lang-select-popup{
     padding:20px 0;
 	position: relative;
 }
-#footer-widgets {display: flex; justify-content: space-between; height: 100%; width:100%; padding: 20px; background: gray;}
+#footer-widgets {display: flex; justify-content: space-between; padding: 20px; background: gray;}
 #sub-footer-widgets {display: flex; justify-content: space-between; vertical-align: top;}
 #footer-widget-1, #footer-widget-2, #footer-widget-3{display: block; width: 30%;}
 
@@ -2759,6 +2759,7 @@ div#fbSEOComments{
 
 .dgc-search-page {
 	height: 100%;
+	background-image: url(images/cake.jpg)
 }
 
 .dgc-search-form {

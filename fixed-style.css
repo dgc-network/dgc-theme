@@ -524,17 +524,6 @@ a:hover,a:focus,a:active {
 #header-language-select ul li.current{
 	position: relative;
 }
-#global-image{
-	display:block;
-	float:left;
-	margin:0;
-	padding:0;
-	width:24px;
-	height:21px;
-	border:0;
-	text-decoration:none;
-	background: url(images/global.png?v=324) no-repeat;
-}
 #lang-select-block a{
     display:block;
 	color:#333333;
