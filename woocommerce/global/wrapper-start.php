@@ -17,7 +17,11 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-
+/*
+$shop_view = shopme_get_meta_value('shop_view');
+if (empty($shop_view)) { $shop_view = 'list_view_products'; }
+if (!empty( $shop_view ) ) { $wrapper_classes[] = $shop_view; }
+*/
 $woo_sidebar = dgc_get_woo_sidebar();
 $theme_options = dgc_get_theme_options();
 
@@ -25,6 +29,7 @@ $prod_num_row_class = '';
 if (is_shop() || is_product_category() || is_tax('product_tag')) {
     if (!empty($theme_options['shop_num_row'])){
         $prod_num_row = $theme_options['shop_num_row'];
+        $prod_num_row = '1';
         $prod_num_row_class = 'prod_num_row-'.$prod_num_row;
     }
 }
