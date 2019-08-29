@@ -1344,6 +1344,7 @@ if (class_exists('Woocommerce')) {
 	if (!function_exists('dgc_loop_columns')) {
 		function dgc_loop_columns() {
 			$theme_options = dgc_get_theme_options();
+			return '1';
 			if (!empty($theme_options['shop_num_row'])){
 				return esc_attr($theme_options['shop_num_row']);
 			} else {
