@@ -2766,3 +2766,38 @@ div#fbSEOComments{
 .dgc-search-form {
 	margin: auto;
 }
+
+@media (min-width: 768px) {
+ 
+	.site-main ul.products li.product {
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+	 
+	.site-main ul.products {
+		border-right: 1px solid;
+		border-bottom: 1px solid;
+		margin: 1em 0;
+	}
+	 
+	.site-main ul.products li.product .product_table {
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+	 
+	.site-main ul.products li.product div.one_third {
+		width: 33.3%;
+		float: left;
+		margin: 0;
+		text-align: left;
+		background-color: #eee;
+		border-left: 1px solid;
+		border-top: 1px solid;
+		padding: 1em 2em;
+		box-sizing: border-box;
+		flex-grow: 1;
+		overflow: hidden;
+	}
+	 
+}
