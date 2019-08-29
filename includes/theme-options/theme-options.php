@@ -1264,12 +1264,13 @@ class dgc_theme_options {
 						'info'    => __( 'Choose number of products', 'textdomain' ),
 						'type'    => 'select',
 						'options' => array(
+							'1' => __( '1 products', 'textdomain' ),
 							'2' => __( '2 products', 'textdomain' ),
 							'3' => __( '3 products', 'textdomain' ),
 							'4' => __( '4 products', 'textdomain' ),
 							'5' => __( '5 products', 'textdomain' )
 						),
-						'default' => '4',
+						'default' => '1',
 					),
 					array(
 						'id'      => 'woo_shop_num_prod',
