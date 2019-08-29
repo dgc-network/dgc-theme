@@ -1438,7 +1438,8 @@ if (class_exists('Woocommerce')) {
 				'meta_query'          => $meta_query
 			);
 			$products = new WP_Query( $args );
-			$woocommerce_loop['columns'] 	= apply_filters( 'woocommerce_cross_sells_columns', 4 );
+			//$woocommerce_loop['columns'] 	= apply_filters( 'woocommerce_cross_sells_columns', 4 );
+			$woocommerce_loop['columns'] 	= apply_filters( 'woocommerce_cross_sells_columns', 1 );
 			if ( $products->have_posts() ) : ?>
 				<div class="cross-sells">
 					<h2><?php _e( 'You may be interested in&hellip;', 'textdomain' ) ?></h2>
