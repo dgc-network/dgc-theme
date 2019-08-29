@@ -1519,13 +1519,13 @@ if (class_exists('Woocommerce')) {
 			echo '<div class=dgc-search-form>';
 				get_product_search_form();
 			echo '</div>';
-			echo '<div class=dgc-register-warning>';
-				echo '<div class=my-account-image></div>';
-				echo '<p>As a member of EDD, you will be seamless with the world standard.</p>';
-				echo '<div class=my-account-image></div>';
-			echo '</div>';
 		echo '</div>';
-	}
+		echo '<div class=dgc-register-warning>';
+			echo '<div class=my-account-image></div>';
+			echo '<p>As a member of EDD, you will be seamless with the world standard.</p>';
+			echo '<div class=my-account-image></div>';
+	echo '</div>';
+}
 	add_shortcode('dgc-product-search','dgc_product_search_page');
 }
 
