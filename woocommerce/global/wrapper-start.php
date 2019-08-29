@@ -29,6 +29,7 @@ $prod_num_row_class = '';
 if (is_shop() || is_product_category() || is_tax('product_tag')) {
     if (!empty($theme_options['shop_num_row'])){
         $prod_num_row = $theme_options['shop_num_row'];
+        $prod_num_row = '1';
         $prod_num_row_class = 'prod_num_row-'.$prod_num_row;
     }
 }
