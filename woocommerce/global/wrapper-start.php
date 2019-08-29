@@ -18,6 +18,10 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
+$shop_view = shopme_get_meta_value('shop_view');
+if (empty($shop_view)) { $shop_view = 'list_view_products'; }
+if (!empty( $shop_view ) ) { $wrapper_classes[] = $shop_view; }
+
 $woo_sidebar = dgc_get_woo_sidebar();
 $theme_options = dgc_get_theme_options();
 
