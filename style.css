@@ -744,15 +744,15 @@ a:hover,a:focus,a:active {
 }
 
 /*header*/
-.my-account{float:right; padding:0; position:relative; margin:10px 10px 10px;}
-.my-account a,
+.my-account{float:right; padding:0; position:relative; margin:13px 10px 10px;}
+/*.my-account a,
 .my-account a .my-account-image{float:left; margin:0; padding:0; width:24px; height:21px; border:0;}
-.my-account a .my-account-image:before{font-family:FontAwesome; content:"\f007"; font-size:26px;}
+.my-account a .my-account-image:before{font-family:FontAwesome; content:"\f007"; font-size:26px;}*/
 .my-account .fas.fa-user:before{font-size:26px;}
 	
-#qtranslate-select{float:right; padding:0; position:relative; margin:10px 10px 10px;}
-#qtranslate-select .global-image{float:left; margin:0; padding:0; width:24px; height:21px; border:0;}
-#qtranslate-select .global-image:before{font-family:FontAwesome; content:"\f0ac"; font-size:26px;}
+#qtranslate-select{float:right; padding:0; position:relative; margin:13px 10px 10px;}
+/*#qtranslate-select .global-image{float:left; margin:0; padding:0; width:24px; height:21px; border:0;}
+#qtranslate-select .global-image:before{font-family:FontAwesome; content:"\f0ac"; font-size:26px;}*/
 #qtranslate-select .fas.fa-globe:before{font-size:26px;}
 #qtranslate-select ul{
 	margin:0;
@@ -1822,10 +1822,11 @@ table#wp-calendar td#next{
 	position:relative;
 }
 
-#searchform.fas.fa-search:after {
-    /*content: "\f002";
+/*#searchform.fas.fa-search:after {
+    content: "\f002";
     font-family: FontAwesome;*/
-    position: absolute;
+#searchform.fas.fa-search:before {
+		position: absolute;
     right: 10px;
     color: #45494c;
     top: 6px;

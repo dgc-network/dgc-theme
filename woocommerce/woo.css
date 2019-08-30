@@ -74,15 +74,15 @@ body #content a.woocommerce-product-gallery__image.flex-active-slide {
 }
 
 /*header*/
-.cart-button{float:right; padding:0; position:relative; margin:10px 10px 10px;}
-.cart-button a,
+.cart-button{float:right; padding:0; position:relative; margin:13px 10px 10px;}
+/*.cart-button a,
 .cart-button a .cart_image{float:left; margin: 0; padding:0; width:24px; height:21px; border:0;}
-.cart-button a .cart_image:before{font-family:FontAwesome; content:"\f07a"; font-size:26px;}
+.cart-button a .cart_image:before{font-family:FontAwesome; content:"\f07a"; font-size:26px;}*/
 .cart-button .fas.fa-shopping-cart:before{font-size:26px;}
 
 .num_of_product_cart{
 	position:absolute;
-	top:-10px;
+	top:-7px;
 	right:-8px;
 	text-align:center;
 	width:20px;
