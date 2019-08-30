@@ -748,10 +748,12 @@ a:hover,a:focus,a:active {
 .my-account a,
 .my-account a .my-account-image{float:left; margin:0; padding:0; width:24px; height:21px; border:0;}
 .my-account a .my-account-image:before{font-family:FontAwesome; content:"\f007"; font-size:26px;}
+.my-account .fas.fa-user:before{font-size:26px;}
 	
 #qtranslate-select{float:right; padding:0; position:relative; margin:10px 10px 10px;}
 #qtranslate-select .global-image{float:left; margin:0; padding:0; width:24px; height:21px; border:0;}
 #qtranslate-select .global-image:before{font-family:FontAwesome; content:"\f0ac"; font-size:26px;}
+#qtranslate-select .fas.fa-globe:before{font-size:26px;}
 #qtranslate-select ul{
 	margin:0;
 	list-style:none;

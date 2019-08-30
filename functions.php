@@ -1151,7 +1151,8 @@ if ( ! function_exists( 'dgc_get_responsive_style' ) ) {
 				
 				//$woo_style_ .= '.num_of_product_cart {border-color: '. esc_attr($theme_options['menu_btn_color']) . '; }  ' . "\n"; 
 				if (!empty($theme_options['my_account_button_color'])) {
-					$woo_style_ .= '.my-account-image {color: '. esc_attr($theme_options['my_account_button_color']) . '; }  ' . "\n"; 
+					//$woo_style_ .= '.my-account-image {color: '. esc_attr($theme_options['my_account_button_color']) . '; }  ' . "\n"; 
+					$woo_style_ .= '.fas fa-user {color: '. esc_attr($theme_options['my_account_button_color']) . '; }  ' . "\n"; 
 				}
 				
 				if (!empty($theme_options['cart_color'])) {
@@ -1678,7 +1679,7 @@ if ( ! function_exists( 'dgc_get_my_account_html' ) ) {
 	function dgc_get_my_account_html() {
 		$btn_my_account = '<div class="my-account">
 			<a href="'.get_permalink( wc_get_page_id( 'myaccount' ) ).'">
-				<div class="my-account-image"></div>
+				<div class="fas fa-user"></div>
 			</a></div>';
 		echo $btn_my_account;
 	}
@@ -1694,7 +1695,8 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 				echo '<div id="qtranslate-select"><ul id="lang-select-block">';
 					//echo '<div class="global-image"></div>';
 						echo '<li class="current">';
-							echo '<div class="global-image"></div>';
+							//echo '<div class="global-image"></div>';
+							echo '<div class="fas fa-globe"></div>';
 							echo '<ul id="lang-select-popup">';					
 							foreach($languages as $language){
 								echo '<li class="unactive">';
