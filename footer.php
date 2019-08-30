@@ -37,12 +37,11 @@
 						</div>
 						<div class="footer-payment-icons">
 							<div class="fab fa-alipay"></div>
-							<div class="alipay-image"></div>
-							<div class="wechatpay-image"></div>
-							<div class="applepay-image"></div>
-							<div class="master-image"></div>
-							<div class="visa-image"></div>
-							<div class="amex-image"></div>
+							<div class="fab fa-weixin"></div>
+							<div class="fab fa-apple-pay"></div>
+							<div class="fab fa-cc-mastercard"></div>
+							<div class="fab fa-cc-visa"></div>
+							<div class="fab fa-cc-amex"></div>
 						</div>
 					</div>
 					<!-- .widget-area -->

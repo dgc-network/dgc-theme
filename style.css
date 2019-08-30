@@ -981,6 +981,11 @@ ul#lang-select-popup{
 
 .footer-payment-icons{/* display:block; width:10%; */ padding:0; position:relative; margin:10px 10px 10px;}
 .footer-payment-icons .fab.fa-alipay:before{font-size:30px; color: white}
+.footer-payment-icons .fab.fa-weixin:before{font-size:30px; color: white}
+.footer-payment-icons .fab.fa-apple-pay:before{font-size:30px; color: white}
+.footer-payment-icons .fab.fa-cc-mastercard:before{font-size:30px; color: white}
+.footer-payment-icons .fab.fa-cc-visa:before{font-size:30px; color: white}
+.footer-payment-icons .fab.fa-cc-amex:before{font-size:30px; color: white}
 .footer-payment-icons .alipay-image{display:block; margin-left:auto; margin-right:auto; margin:0; padding:0; width:28px; border:0;}
 .footer-payment-icons .alipay-image:before{font-family:FontAwesome; content:"\f642"; font-size:30px; color: white}
 .footer-payment-icons .wechatpay-image{display:block; margin-left:auto; margin-right:auto; margin:0; padding:0; width:28px; border:0;}
