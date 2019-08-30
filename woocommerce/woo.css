@@ -61,7 +61,9 @@ body #content a.woocommerce-product-gallery__image.flex-active-slide {
     line-height: 20px;
 	pointer-events: none;
 }
-
+.woocommerce-product-search > input.fa.fa-search {
+    font-size: 15px;
+}
 .woocommerce-product-search > input.search-field {
     border-radius:2px 2px 2px 2px;
     font-size:13px;
