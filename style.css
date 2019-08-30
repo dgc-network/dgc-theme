@@ -1825,8 +1825,8 @@ table#wp-calendar td#next{
 /*#searchform.fas.fa-search:after {
     content: "\f002";
     font-family: FontAwesome;*/
-#searchform.fas.fa-search:before {
-		position: absolute;
+#searchform.fas.fa-search {
+	position: absolute;
     right: 10px;
     color: #45494c;
     top: 6px;
