@@ -980,6 +980,7 @@ ul#lang-select-popup{
 #footer-widget-1, #footer-widget-2, #footer-widget-3{display: block; width: 30%;}
 
 .footer-payment-icons{/* display:block; width:10%; */ padding:0; position:relative; margin:10px 10px 10px;}
+.footer-payment-icons .fab.fa-alipay:before{font-size:30px; color: white}
 .footer-payment-icons .alipay-image{display:block; margin-left:auto; margin-right:auto; margin:0; padding:0; width:28px; border:0;}
 .footer-payment-icons .alipay-image:before{font-family:FontAwesome; content:"\f642"; font-size:30px; color: white}
 .footer-payment-icons .wechatpay-image{display:block; margin-left:auto; margin-right:auto; margin:0; padding:0; width:28px; border:0;}
