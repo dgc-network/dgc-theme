@@ -1155,7 +1155,8 @@ if ( ! function_exists( 'dgc_get_responsive_style' ) ) {
 				}
 				
 				if (!empty($theme_options['cart_color'])) {
-					$woo_style_ .= '.cart_image {color: '. esc_attr($theme_options['cart_color']) . '; }  ' . "\n"; 
+					//$woo_style_ .= '.cart_image {color: '. esc_attr($theme_options['cart_color']) . '; }  ' . "\n";
+					$woo_style_ .= '.fas fa-shopping-cart {color: '. esc_attr($theme_options['cart_color']) . '; }  ' . "\n"; 
 					$woo_style_ .= '.num_of_product_cart {border-color: '. esc_attr($theme_options['cart_color']) . '; }  ' . "\n"; 
 				}
 				
@@ -1492,7 +1493,8 @@ if (class_exists('Woocommerce')) {
 		function dgc_woocommerce_header_add_to_cart_fragment( $fragments ) {
 			global $woocommerce;
 			$out  = '<a href= "'.get_permalink( wc_get_page_id( 'cart' ) ).'" class="cart-contents">';
-			$out .= '<div class="cart_image"></div>';
+			//$out .= '<div class="cart_image"></div>';
+			$out .= '<div class="fas fa-shopping-cart"></div>';
 			$out .= '<span class="num_of_product_cart">';
 			$out .= sprintf(_n('%d ', '%d ', $woocommerce->cart->cart_contents_count, 'textdomain'), $woocommerce->cart->cart_contents_count) .'</span></a>';
 			$fragments['a.cart-contents'] = $out;
@@ -1661,7 +1663,7 @@ if ( ! function_exists( 'dgc_get_cart_button_html' ) ) {
 			if (!empty($theme_options['showcart']) && (esc_attr($theme_options['showcart']) == 'on')) {
 					$btn_cart = '<div class="cart-button">
 						<a href="'.get_permalink( wc_get_page_id( 'cart' ) ).'" class="cart-contents">
-							<div class="cart_image"></div> 
+							<div class="fas fa-shopping-cart"></div> 
 							<span class="num_of_product_cart">'.$woocommerce->cart->cart_contents_count.'</span>
 						</a>
 					</div>';
