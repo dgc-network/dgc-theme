@@ -1507,7 +1507,7 @@ if (class_exists('Woocommerce')) {
 	/*custom shop search form*/
 	function woo_custom_product_searchform( $form ) {
 
-		$form = '<form role="search" method="get" class=" fas fa-search" action="' . esc_url( home_url( '/' ) ) . '">
+		$form = '<form role="search" method="get" class="woocommerce-product-search fas fa-search" action="' . esc_url( home_url( '/' ) ) . '">
             <label class="screen-reader-text" for="woocommerce-product-search-field-' . (isset( $index ) ? absint( $index ) : 0) . '">' . _e( '', 'textdomain' ) . '</label>
             <input type="search" id="woocommerce-product-search-field-' . (isset( $index ) ? absint( $index ) : 0) . '" class="search-field" placeholder="' . esc_attr__( 'Search products&hellip;', 'textdomain' ) . '" value="' . get_search_query() . '" name="s" />
             <input type="submit" value="' . esc_attr_x( 'Search', 'submit button', 'textdomain' ) . '" />
