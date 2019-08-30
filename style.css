@@ -2782,11 +2782,12 @@ div#fbSEOComments{
 }
 .dgc-register-warning {
 	display: flex;
-	margin: 50px auto 50px;
+	margin: 50px 50px;
 }
 /*.dgc-register-image{float:left; margin:0; padding:0; width:48px; height:46px; border:0;}
 .dgc-register-image:before{font-family:FontAwesome; content:"\f234"; font-size:50px;}*/
 .dgc-register-warning .fas.fa-user-plus{
+	display: flex;
 	font-size:50px;
 	margin: 10px 10px 10px;
 }
@@ -2796,9 +2797,11 @@ div#fbSEOComments{
 }
 .dgc-register-warning .dgc-register-button{
 	display: flex;
+	font-size:20px;
 	margin: 10px 10px 10px;
-	border: 2px solid;
+	border: 5px solid;
 	border-radius: 10px;
+	padding: 10px;
 }
 
 /*
