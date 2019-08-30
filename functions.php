@@ -1524,9 +1524,9 @@ if (class_exists('Woocommerce')) {
 		echo '</div>';
 		echo '<div class="dgc-register-section">';
 			echo '<div class="dgc-register-warning">';
-			echo '<div class="dgc-register-image"></div>';
-			echo '<p>As a member of EDD, you will be seamless with the world standard.</p>';
-			echo '<div class="dgc-register-image"></div>';
+				echo '<div class="fas fa-user-plus"></div>';
+				echo '<div>As a member of EDD, you will be seamless with the world standard.</div>';
+				echo '<div class="fas fa-user-plus"></div>';
 			echo '</div>';
 		echo '</div>';
 	}

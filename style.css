@@ -979,7 +979,7 @@ ul#lang-select-popup{
 #sub-footer-widgets {display: flex; justify-content: space-between; vertical-align: top;}
 #footer-widget-1, #footer-widget-2, #footer-widget-3{display: block; width: 30%;}
 
-.footer-payment-icons{/* display:block; width:10%; */ padding:0; position:relative; margin:10px 10px 10px;}
+.footer-payment-icons{/* display:block; */ width:5%; padding:0; position:relative; margin:10px 10px 10px;}
 .footer-payment-icons .fab.fa-alipay:before{font-size:30px; color: white}
 .footer-payment-icons .fab.fa-weixin:before{font-size:30px; color: white}
 .footer-payment-icons .fab.fa-apple-pay:before{font-size:30px; color: white}
@@ -2782,6 +2782,7 @@ div#fbSEOComments{
 }
 .dgc-register-image{float:left; margin:0; padding:0; width:48px; height:46px; border:0;}
 .dgc-register-image:before{font-family:FontAwesome; content:"\f234"; font-size:50px;}
+.dgc-register-warning .fas.fa-user-plus{font-size:50px;}
 
 /*
 @media (min-width: 768px) {
