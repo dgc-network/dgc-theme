@@ -1803,7 +1803,7 @@ if ( ! function_exists( 'dgc_wp_corenavi' ) ) {
 if ( ! function_exists( 'dgc_get_product_search_form' ) ) {
 	function dgc_get_product_search_form(){
 		?>
-		<form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
+		<form role="search" method="get" id="searchform" class="fas fa-search" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
 			<div>
 				<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php _e( 'Search for products', 'textdomain' ); ?>" />
 				<input type="submit" id="searchsubmit" value="<?php echo esc_attr__( 'Search', 'textdomain' ); ?>" />

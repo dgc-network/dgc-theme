@@ -1822,10 +1822,10 @@ table#wp-calendar td#next{
 	position:relative;
 }
 
-#searchform:after {
-    content: "\f002";
+#searchform.fas.fa-search:after {
+    /*content: "\f002";
+    font-family: FontAwesome;*/
     position: absolute;
-    font-family: FontAwesome;
     right: 10px;
     color: #45494c;
     top: 6px;
