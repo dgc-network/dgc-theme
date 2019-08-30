@@ -1522,7 +1522,8 @@ if (class_exists('Woocommerce')) {
 	function dgc_product_search_page() {
 		echo '<div class="dgc-search-section">';
 			echo '<div class="dgc-search-form">';
-				get_product_search_form();
+				//get_product_search_form();
+				echo do_shortcode('[wcas-search-form]');
 			echo '</div>';
 		echo '</div>';
 		echo '<div class="dgc-register-section">';
