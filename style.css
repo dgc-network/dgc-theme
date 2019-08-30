@@ -973,7 +973,7 @@ ul#lang-select-popup{
 }
 #colophon>.container{
     margin:0 auto;
-    border-top:1px solid #d6d6d6;
+    /* border-top:1px solid #d6d6d6; */
     padding:20px 0;
 	position: relative;
 }
@@ -1472,9 +1472,9 @@ header.post-header, .blog_post {
 }
 .blog_post .post-content {
     /* float:left;
+	border:1px solid #d6d6d6
     width:884px; */
 	padding:0 0 18px 0;
-	border:1px solid #d6d6d6
 }
 .eleven.columns .blog_post .post-content {
     width:584px;
@@ -2777,15 +2777,29 @@ div#fbSEOComments{
 .dgc-register-section {
 	display: flex;
 	margin: 10px 10px 10px;
-	border: 2px;
-	border-color: #0044cc;
+	border: 2px solid;
+	border-radius: 10px;
 }
 .dgc-register-warning {
+	display: flex;
 	margin: 50px auto 50px;
 }
-.dgc-register-image{float:left; margin:0; padding:0; width:48px; height:46px; border:0;}
-.dgc-register-image:before{font-family:FontAwesome; content:"\f234"; font-size:50px;}
-.dgc-register-warning .fas.fa-user-plus{font-size:50px;}
+/*.dgc-register-image{float:left; margin:0; padding:0; width:48px; height:46px; border:0;}
+.dgc-register-image:before{font-family:FontAwesome; content:"\f234"; font-size:50px;}*/
+.dgc-register-warning .fas.fa-user-plus{
+	font-size:50px;
+	margin: 10px 10px 10px;
+}
+.dgc-register-warning .dgc-register-text{
+	font-size:20px;
+	margin: 10px 10px 10px;
+}
+.dgc-register-warning .dgc-register-button {
+	display: flex;
+	margin: 10px 10px 10px;
+	border: 2px solid;
+	border-radius: 10px;
+}
 
 /*
 @media (min-width: 768px) {
