@@ -47,10 +47,11 @@ body #content a.woocommerce-product-gallery__image.flex-active-slide {
 	position:relative;
 }
 
-.woocommerce-product-search:after {
-    content: "\f002";
-    position: absolute;
+/*.woocommerce-product-search:after {
     font-family: FontAwesome;
+    content: "\f002";*/
+.woocommerce-product-search.fas.fa-search:after {
+	position: absolute;
     right: 10px;
     color: #45494c;
     top: 6px;
