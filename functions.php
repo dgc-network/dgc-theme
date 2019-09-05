@@ -2293,6 +2293,17 @@ add_action( 'woocommerce_after_add_to_cart_button', 'dgc_display_custom_field_pr
  *
  * Additional custom taxonomies can be defined here
  * http://codex.wordpress.org/Function_Reference/register_taxonomy_for_object_type
+ * 
+ * Custom Product Search:
+ * (1) Title
+ * (2) Publisher
+ * (3) Industry
+ * (4) Keyword
+ * (5) Price
+ * (6) Date
+ * (7) Language
+ * (8) Version
+ * (9) Status
  */
 function dgc_custom_taxonomy_product_publisher()  {
 	$labels = array(
@@ -2325,6 +2336,130 @@ function dgc_custom_taxonomy_product_publisher()  {
 }
 add_action( 'init', 'dgc_custom_taxonomy_product_publisher' );
 
+function dgc_custom_taxonomy_product_industry()  {
+	$labels = array(
+    	'name'                       => __( 'Industries', 'textdomain' ),
+    	'singular_name'              => __( 'Industry', 'textdomain' ),
+    	'menu_name'                  => __( 'Industry', 'textdomain' ),
+    	'all_items'                  => __( 'All Industries', 'textdomain' ),
+    	'parent_item'                => __( 'Parent Industry', 'textdomain' ),
+    	'parent_item_colon'          => __( 'Parent Industry:', 'textdomain' ),
+    	'new_item_name'              => __( 'New Industry Name', 'textdomain' ),
+    	'add_new_item'               => __( 'Add New Industry', 'textdomain' ),
+    	'edit_item'                  => __( 'Edit Industry', 'textdomain' ),
+    	'update_item'                => __( 'Update Industry', 'textdomain' ),
+    	'separate_items_with_commas' => __( 'Separate Industry with commas', 'textdomain' ),
+    	'search_items'               => __( 'Search Industries', 'textdomain' ),
+    	'add_or_remove_items'        => __( 'Add or remove Industries', 'textdomain' ),
+    	'choose_from_most_used'      => __( 'Choose from the most used Industries', 'textdomain' ),
+	);
+	$args = array(
+    	'labels'                     => $labels,
+    	'hierarchical'               => true,
+    	'public'                     => true,
+    	'show_ui'                    => true,
+    	'show_admin_column'          => true,
+    	'show_in_nav_menus'          => true,
+    	'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'industry', 'product', $args );
+	register_taxonomy_for_object_type( 'industry', 'product' );
+}
+add_action( 'init', 'dgc_custom_taxonomy_product_industry' );
+
+function dgc_custom_taxonomy_product_keyword()  {
+	$labels = array(
+    	'name'                       => __( 'Keywords', 'textdomain' ),
+    	'singular_name'              => __( 'Keyword', 'textdomain' ),
+    	'menu_name'                  => __( 'Keyword', 'textdomain' ),
+    	'all_items'                  => __( 'All Keywords', 'textdomain' ),
+    	'parent_item'                => __( 'Parent Keyword', 'textdomain' ),
+    	'parent_item_colon'          => __( 'Parent Keyword:', 'textdomain' ),
+    	'new_item_name'              => __( 'New Keyword Name', 'textdomain' ),
+    	'add_new_item'               => __( 'Add New Keyword', 'textdomain' ),
+    	'edit_item'                  => __( 'Edit Keyword', 'textdomain' ),
+    	'update_item'                => __( 'Update Keyword', 'textdomain' ),
+    	'separate_items_with_commas' => __( 'Separate Keyword with commas', 'textdomain' ),
+    	'search_items'               => __( 'Search Keywords', 'textdomain' ),
+    	'add_or_remove_items'        => __( 'Add or remove Keywords', 'textdomain' ),
+    	'choose_from_most_used'      => __( 'Choose from the most used Keywords', 'textdomain' ),
+	);
+	$args = array(
+    	'labels'                     => $labels,
+    	'hierarchical'               => true,
+    	'public'                     => true,
+    	'show_ui'                    => true,
+    	'show_admin_column'          => true,
+    	'show_in_nav_menus'          => true,
+    	'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'keyword', 'product', $args );
+	register_taxonomy_for_object_type( 'keyword', 'product' );
+}
+add_action( 'init', 'dgc_custom_taxonomy_product_keyword' );
+
+function dgc_custom_taxonomy_product_language()  {
+	$labels = array(
+    	'name'                       => __( 'Languages', 'textdomain' ),
+    	'singular_name'              => __( 'Language', 'textdomain' ),
+    	'menu_name'                  => __( 'Language', 'textdomain' ),
+    	'all_items'                  => __( 'All Languages', 'textdomain' ),
+    	'parent_item'                => __( 'Parent Language', 'textdomain' ),
+    	'parent_item_colon'          => __( 'Parent Language:', 'textdomain' ),
+    	'new_item_name'              => __( 'New Language Name', 'textdomain' ),
+    	'add_new_item'               => __( 'Add New Language', 'textdomain' ),
+    	'edit_item'                  => __( 'Edit Language', 'textdomain' ),
+    	'update_item'                => __( 'Update Language', 'textdomain' ),
+    	'separate_items_with_commas' => __( 'Separate Language with commas', 'textdomain' ),
+    	'search_items'               => __( 'Search Languages', 'textdomain' ),
+    	'add_or_remove_items'        => __( 'Add or remove Languages', 'textdomain' ),
+    	'choose_from_most_used'      => __( 'Choose from the most used Languages', 'textdomain' ),
+	);
+	$args = array(
+    	'labels'                     => $labels,
+    	'hierarchical'               => true,
+    	'public'                     => true,
+    	'show_ui'                    => true,
+    	'show_admin_column'          => true,
+    	'show_in_nav_menus'          => true,
+    	'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'language', 'product', $args );
+	register_taxonomy_for_object_type( 'language', 'product' );
+}
+add_action( 'init', 'dgc_custom_taxonomy_product_language' );
+
+function dgc_custom_taxonomy_product_version()  {
+	$labels = array(
+    	'name'                       => __( 'Versions', 'textdomain' ),
+    	'singular_name'              => __( 'Version', 'textdomain' ),
+    	'menu_name'                  => __( 'Version', 'textdomain' ),
+    	'all_items'                  => __( 'All Versions', 'textdomain' ),
+    	'parent_item'                => __( 'Parent Version', 'textdomain' ),
+    	'parent_item_colon'          => __( 'Parent Version:', 'textdomain' ),
+    	'new_item_name'              => __( 'New Version Name', 'textdomain' ),
+    	'add_new_item'               => __( 'Add New Version', 'textdomain' ),
+    	'edit_item'                  => __( 'Edit Version', 'textdomain' ),
+    	'update_item'                => __( 'Update Version', 'textdomain' ),
+    	'separate_items_with_commas' => __( 'Separate Version with commas', 'textdomain' ),
+    	'search_items'               => __( 'Search Versions', 'textdomain' ),
+    	'add_or_remove_items'        => __( 'Add or remove Versions', 'textdomain' ),
+    	'choose_from_most_used'      => __( 'Choose from the most used Versions', 'textdomain' ),
+	);
+	$args = array(
+    	'labels'                     => $labels,
+    	'hierarchical'               => true,
+    	'public'                     => true,
+    	'show_ui'                    => true,
+    	'show_admin_column'          => true,
+    	'show_in_nav_menus'          => true,
+    	'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'version', 'product', $args );
+	register_taxonomy_for_object_type( 'version', 'product' );
+}
+add_action( 'init', 'dgc_custom_taxonomy_product_version' );
+
 function dgc_custom_taxonomy_product_status()  {
 	$labels = array(
     	'name'                       => __( 'Statuses', 'textdomain' ),
@@ -2355,37 +2490,6 @@ function dgc_custom_taxonomy_product_status()  {
 	register_taxonomy_for_object_type( 'status', 'product' );
 }
 add_action( 'init', 'dgc_custom_taxonomy_product_status' );
-
-function dgc_custom_taxonomy_product_type()  {
-	$labels = array(
-    	'name'                       => __( 'Types', 'textdomain' ),
-    	'singular_name'              => __( 'Type', 'textdomain' ),
-    	'menu_name'                  => __( 'Type', 'textdomain' ),
-    	'all_items'                  => __( 'All Types', 'textdomain' ),
-    	'parent_item'                => __( 'Parent Type', 'textdomain' ),
-    	'parent_item_colon'          => __( 'Parent Type:', 'textdomain' ),
-    	'new_item_name'              => __( 'New Type Name', 'textdomain' ),
-    	'add_new_item'               => __( 'Add New Type', 'textdomain' ),
-    	'edit_item'                  => __( 'Edit Type', 'textdomain' ),
-    	'update_item'                => __( 'Update Type', 'textdomain' ),
-    	'separate_items_with_commas' => __( 'Separate Type with commas', 'textdomain' ),
-    	'search_items'               => __( 'Search Types', 'textdomain' ),
-    	'add_or_remove_items'        => __( 'Add or remove Types', 'textdomain' ),
-    	'choose_from_most_used'      => __( 'Choose from the most used Types', 'textdomain' ),
-	);
-	$args = array(
-    	'labels'                     => $labels,
-    	'hierarchical'               => true,
-    	'public'                     => true,
-    	'show_ui'                    => true,
-    	'show_admin_column'          => true,
-    	'show_in_nav_menus'          => true,
-    	'show_tagcloud'              => true,
-	);
-	register_taxonomy( 'type', 'product', $args );
-	register_taxonomy_for_object_type( 'type', 'product' );
-}
-add_action( 'init', 'dgc_custom_taxonomy_product_type' );
 
 /**
  * Add custom taxonomies
