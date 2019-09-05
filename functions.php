@@ -2187,8 +2187,43 @@ function dgc_frontend_scripts_include_lightbox() {
 add_action('wp_enqueue_scripts', 'dgc_frontend_scripts_include_lightbox');
 
 /**
+* Creates the custom field in the WooCommerce product data meta box
+*/
+function dgc_create_custom_field_product_date() {
+	$args = array(
+		'id' => 'custom_field_product_date',
+		'label' => __( 'Date', 'textdomain' ),
+		'class' => 'dgc-custom-field',
+		'desc_tip' => true,
+		'description' => __( 'Enter the title of your custom field.', 'textdomain' ),
+	);
+	woocommerce_wp_text_input( $args );
+}
+add_action( 'woocommerce_product_options_general_product_data', 'dgc_create_custom_field_product_date' );
+
+function dgc_save_custom_field_product_date( $post_id ) {
+	$product = wc_get_product( $post_id );
+	$title = isset( $_POST['custom_field_product_date'] ) ? $_POST['custom_field_product_date'] : '';
+	$product->update_meta_data( 'custom_field_product_date', sanitize_text_field( $title ) );
+	$product->save();
+}
+add_action( 'woocommerce_process_product_meta', 'dgc_save_custom_field_product_date' );
+
+function dgc_display_custom_field_product_date() {
+	global $post;
+	// Check for the custom field value
+	$product = wc_get_product( $post->ID );
+	$title = $product->get_meta( 'custom_field_product_date' );
+	if( $title ) {
+		echo get_post_meta($post->ID, 'custom_field_product_date', true);
+	}
+}
+add_action( 'woocommerce_after_add_to_cart_button', 'dgc_display_custom_field_product_date' );
+
+/**
 * Creates the custom fieldin the WooCommerce product data meta box
 */
+/*
 function dgc_create_custom_field_product_doi() {
 	$args = array(
 		'id' => 'custom_field_product_doi',
@@ -2224,10 +2259,11 @@ function dgc_create_custom_field_product_pages() {
 	woocommerce_wp_text_input( $args );
 }
 add_action( 'woocommerce_product_options_general_product_data', 'dgc_create_custom_field_product_pages' );
-
+*/
 /**
 * Saves the custom field data to product meta data
 */
+/*
 function dgc_save_custom_field_product_doi( $post_id ) {
 	$product = wc_get_product( $post_id );
 	$title = isset( $_POST['custom_field_product_doi'] ) ? $_POST['custom_field_product_doi'] : '';
@@ -2251,10 +2287,11 @@ function dgc_save_custom_field_product_pages( $post_id ) {
 	$product->save();
 }
 add_action( 'woocommerce_process_product_meta', 'dgc_save_custom_field_product_pages' );
-
+*/
 /**
 * Displays custom field data after the add to cart button
 */
+/*
 function dgc_display_custom_field_product_doi() {
 	global $post;
 	// Check for the custom field value
@@ -2287,7 +2324,7 @@ function dgc_display_custom_field_product_pages() {
 	}
 }
 add_action( 'woocommerce_after_add_to_cart_button', 'dgc_display_custom_field_product_pages' );
-
+*/
 /**
  * Add product custom taxonomies
  *
@@ -2428,7 +2465,7 @@ function dgc_custom_taxonomy_product_language()  {
 	register_taxonomy_for_object_type( 'language', 'product' );
 }
 add_action( 'init', 'dgc_custom_taxonomy_product_language' );
-
+/*
 function dgc_custom_taxonomy_product_version()  {
 	$labels = array(
     	'name'                       => __( 'Versions', 'textdomain' ),
@@ -2459,7 +2496,7 @@ function dgc_custom_taxonomy_product_version()  {
 	register_taxonomy_for_object_type( 'version', 'product' );
 }
 add_action( 'init', 'dgc_custom_taxonomy_product_version' );
-
+*/
 function dgc_custom_taxonomy_product_status()  {
 	$labels = array(
     	'name'                       => __( 'Statuses', 'textdomain' ),
