@@ -1527,13 +1527,13 @@ if (class_exists('Woocommerce')) {
 				echo do_shortcode('[woof_text_filter]');
 			echo '</div>';
 		echo '</div>';
-		echo '<div class="dgc-register-section">';
-			echo '<div class="dgc-register-warning">';
-				echo '<div class="fas fa-user-plus"></div>';
-				echo '<div class="dgc-register-text">As a member of EDD, you will be seamless with the world standard.</div>';
-				echo '<div class="dgc-register-button">Registration</div>';
-			echo '</div>';
-		echo '</div>';
+		//echo '<div class="dgc-register-section">';
+		//	echo '<div class="dgc-register-warning">';
+		//		echo '<div class="fas fa-user-plus"></div>';
+		//		echo '<div class="dgc-register-text">As a member of EDD, you will be seamless with the world standard.</div>';
+		//		echo '<div class="dgc-register-button">Registration</div>';
+		//	echo '</div>';
+		//echo '</div>';
 	}
 	add_shortcode('dgc-product-search','dgc_product_search_page');
 }
