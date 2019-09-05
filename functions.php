@@ -2192,7 +2192,7 @@ add_action('wp_enqueue_scripts', 'dgc_frontend_scripts_include_lightbox');
 function dgc_create_custom_field_product_date() {
 	$args = array(
 		'id' => 'custom_field_product_date',
-		'label' => __( 'Date', 'textdomain' ),
+		'label' => __( 'Published Date', 'textdomain' ),
 		'class' => 'dgc-custom-field',
 		'desc_tip' => true,
 		'description' => __( 'Enter the title of your custom field.', 'textdomain' ),
@@ -2673,4 +2673,6 @@ function bbloomer_loop_product_div_flex_close() {
 	echo '</div>';
 }
 
+/* Remove Categories from Single Products */ 
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 ?>
