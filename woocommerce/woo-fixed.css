@@ -303,7 +303,7 @@ body.woocommerce-page .woocommerce-result-count{display:none !important}
 .woocommerce-page .woocommerce-breadcrumb{float:none; width:100%; margin-bottom:40px;}
 
 body.single.woocommerce .woocommerce-breadcrumb,
-body.single.woocommerce-page .woocommerce-breadcrumb{margin-bottom:40px;}
+body.single.woocommerce-page .woocommerce-breadcrumb{margin-bottom:40px;display: none}
 .archive.woocommerce .woocommerce-breadcrumb,
 .archive.woocommerce-page .woocommerce-breadcrumb{float:left; width:auto;max-width:423px; margin-bottom:0px;line-height:35px;}
 .archive.woocommerce.post-type-archive-product .woocommerce-breadcrumb,
