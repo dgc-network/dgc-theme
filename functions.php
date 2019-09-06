@@ -1521,13 +1521,13 @@ if (class_exists('Woocommerce')) {
 	/*custom search page*/
 	function dgc_product_search_page() {
 		echo '<div class="dgc-search-section">';
-			echo '<div class="dgc-search-icon"></div>';
-			echo '<div class="dgc-search-form">';
+			echo '<div class="dgc-search-bar">';
+				echo '<div class="dgc-search-icon"></div>';
 				//get_product_search_form();
 				//echo do_shortcode('[wcas-search-form]');
 				echo do_shortcode('[woof_text_filter]');
+				echo '<div class="dgc-search-advance"><a href="/shop/">Advance</a></div>';
 			echo '</div>';
-			echo '<div class="dgc-search-advance"><a href="/shop/">Advance</a></div>';
 		echo '</div>';
 		//echo '<div class="dgc-register-section">';
 		//	echo '<div class="dgc-register-warning">';
