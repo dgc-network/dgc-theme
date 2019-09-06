@@ -1522,7 +1522,7 @@ if (class_exists('Woocommerce')) {
 	function dgc_product_search_page() {
 		echo '<div class="dgc-search-section">';
 			echo '<div class="dgc-search-bar">';
-				echo '<div class="dgc-search-icon"></div>';
+				echo '<div id="dgc-search-icon"></div>';
 				//get_product_search_form();
 				//echo do_shortcode('[wcas-search-form]');
 				echo do_shortcode('[woof_text_filter]');

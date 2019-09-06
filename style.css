@@ -2775,9 +2775,10 @@ div#fbSEOComments{
 	display: flex;
 	margin: 20% 5%;
 }
-.dgc-search-icon{margin:auto;}
-.dgc-search-icon .fas.fa-power-off:before{font-size:30px;color:gray}
-.dgc-search-advance{margin:auto;}
+#dgc-search-icon {margin:auto;}
+#dgc-search-icon .fas.fa-search:before{font-size:30px;color:gray}
+.dgc-search-advance{margin:auto 0px auto 27px;}
+
 .dgc-register-section {
 	display: flex;
 	margin: 10px 10px 10px;
