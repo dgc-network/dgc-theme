@@ -1527,7 +1527,7 @@ if (class_exists('Woocommerce')) {
 				//echo do_shortcode('[wcas-search-form]');
 				echo do_shortcode('[woof_text_filter]');
 			echo '</div>';
-			echo '<div class="dgc-search-advance"><a href="#">Advance</a></div>';
+			echo '<div class="dgc-search-advance"><a href="https://book-2beaa9.easywp.com/shop/">Advance</a></div>';
 		echo '</div>';
 		//echo '<div class="dgc-register-section">';
 		//	echo '<div class="dgc-register-warning">';

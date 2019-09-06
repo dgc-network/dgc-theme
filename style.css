@@ -2773,7 +2773,7 @@ div#fbSEOComments{
 	*/
 }
 .dgc-search-icons{margin:20% auto;}
-.dgc-search-icons .fas.fa-search:before{font-size:30px;}
+.dgc-search-icons .fa.fa-search:before{font-size:30px;}
 .dgc-search-form {
 	/*margin: 200px auto 200px;*/
 	margin: 20% auto;
