@@ -16,26 +16,26 @@
 			<div class="container">
 				<div class="sixteen columns">
 					<!-- <aside class="widget-area" role="complementary"> -->
-					<div id="footer-widgets">
-						<div id="sub-footer-widgets">
+					<div class="footer-widgets">
+						<!-- <div id="sub-footer-widgets"> -->
 							<?php
 							if ( is_active_sidebar( 'footer-1' ) ) { ?>
-								<div id="footer-widget-1">
+								<div class="five columns footer-widget-1">
 									<?php dynamic_sidebar( 'footer-1' ); ?>
 								</div>
 							<?php }
 							if ( is_active_sidebar( 'footer-2' ) ) { ?>
-								<div id="footer-widget-2">
+								<div class="five columns footer-widget-2">
 									<?php dynamic_sidebar( 'footer-2' ); ?>
 								</div>
 							<?php }
 							if ( is_active_sidebar( 'footer-3' ) ) { ?>
-								<div id="footer-widget-3">
+								<div class="five columns footer-widget-3">
 									<?php dynamic_sidebar( 'footer-3' ); ?>
 								</div>
 							<?php } ?>
-						</div>
-						<div class="footer-payment-icons">
+						<!-- </div> -->
+						<div class="one column footer-payment-icons">
 							<div class="fab fa-alipay"></div>
 							<div class="fab fa-weixin"></div>
 							<div class="fab fa-apple-pay"></div>

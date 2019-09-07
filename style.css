@@ -971,7 +971,7 @@ ul#lang-select-popup{
     padding:20px 0;
 	position: relative;
 }
-#footer-widgets {display: flex; justify-content: space-between; padding: 20px; background: gray; color:white}
+.footer-widgets {display: flex; justify-content: space-between; padding: 20px; background: gray; color:white}
 #sub-footer-widgets {display: flex; justify-content: space-between; vertical-align: top;}
 #footer-widget-1, #footer-widget-2, #footer-widget-3{display: block; width: 30%;}
 
@@ -2455,11 +2455,11 @@ aside #lang_sel {
 	.single-post .sixteen.columns.alpha.omega .blog_post .post-content {width:92%}
 }
 
-@media screen and ( max-width: 782px ) {
+@media only screen and ( max-width: 782px ) {
 	.head-container.is_indent {top: 46px;}
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 	.head-container.is_indent {top: 0;}
 }
 

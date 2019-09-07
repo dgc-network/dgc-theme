@@ -714,7 +714,7 @@ ul#lang-select-popup{
     padding:20px 0;
 	position: relative;
 }
-#footer-widgets {height: 100%; width:100%; font-size: 0; background: gray; color:white}
+.footer-widgets {height: 100%; width:100%; font-size: 0; background: gray; color:white}
 #footer-widget-1, #footer-widget-2, #footer-widget-3, #footer-widget-4 {
 	display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
 #footer-widget-1 {width: 25%;}
@@ -2111,7 +2111,7 @@ aside #lang_sel {
 
 *:first-child+html #page .container .content .info_box_area { margin-bottom:25px }
 
-@media screen and ( max-width: 640px ) {
+@media only screen and ( max-width: 640px ) {
 	.page-container{margin-bottom:40px;}
 	.head-container.fixed {top: 0;}
 }
