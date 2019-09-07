@@ -801,7 +801,7 @@ a:hover,a:focus,a:active {
 	transition: all 0.3s ease-in-out;
 }
 #lang-select-block li.current:hover>a{
-	background:#F15A23;
+	background:#0070C9;
 	color:#ffffff;
 }
 ul#lang-select-popup{
@@ -907,7 +907,7 @@ ul#lang-select-popup{
     margin:0 !important
 }
 .main-navigation ul li:hover > a {
-    background:none repeat scroll 0 0 #F15A23;
+    background:none repeat scroll 0 0 #0070C9;
     color:#fff;
     padding:7px 10px;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -940,7 +940,7 @@ ul#lang-select-popup{
 .main-navigation ul li.current-menu-parent a,
 .main-navigation ul li.current_page_parent a,
 .main-navigation ul li.current-menu-ancestor a {
-    background:none repeat scroll 0 0 #F15A23;
+    background:none repeat scroll 0 0 #0070C9;
     color:#fff;
     padding:7px 10px;
 }
@@ -1424,7 +1424,7 @@ header.post-header, .blog_post {
     color:#fff;
     float:left;
     margin:0;
-	background: #F15A23;
+	background: #0070C9;
 }
 .blog_post .date_of_post .day_post {
     font-size:20px;
@@ -1921,7 +1921,7 @@ table tfoot  li {
 }
 
 .post-content .entry-content table tbody tr th a {
-	color:#F15A23;
+	color:#0070C9;
 	text-decoration:none;
 }
 
@@ -2202,7 +2202,7 @@ address {
 }
 
 .commentsErrorBox {
-    color: #F15A23;
+    color: #0070C9;
     line-height: 1em;
     margin-bottom: 27px;
     padding: 14px 26px 14px 46px;
