@@ -1529,7 +1529,7 @@ if (class_exists('Woocommerce')) {
 			echo '</div>';
 		echo '</div>';
 
-		if (is_user_logged_in()) dgc_register_section_html();
+		if (is_user_logged_in()) {} else dgc_register_section_html();
 
 		//echo '<div class="dgc-register-section">';
 		//	echo '<div class="dgc-register-warning">';
@@ -1546,7 +1546,7 @@ if (class_exists('Woocommerce')) {
 			echo '<div class="dgc-register-warning">';
 				echo '<div class="fas fa-user-plus"></div>';
 				echo '<div class="dgc-register-text">立即体验使用中英温搜索与使用人民币线上支付、购买下载工业标准的方便性。</div>';
-				echo '<div class="dgc-register-button">免费注册</div>';
+				echo '<div class="dgc-register-button"><a href="/my-account/">免费注册</a></div>';
 			echo '</div>';
 		echo '</div>';
 	}
