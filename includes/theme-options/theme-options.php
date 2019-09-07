@@ -454,7 +454,7 @@ class dgc_theme_options {
 						array(
 							'id'        => 'menu_btn_color',
 							'type'      => 'color',
-							'default'   => '#0070C9',
+							'default'   => '#F15A23',
 							'box-title' => __( 'Menu button color', 'textdomain' )
 						),
 						array(
@@ -485,7 +485,7 @@ class dgc_theme_options {
 						array(
 							'id'        => 'dd_menu_btn_color',
 							'type'      => 'color',
-							'default'   => '#0070C9',
+							'default'   => '#F15A23',
 							'box-title' => __( 'Menu button color', 'textdomain' )
 						),
 						array(
@@ -548,13 +548,13 @@ class dgc_theme_options {
 						array(
 							'id'        => 'widgets_sep_color',
 							'type'      => 'color',
-							'default'   => '#0070C9',
+							'default'   => '#F15A23',
 							'box-title' => __( 'Widget separator color', 'textdomain' )
 						),
 						array(
 							'id'        => 'date_of_post_b_color',
 							'type'      => 'color',
-							'default'   => '#0070C9',
+							'default'   => '#F15A23',
 							'box-title' => __( 'Blog post date color', 'textdomain' )
 						),
 						array(
@@ -580,7 +580,7 @@ class dgc_theme_options {
 						array(
 							'id'        => 'btn_active_color',
 							'type'      => 'color',
-							'default'   => '#0070C9',
+							'default'   => '#F15A23',
 							'box-title' => __( 'Button background color (hover, active, focus, current page - pagenavi)', 'textdomain' )
 						),
 					)

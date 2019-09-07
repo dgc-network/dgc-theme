@@ -1149,14 +1149,11 @@ if ( ! function_exists( 'dgc_get_responsive_style' ) ) {
 					$style_ .= '.blog_post .date_of_post  {color : '. esc_attr($theme_options['date_of_post_f_color']) .'; } ' . "\n";
 				}
 				
-				//$woo_style_ .= '.num_of_product_cart {border-color: '. esc_attr($theme_options['menu_btn_color']) . '; }  ' . "\n"; 
 				if (!empty($theme_options['my_account_button_color'])) {
-					//$woo_style_ .= '.my-account-image {color: '. esc_attr($theme_options['my_account_button_color']) . '; }  ' . "\n"; 
-					$woo_style_ .= '.fas fa-user {color: '. esc_attr($theme_options['my_account_button_color']) . '; }  ' . "\n"; 
+					$style_ .= '.fas fa-user {color: '. esc_attr($theme_options['my_account_button_color']) . '; }  ' . "\n"; 
 				}
 				
 				if (!empty($theme_options['cart_color'])) {
-					//$woo_style_ .= '.cart_image {color: '. esc_attr($theme_options['cart_color']) . '; }  ' . "\n";
 					$woo_style_ .= '.fas fa-shopping-cart {color: '. esc_attr($theme_options['cart_color']) . '; }  ' . "\n"; 
 					$woo_style_ .= '.num_of_product_cart {border-color: '. esc_attr($theme_options['cart_color']) . '; }  ' . "\n"; 
 				}
@@ -1528,10 +1525,11 @@ if (class_exists('Woocommerce')) {
 				//echo do_shortcode('[wcas-search-form]');
 				echo do_shortcode('[woof_text_filter]');
 				//echo '<div class="dgc-search-advance"><a href="/shop/">Advance</a></div>';
-				echo '<div class="dgc-search-advance"><a href="/shop/">'.__('Advance','textdomain').'</a></div>';
-				
+				echo '<div class="dgc-search-advance"><a href="/shop/">'.__('Advance','textdomain').'</a></div>';				
 			echo '</div>';
 		echo '</div>';
+
+		if (is_user_logged_in()) dgc_register_section_html();
 
 		//echo '<div class="dgc-register-section">';
 		//	echo '<div class="dgc-register-warning">';
@@ -1542,6 +1540,17 @@ if (class_exists('Woocommerce')) {
 		//echo '</div>';
 	}
 	add_shortcode('dgc-product-search','dgc_product_search_page');
+
+	function dgc_register_section_html(){
+		echo '<div class="dgc-register-section">';
+			echo '<div class="dgc-register-warning">';
+				echo '<div class="fas fa-user-plus"></div>';
+				echo '<div class="dgc-register-text">立即体验使用中英温搜索与使用人民币线上支付、购买下载工业标准的方便性。</div>';
+				echo '<div class="dgc-register-button">免费注册</div>';
+			echo '</div>';
+		echo '</div>';
+	}
+
 }
 
 if ( ! function_exists( 'dgc_custom_css_and_slider_scripts' ) ) {

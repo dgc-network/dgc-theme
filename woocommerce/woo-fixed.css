@@ -75,7 +75,7 @@ Fixed Styles for Woocommerce.
 	font-size:10px;
 	font-weight:bold;
 	background: #FFF;
-	border: 1px solid #0070C9;
+	border: 1px solid #F15A23;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
@@ -138,7 +138,7 @@ body.post-type-archive input#s{padding-left: 12px;max-width:234px}
 .nav-links.shop .pages-links .page-numbers:hover,
 .nav-links.shop .nav-next a:hover,
 .nav-links.shop .nav-previous a:hover,
-.nav-links.shop .pages-links .page-numbers.current{background:#0070C9;text-decoration:none !important;}
+.nav-links.shop .pages-links .page-numbers.current{background:#F15A23;text-decoration:none !important;}
 .nav-links.shop .pages-links .page-numbers.next,
 .nav-links.shop .pages-links .page-numbers.prev{display:none}
 #page .container .woo-loop-content.alpha.omega{width:100%;}
@@ -644,7 +644,7 @@ body.woocommerce-page .woocommerce .cart-collaterals button.button:hover,
 .woocommerce table.my_account_orders .order-actions .button:hover, body.woocommerce-page table.my_account_orders .order-actions .button:hover,
 .widget_shopping_cart_content .buttons a.button:hover{
 	color:white;
-	background: none repeat scroll 0 0 #0070C9;
+	background: none repeat scroll 0 0 #F15A23;
 }
 
 .single-product form.cart .button,
@@ -743,7 +743,7 @@ body.woocommerce-page #content div.product form.cart .quantity .qty,
 .single-product .upsells.products{float:left;width:100%}
 
 body.single-product .upsells.products h2{float:left;width:100%;margin: 25px 0;}
-body.single-product .related.products h2{float:left;width:100%;margin:25px 0;border-bottom: 2px solid #0070C9;padding: 0 0 10px 0;font-size:17px}
+body.single-product .related.products h2{float:left;width:100%;margin:25px 0;border-bottom: 2px solid #F15A23;padding: 0 0 10px 0;font-size:17px}
 .woocommerce .related ul.products li.product, 
 .woocommerce-page .related ul.products li.product, 
 .woocommerce .upsells.products ul.products li.product, 
