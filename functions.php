@@ -1518,15 +1518,18 @@ if (class_exists('Woocommerce')) {
 	}
 	add_filter( 'get_product_search_form' , 'woo_custom_product_searchform' );
 
-	/*custom search page*/
+	/* custom search page included the search section and register section */
 	function dgc_product_search_page() {
 		echo '<div class="dgc-search-section">';
 			echo '<div class="dgc-search-bar">';
-				echo '<div id="dgc-search-icon"><div class="fas fa-search"></div></div>';				
+				//echo '<div id="dgc-search-icon"><div class="fas fa-search"></div></div>';			
+				echo '<div id="dgc-search-icon"></div>';			
 				//get_product_search_form();
 				//echo do_shortcode('[wcas-search-form]');
 				echo do_shortcode('[woof_text_filter]');
-				echo '<div class="dgc-search-advance"><a href="/shop/">Advance</a></div>';
+				//echo '<div class="dgc-search-advance"><a href="/shop/">Advance</a></div>';
+				echo '<div class="dgc-search-advance"><a href="/shop/">'.__('Advance','textdomain').'</a></div>';
+				
 			echo '</div>';
 		echo '</div>';
 
@@ -1658,7 +1661,7 @@ if ( ! function_exists( 'dgc_kses_data' ) ) {
 	}
 }
 
-/*get cart button html*/
+/* get cart button html */
 if ( ! function_exists( 'dgc_get_cart_button_html' ) ) {
 	function dgc_get_cart_button_html() {
 		$btn_cart = '';
@@ -1679,7 +1682,7 @@ if ( ! function_exists( 'dgc_get_cart_button_html' ) ) {
 	}
 }	
 
-/*get my account button html*/
+/* get my account button html */
 if ( ! function_exists( 'dgc_get_my_account_html' ) ) {
 	function dgc_get_my_account_html() {
 		$btn_my_account = '<div class="my-account">
@@ -1690,17 +1693,16 @@ if ( ! function_exists( 'dgc_get_my_account_html' ) ) {
 	}
 }	
 
-/*get qTranslate-x languages list*/
+/* get qTranslate-x languages list */
 if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 	function dgc_get_qtranslate_languages_list(){
 		if( defined( 'QTRANSLATE_FILE' ) ){
 			global $q_config;
 			$languages = qtranxf_getSortedLanguages();			
 			if(!empty($languages)){
-				echo '<div id="qtranslate-select"><ul id="lang-select-block">';
-					//echo '<div class="global-image"></div>';
+				echo '<div id="qtranslate-select">';
+					echo '<ul id="lang-select-block">';
 						echo '<li class="current">';
-							//echo '<div class="global-image"></div>';
 							echo '<div class="fas fa-globe"></div>';
 							echo '<ul id="lang-select-popup">';					
 							foreach($languages as $language){

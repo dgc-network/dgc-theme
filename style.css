@@ -61,8 +61,8 @@ body.fancybox-lock {
     padding:0;
 }
 .container .column, .container .columns {
-    /* float:left; */
-    display:inline;
+    float:left;
+    /* display:inline; */
     margin-left:10px;
     margin-right:10px;
 }
@@ -2771,8 +2771,6 @@ div#fbSEOComments{
 	display: flex;
 	margin: 50px 50px;
 }
-/*.dgc-register-image{float:left; margin:0; padding:0; width:48px; height:46px; border:0;}
-.dgc-register-image:before{font-family:FontAwesome; content:"\f234"; font-size:50px;}*/
 .dgc-register-warning .fas.fa-user-plus{
 	display: flex;
 	font-size:50px;
