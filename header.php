@@ -58,8 +58,8 @@
 									<div data-originalstyle="<?php echo $menu_pos_class; ?>" class="menu-wrapper <?php echo $menu_pos_class; ?>">
 										<?php dgc_get_wpml_languages_list(); ?>
 										<?php dgc_get_qtranslate_languages_list(); ?>
-										<?php dgc_get_my_account_html(); ?>
 										<?php if (is_user_logged_in()) dgc_get_cart_button_html(); ?>
+										<?php dgc_get_my_account_html(); ?>
 										<?php //echo $menu_pos_class; ?>
 											
 										<nav role="navigation" class="site-navigation main-navigation">
@@ -88,8 +88,8 @@
 									<div data-originalstyle="<?php echo $menu_pos_class; ?>" class="menu-wrapper <?php echo $menu_pos_class; ?>">
 										<?php dgc_get_wpml_languages_list(); ?>
 										<?php dgc_get_qtranslate_languages_list(); ?>
-										<?php dgc_get_my_account_html(); ?>
 										<?php if (is_user_logged_in()) dgc_get_cart_button_html(); ?>
+										<?php dgc_get_my_account_html(); ?>
 										<?php //echo $menu_pos_class; ?>
 											
 										<nav role="navigation" class="site-navigation main-navigation">
@@ -115,8 +115,8 @@
 							</div>
 							<div class="language_switcher"><?php dgc_get_wpml_languages_list(); ?></div>
 							<div class="language_switcher"><?php dgc_get_qtranslate_languages_list(); ?></div>
-							<div class="my_account_wrapper"><?php dgc_get_my_account_html(); ?></div>
 							<div class="cart_wrapper"><?php if (is_user_logged_in()) dgc_get_cart_button_html(); ?></div>
+							<div class="my_account_wrapper"><?php dgc_get_my_account_html(); ?></div>
 							<div class="menu_wrapper collapse"><?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?></div>
 						</div>
 					</div>
