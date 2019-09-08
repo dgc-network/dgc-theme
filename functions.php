@@ -1582,8 +1582,9 @@ if (!function_exists('dgc_get_register_text')) {
 					$out_register_text .= $register_text;
 				$out_register_text .= '</nofollow>';				
 			}		
-			echo $out_register_text;
+			//echo $out_register_text;
 		}	
+		return $out_register_text;
 	}
 }
 
