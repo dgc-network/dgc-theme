@@ -785,38 +785,6 @@ if (!function_exists('dgc_get_favicon')) {
 	}
 }
 
-/* Get search bar placeholder */
-if (!function_exists('dgc_get_search_placeholder')) {
-	function dgc_get_search_placeholder () {
-		$out_search_placeholder = $search_placeholder = '';
-		$theme_options   = dgc_get_theme_options(); 
-		if (!empty($theme_options['search_placeholder'])) {
-			$out_search_placeholder = esc_attr($theme_options['search_placeholder']);
-			echo $out_search_placeholder;
-		}	
-	}
-}
-
-/* Get register text */
-if (!function_exists('dgc_get_register_text')) {
-	function dgc_get_register_text () {
-		$out_register_text = $register_text = '';
-		$theme_options   = dgc_get_theme_options(); 
-		if (!empty($theme_options['register_text'])) {
-			$register_text = dgc_kses_data(stripslashes($theme_options['register_text']));
-			
-			if (is_home() || is_front_page()) {
-				$out_register_text .= $register_text;
-			} else {
-				$out_register_text .= '<nofollow>';
-					$out_register_text .= $register_text;
-				$out_register_text .= '</nofollow>';				
-			}		
-			echo $out_register_text;
-		}	
-	}
-}
-
 /*Get footer text*/
 if (!function_exists('dgc_get_footer_text')) {
 	function dgc_get_footer_text () {
@@ -1584,6 +1552,39 @@ if (class_exists('Woocommerce')) {
 		echo '</div>';
 	}
 
+}
+
+/* Get search bar placeholder */
+if (!function_exists('dgc_get_search_placeholder')) {
+	function dgc_get_search_placeholder () {
+		$out_search_placeholder = $search_placeholder = '';
+		$theme_options   = dgc_get_theme_options(); 
+		if (!empty($theme_options['search_placeholder'])) {
+			$out_search_placeholder = esc_attr($theme_options['search_placeholder']);
+			//echo $out_search_placeholder;
+		}	
+		return $out_search_placeholder;
+	}
+}
+
+/* Get register text */
+if (!function_exists('dgc_get_register_text')) {
+	function dgc_get_register_text () {
+		$out_register_text = $register_text = '';
+		$theme_options   = dgc_get_theme_options(); 
+		if (!empty($theme_options['register_text'])) {
+			$register_text = dgc_kses_data(stripslashes($theme_options['register_text']));
+			
+			if (is_home() || is_front_page()) {
+				$out_register_text .= $register_text;
+			} else {
+				$out_register_text .= '<nofollow>';
+					$out_register_text .= $register_text;
+				$out_register_text .= '</nofollow>';				
+			}		
+			echo $out_register_text;
+		}	
+	}
 }
 
 if ( ! function_exists( 'dgc_custom_css_and_slider_scripts' ) ) {
