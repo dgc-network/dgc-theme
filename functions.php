@@ -785,6 +785,18 @@ if (!function_exists('dgc_get_favicon')) {
 	}
 }
 
+/* Get search bar placeholder */
+if (!function_exists('dgc_get_search_placeholder')) {
+	function dgc_get_search_placeholder () {
+		$out_search_placeholder = $search_placeholder = '';
+		$theme_options   = dgc_get_theme_options(); 
+		if (!empty($theme_options['search_placeholder'])) {
+			$out_search_placeholder = esc_attr($theme_options['search_placeholder']);
+			echo $out_search_placeholder;
+		}	
+	}
+}
+
 /* Get register text */
 if (!function_exists('dgc_get_register_text')) {
 	function dgc_get_register_text () {
@@ -1543,9 +1555,8 @@ if (class_exists('Woocommerce')) {
 				echo '<div id="dgc-search-icon"></div>';			
 				//get_product_search_form();
 				//echo do_shortcode('[wcas-search-form]');
-				$short_code = '[woof_text_filter placeholder="Hello"]';
+				$short_code = '[woof_text_filter placeholder="'.dgc_get_search_placeholder().'"]';
 				echo do_shortcode($short_code);
-				//echo '<div class="dgc-search-advance"><a href="/shop/">Advance</a></div>';
 				echo '<div class="dgc-search-advance"><a href="/shop/">'.__('Advance','textdomain').'</a></div>';				
 			echo '</div>';
 		echo '</div>';

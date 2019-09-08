@@ -313,6 +313,14 @@ class dgc_theme_options {
 			'id'     => 'background',
 			'fields' => array(
 				array(
+					//'id'      => 'woo_shop_num_prod',
+					'id'      => 'search_placeholder',
+					'label'   => __( 'Placeholder of Search Bar', 'textdomain' ),
+					'info'    => __( 'Input the information to placeholder of Search Bar for the further promotion', 'textdomain' ),
+					'type'    => 'text',
+					'default' => 'Search . . .',
+				),
+				array(
 					'id'        => 'register_text',
 					'label'     => __( 'Register message', 'textdomain' ),
 					'info'      => __( 'Replace default theme register information', 'textdomain' ),
