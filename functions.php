@@ -1567,7 +1567,7 @@ if (class_exists('Woocommerce')) {
 				echo '<div class="fas fa-user-plus"></div>';
 				echo '<div class="dgc-register-text">'.dgc_get_register_text().'</div>';
 				
-				echo '<div class="dgc-register-button"><a href="/my-account/">[:en]Registration[:zh]免费注册[:]</a></div>';
+				echo '<div class="dgc-register-button"><a href="/my-account/">'.__('免费注册','textdomain').'</a></div>';
 			echo '</div>';
 		echo '</div>';
 	}
