@@ -306,14 +306,13 @@ class dgc_theme_options {
 			)
 		);
 
-		/*Background*/
+		/*Body*/
 
-		$this->sections['background'] = array(
+		$this->sections['body'] = array(
 			'title'  => __( 'Body', 'textdomain' ),
-			'id'     => 'background',
+			'id'     => 'body',
 			'fields' => array(
 				array(
-					//'id'      => 'woo_shop_num_prod',
 					'id'      => 'search_placeholder',
 					'label'   => __( 'Placeholder of Search Bar', 'textdomain' ),
 					'info'    => __( 'Input the information to placeholder of Search Bar for the further promotion', 'textdomain' ),
@@ -329,19 +328,12 @@ class dgc_theme_options {
 					'default'   => __( '立即体验使用中英文搜索与使用人民币线上支付、购买下载工业标准的方便性。', 'textdomain' ),
 				),
 				array(
-					'id'          => 'showuser',
-					'label'       => __( 'Show user button in header', 'textdomain' ),
-					'info'        => __( 'If you want to display my-account link in header select options below.', 'textdomain' ),
+					'id'          => 'show_feature_image',
+					'label'       => __( 'Show feature image in frontpage', 'textdomain' ),
+					'info'        => __( 'Show feature image in Search session of frontpage.', 'textdomain' ),
 					'type'        => 'checkbox',
 					'description' => __( 'Enable', 'textdomain' ),
-					'default'     => 'on',
-				),
-				array(
-					'label'   => __( 'My Account button color', 'textdomain' ),
-					'info'    => __( 'Choose color for my account icon', 'textdomain' ),
-					'id'      => 'my_account_button_color',
-					'type'    => 'color',
-					'default' => '#020202',
+					'default'     => 'off',
 				),
 				array(
 					'label'  => __( 'Background Image', 'textdomain' ),

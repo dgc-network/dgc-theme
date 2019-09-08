@@ -1518,6 +1518,10 @@ if (class_exists('Woocommerce')) {
 	/* custom search page included the search section and register section */
 	function dgc_product_search_page() {
 		echo '<div class="dgc-search-section">';
+			if (!empty($theme_options['show_feature_image']) && (esc_attr($theme_options['show_feature_image']) == 'on')) {
+				echo '<div class="search-section-image"></div>';
+			};
+
 			echo '<div class="dgc-search-bar">';
 				//echo '<div id="dgc-search-icon"><div class="fas fa-search"></div></div>';			
 				echo '<div id="dgc-search-icon"></div>';			
