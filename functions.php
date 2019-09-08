@@ -1543,7 +1543,8 @@ if (class_exists('Woocommerce')) {
 				echo '<div id="dgc-search-icon"></div>';			
 				//get_product_search_form();
 				//echo do_shortcode('[wcas-search-form]');
-				echo do_shortcode('[woof_text_filter]');
+				$short_code = '[woof_text_filter placeholder="Hello"]';
+				echo do_shortcode($short_code);
 				//echo '<div class="dgc-search-advance"><a href="/shop/">Advance</a></div>';
 				echo '<div class="dgc-search-advance"><a href="/shop/">'.__('Advance','textdomain').'</a></div>';				
 			echo '</div>';
