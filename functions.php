@@ -785,6 +785,26 @@ if (!function_exists('dgc_get_favicon')) {
 	}
 }
 
+/* Get register text */
+if (!function_exists('dgc_get_register_text')) {
+	function dgc_get_register_text () {
+		$out_register_text = $register_text = '';
+		$theme_options   = dgc_get_theme_options(); 
+		if (!empty($theme_options['register_text'])) {
+			$register_text = dgc_kses_data(stripslashes($theme_options['register_text']));
+			
+			if (is_home() || is_front_page()) {
+				$out_register_text .= $register_text;
+			} else {
+				$out_register_text .= '<nofollow>';
+					$out_register_text .= $register_text;
+				$out_register_text .= '</nofollow>';				
+			}		
+			echo $out_register_text;
+		}	
+	}
+}
+
 /*Get footer text*/
 if (!function_exists('dgc_get_footer_text')) {
 	function dgc_get_footer_text () {
@@ -1545,7 +1565,9 @@ if (class_exists('Woocommerce')) {
 		echo '<div class="dgc-register-section">';
 			echo '<div class="dgc-register-warning">';
 				echo '<div class="fas fa-user-plus"></div>';
-				echo '<div class="dgc-register-text">立即体验使用中英文搜索与使用人民币线上支付、购买下载工业标准的方便性。</div>';
+				//echo '<div class="dgc-register-text">立即体验使用中英文搜索与使用人民币线上支付、购买下载工业标准的方便性。</div>';
+				echo '<div class="dgc-register-text">'.dgc_get_register_text().'</div>';
+				
 				echo '<div class="dgc-register-button"><a href="/my-account/">免费注册</a></div>';
 			echo '</div>';
 		echo '</div>';

@@ -309,9 +309,32 @@ class dgc_theme_options {
 		/*Background*/
 
 		$this->sections['background'] = array(
-			'title'  => __( 'Background', 'textdomain' ),
+			'title'  => __( 'Body', 'textdomain' ),
 			'id'     => 'background',
 			'fields' => array(
+				array(
+					'id'        => 'register_text',
+					'label'     => __( 'Register message', 'textdomain' ),
+					'info'      => __( 'Replace default theme register information', 'textdomain' ),
+					'box-title' => __( 'Register information', 'textdomain' ),
+					'type'      => 'textarea',
+					'default'   => __( '立即体验使用中英文搜索与使用人民币线上支付、购买下载工业标准的方便性。', 'textdomain' ),
+				),
+				array(
+					'id'          => 'showuser',
+					'label'       => __( 'Show user button in header', 'textdomain' ),
+					'info'        => __( 'If you want to display my-account link in header select options below.', 'textdomain' ),
+					'type'        => 'checkbox',
+					'description' => __( 'Enable', 'textdomain' ),
+					'default'     => 'on',
+				),
+				array(
+					'label'   => __( 'My Account button color', 'textdomain' ),
+					'info'    => __( 'Choose color for my account icon', 'textdomain' ),
+					'id'      => 'my_account_button_color',
+					'type'    => 'color',
+					'default' => '#020202',
+				),
 				array(
 					'label'  => __( 'Background Image', 'textdomain' ),
 					'info'   => __( 'Upload your background image for site background. (Supported files .png, .jpg, .gif)', 'textdomain' ),
@@ -1202,21 +1225,6 @@ class dgc_theme_options {
 				'title'  => __( 'Woocommerce', 'textdomain' ),
 				'id'     => 'woo',
 				'fields' => array(
-					array(
-						'id'          => 'showuser',
-						'label'       => __( 'Show user button in header', 'textdomain' ),
-						'info'        => __( 'If you want to display my-account link in header select options below.', 'textdomain' ),
-						'type'        => 'checkbox',
-						'description' => __( 'Enable', 'textdomain' ),
-						'default'     => 'on',
-					),
-					array(
-						'label'   => __( 'My Account button color', 'textdomain' ),
-						'info'    => __( 'Choose color for my account icon', 'textdomain' ),
-						'id'      => 'my_account_button_color',
-						'type'    => 'color',
-						'default' => '#020202',
-					),
 					array(
 						'id'          => 'showcart',
 						'label'       => __( 'Show cart in header', 'textdomain' ),
