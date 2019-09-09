@@ -1530,10 +1530,27 @@ if (class_exists('Woocommerce')) {
     		// Run a loop and print them all
     		foreach ( $terms as $term ) { ?>
         		<a href="<?php echo esc_url( get_term_link( $term ) ) ?>">
-            		<?php echo $term->name; ?>
+            		<?php //echo $term->name; ?>
         		</a><?php
     		}
+			echo '<div id="industry-select">';
+				echo '<ul id="industry-select-block">';
+					echo '<li class="current">'.__('Industries','textdomain');
+						//echo '<div class="fas fa-globe"></div>';
+						echo '<ul id="industry-select-popup">';					
+						foreach($terms as $term){
+							echo '<li class="unactive">';
+							echo '<a class="'.$language.'" href="'.esc_url( get_term_link( $term ) ).'">';
+								echo $term->name;
+							echo '</a></li>';
+						}
+						echo '</ul>';
+					echo '</li>';					
+				echo '</ul>';
+			echo '</div>';
 		} 	
+		//if(!empty($languages)){
+		//}
 	}
 	add_shortcode('dgc-industry-list','dgc_industry_list');
 
