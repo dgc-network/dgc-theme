@@ -1515,12 +1515,12 @@ if (class_exists('Woocommerce')) {
 	}
 	add_filter( 'get_product_search_form' , 'woo_custom_product_searchform' );
 
-	/* custom taxonomies page included the search section and register section */
-	function dgc_custom_taxonomies_page() {
+	/* custom taxonomies list included the link */
+	function dgc_custom_taxonomies_list( $taxonomy = 'industry' ) {
 		// Get the taxonomy's terms
 		$terms = get_terms(
     		array(
-        		'taxonomy'   => 'industry',
+        		'taxonomy'   => $taxonomy,
         		'hide_empty' => false,
     		)
 		);
@@ -1535,7 +1535,7 @@ if (class_exists('Woocommerce')) {
     		}
 		} 	
 	}
-	add_shortcode('dgc-custom-taxonomies','dgc_custom_taxonomies_page');
+	add_shortcode('dgc-custom-taxonomies','dgc_custom_taxonomies_list');
 
 	/* custom search page included the search section and register section */
 	function dgc_product_search_page() {
