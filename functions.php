@@ -1515,12 +1515,12 @@ if (class_exists('Woocommerce')) {
 	}
 	add_filter( 'get_product_search_form' , 'woo_custom_product_searchform' );
 
-	/* custom taxonomies list included the link */
-	function dgc_custom_taxonomies_list( $taxonomy = 'industry' ) {
+	/* Shortcode for industry list included the link */
+	function dgc_industry_list() {
 		// Get the taxonomy's terms
 		$terms = get_terms(
     		array(
-        		'taxonomy'   => $taxonomy,
+        		'taxonomy'   => 'industry',
         		'hide_empty' => false,
     		)
 		);
@@ -1535,7 +1535,29 @@ if (class_exists('Woocommerce')) {
     		}
 		} 	
 	}
-	add_shortcode('dgc-custom-taxonomies','dgc_custom_taxonomies_list');
+	add_shortcode('dgc-industry-list','dgc_industry_list');
+
+	/* Shortcode for publisher list included the link */
+	function dgc_publisher_list() {
+		// Get the taxonomy's terms
+		$terms = get_terms(
+    		array(
+        		'taxonomy'   => 'publisher',
+        		'hide_empty' => false,
+    		)
+		);
+
+		// Check if any term exists
+		if ( ! empty( $terms ) && is_array( $terms ) ) {
+    		// Run a loop and print them all
+    		foreach ( $terms as $term ) { ?>
+        		<a href="<?php echo esc_url( get_term_link( $term ) ) ?>">
+            		<?php echo $term->name; ?>
+        		</a><?php
+    		}
+		} 	
+	}
+	add_shortcode('dgc-publisher-list','dgc_publisher_list');
 
 	/* custom search page included the search section and register section */
 	function dgc_product_search_page() {
