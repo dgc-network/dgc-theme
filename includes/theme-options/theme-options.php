@@ -333,7 +333,7 @@ class dgc_theme_options {
 					'info'        => __( 'Show feature image in Search session of frontpage.', 'textdomain' ),
 					'type'        => 'checkbox',
 					'description' => __( 'Enable', 'textdomain' ),
-					'default'     => 'off',
+					'default'     => 'on',
 				),
 				array(
 					'label'  => __( 'Background Image', 'textdomain' ),
