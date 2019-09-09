@@ -1530,7 +1530,7 @@ if (class_exists('Woocommerce')) {
 				//echo do_shortcode('[wcas-search-form]');
 				$short_code = '[woof_text_filter placeholder="'.dgc_get_search_placeholder().'"]';
 				echo do_shortcode($short_code);
-				echo '<div class="dgc-search-advance"><a href="/shop/">'.__('Advance','textdomain').'</a></div>';				
+				echo '<div class="dgc-search-advance"><a href="/shop/">'.__('Advance Search','textdomain').'</a></div>';				
 			echo '</div>';
 		echo '</div>';
 
