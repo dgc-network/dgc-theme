@@ -1,0 +1,2087 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: dgc-theme\n"
+"POT-Creation-Date: 2016-03-25 15:19+0200\n"
+"PO-Revision-Date: 2019-09-09 14:42+0800\n"
+"Language-Team: dgc-theme Team\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__;_x;_n;esc_attr_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: author-bio.php:16
+#, php-format
+msgid "About %s"
+msgstr "关于 %s"
+
+#: author-bio.php:20
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "查看%s发表的所有帖子<span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:33
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr "一个想法在 &ldquo;%2$s&rdquo;上;"
+
+#: comments.php:40 comments.php:60
+msgid "Comment navigation"
+msgstr "评论导航"
+
+#: comments.php:41 comments.php:61
+msgid "&larr; Older Comments"
+msgstr "&larr; 旧评论"
+
+#: comments.php:42 comments.php:62
+msgid "Newer Comments &rarr;"
+msgstr "新评论 &rarr;"
+
+#: comments.php:72
+msgid "Comments are closed."
+msgstr "评论被关闭。"
+
+#: content-404.php:13
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "哎呀！ 该页面无法找到。"
+
+#: content-404.php:17
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr "看起来在这个位置没有发现任何东西。 也许尝试下面的链接之一或搜索？"
+
+#: content-aside.php:32 content-audio.php:33 content-gallery.php:32
+#: content-image.php:33 content-link.php:32 content-quote.php:32
+#: content-status.php:32 content-video.php:32
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "继续阅读 <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-aside.php:33 content-audio.php:34 content-chat.php:33
+#: content-gallery.php:33 content-image.php:34 content-link.php:33
+#: content-page.php:22 content-quote.php:33 content-single.php:33
+#: content-status.php:33 content-video.php:33 content.php:64 image.php:87
+msgid "Pages:"
+msgstr ""
+
+#: content-aside.php:39 content-aside.php:46 content-audio.php:43
+#: content-chat.php:38 content-gallery.php:49 content-image.php:49
+#: content-link.php:41 content-page.php:23 content-quote.php:43
+#: content-single.php:38 content-video.php:48 content.php:75 image.php:35
+#: image.php:101
+msgid "Edit"
+msgstr ""
+
+#: content-chat.php:22 content-quote.php:23 content.php:33 functions.php:1477
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: content-gallery.php:43 content-image.php:42 content-quote.php:40
+#: content-video.php:41 content.php:72
+msgid "Leave a comment"
+msgstr ""
+
+#: content-gallery.php:43 content.php:72
+msgid "1 Comment"
+msgstr ""
+
+#: content-gallery.php:43 content.php:72
+msgid "% Comments"
+msgstr ""
+
+#: content-image.php:42 content-quote.php:40 content-video.php:41
+msgid "One comment so far"
+msgstr ""
+
+#: content-image.php:42 content-quote.php:40 content-video.php:41
+#, php-format
+msgid "View all % comments"
+msgstr ""
+
+#: content.php:63
+msgid "Read More <span class=\"meta-nav\">&rarr;</span>"
+msgstr "继续阅读 <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:72 functions.php:78
+msgid "on"
+msgstr ""
+
+#: functions.php:125
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:162
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:178
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:187
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:196
+msgid "Single Post Sidebar"
+msgstr ""
+
+#: functions.php:205
+msgid "Homepage Sidebar"
+msgstr ""
+
+#: functions.php:215
+msgid "Shop Page Sidebar"
+msgstr ""
+
+#: functions.php:224
+msgid "Product Page Sidebar"
+msgstr ""
+
+#: functions.php:300
+msgid "Navigate to..."
+msgstr ""
+
+#: functions.php:581 functions.php:586
+msgid "Please add images for slider in theme options!"
+msgstr ""
+
+#: functions.php:1374
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: functions.php:1421
+#, php-format
+msgid "%d "
+msgstr ""
+
+#: functions.php:1446 functions.php:1455
+msgid ", "
+msgstr ""
+
+#: functions.php:1449
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: functions.php:1471
+#, php-format
+msgid "%1$s on %2$s"
+msgstr ""
+
+#: functions.php:1592
+msgid " &laquo; "
+msgstr ""
+
+#: functions.php:1593
+msgid " &raquo; "
+msgstr ""
+
+#: functions.php:1595
+msgid "&laquo; Previous Page"
+msgstr ""
+
+#: functions.php:1596
+msgid "Next Page &raquo;"
+msgstr ""
+
+#: functions.php:1638
+msgid "Search for products"
+msgstr ""
+
+#: functions.php:1692
+msgid "Front page displays Error."
+msgstr ""
+
+#: functions.php:1692
+msgid "Select different pages!"
+msgstr ""
+
+#: functions.php:1743
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: functions.php:1745
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: functions.php:1748
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: functions.php:1752
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: functions.php:1755
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: functions.php:1758
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: functions.php:1761 sidebar-blogright.php:19 sidebar-homepage.php:19
+#: sidebar-page.php:19 sidebar-single-post.php:19 sidebar.php:19
+msgid "Archives"
+msgstr ""
+
+#: functions.php:1766
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: functions.php:1925
+msgid ""
+"Attention! dgc-theme version 2.0 got major updates. You may have a problems "
+"with display content in shortcodes, because we created this part as plugin. "
+"You need install "
+msgstr ""
+
+#: functions.php:1927
+msgid " and use them."
+msgstr ""
+
+#: image.php:25
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\" pubdate>%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-"
+"size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s"
+"\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+
+#: image.php:39
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:40
+msgid "Next &rarr;"
+msgstr ""
+
+#: image.php:93
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:95
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+
+#: image.php:97
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: image.php:99
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: includes/func/dgc-function.php:38
+msgid "Arial, Helvetica, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:39
+msgid "Arial Black, Gadget, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:40
+msgid "Comic Sans MS, Textile, cursive"
+msgstr ""
+
+#: includes/func/dgc-function.php:41
+msgid "Courier New, Courier, monospace"
+msgstr ""
+
+#: includes/func/dgc-function.php:42
+msgid "Georgia, Times New Roman, Times, serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:43
+msgid "Impact, Charcoal, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:44
+msgid "Lucida Console, Monaco, monospace"
+msgstr ""
+
+#: includes/func/dgc-function.php:45
+msgid "Lucida Sans Unicode, Lucida Grande, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:46
+msgid "Palatino Linotype, Book Antiqua, Palatino, serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:47
+msgid "Tahoma, Geneva, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:48
+msgid "Times New Roman, Times, serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:49
+msgid "Trebuchet MS, Helvetica, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:50
+msgid "Verdana, Geneva, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:51
+msgid "MS Sans Serif, Geneva, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:52
+msgid "MS Serif, New York, serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:55
+msgid "Open Sans, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:56
+msgid "Lobster, cursive"
+msgstr ""
+
+#: includes/func/dgc-function.php:57
+msgid "Josefin Slab, serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:58
+msgid "Arvo, serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:59
+msgid "Lato, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:60
+msgid "Vollkorn, serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:61
+msgid "Abril Fatface, cursive"
+msgstr ""
+
+#: includes/func/dgc-function.php:62
+msgid "Ubuntu, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:63
+msgid "PT Sans, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:64
+msgid "Old Standard TT, serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:65
+msgid "Droid Sans, sans-serif"
+msgstr ""
+
+#: includes/func/dgc-function.php:119
+msgid "View Options"
+msgstr ""
+
+#: includes/func/dgc-function.php:123
+msgid "No Slider Select!"
+msgstr ""
+
+#: includes/func/dgc-function.php:175
+msgid "Link URL"
+msgstr ""
+
+#: includes/func/dgc-function.php:181
+msgid "Target \"_blank\""
+msgstr ""
+
+#: includes/func/dgc-function.php:185
+#: includes/theme-options/theme-options.php:1375
+msgid "Upload Image"
+msgstr ""
+
+#: includes/func/dgc-function.php:186
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:309
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:724
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:786
+#: includes/theme-options/theme-options.php:1381
+msgid "Remove"
+msgstr ""
+
+#: includes/func/dgc-function.php:195
+#, php-format
+msgid "Slide # %1$d"
+msgstr ""
+
+#: includes/func/dgc-function.php:216
+msgid "Collapse all"
+msgstr ""
+
+#: includes/func/dgc-function.php:217
+msgid "Expand all"
+msgstr ""
+
+#: includes/func/dgc-function.php:239
+msgid "Add New Slide"
+msgstr ""
+
+#: includes/func/plugin-activation.php:333
+msgid "Install Required Plugins"
+msgstr ""
+
+#: includes/func/plugin-activation.php:334
+msgid "Install Plugins"
+msgstr ""
+
+#: includes/func/plugin-activation.php:335
+#: includes/func/plugins-included.php:40
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: includes/func/plugin-activation.php:336
+#: includes/func/plugins-included.php:41
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: includes/func/plugin-activation.php:397
+#: includes/func/plugins-included.php:87
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: includes/func/plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr ""
+
+#: includes/func/plugin-activation.php:399
+#: includes/func/plugin-activation.php:3021
+#: includes/func/plugins-included.php:88
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/func/plugin-activation.php:400
+#: includes/func/plugin-activation.php:2824
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: includes/func/plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: includes/func/plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: includes/func/plugin-activation.php:403
+#: includes/func/plugins-included.php:92
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: includes/func/plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/func/plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: includes/func/plugin-activation.php:1873
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2159
+msgid "Required"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2162
+msgid "Recommended"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2178
+msgid "WordPress Repository"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2181
+msgid "External Source"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2184
+msgid "Pre-Packaged"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2201
+msgid "Not Installed"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2205
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2207
+msgid "Active"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2213
+msgid "Required Update not Available"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2216
+msgid "Requires Update"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2219
+msgid "Update recommended"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2227
+#, php-format
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2275
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2278
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2281
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2363
+msgid "unknown"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2371
+msgid "Installed version:"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2379
+msgid "Minimum required version:"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2391
+msgid "Available version:"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2414
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2428
+msgid "Plugin"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2429
+msgid "Source"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2430
+msgid "Type"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2434
+msgid "Version"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2435
+msgid "Status"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2483
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2487
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2492
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2595
+msgid "Install"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2601
+msgid "Update"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2604
+msgid "Activate"
+msgstr ""
+
+#: includes/func/plugin-activation.php:2635
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: includes/func/plugin-activation.php:2637
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: includes/func/plugin-activation.php:2673
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: includes/func/plugin-activation.php:2675
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: includes/func/plugin-activation.php:3020
+msgid "Plugin activation failed."
+msgstr ""
+
+#: includes/func/plugin-activation.php:3354
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/func/plugin-activation.php:3356
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: includes/func/plugin-activation.php:3357
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: includes/func/plugin-activation.php:3361
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: includes/func/plugin-activation.php:3362
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: includes/func/plugin-activation.php:3363
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: includes/func/plugin-activation.php:3364
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/func/plugin-activation.php:3367
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: includes/func/plugin-activation.php:3369
+msgid "All installations have been completed."
+msgstr ""
+
+#: includes/func/plugin-activation.php:3370
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/func/plugins-included.php:38
+msgid "dgc-theme Plugin Integration"
+msgstr ""
+
+#: includes/func/plugins-included.php:39
+msgid "Plugin Integration"
+msgstr ""
+
+#: includes/metaboxes/helpers/cmb_Meta_Box_ajax.php:47
+msgid "Please Try Again"
+msgstr ""
+
+#: includes/metaboxes/helpers/cmb_Meta_Box_ajax.php:131
+msgid "Remove Embed"
+msgstr ""
+
+#: includes/metaboxes/helpers/cmb_Meta_Box_ajax.php:134
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: includes/metaboxes/helpers/cmb_Meta_Box_field.php:460
+msgid "Add Group"
+msgstr ""
+
+#: includes/metaboxes/helpers/cmb_Meta_Box_field.php:461
+msgid "Remove Group"
+msgstr ""
+
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:253
+msgid "Add Row"
+msgstr ""
+
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:619
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:653
+msgid "No terms"
+msgstr ""
+
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:692
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:746
+msgid "Add or Upload File"
+msgstr ""
+
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:713
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:778
+msgid "Remove Image"
+msgstr ""
+
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:724
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:786
+msgid "File:"
+msgstr ""
+
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:724
+#: includes/metaboxes/helpers/cmb_Meta_Box_types.php:786
+msgid "Download"
+msgstr ""
+
+#: includes/metaboxes/init-for-objestcs-mb.php:34
+msgid "Slider settings"
+msgstr ""
+
+#: includes/metaboxes/init-for-objestcs-mb.php:42
+msgid "Slider display"
+msgstr ""
+
+#: includes/metaboxes/init-for-objestcs-mb.php:44
+msgid "Select the option to display the corresponding slider"
+msgstr ""
+
+#: includes/metaboxes/init-for-objestcs-mb.php:47
+msgid "Disable slider"
+msgstr ""
+
+#: includes/metaboxes/init-for-objestcs-mb.php:48
+msgid "Full width slider"
+msgstr ""
+
+#: includes/metaboxes/init-for-objestcs-mb.php:49
+msgid "Boxed slider"
+msgstr ""
+
+#: includes/metaboxes/init-for-objestcs-mb.php:59
+msgid "Page settings"
+msgstr ""
+
+#: includes/metaboxes/init-for-objestcs-mb.php:66
+#: includes/metaboxes/init-for-objestcs-mb.php:85
+#: includes/theme-options/theme-options.php:88
+msgid "Layout"
+msgstr ""
+
+#: includes/metaboxes/init-for-objestcs-mb.php:67
+msgid "Select a specific layout for this page."
+msgstr ""
+
+#: includes/metaboxes/init-for-objestcs-mb.php:78
+msgid "Post settings"
+msgstr ""
+
+#: includes/metaboxes/init-for-objestcs-mb.php:86
+msgid "Select a specific layout for this post."
+msgstr ""
+
+#: includes/metaboxes/init.php:258
+msgid "Clear"
+msgstr ""
+
+#: includes/metaboxes/init.php:259
+msgid "Default"
+msgstr ""
+
+#: includes/metaboxes/init.php:260
+msgid "Select Color"
+msgstr ""
+
+#: includes/metaboxes/init.php:261
+msgid "Current Color"
+msgstr ""
+
+#: includes/metaboxes/init.php:293
+msgid "Select / Deselect All"
+msgstr ""
+
+#: includes/metaboxes/init.php:1187
+#: includes/theme-options/theme-options.php:1441
+#: includes/theme-options/theme-options.php:1463
+msgid "Save"
+msgstr ""
+
+#: includes/template-tags.php:27
+msgid "Post navigation"
+msgstr ""
+
+#: includes/template-tags.php:31
+msgid "&larr;"
+msgstr ""
+
+#: includes/template-tags.php:32
+msgid "&rarr;"
+msgstr ""
+
+#: includes/template-tags.php:37
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: includes/template-tags.php:41
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: includes/template-tags.php:66
+msgid "Pingback:"
+msgstr ""
+
+#: includes/template-tags.php:66 includes/template-tags.php:92
+msgid "(Edit)"
+msgstr ""
+
+#: includes/template-tags.php:85
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: includes/template-tags.php:90
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: includes/template-tags.php:96
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: includes/template-tags.php:121
+#, php-format
+msgid ""
+"Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class="
+"\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline"
+"\"> by <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" "
+"title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr ""
+
+#: includes/template-tags.php:127
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:54
+#: includes/theme-options/theme-options.php:55
+#: includes/theme-options/theme-options.php:69
+#: includes/theme-options/theme-options.php:1440
+msgid "Theme Options"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:83
+msgid "General"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:89
+msgid ""
+"Theme supported 2 types of html layout. Default responsive setting which "
+"adapt for mobile devices and static page with fixed width. Uncheck arrow "
+"below if you need static website display"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:90
+msgid "Responsive"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:96
+msgid "Comments"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:97
+msgid ""
+"If you want to display comments on your post page or page, select options "
+"below."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:101
+msgid "Display comment on posts page"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:107
+msgid "Display comment on page"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:123
+msgid "Front page template with latest posts"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:124
+msgid "Settings > Reading > Front page displays > Your latest posts"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:127
+#: includes/theme-options/theme-options.php:143
+#: includes/theme-options/theme-options.php:154
+#: includes/theme-options/theme-options.php:165
+#: includes/theme-options/theme-options.php:176
+#: includes/theme-options/theme-options.php:187
+#: includes/theme-options/theme-options.php:198
+#: includes/theme-options/theme-options.php:209
+#: includes/theme-options/theme-options.php:220
+#: includes/theme-options/theme-options.php:1259
+msgid "Full width"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:128
+#: includes/theme-options/theme-options.php:142
+#: includes/theme-options/theme-options.php:153
+#: includes/theme-options/theme-options.php:164
+#: includes/theme-options/theme-options.php:175
+#: includes/theme-options/theme-options.php:186
+#: includes/theme-options/theme-options.php:197
+#: includes/theme-options/theme-options.php:208
+#: includes/theme-options/theme-options.php:219
+#: includes/theme-options/theme-options.php:1260
+#: includes/theme-options/theme-options.php:1272
+msgid "Right sidebar"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:129
+#: includes/theme-options/theme-options.php:144
+#: includes/theme-options/theme-options.php:155
+#: includes/theme-options/theme-options.php:166
+#: includes/theme-options/theme-options.php:177
+#: includes/theme-options/theme-options.php:188
+#: includes/theme-options/theme-options.php:199
+#: includes/theme-options/theme-options.php:210
+#: includes/theme-options/theme-options.php:221
+#: includes/theme-options/theme-options.php:1258
+#: includes/theme-options/theme-options.php:1271
+msgid "Left sidebar"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:134
+msgid "Page templates by default"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:135
+msgid "Choose default display for templates."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:140
+msgid "Page:"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:151
+msgid "Single Post:"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:162
+msgid "Archive:"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:173
+msgid "Author:"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:184
+msgid "Category:"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:195
+msgid "Tags:"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:206
+msgid "404:"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:217
+msgid "Search:"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:229
+msgid "Show Featured image on single post"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:230
+msgid "Select option below for show featured image on single post page."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:231
+msgid "Show featured image"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:239
+msgid "Multilingual Switch in Header (WPML)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:240
+msgid "If you wish to show Language Switch in header, select option below."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:241
+#: includes/theme-options/theme-options.php:1242
+msgid "Enable"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:246
+#: includes/theme-options/theme-options.php:255
+msgid "Reset options"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:247
+#: includes/theme-options/theme-options.php:256
+msgid "All theme options will be reset to default."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:269
+#: includes/theme-options/theme-options.php:1066
+msgid "Header"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:274
+msgid "Sticky  header"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:275
+msgid "Options relating to the website header"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:276
+msgid "Enabled"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:282
+msgid "Menu Position"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:283
+msgid "Set menu position."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:286
+#: includes/theme-options/theme-options.php:401
+msgid "Right"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:287
+#: includes/theme-options/theme-options.php:399
+msgid "Left"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:288
+#: includes/theme-options/theme-options.php:400
+msgid "Center"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:294
+msgid "Type of Responsive menu"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:295
+msgid "Set type of responsive menu."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:298
+msgid "Select menu"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:299
+msgid "Button menu"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:305
+msgid "Menu icon color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:306
+msgid "Chose color for collapsing menu icon"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:311
+msgid "Background for header"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:312
+msgid ""
+"Upload image with full width for background in header area. (Supported "
+"files .png, .jpg, .gif)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:323
+msgid "Header background-color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:329
+msgid "Background image size"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:330
+msgid "Choose size for background image - full width or only for content area."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:333
+msgid "Full width position"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:334
+msgid "Centered position"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:340
+msgid "Height for header area"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:341
+msgid "Minimum height in pixels"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:351
+msgid "Background"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:355
+msgid "Background Image"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:356
+msgid ""
+"Upload your background image for site background. (Supported files .png, ."
+"jpg, .gif)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:365
+msgid "Background repeat"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:373
+msgid "Background Color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:374
+msgid "Choose color for body background"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:380
+msgid "Background color for content"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:381
+msgid "Choose color for main content area"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:390
+msgid "Logo"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:395
+msgid "Logo Position"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:396
+msgid "Set Logo Position"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:406
+msgid "Logo size"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:407
+msgid "Specify resolution for your logo image"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:413
+msgid "Width"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:419
+msgid "Height"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:425
+msgid "Logo image"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:426
+msgid ""
+"Upload logo image for your website. Size is original (Supported files .png, ."
+"jpg, .gif)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:432
+msgid "Logo image retina"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:433
+msgid ""
+"Upload logo in double size (If your logo is 100 x 20px, it should be 200 x "
+"40px)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:439
+msgid "Favicon"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:440
+msgid ""
+"A favicon is a 16x16 pixel icon that represents your site; upload your "
+"custom Favicon here."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:446
+msgid "Favicon iPhone"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:447
+msgid "Upload a custom favicon for iPhone (57x57 pixel png)."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:453
+msgid "Favicon iPhone Retina"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:454
+msgid "Upload a custom favicon for iPhone retina (114x114 pixel png)."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:460
+msgid "Favicon iPad"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:461
+msgid "Upload a custom favicon for iPad (72x72 pixel png)."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:467
+msgid "Favicon iPad Retina"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:468
+msgid "Upload a custom favicon for iPhone retina (144x144 pixel png)."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:478
+msgid "Colors"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:483
+msgid "Main menu color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:484
+msgid "Choose your colors for main menu in header"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:491
+#: includes/theme-options/theme-options.php:522
+msgid "Background color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:497
+#: includes/theme-options/theme-options.php:528
+msgid "Menu button color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:503
+#: includes/theme-options/theme-options.php:534
+#: includes/theme-options/theme-options.php:554
+msgid "Font color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:509
+#: includes/theme-options/theme-options.php:540
+msgid "Font color (active and hover)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:515
+msgid "Dropdown menu color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:516
+msgid "Choose your colors for dropdown menu in header"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:546
+msgid "General font color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:547
+msgid "Choose your colors for text and links"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:560
+msgid "Link color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:566
+msgid "Link color (hover)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:572
+msgid "Link color (focus)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:578
+msgid "Link color (active)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:584
+msgid "Color for lines"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:585
+msgid "Choose your colors for lines and separators"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:591
+msgid "Widget separator color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:597
+msgid "Blog post date color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:603
+msgid "Date font color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:609
+msgid "Color for buttons"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:610
+msgid "Choose your colors for buttons"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:617
+msgid "Button background color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:623
+#: includes/theme-options/theme-options.php:642
+msgid "Button background color (hover, active, focus, current page - pagenavi)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:629
+msgid "Color for social icons"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:630
+msgid "Choose your colors for social icons"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:636
+msgid "Social icons background color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:648
+msgid "WooCommerce colors"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:649
+msgid "Choose your colors for WooCommerce"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:655
+msgid "Sale price color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:661
+msgid "Rating color (regular)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:667
+msgid "Rating color (hover, active)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:676
+msgid "Fonts"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:685
+msgid "Headers"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:686
+msgid "Choose font-family for all headlines."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:693
+#: includes/theme-options/theme-options.php:752
+msgid "Menu"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:694
+msgid "Choose font-family for primary menu."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:701
+msgid "Body"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:702
+msgid "Choose font-family for content."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:709
+msgid "Font size"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:710
+msgid ""
+"Choose font size for specific html elements. Set size as number, without px.."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:716
+msgid "H1"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:722
+msgid "H2"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:728
+msgid "H3"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:734
+msgid "H4"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:740
+msgid "H5"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:746
+msgid "H6"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:758
+msgid "P"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:768
+#: includes/theme-options/theme-options.php:774
+msgid "Slider"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:775
+msgid "Select a slider type that will be used by default."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:778
+msgid "FlexSlider"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:779
+msgid "Nivo Slider"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:785
+msgid "Slider Options"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:786
+msgid ""
+"Choose needed options for slider: animation type, sliding direction, speed "
+"of animations, etc"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:793
+msgid "Animation type"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:795
+#: includes/theme-options/theme-options.php:913
+msgid "fade"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:796
+msgid "slide"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:804
+msgid "Sliding direction, \"horizontal\" or \"vertical\""
+msgstr ""
+
+#: includes/theme-options/theme-options.php:806
+msgid "horizontal"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:807
+msgid "vertical"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:815
+msgid "Reverse the animation direction"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:817
+#: includes/theme-options/theme-options.php:829
+#: includes/theme-options/theme-options.php:860
+#: includes/theme-options/theme-options.php:872
+#: includes/theme-options/theme-options.php:883
+#: includes/theme-options/theme-options.php:971
+#: includes/theme-options/theme-options.php:982
+#: includes/theme-options/theme-options.php:993
+#: includes/theme-options/theme-options.php:1004
+#: includes/theme-options/theme-options.php:1015
+#: includes/theme-options/theme-options.php:1040
+msgid "false"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:818
+#: includes/theme-options/theme-options.php:828
+#: includes/theme-options/theme-options.php:861
+#: includes/theme-options/theme-options.php:871
+#: includes/theme-options/theme-options.php:882
+#: includes/theme-options/theme-options.php:970
+#: includes/theme-options/theme-options.php:981
+#: includes/theme-options/theme-options.php:992
+#: includes/theme-options/theme-options.php:1003
+#: includes/theme-options/theme-options.php:1014
+#: includes/theme-options/theme-options.php:1039
+msgid "true"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:826
+msgid "Animate slider automatically"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:837
+msgid "Set the speed of the slideshow cycling, in milliseconds"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:844
+msgid "Set the speed of animations, in milliseconds"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:851
+msgid "Set an initialization delay, in milliseconds"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:858
+msgid "Randomize slide order"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:869
+msgid "Manual control usage"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:880
+msgid "Touch swipe"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:891
+msgid "Slider Skins"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:893
+msgid "bar"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:894
+msgid "default"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:895
+msgid "dark"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:896
+msgid "light"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:904
+msgid "Effect"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:906
+msgid "random"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:907
+msgid "sliceDownRight"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:908
+msgid "sliceDownLeft"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:909
+msgid "sliceUpRight"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:910
+msgid "sliceUpDown"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:911
+msgid "sliceUpDownLeft"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:912
+msgid "fold"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:914
+msgid "boxRandom"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:915
+msgid "boxRain"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:916
+msgid "boxRainReverse"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:917
+msgid "boxRainGrow"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:918
+msgid "boxRainGrowReverse"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:926
+msgid "For slice animations"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:933
+msgid "For box animations (Cols)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:940
+msgid "For box animations (Rows)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:947
+msgid "Slide transition speed"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:954
+msgid "How long each slide will show"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:961
+msgid "Set starting Slide (0 index)"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:968
+msgid "Next & Prev navigation"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:979
+msgid "1,2,3... navigation"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:990
+msgid "Use thumbnails for Control Nav"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1001
+msgid "Stop animation while hovering"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1012
+msgid "Force manual transitions"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1023
+msgid "Prev directionNav text"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1030
+msgid "Next directionNav text"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1037
+msgid "Start on a random slide"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1050
+msgid "Slides"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1051
+msgid ""
+"Add images to slider (Supported files .png, .jpg, .gif). If you want to "
+"change order, just drag and drop it. Image size for slides is original from "
+"media gallery, please upload images in same size, to get best display on "
+"page. To display slider in needed place use shortcode [dgc_slider]. Current "
+"theme version support only one slider per website."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1058
+msgid "Social Links"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1063
+msgid "Socials Links Position"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1064
+msgid "Choose place where social links will be displayed."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1066
+#: includes/theme-options/theme-options.php:1201
+msgid "Footer"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1071
+msgid "Socials Links"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1072
+msgid ""
+"Add link to your social media profiles. Icons with link will be display in "
+"header or footer."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1078
+msgid "Facebook"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1084
+msgid "Twitter"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1090
+msgid "LinkedIn"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1096
+msgid "MySpace"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1102
+msgid "Google Plus+"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1108
+msgid "Dribbble"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1114
+msgid "Skype"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1120
+msgid "Flickr"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1126
+msgid "You Tube"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1132
+msgid "Vimeo"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1138
+msgid "RSS"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1144
+msgid "Vk.com"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1150
+msgid "Instagram"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1156
+msgid "Pinterest"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1162
+msgid "Yelp"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1168
+msgid "E-mail"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1174
+msgid "Github"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1180
+msgid "Tumblr"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1186
+msgid "Soundcloud"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1192
+msgid "Tripadvisor"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1206
+msgid "Footer options"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1207
+msgid "Replace default theme copyright information and links"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1208
+msgid "Copyright section"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1210
+msgid ""
+"dgc-theme by <a href=\"https://github.com/dgc-network/\">dgc-network</a> "
+"Powered by: <a href=\"https://github.com/dgc-network/\">dgc-network</a>"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1217
+#: includes/theme-options/theme-options.php:1222
+msgid "Custom CSS"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1223
+msgid ""
+"Theme has two css files style.css and fixed-style.css which use default "
+"styles for front-end responsive and static layout. Do not edit theme default "
+"css files, use textarea editor below for overwriting all css styles."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1224
+msgid "Styles editor"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1234
+msgid "Woocommerce"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1239
+msgid "Show cart in header"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1240
+msgid "If you want to display cart link in header select options below."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1246
+msgid "Cart color"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1247
+msgid "Choose color for cart icon"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1254
+msgid "Woocommerce Shop Sidebar"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1255
+#: includes/theme-options/theme-options.php:1267
+msgid "Show or hide sidebar"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1266
+msgid "Woocommerce Product Sidebar"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1270
+msgid "Full width with tabs on right side"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1273
+msgid "Full width with tabs on left side"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1274
+msgid "Full width with tabs in center"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1280
+msgid "Woocommerce pages products per row"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1281
+msgid "Choose number of products"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1284
+msgid "2 products"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1285
+msgid "3 products"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1286
+msgid "4 products"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1287
+msgid "5 products"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1293
+msgid "Number of products on Shop pages"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1294
+msgid "Choose number of products. Write -1 for show all products on one page"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1391
+msgid "Sample Font"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1471
+msgid "Support"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1473
+msgid "If You faced with problems or find error or bug, please"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1474
+msgid "submit request."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1475
+msgid "On official "
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1475
+msgid "Support forum"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1476
+msgid "You may find answers on Your questions."
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1480
+msgid "Additional customization"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1482
+msgid "Our team is available for any type of WordPress development. "
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1483
+msgid "If You want customize theme or add new features, You can"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1484
+msgid "submit order"
+msgstr ""
+
+#: includes/theme-options/theme-options.php:1485
+msgid "on our website"
+msgstr ""
+
+#: includes/widgets.php:17
+msgid "News Archive"
+msgstr ""
+
+#: includes/widgets.php:21
+msgid "Use this widget to list your Link posts."
+msgstr ""
+
+#: includes/widgets.php:41
+msgid "News-Archive"
+msgstr ""
+
+#: includes/widgets.php:122
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets.php:125
+msgid "Number of posts to show:"
+msgstr ""
+
+#: includes/widgets.php:129
+msgid "Text Message:"
+msgstr ""
+
+#: no-results.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: no-results.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: no-results.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: no-results.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: searchform.php:11 searchform.php:13
+msgid "Search"
+msgstr ""
+
+#: searchform.php:12
+msgid "Type Here to Search"
+msgstr ""
+
+#: sidebar-blogright.php:26 sidebar-homepage.php:26 sidebar-page.php:26
+#: sidebar-single-post.php:26 sidebar.php:26
+msgid "Meta"
+msgstr ""
+
+#: taxonomy-post_format.php:18
+#, php-format
+msgid "%s Archives"
+msgstr ""
+
+#: woocommerce/single-product/product-image.php:44
+msgid "Placeholder"
+msgstr ""

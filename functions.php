@@ -1515,6 +1515,28 @@ if (class_exists('Woocommerce')) {
 	}
 	add_filter( 'get_product_search_form' , 'woo_custom_product_searchform' );
 
+	/* custom taxonomies page included the search section and register section */
+	function dgc_custom_taxonomies_page() {
+		// Get the taxonomy's terms
+		$terms = get_terms(
+    		array(
+        		'taxonomy'   => 'industry',
+        		'hide_empty' => false,
+    		)
+		);
+
+		// Check if any term exists
+		if ( ! empty( $terms ) && is_array( $terms ) ) {
+    		// Run a loop and print them all
+    		foreach ( $terms as $term ) { ?>
+        		<a href="<?php echo esc_url( get_term_link( $term ) ) ?>">
+            		<?php echo $term->name; ?>
+        		</a><?php
+    		}
+		} 	
+	}
+	add_shortcode('dgc-custom-taxonomies','dgc_custom_taxonomies_page');
+
 	/* custom search page included the search section and register section */
 	function dgc_product_search_page() {
 		if (!empty($theme_options['show_feature_image']) && (esc_attr($theme_options['show_feature_image']) == 'on')) {
