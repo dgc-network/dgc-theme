@@ -1799,7 +1799,7 @@ if ( ! function_exists( 'dgc_get_my_account_html' ) ) {
 		$btn_my_account = '<div class="my-account">
 			<a href="'.get_permalink( wc_get_page_id( 'myaccount' ) ).'">
 			<div class="fas fa-user-backup"></div>
-			<img class="my-account-icon" src="'.bloginfo('template_directory').'/assets/images/my-account.png">
+			<div><img class="my-account-icon" src="'.bloginfo('template_directory').'/assets/images/my-account.png"></div>
 			</a></div>';
 		echo $btn_my_account;
 	}
@@ -1815,8 +1815,8 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 				echo '<div id="qtranslate-select">';
 					echo '<ul id="lang-select-block">';
 						echo '<li class="current">';
-							//echo '<div class="fas fa-globe"></div>';
-							echo '<img class="globe-icon" src="'.bloginfo('template_directory').'/assets/images/globe.png">';
+							echo '<div class="fas fa-globe"></div>';
+							//echo '<img class="globe-icon" src="'.bloginfo('template_directory').'/assets/images/globe.png">';
 							echo '<ul id="lang-select-popup">';					
 							foreach($languages as $language){
 								echo '<li class="unactive">';
