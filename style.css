@@ -976,7 +976,11 @@ ul#lang-select-popup{
 #footer-widget-1, #footer-widget-2, #footer-widget-3{display: block; width: 30%;}
 
 .footer-payment-icons{/* display:block; */ width:5%; padding:0; position:relative; margin:10px 10px 10px;}
-.footer-payment-icons img.alipay-icon{height: 30px;}
+.footer-payment-icons img.alipay-icon{height: 50px;}
+.footer-payment-icons img.wechatpay-icon{height: 50px;}
+.footer-payment-icons img.unionpay-icon{height: 50px;}
+.footer-payment-icons img.visa-icon{height: 50px;}
+.footer-payment-icons img.mastercard-icon{height: 50px;}
 .footer-payment-icons .fab.fa-alipay:before{font-size:30px; color: white}
 .footer-payment-icons .fab.fa-weixin:before{font-size:30px; color: white}
 .footer-payment-icons .fab.fa-apple-pay:before{font-size:30px; color: white}
