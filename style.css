@@ -746,6 +746,7 @@ a:hover,a:focus,a:active {
 /*header*/
 .my-account {float:right; padding:0; position:relative; margin:13px 10px 10px;}
 .my-account .fas.fa-user:before{font-size:26px;}
+.my-account img.my-account-icon{height:26px;}
 	
 #qtranslate-select {float:right; padding:0; position:relative; margin:13px 10px 10px;}
 #qtranslate-select .fas.fa-globe:before{font-size:26px;}
