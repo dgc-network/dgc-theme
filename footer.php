@@ -36,7 +36,8 @@
 							<?php } ?>
 						<!-- </div> -->
 						<div class="one column footer-payment-icons">
-							<div class="alipay-icon"><img src="<?php bloginfo('template_directory');?>/wechatpay.png"></div>
+							<div class="alipay-icon"><img src="<?php bloginfo('template_directory');?>/assets/images/wechatpay.png"></div>
+							<img class="alipay-icon"> src="<?php bloginfo('template_directory');?>/assets/images/alipaypay.png">
 							<div class="fab fa-alipay"></div>
 							<div class="fab fa-weixin"></div>
 							<div class="fab fa-apple-pay"></div>
