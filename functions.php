@@ -1586,7 +1586,8 @@ if (class_exists('Woocommerce')) {
 
 			echo '<div class="dgc-search-bar">';
 				//echo '<div id="dgc-search-icon"><div class="fas fa-search"></div></div>';			
-				echo '<div id="dgc-search-icon"></div>';			
+				//echo '<div id="dgc-search-icon"></div>';
+				echo '<img class="search-icon" src="'.bloginfo('template_directory').'/assets/images/search.png">';
 				//get_product_search_form();
 				//echo do_shortcode('[wcas-search-form]');
 				$short_code = '[woof_text_filter placeholder="'.dgc_get_search_placeholder().'"]';
@@ -1610,9 +1611,9 @@ if (class_exists('Woocommerce')) {
 	function dgc_register_section_html(){
 		echo '<div class="dgc-register-section">';
 			echo '<div class="dgc-register-warning">';
-				echo '<div class="fas fa-user-plus"></div>';
-				echo '<div class="dgc-register-text">'.dgc_get_register_text().'</div>';
-				
+				//echo '<div class="fas fa-user-plus"></div>';
+				echo '<img class="registration-icon" src="'.bloginfo('template_directory').'/assets/images/registration.png">';
+				echo '<div class="dgc-register-text">'.dgc_get_register_text().'</div>';				
 				echo '<div class="dgc-register-button"><a href="/my-account/">'.__('免费注册','textdomain').'</a></div>';
 			echo '</div>';
 		echo '</div>';
@@ -1797,7 +1798,8 @@ if ( ! function_exists( 'dgc_get_my_account_html' ) ) {
 	function dgc_get_my_account_html() {
 		$btn_my_account = '<div class="my-account">
 			<a href="'.get_permalink( wc_get_page_id( 'myaccount' ) ).'">
-				<div class="fas fa-user"></div>
+			<div class="fas fa-user-backup"></div>
+			<img class="my-account-icon" src="'.bloginfo('template_directory').'/assets/images/my-account.png">
 			</a></div>';
 		echo $btn_my_account;
 	}
@@ -1813,7 +1815,8 @@ if ( ! function_exists( 'dgc_get_qtranslate_languages_list' ) ) {
 				echo '<div id="qtranslate-select">';
 					echo '<ul id="lang-select-block">';
 						echo '<li class="current">';
-							echo '<div class="fas fa-globe"></div>';
+							//echo '<div class="fas fa-globe"></div>';
+							echo '<img class="globe-icon" src="'.bloginfo('template_directory').'/assets/images/globe.png">';
 							echo '<ul id="lang-select-popup">';					
 							foreach($languages as $language){
 								echo '<li class="unactive">';
