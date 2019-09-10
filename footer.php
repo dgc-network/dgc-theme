@@ -36,14 +36,17 @@
 							<?php } ?>
 						<!-- </div> -->
 						<div class="one column footer-payment-icons">
-							<div class="alipay-icon"><img src="<?php bloginfo('template_directory');?>/assets/images/wechatpay.png"></div>
 							<img class="alipay-icon" src="<?php bloginfo('template_directory');?>/assets/images/alipay.png">
-							<div class="fab fa-alipay"></div>
+							<img class="wechatpay-icon" src="<?php bloginfo('template_directory');?>/assets/images/wechatpay.png">
+							<img class="unionpay-icon" src="<?php bloginfo('template_directory');?>/assets/images/unionpay.png">
+							<img class="visa-icon" src="<?php bloginfo('template_directory');?>/assets/images/VISA.png">
+							<img class="mastercard-icon" src="<?php bloginfo('template_directory');?>/assets/images/MasterCard.png">
+							<!--<div class="fab fa-alipay"></div>
 							<div class="fab fa-weixin"></div>
 							<div class="fab fa-apple-pay"></div>
 							<div class="fab fa-cc-mastercard"></div>
 							<div class="fab fa-cc-visa"></div>
-							<div class="fab fa-cc-amex"></div>
+							<div class="fab fa-cc-amex"></div>-->
 						</div>
 					</div>
 					<!-- .widget-area -->
