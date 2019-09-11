@@ -1548,9 +1548,7 @@ if (class_exists('Woocommerce')) {
 					echo '</li>';					
 				echo '</ul>';
 			echo '</div>';
-		} 	
-		//if(!empty($languages)){
-		//}
+		}
 	}
 	add_shortcode('dgc-industry-list','dgc_industry_list');
 
@@ -1577,12 +1575,19 @@ if (class_exists('Woocommerce')) {
 	add_shortcode('dgc-publisher-list','dgc_publisher_list');
 
 	/* custom search page included the search section and register section */
-	function dgc_product_search_page() {
+	function dgc_product_search_content() {
+
 		if (!empty($theme_options['show_feature_image']) && (esc_attr($theme_options['show_feature_image']) == 'on')) {
-			echo '<div class="dgc-search-section-with-image">';
+			//echo '<div class="dgc-search-content-with-image">';
+			$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+			echo '<div class="dgc-search-content" style="background: url('. $url.')">';
 		} else {
-			echo '<div class="dgc-search-section">';
+			echo '<div class="dgc-search-content">';
 		}
+
+			//if (is_advance_search()) dgc_advance_search_html();
+
+			if (is_user_logged_in()) {} else dgc_register_section_html();
 
 			echo '<div class="dgc-search-bar">';
 				//echo '<div id="dgc-search-icon"><div class="fas fa-search"></div></div>';			
@@ -1594,9 +1599,9 @@ if (class_exists('Woocommerce')) {
 				echo do_shortcode($short_code);
 				echo '<div class="dgc-search-advance"><a href="/shop/">'.__('Advance Search','textdomain').'</a></div>';				
 			echo '</div>';
+
 		echo '</div>';
 
-		if (is_user_logged_in()) {} else dgc_register_section_html();
 
 		//echo '<div class="dgc-register-section">';
 		//	echo '<div class="dgc-register-warning">';
@@ -1606,7 +1611,7 @@ if (class_exists('Woocommerce')) {
 		//	echo '</div>';
 		//echo '</div>';
 	}
-	add_shortcode('dgc-product-search','dgc_product_search_page');
+	add_shortcode('dgc-product-search-content','dgc_product_search_content');
 
 	function dgc_register_section_html(){
 		echo '<div class="dgc-register-section">';
@@ -1798,10 +1803,10 @@ if ( ! function_exists( 'dgc_get_my_account_html' ) ) {
 	function dgc_get_my_account_html() {
 		$btn_my_account = '<div class="my-account">
 			<a href="'.get_permalink( wc_get_page_id( 'myaccount' ) ).'">
-			<div class="fas fa-user-backup"></div>
-			<div><img class="my-account-icon" src="'.bloginfo('template_directory').'/assets/images/my-account.png"></div>
+			<div class="fas fa-user"></div>
 			</a></div>';
 		echo $btn_my_account;
+		//<div><img class="my-account-icon" src="'.bloginfo('template_directory').'/assets/images/my-account.png"></div>
 	}
 }	
 
