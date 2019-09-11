@@ -1590,9 +1590,9 @@ if (class_exists('Woocommerce')) {
 			if (is_user_logged_in()) {} else dgc_register_section_html();
 
 			echo '<div class="dgc-search-bar">';
-				//echo '<div id="dgc-search-icon"><div class="fas fa-search"></div></div>';			
+				echo '<div id="dgc-search-icon"><div class="fas fa-search"></div></div>';			
 				//echo '<div id="dgc-search-icon"></div>';
-				echo '<img class="search-icon" src="'.bloginfo('template_directory').'/assets/images/search.png">';
+				//echo '<img class="search-icon" src="'.bloginfo('template_directory').'/assets/images/search.png">';
 				//get_product_search_form();
 				//echo do_shortcode('[wcas-search-form]');
 				$short_code = '[woof_text_filter placeholder="'.dgc_get_search_placeholder().'"]';
