@@ -1586,7 +1586,7 @@ if (class_exists('Woocommerce')) {
 		//}
 
 			//if (is_advance_search()) dgc_advance_search_html();
-			dgc_register_section_html()
+			dgc_register_section_html();
 
 			if (is_user_logged_in()) {} else dgc_register_section_html();
 
