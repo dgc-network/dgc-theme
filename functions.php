@@ -1577,13 +1577,13 @@ if (class_exists('Woocommerce')) {
 	/* custom search page included the search section and register section */
 	function dgc_product_search_content() {
 
-		if (!empty($theme_options['show_feature_image']) && (esc_attr($theme_options['show_feature_image']) == 'on')) {
+		//if (!empty($theme_options['show_feature_image']) && (esc_attr($theme_options['show_feature_image']) == 'on')) {
 			//echo '<div class="dgc-search-content-with-image">';
 			$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			echo '<div class="dgc-search-content" style="background: url('. $url.')">';
-		} else {
-			echo '<div class="dgc-search-content">';
-		}
+		//} else {
+			//echo '<div class="dgc-search-content">';
+		//}
 
 			//if (is_advance_search()) dgc_advance_search_html();
 

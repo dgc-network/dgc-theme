@@ -2771,7 +2771,7 @@ div#fbSEOComments{
 #dgc-search-icon {margin:auto;}
 #dgc-search-icon .fas.fa-search:before{font-size:30px;color:gray; margin: 15px}
 .woof_text_search_container.woof_container{margin-top: 15px}
-.dgc-search-advance{margin:15px;}
+.dgc-search-advance{margin:15px 0px 15px 40px;}
 
 .dgc-register-section {
 	margin: 10px;
