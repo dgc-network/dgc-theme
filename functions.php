@@ -1580,12 +1580,13 @@ if (class_exists('Woocommerce')) {
 		//if (!empty($theme_options['show_feature_image']) && (esc_attr($theme_options['show_feature_image']) == 'on')) {
 			//echo '<div class="dgc-search-content-with-image">';
 			$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-			echo '<div class="dgc-search-content" style="background: url('. $url.')">';
+			echo '<div class="dgc-search-content" style="background: url('. $url.') no-repeat center center">';
 		//} else {
 			//echo '<div class="dgc-search-content">';
 		//}
 
 			//if (is_advance_search()) dgc_advance_search_html();
+			dgc_register_section_html()
 
 			if (is_user_logged_in()) {} else dgc_register_section_html();
 

@@ -2753,25 +2753,27 @@ div#fbSEOComments{
 }
 
 /* Style for frontpage */
-.dgc-search-content {
-	margin: 0px;
-	width: fit-content;
+.entry-content .dgc-search-content {
+	left: 0;
+	width: 100%;
+	position: fixed;
 }
 .dgc-search-section-with-image {
 	background: url(https://lh3.googleusercontent.com/XLSaj41R-gU740qi2y5lQWL4SB5eJ1Js6XPOYBPDVu9I9LlzyHa1cZr5esVlPJzQHBvKD_5KBPyH8JJD_88h8AUvH2h-7oPeguHBsNBRnhJaOkPe2nF7crV40q_y81Xcf145FFXnJWHhumS2J0Ydmmdt-8HSegGHGQG3-pMZkolvKqn_bTjFpP4BWOSm2WL60j7jKvv3s-MwTsjKath81pnCaMIIqy5Pl9oVbHmv4HkR8Y7xSVFCLEBVsY1kCngAHHgoM4YFduoP68FmnG1sZbJYbfyjOdM8fXDEkKEGcHliESVxpUnUbQqxfirMVlan0PdFs1_5ASN1wfVqjf2x_j7s_olBz18Uycb2VwVIdRp0dCwTwimaXU1xV24Z1DgCNhsxBdFiTEex9-Kku8QyGl22UY0npIb4T8yUp5HvzXUfWHqUwFWPrpZ9rSUQCRsZLUaa6lYBxMk5WaHE69GObPgTEu0LaIB_gZWfsuDD0ZxR_j6pNLl8I8cWtDekCXbf1IGLJROgJw2YMTb0-3XHbZRV_nvwE3cH0rBNs1P3TtrpGMQAFnLFHo-VeKhX78MdU-naVd8DDye2RpQo51gGDmbJqb9A7oTCBgfIAC5iHvKfU6NQTiMbC9y492LHcDTFkZwED52MfrbxAc_gElgGJtomkJMeprlW=w1182-h886-no)
 }
-.dgc-search-bar {
+.dgc-search-content .dgc-search-bar {
 	display: flex;
 	margin: 20% 5%;
 	border: 2px solid gray;
 	border-radius: 5px;
+	background-color: white;
 }
 #dgc-search-icon {margin:auto;}
 #dgc-search-icon .fas.fa-search:before{font-size:30px;color:gray; margin: 15px}
 .woof_text_search_container.woof_container{margin-top: 15px}
 .dgc-search-advance{margin:15px 0px 15px 40px;}
 
-.dgc-register-section {
+.dgc-search-content .dgc-register-section {
 	margin: 10px;
 	border: 2px solid;
 	border-radius: 10px;
