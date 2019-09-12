@@ -1617,8 +1617,8 @@ if (class_exists('Woocommerce')) {
 	function dgc_register_section_html(){
 		echo '<div class="dgc-register-section">';
 			echo '<div class="dgc-register-warning">';
-				//echo '<div class="fas fa-user-plus"></div>';
-				echo '<img class="registration-icon" src="'.bloginfo('template_directory').'/assets/images/registration.png">';
+				echo '<div class="fas fa-user-plus"></div>';
+				//echo '<img class="registration-icon" src="'.bloginfo('template_directory').'/assets/images/registration.png">';
 				echo '<div class="dgc-register-text">'.dgc_get_register_text().'</div>';				
 				echo '<div class="dgc-register-button"><a href="/my-account/">'.__('免费注册','textdomain').'</a></div>';
 			echo '</div>';
