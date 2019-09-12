@@ -1536,11 +1536,10 @@ if (class_exists('Woocommerce')) {
 			echo '<div id="industry-select">';
 				echo '<ul id="industry-select-block">';
 					echo '<li class="current">'.__('Industries','textdomain');
-						//echo '<div class="fas fa-globe"></div>';
 						echo '<ul id="industry-select-popup">';					
 						foreach($terms as $term){
 							echo '<li class="unactive">';
-							echo '<a class="'.$language.'" href="'.esc_url( get_term_link( $term ) ).'">';
+							echo '<a class="'.$term->name.'" href="'.esc_url( get_term_link( $term ) ).'">';
 								echo $term->name;
 							echo '</a></li>';
 						}
@@ -1565,14 +1564,85 @@ if (class_exists('Woocommerce')) {
 		// Check if any term exists
 		if ( ! empty( $terms ) && is_array( $terms ) ) {
     		// Run a loop and print them all
-    		foreach ( $terms as $term ) { ?>
-        		<a href="<?php echo esc_url( get_term_link( $term ) ) ?>">
-            		<?php echo $term->name; ?>
-        		</a><?php
-    		}
+			echo '<div id="publisher-select">';
+				echo '<ul id="publisher-select-block">';
+					echo '<li class="current">'.__('Publishers','textdomain');
+						echo '<ul id="publisher-select-popup">';					
+						foreach($terms as $term){
+							echo '<li class="unactive">';
+							echo '<a class="'.$term->name.'" href="'.esc_url( get_term_link( $term ) ).'">';
+								echo $term->name;
+							echo '</a></li>';
+						}
+						echo '</ul>';
+					echo '</li>';					
+				echo '</ul>';
+			echo '</div>';
 		} 	
 	}
 	add_shortcode('dgc-publisher-list','dgc_publisher_list');
+
+	/* Shortcode for status list included the link */
+	function dgc_status_list() {
+		// Get the taxonomy's terms
+		$terms = get_terms(
+    		array(
+        		'taxonomy'   => 'status',
+        		'hide_empty' => false,
+    		)
+		);
+
+		// Check if any term exists
+		if ( ! empty( $terms ) && is_array( $terms ) ) {
+    		// Run a loop and print them all
+			echo '<div id="status-select">';
+				echo '<ul id="status-select-block">';
+					echo '<li class="current">'.__('Statuses','textdomain');
+						echo '<ul id="status-select-popup">';					
+						foreach($terms as $term){
+							echo '<li class="unactive">';
+							echo '<a class="'.$term->name.'" href="'.esc_url( get_term_link( $term ) ).'">';
+								echo $term->name;
+							echo '</a></li>';
+						}
+						echo '</ul>';
+					echo '</li>';					
+				echo '</ul>';
+			echo '</div>';
+		} 	
+	}
+	add_shortcode('dgc-status-list','dgc_status_list');
+
+	/* Shortcode for language list included the link */
+	function dgc_language_list() {
+		// Get the taxonomy's terms
+		$terms = get_terms(
+    		array(
+        		'taxonomy'   => 'language',
+        		'hide_empty' => false,
+    		)
+		);
+
+		// Check if any term exists
+		if ( ! empty( $terms ) && is_array( $terms ) ) {
+    		// Run a loop and print them all
+			echo '<div id="language-select">';
+				echo '<ul id="language-select-block">';
+					echo '<li class="current">'.__('Languages','textdomain');
+						echo '<ul id="language-select-popup">';					
+						foreach($terms as $term){
+							echo '<li class="unactive">';
+							echo '<a class="'.$term->name.'" href="'.esc_url( get_term_link( $term ) ).'">';
+								echo $term->name;
+							echo '</a></li>';
+						}
+						echo '</ul>';
+					echo '</li>';					
+				echo '</ul>';
+			echo '</div>';
+		} 	
+	}
+	add_shortcode('dgc-language-list','dgc_language_list');
 
 	/* custom search page included the search section and register section */
 	function dgc_product_search_content() {

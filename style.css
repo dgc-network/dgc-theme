@@ -2777,7 +2777,6 @@ div#fbSEOComments{
 .dgc-search-bar .dgc-advance-search-button{margin:15px 0px 15px 40px;}
 
 .dgc-search-content .dgc-advance-search-section {
-	margin-top: 50px;
 	border: 2px solid;
 	border-radius: 10px;
 	background-color: white;
@@ -2785,6 +2784,18 @@ div#fbSEOComments{
 	top: 200px;
 	left: 50px;
 	width: 90%;
+}
+.dgc-industry-list {
+	margin-top: 100px;	
+}
+.dgc-publisher-list {
+	margin-top: 100px;	
+}
+.dgc-status-list {
+	margin-top: 100px;	
+}
+.dgc-language-list {
+	margin-top: 100px;	
 }
 
 .dgc-search-content .dgc-register-section {
