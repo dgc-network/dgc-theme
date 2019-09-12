@@ -1685,10 +1685,10 @@ if (class_exists('Woocommerce')) {
 				dgc_publisher_list();
 			echo '</div>';
 			echo '<div class="dgc-status-list">';
-				dgc_publisher_list();
+				dgc_status_list();
 			echo '</div>';
 			echo '<div class="dgc-language-list">';
-				dgc_publisher_list();
+				dgc_language_list();
 			echo '</div>';
 		echo '</div>';
 	}

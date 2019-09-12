@@ -2777,6 +2777,7 @@ div#fbSEOComments{
 .dgc-search-bar .dgc-advance-search-button{margin:15px 0px 15px 40px;}
 
 .dgc-search-content .dgc-advance-search-section {
+	display: flex;
 	border: 2px solid;
 	border-radius: 10px;
 	background-color: white;
