@@ -1585,8 +1585,9 @@ if (class_exists('Woocommerce')) {
 			//echo '<div class="dgc-search-content">';
 		//}
 
-			//if (is_advance_search()) dgc_advance_search_html();
-			dgc_register_section_html();
+			if (is_advance_search()) dgc_advance_search_html();
+			
+			dgc_advance_search_section();
 
 			if (is_user_logged_in()) {} else dgc_register_section_html();
 
@@ -1598,21 +1599,29 @@ if (class_exists('Woocommerce')) {
 				//echo do_shortcode('[wcas-search-form]');
 				$short_code = '[woof_text_filter placeholder="'.dgc_get_search_placeholder().'"]';
 				echo do_shortcode($short_code);
-				echo '<div class="dgc-search-advance"><a href="/shop/">'.__('Advance Search','textdomain').'</a></div>';				
+				echo '<div class="dgc-advance-search-button"><a href="/shop/">'.__('Advance Search','textdomain').'</a></div>';				
 			echo '</div>';
 
 		echo '</div>';
-
-
-		//echo '<div class="dgc-register-section">';
-		//	echo '<div class="dgc-register-warning">';
-		//		echo '<div class="fas fa-user-plus"></div>';
-		//		echo '<div class="dgc-register-text">As a member of EDD, you will be seamless with the world standard.</div>';
-		//		echo '<div class="dgc-register-button">Registration</div>';
-		//	echo '</div>';
-		//echo '</div>';
 	}
 	add_shortcode('dgc-product-search-content','dgc_product_search_content');
+
+	function dgc_advance_search_section(){
+		echo '<div class="dgc-advance-search-section">';
+			echo '<div class="dgc-industry-list">';
+				dgc_industry_list();
+			echo '</div>';
+			echo '<div class="dgc-publisher-list">';
+				dgc_publisher_list();
+			echo '</div>';
+			echo '<div class="dgc-status-list">';
+				dgc_publisher_list();
+			echo '</div>';
+			echo '<div class="dgc-language-list">';
+				dgc_publisher_list();
+			echo '</div>';
+		echo '</div>';
+	}
 
 	function dgc_register_section_html(){
 		echo '<div class="dgc-register-section">';

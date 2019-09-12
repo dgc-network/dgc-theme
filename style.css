@@ -2774,7 +2774,18 @@ div#fbSEOComments{
 .dgc-search-bar .dgc-search-icon {margin:auto;}
 .dgc-search-icon .fas.fa-search:before{font-size:30px;color:gray; margin: 15px}
 .dgc-search-bar .woof_text_search_container.woof_container{margin-top: 15px}
-.dgc-search-bar .dgc-search-advance{margin:15px 0px 15px 40px;}
+.dgc-search-bar .dgc-advance-search-button{margin:15px 0px 15px 40px;}
+
+.dgc-search-content .dgc-advance-search-section {
+	margin-top: 50px;
+	border: 2px solid;
+	border-radius: 10px;
+	background-color: white;
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	width: 90%;
+}
 
 .dgc-search-content .dgc-register-section {
 	margin-top: 50px;
@@ -2784,6 +2795,7 @@ div#fbSEOComments{
 	position: absolute;
 	top: 200px;
 	left: 50px;
+	width: 90%;
 }
 .dgc-register-warning {
 	display: flex;
