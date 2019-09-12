@@ -2764,19 +2764,20 @@ div#fbSEOComments{
 .dgc-search-content .dgc-search-bar {
 	display: flex;
 	margin: 20% 5%;
-	border: 2px solid gray;
+	border: 2px solid;
 	border-radius: 5px;
 	background-color: white;
 }
-#dgc-search-icon {margin:auto;}
-#dgc-search-icon .fas.fa-search:before{font-size:30px;color:gray; margin: 15px}
-.woof_text_search_container.woof_container{margin-top: 15px}
-.dgc-search-advance{margin:15px 0px 15px 40px;}
+.dgc-search-bar .dgc-search-icon {margin:auto;}
+.dgc-search-icon .fas.fa-search:before{font-size:30px;color:gray; margin: 15px}
+.dgc-search-bar .woof_text_search_container.woof_container{margin-top: 15px}
+.dgc-search-bar .dgc-search-advance{margin:15px 0px 15px 40px;}
 
 .dgc-search-content .dgc-register-section {
 	margin: 10px;
 	border: 2px solid;
 	border-radius: 10px;
+	background-color: white;
 }
 .dgc-register-warning {
 	display: flex;
