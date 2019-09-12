@@ -1585,7 +1585,7 @@ if (class_exists('Woocommerce')) {
 			//echo '<div class="dgc-search-content">';
 		//}
 
-			if (is_advance_search()) dgc_advance_search_html();
+			//if (is_advance_search()) dgc_advance_search_html();
 			
 			dgc_advance_search_section();
 
