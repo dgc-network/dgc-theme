@@ -2776,7 +2776,10 @@ div#fbSEOComments{
 .dgc-search-bar .woof_text_search_container.woof_container{margin-top: 15px}
 .dgc-search-bar .dgc-advance-search-button{margin:15px 0px 15px 40px;}
 
-.dgc-search-content .dgc-advance-search-section {
+.dgc-search-content #dgc-advance-search-section {
+	display: none;
+}
+.dgc-search-content #dgc-advance-search-section:target {
 	display: flex;
 	border: 2px solid;
 	border-radius: 10px;

@@ -1669,7 +1669,7 @@ if (class_exists('Woocommerce')) {
 				//echo do_shortcode('[wcas-search-form]');
 				$short_code = '[woof_text_filter placeholder="'.dgc_get_search_placeholder().'"]';
 				echo do_shortcode($short_code);
-				echo '<div class="dgc-advance-search-button"><a href="/shop/">'.__('Advance Search','textdomain').'</a></div>';				
+				echo '<div class="dgc-advance-search-button"><a href="#dgc-advance-search-section">'.__('Advance Search','textdomain').'</a></div>';				
 			echo '</div>';
 
 		echo '</div>';
@@ -1677,7 +1677,7 @@ if (class_exists('Woocommerce')) {
 	add_shortcode('dgc-product-search-content','dgc_product_search_content');
 
 	function dgc_advance_search_section(){
-		echo '<div class="dgc-advance-search-section">';
+		echo '<div id="dgc-advance-search-section">';
 			echo '<div class="dgc-industry-list">';
 				dgc_industry_list();
 			echo '</div>';
