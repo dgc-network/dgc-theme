@@ -2789,9 +2789,23 @@ div#fbSEOComments{
 	left: 50px;
 	width: 90%;
 }
-.dgc-industry-list {
+#dgc-industry-list {
 	margin-top: 100px;	
 }
+#dgc-industry-list {float:right; padding:0; position:relative; margin:13px 10px 10px;}
+#dgc-industry-list ul{
+	margin:0;
+	list-style:none;
+}
+#dgc-industry-list ul li.current{
+	position: relative;
+}
+#dgc-industry-list ul li:hover > ul{
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
 .dgc-publisher-list {
 	margin-top: 100px;	
 }

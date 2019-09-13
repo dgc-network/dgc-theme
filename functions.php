@@ -1678,7 +1678,7 @@ if (class_exists('Woocommerce')) {
 
 	function dgc_advance_search_section(){
 		echo '<div id="dgc-advance-search-section">';
-			echo '<div class="dgc-industry-list">';
+			echo '<div id="dgc-industry-list">';
 				dgc_industry_list();
 			echo '</div>';
 			echo '<div class="dgc-publisher-list">';
