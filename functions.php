@@ -1534,9 +1534,9 @@ if (class_exists('Woocommerce')) {
         		</a><?php
     		}
 			echo '<div id="industry-select">';
-				echo '<ul id="industry-select-block">';
+				echo '<ul id="lang-select-block">';
 					echo '<li class="current">'.__('Industries','textdomain');
-						echo '<ul id="industry-select-popup">';					
+						echo '<ul id="lang-select-popup">';					
 						foreach($terms as $term){
 							echo '<li class="unactive">';
 							echo '<a class="'.$term->name.'" href="'.esc_url( get_term_link( $term ) ).'">';
