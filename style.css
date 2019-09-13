@@ -2795,7 +2795,7 @@ div#fbSEOComments{
 #dgc-industry-list {float:right; padding:0; position:relative; margin:13px 10px 10px;}
 #dgc-industry-list ul{
 	margin:0;
-	list-style:none;
+	/* list-style:none; */
 }
 #dgc-industry-list ul li.current{
 	position: relative;
