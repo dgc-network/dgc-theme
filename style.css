@@ -2774,6 +2774,7 @@ div#fbSEOComments{
 .dgc-search-bar .dgc-search-icon {margin:auto;}
 .dgc-search-icon .fas.fa-search:before{font-size:30px;color:gray; margin: 15px}
 .dgc-search-bar .woof_text_search_container.woof_container{margin-top: 15px}
+.woof_text_search_container input[type='search'] {width: 90%}
 .dgc-search-bar .dgc-advance-search-button{margin:15px 0px 15px 40px;}
 
 .dgc-search-content #dgc-advance-search-section {
@@ -2793,7 +2794,6 @@ div#fbSEOComments{
 .woof_auto_4_columns .woof_container{width: 23%}
 .woof_sid_flat_grey .woof_redraw_zone select, .woof_sid_flat_grey .woof_redraw_zone input {width: auto}
 .woof_edit_view {display: none}
-/*.woof_text_search_container input[type='search'] {width: 90%}*/
 #dgc-advance-search-section .woof_text_search_container.woof_container {display: none}
 #dgc-advance-search-section .woof_price3_search_container.woof_container {display: none}
 
