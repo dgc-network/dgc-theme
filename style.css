@@ -2800,6 +2800,7 @@ div#fbSEOComments{
 }
 #dgc-industry-list ul li.current{
 	position: relative;
+	font-size: 20px;
 }
 #dgc-industry-list ul li:hover > ul{
     margin: 0;
