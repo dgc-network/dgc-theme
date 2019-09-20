@@ -1668,7 +1668,6 @@ if (class_exists('Woocommerce')) {
 				//get_product_search_form();
 				//echo do_shortcode('[wcas-search-form]');
 				$short_code = '[woof_text_filter placeholder="'.dgc_get_search_placeholder().'"]';
-				$short_code = '[woof is_ajax=0 sid ="flat_grey woof_auto_4_columns"]';
 				echo do_shortcode($short_code);
 				echo '<div class="dgc-advance-search-button"><a href="#dgc-advance-search-section">'.__('Advance Search','textdomain').'</a></div>';				
 			echo '</div>';
@@ -1679,17 +1678,19 @@ if (class_exists('Woocommerce')) {
 
 	function dgc_advance_search_section(){
 		echo '<div id="dgc-advance-search-section">';
+			$short_code = '[woof is_ajax=0 sid ="flat_grey woof_auto_4_columns"]';
+			echo do_shortcode($short_code);
 			echo '<div id="dgc-industry-list">';
-				dgc_industry_list();
+				//dgc_industry_list();
 			echo '</div>';
 			echo '<div class="dgc-publisher-list">';
-				dgc_publisher_list();
+				//dgc_publisher_list();
 			echo '</div>';
 			echo '<div class="dgc-status-list">';
-				dgc_status_list();
+				//dgc_status_list();
 			echo '</div>';
 			echo '<div class="dgc-language-list">';
-				dgc_language_list();
+				//dgc_language_list();
 			echo '</div>';
 		echo '</div>';
 	}
