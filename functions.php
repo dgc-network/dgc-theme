@@ -1677,6 +1677,7 @@ if (class_exists('Woocommerce')) {
 	add_shortcode('dgc-product-search-content','dgc_product_search_content');
 
 	function dgc_advance_search_section(){
+		echo '<div class="dgc-register-section" style="display:none">';
 		echo '<div id="dgc-advance-search-section">';
 			$short_code = '[woof is_ajax=0 sid ="flat_grey woof_auto_4_columns"]';
 			echo do_shortcode($short_code);
