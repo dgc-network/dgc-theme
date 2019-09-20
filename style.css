@@ -2757,7 +2757,7 @@ div#fbSEOComments{
 	/* position: fixed; */
 	left: 0;
 	width: 115%;
-	height: 800px;
+	height: 700px;
 	margin: -50px 0px -50px -60px;
 }
 .dgc-search-content .dgc-search-bar {
@@ -2789,11 +2789,13 @@ div#fbSEOComments{
 	left: 50px;
 	width: 90%;
 }
+.woof_sid_flat_grey {border: 0px; width: 100%; margin-top: 60px}
 .woof_auto_4_columns .woof_container{width: 23%}
 .woof_sid_flat_grey .woof_redraw_zone select, .woof_sid_flat_grey .woof_redraw_zone input {width: auto}
 .woof_edit_view {display: none}
 /*.woof_text_search_container input[type='search'] {width: 90%}*/
 #dgc-advance-search-section .woof_text_search_container.woof_container {display: none}
+#dgc-advance-search-section .woof_price3_search_container.woof_container {display: none}
 
 #dgc-industry-list {
 	margin-top: 100px;
