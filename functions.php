@@ -1657,9 +1657,9 @@ if (class_exists('Woocommerce')) {
 
 			//if (is_advance_search()) dgc_advance_search_html();
 			
-			dgc_advance_search_section();
-
 			if (is_user_logged_in()) {} else dgc_register_section_html();
+
+			dgc_advance_search_section();
 
 			echo '<div class="dgc-search-bar">';
 				echo '<div class="dgc-search-icon"><div class="fas fa-search"></div></div>';			
@@ -1677,11 +1677,6 @@ if (class_exists('Woocommerce')) {
 	add_shortcode('dgc-product-search-content','dgc_product_search_content');
 
 	function dgc_advance_search_section(){
-		
-		echo '<div class="dgc-search-content">';
-		echo '<div class="dgc-register-section" style="display:none"></div>';
-		echo '</div>';
-
 		echo '<div id="dgc-advance-search-section">';
 			$short_code = '[woof is_ajax=0 sid ="flat_grey woof_auto_4_columns"]';
 			echo do_shortcode($short_code);
